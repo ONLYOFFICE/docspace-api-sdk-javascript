@@ -1,0 +1,599 @@
+# Api.SettingsTFASettingsApi
+
+All URIs are relative to *http://http:*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**getTfaAppCodes**](SettingsTFASettingsApi.md#getTfaAppCodes) | **GET** /api/2.0/settings/tfaappcodes | Get the TFA codes
+[**getTfaConfirmUrl**](SettingsTFASettingsApi.md#getTfaConfirmUrl) | **GET** /api/2.0/settings/tfaapp/confirm | Get confirmation email
+[**getTfaSettings**](SettingsTFASettingsApi.md#getTfaSettings) | **GET** /api/2.0/settings/tfaapp | Get the TFA settings
+[**tfaAppGenerateSetupCode**](SettingsTFASettingsApi.md#tfaAppGenerateSetupCode) | **GET** /api/2.0/settings/tfaapp/setup | Generate setup code
+[**tfaValidateAuthCode**](SettingsTFASettingsApi.md#tfaValidateAuthCode) | **POST** /api/2.0/settings/tfaapp/validate | Validate the TFA code
+[**unlinkTfaApp**](SettingsTFASettingsApi.md#unlinkTfaApp) | **PUT** /api/2.0/settings/tfaappnewapp | Unlink the TFA application
+[**updateTfaAppCodes**](SettingsTFASettingsApi.md#updateTfaAppCodes) | **PUT** /api/2.0/settings/tfaappnewcodes | Update the TFA codes
+[**updateTfaSettings**](SettingsTFASettingsApi.md#updateTfaSettings) | **PUT** /api/2.0/settings/tfaapp | Update the TFA settings
+[**updateTfaSettingsLink**](SettingsTFASettingsApi.md#updateTfaSettingsLink) | **PUT** /api/2.0/settings/tfaappwithlink | Get confirmation email for updating TFA settings
+
+
+
+## getTfaAppCodes
+
+> ObjectArrayWrapper getTfaAppCodes()
+
+Get the TFA codes
+
+Returns the two-factor authentication application codes.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.SettingsTFASettingsApi();
+apiInstance.getTfaAppCodes((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**ObjectArrayWrapper**](ObjectArrayWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getTfaConfirmUrl
+
+> StringWrapper getTfaConfirmUrl()
+
+Get confirmation email
+
+Returns the confirmation email URL for authorization via SMS or TFA application.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.SettingsTFASettingsApi();
+apiInstance.getTfaConfirmUrl((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**StringWrapper**](StringWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getTfaSettings
+
+> TfaSettingsArrayWrapper getTfaSettings()
+
+Get the TFA settings
+
+Returns the current two-factor authentication settings.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.SettingsTFASettingsApi();
+apiInstance.getTfaSettings((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**TfaSettingsArrayWrapper**](TfaSettingsArrayWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## tfaAppGenerateSetupCode
+
+> SetupCodeWrapper tfaAppGenerateSetupCode()
+
+Generate setup code
+
+Generates the setup TFA code for the current user.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.SettingsTFASettingsApi();
+apiInstance.tfaAppGenerateSetupCode((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**SetupCodeWrapper**](SetupCodeWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## tfaValidateAuthCode
+
+> BooleanWrapper tfaValidateAuthCode(opts)
+
+Validate the TFA code
+
+Validates the two-factor authentication code specified in the request.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.SettingsTFASettingsApi();
+let opts = {
+  'tfaValidateRequestsDto': new Api.TfaValidateRequestsDto() // TfaValidateRequestsDto | 
+};
+apiInstance.tfaValidateAuthCode(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tfaValidateRequestsDto** | [**TfaValidateRequestsDto**](TfaValidateRequestsDto.md)|  | [optional] 
+
+### Return type
+
+[**BooleanWrapper**](BooleanWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## unlinkTfaApp
+
+> StringWrapper unlinkTfaApp(opts)
+
+Unlink the TFA application
+
+Unlinks the current two-factor authentication application from the user account specified in the request.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.SettingsTFASettingsApi();
+let opts = {
+  'tfaRequestsDto': new Api.TfaRequestsDto() // TfaRequestsDto | 
+};
+apiInstance.unlinkTfaApp(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tfaRequestsDto** | [**TfaRequestsDto**](TfaRequestsDto.md)|  | [optional] 
+
+### Return type
+
+[**StringWrapper**](StringWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## updateTfaAppCodes
+
+> ObjectArrayWrapper updateTfaAppCodes()
+
+Update the TFA codes
+
+Requests the new backup codes for the two-factor authentication application.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.SettingsTFASettingsApi();
+apiInstance.updateTfaAppCodes((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**ObjectArrayWrapper**](ObjectArrayWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## updateTfaSettings
+
+> BooleanWrapper updateTfaSettings(opts)
+
+Update the TFA settings
+
+Updates the two-factor authentication settings with the parameters specified in the request.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.SettingsTFASettingsApi();
+let opts = {
+  'tfaRequestsDto': new Api.TfaRequestsDto() // TfaRequestsDto | 
+};
+apiInstance.updateTfaSettings(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tfaRequestsDto** | [**TfaRequestsDto**](TfaRequestsDto.md)|  | [optional] 
+
+### Return type
+
+[**BooleanWrapper**](BooleanWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## updateTfaSettingsLink
+
+> StringWrapper updateTfaSettingsLink(opts)
+
+Get confirmation email for updating TFA settings
+
+Returns the confirmation email URL for updating TFA settings.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.SettingsTFASettingsApi();
+let opts = {
+  'tfaRequestsDto': new Api.TfaRequestsDto() // TfaRequestsDto | 
+};
+apiInstance.updateTfaSettingsLink(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tfaRequestsDto** | [**TfaRequestsDto**](TfaRequestsDto.md)|  | [optional] 
+
+### Return type
+
+[**StringWrapper**](StringWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+

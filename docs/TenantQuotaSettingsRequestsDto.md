@@ -1,0 +1,10 @@
+# Api.TenantQuotaSettingsRequestsDto
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**tenantId** | **Number** | The ID of the tenant whose quota is being configured. | 
+**quota** | **Number** | The storage quota limit in bytes allocated to the tenant. | [optional] 
+
+

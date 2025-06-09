@@ -1,0 +1,13 @@
+# Api.LogoConfigDto
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**image** | **String** | The image of the logo. | [optional] 
+**imageDark** | **String** | The dark image of the logo. | [optional] 
+**imageEmbedded** | **String** | The embedded image of the logo. | [optional] 
+**url** | **String** | The url link of the logo. | [optional] 
+**visible** | **Boolean** | Specifies if the logo is visible. | [optional] 
+
+

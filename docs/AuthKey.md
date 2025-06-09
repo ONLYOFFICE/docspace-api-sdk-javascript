@@ -1,0 +1,11 @@
+# Api.AuthKey
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**name** | **String** | The authentication key name. | [optional] 
+**value** | **String** | The authentication key value. | [optional] 
+**title** | **String** | The authentication key title. | [optional] 
+
+

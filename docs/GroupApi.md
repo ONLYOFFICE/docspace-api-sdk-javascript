@@ -1,0 +1,787 @@
+# Api.GroupApi
+
+All URIs are relative to *http://http:*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**addGroup**](GroupApi.md#addGroup) | **POST** /api/2.0/group | Add a new group
+[**addMembersTo**](GroupApi.md#addMembersTo) | **PUT** /api/2.0/group/{id}/members | Add group members
+[**deleteGroup**](GroupApi.md#deleteGroup) | **DELETE** /api/2.0/group/{id} | Delete a group
+[**getGroup**](GroupApi.md#getGroup) | **GET** /api/2.0/group/{id} | Get a group
+[**getGroupByUserId**](GroupApi.md#getGroupByUserId) | **GET** /api/2.0/group/user/{userid} | Get user groups
+[**getGroups**](GroupApi.md#getGroups) | **GET** /api/2.0/group | Get groups
+[**moveMembersTo**](GroupApi.md#moveMembersTo) | **PUT** /api/2.0/group/{fromId}/members/{toId} | Move group members
+[**removeMembersFrom**](GroupApi.md#removeMembersFrom) | **DELETE** /api/2.0/group/{id}/members | Remove group members
+[**setGroupManager**](GroupApi.md#setGroupManager) | **PUT** /api/2.0/group/{id}/manager | Set a group manager
+[**setMembersTo**](GroupApi.md#setMembersTo) | **POST** /api/2.0/group/{id}/members | Replace group members
+[**updateGroup**](GroupApi.md#updateGroup) | **PUT** /api/2.0/group/{id} | Update a group
+
+
+
+## addGroup
+
+> GroupWrapper addGroup(opts)
+
+Add a new group
+
+Adds a new group with the group manager, name, and members specified in the request.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.GroupApi();
+let opts = {
+  'groupRequestDto': new Api.GroupRequestDto() // GroupRequestDto | 
+};
+apiInstance.addGroup(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **groupRequestDto** | [**GroupRequestDto**](GroupRequestDto.md)|  | [optional] 
+
+### Return type
+
+[**GroupWrapper**](GroupWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## addMembersTo
+
+> GroupWrapper addMembersTo(id, opts)
+
+Add group members
+
+Adds new group members to the group with the ID specified in the request.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.GroupApi();
+let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
+let opts = {
+  'membersRequest': new Api.MembersRequest() // MembersRequest | The member request.
+};
+apiInstance.addMembersTo(id, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**| The group ID. | 
+ **membersRequest** | [**MembersRequest**](MembersRequest.md)| The member request. | [optional] 
+
+### Return type
+
+[**GroupWrapper**](GroupWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## deleteGroup
+
+> NoContentResultWrapper deleteGroup(id)
+
+Delete a group
+
+Deletes a group with the ID specified in the request from the list of groups on the portal.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.GroupApi();
+let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
+apiInstance.deleteGroup(id, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**| The group ID. | 
+
+### Return type
+
+[**NoContentResultWrapper**](NoContentResultWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getGroup
+
+> GroupWrapper getGroup(id, opts)
+
+Get a group
+
+Returns the detailed information about the selected group.   **Note**: This method returns full group information.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.GroupApi();
+let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
+let opts = {
+  'includeMembers': true // Boolean | Specifies whether to include the group members or not.
+};
+apiInstance.getGroup(id, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**| The group ID. | 
+ **includeMembers** | **Boolean**| Specifies whether to include the group members or not. | [optional] 
+
+### Return type
+
+[**GroupWrapper**](GroupWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getGroupByUserId
+
+> GroupSummaryArrayWrapper getGroupByUserId(userid)
+
+Get user groups
+
+Returns a list of groups for the user with the ID specified in the request.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.GroupApi();
+let userid = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The user ID.
+apiInstance.getGroupByUserId(userid, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userid** | **String**| The user ID. | 
+
+### Return type
+
+[**GroupSummaryArrayWrapper**](GroupSummaryArrayWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getGroups
+
+> GroupArrayWrapper getGroups(opts)
+
+Get groups
+
+Returns the general information about all the groups, such as group ID and group manager.   **Note**: This method returns partial group information.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.GroupApi();
+let opts = {
+  'userId': "aae1e103-bca5-9fa1-ba8c-42058b4abf28", // String | The user ID.
+  'manager': true, // Boolean | Specifies if the user is a manager or not.
+  'count': 1234, // Number | The number of records to retrieve.
+  'startIndex': 1234, // Number | The starting index for paginated results.
+  'sortBy': "some text", // String | Specifies the property used to sort the query results.
+  'sortOrder': new Api.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'filterValue': "some text" // String | The text used for filtering or searching group data.
+};
+apiInstance.getGroups(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **String**| The user ID. | [optional] 
+ **manager** | **Boolean**| Specifies if the user is a manager or not. | [optional] 
+ **count** | **Number**| The number of records to retrieve. | [optional] 
+ **startIndex** | **Number**| The starting index for paginated results. | [optional] 
+ **sortBy** | **String**| Specifies the property used to sort the query results. | [optional] 
+ **sortOrder** | [**SortOrder**](.md)| The order in which the results are sorted. | [optional] 
+ **filterValue** | **String**| The text used for filtering or searching group data. | [optional] 
+
+### Return type
+
+[**GroupArrayWrapper**](GroupArrayWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## moveMembersTo
+
+> GroupWrapper moveMembersTo(fromId, toId)
+
+Move group members
+
+Moves all the members from the selected group to another one specified in the request.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.GroupApi();
+let fromId = "75a5f745-f697-4418-b38d-0fe0d277e258"; // String | The group ID to move from.
+let toId = "75a5f745-f697-4418-b38d-0fe0d277e258"; // String | The group ID to move to.
+apiInstance.moveMembersTo(fromId, toId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fromId** | **String**| The group ID to move from. | 
+ **toId** | **String**| The group ID to move to. | 
+
+### Return type
+
+[**GroupWrapper**](GroupWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## removeMembersFrom
+
+> GroupWrapper removeMembersFrom(id, opts)
+
+Remove group members
+
+Removes the group members specified in the request from the selected group.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.GroupApi();
+let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
+let opts = {
+  'membersRequest': new Api.MembersRequest() // MembersRequest | The member request.
+};
+apiInstance.removeMembersFrom(id, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**| The group ID. | 
+ **membersRequest** | [**MembersRequest**](MembersRequest.md)| The member request. | [optional] 
+
+### Return type
+
+[**GroupWrapper**](GroupWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## setGroupManager
+
+> GroupWrapper setGroupManager(id, opts)
+
+Set a group manager
+
+Sets a user with the ID specified in the request as a group manager.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.GroupApi();
+let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
+let opts = {
+  'setManagerRequest': new Api.SetManagerRequest() // SetManagerRequest | The request for setting a group manager.
+};
+apiInstance.setGroupManager(id, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**| The group ID. | 
+ **setManagerRequest** | [**SetManagerRequest**](SetManagerRequest.md)| The request for setting a group manager. | [optional] 
+
+### Return type
+
+[**GroupWrapper**](GroupWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## setMembersTo
+
+> GroupWrapper setMembersTo(id, opts)
+
+Replace group members
+
+Replaces the group members with those specified in the request.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.GroupApi();
+let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
+let opts = {
+  'membersRequest': new Api.MembersRequest() // MembersRequest | The member request.
+};
+apiInstance.setMembersTo(id, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**| The group ID. | 
+ **membersRequest** | [**MembersRequest**](MembersRequest.md)| The member request. | [optional] 
+
+### Return type
+
+[**GroupWrapper**](GroupWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## updateGroup
+
+> GroupWrapper updateGroup(id, opts)
+
+Update a group
+
+Updates the existing group changing the group manager, name, and/or members.
+
+### Example
+
+```javascript
+import Api from 'api';
+let defaultClient = Api.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new Api.GroupApi();
+let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
+let opts = {
+  'updateGroupRequest': new Api.UpdateGroupRequest() // UpdateGroupRequest | The request for updating a group.
+};
+apiInstance.updateGroup(id, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**| The group ID. | 
+ **updateGroupRequest** | [**UpdateGroupRequest**](UpdateGroupRequest.md)| The request for updating a group. | [optional] 
+
+### Return type
+
+[**GroupWrapper**](GroupWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
