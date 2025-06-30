@@ -1,4 +1,4 @@
-# Api.Module
+# DocspaceApiTypescript.Module
 
 ## Properties
 

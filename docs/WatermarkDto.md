@@ -1,4 +1,4 @@
-# Api.WatermarkDto
+# DocspaceApiTypescript.WatermarkDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.MigrationApiInfo
+# DocspaceApiTypescript.MigrationApiInfo
 
 ## Properties
 

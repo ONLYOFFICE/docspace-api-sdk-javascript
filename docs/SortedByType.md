@@ -1,4 +1,4 @@
-# Api.SortedByType
+# DocspaceApiTypescript.SortedByType
 
 ## Enum
 

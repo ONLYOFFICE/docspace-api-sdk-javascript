@@ -1,6 +1,6 @@
-# Api.GroupRoomsApi
+# DocspaceApiTypescript.GroupRoomsApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,8 +19,8 @@ Returns groups with their sharing settings.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -42,7 +42,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.GroupRoomsApi();
+let apiInstance = new DocspaceApiTypescript.GroupRoomsApi();
 let id = 9846; // Number | The group ID.
 let opts = {
   'excludeShared': true, // Boolean | Specifies whether to exclude the group sharing settings from the response.

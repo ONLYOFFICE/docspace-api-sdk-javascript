@@ -1,4 +1,4 @@
-# Api.DocumentBuilderTaskWrapper
+# DocspaceApiTypescript.DocumentBuilderTaskWrapper
 
 ## Properties
 

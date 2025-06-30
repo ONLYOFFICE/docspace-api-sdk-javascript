@@ -1,4 +1,4 @@
-# Api.TenantDto
+# DocspaceApiTypescript.TenantDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.DateToAutoCleanUp
+# DocspaceApiTypescript.DateToAutoCleanUp
 
 ## Enum
 

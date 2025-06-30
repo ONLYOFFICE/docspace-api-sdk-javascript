@@ -1,4 +1,4 @@
-# Api.LogoCover
+# DocspaceApiTypescript.LogoCover
 
 ## Properties
 

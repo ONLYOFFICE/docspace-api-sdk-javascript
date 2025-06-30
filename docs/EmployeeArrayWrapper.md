@@ -1,4 +1,4 @@
-# Api.EmployeeArrayWrapper
+# DocspaceApiTypescript.EmployeeArrayWrapper
 
 ## Properties
 

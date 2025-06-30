@@ -1,4 +1,4 @@
-# Api.BackupProgressWrapper
+# DocspaceApiTypescript.BackupProgressWrapper
 
 ## Properties
 

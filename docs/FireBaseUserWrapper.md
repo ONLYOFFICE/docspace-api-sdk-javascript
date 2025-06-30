@@ -1,4 +1,4 @@
-# Api.FireBaseUserWrapper
+# DocspaceApiTypescript.FireBaseUserWrapper
 
 ## Properties
 

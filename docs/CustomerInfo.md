@@ -1,11 +1,11 @@
-# Api.CustomerInfo
+# DocspaceApiTypescript.CustomerInfo
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**portalId** | **String** |  | [optional] 
+**portalId** | **String** | The portal ID. | [optional] 
 **paymentMethodStatus** | [**PaymentMethodStatus**](PaymentMethodStatus.md) |  | [optional] 
-**email** | **String** |  | [optional] 
+**email** | **String** | The email address of the customer. | [optional] 
 
 

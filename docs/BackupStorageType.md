@@ -1,4 +1,4 @@
-# Api.BackupStorageType
+# DocspaceApiTypescript.BackupStorageType
 
 ## Enum
 

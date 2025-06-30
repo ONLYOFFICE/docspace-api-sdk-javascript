@@ -1,4 +1,4 @@
-# Api.FolderDtoInteger
+# DocspaceApiTypescript.FolderDtoInteger
 
 ## Properties
 

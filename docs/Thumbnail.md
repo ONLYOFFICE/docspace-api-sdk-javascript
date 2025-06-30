@@ -1,4 +1,4 @@
-# Api.Thumbnail
+# DocspaceApiTypescript.Thumbnail
 
 ## Enum
 

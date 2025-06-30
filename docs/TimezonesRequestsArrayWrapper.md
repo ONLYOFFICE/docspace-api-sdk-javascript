@@ -1,4 +1,4 @@
-# Api.TimezonesRequestsArrayWrapper
+# DocspaceApiTypescript.TimezonesRequestsArrayWrapper
 
 ## Properties
 

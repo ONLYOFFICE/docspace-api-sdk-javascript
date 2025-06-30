@@ -1,4 +1,4 @@
-# Api.MobilePhoneActivationStatus
+# DocspaceApiTypescript.MobilePhoneActivationStatus
 
 ## Enum
 

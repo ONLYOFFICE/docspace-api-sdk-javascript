@@ -1,4 +1,4 @@
-# Api.Payments
+# DocspaceApiTypescript.Payments
 
 ## Enum
 

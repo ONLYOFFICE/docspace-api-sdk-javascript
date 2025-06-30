@@ -1,4 +1,4 @@
-# Api.CreateRoomFromTemplateDto
+# DocspaceApiTypescript.CreateRoomFromTemplateDto
 
 ## Properties
 

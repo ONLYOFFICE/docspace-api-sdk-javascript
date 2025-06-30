@@ -1,4 +1,4 @@
-# Api.TenantQuota
+# DocspaceApiTypescript.TenantQuota
 
 ## Properties
 

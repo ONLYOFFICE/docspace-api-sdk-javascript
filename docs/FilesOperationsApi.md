@@ -1,6 +1,6 @@
-# Api.FilesOperationsApi
+# DocspaceApiTypescript.FilesOperationsApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -35,11 +35,11 @@ Starts the download process of files and folders with the IDs specified in the r
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesOperationsApi();
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
 let opts = {
-  'downloadRequestDto': new Api.DownloadRequestDto() // DownloadRequestDto | 
+  'downloadRequestDto': new DocspaceApiTypescript.DownloadRequestDto() // DownloadRequestDto | 
 };
 apiInstance.bulkDownload(opts, (error, data, response) => {
   if (error) {
@@ -82,8 +82,8 @@ Checks the conversion status of a file with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -105,7 +105,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesOperationsApi();
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
 let fileId = 9846; // Number | The file ID to check conversion status.
 let opts = {
   'start': true // Boolean | Specifies whether a conversion operation is started or not.
@@ -152,8 +152,8 @@ Checks if files or folders can be moved or copied to the specified folder, moves
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -175,9 +175,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesOperationsApi();
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
 let opts = {
-  'inDto': new Api.BatchRequestDto() // BatchRequestDto | The request parameters for copying/moving files.
+  'inDto': new DocspaceApiTypescript.BatchRequestDto() // BatchRequestDto | The request parameters for copying/moving files.
 };
 apiInstance.checkMoveOrCopyBatchItems(opts, (error, data, response) => {
   if (error) {
@@ -220,8 +220,8 @@ Checks if files can be moved or copied to the specified folder.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -243,9 +243,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesOperationsApi();
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
 let opts = {
-  'inDto': new Api.BatchRequestDto() // BatchRequestDto | The request parameters for copying/moving files.
+  'inDto': new DocspaceApiTypescript.BatchRequestDto() // BatchRequestDto | The request parameters for copying/moving files.
 };
 apiInstance.checkMoveOrCopyDestFolder(opts, (error, data, response) => {
   if (error) {
@@ -288,8 +288,8 @@ Copies all the selected files and folders to the folder with the ID specified in
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -311,9 +311,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesOperationsApi();
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
 let opts = {
-  'batchRequestDto': new Api.BatchRequestDto() // BatchRequestDto | 
+  'batchRequestDto': new DocspaceApiTypescript.BatchRequestDto() // BatchRequestDto | 
 };
 apiInstance.copyBatchItems(opts, (error, data, response) => {
   if (error) {
@@ -356,8 +356,8 @@ Creates the session to upload large files in multiple chunks to the folder with 
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -379,10 +379,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesOperationsApi();
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
 let folderId = 9846; // Number | The folder ID of the session.
 let opts = {
-  'sessionRequest': new Api.SessionRequest() // SessionRequest | The session parameters.
+  'sessionRequest': new DocspaceApiTypescript.SessionRequest() // SessionRequest | The session parameters.
 };
 apiInstance.createUploadSession(folderId, opts, (error, data, response) => {
   if (error) {
@@ -426,8 +426,8 @@ Deletes the files and folders with the IDs specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -449,9 +449,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesOperationsApi();
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
 let opts = {
-  'deleteBatchRequestDto': new Api.DeleteBatchRequestDto() // DeleteBatchRequestDto | 
+  'deleteBatchRequestDto': new DocspaceApiTypescript.DeleteBatchRequestDto() // DeleteBatchRequestDto | 
 };
 apiInstance.deleteBatchItems(opts, (error, data, response) => {
   if (error) {
@@ -494,8 +494,8 @@ Deletes the file versions with the IDs specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -517,9 +517,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesOperationsApi();
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
 let opts = {
-  'deleteVersionBatchRequestDto': new Api.DeleteVersionBatchRequestDto() // DeleteVersionBatchRequestDto | 
+  'deleteVersionBatchRequestDto': new DocspaceApiTypescript.DeleteVersionBatchRequestDto() // DeleteVersionBatchRequestDto | 
 };
 apiInstance.deleteFileVersions(opts, (error, data, response) => {
   if (error) {
@@ -562,8 +562,8 @@ Duplicates all the selected files and folders.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -585,9 +585,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesOperationsApi();
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
 let opts = {
-  'duplicateRequestDto': new Api.DuplicateRequestDto() // DuplicateRequestDto | 
+  'duplicateRequestDto': new DocspaceApiTypescript.DuplicateRequestDto() // DuplicateRequestDto | 
 };
 apiInstance.duplicateBatchItems(opts, (error, data, response) => {
   if (error) {
@@ -630,8 +630,8 @@ Deletes all the files and folders from the \&quot;Trash\&quot; folder.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -653,7 +653,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesOperationsApi();
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
 let opts = {
   'single': true // Boolean | Specifies whether to return only the current operation
 };
@@ -698,9 +698,9 @@ Returns a list of all the active file operations.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesOperationsApi();
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
 let opts = {
   'id': "9846" // String | The ID of the file operation.
 };
@@ -745,10 +745,10 @@ Retrieves the statuses of operations filtered by the specified operation type.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesOperationsApi();
-let operationType = new Api.FileOperationType(); // FileOperationType | Specifies the type of file operation to be retrieved.
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
+let operationType = new DocspaceApiTypescript.FileOperationType(); // FileOperationType | Specifies the type of file operation to be retrieved.
 let opts = {
   'id': "9846" // String | The ID of the file operation.
 };
@@ -794,8 +794,8 @@ Marks the files and folders with the IDs specified in the request as read.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -817,9 +817,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesOperationsApi();
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
 let opts = {
-  'baseBatchRequestDto': new Api.BaseBatchRequestDto() // BaseBatchRequestDto | 
+  'baseBatchRequestDto': new DocspaceApiTypescript.BaseBatchRequestDto() // BaseBatchRequestDto | 
 };
 apiInstance.markAsRead(opts, (error, data, response) => {
   if (error) {
@@ -862,8 +862,8 @@ Moves or copies all the selected files and folders to the folder with the ID spe
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -885,9 +885,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesOperationsApi();
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
 let opts = {
-  'batchRequestDto': new Api.BatchRequestDto() // BatchRequestDto | 
+  'batchRequestDto': new DocspaceApiTypescript.BatchRequestDto() // BatchRequestDto | 
 };
 apiInstance.moveBatchItems(opts, (error, data, response) => {
   if (error) {
@@ -930,8 +930,8 @@ Starts a conversion operation of a file with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -953,10 +953,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesOperationsApi();
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
 let fileId = 9846; // Number | The file ID to start conversion proccess.
 let opts = {
-  'checkConversionRequestDtoInteger': new Api.CheckConversionRequestDtoInteger() // CheckConversionRequestDtoInteger | The parameters for checking file conversion.
+  'checkConversionRequestDtoInteger': new DocspaceApiTypescript.CheckConversionRequestDtoInteger() // CheckConversionRequestDtoInteger | The parameters for checking file conversion.
 };
 apiInstance.startFileConversion(fileId, opts, (error, data, response) => {
   if (error) {
@@ -1000,9 +1000,9 @@ Finishes an operation with the ID specified in the request or all the active ope
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesOperationsApi();
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
 let id = "9846"; // String | The operation ID of the request.
 apiInstance.terminateTasks(id, (error, data, response) => {
   if (error) {
@@ -1045,8 +1045,8 @@ Updates a comment in a file with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1068,10 +1068,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesOperationsApi();
+let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
 let fileId = 9846; // Number | The file ID where the comment is located.
 let opts = {
-  'updateComment': new Api.UpdateComment() // UpdateComment | The parameters for updating a comment.
+  'updateComment': new DocspaceApiTypescript.UpdateComment() // UpdateComment | The parameters for updating a comment.
 };
 apiInstance.updateFileComment(fileId, opts, (error, data, response) => {
   if (error) {

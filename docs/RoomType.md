@@ -1,4 +1,4 @@
-# Api.RoomType
+# DocspaceApiTypescript.RoomType
 
 ## Enum
 

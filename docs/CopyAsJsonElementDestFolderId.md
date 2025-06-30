@@ -1,4 +1,4 @@
-# Api.CopyAsJsonElementDestFolderId
+# DocspaceApiTypescript.CopyAsJsonElementDestFolderId
 
 ## Properties
 

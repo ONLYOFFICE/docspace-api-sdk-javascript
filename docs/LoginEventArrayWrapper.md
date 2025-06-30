@@ -1,4 +1,4 @@
-# Api.LoginEventArrayWrapper
+# DocspaceApiTypescript.LoginEventArrayWrapper
 
 ## Properties
 

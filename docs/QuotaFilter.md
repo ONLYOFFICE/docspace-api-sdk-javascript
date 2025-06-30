@@ -1,4 +1,4 @@
-# Api.QuotaFilter
+# DocspaceApiTypescript.QuotaFilter
 
 ## Enum
 

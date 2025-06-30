@@ -1,4 +1,4 @@
-# Api.DistributedTaskStatus
+# DocspaceApiTypescript.DistributedTaskStatus
 
 ## Enum
 

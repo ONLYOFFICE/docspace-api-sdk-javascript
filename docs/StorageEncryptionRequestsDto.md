@@ -1,4 +1,4 @@
-# Api.StorageEncryptionRequestsDto
+# DocspaceApiTypescript.StorageEncryptionRequestsDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.CurrenciesDto
+# DocspaceApiTypescript.CurrenciesDto
 
 ## Properties
 

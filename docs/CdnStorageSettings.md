@@ -1,4 +1,4 @@
-# Api.CdnStorageSettings
+# DocspaceApiTypescript.CdnStorageSettings
 
 ## Properties
 

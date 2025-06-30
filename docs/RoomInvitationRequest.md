@@ -1,4 +1,4 @@
-# Api.RoomInvitationRequest
+# DocspaceApiTypescript.RoomInvitationRequest
 
 ## Properties
 

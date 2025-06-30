@@ -1,4 +1,4 @@
-# Api.StorageSettingsWrapper
+# DocspaceApiTypescript.StorageSettingsWrapper
 
 ## Properties
 

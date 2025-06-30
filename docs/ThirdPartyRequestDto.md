@@ -1,4 +1,4 @@
-# Api.ThirdPartyRequestDto
+# DocspaceApiTypescript.ThirdPartyRequestDto
 
 ## Properties
 

@@ -1,6 +1,6 @@
-# Api.ApiKeysApi
+# DocspaceApiTypescript.ApiKeysApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -24,8 +24,8 @@ Creates a user API key with the parameters specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -47,9 +47,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.ApiKeysApi();
+let apiInstance = new DocspaceApiTypescript.ApiKeysApi();
 let opts = {
-  'createApiKeyRequestDto': new Api.CreateApiKeyRequestDto() // CreateApiKeyRequestDto | 
+  'createApiKeyRequestDto': new DocspaceApiTypescript.CreateApiKeyRequestDto() // CreateApiKeyRequestDto | 
 };
 apiInstance.createApiKey(opts, (error, data, response) => {
   if (error) {
@@ -92,8 +92,8 @@ Delete a user API key by its ID.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -115,7 +115,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.ApiKeysApi();
+let apiInstance = new DocspaceApiTypescript.ApiKeysApi();
 let keyId = "keyId_example"; // String | The API key ID.
 apiInstance.deleteApiKey(keyId, (error, data, response) => {
   if (error) {
@@ -158,8 +158,8 @@ Returns a list of all available permissions for the API key.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -181,7 +181,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.ApiKeysApi();
+let apiInstance = new DocspaceApiTypescript.ApiKeysApi();
 apiInstance.getAllPermissions((error, data, response) => {
   if (error) {
     console.error(error);
@@ -220,8 +220,8 @@ Returns current user API key info.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -243,7 +243,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.ApiKeysApi();
+let apiInstance = new DocspaceApiTypescript.ApiKeysApi();
 apiInstance.getApiKey((error, data, response) => {
   if (error) {
     console.error(error);
@@ -282,8 +282,8 @@ Returns a list of all API keys for the current user.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -305,7 +305,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.ApiKeysApi();
+let apiInstance = new DocspaceApiTypescript.ApiKeysApi();
 apiInstance.getApiKeys((error, data, response) => {
   if (error) {
     console.error(error);
@@ -344,8 +344,8 @@ Updates an existing API key changing its name, permissions and status.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -367,10 +367,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.ApiKeysApi();
+let apiInstance = new DocspaceApiTypescript.ApiKeysApi();
 let keyId = "75a5f745-f697-4418-b38d-0fe0d277e258"; // String | The unique identifier of the API key to update.
 let opts = {
-  'updateApiKeyRequest': new Api.UpdateApiKeyRequest() // UpdateApiKeyRequest | The request parameters for updating an existing API key.
+  'updateApiKeyRequest': new DocspaceApiTypescript.UpdateApiKeyRequest() // UpdateApiKeyRequest | The request parameters for updating an existing API key.
 };
 apiInstance.updateApiKey(keyId, opts, (error, data, response) => {
   if (error) {

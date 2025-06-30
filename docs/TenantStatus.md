@@ -1,4 +1,4 @@
-# Api.TenantStatus
+# DocspaceApiTypescript.TenantStatus
 
 ## Enum
 

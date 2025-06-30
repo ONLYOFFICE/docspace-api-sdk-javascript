@@ -1,6 +1,6 @@
-# Api.SettingsLicenseApi
+# DocspaceApiTypescript.SettingsLicenseApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,8 +22,8 @@ Activates a license for the portal.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -45,7 +45,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsLicenseApi();
+let apiInstance = new DocspaceApiTypescript.SettingsLicenseApi();
 apiInstance.acceptLicense((error, data, response) => {
   if (error) {
     console.error(error);
@@ -84,9 +84,9 @@ Requests a portal license if necessary.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.SettingsLicenseApi();
+let apiInstance = new DocspaceApiTypescript.SettingsLicenseApi();
 apiInstance.getIsLicenseRequired((error, data, response) => {
   if (error) {
     console.error(error);
@@ -125,8 +125,8 @@ Refreshes the portal license.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -148,7 +148,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsLicenseApi();
+let apiInstance = new DocspaceApiTypescript.SettingsLicenseApi();
 apiInstance.refreshLicense((error, data, response) => {
   if (error) {
     console.error(error);
@@ -187,8 +187,8 @@ Uploads a portal license specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -210,7 +210,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsLicenseApi();
+let apiInstance = new DocspaceApiTypescript.SettingsLicenseApi();
 let files = ["null"]; // [File] | The list of license files to be uploaded.
 apiInstance.uploadLicense(files, (error, data, response) => {
   if (error) {

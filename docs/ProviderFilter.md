@@ -1,4 +1,4 @@
-# Api.ProviderFilter
+# DocspaceApiTypescript.ProviderFilter
 
 ## Enum
 

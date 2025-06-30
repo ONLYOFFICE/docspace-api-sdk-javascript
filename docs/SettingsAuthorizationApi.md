@@ -1,6 +1,6 @@
-# Api.SettingsAuthorizationApi
+# DocspaceApiTypescript.SettingsAuthorizationApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,8 +20,8 @@ Returns the authorization services.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -43,7 +43,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsAuthorizationApi();
+let apiInstance = new DocspaceApiTypescript.SettingsAuthorizationApi();
 apiInstance.getAuthServices((error, data, response) => {
   if (error) {
     console.error(error);
@@ -82,8 +82,8 @@ Saves the authorization keys.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -105,9 +105,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsAuthorizationApi();
+let apiInstance = new DocspaceApiTypescript.SettingsAuthorizationApi();
 let opts = {
-  'authServiceRequestsDto': new Api.AuthServiceRequestsDto() // AuthServiceRequestsDto | 
+  'authServiceRequestsDto': new DocspaceApiTypescript.AuthServiceRequestsDto() // AuthServiceRequestsDto | 
 };
 apiInstance.saveAuthKeys(opts, (error, data, response) => {
   if (error) {

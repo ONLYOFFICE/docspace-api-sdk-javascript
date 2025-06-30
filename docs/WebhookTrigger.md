@@ -1,4 +1,4 @@
-# Api.WebhookTrigger
+# DocspaceApiTypescript.WebhookTrigger
 
 ## Enum
 

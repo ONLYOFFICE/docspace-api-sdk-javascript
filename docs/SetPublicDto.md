@@ -1,4 +1,4 @@
-# Api.SetPublicDto
+# DocspaceApiTypescript.SetPublicDto
 
 ## Properties
 

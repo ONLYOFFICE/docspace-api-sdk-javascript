@@ -1,4 +1,4 @@
-# Api.TurnOnAdminMessageSettingsRequestDto
+# DocspaceApiTypescript.TurnOnAdminMessageSettingsRequestDto
 
 ## Properties
 

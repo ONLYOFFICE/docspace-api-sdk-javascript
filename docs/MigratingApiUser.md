@@ -1,4 +1,4 @@
-# Api.MigratingApiUser
+# DocspaceApiTypescript.MigratingApiUser
 
 ## Properties
 

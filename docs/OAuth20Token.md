@@ -1,4 +1,4 @@
-# Api.OAuth20Token
+# DocspaceApiTypescript.OAuth20Token
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.MentionWrapperArrayWrapper
+# DocspaceApiTypescript.MentionWrapperArrayWrapper
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.LoginSettingsDto
+# DocspaceApiTypescript.LoginSettingsDto
 
 ## Properties
 

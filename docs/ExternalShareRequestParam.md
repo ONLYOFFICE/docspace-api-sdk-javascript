@@ -1,4 +1,4 @@
-# Api.ExternalShareRequestParam
+# DocspaceApiTypescript.ExternalShareRequestParam
 
 ## Properties
 

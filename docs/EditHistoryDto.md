@@ -1,4 +1,4 @@
-# Api.EditHistoryDto
+# DocspaceApiTypescript.EditHistoryDto
 
 ## Properties
 

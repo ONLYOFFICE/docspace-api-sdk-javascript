@@ -1,4 +1,4 @@
-# Api.TerminateRequestDto
+# DocspaceApiTypescript.TerminateRequestDto
 
 ## Properties
 

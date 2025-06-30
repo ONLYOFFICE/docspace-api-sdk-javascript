@@ -1,6 +1,6 @@
-# Api.SettingsQuotaApi
+# DocspaceApiTypescript.SettingsQuotaApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,8 +21,8 @@ Returns the user quota settings.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -44,7 +44,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsQuotaApi();
+let apiInstance = new DocspaceApiTypescript.SettingsQuotaApi();
 apiInstance.getUserQuotaSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -83,8 +83,8 @@ Saves the room quota settings specified in the request to the current portal.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -106,9 +106,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsQuotaApi();
+let apiInstance = new DocspaceApiTypescript.SettingsQuotaApi();
 let opts = {
-  'quotaSettingsRequestsDto': new Api.QuotaSettingsRequestsDto() // QuotaSettingsRequestsDto | 
+  'quotaSettingsRequestsDto': new DocspaceApiTypescript.QuotaSettingsRequestsDto() // QuotaSettingsRequestsDto | 
 };
 apiInstance.saveRoomQuotaSettings(opts, (error, data, response) => {
   if (error) {
@@ -151,8 +151,8 @@ Saves the tenant quota settings specified in the request to the current portal.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -174,9 +174,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsQuotaApi();
+let apiInstance = new DocspaceApiTypescript.SettingsQuotaApi();
 let opts = {
-  'tenantQuotaSettingsRequestsDto': new Api.TenantQuotaSettingsRequestsDto() // TenantQuotaSettingsRequestsDto | 
+  'tenantQuotaSettingsRequestsDto': new DocspaceApiTypescript.TenantQuotaSettingsRequestsDto() // TenantQuotaSettingsRequestsDto | 
 };
 apiInstance.setTenantQuotaSettings(opts, (error, data, response) => {
   if (error) {

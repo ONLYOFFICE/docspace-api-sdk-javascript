@@ -1,4 +1,4 @@
-# Api.CspRequestsDto
+# DocspaceApiTypescript.CspRequestsDto
 
 ## Properties
 

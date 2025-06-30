@@ -1,4 +1,4 @@
-# Api.Run
+# DocspaceApiTypescript.Run
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.DbTenant
+# DocspaceApiTypescript.DbTenant
 
 ## Properties
 

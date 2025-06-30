@@ -1,4 +1,4 @@
-# Api.CoEditingConfigMode
+# DocspaceApiTypescript.CoEditingConfigMode
 
 ## Enum
 

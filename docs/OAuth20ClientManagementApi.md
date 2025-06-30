@@ -1,6 +1,6 @@
-# Api.OAuth20ClientManagementApi
+# DocspaceApiTypescript.OAuth20ClientManagementApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -24,17 +24,17 @@ Activates or deactivates an OAuth2 client. When deactivated, the client cannot r
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new Api.OAuth20ClientManagementApi();
+let apiInstance = new DocspaceApiTypescript.OAuth20ClientManagementApi();
 let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
-let changeClientActivationRequest = new Api.ChangeClientActivationRequest(); // ChangeClientActivationRequest | 
+let changeClientActivationRequest = new DocspaceApiTypescript.ChangeClientActivationRequest(); // ChangeClientActivationRequest | 
 apiInstance.changeActivation(clientId, changeClientActivationRequest, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -77,16 +77,16 @@ Creates a new OAuth2 client with the specified configuration. The client will be
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new Api.OAuth20ClientManagementApi();
-let createClientRequest = new Api.CreateClientRequest(); // CreateClientRequest | 
+let apiInstance = new DocspaceApiTypescript.OAuth20ClientManagementApi();
+let createClientRequest = new DocspaceApiTypescript.CreateClientRequest(); // CreateClientRequest | 
 apiInstance.createClient(createClientRequest, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -128,15 +128,15 @@ Permanently deletes an OAuth2 client and all associated data. All access and ref
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new Api.OAuth20ClientManagementApi();
+let apiInstance = new DocspaceApiTypescript.OAuth20ClientManagementApi();
 let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
 apiInstance.deleteClient(clientId, (error, data, response) => {
   if (error) {
@@ -179,15 +179,15 @@ Generates a new client secret for the specified OAuth2 client. The old secret wi
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new Api.OAuth20ClientManagementApi();
+let apiInstance = new DocspaceApiTypescript.OAuth20ClientManagementApi();
 let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
 apiInstance.regenerateSecret(clientId, (error, data, response) => {
   if (error) {
@@ -230,15 +230,15 @@ Revokes all user consents for the specified OAuth2 client. This will invalidate 
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new Api.OAuth20ClientManagementApi();
+let apiInstance = new DocspaceApiTypescript.OAuth20ClientManagementApi();
 let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
 apiInstance.revokeUserClient(clientId, (error, data, response) => {
   if (error) {
@@ -281,17 +281,17 @@ Updates the configuration of an existing OAuth2 client, allowing modifications t
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new Api.OAuth20ClientManagementApi();
+let apiInstance = new DocspaceApiTypescript.OAuth20ClientManagementApi();
 let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
-let updateClientRequest = new Api.UpdateClientRequest(); // UpdateClientRequest | 
+let updateClientRequest = new DocspaceApiTypescript.UpdateClientRequest(); // UpdateClientRequest | 
 apiInstance.updateClient(clientId, updateClientRequest, (error, data, response) => {
   if (error) {
     console.error(error);

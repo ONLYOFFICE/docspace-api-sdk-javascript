@@ -1,4 +1,4 @@
-# Api.AutoCleanUpData
+# DocspaceApiTypescript.AutoCleanUpData
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.CreateRoomRequestDto
+# DocspaceApiTypescript.CreateRoomRequestDto
 
 ## Properties
 

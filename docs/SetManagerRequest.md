@@ -1,4 +1,4 @@
-# Api.SetManagerRequest
+# DocspaceApiTypescript.SetManagerRequest
 
 ## Properties
 

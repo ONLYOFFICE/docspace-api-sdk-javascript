@@ -1,4 +1,4 @@
-# Api.IpRestrictionBase
+# DocspaceApiTypescript.IpRestrictionBase
 
 ## Properties
 

@@ -1,6 +1,6 @@
-# Api.SecurityFirebaseApi
+# DocspaceApiTypescript.SecurityFirebaseApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,8 +20,8 @@ Saves the Firebase device token specified in the request for the Documents appli
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -43,9 +43,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SecurityFirebaseApi();
+let apiInstance = new DocspaceApiTypescript.SecurityFirebaseApi();
 let opts = {
-  'firebaseRequestsDto': new Api.FirebaseRequestsDto() // FirebaseRequestsDto | 
+  'firebaseRequestsDto': new DocspaceApiTypescript.FirebaseRequestsDto() // FirebaseRequestsDto | 
 };
 apiInstance.docRegisterPusnNotificationDevice(opts, (error, data, response) => {
   if (error) {
@@ -88,8 +88,8 @@ Subscribes to the Documents push notification.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -111,9 +111,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SecurityFirebaseApi();
+let apiInstance = new DocspaceApiTypescript.SecurityFirebaseApi();
 let opts = {
-  'firebaseRequestsDto': new Api.FirebaseRequestsDto() // FirebaseRequestsDto | 
+  'firebaseRequestsDto': new DocspaceApiTypescript.FirebaseRequestsDto() // FirebaseRequestsDto | 
 };
 apiInstance.subscribeDocumentsPushNotification(opts, (error, data, response) => {
   if (error) {

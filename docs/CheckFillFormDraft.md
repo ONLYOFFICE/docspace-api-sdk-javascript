@@ -1,4 +1,4 @@
-# Api.CheckFillFormDraft
+# DocspaceApiTypescript.CheckFillFormDraft
 
 ## Properties
 

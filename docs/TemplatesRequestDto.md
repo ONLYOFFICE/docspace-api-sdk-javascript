@@ -1,4 +1,4 @@
-# Api.TemplatesRequestDto
+# DocspaceApiTypescript.TemplatesRequestDto
 
 ## Properties
 

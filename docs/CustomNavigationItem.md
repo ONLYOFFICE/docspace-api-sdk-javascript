@@ -1,4 +1,4 @@
-# Api.CustomNavigationItem
+# DocspaceApiTypescript.CustomNavigationItem
 
 ## Properties
 

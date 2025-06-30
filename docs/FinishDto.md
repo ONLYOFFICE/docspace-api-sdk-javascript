@@ -1,4 +1,4 @@
-# Api.FinishDto
+# DocspaceApiTypescript.FinishDto
 
 ## Properties
 

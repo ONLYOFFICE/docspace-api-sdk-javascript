@@ -1,4 +1,4 @@
-# Api.Oauth2TokenPost200Response
+# DocspaceApiTypescript.ExchangeToken200Response
 
 ## Properties
 

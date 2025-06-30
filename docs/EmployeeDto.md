@@ -1,4 +1,4 @@
-# Api.EmployeeDto
+# DocspaceApiTypescript.EmployeeDto
 
 ## Properties
 

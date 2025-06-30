@@ -1,11 +1,11 @@
-# Api.Session
+# DocspaceApiTypescript.Session
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**sessionId** | **Number** |  | [optional] 
-**reservedAmount** | **Number** |  | [optional] 
-**currency** | **String** |  | [optional] 
+**sessionId** | **Number** | Unique identifier of the session. | [optional] 
+**reservedAmount** | **Number** | Amount reserved for the session. | [optional] 
+**currency** | **String** | The three-character ISO 4217 currency symbol of the reserved amount. | [optional] 
 
 

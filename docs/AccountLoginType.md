@@ -1,4 +1,4 @@
-# Api.AccountLoginType
+# DocspaceApiTypescript.AccountLoginType
 
 ## Enum
 

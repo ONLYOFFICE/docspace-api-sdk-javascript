@@ -1,4 +1,4 @@
-# Api.ActiveConnectionsWrapper
+# DocspaceApiTypescript.ActiveConnectionsWrapper
 
 ## Properties
 

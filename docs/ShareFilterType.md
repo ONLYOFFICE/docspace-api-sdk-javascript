@@ -1,4 +1,4 @@
-# Api.ShareFilterType
+# DocspaceApiTypescript.ShareFilterType
 
 ## Enum
 

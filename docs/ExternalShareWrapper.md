@@ -1,4 +1,4 @@
-# Api.ExternalShareWrapper
+# DocspaceApiTypescript.ExternalShareWrapper
 
 ## Properties
 

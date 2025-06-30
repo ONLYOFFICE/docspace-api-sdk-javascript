@@ -1,6 +1,6 @@
-# Api.FilesFilesApi
+# DocspaceApiTypescript.FilesFilesApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -63,8 +63,8 @@ Adds files with the IDs specified in the request to the template list.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -86,9 +86,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let opts = {
-  'templatesRequestDto': new Api.TemplatesRequestDto() // TemplatesRequestDto | 
+  'templatesRequestDto': new DocspaceApiTypescript.TemplatesRequestDto() // TemplatesRequestDto | 
 };
 apiInstance.addTemplates(opts, (error, data, response) => {
   if (error) {
@@ -131,8 +131,8 @@ Changes the version history of a file with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -154,10 +154,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file Id to change its version history.
 let opts = {
-  'changeHistory': new Api.ChangeHistory() // ChangeHistory | The parameters for changing version history.
+  'changeHistory': new DocspaceApiTypescript.ChangeHistory() // ChangeHistory | The parameters for changing version history.
 };
 apiInstance.changeVersionHistory(fileId, opts, (error, data, response) => {
   if (error) {
@@ -201,12 +201,12 @@ Checks if the current file is a form draft which can be filled out.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID of the form draft.
 let opts = {
-  'checkFillFormDraft': new Api.CheckFillFormDraft() // CheckFillFormDraft | The parameters for checking the form draft filling.
+  'checkFillFormDraft': new DocspaceApiTypescript.CheckFillFormDraft() // CheckFillFormDraft | The parameters for checking the form draft filling.
 };
 apiInstance.checkFillFormDraft(fileId, opts, (error, data, response) => {
   if (error) {
@@ -250,8 +250,8 @@ Copies (and converts if possible) an existing file to the specified folder.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -273,10 +273,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID to copy.
 let opts = {
-  'copyAsJsonElement': new Api.CopyAsJsonElement() // CopyAsJsonElement | The parameters for copying a file.
+  'copyAsJsonElement': new DocspaceApiTypescript.CopyAsJsonElement() // CopyAsJsonElement | The parameters for copying a file.
 };
 apiInstance.copyFileAs(fileId, opts, (error, data, response) => {
   if (error) {
@@ -320,8 +320,8 @@ Creates a session to edit the existing file with multiple chunks (needed for Web
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -343,7 +343,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID.
 let opts = {
   'fileSize': 1234 // Number | The file size in bytes.
@@ -390,8 +390,8 @@ Creates a new file in the specified folder with the title specified in the reque
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -413,10 +413,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let folderId = 9846; // Number | The folder ID for the file creation.
 let opts = {
-  'createFileJsonElement': new Api.CreateFileJsonElement() // CreateFileJsonElement | The parameters for creating a file.
+  'createFileJsonElement': new DocspaceApiTypescript.CreateFileJsonElement() // CreateFileJsonElement | The parameters for creating a file.
 };
 apiInstance.createFile(folderId, opts, (error, data, response) => {
   if (error) {
@@ -460,8 +460,8 @@ Creates a new file in the \&quot;My documents\&quot; section with the title spec
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -483,9 +483,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let opts = {
-  'createFileJsonElement': new Api.CreateFileJsonElement() // CreateFileJsonElement | 
+  'createFileJsonElement': new DocspaceApiTypescript.CreateFileJsonElement() // CreateFileJsonElement | 
 };
 apiInstance.createFileInMyDocuments(opts, (error, data, response) => {
   if (error) {
@@ -528,8 +528,8 @@ Creates an HTML (.html) file in the selected folder with the title and contents 
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -551,10 +551,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let folderId = 9846; // Number | The folder ID to create the text or HTML file.
 let opts = {
-  'createTextOrHtmlFile': new Api.CreateTextOrHtmlFile() // CreateTextOrHtmlFile | The parameters for creating an HTML or text file.
+  'createTextOrHtmlFile': new DocspaceApiTypescript.CreateTextOrHtmlFile() // CreateTextOrHtmlFile | The parameters for creating an HTML or text file.
 };
 apiInstance.createHtmlFile(folderId, opts, (error, data, response) => {
   if (error) {
@@ -598,8 +598,8 @@ Creates an HTML (.html) file in the \&quot;My documents\&quot; section with the 
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -621,9 +621,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let opts = {
-  'createTextOrHtmlFile': new Api.CreateTextOrHtmlFile() // CreateTextOrHtmlFile | 
+  'createTextOrHtmlFile': new DocspaceApiTypescript.CreateTextOrHtmlFile() // CreateTextOrHtmlFile | 
 };
 apiInstance.createHtmlFileInMyDocuments(opts, (error, data, response) => {
   if (error) {
@@ -666,8 +666,8 @@ Creates a primary external link by the identifier specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -689,10 +689,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let id = 9846; // Number | The file ID.
 let opts = {
-  'fileLinkRequest': new Api.FileLinkRequest() // FileLinkRequest | The file external link parameters.
+  'fileLinkRequest': new DocspaceApiTypescript.FileLinkRequest() // FileLinkRequest | The file external link parameters.
 };
 apiInstance.createPrimaryExternalLink(id, opts, (error, data, response) => {
   if (error) {
@@ -736,8 +736,8 @@ Creates a text (.txt) file in the selected folder with the title and contents sp
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -759,10 +759,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let folderId = 9846; // Number | The folder ID to create the text or HTML file.
 let opts = {
-  'createTextOrHtmlFile': new Api.CreateTextOrHtmlFile() // CreateTextOrHtmlFile | The parameters for creating an HTML or text file.
+  'createTextOrHtmlFile': new DocspaceApiTypescript.CreateTextOrHtmlFile() // CreateTextOrHtmlFile | The parameters for creating an HTML or text file.
 };
 apiInstance.createTextFile(folderId, opts, (error, data, response) => {
   if (error) {
@@ -806,8 +806,8 @@ Creates a text (.txt) file in the \&quot;My documents\&quot; section with the ti
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -829,9 +829,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let opts = {
-  'createTextOrHtmlFile': new Api.CreateTextOrHtmlFile() // CreateTextOrHtmlFile | 
+  'createTextOrHtmlFile': new DocspaceApiTypescript.CreateTextOrHtmlFile() // CreateTextOrHtmlFile | 
 };
 apiInstance.createTextFileInMyDocuments(opts, (error, data, response) => {
   if (error) {
@@ -874,11 +874,11 @@ Creates thumbnails for the files with the IDs specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let opts = {
-  'baseBatchRequestDto': new Api.BaseBatchRequestDto() // BaseBatchRequestDto | 
+  'baseBatchRequestDto': new DocspaceApiTypescript.BaseBatchRequestDto() // BaseBatchRequestDto | 
 };
 apiInstance.createThumbnails(opts, (error, data, response) => {
   if (error) {
@@ -921,8 +921,8 @@ Deletes a file with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -944,9 +944,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID to delete.
-let _delete = new Api.Delete(); // Delete | The parameters for deleting a file.
+let _delete = new DocspaceApiTypescript.Delete(); // Delete | The parameters for deleting a file.
 apiInstance.deleteFile(fileId, _delete, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -989,8 +989,8 @@ Removes files with the IDs specified in the request from the \&quot;Recent\&quot
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1012,9 +1012,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let opts = {
-  'baseBatchRequestDto': new Api.BaseBatchRequestDto() // BaseBatchRequestDto | 
+  'baseBatchRequestDto': new DocspaceApiTypescript.BaseBatchRequestDto() // BaseBatchRequestDto | 
 };
 apiInstance.deleteRecent(opts, (error, data, response) => {
   if (error) {
@@ -1057,8 +1057,8 @@ Removes files with the IDs specified in the request from the template list.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1080,7 +1080,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let opts = {
   'requestBody': [null] // [Number] | The file IDs.
 };
@@ -1125,8 +1125,8 @@ Returns all roles for the specified form.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1148,7 +1148,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID of the request.
 apiInstance.getAllFormRoles(fileId, (error, data, response) => {
   if (error) {
@@ -1191,9 +1191,9 @@ Returns a URL to the changes of a file version specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID.
 let opts = {
   'version': 1234 // Number | The file version.
@@ -1240,9 +1240,9 @@ Returns the version history of a file with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID of the request.
 apiInstance.getEditHistory(fileId, (error, data, response) => {
   if (error) {
@@ -1285,8 +1285,8 @@ Returns the list of actions performed on the file with the specified identifier.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1308,11 +1308,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID of the history request.
 let opts = {
-  'fromDate': new Api.ApiDateTime(), // ApiDateTime | The start date of the history.
-  'toDate': new Api.ApiDateTime(), // ApiDateTime | The end date of the history.
+  'fromDate': new DocspaceApiTypescript.ApiDateTime(), // ApiDateTime | The start date of the history.
+  'toDate': new DocspaceApiTypescript.ApiDateTime(), // ApiDateTime | The end date of the history.
   'count': 1234, // Number | The number of history entries to retrieve for the file log.
   'startIndex': 1234 // Number | The starting index for retrieving a subset of file history entries.
 };
@@ -1361,9 +1361,9 @@ Returns the detailed information about a file with the ID specified in the reque
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID.
 let opts = {
   'version': 1234 // Number | The file version.
@@ -1410,8 +1410,8 @@ Returns the external links of a file with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1433,7 +1433,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let id = 9846; // Number | The file ID of the request.
 let opts = {
   'count': 1234, // Number | The number of items to retrieve in the request.
@@ -1482,9 +1482,9 @@ Returns the primary external link by the identifier specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let id = 9846; // Number | The file ID of the request.
 let opts = {
   'count': 1234, // Number | The number of items to retrieve in the request.
@@ -1533,9 +1533,9 @@ Returns the detailed information about all the available file versions with the 
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID of the request.
 apiInstance.getFileVersionInfo(fileId, (error, data, response) => {
   if (error) {
@@ -1578,9 +1578,9 @@ Retrieves the result of a form-filling session.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let opts = {
   'fillingSessionId': "some text" // String | The form-filling session ID.
 };
@@ -1625,8 +1625,8 @@ Returns a link to download a file with the ID specified in the request asynchron
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1648,7 +1648,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID of the request.
 apiInstance.getPresignedFileUri(fileId, (error, data, response) => {
   if (error) {
@@ -1691,8 +1691,8 @@ Returns a pre-signed URL to download a file with the specified ID.  This tempora
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1714,7 +1714,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID of the request.
 apiInstance.getPresignedUri(fileId, (error, data, response) => {
   if (error) {
@@ -1757,8 +1757,8 @@ Returns a list of users with their access rights to the protected file with the 
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1780,7 +1780,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID of the request.
 apiInstance.getProtectedFileUsers(fileId, (error, data, response) => {
   if (error) {
@@ -1823,8 +1823,8 @@ Returns the reference data to uniquely identify a file in its system and check t
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1846,9 +1846,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let opts = {
-  'getReferenceDataDtoInteger': new Api.GetReferenceDataDtoInteger() // GetReferenceDataDtoInteger | 
+  'getReferenceDataDtoInteger': new DocspaceApiTypescript.GetReferenceDataDtoInteger() // GetReferenceDataDtoInteger | 
 };
 apiInstance.getReferenceData(opts, (error, data, response) => {
   if (error) {
@@ -1891,8 +1891,8 @@ Checks if the PDF file is a form or not.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1914,7 +1914,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID of the request.
 apiInstance.isFormPDF(fileId, (error, data, response) => {
   if (error) {
@@ -1957,8 +1957,8 @@ Locks a file with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1980,10 +1980,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID for locking.
 let opts = {
-  'lockFileParameters': new Api.LockFileParameters() // LockFileParameters | The parameters for locking a file.
+  'lockFileParameters': new DocspaceApiTypescript.LockFileParameters() // LockFileParameters | The parameters for locking a file.
 };
 apiInstance.lockFile(fileId, opts, (error, data, response) => {
   if (error) {
@@ -2027,8 +2027,8 @@ Performs the specified form filling action.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2050,10 +2050,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = "fileId_example"; // String | 
 let opts = {
-  'manageFormFillingDtoInteger': new Api.ManageFormFillingDtoInteger() // ManageFormFillingDtoInteger | 
+  'manageFormFillingDtoInteger': new DocspaceApiTypescript.ManageFormFillingDtoInteger() // ManageFormFillingDtoInteger | 
 };
 apiInstance.manageFormFilling(fileId, opts, (error, data, response) => {
   if (error) {
@@ -2097,14 +2097,14 @@ Returns the initialization configuration of a file to open it in the editor.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID to open.
 let opts = {
   'version': 1234, // Number | The file version to open.
   'view': true, // Boolean | Specifies if the document will be opened for viewing only or not.
-  'editorType': new Api.EditorType(), // EditorType | The editor type to open the file.
+  'editorType': new DocspaceApiTypescript.EditorType(), // EditorType | The editor type to open the file.
   'edit': true, // Boolean | Specifies if the document is opened in the editing mode or not.
   'fill': true // Boolean | Specifies if the document is opened in the form-filling mode or not.
 };
@@ -2154,9 +2154,9 @@ Restores a file version specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID of the restore version.
 let opts = {
   'version': 1234, // Number | The file version of the restore.
@@ -2205,8 +2205,8 @@ Saves edits to a file with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2228,7 +2228,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The editing file ID from the request.
 let opts = {
   'fileExtension': "fileExtension_example", // String | The editing file extension from the request.
@@ -2281,8 +2281,8 @@ Saves a file with the identifier specified in the request as a PDF document.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2304,10 +2304,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let id = 9846; // Number | The file ID to save as PDF.
 let opts = {
-  'saveAsPdfInteger': new Api.SaveAsPdfInteger() // SaveAsPdfInteger | The parameters for saving file as PDF.
+  'saveAsPdfInteger': new DocspaceApiTypescript.SaveAsPdfInteger() // SaveAsPdfInteger | The parameters for saving file as PDF.
 };
 apiInstance.saveFileAsPdf(id, opts, (error, data, response) => {
   if (error) {
@@ -2351,8 +2351,8 @@ Saves the form role mapping.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2374,10 +2374,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = "fileId_example"; // String | 
 let opts = {
-  'saveFormRoleMappingDtoInteger': new Api.SaveFormRoleMappingDtoInteger() // SaveFormRoleMappingDtoInteger | 
+  'saveFormRoleMappingDtoInteger': new DocspaceApiTypescript.SaveFormRoleMappingDtoInteger() // SaveFormRoleMappingDtoInteger | 
 };
 apiInstance.saveFormRoleMapping(fileId, opts, (error, data, response) => {
   if (error) {
@@ -2421,8 +2421,8 @@ Sets the Custom Filter editing mode to a file with the ID specified in the reque
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2444,10 +2444,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID.
 let opts = {
-  'customFilterParameters': new Api.CustomFilterParameters() // CustomFilterParameters | The parameters for setting the Custom Filter editing mode.
+  'customFilterParameters': new DocspaceApiTypescript.CustomFilterParameters() // CustomFilterParameters | The parameters for setting the Custom Filter editing mode.
 };
 apiInstance.setCustomFilterTag(fileId, opts, (error, data, response) => {
   if (error) {
@@ -2491,8 +2491,8 @@ Sets an external link to a file with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2514,10 +2514,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let id = 9846; // Number | The file ID.
 let opts = {
-  'fileLinkRequest': new Api.FileLinkRequest() // FileLinkRequest | The file external link parameters.
+  'fileLinkRequest': new DocspaceApiTypescript.FileLinkRequest() // FileLinkRequest | The file external link parameters.
 };
 apiInstance.setExternalLink(id, opts, (error, data, response) => {
   if (error) {
@@ -2561,8 +2561,8 @@ Sets order of the file with ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2584,10 +2584,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file unique identifier.
 let opts = {
-  'orderRequestDto': new Api.OrderRequestDto() // OrderRequestDto | The file order information.
+  'orderRequestDto': new DocspaceApiTypescript.OrderRequestDto() // OrderRequestDto | The file order information.
 };
 apiInstance.setFileOrder(fileId, opts, (error, data, response) => {
   if (error) {
@@ -2631,8 +2631,8 @@ Sets order of the files.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2654,9 +2654,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let opts = {
-  'ordersRequestDtoInteger': new Api.OrdersRequestDtoInteger() // OrdersRequestDtoInteger | 
+  'ordersRequestDtoInteger': new DocspaceApiTypescript.OrdersRequestDtoInteger() // OrdersRequestDtoInteger | 
 };
 apiInstance.setFilesOrder(opts, (error, data, response) => {
   if (error) {
@@ -2699,12 +2699,12 @@ Informs about opening a file with the ID specified in the request for editing, l
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID to start editing.
 let opts = {
-  'startEdit': new Api.StartEdit() // StartEdit | The file parameters to start editing.
+  'startEdit': new DocspaceApiTypescript.StartEdit() // StartEdit | The file parameters to start editing.
 };
 apiInstance.startEditFile(fileId, opts, (error, data, response) => {
   if (error) {
@@ -2748,8 +2748,8 @@ Starts filling a file with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2771,7 +2771,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID to start filling.
 apiInstance.startFillingFile(fileId, (error, data, response) => {
   if (error) {
@@ -2814,9 +2814,9 @@ Tracks file changes when editing.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID to track editing changes.
 let opts = {
   'tabId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The tab ID to track editing changes.
@@ -2867,12 +2867,12 @@ Updates the information of the selected file with the parameters specified in th
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesFilesApi();
+let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID to update.
 let opts = {
-  'updateFile': new Api.UpdateFile() // UpdateFile | The parameters for updating a file.
+  'updateFile': new DocspaceApiTypescript.UpdateFile() // UpdateFile | The parameters for updating a file.
 };
 apiInstance.updateFile(fileId, opts, (error, data, response) => {
   if (error) {

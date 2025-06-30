@@ -1,4 +1,4 @@
-# Api.CurrentLicenseInfo
+# DocspaceApiTypescript.CurrentLicenseInfo
 
 ## Properties
 

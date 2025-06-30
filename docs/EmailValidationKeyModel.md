@@ -1,4 +1,4 @@
-# Api.EmailValidationKeyModel
+# DocspaceApiTypescript.EmailValidationKeyModel
 
 ## Properties
 

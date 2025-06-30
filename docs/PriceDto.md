@@ -1,4 +1,4 @@
-# Api.PriceDto
+# DocspaceApiTypescript.PriceDto
 
 ## Properties
 

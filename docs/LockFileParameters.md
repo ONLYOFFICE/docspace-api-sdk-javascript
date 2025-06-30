@@ -1,4 +1,4 @@
-# Api.LockFileParameters
+# DocspaceApiTypescript.LockFileParameters
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.DeleteRoomRequest
+# DocspaceApiTypescript.DeleteRoomRequest
 
 ## Properties
 

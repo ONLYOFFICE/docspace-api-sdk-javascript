@@ -1,6 +1,6 @@
-# Api.SettingsCustomNavigationApi
+# DocspaceApiTypescript.SettingsCustomNavigationApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,8 +23,8 @@ Adds a custom navigation item with the parameters specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -46,9 +46,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsCustomNavigationApi();
+let apiInstance = new DocspaceApiTypescript.SettingsCustomNavigationApi();
 let opts = {
-  'customNavigationItem': new Api.CustomNavigationItem() // CustomNavigationItem | 
+  'customNavigationItem': new DocspaceApiTypescript.CustomNavigationItem() // CustomNavigationItem | 
 };
 apiInstance.createCustomNavigationItem(opts, (error, data, response) => {
   if (error) {
@@ -91,8 +91,8 @@ Deletes a custom navigation item with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -114,7 +114,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsCustomNavigationApi();
+let apiInstance = new DocspaceApiTypescript.SettingsCustomNavigationApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The ID extracted from the route parameters.
 apiInstance.deleteCustomNavigationItem(id, (error, data, response) => {
   if (error) {
@@ -157,8 +157,8 @@ Returns a custom navigation item by the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -180,7 +180,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsCustomNavigationApi();
+let apiInstance = new DocspaceApiTypescript.SettingsCustomNavigationApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The ID extracted from the route parameters.
 apiInstance.getCustomNavigationItem(id, (error, data, response) => {
   if (error) {
@@ -223,8 +223,8 @@ Returns a sample of the custom navigation item.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -246,7 +246,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsCustomNavigationApi();
+let apiInstance = new DocspaceApiTypescript.SettingsCustomNavigationApi();
 apiInstance.getCustomNavigationItemSample((error, data, response) => {
   if (error) {
     console.error(error);
@@ -285,8 +285,8 @@ Returns a list of the custom navigation items.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -308,7 +308,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsCustomNavigationApi();
+let apiInstance = new DocspaceApiTypescript.SettingsCustomNavigationApi();
 apiInstance.getCustomNavigationItems((error, data, response) => {
   if (error) {
     console.error(error);

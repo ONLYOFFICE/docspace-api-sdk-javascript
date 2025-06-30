@@ -1,6 +1,6 @@
-# Api.PortalGuestsApi
+# DocspaceApiTypescript.PortalGuestsApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,8 +19,8 @@ Returns a link to share a guest with another user.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -42,7 +42,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PortalGuestsApi();
+let apiInstance = new DocspaceApiTypescript.PortalGuestsApi();
 let userid = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The user ID.
 apiInstance.getGuestSharingLink(userid, (error, data, response) => {
   if (error) {

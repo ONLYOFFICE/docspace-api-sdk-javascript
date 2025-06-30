@@ -1,4 +1,4 @@
-# Api.FileShare
+# DocspaceApiTypescript.FileShare
 
 ## Enum
 

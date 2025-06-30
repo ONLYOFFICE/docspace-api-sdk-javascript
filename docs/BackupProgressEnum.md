@@ -1,4 +1,4 @@
-# Api.BackupProgressEnum
+# DocspaceApiTypescript.BackupProgressEnum
 
 ## Enum
 

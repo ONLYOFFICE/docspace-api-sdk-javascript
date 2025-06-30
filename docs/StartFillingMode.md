@@ -1,4 +1,4 @@
-# Api.StartFillingMode
+# DocspaceApiTypescript.StartFillingMode
 
 ## Enum
 

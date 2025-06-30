@@ -1,4 +1,4 @@
-# Api.AuthKey
+# DocspaceApiTypescript.AuthKey
 
 ## Properties
 

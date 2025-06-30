@@ -1,4 +1,4 @@
-# Api.FormsItemArrayWrapper
+# DocspaceApiTypescript.FormsItemArrayWrapper
 
 ## Properties
 

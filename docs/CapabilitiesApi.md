@@ -1,6 +1,6 @@
-# Api.CapabilitiesApi
+# DocspaceApiTypescript.CapabilitiesApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,9 +19,9 @@ Returns the information about portal capabilities.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.CapabilitiesApi();
+let apiInstance = new DocspaceApiTypescript.CapabilitiesApi();
 apiInstance.getPortalCapabilities((error, data, response) => {
   if (error) {
     console.error(error);

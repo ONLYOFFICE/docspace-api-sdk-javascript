@@ -1,4 +1,4 @@
-# Api.LinkAccountRequestDto
+# DocspaceApiTypescript.LinkAccountRequestDto
 
 ## Properties
 

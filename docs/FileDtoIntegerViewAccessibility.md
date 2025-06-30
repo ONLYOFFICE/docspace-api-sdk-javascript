@@ -1,4 +1,4 @@
-# Api.FileDtoIntegerViewAccessibility
+# DocspaceApiTypescript.FileDtoIntegerViewAccessibility
 
 ## Properties
 

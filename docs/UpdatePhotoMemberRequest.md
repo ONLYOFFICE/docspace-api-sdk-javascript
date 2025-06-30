@@ -1,4 +1,4 @@
-# Api.UpdatePhotoMemberRequest
+# DocspaceApiTypescript.UpdatePhotoMemberRequest
 
 ## Properties
 

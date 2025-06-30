@@ -1,4 +1,4 @@
-# Api.DeleteBatchRequestDto
+# DocspaceApiTypescript.DeleteBatchRequestDto
 
 ## Properties
 

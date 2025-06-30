@@ -1,4 +1,4 @@
-# Api.WatermarkAdditions
+# DocspaceApiTypescript.WatermarkAdditions
 
 ## Enum
 

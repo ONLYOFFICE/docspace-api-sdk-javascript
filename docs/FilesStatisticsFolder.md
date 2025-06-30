@@ -1,4 +1,4 @@
-# Api.FilesStatisticsFolder
+# DocspaceApiTypescript.FilesStatisticsFolder
 
 ## Properties
 

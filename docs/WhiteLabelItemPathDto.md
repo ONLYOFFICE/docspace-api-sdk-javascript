@@ -1,4 +1,4 @@
-# Api.WhiteLabelItemPathDto
+# DocspaceApiTypescript.WhiteLabelItemPathDto
 
 ## Properties
 

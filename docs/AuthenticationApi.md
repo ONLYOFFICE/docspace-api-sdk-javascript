@@ -1,6 +1,6 @@
-# Api.AuthenticationApi
+# DocspaceApiTypescript.AuthenticationApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -25,11 +25,11 @@ Authenticates the current user by SMS, authenticator app, or without two-factor 
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.AuthenticationApi();
+let apiInstance = new DocspaceApiTypescript.AuthenticationApi();
 let opts = {
-  'authRequestsDto': new Api.AuthRequestsDto() // AuthRequestsDto | 
+  'authRequestsDto': new DocspaceApiTypescript.AuthRequestsDto() // AuthRequestsDto | 
 };
 apiInstance.authenticateMe(opts, (error, data, response) => {
   if (error) {
@@ -72,12 +72,12 @@ Authenticates the current user by SMS or two-factor authentication code.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.AuthenticationApi();
+let apiInstance = new DocspaceApiTypescript.AuthenticationApi();
 let code = "code_example"; // String | 
 let opts = {
-  'authRequestsDto': new Api.AuthRequestsDto() // AuthRequestsDto | 
+  'authRequestsDto': new DocspaceApiTypescript.AuthRequestsDto() // AuthRequestsDto | 
 };
 apiInstance.authenticateMeFromBodyWithCode(code, opts, (error, data, response) => {
   if (error) {
@@ -121,11 +121,11 @@ Opens a confirmation email URL to validate a certain action (employee invitation
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.AuthenticationApi();
+let apiInstance = new DocspaceApiTypescript.AuthenticationApi();
 let opts = {
-  'emailValidationKeyModel': new Api.EmailValidationKeyModel() // EmailValidationKeyModel | 
+  'emailValidationKeyModel': new DocspaceApiTypescript.EmailValidationKeyModel() // EmailValidationKeyModel | 
 };
 apiInstance.checkConfirm(opts, (error, data, response) => {
   if (error) {
@@ -168,9 +168,9 @@ Checks if the current user is authenticated or not.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.AuthenticationApi();
+let apiInstance = new DocspaceApiTypescript.AuthenticationApi();
 apiInstance.getIsAuthentificated((error, data, response) => {
   if (error) {
     console.error(error);
@@ -209,9 +209,9 @@ Logs out of the current user account.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.AuthenticationApi();
+let apiInstance = new DocspaceApiTypescript.AuthenticationApi();
 apiInstance.logout((error, data, response) => {
   if (error) {
     console.error(error);
@@ -250,8 +250,8 @@ Sets a mobile phone for the current user.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -273,9 +273,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.AuthenticationApi();
+let apiInstance = new DocspaceApiTypescript.AuthenticationApi();
 let opts = {
-  'mobileRequestsDto': new Api.MobileRequestsDto() // MobileRequestsDto | 
+  'mobileRequestsDto': new DocspaceApiTypescript.MobileRequestsDto() // MobileRequestsDto | 
 };
 apiInstance.saveMobilePhone(opts, (error, data, response) => {
   if (error) {
@@ -318,11 +318,11 @@ Sends SMS with an authentication code.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.AuthenticationApi();
+let apiInstance = new DocspaceApiTypescript.AuthenticationApi();
 let opts = {
-  'authRequestsDto': new Api.AuthRequestsDto() // AuthRequestsDto | 
+  'authRequestsDto': new DocspaceApiTypescript.AuthRequestsDto() // AuthRequestsDto | 
 };
 apiInstance.sendSmsCode(opts, (error, data, response) => {
   if (error) {

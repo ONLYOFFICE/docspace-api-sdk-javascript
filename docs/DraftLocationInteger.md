@@ -1,4 +1,4 @@
-# Api.DraftLocationInteger
+# DocspaceApiTypescript.DraftLocationInteger
 
 ## Properties
 

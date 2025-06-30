@@ -1,4 +1,4 @@
-# Api.AuthRequestsDto
+# DocspaceApiTypescript.AuthRequestsDto
 
 ## Properties
 

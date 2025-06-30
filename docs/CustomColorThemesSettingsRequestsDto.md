@@ -1,4 +1,4 @@
-# Api.CustomColorThemesSettingsRequestsDto
+# DocspaceApiTypescript.CustomColorThemesSettingsRequestsDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.DuplicateRequestDto
+# DocspaceApiTypescript.DuplicateRequestDto
 
 ## Properties
 

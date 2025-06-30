@@ -1,4 +1,4 @@
-# Api.CookieSettingsRequestsDto
+# DocspaceApiTypescript.CookieSettingsRequestsDto
 
 ## Properties
 

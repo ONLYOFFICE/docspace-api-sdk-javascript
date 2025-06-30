@@ -1,4 +1,4 @@
-# Api.FilesSettingsWrapper
+# DocspaceApiTypescript.FilesSettingsWrapper
 
 ## Properties
 

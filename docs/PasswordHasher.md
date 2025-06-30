@@ -1,4 +1,4 @@
-# Api.PasswordHasher
+# DocspaceApiTypescript.PasswordHasher
 
 ## Properties
 

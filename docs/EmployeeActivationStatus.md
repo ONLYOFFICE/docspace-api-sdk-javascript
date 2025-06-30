@@ -1,4 +1,4 @@
-# Api.EmployeeActivationStatus
+# DocspaceApiTypescript.EmployeeActivationStatus
 
 ## Enum
 

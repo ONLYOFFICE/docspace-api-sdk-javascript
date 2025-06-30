@@ -1,4 +1,4 @@
-# Api.CreateTagRequestDto
+# DocspaceApiTypescript.CreateTagRequestDto
 
 ## Properties
 

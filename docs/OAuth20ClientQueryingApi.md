@@ -1,6 +1,6 @@
-# Api.OAuth20ClientQueryingApi
+# DocspaceApiTypescript.OAuth20ClientQueryingApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -24,15 +24,15 @@ Retrieves detailed information about a specific OAuth2 client including its name
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new Api.OAuth20ClientQueryingApi();
+let apiInstance = new DocspaceApiTypescript.OAuth20ClientQueryingApi();
 let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
 apiInstance.getClient(clientId, (error, data, response) => {
   if (error) {
@@ -75,15 +75,15 @@ Retrieves the detailed information for a client with the ID specified in the req
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new Api.OAuth20ClientQueryingApi();
+let apiInstance = new DocspaceApiTypescript.OAuth20ClientQueryingApi();
 let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
 apiInstance.getClientInfo(clientId, (error, data, response) => {
   if (error) {
@@ -126,15 +126,15 @@ Retrieves a paginated list of OAuth2 clients. The results can be paginated using
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new Api.OAuth20ClientQueryingApi();
+let apiInstance = new DocspaceApiTypescript.OAuth20ClientQueryingApi();
 let limit = 1; // Number | The maximum number of results returned per page.
 let opts = {
   'lastClientId': "6c7cf17b-1bd3-47d5-94c6-be2d3570e168", // String | The ID of the last retrieved client.
@@ -183,15 +183,15 @@ Retrieves a paginated list of information for all clients.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new Api.OAuth20ClientQueryingApi();
+let apiInstance = new DocspaceApiTypescript.OAuth20ClientQueryingApi();
 let limit = 1; // Number | The maximum number of results returned per page.
 let opts = {
   'lastClientId': "6c7cf17b-1bd3-47d5-94c6-be2d3570e168", // String | The identifier of the last retrieved client.
@@ -240,15 +240,15 @@ Retrieves a paginated list of user consents.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new Api.OAuth20ClientQueryingApi();
+let apiInstance = new DocspaceApiTypescript.OAuth20ClientQueryingApi();
 let limit = 1; // Number | The maximum number of results returned per page.
 let opts = {
   'lastModifiedOn': new Date("2024-04-04T12:00:00Z") // Date | The date when the user consent was last modified.
@@ -295,9 +295,9 @@ Returns the public information for a client with the ID secified din the request
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.OAuth20ClientQueryingApi();
+let apiInstance = new DocspaceApiTypescript.OAuth20ClientQueryingApi();
 let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
 apiInstance.getPublicClientInfo(clientId, (error, data, response) => {
   if (error) {

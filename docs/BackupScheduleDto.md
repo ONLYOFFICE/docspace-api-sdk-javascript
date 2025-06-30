@@ -1,4 +1,4 @@
-# Api.BackupScheduleDto
+# DocspaceApiTypescript.BackupScheduleDto
 
 ## Properties
 

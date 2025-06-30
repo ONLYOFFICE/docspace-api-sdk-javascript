@@ -1,4 +1,4 @@
-# Api.SaveFormRoleMappingDtoInteger
+# DocspaceApiTypescript.SaveFormRoleMappingDtoInteger
 
 ## Properties
 

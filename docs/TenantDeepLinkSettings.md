@@ -1,4 +1,4 @@
-# Api.TenantDeepLinkSettings
+# DocspaceApiTypescript.TenantDeepLinkSettings
 
 ## Properties
 

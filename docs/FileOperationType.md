@@ -1,4 +1,4 @@
-# Api.FileOperationType
+# DocspaceApiTypescript.FileOperationType
 
 ## Enum
 

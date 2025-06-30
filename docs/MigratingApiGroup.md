@@ -1,4 +1,4 @@
-# Api.MigratingApiGroup
+# DocspaceApiTypescript.MigratingApiGroup
 
 ## Properties
 

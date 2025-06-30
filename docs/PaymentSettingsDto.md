@@ -1,4 +1,4 @@
-# Api.PaymentSettingsDto
+# DocspaceApiTypescript.PaymentSettingsDto
 
 ## Properties
 

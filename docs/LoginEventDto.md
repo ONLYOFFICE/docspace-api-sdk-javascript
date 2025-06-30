@@ -1,4 +1,4 @@
-# Api.LoginEventDto
+# DocspaceApiTypescript.LoginEventDto
 
 ## Properties
 

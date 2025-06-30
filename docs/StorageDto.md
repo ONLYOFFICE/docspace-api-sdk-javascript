@@ -1,4 +1,4 @@
-# Api.StorageDto
+# DocspaceApiTypescript.StorageDto
 
 ## Properties
 

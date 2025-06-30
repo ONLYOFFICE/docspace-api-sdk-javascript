@@ -1,4 +1,4 @@
-# Api.SubjectType
+# DocspaceApiTypescript.SubjectType
 
 ## Enum
 

@@ -1,4 +1,4 @@
-# Api.OrderBy
+# DocspaceApiTypescript.OrderBy
 
 ## Properties
 

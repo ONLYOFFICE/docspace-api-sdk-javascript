@@ -1,6 +1,6 @@
-# Api.SettingsSecurityApi
+# DocspaceApiTypescript.SettingsSecurityApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -28,8 +28,8 @@ Returns a list of all the enabled modules.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -51,7 +51,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsSecurityApi();
+let apiInstance = new DocspaceApiTypescript.SettingsSecurityApi();
 apiInstance.getEnabledModules((error, data, response) => {
   if (error) {
     console.error(error);
@@ -90,8 +90,8 @@ Checks if the selected user is an administrator of a product with the ID specifi
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -113,7 +113,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsSecurityApi();
+let apiInstance = new DocspaceApiTypescript.SettingsSecurityApi();
 let opts = {
   'productid': "aae1e103-bca5-9fa1-ba8c-42058b4abf28", // String | The ID of the product extracted from the query parameters.
   'userid': "aae1e103-bca5-9fa1-ba8c-42058b4abf28" // String | The user ID extracted from the query parameters.
@@ -160,8 +160,8 @@ Returns the portal password settings.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -183,7 +183,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsSecurityApi();
+let apiInstance = new DocspaceApiTypescript.SettingsSecurityApi();
 apiInstance.getPasswordSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -222,8 +222,8 @@ Returns a list of all the administrators of a product with the ID specified in t
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -245,7 +245,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsSecurityApi();
+let apiInstance = new DocspaceApiTypescript.SettingsSecurityApi();
 let productid = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The ID of the product extracted from the route parameters.
 apiInstance.getProductAdministrators(productid, (error, data, response) => {
   if (error) {
@@ -288,8 +288,8 @@ Returns the availability of the module with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -311,7 +311,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsSecurityApi();
+let apiInstance = new DocspaceApiTypescript.SettingsSecurityApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The ID extracted from the route parameters.
 apiInstance.getWebItemSecurityInfo(id, (error, data, response) => {
   if (error) {
@@ -354,8 +354,8 @@ Returns the security settings for the modules specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -377,7 +377,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsSecurityApi();
+let apiInstance = new DocspaceApiTypescript.SettingsSecurityApi();
 let opts = {
   'ids': [["some text"]] // [String] | The list of module identifiers for which to retrieve the security settings.
 };
@@ -422,8 +422,8 @@ Sets the security settings to the modules with the IDs specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -445,9 +445,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsSecurityApi();
+let apiInstance = new DocspaceApiTypescript.SettingsSecurityApi();
 let opts = {
-  'webItemsSecurityRequestsDto': new Api.WebItemsSecurityRequestsDto() // WebItemsSecurityRequestsDto | 
+  'webItemsSecurityRequestsDto': new DocspaceApiTypescript.WebItemsSecurityRequestsDto() // WebItemsSecurityRequestsDto | 
 };
 apiInstance.setAccessToWebItems(opts, (error, data, response) => {
   if (error) {
@@ -490,8 +490,8 @@ Sets the selected user as an administrator of a product with the ID specified in
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -513,9 +513,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsSecurityApi();
+let apiInstance = new DocspaceApiTypescript.SettingsSecurityApi();
 let opts = {
-  'securityRequestsDto': new Api.SecurityRequestsDto() // SecurityRequestsDto | 
+  'securityRequestsDto': new DocspaceApiTypescript.SecurityRequestsDto() // SecurityRequestsDto | 
 };
 apiInstance.setProductAdministrator(opts, (error, data, response) => {
   if (error) {
@@ -558,8 +558,8 @@ Sets the security settings to the module with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -581,9 +581,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsSecurityApi();
+let apiInstance = new DocspaceApiTypescript.SettingsSecurityApi();
 let opts = {
-  'webItemSecurityRequestsDto': new Api.WebItemSecurityRequestsDto() // WebItemSecurityRequestsDto | 
+  'webItemSecurityRequestsDto': new DocspaceApiTypescript.WebItemSecurityRequestsDto() // WebItemSecurityRequestsDto | 
 };
 apiInstance.setWebItemSecurity(opts, (error, data, response) => {
   if (error) {
@@ -626,8 +626,8 @@ Sets the portal password settings.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -649,9 +649,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsSecurityApi();
+let apiInstance = new DocspaceApiTypescript.SettingsSecurityApi();
 let opts = {
-  'passwordSettingsRequestsDto': new Api.PasswordSettingsRequestsDto() // PasswordSettingsRequestsDto | 
+  'passwordSettingsRequestsDto': new DocspaceApiTypescript.PasswordSettingsRequestsDto() // PasswordSettingsRequestsDto | 
 };
 apiInstance.updatePasswordSettings(opts, (error, data, response) => {
   if (error) {

@@ -1,6 +1,6 @@
-# Api.PortalUsersApi
+# DocspaceApiTypescript.PortalUsersApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,8 +23,8 @@ Returns an invitation link for joining the portal.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -46,8 +46,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PortalUsersApi();
-let employeeType = new Api.EmployeeType(); // EmployeeType | The type of employee role for the invitation link (All, RoomAdmin, Guest, DocSpaceAdmin, User).
+let apiInstance = new DocspaceApiTypescript.PortalUsersApi();
+let employeeType = new DocspaceApiTypescript.EmployeeType(); // EmployeeType | The type of employee role for the invitation link (All, RoomAdmin, Guest, DocSpaceAdmin, User).
 apiInstance.getInvitationLink(employeeType, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -89,8 +89,8 @@ Returns a number of portal users.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -112,7 +112,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PortalUsersApi();
+let apiInstance = new DocspaceApiTypescript.PortalUsersApi();
 apiInstance.getPortalUsersCount((error, data, response) => {
   if (error) {
     console.error(error);
@@ -151,8 +151,8 @@ Returns a user with the ID specified in the request from the current portal.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -174,7 +174,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PortalUsersApi();
+let apiInstance = new DocspaceApiTypescript.PortalUsersApi();
 let userID = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The user ID extracted from the route parameters.
 apiInstance.getUserById(userID, (error, data, response) => {
   if (error) {
@@ -217,8 +217,8 @@ Marks a gift message as read.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -240,7 +240,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PortalUsersApi();
+let apiInstance = new DocspaceApiTypescript.PortalUsersApi();
 apiInstance.markGiftMessageAsRead((error, data, response) => {
   if (error) {
     console.error(error);
@@ -279,9 +279,9 @@ Sends congratulations to the user after registering a portal.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.PortalUsersApi();
+let apiInstance = new DocspaceApiTypescript.PortalUsersApi();
 let opts = {
   'userid': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The user ID to receive the congratulatory message.
   'key': "some text" // String | The template identifier or email configuration key.

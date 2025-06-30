@@ -1,4 +1,4 @@
-# Api.KeyValuePairBooleanString
+# DocspaceApiTypescript.KeyValuePairBooleanString
 
 ## Properties
 

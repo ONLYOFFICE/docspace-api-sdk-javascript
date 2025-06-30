@@ -1,4 +1,4 @@
-# Api.WebhooksLogWrapper
+# DocspaceApiTypescript.WebhooksLogWrapper
 
 ## Properties
 

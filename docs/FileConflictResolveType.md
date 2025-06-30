@@ -1,4 +1,4 @@
-# Api.FileConflictResolveType
+# DocspaceApiTypescript.FileConflictResolveType
 
 ## Enum
 

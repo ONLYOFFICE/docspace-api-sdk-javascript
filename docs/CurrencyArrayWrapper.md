@@ -1,4 +1,4 @@
-# Api.CurrencyArrayWrapper
+# DocspaceApiTypescript.CurrencyArrayWrapper
 
 ## Properties
 

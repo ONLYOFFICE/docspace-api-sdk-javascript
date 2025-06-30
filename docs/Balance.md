@@ -1,10 +1,10 @@
-# Api.Balance
+# DocspaceApiTypescript.Balance
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**accountNumber** | **Number** |  | [optional] 
-**subAccounts** | [**[SubAccount]**](SubAccount.md) |  | [optional] 
+**accountNumber** | **Number** | The account number. | [optional] 
+**subAccounts** | [**[SubAccount]**](SubAccount.md) | A list of sub-accounts. | [optional] 
 
 

@@ -1,6 +1,6 @@
-# Api.PeopleContactsApi
+# DocspaceApiTypescript.PeopleContactsApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,8 +21,8 @@ Deletes the contacts of the user with the ID specified in the request from the p
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -44,10 +44,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleContactsApi();
+let apiInstance = new DocspaceApiTypescript.PeopleContactsApi();
 let userid = "9846"; // String | The user ID.
 let opts = {
-  'contactsRequest': new Api.ContactsRequest() // ContactsRequest | The contacts request.
+  'contactsRequest': new DocspaceApiTypescript.ContactsRequest() // ContactsRequest | The contacts request.
 };
 apiInstance.deleteMemberContacts(userid, opts, (error, data, response) => {
   if (error) {
@@ -91,8 +91,8 @@ Sets the contacts of the user with the ID specified in the request replacing the
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -114,10 +114,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleContactsApi();
+let apiInstance = new DocspaceApiTypescript.PeopleContactsApi();
 let userid = "9846"; // String | The user ID.
 let opts = {
-  'contactsRequest': new Api.ContactsRequest() // ContactsRequest | The contacts request.
+  'contactsRequest': new DocspaceApiTypescript.ContactsRequest() // ContactsRequest | The contacts request.
 };
 apiInstance.setMemberContacts(userid, opts, (error, data, response) => {
   if (error) {
@@ -161,8 +161,8 @@ Updates the contact information of the user with the ID specified in the request
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -184,10 +184,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleContactsApi();
+let apiInstance = new DocspaceApiTypescript.PeopleContactsApi();
 let userid = "9846"; // String | The user ID.
 let opts = {
-  'contactsRequest': new Api.ContactsRequest() // ContactsRequest | The contacts request.
+  'contactsRequest': new DocspaceApiTypescript.ContactsRequest() // ContactsRequest | The contacts request.
 };
 apiInstance.updateMemberContacts(userid, opts, (error, data, response) => {
   if (error) {

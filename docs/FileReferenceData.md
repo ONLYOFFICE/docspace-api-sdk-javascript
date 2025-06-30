@@ -1,4 +1,4 @@
-# Api.FileReferenceData
+# DocspaceApiTypescript.FileReferenceData
 
 ## Properties
 

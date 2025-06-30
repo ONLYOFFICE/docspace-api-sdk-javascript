@@ -1,4 +1,4 @@
-# Api.CustomizationConfigDto
+# DocspaceApiTypescript.CustomizationConfigDto
 
 ## Properties
 

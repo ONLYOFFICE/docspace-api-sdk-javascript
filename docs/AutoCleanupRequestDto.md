@@ -1,4 +1,4 @@
-# Api.AutoCleanupRequestDto
+# DocspaceApiTypescript.AutoCleanupRequestDto
 
 ## Properties
 

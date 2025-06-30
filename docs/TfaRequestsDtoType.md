@@ -1,4 +1,4 @@
-# Api.TfaRequestsDtoType
+# DocspaceApiTypescript.TfaRequestsDtoType
 
 ## Enum
 

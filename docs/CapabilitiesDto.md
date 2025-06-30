@@ -1,4 +1,4 @@
-# Api.CapabilitiesDto
+# DocspaceApiTypescript.CapabilitiesDto
 
 ## Properties
 

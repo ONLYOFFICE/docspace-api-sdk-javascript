@@ -1,4 +1,4 @@
-# Api.FilesStatisticsResultWrapper
+# DocspaceApiTypescript.FilesStatisticsResultWrapper
 
 ## Properties
 

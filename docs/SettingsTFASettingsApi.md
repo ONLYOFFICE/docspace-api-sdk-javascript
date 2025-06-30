@@ -1,6 +1,6 @@
-# Api.SettingsTFASettingsApi
+# DocspaceApiTypescript.SettingsTFASettingsApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**unlinkTfaApp**](SettingsTFASettingsApi.md#unlinkTfaApp) | **PUT** /api/2.0/settings/tfaappnewapp | Unlink the TFA application
 [**updateTfaAppCodes**](SettingsTFASettingsApi.md#updateTfaAppCodes) | **PUT** /api/2.0/settings/tfaappnewcodes | Update the TFA codes
 [**updateTfaSettings**](SettingsTFASettingsApi.md#updateTfaSettings) | **PUT** /api/2.0/settings/tfaapp | Update the TFA settings
-[**updateTfaSettingsLink**](SettingsTFASettingsApi.md#updateTfaSettingsLink) | **PUT** /api/2.0/settings/tfaappwithlink | Get confirmation email for updating TFA settings
+[**updateTfaSettingsLink**](SettingsTFASettingsApi.md#updateTfaSettingsLink) | **PUT** /api/2.0/settings/tfaappwithlink | Get a confirmation email for updating TFA settings
 
 
 
@@ -27,8 +27,8 @@ Returns the two-factor authentication application codes.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -50,7 +50,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsTFASettingsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
 apiInstance.getTfaAppCodes((error, data, response) => {
   if (error) {
     console.error(error);
@@ -89,8 +89,8 @@ Returns the confirmation email URL for authorization via SMS or TFA application.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -112,7 +112,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsTFASettingsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
 apiInstance.getTfaConfirmUrl((error, data, response) => {
   if (error) {
     console.error(error);
@@ -151,8 +151,8 @@ Returns the current two-factor authentication settings.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -174,7 +174,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsTFASettingsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
 apiInstance.getTfaSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -213,8 +213,8 @@ Generates the setup TFA code for the current user.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -236,7 +236,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsTFASettingsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
 apiInstance.tfaAppGenerateSetupCode((error, data, response) => {
   if (error) {
     console.error(error);
@@ -275,8 +275,8 @@ Validates the two-factor authentication code specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -298,9 +298,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsTFASettingsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
 let opts = {
-  'tfaValidateRequestsDto': new Api.TfaValidateRequestsDto() // TfaValidateRequestsDto | 
+  'tfaValidateRequestsDto': new DocspaceApiTypescript.TfaValidateRequestsDto() // TfaValidateRequestsDto | 
 };
 apiInstance.tfaValidateAuthCode(opts, (error, data, response) => {
   if (error) {
@@ -343,8 +343,8 @@ Unlinks the current two-factor authentication application from the user account 
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -366,9 +366,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsTFASettingsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
 let opts = {
-  'tfaRequestsDto': new Api.TfaRequestsDto() // TfaRequestsDto | 
+  'tfaRequestsDto': new DocspaceApiTypescript.TfaRequestsDto() // TfaRequestsDto | 
 };
 apiInstance.unlinkTfaApp(opts, (error, data, response) => {
   if (error) {
@@ -411,8 +411,8 @@ Requests the new backup codes for the two-factor authentication application.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -434,7 +434,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsTFASettingsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
 apiInstance.updateTfaAppCodes((error, data, response) => {
   if (error) {
     console.error(error);
@@ -473,8 +473,8 @@ Updates the two-factor authentication settings with the parameters specified in 
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -496,9 +496,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsTFASettingsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
 let opts = {
-  'tfaRequestsDto': new Api.TfaRequestsDto() // TfaRequestsDto | 
+  'tfaRequestsDto': new DocspaceApiTypescript.TfaRequestsDto() // TfaRequestsDto | 
 };
 apiInstance.updateTfaSettings(opts, (error, data, response) => {
   if (error) {
@@ -534,15 +534,15 @@ Name | Type | Description  | Notes
 
 > StringWrapper updateTfaSettingsLink(opts)
 
-Get confirmation email for updating TFA settings
+Get a confirmation email for updating TFA settings
 
 Returns the confirmation email URL for updating TFA settings.
 
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -564,9 +564,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsTFASettingsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
 let opts = {
-  'tfaRequestsDto': new Api.TfaRequestsDto() // TfaRequestsDto | 
+  'tfaRequestsDto': new DocspaceApiTypescript.TfaRequestsDto() // TfaRequestsDto | 
 };
 apiInstance.updateTfaSettingsLink(opts, (error, data, response) => {
   if (error) {

@@ -1,4 +1,4 @@
-# Api.BatchTagsRequestDto
+# DocspaceApiTypescript.BatchTagsRequestDto
 
 ## Properties
 

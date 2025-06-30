@@ -1,6 +1,6 @@
-# Api.PeopleUserTypeApi
+# DocspaceApiTypescript.PeopleUserTypeApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,8 +22,8 @@ Returns the progress of updating the user type.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -45,7 +45,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleUserTypeApi();
+let apiInstance = new DocspaceApiTypescript.PeopleUserTypeApi();
 let userid = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The user ID.
 apiInstance.getUserTypeUpdateProgress(userid, (error, data, response) => {
   if (error) {
@@ -88,8 +88,8 @@ Starts updating the type of the user or guest when reassigning rooms and shared 
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -111,9 +111,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleUserTypeApi();
+let apiInstance = new DocspaceApiTypescript.PeopleUserTypeApi();
 let opts = {
-  'startUpdateUserTypeDto': new Api.StartUpdateUserTypeDto() // StartUpdateUserTypeDto | 
+  'startUpdateUserTypeDto': new DocspaceApiTypescript.StartUpdateUserTypeDto() // StartUpdateUserTypeDto | 
 };
 apiInstance.starUserTypetUpdate(opts, (error, data, response) => {
   if (error) {
@@ -156,8 +156,8 @@ Terminates the process of updating the type of the user or guest.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -179,9 +179,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleUserTypeApi();
+let apiInstance = new DocspaceApiTypescript.PeopleUserTypeApi();
 let opts = {
-  'terminateRequestDto': new Api.TerminateRequestDto() // TerminateRequestDto | 
+  'terminateRequestDto': new DocspaceApiTypescript.TerminateRequestDto() // TerminateRequestDto | 
 };
 apiInstance.terminateUserTypeUpdate(opts, (error, data, response) => {
   if (error) {
@@ -224,8 +224,8 @@ Changes a type of the users with the IDs specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -247,10 +247,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleUserTypeApi();
-let type = new Api.EmployeeType(); // EmployeeType | The new user type.
+let apiInstance = new DocspaceApiTypescript.PeopleUserTypeApi();
+let type = new DocspaceApiTypescript.EmployeeType(); // EmployeeType | The new user type.
 let opts = {
-  'updateMembersRequestDto': new Api.UpdateMembersRequestDto() // UpdateMembersRequestDto | The request parameters for updating the user information.
+  'updateMembersRequestDto': new DocspaceApiTypescript.UpdateMembersRequestDto() // UpdateMembersRequestDto | The request parameters for updating the user information.
 };
 apiInstance.updateUserType(type, opts, (error, data, response) => {
   if (error) {

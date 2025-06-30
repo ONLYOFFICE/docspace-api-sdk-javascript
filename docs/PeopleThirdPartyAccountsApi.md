@@ -1,6 +1,6 @@
-# Api.PeopleThirdPartyAccountsApi
+# DocspaceApiTypescript.PeopleThirdPartyAccountsApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,9 +22,9 @@ Returns a list of the available third-party accounts.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.PeopleThirdPartyAccountsApi();
+let apiInstance = new DocspaceApiTypescript.PeopleThirdPartyAccountsApi();
 let opts = {
   'inviteView': true, // Boolean | Specifies whether to return providers that are available for invitation links, i.e. the user can login or register through these providers.
   'settingsView': true, // Boolean | Specifies whether to display the provider settings in a pop-up window (true) or redirect them to the desktop application (false).
@@ -75,8 +75,8 @@ Links a third-party account specified in the request to the user profile.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -98,9 +98,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleThirdPartyAccountsApi();
+let apiInstance = new DocspaceApiTypescript.PeopleThirdPartyAccountsApi();
 let opts = {
-  'linkAccountRequestDto': new Api.LinkAccountRequestDto() // LinkAccountRequestDto | 
+  'linkAccountRequestDto': new DocspaceApiTypescript.LinkAccountRequestDto() // LinkAccountRequestDto | 
 };
 apiInstance.linkThirdPartyAccount(opts, (error, data, response) => {
   if (error) {
@@ -143,11 +143,11 @@ Creates a third-party account with the parameters specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.PeopleThirdPartyAccountsApi();
+let apiInstance = new DocspaceApiTypescript.PeopleThirdPartyAccountsApi();
 let opts = {
-  'signupAccountRequestDto': new Api.SignupAccountRequestDto() // SignupAccountRequestDto | 
+  'signupAccountRequestDto': new DocspaceApiTypescript.SignupAccountRequestDto() // SignupAccountRequestDto | 
 };
 apiInstance.signupThirdPartyAccount(opts, (error, data, response) => {
   if (error) {
@@ -190,8 +190,8 @@ Unlinks a third-party account specified in the request from the user profile.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -213,7 +213,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleThirdPartyAccountsApi();
+let apiInstance = new DocspaceApiTypescript.PeopleThirdPartyAccountsApi();
 let opts = {
   'provider': "some text" // String | The provider name.
 };

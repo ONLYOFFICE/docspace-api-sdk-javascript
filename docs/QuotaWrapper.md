@@ -1,4 +1,4 @@
-# Api.QuotaWrapper
+# DocspaceApiTypescript.QuotaWrapper
 
 ## Properties
 

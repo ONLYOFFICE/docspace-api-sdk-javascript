@@ -1,4 +1,4 @@
-# Api.GroupSummaryDto
+# DocspaceApiTypescript.GroupSummaryDto
 
 ## Properties
 

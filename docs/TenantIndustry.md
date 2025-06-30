@@ -1,4 +1,4 @@
-# Api.TenantIndustry
+# DocspaceApiTypescript.TenantIndustry
 
 ## Enum
 

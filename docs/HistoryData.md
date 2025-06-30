@@ -1,4 +1,4 @@
-# Api.HistoryData
+# DocspaceApiTypescript.HistoryData
 
 ## Properties
 

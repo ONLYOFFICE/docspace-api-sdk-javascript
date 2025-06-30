@@ -1,4 +1,4 @@
-# Api.PluginsConfig
+# DocspaceApiTypescript.PluginsConfig
 
 ## Properties
 

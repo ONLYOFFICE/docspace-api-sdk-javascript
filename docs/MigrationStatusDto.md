@@ -1,4 +1,4 @@
-# Api.MigrationStatusDto
+# DocspaceApiTypescript.MigrationStatusDto
 
 ## Properties
 

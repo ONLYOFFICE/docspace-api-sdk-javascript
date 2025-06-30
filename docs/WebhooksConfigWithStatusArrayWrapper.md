@@ -1,4 +1,4 @@
-# Api.WebhooksConfigWithStatusArrayWrapper
+# DocspaceApiTypescript.WebhooksConfigWithStatusArrayWrapper
 
 ## Properties
 

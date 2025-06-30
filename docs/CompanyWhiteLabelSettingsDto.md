@@ -1,4 +1,4 @@
-# Api.CompanyWhiteLabelSettingsDto
+# DocspaceApiTypescript.CompanyWhiteLabelSettingsDto
 
 ## Properties
 

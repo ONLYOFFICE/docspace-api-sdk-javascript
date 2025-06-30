@@ -1,6 +1,6 @@
-# Api.SettingsWebpluginsApi
+# DocspaceApiTypescript.SettingsWebpluginsApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,8 +23,8 @@ Adds a web plugin from a file to the current portal.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -46,7 +46,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsWebpluginsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsWebpluginsApi();
 let opts = {
   'system': true // Boolean | Specifies whether to load the system plugins or not.
 };
@@ -91,8 +91,8 @@ Deletes a web plugin by the name specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -114,7 +114,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsWebpluginsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsWebpluginsApi();
 let name = "Winfield Upton"; // String | The web plugin name.
 apiInstance.deleteWebPlugin(name, (error, data, response) => {
   if (error) {
@@ -157,8 +157,8 @@ Returns a web plugin by the name specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -180,7 +180,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsWebpluginsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsWebpluginsApi();
 let name = "Winfield Upton"; // String | The web plugin name.
 apiInstance.getWebPlugin(name, (error, data, response) => {
   if (error) {
@@ -223,8 +223,8 @@ Returns the portal web plugins.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -246,7 +246,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsWebpluginsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsWebpluginsApi();
 let opts = {
   'enabled': true // Boolean | The optional filter for the plugin enabled state.
 };
@@ -291,8 +291,8 @@ Updates a web plugin with the parameters specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -314,10 +314,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsWebpluginsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsWebpluginsApi();
 let name = "Winfield Upton"; // String | The web plugin name.
 let opts = {
-  'webPluginRequests': new Api.WebPluginRequests() // WebPluginRequests | The configuration settings for the web plugin instance.
+  'webPluginRequests': new DocspaceApiTypescript.WebPluginRequests() // WebPluginRequests | The configuration settings for the web plugin instance.
 };
 apiInstance.updateWebPlugin(name, opts, (error, data, response) => {
   if (error) {

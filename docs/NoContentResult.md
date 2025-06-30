@@ -1,4 +1,4 @@
-# Api.NoContentResult
+# DocspaceApiTypescript.NoContentResult
 
 ## Properties
 

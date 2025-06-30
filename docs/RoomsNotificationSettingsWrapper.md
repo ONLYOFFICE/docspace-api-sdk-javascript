@@ -1,4 +1,4 @@
-# Api.RoomsNotificationSettingsWrapper
+# DocspaceApiTypescript.RoomsNotificationSettingsWrapper
 
 ## Properties
 

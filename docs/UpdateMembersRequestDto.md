@@ -1,4 +1,4 @@
-# Api.UpdateMembersRequestDto
+# DocspaceApiTypescript.UpdateMembersRequestDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.UpdateRoomRequest
+# DocspaceApiTypescript.UpdateRoomRequest
 
 ## Properties
 

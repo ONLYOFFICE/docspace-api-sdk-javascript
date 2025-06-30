@@ -1,4 +1,4 @@
-# Api.SortOrder
+# DocspaceApiTypescript.SortOrder
 
 ## Enum
 

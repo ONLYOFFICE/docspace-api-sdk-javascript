@@ -1,4 +1,4 @@
-# Api.FileEntryWrapper
+# DocspaceApiTypescript.FileEntryWrapper
 
 ## Properties
 

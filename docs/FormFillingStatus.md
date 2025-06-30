@@ -1,4 +1,4 @@
-# Api.FormFillingStatus
+# DocspaceApiTypescript.FormFillingStatus
 
 ## Enum
 

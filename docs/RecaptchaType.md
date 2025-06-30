@@ -1,4 +1,4 @@
-# Api.RecaptchaType
+# DocspaceApiTypescript.RecaptchaType
 
 ## Enum
 

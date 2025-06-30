@@ -1,4 +1,4 @@
-# Api.CoverRequestDto
+# DocspaceApiTypescript.CoverRequestDto
 
 ## Properties
 

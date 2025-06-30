@@ -1,6 +1,6 @@
-# Api.MigrationApi
+# DocspaceApiTypescript.MigrationApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -26,8 +26,8 @@ Cancels the migration.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -49,7 +49,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.MigrationApi();
+let apiInstance = new DocspaceApiTypescript.MigrationApi();
 apiInstance.cancelMigration((error, data, response) => {
   if (error) {
     console.error(error);
@@ -88,8 +88,8 @@ Clears the migration.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -111,7 +111,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.MigrationApi();
+let apiInstance = new DocspaceApiTypescript.MigrationApi();
 apiInstance.clearMigration((error, data, response) => {
   if (error) {
     console.error(error);
@@ -150,8 +150,8 @@ Finishes the migration process.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -173,9 +173,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.MigrationApi();
+let apiInstance = new DocspaceApiTypescript.MigrationApi();
 let opts = {
-  'finishDto': new Api.FinishDto() // FinishDto | 
+  'finishDto': new DocspaceApiTypescript.FinishDto() // FinishDto | 
 };
 apiInstance.finishMigration(opts, (error, data, response) => {
   if (error) {
@@ -218,8 +218,8 @@ Returns the migration logs.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -241,7 +241,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.MigrationApi();
+let apiInstance = new DocspaceApiTypescript.MigrationApi();
 apiInstance.getMigrationLogs((error, data, response) => {
   if (error) {
     console.error(error);
@@ -280,8 +280,8 @@ Returns the migration status.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -303,7 +303,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.MigrationApi();
+let apiInstance = new DocspaceApiTypescript.MigrationApi();
 apiInstance.getMigrationStatus((error, data, response) => {
   if (error) {
     console.error(error);
@@ -342,8 +342,8 @@ Returns a list of available migrations.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -365,7 +365,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.MigrationApi();
+let apiInstance = new DocspaceApiTypescript.MigrationApi();
 apiInstance.listMigrations((error, data, response) => {
   if (error) {
     console.error(error);
@@ -404,8 +404,8 @@ Starts the migration process.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -427,9 +427,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.MigrationApi();
+let apiInstance = new DocspaceApiTypescript.MigrationApi();
 let opts = {
-  'migrationApiInfo': new Api.MigrationApiInfo() // MigrationApiInfo | 
+  'migrationApiInfo': new DocspaceApiTypescript.MigrationApiInfo() // MigrationApiInfo | 
 };
 apiInstance.startMigration(opts, (error, data, response) => {
   if (error) {
@@ -472,8 +472,8 @@ Uploads and initializes a migration with a migrator name specified in the reques
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -495,7 +495,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.MigrationApi();
+let apiInstance = new DocspaceApiTypescript.MigrationApi();
 let migratorName = "some text"; // String | The migrator name extracted from the route parameters.
 apiInstance.uploadAndInitializeMigration(migratorName, (error, data, response) => {
   if (error) {

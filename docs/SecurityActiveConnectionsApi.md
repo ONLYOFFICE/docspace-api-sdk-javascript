@@ -1,6 +1,6 @@
-# Api.SecurityActiveConnectionsApi
+# DocspaceApiTypescript.SecurityActiveConnectionsApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,8 +23,8 @@ Returns all the active connections to the portal.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -46,7 +46,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SecurityActiveConnectionsApi();
+let apiInstance = new DocspaceApiTypescript.SecurityActiveConnectionsApi();
 apiInstance.getAllActiveConnections((error, data, response) => {
   if (error) {
     console.error(error);
@@ -85,8 +85,8 @@ Logs out from the connection with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -108,7 +108,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SecurityActiveConnectionsApi();
+let apiInstance = new DocspaceApiTypescript.SecurityActiveConnectionsApi();
 let loginEventId = 9846; // Number | The ID of the specific login event.
 apiInstance.logOutActiveConnection(loginEventId, (error, data, response) => {
   if (error) {
@@ -151,8 +151,8 @@ Logs out from all the active connections for the current user and changes their 
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -174,7 +174,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SecurityActiveConnectionsApi();
+let apiInstance = new DocspaceApiTypescript.SecurityActiveConnectionsApi();
 apiInstance.logOutAllActiveConnectionsChangePassword((error, data, response) => {
   if (error) {
     console.error(error);
@@ -213,8 +213,8 @@ Logs out from all the active connections for the user with the ID specified in t
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -236,7 +236,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SecurityActiveConnectionsApi();
+let apiInstance = new DocspaceApiTypescript.SecurityActiveConnectionsApi();
 let userId = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The user ID extracted from the route parameters.
 apiInstance.logOutAllActiveConnectionsForUser(userId, (error, data, response) => {
   if (error) {
@@ -279,8 +279,8 @@ Logs out from all the active connections except the current connection.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -302,7 +302,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SecurityActiveConnectionsApi();
+let apiInstance = new DocspaceApiTypescript.SecurityActiveConnectionsApi();
 apiInstance.logOutAllExceptThisConnection((error, data, response) => {
   if (error) {
     console.error(error);

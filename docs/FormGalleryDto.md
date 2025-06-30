@@ -1,4 +1,4 @@
-# Api.FormGalleryDto
+# DocspaceApiTypescript.FormGalleryDto
 
 ## Properties
 

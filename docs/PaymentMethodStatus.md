@@ -1,12 +1,12 @@
-# Api.PaymentMethodStatus
+# DocspaceApiTypescript.PaymentMethodStatus
 
 ## Enum
 
 
-* `0` (value: `0`)
+* `None` (value: `0`)
 
-* `1` (value: `1`)
+* `Set` (value: `1`)
 
-* `2` (value: `2`)
+* `Expired` (value: `2`)
 
 

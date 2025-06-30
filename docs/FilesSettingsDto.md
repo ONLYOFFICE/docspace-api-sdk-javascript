@@ -1,4 +1,4 @@
-# Api.FilesSettingsDto
+# DocspaceApiTypescript.FilesSettingsDto
 
 ## Properties
 

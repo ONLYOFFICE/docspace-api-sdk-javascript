@@ -1,4 +1,4 @@
-# Api.MessageAction
+# DocspaceApiTypescript.MessageAction
 
 ## Enum
 

@@ -1,6 +1,6 @@
-# Api.PeopleGuestsApi
+# DocspaceApiTypescript.PeopleGuestsApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,8 +20,8 @@ Approves a guest sharing link and returns the detailed information about a guest
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -43,9 +43,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleGuestsApi();
+let apiInstance = new DocspaceApiTypescript.PeopleGuestsApi();
 let opts = {
-  'emailMemberRequestDto': new Api.EmailMemberRequestDto() // EmailMemberRequestDto | 
+  'emailMemberRequestDto': new DocspaceApiTypescript.EmailMemberRequestDto() // EmailMemberRequestDto | 
 };
 apiInstance.approveGuestShareLink(opts, (error, data, response) => {
   if (error) {
@@ -88,8 +88,8 @@ Deletes guests from the list and excludes them from rooms to which they were inv
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -111,9 +111,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleGuestsApi();
+let apiInstance = new DocspaceApiTypescript.PeopleGuestsApi();
 let opts = {
-  'updateMembersRequestDto': new Api.UpdateMembersRequestDto() // UpdateMembersRequestDto | 
+  'updateMembersRequestDto': new DocspaceApiTypescript.UpdateMembersRequestDto() // UpdateMembersRequestDto | 
 };
 apiInstance.deleteGuests(opts, (error, data, response) => {
   if (error) {

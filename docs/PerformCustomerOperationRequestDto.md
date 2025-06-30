@@ -1,4 +1,4 @@
-# Api.PerformCustomerOperationRequestDto
+# DocspaceApiTypescript.PerformCustomerOperationRequestDto
 
 ## Properties
 

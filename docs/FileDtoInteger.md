@@ -1,4 +1,4 @@
-# Api.FileDtoInteger
+# DocspaceApiTypescript.FileDtoInteger
 
 ## Properties
 

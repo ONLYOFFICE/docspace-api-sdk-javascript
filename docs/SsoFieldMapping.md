@@ -1,4 +1,4 @@
-# Api.SsoFieldMapping
+# DocspaceApiTypescript.SsoFieldMapping
 
 ## Properties
 

@@ -1,6 +1,6 @@
-# Api.FilesThirdPartyIntegrationApi
+# DocspaceApiTypescript.FilesThirdPartyIntegrationApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -26,8 +26,8 @@ Removes the third-party storage service account with the ID specified in the req
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -49,7 +49,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesThirdPartyIntegrationApi();
+let apiInstance = new DocspaceApiTypescript.FilesThirdPartyIntegrationApi();
 let providerId = 1234; // Number | The provider ID.
 apiInstance.deleteThirdParty(providerId, (error, data, response) => {
   if (error) {
@@ -92,8 +92,8 @@ Returns a list of all providers.   **Note**: Available provider keys: Dropbox, B
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -115,7 +115,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesThirdPartyIntegrationApi();
+let apiInstance = new DocspaceApiTypescript.FilesThirdPartyIntegrationApi();
 apiInstance.getAllProviders((error, data, response) => {
   if (error) {
     console.error(error);
@@ -154,8 +154,8 @@ Returns a backup of the connected third-party account.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -177,7 +177,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesThirdPartyIntegrationApi();
+let apiInstance = new DocspaceApiTypescript.FilesThirdPartyIntegrationApi();
 apiInstance.getBackupThirdPartyAccount((error, data, response) => {
   if (error) {
     console.error(error);
@@ -216,8 +216,8 @@ Returns the list of the available providers.   **Note**: Available provider keys
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -239,7 +239,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesThirdPartyIntegrationApi();
+let apiInstance = new DocspaceApiTypescript.FilesThirdPartyIntegrationApi();
 apiInstance.getCapabilities((error, data, response) => {
   if (error) {
     console.error(error);
@@ -278,8 +278,8 @@ Returns a list of the third-party services connected to the \&quot;Common\&quot;
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -301,7 +301,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesThirdPartyIntegrationApi();
+let apiInstance = new DocspaceApiTypescript.FilesThirdPartyIntegrationApi();
 apiInstance.getCommonThirdPartyFolders((error, data, response) => {
   if (error) {
     console.error(error);
@@ -340,8 +340,8 @@ Returns a list of all the connected third-party accounts.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -363,7 +363,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesThirdPartyIntegrationApi();
+let apiInstance = new DocspaceApiTypescript.FilesThirdPartyIntegrationApi();
 apiInstance.getThirdPartyAccounts((error, data, response) => {
   if (error) {
     console.error(error);
@@ -402,8 +402,8 @@ Saves the third-party storage service account. For WebDav, Yandex, kDrive and Sh
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -425,9 +425,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesThirdPartyIntegrationApi();
+let apiInstance = new DocspaceApiTypescript.FilesThirdPartyIntegrationApi();
 let opts = {
-  'thirdPartyRequestDto': new Api.ThirdPartyRequestDto() // ThirdPartyRequestDto | 
+  'thirdPartyRequestDto': new DocspaceApiTypescript.ThirdPartyRequestDto() // ThirdPartyRequestDto | 
 };
 apiInstance.saveThirdParty(opts, (error, data, response) => {
   if (error) {
@@ -470,8 +470,8 @@ Saves a backup of the connected third-party account.   **Note**: List of provide
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -493,9 +493,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesThirdPartyIntegrationApi();
+let apiInstance = new DocspaceApiTypescript.FilesThirdPartyIntegrationApi();
 let opts = {
-  'thirdPartyBackupRequestDto': new Api.ThirdPartyBackupRequestDto() // ThirdPartyBackupRequestDto | 
+  'thirdPartyBackupRequestDto': new DocspaceApiTypescript.ThirdPartyBackupRequestDto() // ThirdPartyBackupRequestDto | 
 };
 apiInstance.saveThirdPartyBackup(opts, (error, data, response) => {
   if (error) {

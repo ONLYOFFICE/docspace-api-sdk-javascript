@@ -1,4 +1,4 @@
-# Api.TenantEntityQuotaSettings
+# DocspaceApiTypescript.TenantEntityQuotaSettings
 
 ## Properties
 

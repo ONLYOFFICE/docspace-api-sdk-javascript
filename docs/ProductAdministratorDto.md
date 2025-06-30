@@ -1,4 +1,4 @@
-# Api.ProductAdministratorDto
+# DocspaceApiTypescript.ProductAdministratorDto
 
 ## Properties
 

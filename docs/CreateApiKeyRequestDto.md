@@ -1,4 +1,4 @@
-# Api.CreateApiKeyRequestDto
+# DocspaceApiTypescript.CreateApiKeyRequestDto
 
 ## Properties
 

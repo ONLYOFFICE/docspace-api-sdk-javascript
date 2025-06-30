@@ -1,4 +1,4 @@
-# Api.TenantAuditSettings
+# DocspaceApiTypescript.TenantAuditSettings
 
 ## Properties
 

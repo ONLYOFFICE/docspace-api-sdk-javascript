@@ -1,4 +1,4 @@
-# Api.WizardRequestsDto
+# DocspaceApiTypescript.WizardRequestsDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.IsDefaultWhiteLabelLogosArrayWrapper
+# DocspaceApiTypescript.IsDefaultWhiteLabelLogosArrayWrapper
 
 ## Properties
 

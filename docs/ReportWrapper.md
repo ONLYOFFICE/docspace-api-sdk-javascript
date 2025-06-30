@@ -1,4 +1,4 @@
-# Api.ReportWrapper
+# DocspaceApiTypescript.ReportWrapper
 
 ## Properties
 

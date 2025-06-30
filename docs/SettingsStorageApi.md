@@ -1,6 +1,6 @@
-# Api.SettingsStorageApi
+# DocspaceApiTypescript.SettingsStorageApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -27,8 +27,8 @@ Returns a list of all the backup storages.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -50,7 +50,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsStorageApi();
+let apiInstance = new DocspaceApiTypescript.SettingsStorageApi();
 let opts = {
   'dump': true // Boolean | 
 };
@@ -95,8 +95,8 @@ Returns a list of all the CDN storages.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -118,7 +118,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsStorageApi();
+let apiInstance = new DocspaceApiTypescript.SettingsStorageApi();
 apiInstance.getAllCdnStorages((error, data, response) => {
   if (error) {
     console.error(error);
@@ -157,8 +157,8 @@ Returns a list of all the portal storages.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -180,7 +180,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsStorageApi();
+let apiInstance = new DocspaceApiTypescript.SettingsStorageApi();
 apiInstance.getAllStorages((error, data, response) => {
   if (error) {
     console.error(error);
@@ -219,8 +219,8 @@ Returns a list of all Amazon regions.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -242,7 +242,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsStorageApi();
+let apiInstance = new DocspaceApiTypescript.SettingsStorageApi();
 apiInstance.getAmazonS3Regions((error, data, response) => {
   if (error) {
     console.error(error);
@@ -281,8 +281,8 @@ Returns the storage progress.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -304,7 +304,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsStorageApi();
+let apiInstance = new DocspaceApiTypescript.SettingsStorageApi();
 apiInstance.getStorageProgress((error, data, response) => {
   if (error) {
     console.error(error);
@@ -343,8 +343,8 @@ Resets the CDN storage settings to the default parameters.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -366,7 +366,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsStorageApi();
+let apiInstance = new DocspaceApiTypescript.SettingsStorageApi();
 apiInstance.resetCdnToDefault((error, data, response) => {
   if (error) {
     console.error(error);
@@ -405,8 +405,8 @@ Resets the storage settings to the default parameters.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -428,7 +428,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsStorageApi();
+let apiInstance = new DocspaceApiTypescript.SettingsStorageApi();
 apiInstance.resetStorageToDefault((error, data, response) => {
   if (error) {
     console.error(error);
@@ -467,8 +467,8 @@ Updates the CDN storage with the parameters specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -490,9 +490,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsStorageApi();
+let apiInstance = new DocspaceApiTypescript.SettingsStorageApi();
 let opts = {
-  'storageRequestsDto': new Api.StorageRequestsDto() // StorageRequestsDto | 
+  'storageRequestsDto': new DocspaceApiTypescript.StorageRequestsDto() // StorageRequestsDto | 
 };
 apiInstance.updateCdnStorage(opts, (error, data, response) => {
   if (error) {
@@ -535,8 +535,8 @@ Updates a storage with the parameters specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -558,9 +558,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsStorageApi();
+let apiInstance = new DocspaceApiTypescript.SettingsStorageApi();
 let opts = {
-  'storageRequestsDto': new Api.StorageRequestsDto() // StorageRequestsDto | 
+  'storageRequestsDto': new DocspaceApiTypescript.StorageRequestsDto() // StorageRequestsDto | 
 };
 apiInstance.updateStorage(opts, (error, data, response) => {
   if (error) {

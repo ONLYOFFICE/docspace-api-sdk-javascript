@@ -1,4 +1,4 @@
-# Api.FormFillingManageAction
+# DocspaceApiTypescript.FormFillingManageAction
 
 ## Enum
 

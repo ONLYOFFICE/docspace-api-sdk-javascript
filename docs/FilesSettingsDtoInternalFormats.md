@@ -1,4 +1,4 @@
-# Api.FilesSettingsDtoInternalFormats
+# DocspaceApiTypescript.FilesSettingsDtoInternalFormats
 
 ## Properties
 

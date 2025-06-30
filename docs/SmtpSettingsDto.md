@@ -1,4 +1,4 @@
-# Api.SmtpSettingsDto
+# DocspaceApiTypescript.SmtpSettingsDto
 
 ## Properties
 

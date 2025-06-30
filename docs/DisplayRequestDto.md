@@ -1,4 +1,4 @@
-# Api.DisplayRequestDto
+# DocspaceApiTypescript.DisplayRequestDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.CreateTextOrHtmlFile
+# DocspaceApiTypescript.CreateTextOrHtmlFile
 
 ## Properties
 

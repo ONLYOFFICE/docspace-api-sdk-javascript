@@ -1,6 +1,6 @@
-# Api.PortalQuotaApi
+# DocspaceApiTypescript.PortalQuotaApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,8 +22,8 @@ Returns the current portal quota.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -45,7 +45,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PortalQuotaApi();
+let apiInstance = new DocspaceApiTypescript.PortalQuotaApi();
 apiInstance.getPortalQuota((error, data, response) => {
   if (error) {
     console.error(error);
@@ -84,8 +84,8 @@ Returns the current portal tariff.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -107,7 +107,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PortalQuotaApi();
+let apiInstance = new DocspaceApiTypescript.PortalQuotaApi();
 let opts = {
   'refresh': true // Boolean | The value indicating whether the current portal tariff information should be refreshed.
 };
@@ -152,8 +152,8 @@ Returns the used space of the current portal.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -175,7 +175,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PortalQuotaApi();
+let apiInstance = new DocspaceApiTypescript.PortalQuotaApi();
 apiInstance.getPortalUsedSpace((error, data, response) => {
   if (error) {
     console.error(error);
@@ -214,8 +214,8 @@ Returns the recommended quota for the current portal.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -237,7 +237,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PortalQuotaApi();
+let apiInstance = new DocspaceApiTypescript.PortalQuotaApi();
 apiInstance.getRightQuota((error, data, response) => {
   if (error) {
     console.error(error);

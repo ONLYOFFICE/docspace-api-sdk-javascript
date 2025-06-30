@@ -1,4 +1,4 @@
-# Api.CustomerInfoWrapper
+# DocspaceApiTypescript.CustomerInfoWrapper
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.FormsItemDto
+# DocspaceApiTypescript.FormsItemDto
 
 ## Properties
 

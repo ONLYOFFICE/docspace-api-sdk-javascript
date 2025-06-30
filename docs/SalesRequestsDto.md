@@ -1,4 +1,4 @@
-# Api.SalesRequestsDto
+# DocspaceApiTypescript.SalesRequestsDto
 
 ## Properties
 

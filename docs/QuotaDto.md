@@ -1,4 +1,4 @@
-# Api.QuotaDto
+# DocspaceApiTypescript.QuotaDto
 
 ## Properties
 

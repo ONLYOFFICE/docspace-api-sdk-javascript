@@ -1,4 +1,4 @@
-# Api.FirebaseDto
+# DocspaceApiTypescript.FirebaseDto
 
 ## Properties
 

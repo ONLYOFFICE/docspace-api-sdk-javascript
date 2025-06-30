@@ -1,6 +1,6 @@
-# Api.SettingsStatisticsApi
+# DocspaceApiTypescript.SettingsStatisticsApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,8 +19,8 @@ Returns the space usage statistics for the module with the ID specified in the r
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -42,7 +42,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsStatisticsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsStatisticsApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The ID extracted from the route parameters.
 apiInstance.getSpaceUsageStatistics(id, (error, data, response) => {
   if (error) {

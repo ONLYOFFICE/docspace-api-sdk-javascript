@@ -1,4 +1,4 @@
-# Api.EditorType
+# DocspaceApiTypescript.EditorType
 
 ## Enum
 

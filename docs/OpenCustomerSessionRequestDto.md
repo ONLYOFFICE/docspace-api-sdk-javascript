@@ -1,4 +1,4 @@
-# Api.OpenCustomerSessionRequestDto
+# DocspaceApiTypescript.OpenCustomerSessionRequestDto
 
 ## Properties
 

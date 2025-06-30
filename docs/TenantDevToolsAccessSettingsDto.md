@@ -1,4 +1,4 @@
-# Api.TenantDevToolsAccessSettingsDto
+# DocspaceApiTypescript.TenantDevToolsAccessSettingsDto
 
 ## Properties
 

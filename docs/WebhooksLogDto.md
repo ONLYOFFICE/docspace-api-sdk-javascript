@@ -1,4 +1,4 @@
-# Api.WebhooksLogDto
+# DocspaceApiTypescript.WebhooksLogDto
 
 ## Properties
 

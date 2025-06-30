@@ -1,4 +1,4 @@
-# Api.FileReferenceWrapper
+# DocspaceApiTypescript.FileReferenceWrapper
 
 ## Properties
 

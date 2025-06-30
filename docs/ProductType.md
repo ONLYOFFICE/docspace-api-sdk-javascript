@@ -1,4 +1,4 @@
-# Api.ProductType
+# DocspaceApiTypescript.ProductType
 
 ## Enum
 

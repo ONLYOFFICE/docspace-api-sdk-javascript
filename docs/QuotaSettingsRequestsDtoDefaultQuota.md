@@ -1,4 +1,4 @@
-# Api.QuotaSettingsRequestsDtoDefaultQuota
+# DocspaceApiTypescript.QuotaSettingsRequestsDtoDefaultQuota
 
 ## Properties
 

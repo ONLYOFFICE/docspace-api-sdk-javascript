@@ -1,6 +1,6 @@
-# Api.PeopleUserDataApi
+# DocspaceApiTypescript.PeopleUserDataApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -28,8 +28,8 @@ Returns the progress of deleting the personal folder.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -51,7 +51,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleUserDataApi();
+let apiInstance = new DocspaceApiTypescript.PeopleUserDataApi();
 apiInstance.getDeletePersonalFolderProgress((error, data, response) => {
   if (error) {
     console.error(error);
@@ -90,8 +90,8 @@ Returns the progress of the started data reassignment for the user with the ID s
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -113,7 +113,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleUserDataApi();
+let apiInstance = new DocspaceApiTypescript.PeopleUserDataApi();
 let userid = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The user ID.
 apiInstance.getReassignProgress(userid, (error, data, response) => {
   if (error) {
@@ -156,8 +156,8 @@ Returns the progress of the started data deletion for the user with the ID speci
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -179,7 +179,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleUserDataApi();
+let apiInstance = new DocspaceApiTypescript.PeopleUserDataApi();
 let userid = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The user ID.
 apiInstance.getRemoveProgress(userid, (error, data, response) => {
   if (error) {
@@ -222,8 +222,8 @@ Checks if the reassignment of rooms and shared files is necessary or not.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -245,10 +245,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleUserDataApi();
+let apiInstance = new DocspaceApiTypescript.PeopleUserDataApi();
 let opts = {
   'userId': "aae1e103-bca5-9fa1-ba8c-42058b4abf28", // String | The user ID.
-  'type': new Api.EmployeeType() // EmployeeType | The expected user type.
+  'type': new DocspaceApiTypescript.EmployeeType() // EmployeeType | The expected user type.
 };
 apiInstance.necessaryReassign(opts, (error, data, response) => {
   if (error) {
@@ -292,8 +292,8 @@ Sends the instructions for deleting a user profile.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -315,7 +315,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleUserDataApi();
+let apiInstance = new DocspaceApiTypescript.PeopleUserDataApi();
 apiInstance.sendInstructionsToDelete((error, data, response) => {
   if (error) {
     console.error(error);
@@ -354,8 +354,8 @@ Starts deleting the personal folder.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -377,7 +377,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleUserDataApi();
+let apiInstance = new DocspaceApiTypescript.PeopleUserDataApi();
 apiInstance.startDeletePersonalFolder((error, data, response) => {
   if (error) {
     console.error(error);
@@ -416,8 +416,8 @@ Starts the data reassignment for the user with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -439,9 +439,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleUserDataApi();
+let apiInstance = new DocspaceApiTypescript.PeopleUserDataApi();
 let opts = {
-  'startReassignRequestDto': new Api.StartReassignRequestDto() // StartReassignRequestDto | 
+  'startReassignRequestDto': new DocspaceApiTypescript.StartReassignRequestDto() // StartReassignRequestDto | 
 };
 apiInstance.startReassign(opts, (error, data, response) => {
   if (error) {
@@ -484,8 +484,8 @@ Starts the data deletion for the user with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -507,9 +507,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleUserDataApi();
+let apiInstance = new DocspaceApiTypescript.PeopleUserDataApi();
 let opts = {
-  'terminateRequestDto': new Api.TerminateRequestDto() // TerminateRequestDto | 
+  'terminateRequestDto': new DocspaceApiTypescript.TerminateRequestDto() // TerminateRequestDto | 
 };
 apiInstance.startRemove(opts, (error, data, response) => {
   if (error) {
@@ -552,8 +552,8 @@ Terminates the data reassignment for the user with the ID specified in the reque
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -575,9 +575,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleUserDataApi();
+let apiInstance = new DocspaceApiTypescript.PeopleUserDataApi();
 let opts = {
-  'terminateRequestDto': new Api.TerminateRequestDto() // TerminateRequestDto | 
+  'terminateRequestDto': new DocspaceApiTypescript.TerminateRequestDto() // TerminateRequestDto | 
 };
 apiInstance.terminateReassign(opts, (error, data, response) => {
   if (error) {
@@ -620,8 +620,8 @@ Terminates the data deletion for the user with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -643,9 +643,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleUserDataApi();
+let apiInstance = new DocspaceApiTypescript.PeopleUserDataApi();
 let opts = {
-  'terminateRequestDto': new Api.TerminateRequestDto() // TerminateRequestDto | 
+  'terminateRequestDto': new DocspaceApiTypescript.TerminateRequestDto() // TerminateRequestDto | 
 };
 apiInstance.terminateRemove(opts, (error, data, response) => {
   if (error) {

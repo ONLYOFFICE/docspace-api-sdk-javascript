@@ -1,4 +1,4 @@
-# Api.FileShareWrapper
+# DocspaceApiTypescript.FileShareWrapper
 
 ## Properties
 

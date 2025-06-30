@@ -1,4 +1,4 @@
-# Api.ManageFormFillingDtoInteger
+# DocspaceApiTypescript.ManageFormFillingDtoInteger
 
 ## Properties
 

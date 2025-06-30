@@ -1,4 +1,4 @@
-# Api.Tariff
+# DocspaceApiTypescript.Tariff
 
 ## Properties
 
@@ -11,5 +11,6 @@ Name | Type | Description | Notes
 **licenseDate** | **Date** | The tariff license date. | [optional] 
 **customerId** | **String** | The tariff customer ID. | [optional] 
 **quotas** | [**[Quota]**](Quota.md) | The list of tariff quotas. | [optional] 
+**overdueQuotas** | [**[Quota]**](Quota.md) | The list of overdue tariff quotas. | [optional] 
 
 

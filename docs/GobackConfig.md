@@ -1,4 +1,4 @@
-# Api.GobackConfig
+# DocspaceApiTypescript.GobackConfig
 
 ## Properties
 

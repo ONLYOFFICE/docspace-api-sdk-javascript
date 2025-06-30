@@ -1,4 +1,4 @@
-# Api.TimezonesRequestsDto
+# DocspaceApiTypescript.TimezonesRequestsDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.IsDefaultWhiteLabelLogosDto
+# DocspaceApiTypescript.IsDefaultWhiteLabelLogosDto
 
 ## Properties
 

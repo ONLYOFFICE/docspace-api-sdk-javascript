@@ -1,6 +1,6 @@
-# Api.SettingsSSOApi
+# DocspaceApiTypescript.SettingsSSOApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,8 +23,8 @@ Returns the default portal SSO settings.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -46,7 +46,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsSSOApi();
+let apiInstance = new DocspaceApiTypescript.SettingsSSOApi();
 apiInstance.getDefaultSsoSettingsV2((error, data, response) => {
   if (error) {
     console.error(error);
@@ -85,9 +85,9 @@ Returns the current portal SSO settings.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.SettingsSSOApi();
+let apiInstance = new DocspaceApiTypescript.SettingsSSOApi();
 apiInstance.getSsoSettingsV2((error, data, response) => {
   if (error) {
     console.error(error);
@@ -126,8 +126,8 @@ Returns the SSO settings constants.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -149,7 +149,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsSSOApi();
+let apiInstance = new DocspaceApiTypescript.SettingsSSOApi();
 apiInstance.getSsoSettingsV2Constants((error, data, response) => {
   if (error) {
     console.error(error);
@@ -188,8 +188,8 @@ Resets the SSO settings of the current portal.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -211,7 +211,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsSSOApi();
+let apiInstance = new DocspaceApiTypescript.SettingsSSOApi();
 apiInstance.resetSsoSettingsV2((error, data, response) => {
   if (error) {
     console.error(error);
@@ -250,8 +250,8 @@ Saves the SSO settings for the current portal.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -273,9 +273,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsSSOApi();
+let apiInstance = new DocspaceApiTypescript.SettingsSSOApi();
 let opts = {
-  'ssoSettingsRequestsDto': new Api.SsoSettingsRequestsDto() // SsoSettingsRequestsDto | 
+  'ssoSettingsRequestsDto': new DocspaceApiTypescript.SsoSettingsRequestsDto() // SsoSettingsRequestsDto | 
 };
 apiInstance.saveSsoSettingsV2(opts, (error, data, response) => {
   if (error) {

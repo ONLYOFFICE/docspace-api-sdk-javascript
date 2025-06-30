@@ -1,4 +1,4 @@
-# Api.TenantDomainValidator
+# DocspaceApiTypescript.TenantDomainValidator
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.WizardSettings
+# DocspaceApiTypescript.WizardSettings
 
 ## Properties
 

@@ -1,6 +1,6 @@
-# Api.PeopleQuotaApi
+# DocspaceApiTypescript.PeopleQuotaApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,8 +20,8 @@ Resets a quota limit of users with the IDs specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -43,9 +43,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleQuotaApi();
+let apiInstance = new DocspaceApiTypescript.PeopleQuotaApi();
 let opts = {
-  'updateMembersQuotaRequestDto': new Api.UpdateMembersQuotaRequestDto() // UpdateMembersQuotaRequestDto | 
+  'updateMembersQuotaRequestDto': new DocspaceApiTypescript.UpdateMembersQuotaRequestDto() // UpdateMembersQuotaRequestDto | 
 };
 apiInstance.resetUsersQuota(opts, (error, data, response) => {
   if (error) {
@@ -88,8 +88,8 @@ Changes a quota limit for the users with the IDs specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -111,9 +111,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.PeopleQuotaApi();
+let apiInstance = new DocspaceApiTypescript.PeopleQuotaApi();
 let opts = {
-  'updateMembersQuotaRequestDto': new Api.UpdateMembersQuotaRequestDto() // UpdateMembersQuotaRequestDto | 
+  'updateMembersQuotaRequestDto': new DocspaceApiTypescript.UpdateMembersQuotaRequestDto() // UpdateMembersQuotaRequestDto | 
 };
 apiInstance.updateUserQuota(opts, (error, data, response) => {
   if (error) {

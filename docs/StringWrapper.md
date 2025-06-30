@@ -1,4 +1,4 @@
-# Api.StringWrapper
+# DocspaceApiTypescript.StringWrapper
 
 ## Properties
 

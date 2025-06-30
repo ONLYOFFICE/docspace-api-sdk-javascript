@@ -1,4 +1,4 @@
-# Api.ThumbnailsDataDto
+# DocspaceApiTypescript.ThumbnailsDataDto
 
 ## Properties
 

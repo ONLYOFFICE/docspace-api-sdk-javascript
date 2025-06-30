@@ -1,4 +1,4 @@
-# Api.SetupCode
+# DocspaceApiTypescript.SetupCode
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.CheckConversionRequestDtoInteger
+# DocspaceApiTypescript.CheckConversionRequestDtoInteger
 
 ## Properties
 

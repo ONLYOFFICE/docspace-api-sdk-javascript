@@ -1,4 +1,4 @@
-# Api.PasswordSettingsWrapper
+# DocspaceApiTypescript.PasswordSettingsWrapper
 
 ## Properties
 

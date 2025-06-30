@@ -1,4 +1,4 @@
-# Api.RoomSecurityError
+# DocspaceApiTypescript.RoomSecurityError
 
 ## Enum
 

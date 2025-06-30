@@ -1,4 +1,4 @@
-# Api.HideConfirmConvertRequestDto
+# DocspaceApiTypescript.HideConfirmConvertRequestDto
 
 ## Properties
 

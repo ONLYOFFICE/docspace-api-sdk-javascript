@@ -1,4 +1,4 @@
-# Api.FileIntegerWrapper
+# DocspaceApiTypescript.FileIntegerWrapper
 
 ## Properties
 

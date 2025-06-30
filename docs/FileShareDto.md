@@ -1,4 +1,4 @@
-# Api.FileShareDto
+# DocspaceApiTypescript.FileShareDto
 
 ## Properties
 

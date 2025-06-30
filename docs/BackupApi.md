@@ -1,6 +1,6 @@
-# Api.BackupApi
+# DocspaceApiTypescript.BackupApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -28,8 +28,8 @@ Creates the backup schedule of the current portal with the parameters specified 
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -51,9 +51,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.BackupApi();
+let apiInstance = new DocspaceApiTypescript.BackupApi();
 let opts = {
-  'backupScheduleDto': new Api.BackupScheduleDto() // BackupScheduleDto | 
+  'backupScheduleDto': new DocspaceApiTypescript.BackupScheduleDto() // BackupScheduleDto | 
 };
 apiInstance.createBackupSchedule(opts, (error, data, response) => {
   if (error) {
@@ -96,8 +96,8 @@ Deletes the backup with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -119,7 +119,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.BackupApi();
+let apiInstance = new DocspaceApiTypescript.BackupApi();
 let id = "75a5f745-f697-4418-b38d-0fe0d277e258"; // String | The backup ID.
 apiInstance.deleteBackup(id, (error, data, response) => {
   if (error) {
@@ -162,8 +162,8 @@ Deletes the backup history from the current portal.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -185,7 +185,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.BackupApi();
+let apiInstance = new DocspaceApiTypescript.BackupApi();
 let opts = {
   'dump': true // Boolean | Specifies if a dump will be created or not.
 };
@@ -230,8 +230,8 @@ Deletes the backup schedule of the current portal.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -253,7 +253,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.BackupApi();
+let apiInstance = new DocspaceApiTypescript.BackupApi();
 let opts = {
   'dump': true // Boolean | Specifies if a dump will be created or not.
 };
@@ -298,8 +298,8 @@ Returns the history of the started backup.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -321,7 +321,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.BackupApi();
+let apiInstance = new DocspaceApiTypescript.BackupApi();
 let opts = {
   'dump': true // Boolean | Specifies if a dump will be created or not.
 };
@@ -366,8 +366,8 @@ Returns the progress of the started backup.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -389,7 +389,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.BackupApi();
+let apiInstance = new DocspaceApiTypescript.BackupApi();
 let opts = {
   'dump': true // Boolean | Specifies if a dump will be created or not.
 };
@@ -434,8 +434,8 @@ Returns the backup schedule of the current portal.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -457,7 +457,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.BackupApi();
+let apiInstance = new DocspaceApiTypescript.BackupApi();
 let opts = {
   'dump': true // Boolean | Specifies if a dump will be created or not.
 };
@@ -502,9 +502,9 @@ Returns the progress of the started restoring process.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.BackupApi();
+let apiInstance = new DocspaceApiTypescript.BackupApi();
 let opts = {
   'dump': true // Boolean | Specifies if a dump will be created or not.
 };
@@ -549,8 +549,8 @@ Starts the backup of the current portal with the parameters specified in the req
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -572,9 +572,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.BackupApi();
+let apiInstance = new DocspaceApiTypescript.BackupApi();
 let opts = {
-  'backupDto': new Api.BackupDto() // BackupDto | 
+  'backupDto': new DocspaceApiTypescript.BackupDto() // BackupDto | 
 };
 apiInstance.startBackup(opts, (error, data, response) => {
   if (error) {
@@ -617,8 +617,8 @@ Starts the data restoring process of the current portal with the parameters spec
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -640,9 +640,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.BackupApi();
+let apiInstance = new DocspaceApiTypescript.BackupApi();
 let opts = {
-  'backupRestoreDto': new Api.BackupRestoreDto() // BackupRestoreDto | 
+  'backupRestoreDto': new DocspaceApiTypescript.BackupRestoreDto() // BackupRestoreDto | 
 };
 apiInstance.startBackupRestore(opts, (error, data, response) => {
   if (error) {

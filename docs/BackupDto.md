@@ -1,4 +1,4 @@
-# Api.BackupDto
+# DocspaceApiTypescript.BackupDto
 
 ## Properties
 

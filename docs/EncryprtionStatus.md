@@ -1,4 +1,4 @@
-# Api.EncryprtionStatus
+# DocspaceApiTypescript.EncryprtionStatus
 
 ## Enum
 

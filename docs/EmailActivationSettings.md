@@ -1,4 +1,4 @@
-# Api.EmailActivationSettings
+# DocspaceApiTypescript.EmailActivationSettings
 
 ## Properties
 

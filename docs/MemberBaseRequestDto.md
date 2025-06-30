@@ -1,4 +1,4 @@
-# Api.MemberBaseRequestDto
+# DocspaceApiTypescript.MemberBaseRequestDto
 
 ## Properties
 

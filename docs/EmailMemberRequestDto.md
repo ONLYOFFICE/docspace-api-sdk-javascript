@@ -1,4 +1,4 @@
-# Api.EmailMemberRequestDto
+# DocspaceApiTypescript.EmailMemberRequestDto
 
 ## Properties
 

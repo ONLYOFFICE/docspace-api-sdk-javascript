@@ -1,4 +1,4 @@
-# Api.UsageSpaceStatItemDto
+# DocspaceApiTypescript.UsageSpaceStatItemDto
 
 ## Properties
 

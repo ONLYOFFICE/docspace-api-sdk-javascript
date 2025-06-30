@@ -1,4 +1,4 @@
-# Api.ClientInfoResponse
+# DocspaceApiTypescript.ClientInfoResponse
 
 ## Properties
 

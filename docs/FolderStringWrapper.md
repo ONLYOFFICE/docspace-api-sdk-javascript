@@ -1,4 +1,4 @@
-# Api.FolderStringWrapper
+# DocspaceApiTypescript.FolderStringWrapper
 
 ## Properties
 

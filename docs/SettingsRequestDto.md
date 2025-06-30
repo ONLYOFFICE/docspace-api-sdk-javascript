@@ -1,4 +1,4 @@
-# Api.SettingsRequestDto
+# DocspaceApiTypescript.SettingsRequestDto
 
 ## Properties
 

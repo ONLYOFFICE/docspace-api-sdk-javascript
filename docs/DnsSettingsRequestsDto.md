@@ -1,4 +1,4 @@
-# Api.DnsSettingsRequestsDto
+# DocspaceApiTypescript.DnsSettingsRequestsDto
 
 ## Properties
 

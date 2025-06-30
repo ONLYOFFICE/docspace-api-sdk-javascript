@@ -1,4 +1,4 @@
-# Api.BaseBatchRequestDtoFolderIdsInner
+# DocspaceApiTypescript.BaseBatchRequestDtoFolderIdsInner
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.EmployeeType
+# DocspaceApiTypescript.EmployeeType
 
 ## Enum
 

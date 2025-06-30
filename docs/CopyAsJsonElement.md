@@ -1,4 +1,4 @@
-# Api.CopyAsJsonElement
+# DocspaceApiTypescript.CopyAsJsonElement
 
 ## Properties
 

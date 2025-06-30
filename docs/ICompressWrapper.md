@@ -1,4 +1,4 @@
-# Api.ICompressWrapper
+# DocspaceApiTypescript.ICompressWrapper
 
 ## Properties
 

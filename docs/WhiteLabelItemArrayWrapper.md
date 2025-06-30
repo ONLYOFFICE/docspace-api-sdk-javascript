@@ -1,4 +1,4 @@
-# Api.WhiteLabelItemArrayWrapper
+# DocspaceApiTypescript.WhiteLabelItemArrayWrapper
 
 ## Properties
 

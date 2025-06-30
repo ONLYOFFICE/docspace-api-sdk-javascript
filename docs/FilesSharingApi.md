@@ -1,6 +1,6 @@
-# Api.FilesSharingApi
+# DocspaceApiTypescript.FilesSharingApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,12 +23,12 @@ Applies a password specified in the request to get the external data.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesSharingApi();
+let apiInstance = new DocspaceApiTypescript.FilesSharingApi();
 let key = "some text"; // String | The unique document identifier.
 let opts = {
-  'externalShareRequestParam': new Api.ExternalShareRequestParam() // ExternalShareRequestParam | The external data share request parameters.
+  'externalShareRequestParam': new DocspaceApiTypescript.ExternalShareRequestParam() // ExternalShareRequestParam | The external data share request parameters.
 };
 apiInstance.applyExternalSharePassword(key, opts, (error, data, response) => {
   if (error) {
@@ -72,8 +72,8 @@ Changes the owner of the file with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -95,9 +95,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesSharingApi();
+let apiInstance = new DocspaceApiTypescript.FilesSharingApi();
 let opts = {
-  'changeOwnerRequestDto': new Api.ChangeOwnerRequestDto() // ChangeOwnerRequestDto | 
+  'changeOwnerRequestDto': new DocspaceApiTypescript.ChangeOwnerRequestDto() // ChangeOwnerRequestDto | 
 };
 apiInstance.changeFileOwner(opts, (error, data, response) => {
   if (error) {
@@ -140,9 +140,9 @@ Returns the external data by the key specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.FilesSharingApi();
+let apiInstance = new DocspaceApiTypescript.FilesSharingApi();
 let key = "some text"; // String | The unique key of the external shared data.
 let opts = {
   'fileId': "9846" // String | The unique document identifier.
@@ -189,8 +189,8 @@ Returns a list of users with their access rights to the file with the ID specifi
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -212,7 +212,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesSharingApi();
+let apiInstance = new DocspaceApiTypescript.FilesSharingApi();
 let fileId = 9846; // Number | The file ID of the request.
 apiInstance.getSharedUsers(fileId, (error, data, response) => {
   if (error) {
@@ -255,8 +255,8 @@ Sends a message to the users who are mentioned in the file with the ID specified
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -278,10 +278,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.FilesSharingApi();
+let apiInstance = new DocspaceApiTypescript.FilesSharingApi();
 let fileId = 9846; // Number | The file ID of the mention message.
 let opts = {
-  'mentionMessageWrapper': new Api.MentionMessageWrapper() // MentionMessageWrapper | The mention message.
+  'mentionMessageWrapper': new DocspaceApiTypescript.MentionMessageWrapper() // MentionMessageWrapper | The mention message.
 };
 apiInstance.sendEditorNotify(fileId, opts, (error, data, response) => {
   if (error) {

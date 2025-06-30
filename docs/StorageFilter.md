@@ -1,4 +1,4 @@
-# Api.StorageFilter
+# DocspaceApiTypescript.StorageFilter
 
 ## Enum
 

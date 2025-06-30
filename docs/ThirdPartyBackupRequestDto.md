@@ -1,4 +1,4 @@
-# Api.ThirdPartyBackupRequestDto
+# DocspaceApiTypescript.ThirdPartyBackupRequestDto
 
 ## Properties
 

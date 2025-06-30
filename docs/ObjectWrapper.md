@@ -1,4 +1,4 @@
-# Api.ObjectWrapper
+# DocspaceApiTypescript.ObjectWrapper
 
 ## Properties
 

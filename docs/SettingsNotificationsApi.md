@@ -1,6 +1,6 @@
-# Api.SettingsNotificationsApi
+# DocspaceApiTypescript.SettingsNotificationsApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,8 +22,8 @@ Checks if the notification type specified in the request is enabled or not.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -45,8 +45,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsNotificationsApi();
-let type = new Api.NotificationType(); // NotificationType | The type of notification to query, specified in the route.
+let apiInstance = new DocspaceApiTypescript.SettingsNotificationsApi();
+let type = new DocspaceApiTypescript.NotificationType(); // NotificationType | The type of notification to query, specified in the route.
 apiInstance.getNotificationSettings(type, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -88,8 +88,8 @@ Returns a list of rooms with the disabled notifications.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -111,7 +111,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsNotificationsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsNotificationsApi();
 apiInstance.getRoomsNotificationSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -150,8 +150,8 @@ Enables the notification type specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -173,9 +173,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsNotificationsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsNotificationsApi();
 let opts = {
-  'notificationSettingsRequestsDto': new Api.NotificationSettingsRequestsDto() // NotificationSettingsRequestsDto | 
+  'notificationSettingsRequestsDto': new DocspaceApiTypescript.NotificationSettingsRequestsDto() // NotificationSettingsRequestsDto | 
 };
 apiInstance.setNotificationSettings(opts, (error, data, response) => {
   if (error) {
@@ -218,8 +218,8 @@ Sets a notification status for a room with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -241,9 +241,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsNotificationsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsNotificationsApi();
 let opts = {
-  'roomsNotificationsSettingsRequestDto': new Api.RoomsNotificationsSettingsRequestDto() // RoomsNotificationsSettingsRequestDto | 
+  'roomsNotificationsSettingsRequestDto': new DocspaceApiTypescript.RoomsNotificationsSettingsRequestDto() // RoomsNotificationsSettingsRequestDto | 
 };
 apiInstance.setRoomsNotificationStatus(opts, (error, data, response) => {
   if (error) {

@@ -1,4 +1,4 @@
-# Api.TenantTrustedDomainsType
+# DocspaceApiTypescript.TenantTrustedDomainsType
 
 ## Enum
 

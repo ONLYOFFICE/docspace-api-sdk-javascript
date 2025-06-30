@@ -1,4 +1,4 @@
-# Api.OwnerIdSettingsRequestDto
+# DocspaceApiTypescript.OwnerIdSettingsRequestDto
 
 ## Properties
 

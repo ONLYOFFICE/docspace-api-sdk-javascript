@@ -1,4 +1,4 @@
-# Api.SubjectFilter
+# DocspaceApiTypescript.SubjectFilter
 
 ## Enum
 

@@ -1,4 +1,4 @@
-# Api.RecentConfig
+# DocspaceApiTypescript.RecentConfig
 
 ## Properties
 

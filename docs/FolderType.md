@@ -1,4 +1,4 @@
-# Api.FolderType
+# DocspaceApiTypescript.FolderType
 
 ## Enum
 

@@ -1,4 +1,4 @@
-# Api.CreateFileJsonElementTemplateId
+# DocspaceApiTypescript.CreateFileJsonElementTemplateId
 
 ## Properties
 

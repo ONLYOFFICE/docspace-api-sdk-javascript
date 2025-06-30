@@ -1,4 +1,4 @@
-# Api.CreateWebhooksConfigRequestsDto
+# DocspaceApiTypescript.CreateWebhooksConfigRequestsDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.EmployeeStatus
+# DocspaceApiTypescript.EmployeeStatus
 
 ## Enum
 

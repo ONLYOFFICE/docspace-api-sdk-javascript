@@ -1,4 +1,4 @@
-# Api.ItemKeyValuePairStringLogoRequestsDto
+# DocspaceApiTypescript.ItemKeyValuePairStringLogoRequestsDto
 
 ## Properties
 

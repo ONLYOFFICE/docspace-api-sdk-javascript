@@ -1,4 +1,4 @@
-# Api.SetupCodeWrapper
+# DocspaceApiTypescript.SetupCodeWrapper
 
 ## Properties
 

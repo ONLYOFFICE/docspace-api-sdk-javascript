@@ -1,4 +1,4 @@
-# Api.FileEntryDto
+# DocspaceApiTypescript.FileEntryDto
 
 ## Properties
 

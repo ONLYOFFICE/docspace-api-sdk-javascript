@@ -1,6 +1,6 @@
-# Api.SettingsMessagesApi
+# DocspaceApiTypescript.SettingsMessagesApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,8 +21,8 @@ Displays the contact form on the \&quot;Sign In\&quot; page, allowing users to s
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -44,9 +44,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsMessagesApi();
+let apiInstance = new DocspaceApiTypescript.SettingsMessagesApi();
 let opts = {
-  'turnOnAdminMessageSettingsRequestDto': new Api.TurnOnAdminMessageSettingsRequestDto() // TurnOnAdminMessageSettingsRequestDto | 
+  'turnOnAdminMessageSettingsRequestDto': new DocspaceApiTypescript.TurnOnAdminMessageSettingsRequestDto() // TurnOnAdminMessageSettingsRequestDto | 
 };
 apiInstance.enableAdminMessageSettings(opts, (error, data, response) => {
   if (error) {
@@ -89,11 +89,11 @@ Sends a message to the administrator email when unauthorized users encounter iss
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.SettingsMessagesApi();
+let apiInstance = new DocspaceApiTypescript.SettingsMessagesApi();
 let opts = {
-  'adminMessageSettingsRequestsDto': new Api.AdminMessageSettingsRequestsDto() // AdminMessageSettingsRequestsDto | 
+  'adminMessageSettingsRequestsDto': new DocspaceApiTypescript.AdminMessageSettingsRequestsDto() // AdminMessageSettingsRequestsDto | 
 };
 apiInstance.sendAdminMail(opts, (error, data, response) => {
   if (error) {
@@ -136,11 +136,11 @@ Sends an invitation email with a link to the DocSpace.
 ### Example
 
 ```javascript
-import Api from 'api';
+import DocspaceApiTypescript from 'docspace-api-typescript';
 
-let apiInstance = new Api.SettingsMessagesApi();
+let apiInstance = new DocspaceApiTypescript.SettingsMessagesApi();
 let opts = {
-  'adminMessageBaseSettingsRequestsDto': new Api.AdminMessageBaseSettingsRequestsDto() // AdminMessageBaseSettingsRequestsDto | 
+  'adminMessageBaseSettingsRequestsDto': new DocspaceApiTypescript.AdminMessageBaseSettingsRequestsDto() // AdminMessageBaseSettingsRequestsDto | 
 };
 apiInstance.sendJoinInviteMail(opts, (error, data, response) => {
   if (error) {

@@ -1,4 +1,4 @@
-# Api.UpdateMembersQuotaRequestDtoQuota
+# DocspaceApiTypescript.UpdateMembersQuotaRequestDtoQuota
 
 ## Properties
 

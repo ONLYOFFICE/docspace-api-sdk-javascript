@@ -1,4 +1,4 @@
-# Api.TenantWrapper
+# DocspaceApiTypescript.TenantWrapper
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Api.ActiveConnectionsDto
+# DocspaceApiTypescript.ActiveConnectionsDto
 
 ## Properties
 

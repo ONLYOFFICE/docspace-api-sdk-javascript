@@ -1,4 +1,4 @@
-# Api.FileShareParams
+# DocspaceApiTypescript.FileShareParams
 
 ## Properties
 

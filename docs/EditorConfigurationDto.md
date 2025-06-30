@@ -1,4 +1,4 @@
-# Api.EditorConfigurationDto
+# DocspaceApiTypescript.EditorConfigurationDto
 
 ## Properties
 

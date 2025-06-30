@@ -1,4 +1,4 @@
-# Api.ActionConfig
+# DocspaceApiTypescript.ActionConfig
 
 ## Properties
 

@@ -1,6 +1,6 @@
-# Api.SettingsIPRestrictionsApi
+# DocspaceApiTypescript.SettingsIPRestrictionsApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,8 +22,8 @@ Returns the IP portal restrictions.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -45,7 +45,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsIPRestrictionsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsIPRestrictionsApi();
 apiInstance.getIpRestrictions((error, data, response) => {
   if (error) {
     console.error(error);
@@ -84,8 +84,8 @@ Returns the IP restriction settings.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -107,7 +107,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsIPRestrictionsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsIPRestrictionsApi();
 apiInstance.readIpRestrictionsSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -146,8 +146,8 @@ Updates the IP restrictions with the parameters specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -169,9 +169,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsIPRestrictionsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsIPRestrictionsApi();
 let opts = {
-  'ipRestrictionsDto': new Api.IpRestrictionsDto() // IpRestrictionsDto | 
+  'ipRestrictionsDto': new DocspaceApiTypescript.IpRestrictionsDto() // IpRestrictionsDto | 
 };
 apiInstance.saveIpRestrictions(opts, (error, data, response) => {
   if (error) {
@@ -214,8 +214,8 @@ Updates the IP restriction settings with the parameters specified in the request
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -237,9 +237,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SettingsIPRestrictionsApi();
+let apiInstance = new DocspaceApiTypescript.SettingsIPRestrictionsApi();
 let opts = {
-  'ipRestrictionsDto': new Api.IpRestrictionsDto() // IpRestrictionsDto | 
+  'ipRestrictionsDto': new DocspaceApiTypescript.IpRestrictionsDto() // IpRestrictionsDto | 
 };
 apiInstance.updateIpRestrictionsSettings(opts, (error, data, response) => {
   if (error) {

@@ -1,4 +1,4 @@
-# Api.MailDomainSettingsRequestsDto
+# DocspaceApiTypescript.MailDomainSettingsRequestsDto
 
 ## Properties
 

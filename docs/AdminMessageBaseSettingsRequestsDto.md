@@ -1,4 +1,4 @@
-# Api.AdminMessageBaseSettingsRequestsDto
+# DocspaceApiTypescript.AdminMessageBaseSettingsRequestsDto
 
 ## Properties
 

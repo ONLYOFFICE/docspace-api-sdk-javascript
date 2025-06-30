@@ -1,4 +1,4 @@
-# Api.UserInvitationRequestDto
+# DocspaceApiTypescript.UserInvitationRequestDto
 
 ## Properties
 

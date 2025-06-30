@@ -1,4 +1,4 @@
-# Api.AccountInfoDto
+# DocspaceApiTypescript.AccountInfoDto
 
 ## Properties
 

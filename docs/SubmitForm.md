@@ -1,4 +1,4 @@
-# Api.SubmitForm
+# DocspaceApiTypescript.SubmitForm
 
 ## Properties
 

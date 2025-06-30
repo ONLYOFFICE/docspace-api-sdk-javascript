@@ -1,6 +1,6 @@
-# Api.GroupApi
+# DocspaceApiTypescript.GroupApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -29,8 +29,8 @@ Adds a new group with the group manager, name, and members specified in the requ
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -52,9 +52,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.GroupApi();
+let apiInstance = new DocspaceApiTypescript.GroupApi();
 let opts = {
-  'groupRequestDto': new Api.GroupRequestDto() // GroupRequestDto | 
+  'groupRequestDto': new DocspaceApiTypescript.GroupRequestDto() // GroupRequestDto | 
 };
 apiInstance.addGroup(opts, (error, data, response) => {
   if (error) {
@@ -97,8 +97,8 @@ Adds new group members to the group with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -120,10 +120,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.GroupApi();
+let apiInstance = new DocspaceApiTypescript.GroupApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
 let opts = {
-  'membersRequest': new Api.MembersRequest() // MembersRequest | The member request.
+  'membersRequest': new DocspaceApiTypescript.MembersRequest() // MembersRequest | The member request.
 };
 apiInstance.addMembersTo(id, opts, (error, data, response) => {
   if (error) {
@@ -167,8 +167,8 @@ Deletes a group with the ID specified in the request from the list of groups on 
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -190,7 +190,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.GroupApi();
+let apiInstance = new DocspaceApiTypescript.GroupApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
 apiInstance.deleteGroup(id, (error, data, response) => {
   if (error) {
@@ -233,8 +233,8 @@ Returns the detailed information about the selected group.   **Note**: This meth
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -256,7 +256,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.GroupApi();
+let apiInstance = new DocspaceApiTypescript.GroupApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
 let opts = {
   'includeMembers': true // Boolean | Specifies whether to include the group members or not.
@@ -303,8 +303,8 @@ Returns a list of groups for the user with the ID specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -326,7 +326,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.GroupApi();
+let apiInstance = new DocspaceApiTypescript.GroupApi();
 let userid = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The user ID.
 apiInstance.getGroupByUserId(userid, (error, data, response) => {
   if (error) {
@@ -369,8 +369,8 @@ Returns the general information about all the groups, such as group ID and group
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -392,14 +392,14 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.GroupApi();
+let apiInstance = new DocspaceApiTypescript.GroupApi();
 let opts = {
   'userId': "aae1e103-bca5-9fa1-ba8c-42058b4abf28", // String | The user ID.
   'manager': true, // Boolean | Specifies if the user is a manager or not.
   'count': 1234, // Number | The number of records to retrieve.
   'startIndex': 1234, // Number | The starting index for paginated results.
   'sortBy': "some text", // String | Specifies the property used to sort the query results.
-  'sortOrder': new Api.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'sortOrder': new DocspaceApiTypescript.SortOrder(), // SortOrder | The order in which the results are sorted.
   'filterValue': "some text" // String | The text used for filtering or searching group data.
 };
 apiInstance.getGroups(opts, (error, data, response) => {
@@ -449,8 +449,8 @@ Moves all the members from the selected group to another one specified in the re
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -472,7 +472,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.GroupApi();
+let apiInstance = new DocspaceApiTypescript.GroupApi();
 let fromId = "75a5f745-f697-4418-b38d-0fe0d277e258"; // String | The group ID to move from.
 let toId = "75a5f745-f697-4418-b38d-0fe0d277e258"; // String | The group ID to move to.
 apiInstance.moveMembersTo(fromId, toId, (error, data, response) => {
@@ -517,8 +517,8 @@ Removes the group members specified in the request from the selected group.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -540,10 +540,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.GroupApi();
+let apiInstance = new DocspaceApiTypescript.GroupApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
 let opts = {
-  'membersRequest': new Api.MembersRequest() // MembersRequest | The member request.
+  'membersRequest': new DocspaceApiTypescript.MembersRequest() // MembersRequest | The member request.
 };
 apiInstance.removeMembersFrom(id, opts, (error, data, response) => {
   if (error) {
@@ -587,8 +587,8 @@ Sets a user with the ID specified in the request as a group manager.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -610,10 +610,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.GroupApi();
+let apiInstance = new DocspaceApiTypescript.GroupApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
 let opts = {
-  'setManagerRequest': new Api.SetManagerRequest() // SetManagerRequest | The request for setting a group manager.
+  'setManagerRequest': new DocspaceApiTypescript.SetManagerRequest() // SetManagerRequest | The request for setting a group manager.
 };
 apiInstance.setGroupManager(id, opts, (error, data, response) => {
   if (error) {
@@ -657,8 +657,8 @@ Replaces the group members with those specified in the request.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -680,10 +680,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.GroupApi();
+let apiInstance = new DocspaceApiTypescript.GroupApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
 let opts = {
-  'membersRequest': new Api.MembersRequest() // MembersRequest | The member request.
+  'membersRequest': new DocspaceApiTypescript.MembersRequest() // MembersRequest | The member request.
 };
 apiInstance.setMembersTo(id, opts, (error, data, response) => {
   if (error) {
@@ -727,8 +727,8 @@ Updates the existing group changing the group manager, name, and/or members.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -750,10 +750,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.GroupApi();
+let apiInstance = new DocspaceApiTypescript.GroupApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
 let opts = {
-  'updateGroupRequest': new Api.UpdateGroupRequest() // UpdateGroupRequest | The request for updating a group.
+  'updateGroupRequest': new DocspaceApiTypescript.UpdateGroupRequest() // UpdateGroupRequest | The request for updating a group.
 };
 apiInstance.updateGroup(id, opts, (error, data, response) => {
   if (error) {

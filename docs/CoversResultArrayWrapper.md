@@ -1,4 +1,4 @@
-# Api.CoversResultArrayWrapper
+# DocspaceApiTypescript.CoversResultArrayWrapper
 
 ## Properties
 

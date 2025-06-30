@@ -1,4 +1,4 @@
-# Api.Culture
+# DocspaceApiTypescript.Culture
 
 ## Properties
 

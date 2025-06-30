@@ -1,6 +1,6 @@
-# Api.SecuritySMTPSettingsApi
+# DocspaceApiTypescript.SecuritySMTPSettingsApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,8 +23,8 @@ Returns the status of the SMTP testing process.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -46,7 +46,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SecuritySMTPSettingsApi();
+let apiInstance = new DocspaceApiTypescript.SecuritySMTPSettingsApi();
 apiInstance.getSmtpOperationStatus((error, data, response) => {
   if (error) {
     console.error(error);
@@ -85,8 +85,8 @@ Returns the current portal SMTP settings.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -108,7 +108,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SecuritySMTPSettingsApi();
+let apiInstance = new DocspaceApiTypescript.SecuritySMTPSettingsApi();
 apiInstance.getSmtpSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -147,8 +147,8 @@ Resets the SMTP settings of the current portal.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -170,7 +170,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SecuritySMTPSettingsApi();
+let apiInstance = new DocspaceApiTypescript.SecuritySMTPSettingsApi();
 apiInstance.resetSmtpSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -209,8 +209,8 @@ Saves the SMTP settings for the current portal.
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -232,9 +232,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SecuritySMTPSettingsApi();
+let apiInstance = new DocspaceApiTypescript.SecuritySMTPSettingsApi();
 let opts = {
-  'smtpSettingsDto': new Api.SmtpSettingsDto() // SmtpSettingsDto | 
+  'smtpSettingsDto': new DocspaceApiTypescript.SmtpSettingsDto() // SmtpSettingsDto | 
 };
 apiInstance.saveSmtpSettings(opts, (error, data, response) => {
   if (error) {
@@ -277,8 +277,8 @@ Tests the SMTP settings for the current portal (sends test message to the user e
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -300,7 +300,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new Api.SecuritySMTPSettingsApi();
+let apiInstance = new DocspaceApiTypescript.SecuritySMTPSettingsApi();
 apiInstance.testSmtpSettings((error, data, response) => {
   if (error) {
     console.error(error);

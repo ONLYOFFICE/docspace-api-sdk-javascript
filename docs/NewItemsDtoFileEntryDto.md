@@ -1,4 +1,4 @@
-# Api.NewItemsDtoFileEntryDto
+# DocspaceApiTypescript.NewItemsDtoFileEntryDto
 
 ## Properties
 

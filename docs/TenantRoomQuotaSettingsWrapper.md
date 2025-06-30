@@ -1,4 +1,4 @@
-# Api.TenantRoomQuotaSettingsWrapper
+# DocspaceApiTypescript.TenantRoomQuotaSettingsWrapper
 
 ## Properties
 

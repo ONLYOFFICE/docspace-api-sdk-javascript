@@ -1,4 +1,4 @@
-# Api.EntryType
+# DocspaceApiTypescript.EntryType
 
 ## Enum
 

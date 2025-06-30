@@ -1,4 +1,4 @@
-# Api.UnknownWrapper
+# DocspaceApiTypescript.UnknownWrapper
 
 ## Properties
 

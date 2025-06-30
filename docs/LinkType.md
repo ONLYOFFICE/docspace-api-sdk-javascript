@@ -1,4 +1,4 @@
-# Api.LinkType
+# DocspaceApiTypescript.LinkType
 
 ## Enum
 

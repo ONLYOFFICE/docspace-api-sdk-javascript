@@ -1,4 +1,4 @@
-# Api.GroupWrapper
+# DocspaceApiTypescript.GroupWrapper
 
 ## Properties
 

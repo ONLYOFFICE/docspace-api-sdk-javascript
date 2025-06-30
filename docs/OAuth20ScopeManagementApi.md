@@ -1,6 +1,6 @@
-# Api.OAuth20ScopeManagementApi
+# DocspaceApiTypescript.OAuth20ScopeManagementApi
 
-All URIs are relative to *http://http:*
+All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,15 +19,15 @@ Retrieves a list of all available OAuth2 scopes for the specified tenant. The sc
 ### Example
 
 ```javascript
-import Api from 'api';
-let defaultClient = Api.ApiClient.instance;
+import DocspaceApiTypescript from 'docspace-api-typescript';
+let defaultClient = DocspaceApiTypescript.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new Api.OAuth20ScopeManagementApi();
+let apiInstance = new DocspaceApiTypescript.OAuth20ScopeManagementApi();
 apiInstance.getScopes((error, data, response) => {
   if (error) {
     console.error(error);

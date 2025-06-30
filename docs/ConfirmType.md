@@ -1,4 +1,4 @@
-# Api.ConfirmType
+# DocspaceApiTypescript.ConfirmType
 
 ## Enum
 

@@ -1,4 +1,4 @@
-# Api.DeepLinkDto
+# DocspaceApiTypescript.DeepLinkDto
 
 ## Properties
 

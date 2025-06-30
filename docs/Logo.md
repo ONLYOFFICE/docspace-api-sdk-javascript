@@ -1,4 +1,4 @@
-# Api.Logo
+# DocspaceApiTypescript.Logo
 
 ## Properties
 

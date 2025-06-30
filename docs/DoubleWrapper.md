@@ -1,4 +1,4 @@
-# Api.DoubleWrapper
+# DocspaceApiTypescript.DoubleWrapper
 
 ## Properties
 

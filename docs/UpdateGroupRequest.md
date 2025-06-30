@@ -1,4 +1,4 @@
-# Api.UpdateGroupRequest
+# DocspaceApiTypescript.UpdateGroupRequest
 
 ## Properties
 
