@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.BackupHistoryRecord
+# DocspaceApiJavascript.BackupHistoryRecord
 
 ## Properties
 

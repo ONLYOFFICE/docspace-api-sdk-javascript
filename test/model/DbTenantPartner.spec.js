@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.DbTenantPartner();
+    instance = new DocspaceApiJavascript.DbTenantPartner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,31 +62,31 @@
   describe('DbTenantPartner', function() {
     it('should create an instance of DbTenantPartner', function() {
       // uncomment below and update the code to test DbTenantPartner
-      //var instance = new DocspaceApiTypescript.DbTenantPartner();
-      //expect(instance).to.be.a(DocspaceApiTypescript.DbTenantPartner);
+      //var instance = new DocspaceApiJavascript.DbTenantPartner();
+      //expect(instance).to.be.a(DocspaceApiJavascript.DbTenantPartner);
     });
 
     it('should have the property tenantId (base name: "tenantId")', function() {
       // uncomment below and update the code to test the property tenantId
-      //var instance = new DocspaceApiTypescript.DbTenantPartner();
+      //var instance = new DocspaceApiJavascript.DbTenantPartner();
       //expect(instance).to.be();
     });
 
     it('should have the property partnerId (base name: "partnerId")', function() {
       // uncomment below and update the code to test the property partnerId
-      //var instance = new DocspaceApiTypescript.DbTenantPartner();
+      //var instance = new DocspaceApiJavascript.DbTenantPartner();
       //expect(instance).to.be();
     });
 
     it('should have the property affiliateId (base name: "affiliateId")', function() {
       // uncomment below and update the code to test the property affiliateId
-      //var instance = new DocspaceApiTypescript.DbTenantPartner();
+      //var instance = new DocspaceApiJavascript.DbTenantPartner();
       //expect(instance).to.be();
     });
 
     it('should have the property campaign (base name: "campaign")', function() {
       // uncomment below and update the code to test the property campaign
-      //var instance = new DocspaceApiTypescript.DbTenantPartner();
+      //var instance = new DocspaceApiJavascript.DbTenantPartner();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.Tariff
+# DocspaceApiJavascript.Tariff
 
 ## Properties
 

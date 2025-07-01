@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SsoCertificate
+# DocspaceApiJavascript.SsoCertificate
 
 ## Properties
 

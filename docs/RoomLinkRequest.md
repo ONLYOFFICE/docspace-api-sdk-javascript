@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.RoomLinkRequest
+# DocspaceApiJavascript.RoomLinkRequest
 
 ## Properties
 

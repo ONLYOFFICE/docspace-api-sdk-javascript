@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.EmployeeFullDto
+# DocspaceApiJavascript.EmployeeFullDto
 
 ## Properties
 

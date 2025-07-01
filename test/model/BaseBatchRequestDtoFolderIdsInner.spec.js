@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.BaseBatchRequestDtoFolderIdsInner();
+    instance = new DocspaceApiJavascript.BaseBatchRequestDtoFolderIdsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,8 +62,8 @@
   describe('BaseBatchRequestDtoFolderIdsInner', function() {
     it('should create an instance of BaseBatchRequestDtoFolderIdsInner', function() {
       // uncomment below and update the code to test BaseBatchRequestDtoFolderIdsInner
-      //var instance = new DocspaceApiTypescript.BaseBatchRequestDtoFolderIdsInner();
-      //expect(instance).to.be.a(DocspaceApiTypescript.BaseBatchRequestDtoFolderIdsInner);
+      //var instance = new DocspaceApiJavascript.BaseBatchRequestDtoFolderIdsInner();
+      //expect(instance).to.be.a(DocspaceApiJavascript.BaseBatchRequestDtoFolderIdsInner);
     });
 
   });

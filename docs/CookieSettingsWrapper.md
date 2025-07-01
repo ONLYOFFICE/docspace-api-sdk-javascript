@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.CookieSettingsWrapper
+# DocspaceApiJavascript.CookieSettingsWrapper
 
 ## Properties
 

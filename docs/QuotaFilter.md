@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.QuotaFilter
+# DocspaceApiJavascript.QuotaFilter
+
+
 
 ## Enum
 

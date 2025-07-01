@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.RoomSecurityDto();
+    instance = new DocspaceApiJavascript.RoomSecurityDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('RoomSecurityDto', function() {
     it('should create an instance of RoomSecurityDto', function() {
       // uncomment below and update the code to test RoomSecurityDto
-      //var instance = new DocspaceApiTypescript.RoomSecurityDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.RoomSecurityDto);
+      //var instance = new DocspaceApiJavascript.RoomSecurityDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.RoomSecurityDto);
     });
 
     it('should have the property members (base name: "members")', function() {
       // uncomment below and update the code to test the property members
-      //var instance = new DocspaceApiTypescript.RoomSecurityDto();
+      //var instance = new DocspaceApiJavascript.RoomSecurityDto();
       //expect(instance).to.be();
     });
 
     it('should have the property warning (base name: "warning")', function() {
       // uncomment below and update the code to test the property warning
-      //var instance = new DocspaceApiTypescript.RoomSecurityDto();
+      //var instance = new DocspaceApiJavascript.RoomSecurityDto();
       //expect(instance).to.be();
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instance = new DocspaceApiTypescript.RoomSecurityDto();
+      //var instance = new DocspaceApiJavascript.RoomSecurityDto();
       //expect(instance).to.be();
     });
 

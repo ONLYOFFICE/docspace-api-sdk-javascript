@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.NotificationSettingsDto
+# DocspaceApiJavascript.NotificationSettingsDto
 
 ## Properties
 

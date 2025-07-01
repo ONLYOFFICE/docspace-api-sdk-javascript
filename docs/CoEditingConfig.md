@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.CoEditingConfig
+# DocspaceApiJavascript.CoEditingConfig
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.PeoplePhotosApi
+# DocspaceApiJavascript.PeoplePhotosApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -16,49 +16,9 @@ Method | HTTP request | Description
 
 > ThumbnailsDataWrapper createMemberPhotoThumbnails(userid, opts)
 
-Create photo thumbnails
-
 Creates the user photo thumbnails by coordinates of the original image specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.PeoplePhotosApi();
-let userid = "9846"; // String | The user ID.
-let opts = {
-  'thumbnailsRequest': new DocspaceApiTypescript.ThumbnailsRequest() // ThumbnailsRequest | The thumbnail request.
-};
-apiInstance.createMemberPhotoThumbnails(userid, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-member-photo-thumbnails/).
 
 ### Parameters
 
@@ -76,25 +36,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## deleteMemberPhoto
-
-> ThumbnailsDataWrapper deleteMemberPhoto(userid)
-
-Delete a user photo
-
-Deletes a photo of the user with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -116,9 +62,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeoplePhotosApi();
+let apiInstance = new DocspaceApiJavascript.PeoplePhotosApi();
 let userid = "9846"; // String | The user ID.
-apiInstance.deleteMemberPhoto(userid, (error, data, response) => {
+let opts = {
+  'thumbnailsRequest': new DocspaceApiJavascript.ThumbnailsRequest() // ThumbnailsRequest | The thumbnail request.
+};
+apiInstance.createMemberPhotoThumbnails(userid, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -126,6 +75,20 @@ apiInstance.deleteMemberPhoto(userid, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## deleteMemberPhoto
+
+> ThumbnailsDataWrapper deleteMemberPhoto(userid)
+
+Deletes a photo of the user with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-member-photo/).
 
 ### Parameters
 
@@ -141,6 +104,43 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.PeoplePhotosApi();
+let userid = "9846"; // String | The user ID.
+apiInstance.deleteMemberPhoto(userid, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 
@@ -152,46 +152,9 @@ Name | Type | Description  | Notes
 
 > ThumbnailsDataWrapper getMemberPhoto(userid)
 
-Get a user photo
-
 Returns a photo of the user with the ID specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.PeoplePhotosApi();
-let userid = "9846"; // String | The user ID.
-apiInstance.getMemberPhoto(userid, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-member-photo/).
 
 ### Parameters
 
@@ -208,25 +171,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## updateMemberPhoto
-
-> ThumbnailsDataWrapper updateMemberPhoto(userid, opts)
-
-Update a user photo
-
-Updates a photo of the user with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -248,12 +197,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeoplePhotosApi();
+let apiInstance = new DocspaceApiJavascript.PeoplePhotosApi();
 let userid = "9846"; // String | The user ID.
-let opts = {
-  'updatePhotoMemberRequest': new DocspaceApiTypescript.UpdatePhotoMemberRequest() // UpdatePhotoMemberRequest | The request parameters for updating a photo.
-};
-apiInstance.updateMemberPhoto(userid, opts, (error, data, response) => {
+apiInstance.getMemberPhoto(userid, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -261,6 +207,20 @@ apiInstance.updateMemberPhoto(userid, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## updateMemberPhoto
+
+> ThumbnailsDataWrapper updateMemberPhoto(userid, opts)
+
+Updates a photo of the user with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-member-photo/).
 
 ### Parameters
 
@@ -278,25 +238,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## uploadMemberPhoto
-
-> FileUploadResultWrapper uploadMemberPhoto(userid, formCollection)
-
-Upload a user photo
-
-Uploads a photo of the user with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -318,10 +264,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeoplePhotosApi();
+let apiInstance = new DocspaceApiJavascript.PeoplePhotosApi();
 let userid = "9846"; // String | The user ID.
-let formCollection = [new DocspaceApiTypescript.KeyValuePairStringStringValues()]; // [KeyValuePairStringStringValues] | The image data.
-apiInstance.uploadMemberPhoto(userid, formCollection, (error, data, response) => {
+let opts = {
+  'updatePhotoMemberRequest': new DocspaceApiJavascript.UpdatePhotoMemberRequest() // UpdatePhotoMemberRequest | The request parameters for updating a photo.
+};
+apiInstance.updateMemberPhoto(userid, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -329,6 +277,20 @@ apiInstance.uploadMemberPhoto(userid, formCollection, (error, data, response) =>
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## uploadMemberPhoto
+
+> FileUploadResultWrapper uploadMemberPhoto(userid, formCollection)
+
+Uploads a photo of the user with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/upload-member-photo/).
 
 ### Parameters
 
@@ -345,6 +307,44 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.PeoplePhotosApi();
+let userid = "9846"; // String | The user ID.
+let formCollection = [new DocspaceApiJavascript.KeyValuePairStringStringValues()]; // [KeyValuePairStringStringValues] | The image data.
+apiInstance.uploadMemberPhoto(userid, formCollection, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

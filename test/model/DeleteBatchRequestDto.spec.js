@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.DeleteBatchRequestDto();
+    instance = new DocspaceApiJavascript.DeleteBatchRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('DeleteBatchRequestDto', function() {
     it('should create an instance of DeleteBatchRequestDto', function() {
       // uncomment below and update the code to test DeleteBatchRequestDto
-      //var instance = new DocspaceApiTypescript.DeleteBatchRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.DeleteBatchRequestDto);
+      //var instance = new DocspaceApiJavascript.DeleteBatchRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.DeleteBatchRequestDto);
     });
 
     it('should have the property returnSingleOperation (base name: "returnSingleOperation")', function() {
       // uncomment below and update the code to test the property returnSingleOperation
-      //var instance = new DocspaceApiTypescript.DeleteBatchRequestDto();
+      //var instance = new DocspaceApiJavascript.DeleteBatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property folderIds (base name: "folderIds")', function() {
       // uncomment below and update the code to test the property folderIds
-      //var instance = new DocspaceApiTypescript.DeleteBatchRequestDto();
+      //var instance = new DocspaceApiJavascript.DeleteBatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property fileIds (base name: "fileIds")', function() {
       // uncomment below and update the code to test the property fileIds
-      //var instance = new DocspaceApiTypescript.DeleteBatchRequestDto();
+      //var instance = new DocspaceApiJavascript.DeleteBatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property deleteAfter (base name: "deleteAfter")', function() {
       // uncomment below and update the code to test the property deleteAfter
-      //var instance = new DocspaceApiTypescript.DeleteBatchRequestDto();
+      //var instance = new DocspaceApiJavascript.DeleteBatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property immediately (base name: "immediately")', function() {
       // uncomment below and update the code to test the property immediately
-      //var instance = new DocspaceApiTypescript.DeleteBatchRequestDto();
+      //var instance = new DocspaceApiJavascript.DeleteBatchRequestDto();
       //expect(instance).to.be();
     });
 

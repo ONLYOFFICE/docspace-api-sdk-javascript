@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ConfigurationDtoInteger
+# DocspaceApiJavascript.ConfigurationDtoInteger
 
 ## Properties
 

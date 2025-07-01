@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.KeyValuePairBooleanString
+# DocspaceApiJavascript.KeyValuePairBooleanString
 
 ## Properties
 

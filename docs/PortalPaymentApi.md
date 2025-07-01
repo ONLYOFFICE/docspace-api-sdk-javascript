@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.PortalPaymentApi
+# DocspaceApiJavascript.PortalPaymentApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -32,48 +32,9 @@ Method | HTTP request | Description
 
 > PaymentCalculationWrapper calculateWalletPayment(opts)
 
-Calculate amount of the wallet payment
-
 Calculate amount of the wallet payment with the parameters specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
-let opts = {
-  'walletQuantityRequestDto': new DocspaceApiTypescript.WalletQuantityRequestDto() // WalletQuantityRequestDto | 
-};
-apiInstance.calculateWalletPayment(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/calculate-wallet-payment/).
 
 ### Parameters
 
@@ -90,25 +51,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createCustomerOperationsReport
-
-> StringWrapper createCustomerOperationsReport(opts)
-
-Generate the customer operations report
-
-Generates the customer operations report as csv file and save in Documents.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -130,11 +77,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
 let opts = {
-  'customerOperationsReportRequestDto': new DocspaceApiTypescript.CustomerOperationsReportRequestDto() // CustomerOperationsReportRequestDto | 
+  'walletQuantityRequestDto': new DocspaceApiJavascript.WalletQuantityRequestDto() // WalletQuantityRequestDto | 
 };
-apiInstance.createCustomerOperationsReport(opts, (error, data, response) => {
+apiInstance.calculateWalletPayment(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -142,6 +89,20 @@ apiInstance.createCustomerOperationsReport(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createCustomerOperationsReport
+
+> StringWrapper createCustomerOperationsReport(opts)
+
+Generates the customer operations report as csv file and save in Documents.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-customer-operations-report/).
 
 ### Parameters
 
@@ -158,25 +119,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## getAccountingCurrencies
-
-> CurrencyArrayWrapper getAccountingCurrencies()
-
-Get list of currencies
-
-Returns the list of currencies from accounting service.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -198,8 +145,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
-apiInstance.getAccountingCurrencies((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let opts = {
+  'customerOperationsReportRequestDto': new DocspaceApiJavascript.CustomerOperationsReportRequestDto() // CustomerOperationsReportRequestDto | 
+};
+apiInstance.createCustomerOperationsReport(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -207,6 +157,20 @@ apiInstance.getAccountingCurrencies((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## getAccountingCurrencies
+
+> CurrencyArrayWrapper getAccountingCurrencies()
+
+Returns the list of currencies from accounting service.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-accounting-currencies/).
 
 ### Parameters
 
@@ -220,25 +184,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getCheckoutSetupUrl
-
-> StringWrapper getCheckoutSetupUrl(opts)
-
-Get the checkout setup page URL
-
-Returns the URL to the checkout setup page.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -260,11 +210,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
-let opts = {
-  'backUrl': "some text" // String | Back URL
-};
-apiInstance.getCheckoutSetupUrl(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+apiInstance.getAccountingCurrencies((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -272,6 +219,20 @@ apiInstance.getCheckoutSetupUrl(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getCheckoutSetupUrl
+
+> StringWrapper getCheckoutSetupUrl(opts)
+
+Returns the URL to the checkout setup page.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-checkout-setup-url/).
 
 ### Parameters
 
@@ -288,25 +249,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getCustomerBalance
-
-> BalanceWrapper getCustomerBalance(opts)
-
-Get the customer balance
-
-Returns the customer balance from the accounting service.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -328,11 +275,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
 let opts = {
-  'refresh': true // Boolean | Specifies whether to refresh the payment information cache or not.
+  'backUrl': "some text" // String | Back URL
 };
-apiInstance.getCustomerBalance(opts, (error, data, response) => {
+apiInstance.getCheckoutSetupUrl(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -340,6 +287,20 @@ apiInstance.getCustomerBalance(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getCustomerBalance
+
+> BalanceWrapper getCustomerBalance(opts)
+
+Returns the customer balance from the accounting service.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-customer-balance/).
 
 ### Parameters
 
@@ -356,25 +317,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getCustomerInfo
-
-> CustomerInfoWrapper getCustomerInfo(opts)
-
-Get the customer info
-
-Returns the customer info.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -396,11 +343,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
 let opts = {
   'refresh': true // Boolean | Specifies whether to refresh the payment information cache or not.
 };
-apiInstance.getCustomerInfo(opts, (error, data, response) => {
+apiInstance.getCustomerBalance(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -408,6 +355,20 @@ apiInstance.getCustomerInfo(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getCustomerInfo
+
+> CustomerInfoWrapper getCustomerInfo(opts)
+
+Returns the customer info.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-customer-info/).
 
 ### Parameters
 
@@ -424,25 +385,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getCustomerOperations
-
-> ReportWrapper getCustomerOperations(opts)
-
-Get the customer operations
-
-Returns the report of customer operations from the accounting service.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -464,16 +411,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
 let opts = {
-  'startDate': new Date("2008-04-10T06:30+04:00"), // Date | Start date
-  'endDate': new Date("2008-04-10T06:30+04:00"), // Date | End date
-  'credit': true, // Boolean | Include credit operations (true by default)
-  'withdrawal': true, // Boolean | Include withdrawal operations (true by default)
-  'offset': 1234, // Number | Offset (0 by default)
-  'limit': 1234 // Number | Limit (25 by default)
+  'refresh': true // Boolean | Specifies whether to refresh the payment information cache or not.
 };
-apiInstance.getCustomerOperations(opts, (error, data, response) => {
+apiInstance.getCustomerInfo(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -481,6 +423,20 @@ apiInstance.getCustomerOperations(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getCustomerOperations
+
+> ReportWrapper getCustomerOperations(opts)
+
+Returns the report of customer operations from the accounting service.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-customer-operations/).
 
 ### Parameters
 
@@ -502,25 +458,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getPaymentAccount
-
-> StringWrapper getPaymentAccount(opts)
-
-Get the payment account
-
-Returns the URL to the payment account.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -542,11 +484,16 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
 let opts = {
-  'backUrl': "some text" // String | The URL where the user will be redirected after payment processing.
+  'startDate': new Date("2008-04-10T06:30+04:00"), // Date | Start date
+  'endDate': new Date("2008-04-10T06:30+04:00"), // Date | End date
+  'credit': true, // Boolean | Include credit operations (true by default)
+  'withdrawal': true, // Boolean | Include withdrawal operations (true by default)
+  'offset': 1234, // Number | Offset (0 by default)
+  'limit': 1234 // Number | Limit (25 by default)
 };
-apiInstance.getPaymentAccount(opts, (error, data, response) => {
+apiInstance.getCustomerOperations(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -554,6 +501,20 @@ apiInstance.getPaymentAccount(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getPaymentAccount
+
+> StringWrapper getPaymentAccount(opts)
+
+Returns the URL to the payment account.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-payment-account/).
 
 ### Parameters
 
@@ -570,25 +531,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getPaymentCurrencies
-
-> CurrenciesArrayWrapper getPaymentCurrencies()
-
-Get currencies
-
-Returns the available portal currencies.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -610,8 +557,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
-apiInstance.getPaymentCurrencies((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let opts = {
+  'backUrl': "some text" // String | The URL where the user will be redirected after payment processing.
+};
+apiInstance.getPaymentAccount(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -619,6 +569,20 @@ apiInstance.getPaymentCurrencies((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getPaymentCurrencies
+
+> CurrenciesArrayWrapper getPaymentCurrencies()
+
+Returns the available portal currencies.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-payment-currencies/).
 
 ### Parameters
 
@@ -632,25 +596,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getPaymentQuotas
-
-> QuotaArrayWrapper getPaymentQuotas(opts)
-
-Get quotas
-
-Returns the available portal quotas.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -672,11 +622,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
-let opts = {
-  'wallet': true // Boolean | Get wallet quotas only
-};
-apiInstance.getPaymentQuotas(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+apiInstance.getPaymentCurrencies((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -684,6 +631,20 @@ apiInstance.getPaymentQuotas(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getPaymentQuotas
+
+> QuotaArrayWrapper getPaymentQuotas(opts)
+
+Returns the available portal quotas.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-payment-quotas/).
 
 ### Parameters
 
@@ -700,25 +661,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getPaymentUrl
-
-> StringWrapper getPaymentUrl(opts)
-
-Get the payment page URL
-
-Returns the URL to the payment page.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -740,11 +687,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
 let opts = {
-  'paymentUrlRequestsDto': new DocspaceApiTypescript.PaymentUrlRequestsDto() // PaymentUrlRequestsDto | 
+  'wallet': true // Boolean | Get wallet quotas only
 };
-apiInstance.getPaymentUrl(opts, (error, data, response) => {
+apiInstance.getPaymentQuotas(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -752,6 +699,20 @@ apiInstance.getPaymentUrl(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getPaymentUrl
+
+> StringWrapper getPaymentUrl(opts)
+
+Returns the URL to the payment page.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-payment-url/).
 
 ### Parameters
 
@@ -768,25 +729,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## getPortalPrices
-
-> ObjectWrapper getPortalPrices()
-
-Get prices
-
-Returns the available portal prices.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -808,8 +755,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
-apiInstance.getPortalPrices((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let opts = {
+  'paymentUrlRequestsDto': new DocspaceApiJavascript.PaymentUrlRequestsDto() // PaymentUrlRequestsDto | 
+};
+apiInstance.getPaymentUrl(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -817,6 +767,20 @@ apiInstance.getPortalPrices((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## getPortalPrices
+
+> ObjectWrapper getPortalPrices()
+
+Returns the available portal prices.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-portal-prices/).
 
 ### Parameters
 
@@ -830,25 +794,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getQuotaPaymentInformation
-
-> QuotaWrapper getQuotaPaymentInformation(opts)
-
-Get quota payment information
-
-Returns the payment information about the current portal quota.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -870,11 +820,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
-let opts = {
-  'refresh': true // Boolean | Specifies whether to refresh the payment information cache or not.
-};
-apiInstance.getQuotaPaymentInformation(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+apiInstance.getPortalPrices((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -882,6 +829,20 @@ apiInstance.getQuotaPaymentInformation(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getQuotaPaymentInformation
+
+> QuotaWrapper getQuotaPaymentInformation(opts)
+
+Returns the payment information about the current portal quota.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-quota-payment-information/).
 
 ### Parameters
 
@@ -898,25 +859,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getTenantWalletSettings
-
-> TenantWalletSettingsWrapper getTenantWalletSettings()
-
-Get wallet auto top up settings
-
-Returns the wallet auto top up settings.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -938,8 +885,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
-apiInstance.getTenantWalletSettings((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let opts = {
+  'refresh': true // Boolean | Specifies whether to refresh the payment information cache or not.
+};
+apiInstance.getQuotaPaymentInformation(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -947,6 +897,20 @@ apiInstance.getTenantWalletSettings((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getTenantWalletSettings
+
+> TenantWalletSettingsWrapper getTenantWalletSettings()
+
+Returns the wallet auto top up settings.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-tenant-wallet-settings/).
 
 ### Parameters
 
@@ -960,25 +924,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## openCustomerSession
-
-> SessionWrapper openCustomerSession(opts)
-
-Open customer session
-
-Trying to open a customer session and block amount money on the balance.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1000,11 +950,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
-let opts = {
-  'openCustomerSessionRequestDto': new DocspaceApiTypescript.OpenCustomerSessionRequestDto() // OpenCustomerSessionRequestDto | 
-};
-apiInstance.openCustomerSession(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+apiInstance.getTenantWalletSettings((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1012,6 +959,20 @@ apiInstance.openCustomerSession(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## openCustomerSession
+
+> SessionWrapper openCustomerSession(opts)
+
+Trying to open a customer session and block amount money on the balance.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/open-customer-session/).
 
 ### Parameters
 
@@ -1028,25 +989,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## performCustomerOperation
-
-> BooleanWrapper performCustomerOperation(opts)
-
-Perform customer operation
-
-Perform customer operation and return true if the operation is succesfully provided.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1068,11 +1015,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
 let opts = {
-  'performCustomerOperationRequestDto': new DocspaceApiTypescript.PerformCustomerOperationRequestDto() // PerformCustomerOperationRequestDto | 
+  'openCustomerSessionRequestDto': new DocspaceApiJavascript.OpenCustomerSessionRequestDto() // OpenCustomerSessionRequestDto | 
 };
-apiInstance.performCustomerOperation(opts, (error, data, response) => {
+apiInstance.openCustomerSession(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1080,6 +1027,20 @@ apiInstance.performCustomerOperation(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## performCustomerOperation
+
+> BooleanWrapper performCustomerOperation(opts)
+
+Perform customer operation and return true if the operation is succesfully provided.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/perform-customer-operation/).
 
 ### Parameters
 
@@ -1096,25 +1057,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## sendPaymentRequest
-
-> sendPaymentRequest(opts)
-
-Send a payment request
-
-Sends a request for the portal payment.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1136,18 +1083,32 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
 let opts = {
-  'salesRequestsDto': new DocspaceApiTypescript.SalesRequestsDto() // SalesRequestsDto | 
+  'performCustomerOperationRequestDto': new DocspaceApiJavascript.PerformCustomerOperationRequestDto() // PerformCustomerOperationRequestDto | 
 };
-apiInstance.sendPaymentRequest(opts, (error, data, response) => {
+apiInstance.performCustomerOperation(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully.');
+    console.log('API called successfully. Returned data: ' + data);
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## sendPaymentRequest
+
+> sendPaymentRequest(opts)
+
+Sends a request for the portal payment.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/send-payment-request/).
 
 ### Parameters
 
@@ -1164,25 +1125,11 @@ null (empty response body)
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: Not defined
-
-
-## setTenantWalletSettings
-
-> TenantWalletSettingsWrapper setTenantWalletSettings(opts)
-
-Set wallet auto top up settings
-
-Set the wallet auto top up settings.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1204,18 +1151,32 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
 let opts = {
-  'tenantWalletSettingsWrapper': new DocspaceApiTypescript.TenantWalletSettingsWrapper() // TenantWalletSettingsWrapper | 
+  'salesRequestsDto': new DocspaceApiJavascript.SalesRequestsDto() // SalesRequestsDto | 
 };
-apiInstance.setTenantWalletSettings(opts, (error, data, response) => {
+apiInstance.sendPaymentRequest(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully.');
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: Not defined
+
+
+## setTenantWalletSettings
+
+> TenantWalletSettingsWrapper setTenantWalletSettings(opts)
+
+Set the wallet auto top up settings.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/set-tenant-wallet-settings/).
 
 ### Parameters
 
@@ -1232,25 +1193,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## topUpDeposit
-
-> BooleanWrapper topUpDeposit(opts)
-
-Put money on deposit
-
-Returns result of putting money on deposit.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1272,11 +1219,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
 let opts = {
-  'topUpDepositRequestDto': new DocspaceApiTypescript.TopUpDepositRequestDto() // TopUpDepositRequestDto | 
+  'tenantWalletSettingsWrapper': new DocspaceApiJavascript.TenantWalletSettingsWrapper() // TenantWalletSettingsWrapper | 
 };
-apiInstance.topUpDeposit(opts, (error, data, response) => {
+apiInstance.setTenantWalletSettings(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1284,6 +1231,20 @@ apiInstance.topUpDeposit(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## topUpDeposit
+
+> BooleanWrapper topUpDeposit(opts)
+
+Returns result of putting money on deposit.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/top-up-deposit/).
 
 ### Parameters
 
@@ -1300,25 +1261,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## updatePayment
-
-> BooleanWrapper updatePayment(opts)
-
-Update the payment quantity
-
-Updates the payment quantity with the parameters specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1340,11 +1287,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
 let opts = {
-  'quantityRequestDto': new DocspaceApiTypescript.QuantityRequestDto() // QuantityRequestDto | 
+  'topUpDepositRequestDto': new DocspaceApiJavascript.TopUpDepositRequestDto() // TopUpDepositRequestDto | 
 };
-apiInstance.updatePayment(opts, (error, data, response) => {
+apiInstance.topUpDeposit(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1352,6 +1299,20 @@ apiInstance.updatePayment(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## updatePayment
+
+> BooleanWrapper updatePayment(opts)
+
+Updates the payment quantity with the parameters specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-payment/).
 
 ### Parameters
 
@@ -1368,25 +1329,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## updateWalletPayment
-
-> BooleanWrapper updateWalletPayment(opts)
-
-Update the wallet payment quantity
-
-Updates the wallet payment quantity with the parameters specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1408,11 +1355,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PortalPaymentApi();
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
 let opts = {
-  'walletQuantityRequestDto': new DocspaceApiTypescript.WalletQuantityRequestDto() // WalletQuantityRequestDto | 
+  'quantityRequestDto': new DocspaceApiJavascript.QuantityRequestDto() // QuantityRequestDto | 
 };
-apiInstance.updateWalletPayment(opts, (error, data, response) => {
+apiInstance.updatePayment(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1420,6 +1367,20 @@ apiInstance.updateWalletPayment(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## updateWalletPayment
+
+> BooleanWrapper updateWalletPayment(opts)
+
+Updates the wallet payment quantity with the parameters specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-wallet-payment/).
 
 ### Parameters
 
@@ -1435,6 +1396,45 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let opts = {
+  'walletQuantityRequestDto': new DocspaceApiJavascript.WalletQuantityRequestDto() // WalletQuantityRequestDto | 
+};
+apiInstance.updateWalletPayment(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

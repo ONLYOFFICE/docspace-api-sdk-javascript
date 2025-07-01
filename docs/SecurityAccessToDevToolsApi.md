@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SecurityAccessToDevToolsApi
+# DocspaceApiJavascript.SecurityAccessToDevToolsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -12,15 +12,30 @@ Method | HTTP request | Description
 
 > TenantDevToolsAccessSettingsWrapper setTenantDevToolsAccessSettings(opts)
 
-Set the Developer Tools access settings
-
 Sets the Developer Tools access settings for the portal.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/set-tenant-dev-tools-access-settings/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantDevToolsAccessSettingsDto** | [**TenantDevToolsAccessSettingsDto**](TenantDevToolsAccessSettingsDto.md)|  | [optional] 
+
+### Return type
+
+[**TenantDevToolsAccessSettingsWrapper**](TenantDevToolsAccessSettingsWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -42,9 +57,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SecurityAccessToDevToolsApi();
+let apiInstance = new DocspaceApiJavascript.SecurityAccessToDevToolsApi();
 let opts = {
-  'tenantDevToolsAccessSettingsDto': new DocspaceApiTypescript.TenantDevToolsAccessSettingsDto() // TenantDevToolsAccessSettingsDto | 
+  'tenantDevToolsAccessSettingsDto': new DocspaceApiJavascript.TenantDevToolsAccessSettingsDto() // TenantDevToolsAccessSettingsDto | 
 };
 apiInstance.setTenantDevToolsAccessSettings(opts, (error, data, response) => {
   if (error) {
@@ -54,21 +69,6 @@ apiInstance.setTenantDevToolsAccessSettings(opts, (error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantDevToolsAccessSettingsDto** | [**TenantDevToolsAccessSettingsDto**](TenantDevToolsAccessSettingsDto.md)|  | [optional] 
-
-### Return type
-
-[**TenantDevToolsAccessSettingsWrapper**](TenantDevToolsAccessSettingsWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 

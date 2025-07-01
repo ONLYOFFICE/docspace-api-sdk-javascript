@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ClientResponse
+# DocspaceApiJavascript.ClientResponse
 
 ## Properties
 

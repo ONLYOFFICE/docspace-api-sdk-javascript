@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.AccountInfoDto
+# DocspaceApiJavascript.AccountInfoDto
 
 ## Properties
 

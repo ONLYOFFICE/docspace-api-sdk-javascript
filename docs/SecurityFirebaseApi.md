@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SecurityFirebaseApi
+# DocspaceApiJavascript.SecurityFirebaseApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -13,15 +13,30 @@ Method | HTTP request | Description
 
 > FireBaseUserWrapper docRegisterPusnNotificationDevice(opts)
 
-Save the Documents Firebase device token
-
 Saves the Firebase device token specified in the request for the Documents application.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/doc-register-pusn-notification-device/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **firebaseRequestsDto** | [**FirebaseRequestsDto**](FirebaseRequestsDto.md)|  | [optional] 
+
+### Return type
+
+[**FireBaseUserWrapper**](FireBaseUserWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -43,9 +58,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SecurityFirebaseApi();
+let apiInstance = new DocspaceApiJavascript.SecurityFirebaseApi();
 let opts = {
-  'firebaseRequestsDto': new DocspaceApiTypescript.FirebaseRequestsDto() // FirebaseRequestsDto | 
+  'firebaseRequestsDto': new DocspaceApiJavascript.FirebaseRequestsDto() // FirebaseRequestsDto | 
 };
 apiInstance.docRegisterPusnNotificationDevice(opts, (error, data, response) => {
   if (error) {
@@ -55,21 +70,6 @@ apiInstance.docRegisterPusnNotificationDevice(opts, (error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **firebaseRequestsDto** | [**FirebaseRequestsDto**](FirebaseRequestsDto.md)|  | [optional] 
-
-### Return type
-
-[**FireBaseUserWrapper**](FireBaseUserWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 
@@ -81,15 +81,30 @@ Name | Type | Description  | Notes
 
 > FireBaseUserWrapper subscribeDocumentsPushNotification(opts)
 
-Subscribe to Documents push notification
-
 Subscribes to the Documents push notification.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/subscribe-documents-push-notification/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **firebaseRequestsDto** | [**FirebaseRequestsDto**](FirebaseRequestsDto.md)|  | [optional] 
+
+### Return type
+
+[**FireBaseUserWrapper**](FireBaseUserWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -111,9 +126,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SecurityFirebaseApi();
+let apiInstance = new DocspaceApiJavascript.SecurityFirebaseApi();
 let opts = {
-  'firebaseRequestsDto': new DocspaceApiTypescript.FirebaseRequestsDto() // FirebaseRequestsDto | 
+  'firebaseRequestsDto': new DocspaceApiJavascript.FirebaseRequestsDto() // FirebaseRequestsDto | 
 };
 apiInstance.subscribeDocumentsPushNotification(opts, (error, data, response) => {
   if (error) {
@@ -123,21 +138,6 @@ apiInstance.subscribeDocumentsPushNotification(opts, (error, data, response) => 
   }
 });
 ```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **firebaseRequestsDto** | [**FirebaseRequestsDto**](FirebaseRequestsDto.md)|  | [optional] 
-
-### Return type
-
-[**FireBaseUserWrapper**](FireBaseUserWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 

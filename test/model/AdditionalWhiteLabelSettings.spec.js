@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.AdditionalWhiteLabelSettings();
+    instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,49 +62,49 @@
   describe('AdditionalWhiteLabelSettings', function() {
     it('should create an instance of AdditionalWhiteLabelSettings', function() {
       // uncomment below and update the code to test AdditionalWhiteLabelSettings
-      //var instance = new DocspaceApiTypescript.AdditionalWhiteLabelSettings();
-      //expect(instance).to.be.a(DocspaceApiTypescript.AdditionalWhiteLabelSettings);
+      //var instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettings();
+      //expect(instance).to.be.a(DocspaceApiJavascript.AdditionalWhiteLabelSettings);
     });
 
     it('should have the property startDocsEnabled (base name: "startDocsEnabled")', function() {
       // uncomment below and update the code to test the property startDocsEnabled
-      //var instance = new DocspaceApiTypescript.AdditionalWhiteLabelSettings();
+      //var instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property helpCenterEnabled (base name: "helpCenterEnabled")', function() {
       // uncomment below and update the code to test the property helpCenterEnabled
-      //var instance = new DocspaceApiTypescript.AdditionalWhiteLabelSettings();
+      //var instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property feedbackAndSupportEnabled (base name: "feedbackAndSupportEnabled")', function() {
       // uncomment below and update the code to test the property feedbackAndSupportEnabled
-      //var instance = new DocspaceApiTypescript.AdditionalWhiteLabelSettings();
+      //var instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property userForumEnabled (base name: "userForumEnabled")', function() {
       // uncomment below and update the code to test the property userForumEnabled
-      //var instance = new DocspaceApiTypescript.AdditionalWhiteLabelSettings();
+      //var instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property videoGuidesEnabled (base name: "videoGuidesEnabled")', function() {
       // uncomment below and update the code to test the property videoGuidesEnabled
-      //var instance = new DocspaceApiTypescript.AdditionalWhiteLabelSettings();
+      //var instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property licenseAgreementsEnabled (base name: "licenseAgreementsEnabled")', function() {
       // uncomment below and update the code to test the property licenseAgreementsEnabled
-      //var instance = new DocspaceApiTypescript.AdditionalWhiteLabelSettings();
+      //var instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModified (base name: "lastModified")', function() {
       // uncomment below and update the code to test the property lastModified
-      //var instance = new DocspaceApiTypescript.AdditionalWhiteLabelSettings();
+      //var instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettings();
       //expect(instance).to.be();
     });
 

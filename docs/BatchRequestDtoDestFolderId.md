@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.BatchRequestDtoDestFolderId
+# DocspaceApiJavascript.BatchRequestDtoDestFolderId
 
 ## Properties
 

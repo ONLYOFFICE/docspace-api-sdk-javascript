@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FeedbackConfig
+# DocspaceApiJavascript.FeedbackConfig
 
 ## Properties
 

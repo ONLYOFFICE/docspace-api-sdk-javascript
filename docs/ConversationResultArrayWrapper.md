@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ConversationResultArrayWrapper
+# DocspaceApiJavascript.ConversationResultArrayWrapper
 
 ## Properties
 

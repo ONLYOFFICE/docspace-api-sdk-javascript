@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.CapabilitiesApi
+# DocspaceApiJavascript.CapabilitiesApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -12,24 +12,9 @@ Method | HTTP request | Description
 
 > CapabilitiesWrapper getPortalCapabilities()
 
-Get portal capabilities
-
 Returns the information about portal capabilities.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.CapabilitiesApi();
-apiInstance.getPortalCapabilities((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-portal-capabilities/).
 
 ### Parameters
 
@@ -42,6 +27,21 @@ This endpoint does not need any parameter.
 ### Authorization
 
 No authorization required
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.CapabilitiesApi();
+apiInstance.getPortalCapabilities((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.Run();
+    instance = new DocspaceApiJavascript.Run();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('Run', function() {
     it('should create an instance of Run', function() {
       // uncomment below and update the code to test Run
-      //var instance = new DocspaceApiTypescript.Run();
-      //expect(instance).to.be.a(DocspaceApiTypescript.Run);
+      //var instance = new DocspaceApiJavascript.Run();
+      //expect(instance).to.be.a(DocspaceApiJavascript.Run);
     });
 
     it('should have the property fill (base name: "fill")', function() {
       // uncomment below and update the code to test the property fill
-      //var instance = new DocspaceApiTypescript.Run();
+      //var instance = new DocspaceApiJavascript.Run();
       //expect(instance).to.be();
     });
 
     it('should have the property text (base name: "text")', function() {
       // uncomment below and update the code to test the property text
-      //var instance = new DocspaceApiTypescript.Run();
+      //var instance = new DocspaceApiJavascript.Run();
       //expect(instance).to.be();
     });
 
     it('should have the property fontSize (base name: "font-size")', function() {
       // uncomment below and update the code to test the property fontSize
-      //var instance = new DocspaceApiTypescript.Run();
+      //var instance = new DocspaceApiJavascript.Run();
       //expect(instance).to.be();
     });
 

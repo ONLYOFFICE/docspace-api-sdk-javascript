@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.CheckUploadRequest
+# DocspaceApiJavascript.CheckUploadRequest
 
 ## Properties
 

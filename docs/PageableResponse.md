@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.PageableResponse
+# DocspaceApiJavascript.PageableResponse
 
 ## Properties
 

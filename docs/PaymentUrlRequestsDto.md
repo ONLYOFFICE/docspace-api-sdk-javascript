@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.PaymentUrlRequestsDto
+# DocspaceApiJavascript.PaymentUrlRequestsDto
 
 ## Properties
 

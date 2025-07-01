@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.Options
+# DocspaceApiJavascript.Options
 
 ## Properties
 

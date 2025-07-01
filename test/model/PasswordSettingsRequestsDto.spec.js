@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.PasswordSettingsRequestsDto();
+    instance = new DocspaceApiJavascript.PasswordSettingsRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,31 +62,31 @@
   describe('PasswordSettingsRequestsDto', function() {
     it('should create an instance of PasswordSettingsRequestsDto', function() {
       // uncomment below and update the code to test PasswordSettingsRequestsDto
-      //var instance = new DocspaceApiTypescript.PasswordSettingsRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.PasswordSettingsRequestsDto);
+      //var instance = new DocspaceApiJavascript.PasswordSettingsRequestsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.PasswordSettingsRequestsDto);
     });
 
     it('should have the property minLength (base name: "minLength")', function() {
       // uncomment below and update the code to test the property minLength
-      //var instance = new DocspaceApiTypescript.PasswordSettingsRequestsDto();
+      //var instance = new DocspaceApiJavascript.PasswordSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property upperCase (base name: "upperCase")', function() {
       // uncomment below and update the code to test the property upperCase
-      //var instance = new DocspaceApiTypescript.PasswordSettingsRequestsDto();
+      //var instance = new DocspaceApiJavascript.PasswordSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property digits (base name: "digits")', function() {
       // uncomment below and update the code to test the property digits
-      //var instance = new DocspaceApiTypescript.PasswordSettingsRequestsDto();
+      //var instance = new DocspaceApiJavascript.PasswordSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property specSymbols (base name: "specSymbols")', function() {
       // uncomment below and update the code to test the property specSymbols
-      //var instance = new DocspaceApiTypescript.PasswordSettingsRequestsDto();
+      //var instance = new DocspaceApiJavascript.PasswordSettingsRequestsDto();
       //expect(instance).to.be();
     });
 

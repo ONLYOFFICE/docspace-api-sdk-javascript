@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.AuthenticationTokenDto
+# DocspaceApiJavascript.AuthenticationTokenDto
 
 ## Properties
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.FileEntryDto();
+    instance = new DocspaceApiJavascript.FileEntryDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,97 +62,97 @@
   describe('FileEntryDto', function() {
     it('should create an instance of FileEntryDto', function() {
       // uncomment below and update the code to test FileEntryDto
-      //var instance = new DocspaceApiTypescript.FileEntryDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.FileEntryDto);
+      //var instance = new DocspaceApiJavascript.FileEntryDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.FileEntryDto);
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiTypescript.FileEntryDto();
+      //var instance = new DocspaceApiJavascript.FileEntryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property access (base name: "access")', function() {
       // uncomment below and update the code to test the property access
-      //var instance = new DocspaceApiTypescript.FileEntryDto();
+      //var instance = new DocspaceApiJavascript.FileEntryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property shared (base name: "shared")', function() {
       // uncomment below and update the code to test the property shared
-      //var instance = new DocspaceApiTypescript.FileEntryDto();
+      //var instance = new DocspaceApiJavascript.FileEntryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property created (base name: "created")', function() {
       // uncomment below and update the code to test the property created
-      //var instance = new DocspaceApiTypescript.FileEntryDto();
+      //var instance = new DocspaceApiJavascript.FileEntryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property createdBy (base name: "createdBy")', function() {
       // uncomment below and update the code to test the property createdBy
-      //var instance = new DocspaceApiTypescript.FileEntryDto();
+      //var instance = new DocspaceApiJavascript.FileEntryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property updated (base name: "updated")', function() {
       // uncomment below and update the code to test the property updated
-      //var instance = new DocspaceApiTypescript.FileEntryDto();
+      //var instance = new DocspaceApiJavascript.FileEntryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property autoDelete (base name: "autoDelete")', function() {
       // uncomment below and update the code to test the property autoDelete
-      //var instance = new DocspaceApiTypescript.FileEntryDto();
+      //var instance = new DocspaceApiJavascript.FileEntryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property rootFolderType (base name: "rootFolderType")', function() {
       // uncomment below and update the code to test the property rootFolderType
-      //var instance = new DocspaceApiTypescript.FileEntryDto();
+      //var instance = new DocspaceApiJavascript.FileEntryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property parentRoomType (base name: "parentRoomType")', function() {
       // uncomment below and update the code to test the property parentRoomType
-      //var instance = new DocspaceApiTypescript.FileEntryDto();
+      //var instance = new DocspaceApiJavascript.FileEntryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property updatedBy (base name: "updatedBy")', function() {
       // uncomment below and update the code to test the property updatedBy
-      //var instance = new DocspaceApiTypescript.FileEntryDto();
+      //var instance = new DocspaceApiJavascript.FileEntryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property providerItem (base name: "providerItem")', function() {
       // uncomment below and update the code to test the property providerItem
-      //var instance = new DocspaceApiTypescript.FileEntryDto();
+      //var instance = new DocspaceApiJavascript.FileEntryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property providerKey (base name: "providerKey")', function() {
       // uncomment below and update the code to test the property providerKey
-      //var instance = new DocspaceApiTypescript.FileEntryDto();
+      //var instance = new DocspaceApiJavascript.FileEntryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property providerId (base name: "providerId")', function() {
       // uncomment below and update the code to test the property providerId
-      //var instance = new DocspaceApiTypescript.FileEntryDto();
+      //var instance = new DocspaceApiJavascript.FileEntryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property order (base name: "order")', function() {
       // uncomment below and update the code to test the property order
-      //var instance = new DocspaceApiTypescript.FileEntryDto();
+      //var instance = new DocspaceApiJavascript.FileEntryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property fileEntryType (base name: "fileEntryType")', function() {
       // uncomment below and update the code to test the property fileEntryType
-      //var instance = new DocspaceApiTypescript.FileEntryDto();
+      //var instance = new DocspaceApiJavascript.FileEntryDto();
       //expect(instance).to.be();
     });
 

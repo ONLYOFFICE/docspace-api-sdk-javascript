@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.CoversResultDto
+# DocspaceApiJavascript.CoversResultDto
 
 ## Properties
 

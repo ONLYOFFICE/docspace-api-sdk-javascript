@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.DeepLinkHandlingMode
+# DocspaceApiJavascript.DeepLinkHandlingMode
+
+
 
 ## Enum
 

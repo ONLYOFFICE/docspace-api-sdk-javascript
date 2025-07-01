@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ThumbnailsRequest
+# DocspaceApiJavascript.ThumbnailsRequest
 
 ## Properties
 

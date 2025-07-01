@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.EncryptionKeysConfig
+# DocspaceApiJavascript.EncryptionKeysConfig
 
 ## Properties
 

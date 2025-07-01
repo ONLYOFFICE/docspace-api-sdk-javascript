@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.PriceDto();
+    instance = new DocspaceApiJavascript.PriceDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('PriceDto', function() {
     it('should create an instance of PriceDto', function() {
       // uncomment below and update the code to test PriceDto
-      //var instance = new DocspaceApiTypescript.PriceDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.PriceDto);
+      //var instance = new DocspaceApiJavascript.PriceDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.PriceDto);
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new DocspaceApiTypescript.PriceDto();
+      //var instance = new DocspaceApiJavascript.PriceDto();
       //expect(instance).to.be();
     });
 
     it('should have the property currencySymbol (base name: "currencySymbol")', function() {
       // uncomment below and update the code to test the property currencySymbol
-      //var instance = new DocspaceApiTypescript.PriceDto();
+      //var instance = new DocspaceApiJavascript.PriceDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isoCurrencySymbol (base name: "isoCurrencySymbol")', function() {
       // uncomment below and update the code to test the property isoCurrencySymbol
-      //var instance = new DocspaceApiTypescript.PriceDto();
+      //var instance = new DocspaceApiJavascript.PriceDto();
       //expect(instance).to.be();
     });
 

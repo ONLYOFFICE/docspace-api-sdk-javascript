@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.EditHistoryAuthor
+# DocspaceApiJavascript.EditHistoryAuthor
 
 ## Properties
 

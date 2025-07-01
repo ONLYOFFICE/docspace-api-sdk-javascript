@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SettingsCustomNavigationApi
+# DocspaceApiJavascript.SettingsCustomNavigationApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -16,48 +16,9 @@ Method | HTTP request | Description
 
 > CustomNavigationItemWrapper createCustomNavigationItem(opts)
 
-Add a custom navigation item
-
 Adds a custom navigation item with the parameters specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.SettingsCustomNavigationApi();
-let opts = {
-  'customNavigationItem': new DocspaceApiTypescript.CustomNavigationItem() // CustomNavigationItem | 
-};
-apiInstance.createCustomNavigationItem(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-custom-navigation-item/).
 
 ### Parameters
 
@@ -74,25 +35,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## deleteCustomNavigationItem
-
-> deleteCustomNavigationItem(id)
-
-Delete a custom navigation item
-
-Deletes a custom navigation item with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -114,16 +61,32 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsCustomNavigationApi();
-let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The ID extracted from the route parameters.
-apiInstance.deleteCustomNavigationItem(id, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsCustomNavigationApi();
+let opts = {
+  'customNavigationItem': new DocspaceApiJavascript.CustomNavigationItem() // CustomNavigationItem | 
+};
+apiInstance.createCustomNavigationItem(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully.');
+    console.log('API called successfully. Returned data: ' + data);
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## deleteCustomNavigationItem
+
+> deleteCustomNavigationItem(id)
+
+Deletes a custom navigation item with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-custom-navigation-item/).
 
 ### Parameters
 
@@ -140,25 +103,11 @@ null (empty response body)
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: Not defined
-
-
-## getCustomNavigationItem
-
-> CustomNavigationItemWrapper getCustomNavigationItem(id)
-
-Get a custom navigation item by ID
-
-Returns a custom navigation item by the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -180,16 +129,30 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsCustomNavigationApi();
+let apiInstance = new DocspaceApiJavascript.SettingsCustomNavigationApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The ID extracted from the route parameters.
-apiInstance.getCustomNavigationItem(id, (error, data, response) => {
+apiInstance.deleteCustomNavigationItem(id, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully.');
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+
+## getCustomNavigationItem
+
+> CustomNavigationItemWrapper getCustomNavigationItem(id)
+
+Returns a custom navigation item by the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-custom-navigation-item/).
 
 ### Parameters
 
@@ -206,25 +169,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getCustomNavigationItemSample
-
-> CustomNavigationItemWrapper getCustomNavigationItemSample()
-
-Get a custom navigation item sample
-
-Returns a sample of the custom navigation item.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -246,8 +195,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsCustomNavigationApi();
-apiInstance.getCustomNavigationItemSample((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsCustomNavigationApi();
+let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The ID extracted from the route parameters.
+apiInstance.getCustomNavigationItem(id, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -255,6 +205,20 @@ apiInstance.getCustomNavigationItemSample((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getCustomNavigationItemSample
+
+> CustomNavigationItemWrapper getCustomNavigationItemSample()
+
+Returns a sample of the custom navigation item.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-custom-navigation-item-sample/).
 
 ### Parameters
 
@@ -268,25 +232,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getCustomNavigationItems
-
-> CustomNavigationItemArrayWrapper getCustomNavigationItems()
-
-Get the custom navigation items
-
-Returns a list of the custom navigation items.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -308,8 +258,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsCustomNavigationApi();
-apiInstance.getCustomNavigationItems((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsCustomNavigationApi();
+apiInstance.getCustomNavigationItemSample((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -317,6 +267,20 @@ apiInstance.getCustomNavigationItems((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getCustomNavigationItems
+
+> CustomNavigationItemArrayWrapper getCustomNavigationItems()
+
+Returns a list of the custom navigation items.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-custom-navigation-items/).
 
 ### Parameters
 
@@ -329,6 +293,42 @@ This endpoint does not need any parameter.
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.SettingsCustomNavigationApi();
+apiInstance.getCustomNavigationItems((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

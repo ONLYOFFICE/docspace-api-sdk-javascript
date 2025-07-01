@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.WebItemsSecurityRequestsDto
+# DocspaceApiJavascript.WebItemsSecurityRequestsDto
 
 ## Properties
 

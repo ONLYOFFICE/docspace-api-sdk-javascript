@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ActionLinkConfig
+# DocspaceApiJavascript.ActionLinkConfig
 
 ## Properties
 

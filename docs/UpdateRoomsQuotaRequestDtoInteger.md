@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.UpdateRoomsQuotaRequestDtoInteger
+# DocspaceApiJavascript.UpdateRoomsQuotaRequestDtoInteger
 
 ## Properties
 

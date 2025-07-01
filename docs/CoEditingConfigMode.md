@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.CoEditingConfigMode
+# DocspaceApiJavascript.CoEditingConfigMode
+
+
 
 ## Enum
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ThumbnailsDataDto();
+    instance = new DocspaceApiJavascript.ThumbnailsDataDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,43 +62,43 @@
   describe('ThumbnailsDataDto', function() {
     it('should create an instance of ThumbnailsDataDto', function() {
       // uncomment below and update the code to test ThumbnailsDataDto
-      //var instance = new DocspaceApiTypescript.ThumbnailsDataDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ThumbnailsDataDto);
+      //var instance = new DocspaceApiJavascript.ThumbnailsDataDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ThumbnailsDataDto);
     });
 
     it('should have the property original (base name: "original")', function() {
       // uncomment below and update the code to test the property original
-      //var instance = new DocspaceApiTypescript.ThumbnailsDataDto();
+      //var instance = new DocspaceApiJavascript.ThumbnailsDataDto();
       //expect(instance).to.be();
     });
 
     it('should have the property retina (base name: "retina")', function() {
       // uncomment below and update the code to test the property retina
-      //var instance = new DocspaceApiTypescript.ThumbnailsDataDto();
+      //var instance = new DocspaceApiJavascript.ThumbnailsDataDto();
       //expect(instance).to.be();
     });
 
     it('should have the property max (base name: "max")', function() {
       // uncomment below and update the code to test the property max
-      //var instance = new DocspaceApiTypescript.ThumbnailsDataDto();
+      //var instance = new DocspaceApiJavascript.ThumbnailsDataDto();
       //expect(instance).to.be();
     });
 
     it('should have the property big (base name: "big")', function() {
       // uncomment below and update the code to test the property big
-      //var instance = new DocspaceApiTypescript.ThumbnailsDataDto();
+      //var instance = new DocspaceApiJavascript.ThumbnailsDataDto();
       //expect(instance).to.be();
     });
 
     it('should have the property medium (base name: "medium")', function() {
       // uncomment below and update the code to test the property medium
-      //var instance = new DocspaceApiTypescript.ThumbnailsDataDto();
+      //var instance = new DocspaceApiJavascript.ThumbnailsDataDto();
       //expect(instance).to.be();
     });
 
     it('should have the property small (base name: "small")', function() {
       // uncomment below and update the code to test the property small
-      //var instance = new DocspaceApiTypescript.ThumbnailsDataDto();
+      //var instance = new DocspaceApiJavascript.ThumbnailsDataDto();
       //expect(instance).to.be();
     });
 

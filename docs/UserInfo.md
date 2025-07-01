@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.UserInfo
+# DocspaceApiJavascript.UserInfo
 
 ## Properties
 

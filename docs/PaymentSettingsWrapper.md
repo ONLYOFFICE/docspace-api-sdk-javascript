@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.PaymentSettingsWrapper
+# DocspaceApiJavascript.PaymentSettingsWrapper
 
 ## Properties
 

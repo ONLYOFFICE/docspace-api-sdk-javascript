@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.Report
+# DocspaceApiJavascript.Report
 
 ## Properties
 

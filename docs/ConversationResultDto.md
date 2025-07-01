@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ConversationResultDto
+# DocspaceApiJavascript.ConversationResultDto
 
 ## Properties
 

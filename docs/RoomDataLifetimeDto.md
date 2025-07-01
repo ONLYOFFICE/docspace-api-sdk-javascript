@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.RoomDataLifetimeDto
+# DocspaceApiJavascript.RoomDataLifetimeDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ExchangeToken200Response
+# DocspaceApiJavascript.ExchangeToken200Response
 
 ## Properties
 

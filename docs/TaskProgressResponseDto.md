@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.TaskProgressResponseDto
+# DocspaceApiJavascript.TaskProgressResponseDto
 
 ## Properties
 

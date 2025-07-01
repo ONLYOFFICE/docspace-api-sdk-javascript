@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FileLink
+# DocspaceApiJavascript.FileLink
 
 ## Properties
 

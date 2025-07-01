@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SettingsCommonSettingsApi
+# DocspaceApiJavascript.SettingsCommonSettingsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -30,45 +30,9 @@ Method | HTTP request | Description
 
 > closeAdminHelper()
 
-Close the admin helper
-
 Closes the administrator helper notification.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
-apiInstance.closeAdminHelper((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully.');
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/close-admin-helper/).
 
 ### Parameters
 
@@ -82,25 +46,11 @@ null (empty response body)
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: Not defined
-
-
-## completeWizard
-
-> WizardSettingsWrapper completeWizard(opts)
-
-Complete the Wizard settings
-
-Completes the Wizard settings.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -122,18 +72,29 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
-let opts = {
-  'wizardRequestsDto': new DocspaceApiTypescript.WizardRequestsDto() // WizardRequestsDto | 
-};
-apiInstance.completeWizard(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
+apiInstance.closeAdminHelper((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully.');
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+
+## completeWizard
+
+> WizardSettingsWrapper completeWizard(opts)
+
+Completes the Wizard settings.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/complete-wizard/).
 
 ### Parameters
 
@@ -150,25 +111,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## configureDeepLink
-
-> TenantDeepLinkSettingsWrapper configureDeepLink(opts)
-
-Configure the deep link settings
-
-Saves the deep link configuration settings for the portal.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -190,11 +137,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
 let opts = {
-  'deepLinkConfigurationRequestsDto': new DocspaceApiTypescript.DeepLinkConfigurationRequestsDto() // DeepLinkConfigurationRequestsDto | 
+  'wizardRequestsDto': new DocspaceApiJavascript.WizardRequestsDto() // WizardRequestsDto | 
 };
-apiInstance.configureDeepLink(opts, (error, data, response) => {
+apiInstance.completeWizard(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -202,6 +149,20 @@ apiInstance.configureDeepLink(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## configureDeepLink
+
+> TenantDeepLinkSettingsWrapper configureDeepLink(opts)
+
+Saves the deep link configuration settings for the portal.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/configure-deep-link/).
 
 ### Parameters
 
@@ -218,25 +179,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## deletePortalColorTheme
-
-> CustomColorThemesSettingsWrapper deletePortalColorTheme(opts)
-
-Delete a color theme
-
-Deletes the portal color theme with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -258,11 +205,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
 let opts = {
-  'id': 9846 // Number | The ID of the portal theme to delete.
+  'deepLinkConfigurationRequestsDto': new DocspaceApiJavascript.DeepLinkConfigurationRequestsDto() // DeepLinkConfigurationRequestsDto | 
 };
-apiInstance.deletePortalColorTheme(opts, (error, data, response) => {
+apiInstance.configureDeepLink(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -270,6 +217,20 @@ apiInstance.deletePortalColorTheme(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## deletePortalColorTheme
+
+> CustomColorThemesSettingsWrapper deletePortalColorTheme(opts)
+
+Deletes the portal color theme with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-portal-color-theme/).
 
 ### Parameters
 
@@ -286,25 +247,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getDeepLinkSettings
-
-> TenantDeepLinkSettingsWrapper getDeepLinkSettings()
-
-Get the deep link settings
-
-Returns the deep link settings.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -326,8 +273,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
-apiInstance.getDeepLinkSettings((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
+let opts = {
+  'id': 9846 // Number | The ID of the portal theme to delete.
+};
+apiInstance.deletePortalColorTheme(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -335,6 +285,20 @@ apiInstance.getDeepLinkSettings((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getDeepLinkSettings
+
+> TenantDeepLinkSettingsWrapper getDeepLinkSettings()
+
+Returns the deep link settings.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-deep-link-settings/).
 
 ### Parameters
 
@@ -348,25 +312,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getPaymentSettings
-
-> PaymentSettingsWrapper getPaymentSettings()
-
-Get the payment settings
-
-Returns the portal payment settings.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -388,8 +338,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
-apiInstance.getPaymentSettings((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
+apiInstance.getDeepLinkSettings((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -397,6 +347,20 @@ apiInstance.getPaymentSettings((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getPaymentSettings
+
+> PaymentSettingsWrapper getPaymentSettings()
+
+Returns the portal payment settings.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-payment-settings/).
 
 ### Parameters
 
@@ -410,6 +374,42 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
+apiInstance.getPaymentSettings((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -420,24 +420,9 @@ This endpoint does not need any parameter.
 
 > CustomColorThemesSettingsWrapper getPortalColorTheme()
 
-Get a color theme
-
 Returns the portal color theme.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
-apiInstance.getPortalColorTheme((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-portal-color-theme/).
 
 ### Parameters
 
@@ -451,6 +436,21 @@ This endpoint does not need any parameter.
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
+apiInstance.getPortalColorTheme((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -461,45 +461,9 @@ No authorization required
 
 > ObjectWrapper getPortalHostname()
 
-Get hostname
-
 Returns the portal hostname.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
-apiInstance.getPortalHostname((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-portal-hostname/).
 
 ### Parameters
 
@@ -513,25 +477,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getPortalLogo
-
-> StringWrapper getPortalLogo()
-
-Get a portal logo
-
-Returns the portal logo image URL.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -553,8 +503,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
-apiInstance.getPortalLogo((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
+apiInstance.getPortalHostname((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -562,6 +512,20 @@ apiInstance.getPortalLogo((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getPortalLogo
+
+> StringWrapper getPortalLogo()
+
+Returns the portal logo image URL.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-portal-logo/).
 
 ### Parameters
 
@@ -575,6 +539,42 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
+apiInstance.getPortalLogo((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -585,27 +585,9 @@ This endpoint does not need any parameter.
 
 > SettingsWrapper getPortalSettings(opts)
 
-Get the portal settings
-
 Returns a list of all the available portal settings with the current values for each parameter.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
-let opts = {
-  'withpassword': true // Boolean | Specifies whether to include the password hashing configuration in the response.
-};
-apiInstance.getPortalSettings(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-portal-settings/).
 
 ### Parameters
 
@@ -622,6 +604,24 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
+let opts = {
+  'withpassword': true // Boolean | Specifies whether to include the password hashing configuration in the response.
+};
+apiInstance.getPortalSettings(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -632,45 +632,9 @@ No authorization required
 
 > ObjectWrapper getSocketSettings()
 
-Get the socket settings
-
 Returns the socket settings.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
-apiInstance.getSocketSettings((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-socket-settings/).
 
 ### Parameters
 
@@ -684,6 +648,42 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
+apiInstance.getSocketSettings((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -694,24 +694,9 @@ This endpoint does not need any parameter.
 
 > STRINGArrayWrapper getSupportedCultures()
 
-Get supported languages
-
 Returns a list of all the available portal languages in the format of a two-letter or four-letter language code (e.g. \&quot;de\&quot;, \&quot;en-US\&quot;, etc.).
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
-apiInstance.getSupportedCultures((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-supported-cultures/).
 
 ### Parameters
 
@@ -725,6 +710,21 @@ This endpoint does not need any parameter.
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
+apiInstance.getSupportedCultures((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -735,24 +735,9 @@ No authorization required
 
 > TenantUserInvitationSettingsWrapper getTenantUserInvitationSettings()
 
-Get the user invitation settings
-
 Returns the portal user invitation settings.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
-apiInstance.getTenantUserInvitationSettings((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-tenant-user-invitation-settings/).
 
 ### Parameters
 
@@ -766,6 +751,21 @@ This endpoint does not need any parameter.
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
+apiInstance.getTenantUserInvitationSettings((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -776,45 +776,9 @@ No authorization required
 
 > TimezonesRequestsArrayWrapper getTimeZones()
 
-Get time zones
-
 Returns a list of all the available portal time zones.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
-apiInstance.getTimeZones((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-time-zones/).
 
 ### Parameters
 
@@ -828,25 +792,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## saveDnsSettings
-
-> StringWrapper saveDnsSettings(opts)
-
-Save the DNS settings
-
-Saves the DNS settings specified in the request to the current portal.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -868,11 +818,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
-let opts = {
-  'dnsSettingsRequestsDto': new DocspaceApiTypescript.DnsSettingsRequestsDto() // DnsSettingsRequestsDto | 
-};
-apiInstance.saveDnsSettings(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
+apiInstance.getTimeZones((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -880,6 +827,20 @@ apiInstance.saveDnsSettings(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## saveDnsSettings
+
+> StringWrapper saveDnsSettings(opts)
+
+Saves the DNS settings specified in the request to the current portal.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/save-dns-settings/).
 
 ### Parameters
 
@@ -896,25 +857,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## saveMailDomainSettings
-
-> StringWrapper saveMailDomainSettings(opts)
-
-Save the mail domain settings
-
-Saves the mail domain settings specified in the request to the portal.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -936,11 +883,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
 let opts = {
-  'mailDomainSettingsRequestsDto': new DocspaceApiTypescript.MailDomainSettingsRequestsDto() // MailDomainSettingsRequestsDto | 
+  'dnsSettingsRequestsDto': new DocspaceApiJavascript.DnsSettingsRequestsDto() // DnsSettingsRequestsDto | 
 };
-apiInstance.saveMailDomainSettings(opts, (error, data, response) => {
+apiInstance.saveDnsSettings(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -948,6 +895,20 @@ apiInstance.saveMailDomainSettings(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## saveMailDomainSettings
+
+> StringWrapper saveMailDomainSettings(opts)
+
+Saves the mail domain settings specified in the request to the portal.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/save-mail-domain-settings/).
 
 ### Parameters
 
@@ -964,25 +925,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## savePortalColorTheme
-
-> CustomColorThemesSettingsWrapper savePortalColorTheme(opts)
-
-Save a color theme
-
-Saves the portal color theme specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1004,11 +951,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
 let opts = {
-  'customColorThemesSettingsRequestsDto': new DocspaceApiTypescript.CustomColorThemesSettingsRequestsDto() // CustomColorThemesSettingsRequestsDto | 
+  'mailDomainSettingsRequestsDto': new DocspaceApiJavascript.MailDomainSettingsRequestsDto() // MailDomainSettingsRequestsDto | 
 };
-apiInstance.savePortalColorTheme(opts, (error, data, response) => {
+apiInstance.saveMailDomainSettings(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1016,6 +963,20 @@ apiInstance.savePortalColorTheme(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## savePortalColorTheme
+
+> CustomColorThemesSettingsWrapper savePortalColorTheme(opts)
+
+Saves the portal color theme specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/save-portal-color-theme/).
 
 ### Parameters
 
@@ -1032,25 +993,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## updateEmailActivationSettings
-
-> EmailActivationSettingsWrapper updateEmailActivationSettings(opts)
-
-Update the email activation settings
-
-Updates the email activation settings.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1072,11 +1019,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
 let opts = {
-  'emailActivationSettings': new DocspaceApiTypescript.EmailActivationSettings() // EmailActivationSettings | 
+  'customColorThemesSettingsRequestsDto': new DocspaceApiJavascript.CustomColorThemesSettingsRequestsDto() // CustomColorThemesSettingsRequestsDto | 
 };
-apiInstance.updateEmailActivationSettings(opts, (error, data, response) => {
+apiInstance.savePortalColorTheme(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1084,6 +1031,20 @@ apiInstance.updateEmailActivationSettings(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## updateEmailActivationSettings
+
+> EmailActivationSettingsWrapper updateEmailActivationSettings(opts)
+
+Updates the email activation settings.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-email-activation-settings/).
 
 ### Parameters
 
@@ -1100,25 +1061,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## updateInvitationSettings
-
-> TenantUserInvitationSettingsWrapper updateInvitationSettings(opts)
-
-Update user invitation settings
-
-Updates the portal user invitation settings.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1140,11 +1087,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsCommonSettingsApi();
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
 let opts = {
-  'tenantUserInvitationSettingsRequestDto': new DocspaceApiTypescript.TenantUserInvitationSettingsRequestDto() // TenantUserInvitationSettingsRequestDto | 
+  'emailActivationSettings': new DocspaceApiJavascript.EmailActivationSettings() // EmailActivationSettings | 
 };
-apiInstance.updateInvitationSettings(opts, (error, data, response) => {
+apiInstance.updateEmailActivationSettings(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1152,6 +1099,20 @@ apiInstance.updateInvitationSettings(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## updateInvitationSettings
+
+> TenantUserInvitationSettingsWrapper updateInvitationSettings(opts)
+
+Updates the portal user invitation settings.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-invitation-settings/).
 
 ### Parameters
 
@@ -1167,6 +1128,45 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.SettingsCommonSettingsApi();
+let opts = {
+  'tenantUserInvitationSettingsRequestDto': new DocspaceApiJavascript.TenantUserInvitationSettingsRequestDto() // TenantUserInvitationSettingsRequestDto | 
+};
+apiInstance.updateInvitationSettings(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

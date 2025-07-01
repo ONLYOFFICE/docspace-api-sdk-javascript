@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.BackupProgressEnum
+# DocspaceApiJavascript.BackupProgressEnum
+
+
 
 ## Enum
 

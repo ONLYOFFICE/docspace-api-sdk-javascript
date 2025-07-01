@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.NoContentResultWrapper
+# DocspaceApiJavascript.NoContentResultWrapper
 
 ## Properties
 

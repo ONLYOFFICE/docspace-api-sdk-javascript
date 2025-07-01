@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.RoomLinkRequest();
+    instance = new DocspaceApiJavascript.RoomLinkRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,49 +62,49 @@
   describe('RoomLinkRequest', function() {
     it('should create an instance of RoomLinkRequest', function() {
       // uncomment below and update the code to test RoomLinkRequest
-      //var instance = new DocspaceApiTypescript.RoomLinkRequest();
-      //expect(instance).to.be.a(DocspaceApiTypescript.RoomLinkRequest);
+      //var instance = new DocspaceApiJavascript.RoomLinkRequest();
+      //expect(instance).to.be.a(DocspaceApiJavascript.RoomLinkRequest);
     });
 
     it('should have the property linkId (base name: "linkId")', function() {
       // uncomment below and update the code to test the property linkId
-      //var instance = new DocspaceApiTypescript.RoomLinkRequest();
+      //var instance = new DocspaceApiJavascript.RoomLinkRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property access (base name: "access")', function() {
       // uncomment below and update the code to test the property access
-      //var instance = new DocspaceApiTypescript.RoomLinkRequest();
+      //var instance = new DocspaceApiJavascript.RoomLinkRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property expirationDate (base name: "expirationDate")', function() {
       // uncomment below and update the code to test the property expirationDate
-      //var instance = new DocspaceApiTypescript.RoomLinkRequest();
+      //var instance = new DocspaceApiJavascript.RoomLinkRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiTypescript.RoomLinkRequest();
+      //var instance = new DocspaceApiJavascript.RoomLinkRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property linkType (base name: "linkType")', function() {
       // uncomment below and update the code to test the property linkType
-      //var instance = new DocspaceApiTypescript.RoomLinkRequest();
+      //var instance = new DocspaceApiJavascript.RoomLinkRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instance = new DocspaceApiTypescript.RoomLinkRequest();
+      //var instance = new DocspaceApiJavascript.RoomLinkRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property denyDownload (base name: "denyDownload")', function() {
       // uncomment below and update the code to test the property denyDownload
-      //var instance = new DocspaceApiTypescript.RoomLinkRequest();
+      //var instance = new DocspaceApiJavascript.RoomLinkRequest();
       //expect(instance).to.be();
     });
 

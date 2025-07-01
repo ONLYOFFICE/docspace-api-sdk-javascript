@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.IPRestriction();
+    instance = new DocspaceApiJavascript.IPRestriction();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,31 +62,31 @@
   describe('IPRestriction', function() {
     it('should create an instance of IPRestriction', function() {
       // uncomment below and update the code to test IPRestriction
-      //var instance = new DocspaceApiTypescript.IPRestriction();
-      //expect(instance).to.be.a(DocspaceApiTypescript.IPRestriction);
+      //var instance = new DocspaceApiJavascript.IPRestriction();
+      //expect(instance).to.be.a(DocspaceApiJavascript.IPRestriction);
     });
 
     it('should have the property ip (base name: "ip")', function() {
       // uncomment below and update the code to test the property ip
-      //var instance = new DocspaceApiTypescript.IPRestriction();
+      //var instance = new DocspaceApiJavascript.IPRestriction();
       //expect(instance).to.be();
     });
 
     it('should have the property forAdmin (base name: "forAdmin")', function() {
       // uncomment below and update the code to test the property forAdmin
-      //var instance = new DocspaceApiTypescript.IPRestriction();
+      //var instance = new DocspaceApiJavascript.IPRestriction();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.IPRestriction();
+      //var instance = new DocspaceApiJavascript.IPRestriction();
       //expect(instance).to.be();
     });
 
     it('should have the property tenantId (base name: "tenantId")', function() {
       // uncomment below and update the code to test the property tenantId
-      //var instance = new DocspaceApiTypescript.IPRestriction();
+      //var instance = new DocspaceApiJavascript.IPRestriction();
       //expect(instance).to.be();
     });
 

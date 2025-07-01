@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ConversationResultDto();
+    instance = new DocspaceApiJavascript.ConversationResultDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,49 +62,49 @@
   describe('ConversationResultDto', function() {
     it('should create an instance of ConversationResultDto', function() {
       // uncomment below and update the code to test ConversationResultDto
-      //var instance = new DocspaceApiTypescript.ConversationResultDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ConversationResultDto);
+      //var instance = new DocspaceApiJavascript.ConversationResultDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ConversationResultDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.ConversationResultDto();
+      //var instance = new DocspaceApiJavascript.ConversationResultDto();
       //expect(instance).to.be();
     });
 
     it('should have the property operation (base name: "Operation")', function() {
       // uncomment below and update the code to test the property operation
-      //var instance = new DocspaceApiTypescript.ConversationResultDto();
+      //var instance = new DocspaceApiJavascript.ConversationResultDto();
       //expect(instance).to.be();
     });
 
     it('should have the property progress (base name: "progress")', function() {
       // uncomment below and update the code to test the property progress
-      //var instance = new DocspaceApiTypescript.ConversationResultDto();
+      //var instance = new DocspaceApiJavascript.ConversationResultDto();
       //expect(instance).to.be();
     });
 
     it('should have the property source (base name: "source")', function() {
       // uncomment below and update the code to test the property source
-      //var instance = new DocspaceApiTypescript.ConversationResultDto();
+      //var instance = new DocspaceApiJavascript.ConversationResultDto();
       //expect(instance).to.be();
     });
 
     it('should have the property result (base name: "result")', function() {
       // uncomment below and update the code to test the property result
-      //var instance = new DocspaceApiTypescript.ConversationResultDto();
+      //var instance = new DocspaceApiJavascript.ConversationResultDto();
       //expect(instance).to.be();
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instance = new DocspaceApiTypescript.ConversationResultDto();
+      //var instance = new DocspaceApiJavascript.ConversationResultDto();
       //expect(instance).to.be();
     });
 
     it('should have the property processed (base name: "processed")', function() {
       // uncomment below and update the code to test the property processed
-      //var instance = new DocspaceApiTypescript.ConversationResultDto();
+      //var instance = new DocspaceApiJavascript.ConversationResultDto();
       //expect(instance).to.be();
     });
 

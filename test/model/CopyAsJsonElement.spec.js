@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CopyAsJsonElement();
+    instance = new DocspaceApiJavascript.CopyAsJsonElement();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('CopyAsJsonElement', function() {
     it('should create an instance of CopyAsJsonElement', function() {
       // uncomment below and update the code to test CopyAsJsonElement
-      //var instance = new DocspaceApiTypescript.CopyAsJsonElement();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CopyAsJsonElement);
+      //var instance = new DocspaceApiJavascript.CopyAsJsonElement();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CopyAsJsonElement);
     });
 
     it('should have the property destTitle (base name: "destTitle")', function() {
       // uncomment below and update the code to test the property destTitle
-      //var instance = new DocspaceApiTypescript.CopyAsJsonElement();
+      //var instance = new DocspaceApiJavascript.CopyAsJsonElement();
       //expect(instance).to.be();
     });
 
     it('should have the property destFolderId (base name: "destFolderId")', function() {
       // uncomment below and update the code to test the property destFolderId
-      //var instance = new DocspaceApiTypescript.CopyAsJsonElement();
+      //var instance = new DocspaceApiJavascript.CopyAsJsonElement();
       //expect(instance).to.be();
     });
 
     it('should have the property enableExternalExt (base name: "enableExternalExt")', function() {
       // uncomment below and update the code to test the property enableExternalExt
-      //var instance = new DocspaceApiTypescript.CopyAsJsonElement();
+      //var instance = new DocspaceApiJavascript.CopyAsJsonElement();
       //expect(instance).to.be();
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instance = new DocspaceApiTypescript.CopyAsJsonElement();
+      //var instance = new DocspaceApiJavascript.CopyAsJsonElement();
       //expect(instance).to.be();
     });
 
     it('should have the property toForm (base name: "toForm")', function() {
       // uncomment below and update the code to test the property toForm
-      //var instance = new DocspaceApiTypescript.CopyAsJsonElement();
+      //var instance = new DocspaceApiJavascript.CopyAsJsonElement();
       //expect(instance).to.be();
     });
 

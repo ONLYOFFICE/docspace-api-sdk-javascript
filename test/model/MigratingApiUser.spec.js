@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.MigratingApiUser();
+    instance = new DocspaceApiJavascript.MigratingApiUser();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,55 +62,55 @@
   describe('MigratingApiUser', function() {
     it('should create an instance of MigratingApiUser', function() {
       // uncomment below and update the code to test MigratingApiUser
-      //var instance = new DocspaceApiTypescript.MigratingApiUser();
-      //expect(instance).to.be.a(DocspaceApiTypescript.MigratingApiUser);
+      //var instance = new DocspaceApiJavascript.MigratingApiUser();
+      //expect(instance).to.be.a(DocspaceApiJavascript.MigratingApiUser);
     });
 
     it('should have the property shouldImport (base name: "shouldImport")', function() {
       // uncomment below and update the code to test the property shouldImport
-      //var instance = new DocspaceApiTypescript.MigratingApiUser();
+      //var instance = new DocspaceApiJavascript.MigratingApiUser();
       //expect(instance).to.be();
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiTypescript.MigratingApiUser();
+      //var instance = new DocspaceApiJavascript.MigratingApiUser();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiTypescript.MigratingApiUser();
+      //var instance = new DocspaceApiJavascript.MigratingApiUser();
       //expect(instance).to.be();
     });
 
     it('should have the property displayName (base name: "displayName")', function() {
       // uncomment below and update the code to test the property displayName
-      //var instance = new DocspaceApiTypescript.MigratingApiUser();
+      //var instance = new DocspaceApiJavascript.MigratingApiUser();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "firstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instance = new DocspaceApiTypescript.MigratingApiUser();
+      //var instance = new DocspaceApiJavascript.MigratingApiUser();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "lastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instance = new DocspaceApiTypescript.MigratingApiUser();
+      //var instance = new DocspaceApiJavascript.MigratingApiUser();
       //expect(instance).to.be();
     });
 
     it('should have the property userType (base name: "userType")', function() {
       // uncomment below and update the code to test the property userType
-      //var instance = new DocspaceApiTypescript.MigratingApiUser();
+      //var instance = new DocspaceApiJavascript.MigratingApiUser();
       //expect(instance).to.be();
     });
 
     it('should have the property migratingFiles (base name: "migratingFiles")', function() {
       // uncomment below and update the code to test the property migratingFiles
-      //var instance = new DocspaceApiTypescript.MigratingApiUser();
+      //var instance = new DocspaceApiJavascript.MigratingApiUser();
       //expect(instance).to.be();
     });
 

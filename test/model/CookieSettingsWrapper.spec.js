@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CookieSettingsWrapper();
+    instance = new DocspaceApiJavascript.CookieSettingsWrapper();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('CookieSettingsWrapper', function() {
     it('should create an instance of CookieSettingsWrapper', function() {
       // uncomment below and update the code to test CookieSettingsWrapper
-      //var instance = new DocspaceApiTypescript.CookieSettingsWrapper();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CookieSettingsWrapper);
+      //var instance = new DocspaceApiJavascript.CookieSettingsWrapper();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CookieSettingsWrapper);
     });
 
     it('should have the property response (base name: "response")', function() {
       // uncomment below and update the code to test the property response
-      //var instance = new DocspaceApiTypescript.CookieSettingsWrapper();
+      //var instance = new DocspaceApiJavascript.CookieSettingsWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property count (base name: "count")', function() {
       // uncomment below and update the code to test the property count
-      //var instance = new DocspaceApiTypescript.CookieSettingsWrapper();
+      //var instance = new DocspaceApiJavascript.CookieSettingsWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instance = new DocspaceApiTypescript.CookieSettingsWrapper();
+      //var instance = new DocspaceApiJavascript.CookieSettingsWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new DocspaceApiTypescript.CookieSettingsWrapper();
+      //var instance = new DocspaceApiJavascript.CookieSettingsWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property statusCode (base name: "statusCode")', function() {
       // uncomment below and update the code to test the property statusCode
-      //var instance = new DocspaceApiTypescript.CookieSettingsWrapper();
+      //var instance = new DocspaceApiJavascript.CookieSettingsWrapper();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FileLinkWrapper
+# DocspaceApiJavascript.FileLinkWrapper
 
 ## Properties
 

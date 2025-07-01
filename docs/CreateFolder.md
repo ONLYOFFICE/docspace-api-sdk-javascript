@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.CreateFolder
+# DocspaceApiJavascript.CreateFolder
 
 ## Properties
 

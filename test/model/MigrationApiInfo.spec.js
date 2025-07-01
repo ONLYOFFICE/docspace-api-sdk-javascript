@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.MigrationApiInfo();
+    instance = new DocspaceApiJavascript.MigrationApiInfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,109 +62,109 @@
   describe('MigrationApiInfo', function() {
     it('should create an instance of MigrationApiInfo', function() {
       // uncomment below and update the code to test MigrationApiInfo
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
-      //expect(instance).to.be.a(DocspaceApiTypescript.MigrationApiInfo);
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
+      //expect(instance).to.be.a(DocspaceApiJavascript.MigrationApiInfo);
     });
 
     it('should have the property migratorName (base name: "migratorName")', function() {
       // uncomment below and update the code to test the property migratorName
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property operation (base name: "operation")', function() {
       // uncomment below and update the code to test the property operation
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property failedArchives (base name: "failedArchives")', function() {
       // uncomment below and update the code to test the property failedArchives
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property users (base name: "users")', function() {
       // uncomment below and update the code to test the property users
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property withoutEmailUsers (base name: "withoutEmailUsers")', function() {
       // uncomment below and update the code to test the property withoutEmailUsers
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property existUsers (base name: "existUsers")', function() {
       // uncomment below and update the code to test the property existUsers
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property groups (base name: "groups")', function() {
       // uncomment below and update the code to test the property groups
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property importPersonalFiles (base name: "importPersonalFiles")', function() {
       // uncomment below and update the code to test the property importPersonalFiles
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property importSharedFiles (base name: "importSharedFiles")', function() {
       // uncomment below and update the code to test the property importSharedFiles
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property importSharedFolders (base name: "importSharedFolders")', function() {
       // uncomment below and update the code to test the property importSharedFolders
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property importCommonFiles (base name: "importCommonFiles")', function() {
       // uncomment below and update the code to test the property importCommonFiles
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property importProjectFiles (base name: "importProjectFiles")', function() {
       // uncomment below and update the code to test the property importProjectFiles
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property importGroups (base name: "importGroups")', function() {
       // uncomment below and update the code to test the property importGroups
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property successedUsers (base name: "successedUsers")', function() {
       // uncomment below and update the code to test the property successedUsers
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property failedUsers (base name: "failedUsers")', function() {
       // uncomment below and update the code to test the property failedUsers
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property files (base name: "files")', function() {
       // uncomment below and update the code to test the property files
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property errors (base name: "errors")', function() {
       // uncomment below and update the code to test the property errors
-      //var instance = new DocspaceApiTypescript.MigrationApiInfo();
+      //var instance = new DocspaceApiJavascript.MigrationApiInfo();
       //expect(instance).to.be();
     });
 

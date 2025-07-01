@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SmtpSettingsDto
+# DocspaceApiJavascript.SmtpSettingsDto
 
 ## Properties
 

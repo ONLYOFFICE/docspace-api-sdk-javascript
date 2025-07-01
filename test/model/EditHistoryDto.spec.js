@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.EditHistoryDto();
+    instance = new DocspaceApiJavascript.EditHistoryDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,61 +62,61 @@
   describe('EditHistoryDto', function() {
     it('should create an instance of EditHistoryDto', function() {
       // uncomment below and update the code to test EditHistoryDto
-      //var instance = new DocspaceApiTypescript.EditHistoryDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.EditHistoryDto);
+      //var instance = new DocspaceApiJavascript.EditHistoryDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.EditHistoryDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.EditHistoryDto();
+      //var instance = new DocspaceApiJavascript.EditHistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiTypescript.EditHistoryDto();
+      //var instance = new DocspaceApiJavascript.EditHistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property version (base name: "version")', function() {
       // uncomment below and update the code to test the property version
-      //var instance = new DocspaceApiTypescript.EditHistoryDto();
+      //var instance = new DocspaceApiJavascript.EditHistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property versionGroup (base name: "versionGroup")', function() {
       // uncomment below and update the code to test the property versionGroup
-      //var instance = new DocspaceApiTypescript.EditHistoryDto();
+      //var instance = new DocspaceApiJavascript.EditHistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instance = new DocspaceApiTypescript.EditHistoryDto();
+      //var instance = new DocspaceApiJavascript.EditHistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property created (base name: "created")', function() {
       // uncomment below and update the code to test the property created
-      //var instance = new DocspaceApiTypescript.EditHistoryDto();
+      //var instance = new DocspaceApiJavascript.EditHistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property changesHistory (base name: "changesHistory")', function() {
       // uncomment below and update the code to test the property changesHistory
-      //var instance = new DocspaceApiTypescript.EditHistoryDto();
+      //var instance = new DocspaceApiJavascript.EditHistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property changes (base name: "changes")', function() {
       // uncomment below and update the code to test the property changes
-      //var instance = new DocspaceApiTypescript.EditHistoryDto();
+      //var instance = new DocspaceApiJavascript.EditHistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property serverVersion (base name: "serverVersion")', function() {
       // uncomment below and update the code to test the property serverVersion
-      //var instance = new DocspaceApiTypescript.EditHistoryDto();
+      //var instance = new DocspaceApiJavascript.EditHistoryDto();
       //expect(instance).to.be();
     });
 

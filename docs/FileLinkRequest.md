@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FileLinkRequest
+# DocspaceApiJavascript.FileLinkRequest
 
 ## Properties
 

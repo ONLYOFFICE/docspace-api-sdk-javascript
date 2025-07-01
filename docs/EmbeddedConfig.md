@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.EmbeddedConfig
+# DocspaceApiJavascript.EmbeddedConfig
 
 ## Properties
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CreateFolder();
+    instance = new DocspaceApiJavascript.CreateFolder();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('CreateFolder', function() {
     it('should create an instance of CreateFolder', function() {
       // uncomment below and update the code to test CreateFolder
-      //var instance = new DocspaceApiTypescript.CreateFolder();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CreateFolder);
+      //var instance = new DocspaceApiJavascript.CreateFolder();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CreateFolder);
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiTypescript.CreateFolder();
+      //var instance = new DocspaceApiJavascript.CreateFolder();
       //expect(instance).to.be();
     });
 

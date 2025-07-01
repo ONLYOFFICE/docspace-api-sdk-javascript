@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.GreetingSettingsRequestsDto
+# DocspaceApiJavascript.GreetingSettingsRequestsDto
 
 ## Properties
 

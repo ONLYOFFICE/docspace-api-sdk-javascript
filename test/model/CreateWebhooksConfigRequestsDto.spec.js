@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CreateWebhooksConfigRequestsDto();
+    instance = new DocspaceApiJavascript.CreateWebhooksConfigRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,49 +62,49 @@
   describe('CreateWebhooksConfigRequestsDto', function() {
     it('should create an instance of CreateWebhooksConfigRequestsDto', function() {
       // uncomment below and update the code to test CreateWebhooksConfigRequestsDto
-      //var instance = new DocspaceApiTypescript.CreateWebhooksConfigRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CreateWebhooksConfigRequestsDto);
+      //var instance = new DocspaceApiJavascript.CreateWebhooksConfigRequestsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CreateWebhooksConfigRequestsDto);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiTypescript.CreateWebhooksConfigRequestsDto();
+      //var instance = new DocspaceApiJavascript.CreateWebhooksConfigRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property uri (base name: "uri")', function() {
       // uncomment below and update the code to test the property uri
-      //var instance = new DocspaceApiTypescript.CreateWebhooksConfigRequestsDto();
+      //var instance = new DocspaceApiJavascript.CreateWebhooksConfigRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property secretKey (base name: "secretKey")', function() {
       // uncomment below and update the code to test the property secretKey
-      //var instance = new DocspaceApiTypescript.CreateWebhooksConfigRequestsDto();
+      //var instance = new DocspaceApiJavascript.CreateWebhooksConfigRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property enabled (base name: "enabled")', function() {
       // uncomment below and update the code to test the property enabled
-      //var instance = new DocspaceApiTypescript.CreateWebhooksConfigRequestsDto();
+      //var instance = new DocspaceApiJavascript.CreateWebhooksConfigRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property ssl (base name: "ssl")', function() {
       // uncomment below and update the code to test the property ssl
-      //var instance = new DocspaceApiTypescript.CreateWebhooksConfigRequestsDto();
+      //var instance = new DocspaceApiJavascript.CreateWebhooksConfigRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property triggers (base name: "triggers")', function() {
       // uncomment below and update the code to test the property triggers
-      //var instance = new DocspaceApiTypescript.CreateWebhooksConfigRequestsDto();
+      //var instance = new DocspaceApiJavascript.CreateWebhooksConfigRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property targetId (base name: "targetId")', function() {
       // uncomment below and update the code to test the property targetId
-      //var instance = new DocspaceApiTypescript.CreateWebhooksConfigRequestsDto();
+      //var instance = new DocspaceApiJavascript.CreateWebhooksConfigRequestsDto();
       //expect(instance).to.be();
     });
 

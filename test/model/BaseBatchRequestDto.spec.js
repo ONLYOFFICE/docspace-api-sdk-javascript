@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.BaseBatchRequestDto();
+    instance = new DocspaceApiJavascript.BaseBatchRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('BaseBatchRequestDto', function() {
     it('should create an instance of BaseBatchRequestDto', function() {
       // uncomment below and update the code to test BaseBatchRequestDto
-      //var instance = new DocspaceApiTypescript.BaseBatchRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.BaseBatchRequestDto);
+      //var instance = new DocspaceApiJavascript.BaseBatchRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.BaseBatchRequestDto);
     });
 
     it('should have the property returnSingleOperation (base name: "returnSingleOperation")', function() {
       // uncomment below and update the code to test the property returnSingleOperation
-      //var instance = new DocspaceApiTypescript.BaseBatchRequestDto();
+      //var instance = new DocspaceApiJavascript.BaseBatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property folderIds (base name: "folderIds")', function() {
       // uncomment below and update the code to test the property folderIds
-      //var instance = new DocspaceApiTypescript.BaseBatchRequestDto();
+      //var instance = new DocspaceApiJavascript.BaseBatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property fileIds (base name: "fileIds")', function() {
       // uncomment below and update the code to test the property fileIds
-      //var instance = new DocspaceApiTypescript.BaseBatchRequestDto();
+      //var instance = new DocspaceApiJavascript.BaseBatchRequestDto();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.STRINGArrayWrapper
+# DocspaceApiJavascript.STRINGArrayWrapper
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ApiKeyResponseDto
+# DocspaceApiJavascript.ApiKeyResponseDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.QuotaArrayWrapper
+# DocspaceApiJavascript.QuotaArrayWrapper
 
 ## Properties
 

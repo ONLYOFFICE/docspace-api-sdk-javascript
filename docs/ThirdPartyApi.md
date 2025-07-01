@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ThirdPartyApi
+# DocspaceApiJavascript.ThirdPartyApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -12,15 +12,30 @@ Method | HTTP request | Description
 
 > ObjectWrapper getThirdPartyCode(provider)
 
-Get the code request
-
 Returns a request to get the confirmation code from URL.   **Note**: List of providers: Google, Dropbox, Docusign, Box, OneDrive, Wordpress.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-third-party-code/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **provider** | [**LoginProvider**](.md)| The identity provider used for authentication. | 
+
+### Return type
+
+[**ObjectWrapper**](ObjectWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -42,8 +57,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.ThirdPartyApi();
-let provider = new DocspaceApiTypescript.LoginProvider(); // LoginProvider | The identity provider used for authentication.
+let apiInstance = new DocspaceApiJavascript.ThirdPartyApi();
+let provider = new DocspaceApiJavascript.LoginProvider(); // LoginProvider | The identity provider used for authentication.
 apiInstance.getThirdPartyCode(provider, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -52,21 +67,6 @@ apiInstance.getThirdPartyCode(provider, (error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **provider** | [**LoginProvider**](.md)| The identity provider used for authentication. | 
-
-### Return type
-
-[**ObjectWrapper**](ObjectWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 

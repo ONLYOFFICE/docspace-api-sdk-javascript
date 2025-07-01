@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ArchiveRoomRequest
+# DocspaceApiJavascript.ArchiveRoomRequest
 
 ## Properties
 

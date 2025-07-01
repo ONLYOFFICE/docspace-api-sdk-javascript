@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.FileStatus
+# DocspaceApiJavascript.FileStatus
+
+
 
 ## Enum
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.RoomInvitation
+# DocspaceApiJavascript.RoomInvitation
 
 ## Properties
 

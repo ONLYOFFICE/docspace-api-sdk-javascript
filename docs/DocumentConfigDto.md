@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.DocumentConfigDto
+# DocspaceApiJavascript.DocumentConfigDto
 
 ## Properties
 

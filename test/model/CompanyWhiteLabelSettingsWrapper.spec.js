@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CompanyWhiteLabelSettingsWrapper();
+    instance = new DocspaceApiJavascript.CompanyWhiteLabelSettingsWrapper();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('CompanyWhiteLabelSettingsWrapper', function() {
     it('should create an instance of CompanyWhiteLabelSettingsWrapper', function() {
       // uncomment below and update the code to test CompanyWhiteLabelSettingsWrapper
-      //var instance = new DocspaceApiTypescript.CompanyWhiteLabelSettingsWrapper();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CompanyWhiteLabelSettingsWrapper);
+      //var instance = new DocspaceApiJavascript.CompanyWhiteLabelSettingsWrapper();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CompanyWhiteLabelSettingsWrapper);
     });
 
     it('should have the property settings (base name: "settings")', function() {
       // uncomment below and update the code to test the property settings
-      //var instance = new DocspaceApiTypescript.CompanyWhiteLabelSettingsWrapper();
+      //var instance = new DocspaceApiJavascript.CompanyWhiteLabelSettingsWrapper();
       //expect(instance).to.be();
     });
 

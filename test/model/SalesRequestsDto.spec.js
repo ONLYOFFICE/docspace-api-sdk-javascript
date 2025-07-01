@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.SalesRequestsDto();
+    instance = new DocspaceApiJavascript.SalesRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('SalesRequestsDto', function() {
     it('should create an instance of SalesRequestsDto', function() {
       // uncomment below and update the code to test SalesRequestsDto
-      //var instance = new DocspaceApiTypescript.SalesRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.SalesRequestsDto);
+      //var instance = new DocspaceApiJavascript.SalesRequestsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.SalesRequestsDto);
     });
 
     it('should have the property userName (base name: "userName")', function() {
       // uncomment below and update the code to test the property userName
-      //var instance = new DocspaceApiTypescript.SalesRequestsDto();
+      //var instance = new DocspaceApiJavascript.SalesRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiTypescript.SalesRequestsDto();
+      //var instance = new DocspaceApiJavascript.SalesRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new DocspaceApiTypescript.SalesRequestsDto();
+      //var instance = new DocspaceApiJavascript.SalesRequestsDto();
       //expect(instance).to.be();
     });
 

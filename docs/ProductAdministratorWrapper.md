@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ProductAdministratorWrapper
+# DocspaceApiJavascript.ProductAdministratorWrapper
 
 ## Properties
 

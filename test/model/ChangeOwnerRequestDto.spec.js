@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ChangeOwnerRequestDto();
+    instance = new DocspaceApiJavascript.ChangeOwnerRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('ChangeOwnerRequestDto', function() {
     it('should create an instance of ChangeOwnerRequestDto', function() {
       // uncomment below and update the code to test ChangeOwnerRequestDto
-      //var instance = new DocspaceApiTypescript.ChangeOwnerRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ChangeOwnerRequestDto);
+      //var instance = new DocspaceApiJavascript.ChangeOwnerRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ChangeOwnerRequestDto);
     });
 
     it('should have the property folderIds (base name: "folderIds")', function() {
       // uncomment below and update the code to test the property folderIds
-      //var instance = new DocspaceApiTypescript.ChangeOwnerRequestDto();
+      //var instance = new DocspaceApiJavascript.ChangeOwnerRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property fileIds (base name: "fileIds")', function() {
       // uncomment below and update the code to test the property fileIds
-      //var instance = new DocspaceApiTypescript.ChangeOwnerRequestDto();
+      //var instance = new DocspaceApiJavascript.ChangeOwnerRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "userId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instance = new DocspaceApiTypescript.ChangeOwnerRequestDto();
+      //var instance = new DocspaceApiJavascript.ChangeOwnerRequestDto();
       //expect(instance).to.be();
     });
 

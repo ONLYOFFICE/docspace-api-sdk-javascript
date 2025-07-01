@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.DeepLinkDto();
+    instance = new DocspaceApiJavascript.DeepLinkDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('DeepLinkDto', function() {
     it('should create an instance of DeepLinkDto', function() {
       // uncomment below and update the code to test DeepLinkDto
-      //var instance = new DocspaceApiTypescript.DeepLinkDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.DeepLinkDto);
+      //var instance = new DocspaceApiJavascript.DeepLinkDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.DeepLinkDto);
     });
 
     it('should have the property androidPackageName (base name: "androidPackageName")', function() {
       // uncomment below and update the code to test the property androidPackageName
-      //var instance = new DocspaceApiTypescript.DeepLinkDto();
+      //var instance = new DocspaceApiJavascript.DeepLinkDto();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiTypescript.DeepLinkDto();
+      //var instance = new DocspaceApiJavascript.DeepLinkDto();
       //expect(instance).to.be();
     });
 
     it('should have the property iosPackageId (base name: "iosPackageId")', function() {
       // uncomment below and update the code to test the property iosPackageId
-      //var instance = new DocspaceApiTypescript.DeepLinkDto();
+      //var instance = new DocspaceApiJavascript.DeepLinkDto();
       //expect(instance).to.be();
     });
 

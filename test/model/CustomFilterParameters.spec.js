@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CustomFilterParameters();
+    instance = new DocspaceApiJavascript.CustomFilterParameters();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('CustomFilterParameters', function() {
     it('should create an instance of CustomFilterParameters', function() {
       // uncomment below and update the code to test CustomFilterParameters
-      //var instance = new DocspaceApiTypescript.CustomFilterParameters();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CustomFilterParameters);
+      //var instance = new DocspaceApiJavascript.CustomFilterParameters();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CustomFilterParameters);
     });
 
     it('should have the property enabled (base name: "enabled")', function() {
       // uncomment below and update the code to test the property enabled
-      //var instance = new DocspaceApiTypescript.CustomFilterParameters();
+      //var instance = new DocspaceApiJavascript.CustomFilterParameters();
       //expect(instance).to.be();
     });
 

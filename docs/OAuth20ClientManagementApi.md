@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.OAuth20ClientManagementApi
+# DocspaceApiJavascript.OAuth20ClientManagementApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -17,32 +17,9 @@ Method | HTTP request | Description
 
 > Object changeActivation(clientId, changeClientActivationRequest)
 
-Change the client activation status
-
 Activates or deactivates an OAuth2 client. When deactivated, the client cannot request new access tokens, but existing tokens will remain valid until they expire.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-
-let apiInstance = new DocspaceApiTypescript.OAuth20ClientManagementApi();
-let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
-let changeClientActivationRequest = new DocspaceApiTypescript.ChangeClientActivationRequest(); // ChangeClientActivationRequest | 
-apiInstance.changeActivation(clientId, changeClientActivationRequest, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/change-activation/).
 
 ### Parameters
 
@@ -60,6 +37,29 @@ Name | Type | Description  | Notes
 
 [asc_auth_key](../README.md#asc_auth_key)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+
+let apiInstance = new DocspaceApiJavascript.OAuth20ClientManagementApi();
+let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
+let changeClientActivationRequest = new DocspaceApiJavascript.ChangeClientActivationRequest(); // ChangeClientActivationRequest | 
+apiInstance.changeActivation(clientId, changeClientActivationRequest, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: application/json
@@ -70,31 +70,9 @@ Name | Type | Description  | Notes
 
 > ClientResponse createClient(createClientRequest)
 
-Create a new OAuth2 client
-
 Creates a new OAuth2 client with the specified configuration. The client will be created with the provided scopes, redirect URIs, and other settings. Returns the created client details including the generated client ID.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-
-let apiInstance = new DocspaceApiTypescript.OAuth20ClientManagementApi();
-let createClientRequest = new DocspaceApiTypescript.CreateClientRequest(); // CreateClientRequest | 
-apiInstance.createClient(createClientRequest, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-client/).
 
 ### Parameters
 
@@ -111,6 +89,28 @@ Name | Type | Description  | Notes
 
 [asc_auth_key](../README.md#asc_auth_key)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+
+let apiInstance = new DocspaceApiJavascript.OAuth20ClientManagementApi();
+let createClientRequest = new DocspaceApiJavascript.CreateClientRequest(); // CreateClientRequest | 
+apiInstance.createClient(createClientRequest, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: application/json
@@ -121,31 +121,9 @@ Name | Type | Description  | Notes
 
 > Object deleteClient(clientId)
 
-Delete an OAuth2 client
-
 Permanently deletes an OAuth2 client and all associated data. All access and refresh tokens issued to this client will be invalidated. This operation cannot be undone.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-
-let apiInstance = new DocspaceApiTypescript.OAuth20ClientManagementApi();
-let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
-apiInstance.deleteClient(clientId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-client/).
 
 ### Parameters
 
@@ -162,6 +140,28 @@ Name | Type | Description  | Notes
 
 [asc_auth_key](../README.md#asc_auth_key)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+
+let apiInstance = new DocspaceApiJavascript.OAuth20ClientManagementApi();
+let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
+apiInstance.deleteClient(clientId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -172,31 +172,9 @@ Name | Type | Description  | Notes
 
 > ClientSecretResponse regenerateSecret(clientId)
 
-Regenerate the client secret
-
 Generates a new client secret for the specified OAuth2 client. The old secret will be immediately invalidated. This operation should be used with caution as it requires updating the secret in all client applications.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-
-let apiInstance = new DocspaceApiTypescript.OAuth20ClientManagementApi();
-let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
-apiInstance.regenerateSecret(clientId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/regenerate-secret/).
 
 ### Parameters
 
@@ -213,6 +191,28 @@ Name | Type | Description  | Notes
 
 [asc_auth_key](../README.md#asc_auth_key)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+
+let apiInstance = new DocspaceApiJavascript.OAuth20ClientManagementApi();
+let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
+apiInstance.regenerateSecret(clientId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -223,31 +223,9 @@ Name | Type | Description  | Notes
 
 > Object revokeUserClient(clientId)
 
-Revoke client consent
-
 Revokes all user consents for the specified OAuth2 client. This will invalidate all access tokens and refresh tokens issued to this client for the current user. The user will need to re-authorize the client to access their resources.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-
-let apiInstance = new DocspaceApiTypescript.OAuth20ClientManagementApi();
-let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
-apiInstance.revokeUserClient(clientId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/revoke-user-client/).
 
 ### Parameters
 
@@ -264,6 +242,28 @@ Name | Type | Description  | Notes
 
 [asc_auth_key](../README.md#asc_auth_key)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+
+let apiInstance = new DocspaceApiJavascript.OAuth20ClientManagementApi();
+let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
+apiInstance.revokeUserClient(clientId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -274,32 +274,9 @@ Name | Type | Description  | Notes
 
 > Object updateClient(clientId, updateClientRequest)
 
-Update an existing OAuth2 client
-
 Updates the configuration of an existing OAuth2 client, allowing modifications to the client name, description, redirect URIs, and other settings. The client ID cannot be modified.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-
-let apiInstance = new DocspaceApiTypescript.OAuth20ClientManagementApi();
-let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
-let updateClientRequest = new DocspaceApiTypescript.UpdateClientRequest(); // UpdateClientRequest | 
-apiInstance.updateClient(clientId, updateClientRequest, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-client/).
 
 ### Parameters
 
@@ -316,6 +293,29 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [asc_auth_key](../README.md#asc_auth_key)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+
+let apiInstance = new DocspaceApiJavascript.OAuth20ClientManagementApi();
+let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
+let updateClientRequest = new DocspaceApiJavascript.UpdateClientRequest(); // UpdateClientRequest | 
+apiInstance.updateClient(clientId, updateClientRequest, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

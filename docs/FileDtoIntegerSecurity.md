@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FileDtoIntegerSecurity
+# DocspaceApiJavascript.FileDtoIntegerSecurity
 
 ## Properties
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.DocumentBuilderTaskWrapper();
+    instance = new DocspaceApiJavascript.DocumentBuilderTaskWrapper();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('DocumentBuilderTaskWrapper', function() {
     it('should create an instance of DocumentBuilderTaskWrapper', function() {
       // uncomment below and update the code to test DocumentBuilderTaskWrapper
-      //var instance = new DocspaceApiTypescript.DocumentBuilderTaskWrapper();
-      //expect(instance).to.be.a(DocspaceApiTypescript.DocumentBuilderTaskWrapper);
+      //var instance = new DocspaceApiJavascript.DocumentBuilderTaskWrapper();
+      //expect(instance).to.be.a(DocspaceApiJavascript.DocumentBuilderTaskWrapper);
     });
 
     it('should have the property response (base name: "response")', function() {
       // uncomment below and update the code to test the property response
-      //var instance = new DocspaceApiTypescript.DocumentBuilderTaskWrapper();
+      //var instance = new DocspaceApiJavascript.DocumentBuilderTaskWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property count (base name: "count")', function() {
       // uncomment below and update the code to test the property count
-      //var instance = new DocspaceApiTypescript.DocumentBuilderTaskWrapper();
+      //var instance = new DocspaceApiJavascript.DocumentBuilderTaskWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instance = new DocspaceApiTypescript.DocumentBuilderTaskWrapper();
+      //var instance = new DocspaceApiJavascript.DocumentBuilderTaskWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new DocspaceApiTypescript.DocumentBuilderTaskWrapper();
+      //var instance = new DocspaceApiJavascript.DocumentBuilderTaskWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property statusCode (base name: "statusCode")', function() {
       // uncomment below and update the code to test the property statusCode
-      //var instance = new DocspaceApiTypescript.DocumentBuilderTaskWrapper();
+      //var instance = new DocspaceApiJavascript.DocumentBuilderTaskWrapper();
       //expect(instance).to.be();
     });
 

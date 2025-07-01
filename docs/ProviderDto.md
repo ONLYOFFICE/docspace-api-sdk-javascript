@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ProviderDto
+# DocspaceApiJavascript.ProviderDto
 
 ## Properties
 

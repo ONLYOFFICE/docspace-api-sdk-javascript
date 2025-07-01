@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.IPRestrictionsSettingsWrapper
+# DocspaceApiJavascript.IPRestrictionsSettingsWrapper
 
 ## Properties
 

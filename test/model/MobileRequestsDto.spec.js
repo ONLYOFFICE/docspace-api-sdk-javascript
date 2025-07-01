@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.MobileRequestsDto();
+    instance = new DocspaceApiJavascript.MobileRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('MobileRequestsDto', function() {
     it('should create an instance of MobileRequestsDto', function() {
       // uncomment below and update the code to test MobileRequestsDto
-      //var instance = new DocspaceApiTypescript.MobileRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.MobileRequestsDto);
+      //var instance = new DocspaceApiJavascript.MobileRequestsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.MobileRequestsDto);
     });
 
     it('should have the property mobilePhone (base name: "mobilePhone")', function() {
       // uncomment below and update the code to test the property mobilePhone
-      //var instance = new DocspaceApiTypescript.MobileRequestsDto();
+      //var instance = new DocspaceApiJavascript.MobileRequestsDto();
       //expect(instance).to.be();
     });
 

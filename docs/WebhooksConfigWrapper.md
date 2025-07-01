@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.WebhooksConfigWrapper
+# DocspaceApiJavascript.WebhooksConfigWrapper
 
 ## Properties
 

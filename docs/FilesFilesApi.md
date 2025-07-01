@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FilesFilesApi
+# DocspaceApiJavascript.FilesFilesApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -56,48 +56,9 @@ Method | HTTP request | Description
 
 > BooleanWrapper addTemplates(opts)
 
-Add template files
-
 Adds files with the IDs specified in the request to the template list.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let opts = {
-  'templatesRequestDto': new DocspaceApiTypescript.TemplatesRequestDto() // TemplatesRequestDto | 
-};
-apiInstance.addTemplates(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/add-templates/).
 
 ### Parameters
 
@@ -114,25 +75,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## changeVersionHistory
-
-> FileIntegerArrayWrapper changeVersionHistory(fileId, opts)
-
-Change version history
-
-Changes the version history of a file with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -154,12 +101,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file Id to change its version history.
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
 let opts = {
-  'changeHistory': new DocspaceApiTypescript.ChangeHistory() // ChangeHistory | The parameters for changing version history.
+  'templatesRequestDto': new DocspaceApiJavascript.TemplatesRequestDto() // TemplatesRequestDto | 
 };
-apiInstance.changeVersionHistory(fileId, opts, (error, data, response) => {
+apiInstance.addTemplates(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -167,6 +113,20 @@ apiInstance.changeVersionHistory(fileId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## changeVersionHistory
+
+> FileIntegerArrayWrapper changeVersionHistory(fileId, opts)
+
+Changes the version history of a file with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/change-version-history/).
 
 ### Parameters
 
@@ -184,6 +144,46 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file Id to change its version history.
+let opts = {
+  'changeHistory': new DocspaceApiJavascript.ChangeHistory() // ChangeHistory | The parameters for changing version history.
+};
+apiInstance.changeVersionHistory(fileId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: application/json
@@ -194,28 +194,9 @@ Name | Type | Description  | Notes
 
 > StringWrapper checkFillFormDraft(fileId, opts)
 
-Check the form draft filling
-
 Checks if the current file is a form draft which can be filled out.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID of the form draft.
-let opts = {
-  'checkFillFormDraft': new DocspaceApiTypescript.CheckFillFormDraft() // CheckFillFormDraft | The parameters for checking the form draft filling.
-};
-apiInstance.checkFillFormDraft(fileId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/check-fill-form-draft/).
 
 ### Parameters
 
@@ -233,6 +214,25 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID of the form draft.
+let opts = {
+  'checkFillFormDraft': new DocspaceApiJavascript.CheckFillFormDraft() // CheckFillFormDraft | The parameters for checking the form draft filling.
+};
+apiInstance.checkFillFormDraft(fileId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: application/json
@@ -243,49 +243,9 @@ No authorization required
 
 > FileEntryWrapper copyFileAs(fileId, opts)
 
-Copy a file
-
 Copies (and converts if possible) an existing file to the specified folder.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID to copy.
-let opts = {
-  'copyAsJsonElement': new DocspaceApiTypescript.CopyAsJsonElement() // CopyAsJsonElement | The parameters for copying a file.
-};
-apiInstance.copyFileAs(fileId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/copy-file-as/).
 
 ### Parameters
 
@@ -303,25 +263,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createEditSession
-
-> ObjectWrapper createEditSession(fileId, opts)
-
-Create the editing session
-
-Creates a session to edit the existing file with multiple chunks (needed for WebDAV).   **Note**: Information about created session which includes:  &lt;ul&gt;  &lt;li&gt;&lt;b&gt;id:&lt;/b&gt; unique ID of this upload session,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;created:&lt;/b&gt; UTC time when the session was created,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;expired:&lt;/b&gt; UTC time when the session will expire if no chunks are sent before that time,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;location:&lt;/b&gt; URL where you should send your next chunk,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;bytes_uploaded:&lt;/b&gt; number of bytes uploaded for the specific upload ID,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;bytes_total:&lt;/b&gt; total number of bytes which will be uploaded.&lt;/li&gt;  &lt;/ul&gt;
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -343,12 +289,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID.
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID to copy.
 let opts = {
-  'fileSize': 1234 // Number | The file size in bytes.
+  'copyAsJsonElement': new DocspaceApiJavascript.CopyAsJsonElement() // CopyAsJsonElement | The parameters for copying a file.
 };
-apiInstance.createEditSession(fileId, opts, (error, data, response) => {
+apiInstance.copyFileAs(fileId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -356,6 +302,20 @@ apiInstance.createEditSession(fileId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createEditSession
+
+> ObjectWrapper createEditSession(fileId, opts)
+
+Creates a session to edit the existing file with multiple chunks (needed for WebDAV).   **Note**: Information about created session which includes:  &lt;ul&gt;  &lt;li&gt;&lt;b&gt;id:&lt;/b&gt; unique ID of this upload session,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;created:&lt;/b&gt; UTC time when the session was created,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;expired:&lt;/b&gt; UTC time when the session will expire if no chunks are sent before that time,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;location:&lt;/b&gt; URL where you should send your next chunk,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;bytes_uploaded:&lt;/b&gt; number of bytes uploaded for the specific upload ID,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;bytes_total:&lt;/b&gt; total number of bytes which will be uploaded.&lt;/li&gt;  &lt;/ul&gt;
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-edit-session/).
 
 ### Parameters
 
@@ -373,25 +333,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## createFile
-
-> FileIntegerWrapper createFile(folderId, opts)
-
-Create a file
-
-Creates a new file in the specified folder with the title specified in the request.   **Note**: If a file extension is different from DOCX/XLSX/PPTX and refers to one of the known text, spreadsheet, or presentation formats, it will be changed to DOCX/XLSX/PPTX accordingly. If the file extension is not specified or is unknown, the DOCX extension will be added to the file title.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -413,12 +359,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let folderId = 9846; // Number | The folder ID for the file creation.
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID.
 let opts = {
-  'createFileJsonElement': new DocspaceApiTypescript.CreateFileJsonElement() // CreateFileJsonElement | The parameters for creating a file.
+  'fileSize': 1234 // Number | The file size in bytes.
 };
-apiInstance.createFile(folderId, opts, (error, data, response) => {
+apiInstance.createEditSession(fileId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -426,6 +372,20 @@ apiInstance.createFile(folderId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## createFile
+
+> FileIntegerWrapper createFile(folderId, opts)
+
+Creates a new file in the specified folder with the title specified in the request.   **Note**: If a file extension is different from DOCX/XLSX/PPTX and refers to one of the known text, spreadsheet, or presentation formats, it will be changed to DOCX/XLSX/PPTX accordingly. If the file extension is not specified or is unknown, the DOCX extension will be added to the file title.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-file/).
 
 ### Parameters
 
@@ -443,25 +403,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createFileInMyDocuments
-
-> FileIntegerWrapper createFileInMyDocuments(opts)
-
-Create a file in the \&quot;My documents\&quot; section
-
-Creates a new file in the \&quot;My documents\&quot; section with the title specified in the request.   **Note**: If a file extension is different from DOCX/XLSX/PPTX and refers to one of the known text, spreadsheet, or presentation formats, it will be changed to DOCX/XLSX/PPTX accordingly. If the file extension is not specified or is unknown, the DOCX extension will be added to the file title.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -483,11 +429,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let folderId = 9846; // Number | The folder ID for the file creation.
 let opts = {
-  'createFileJsonElement': new DocspaceApiTypescript.CreateFileJsonElement() // CreateFileJsonElement | 
+  'createFileJsonElement': new DocspaceApiJavascript.CreateFileJsonElement() // CreateFileJsonElement | The parameters for creating a file.
 };
-apiInstance.createFileInMyDocuments(opts, (error, data, response) => {
+apiInstance.createFile(folderId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -495,6 +442,20 @@ apiInstance.createFileInMyDocuments(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createFileInMyDocuments
+
+> FileIntegerWrapper createFileInMyDocuments(opts)
+
+Creates a new file in the \&quot;My documents\&quot; section with the title specified in the request.   **Note**: If a file extension is different from DOCX/XLSX/PPTX and refers to one of the known text, spreadsheet, or presentation formats, it will be changed to DOCX/XLSX/PPTX accordingly. If the file extension is not specified or is unknown, the DOCX extension will be added to the file title.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-file-in-my-documents/).
 
 ### Parameters
 
@@ -511,25 +472,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createHtmlFile
-
-> FileIntegerWrapper createHtmlFile(folderId, opts)
-
-Create an HTML file
-
-Creates an HTML (.html) file in the selected folder with the title and contents specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -551,12 +498,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let folderId = 9846; // Number | The folder ID to create the text or HTML file.
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
 let opts = {
-  'createTextOrHtmlFile': new DocspaceApiTypescript.CreateTextOrHtmlFile() // CreateTextOrHtmlFile | The parameters for creating an HTML or text file.
+  'createFileJsonElement': new DocspaceApiJavascript.CreateFileJsonElement() // CreateFileJsonElement | 
 };
-apiInstance.createHtmlFile(folderId, opts, (error, data, response) => {
+apiInstance.createFileInMyDocuments(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -564,6 +510,20 @@ apiInstance.createHtmlFile(folderId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createHtmlFile
+
+> FileIntegerWrapper createHtmlFile(folderId, opts)
+
+Creates an HTML (.html) file in the selected folder with the title and contents specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-html-file/).
 
 ### Parameters
 
@@ -581,25 +541,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createHtmlFileInMyDocuments
-
-> FileIntegerWrapper createHtmlFileInMyDocuments(opts)
-
-Create an HTML file in the \&quot;My documents\&quot; section
-
-Creates an HTML (.html) file in the \&quot;My documents\&quot; section with the title and contents specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -621,11 +567,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let folderId = 9846; // Number | The folder ID to create the text or HTML file.
 let opts = {
-  'createTextOrHtmlFile': new DocspaceApiTypescript.CreateTextOrHtmlFile() // CreateTextOrHtmlFile | 
+  'createTextOrHtmlFile': new DocspaceApiJavascript.CreateTextOrHtmlFile() // CreateTextOrHtmlFile | The parameters for creating an HTML or text file.
 };
-apiInstance.createHtmlFileInMyDocuments(opts, (error, data, response) => {
+apiInstance.createHtmlFile(folderId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -633,6 +580,20 @@ apiInstance.createHtmlFileInMyDocuments(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createHtmlFileInMyDocuments
+
+> FileIntegerWrapper createHtmlFileInMyDocuments(opts)
+
+Creates an HTML (.html) file in the \&quot;My documents\&quot; section with the title and contents specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-html-file-in-my-documents/).
 
 ### Parameters
 
@@ -649,25 +610,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createPrimaryExternalLink
-
-> FileShareWrapper createPrimaryExternalLink(id, opts)
-
-Create primary external link
-
-Creates a primary external link by the identifier specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -689,12 +636,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let id = 9846; // Number | The file ID.
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
 let opts = {
-  'fileLinkRequest': new DocspaceApiTypescript.FileLinkRequest() // FileLinkRequest | The file external link parameters.
+  'createTextOrHtmlFile': new DocspaceApiJavascript.CreateTextOrHtmlFile() // CreateTextOrHtmlFile | 
 };
-apiInstance.createPrimaryExternalLink(id, opts, (error, data, response) => {
+apiInstance.createHtmlFileInMyDocuments(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -702,6 +648,20 @@ apiInstance.createPrimaryExternalLink(id, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createPrimaryExternalLink
+
+> FileShareWrapper createPrimaryExternalLink(id, opts)
+
+Creates a primary external link by the identifier specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-primary-external-link/).
 
 ### Parameters
 
@@ -719,25 +679,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createTextFile
-
-> FileIntegerWrapper createTextFile(folderId, opts)
-
-Create a text file
-
-Creates a text (.txt) file in the selected folder with the title and contents specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -759,12 +705,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let folderId = 9846; // Number | The folder ID to create the text or HTML file.
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let id = 9846; // Number | The file ID.
 let opts = {
-  'createTextOrHtmlFile': new DocspaceApiTypescript.CreateTextOrHtmlFile() // CreateTextOrHtmlFile | The parameters for creating an HTML or text file.
+  'fileLinkRequest': new DocspaceApiJavascript.FileLinkRequest() // FileLinkRequest | The file external link parameters.
 };
-apiInstance.createTextFile(folderId, opts, (error, data, response) => {
+apiInstance.createPrimaryExternalLink(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -772,6 +718,20 @@ apiInstance.createTextFile(folderId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createTextFile
+
+> FileIntegerWrapper createTextFile(folderId, opts)
+
+Creates a text (.txt) file in the selected folder with the title and contents specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-text-file/).
 
 ### Parameters
 
@@ -789,25 +749,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createTextFileInMyDocuments
-
-> FileIntegerWrapper createTextFileInMyDocuments(opts)
-
-Create a text file in the \&quot;My documents\&quot; section
-
-Creates a text (.txt) file in the \&quot;My documents\&quot; section with the title and contents specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -829,11 +775,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let folderId = 9846; // Number | The folder ID to create the text or HTML file.
 let opts = {
-  'createTextOrHtmlFile': new DocspaceApiTypescript.CreateTextOrHtmlFile() // CreateTextOrHtmlFile | 
+  'createTextOrHtmlFile': new DocspaceApiJavascript.CreateTextOrHtmlFile() // CreateTextOrHtmlFile | The parameters for creating an HTML or text file.
 };
-apiInstance.createTextFileInMyDocuments(opts, (error, data, response) => {
+apiInstance.createTextFile(folderId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -841,6 +788,20 @@ apiInstance.createTextFileInMyDocuments(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createTextFileInMyDocuments
+
+> FileIntegerWrapper createTextFileInMyDocuments(opts)
+
+Creates a text (.txt) file in the \&quot;My documents\&quot; section with the title and contents specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-text-file-in-my-documents/).
 
 ### Parameters
 
@@ -857,72 +818,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createThumbnails
-
-> ObjectArrayWrapper createThumbnails(opts)
-
-Create file thumbnails
-
-Creates thumbnails for the files with the IDs specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let opts = {
-  'baseBatchRequestDto': new DocspaceApiTypescript.BaseBatchRequestDto() // BaseBatchRequestDto | 
-};
-apiInstance.createThumbnails(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **baseBatchRequestDto** | [**BaseBatchRequestDto**](BaseBatchRequestDto.md)|  | [optional] 
-
-### Return type
-
-[**ObjectArrayWrapper**](ObjectArrayWrapper.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## deleteFile
-
-> FileOperationArrayWrapper deleteFile(fileId, _delete)
-
-Delete a file
-
-Deletes a file with the ID specified in the request.
-
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -944,10 +844,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID to delete.
-let _delete = new DocspaceApiTypescript.Delete(); // Delete | The parameters for deleting a file.
-apiInstance.deleteFile(fileId, _delete, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let opts = {
+  'createTextOrHtmlFile': new DocspaceApiJavascript.CreateTextOrHtmlFile() // CreateTextOrHtmlFile | 
+};
+apiInstance.createTextFileInMyDocuments(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -955,6 +856,67 @@ apiInstance.deleteFile(fileId, _delete, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createThumbnails
+
+> ObjectArrayWrapper createThumbnails(opts)
+
+Creates thumbnails for the files with the IDs specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-thumbnails/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **baseBatchRequestDto** | [**BaseBatchRequestDto**](BaseBatchRequestDto.md)|  | [optional] 
+
+### Return type
+
+[**ObjectArrayWrapper**](ObjectArrayWrapper.md)
+
+### Authorization
+
+No authorization required
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let opts = {
+  'baseBatchRequestDto': new DocspaceApiJavascript.BaseBatchRequestDto() // BaseBatchRequestDto | 
+};
+apiInstance.createThumbnails(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## deleteFile
+
+> FileOperationArrayWrapper deleteFile(fileId, _delete)
+
+Deletes a file with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-file/).
 
 ### Parameters
 
@@ -972,25 +934,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## deleteRecent
-
-> NoContentResultWrapper deleteRecent(opts)
-
-Delete recent files
-
-Removes files with the IDs specified in the request from the \&quot;Recent\&quot; section.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1012,11 +960,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let opts = {
-  'baseBatchRequestDto': new DocspaceApiTypescript.BaseBatchRequestDto() // BaseBatchRequestDto | 
-};
-apiInstance.deleteRecent(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID to delete.
+let _delete = new DocspaceApiJavascript.Delete(); // Delete | The parameters for deleting a file.
+apiInstance.deleteFile(fileId, _delete, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1024,6 +971,20 @@ apiInstance.deleteRecent(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## deleteRecent
+
+> NoContentResultWrapper deleteRecent(opts)
+
+Removes files with the IDs specified in the request from the \&quot;Recent\&quot; section.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-recent/).
 
 ### Parameters
 
@@ -1040,25 +1001,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## deleteTemplates
-
-> BooleanWrapper deleteTemplates(opts)
-
-Delete template files
-
-Removes files with the IDs specified in the request from the template list.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1080,11 +1027,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
 let opts = {
-  'requestBody': [null] // [Number] | The file IDs.
+  'baseBatchRequestDto': new DocspaceApiJavascript.BaseBatchRequestDto() // BaseBatchRequestDto | 
 };
-apiInstance.deleteTemplates(opts, (error, data, response) => {
+apiInstance.deleteRecent(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1092,6 +1039,20 @@ apiInstance.deleteTemplates(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## deleteTemplates
+
+> BooleanWrapper deleteTemplates(opts)
+
+Removes files with the IDs specified in the request from the template list.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-templates/).
 
 ### Parameters
 
@@ -1108,25 +1069,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## getAllFormRoles
-
-> FormRoleArrayWrapper getAllFormRoles(fileId)
-
-Get form roles
-
-Returns all roles for the specified form.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1148,9 +1095,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID of the request.
-apiInstance.getAllFormRoles(fileId, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let opts = {
+  'requestBody': [null] // [Number] | The file IDs.
+};
+apiInstance.deleteTemplates(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1158,6 +1107,20 @@ apiInstance.getAllFormRoles(fileId, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## getAllFormRoles
+
+> FormRoleArrayWrapper getAllFormRoles(fileId)
+
+Returns all roles for the specified form.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-all-form-roles/).
 
 ### Parameters
 
@@ -1174,6 +1137,43 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID of the request.
+apiInstance.getAllFormRoles(fileId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -1184,28 +1184,9 @@ Name | Type | Description  | Notes
 
 > EditHistoryDataWrapper getEditDiffUrl(fileId, opts)
 
-Get changes URL
-
 Returns a URL to the changes of a file version specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID.
-let opts = {
-  'version': 1234 // Number | The file version.
-};
-apiInstance.getEditDiffUrl(fileId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-edit-diff-url/).
 
 ### Parameters
 
@@ -1223,6 +1204,25 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID.
+let opts = {
+  'version': 1234 // Number | The file version.
+};
+apiInstance.getEditDiffUrl(fileId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -1233,25 +1233,9 @@ No authorization required
 
 > EditHistoryArrayWrapper getEditHistory(fileId)
 
-Get version history
-
 Returns the version history of a file with the ID specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID of the request.
-apiInstance.getEditHistory(fileId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-edit-history/).
 
 ### Parameters
 
@@ -1268,6 +1252,22 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID of the request.
+apiInstance.getEditHistory(fileId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -1278,52 +1278,9 @@ No authorization required
 
 > HistoryArrayWrapper getFileHistory(fileId, opts)
 
-Get file history
-
 Returns the list of actions performed on the file with the specified identifier.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID of the history request.
-let opts = {
-  'fromDate': new DocspaceApiTypescript.ApiDateTime(), // ApiDateTime | The start date of the history.
-  'toDate': new DocspaceApiTypescript.ApiDateTime(), // ApiDateTime | The end date of the history.
-  'count': 1234, // Number | The number of history entries to retrieve for the file log.
-  'startIndex': 1234 // Number | The starting index for retrieving a subset of file history entries.
-};
-apiInstance.getFileHistory(fileId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-file-history/).
 
 ### Parameters
 
@@ -1344,74 +1301,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getFileInfo
-
-> FileIntegerWrapper getFileInfo(fileId, opts)
-
-Get file information
-
-Returns the detailed information about a file with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID.
-let opts = {
-  'version': 1234 // Number | The file version.
-};
-apiInstance.getFileInfo(fileId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fileId** | **Number**| The file ID. | 
- **version** | **Number**| The file version. | [optional] 
-
-### Return type
-
-[**FileIntegerWrapper**](FileIntegerWrapper.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getFileLinks
-
-> FileShareArrayWrapper getFileLinks(id, opts)
-
-Get file external links
-
-Returns the external links of a file with the ID specified in the request.
-
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1433,13 +1327,15 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let id = 9846; // Number | The file ID of the request.
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID of the history request.
 let opts = {
-  'count': 1234, // Number | The number of items to retrieve in the request.
-  'startIndex': 1234 // Number | The starting index for the query results.
+  'fromDate': new DocspaceApiJavascript.ApiDateTime(), // ApiDateTime | The start date of the history.
+  'toDate': new DocspaceApiJavascript.ApiDateTime(), // ApiDateTime | The end date of the history.
+  'count': 1234, // Number | The number of history entries to retrieve for the file log.
+  'startIndex': 1234 // Number | The starting index for retrieving a subset of file history entries.
 };
-apiInstance.getFileLinks(id, opts, (error, data, response) => {
+apiInstance.getFileHistory(fileId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1447,6 +1343,69 @@ apiInstance.getFileLinks(id, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getFileInfo
+
+> FileIntegerWrapper getFileInfo(fileId, opts)
+
+Returns the detailed information about a file with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-file-info/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileId** | **Number**| The file ID. | 
+ **version** | **Number**| The file version. | [optional] 
+
+### Return type
+
+[**FileIntegerWrapper**](FileIntegerWrapper.md)
+
+### Authorization
+
+No authorization required
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID.
+let opts = {
+  'version': 1234 // Number | The file version.
+};
+apiInstance.getFileInfo(fileId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getFileLinks
+
+> FileShareArrayWrapper getFileLinks(id, opts)
+
+Returns the external links of a file with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-file-links/).
 
 ### Parameters
 
@@ -1465,6 +1424,47 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let id = 9846; // Number | The file ID of the request.
+let opts = {
+  'count': 1234, // Number | The number of items to retrieve in the request.
+  'startIndex': 1234 // Number | The starting index for the query results.
+};
+apiInstance.getFileLinks(id, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -1475,29 +1475,9 @@ Name | Type | Description  | Notes
 
 > FileShareWrapper getFilePrimaryExternalLink(id, opts)
 
-Get primary external link
-
 Returns the primary external link by the identifier specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let id = 9846; // Number | The file ID of the request.
-let opts = {
-  'count': 1234, // Number | The number of items to retrieve in the request.
-  'startIndex': 1234 // Number | The starting index for the query results.
-};
-apiInstance.getFilePrimaryExternalLink(id, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-file-primary-external-link/).
 
 ### Parameters
 
@@ -1516,6 +1496,26 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let id = 9846; // Number | The file ID of the request.
+let opts = {
+  'count': 1234, // Number | The number of items to retrieve in the request.
+  'startIndex': 1234 // Number | The starting index for the query results.
+};
+apiInstance.getFilePrimaryExternalLink(id, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -1526,25 +1526,9 @@ No authorization required
 
 > FileIntegerArrayWrapper getFileVersionInfo(fileId)
 
-Get file versions
-
 Returns the detailed information about all the available file versions with the ID specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID of the request.
-apiInstance.getFileVersionInfo(fileId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-file-version-info/).
 
 ### Parameters
 
@@ -1561,6 +1545,22 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID of the request.
+apiInstance.getFileVersionInfo(fileId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -1571,27 +1571,9 @@ No authorization required
 
 > FillingFormResultIntegerWrapper getFillResult(opts)
 
-Get form-filling result
-
 Retrieves the result of a form-filling session.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let opts = {
-  'fillingSessionId': "some text" // String | The form-filling session ID.
-};
-apiInstance.getFillResult(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-fill-result/).
 
 ### Parameters
 
@@ -1608,6 +1590,24 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let opts = {
+  'fillingSessionId': "some text" // String | The form-filling session ID.
+};
+apiInstance.getFillResult(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -1618,46 +1618,9 @@ No authorization required
 
 > FileLinkWrapper getPresignedFileUri(fileId)
 
-Get file download link asynchronously
-
 Returns a link to download a file with the ID specified in the request asynchronously.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID of the request.
-apiInstance.getPresignedFileUri(fileId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-presigned-file-uri/).
 
 ### Parameters
 
@@ -1674,25 +1637,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getPresignedUri
-
-> StringWrapper getPresignedUri(fileId)
-
-Get file download link
-
-Returns a pre-signed URL to download a file with the specified ID.  This temporary link provides secure access to the file.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1714,9 +1663,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID of the request.
-apiInstance.getPresignedUri(fileId, (error, data, response) => {
+apiInstance.getPresignedFileUri(fileId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1724,6 +1673,20 @@ apiInstance.getPresignedUri(fileId, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getPresignedUri
+
+> StringWrapper getPresignedUri(fileId)
+
+Returns a pre-signed URL to download a file with the specified ID.  This temporary link provides secure access to the file.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-presigned-uri/).
 
 ### Parameters
 
@@ -1740,25 +1703,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getProtectedFileUsers
-
-> MentionWrapperArrayWrapper getProtectedFileUsers(fileId)
-
-Get users access rights to the protected file
-
-Returns a list of users with their access rights to the protected file with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1780,9 +1729,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID of the request.
-apiInstance.getProtectedFileUsers(fileId, (error, data, response) => {
+apiInstance.getPresignedUri(fileId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1790,6 +1739,20 @@ apiInstance.getProtectedFileUsers(fileId, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getProtectedFileUsers
+
+> MentionWrapperArrayWrapper getProtectedFileUsers(fileId)
+
+Returns a list of users with their access rights to the protected file with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-protected-file-users/).
 
 ### Parameters
 
@@ -1806,25 +1769,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getReferenceData
-
-> FileReferenceWrapper getReferenceData(opts)
-
-Get reference data
-
-Returns the reference data to uniquely identify a file in its system and check the availability of insering data into the destination spreadsheet by the external link.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1846,11 +1795,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let opts = {
-  'getReferenceDataDtoInteger': new DocspaceApiTypescript.GetReferenceDataDtoInteger() // GetReferenceDataDtoInteger | 
-};
-apiInstance.getReferenceData(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID of the request.
+apiInstance.getProtectedFileUsers(fileId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1858,6 +1805,20 @@ apiInstance.getReferenceData(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getReferenceData
+
+> FileReferenceWrapper getReferenceData(opts)
+
+Returns the reference data to uniquely identify a file in its system and check the availability of insering data into the destination spreadsheet by the external link.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-reference-data/).
 
 ### Parameters
 
@@ -1874,25 +1835,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## isFormPDF
-
-> BooleanWrapper isFormPDF(fileId)
-
-Check the PDF file
-
-Checks if the PDF file is a form or not.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1914,9 +1861,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID of the request.
-apiInstance.isFormPDF(fileId, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let opts = {
+  'getReferenceDataDtoInteger': new DocspaceApiJavascript.GetReferenceDataDtoInteger() // GetReferenceDataDtoInteger | 
+};
+apiInstance.getReferenceData(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1924,6 +1873,20 @@ apiInstance.isFormPDF(fileId, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## isFormPDF
+
+> BooleanWrapper isFormPDF(fileId)
+
+Checks if the PDF file is a form or not.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/is-form-pdf/).
 
 ### Parameters
 
@@ -1940,25 +1903,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## lockFile
-
-> FileIntegerWrapper lockFile(fileId, opts)
-
-Lock a file
-
-Locks a file with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1980,12 +1929,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID for locking.
-let opts = {
-  'lockFileParameters': new DocspaceApiTypescript.LockFileParameters() // LockFileParameters | The parameters for locking a file.
-};
-apiInstance.lockFile(fileId, opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID of the request.
+apiInstance.isFormPDF(fileId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1993,6 +1939,20 @@ apiInstance.lockFile(fileId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## lockFile
+
+> FileIntegerWrapper lockFile(fileId, opts)
+
+Locks a file with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/lock-file/).
 
 ### Parameters
 
@@ -2010,25 +1970,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## manageFormFilling
-
-> manageFormFilling(fileId, opts)
-
-Perform form filling action
-
-Performs the specified form filling action.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2050,19 +1996,33 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = "fileId_example"; // String | 
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID for locking.
 let opts = {
-  'manageFormFillingDtoInteger': new DocspaceApiTypescript.ManageFormFillingDtoInteger() // ManageFormFillingDtoInteger | 
+  'lockFileParameters': new DocspaceApiJavascript.LockFileParameters() // LockFileParameters | The parameters for locking a file.
 };
-apiInstance.manageFormFilling(fileId, opts, (error, data, response) => {
+apiInstance.lockFile(fileId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully.');
+    console.log('API called successfully. Returned data: ' + data);
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## manageFormFilling
+
+> manageFormFilling(fileId, opts)
+
+Performs the specified form filling action.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/manage-form-filling/).
 
 ### Parameters
 
@@ -2080,6 +2040,46 @@ null (empty response body)
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = "fileId_example"; // String | 
+let opts = {
+  'manageFormFillingDtoInteger': new DocspaceApiJavascript.ManageFormFillingDtoInteger() // ManageFormFillingDtoInteger | 
+};
+apiInstance.manageFormFilling(fileId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully.');
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: application/json
@@ -2090,32 +2090,9 @@ null (empty response body)
 
 > ConfigurationIntegerWrapper openEditFile(fileId, opts)
 
-Open a file configuration
-
 Returns the initialization configuration of a file to open it in the editor.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID to open.
-let opts = {
-  'version': 1234, // Number | The file version to open.
-  'view': true, // Boolean | Specifies if the document will be opened for viewing only or not.
-  'editorType': new DocspaceApiTypescript.EditorType(), // EditorType | The editor type to open the file.
-  'edit': true, // Boolean | Specifies if the document is opened in the editing mode or not.
-  'fill': true // Boolean | Specifies if the document is opened in the form-filling mode or not.
-};
-apiInstance.openEditFile(fileId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/open-edit-file/).
 
 ### Parameters
 
@@ -2137,6 +2114,29 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID to open.
+let opts = {
+  'version': 1234, // Number | The file version to open.
+  'view': true, // Boolean | Specifies if the document will be opened for viewing only or not.
+  'editorType': new DocspaceApiJavascript.EditorType(), // EditorType | The editor type to open the file.
+  'edit': true, // Boolean | Specifies if the document is opened in the editing mode or not.
+  'fill': true // Boolean | Specifies if the document is opened in the form-filling mode or not.
+};
+apiInstance.openEditFile(fileId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -2147,29 +2147,9 @@ No authorization required
 
 > EditHistoryArrayWrapper restoreFileVersion(fileId, opts)
 
-Restore a file version
-
 Restores a file version specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID of the restore version.
-let opts = {
-  'version': 1234, // Number | The file version of the restore.
-  'url': "some text" // String | The file version URL of the restore.
-};
-apiInstance.restoreFileVersion(fileId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/restore-file-version/).
 
 ### Parameters
 
@@ -2188,6 +2168,26 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID of the restore version.
+let opts = {
+  'version': 1234, // Number | The file version of the restore.
+  'url': "some text" // String | The file version URL of the restore.
+};
+apiInstance.restoreFileVersion(fileId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -2198,52 +2198,9 @@ No authorization required
 
 > FileIntegerWrapper saveEditingFileFromForm(fileId, opts)
 
-Save file edits
-
 Saves edits to a file with the ID specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The editing file ID from the request.
-let opts = {
-  'fileExtension': "fileExtension_example", // String | The editing file extension from the request.
-  'downloadUri': "downloadUri_example", // String | The URI to download the editing file.
-  'file': "/path/to/file", // File | The request file stream.
-  'forcesave': true // Boolean | Specifies whether to force save the file or not.
-};
-apiInstance.saveEditingFileFromForm(fileId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/save-editing-file-from-form/).
 
 ### Parameters
 
@@ -2264,25 +2221,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: multipart/form-data
-- **Accept**: application/json
-
-
-## saveFileAsPdf
-
-> FileIntegerWrapper saveFileAsPdf(id, opts)
-
-Save a file as PDF
-
-Saves a file with the identifier specified in the request as a PDF document.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2304,12 +2247,15 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let id = 9846; // Number | The file ID to save as PDF.
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The editing file ID from the request.
 let opts = {
-  'saveAsPdfInteger': new DocspaceApiTypescript.SaveAsPdfInteger() // SaveAsPdfInteger | The parameters for saving file as PDF.
+  'fileExtension': "fileExtension_example", // String | The editing file extension from the request.
+  'downloadUri': "downloadUri_example", // String | The URI to download the editing file.
+  'file': "/path/to/file", // File | The request file stream.
+  'forcesave': true // Boolean | Specifies whether to force save the file or not.
 };
-apiInstance.saveFileAsPdf(id, opts, (error, data, response) => {
+apiInstance.saveEditingFileFromForm(fileId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -2317,6 +2263,20 @@ apiInstance.saveFileAsPdf(id, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: multipart/form-data
+- **Accept**: application/json
+
+
+## saveFileAsPdf
+
+> FileIntegerWrapper saveFileAsPdf(id, opts)
+
+Saves a file with the identifier specified in the request as a PDF document.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/save-file-as-pdf/).
 
 ### Parameters
 
@@ -2334,25 +2294,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## saveFormRoleMapping
-
-> FormRoleWrapper saveFormRoleMapping(fileId, opts)
-
-Save form role mapping
-
-Saves the form role mapping.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2374,12 +2320,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = "fileId_example"; // String | 
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let id = 9846; // Number | The file ID to save as PDF.
 let opts = {
-  'saveFormRoleMappingDtoInteger': new DocspaceApiTypescript.SaveFormRoleMappingDtoInteger() // SaveFormRoleMappingDtoInteger | 
+  'saveAsPdfInteger': new DocspaceApiJavascript.SaveAsPdfInteger() // SaveAsPdfInteger | The parameters for saving file as PDF.
 };
-apiInstance.saveFormRoleMapping(fileId, opts, (error, data, response) => {
+apiInstance.saveFileAsPdf(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -2387,6 +2333,20 @@ apiInstance.saveFormRoleMapping(fileId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## saveFormRoleMapping
+
+> FormRoleWrapper saveFormRoleMapping(fileId, opts)
+
+Saves the form role mapping.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/save-form-role-mapping/).
 
 ### Parameters
 
@@ -2404,25 +2364,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## setCustomFilterTag
-
-> FileIntegerWrapper setCustomFilterTag(fileId, opts)
-
-Set the Custom Filter editing mode
-
-Sets the Custom Filter editing mode to a file with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2444,12 +2390,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID.
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = "fileId_example"; // String | 
 let opts = {
-  'customFilterParameters': new DocspaceApiTypescript.CustomFilterParameters() // CustomFilterParameters | The parameters for setting the Custom Filter editing mode.
+  'saveFormRoleMappingDtoInteger': new DocspaceApiJavascript.SaveFormRoleMappingDtoInteger() // SaveFormRoleMappingDtoInteger | 
 };
-apiInstance.setCustomFilterTag(fileId, opts, (error, data, response) => {
+apiInstance.saveFormRoleMapping(fileId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -2457,6 +2403,20 @@ apiInstance.setCustomFilterTag(fileId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## setCustomFilterTag
+
+> FileIntegerWrapper setCustomFilterTag(fileId, opts)
+
+Sets the Custom Filter editing mode to a file with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/set-custom-filter-tag/).
 
 ### Parameters
 
@@ -2474,25 +2434,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## setExternalLink
-
-> FileShareWrapper setExternalLink(id, opts)
-
-Set an external link
-
-Sets an external link to a file with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2514,12 +2460,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let id = 9846; // Number | The file ID.
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID.
 let opts = {
-  'fileLinkRequest': new DocspaceApiTypescript.FileLinkRequest() // FileLinkRequest | The file external link parameters.
+  'customFilterParameters': new DocspaceApiJavascript.CustomFilterParameters() // CustomFilterParameters | The parameters for setting the Custom Filter editing mode.
 };
-apiInstance.setExternalLink(id, opts, (error, data, response) => {
+apiInstance.setCustomFilterTag(fileId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -2527,6 +2473,20 @@ apiInstance.setExternalLink(id, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## setExternalLink
+
+> FileShareWrapper setExternalLink(id, opts)
+
+Sets an external link to a file with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/set-external-link/).
 
 ### Parameters
 
@@ -2544,25 +2504,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## setFileOrder
-
-> FileIntegerWrapper setFileOrder(fileId, opts)
-
-Set file order
-
-Sets order of the file with ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2584,12 +2530,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file unique identifier.
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let id = 9846; // Number | The file ID.
 let opts = {
-  'orderRequestDto': new DocspaceApiTypescript.OrderRequestDto() // OrderRequestDto | The file order information.
+  'fileLinkRequest': new DocspaceApiJavascript.FileLinkRequest() // FileLinkRequest | The file external link parameters.
 };
-apiInstance.setFileOrder(fileId, opts, (error, data, response) => {
+apiInstance.setExternalLink(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -2597,6 +2543,20 @@ apiInstance.setFileOrder(fileId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## setFileOrder
+
+> FileIntegerWrapper setFileOrder(fileId, opts)
+
+Sets order of the file with ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/set-file-order/).
 
 ### Parameters
 
@@ -2614,25 +2574,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## setFilesOrder
-
-> FileIntegerArrayWrapper setFilesOrder(opts)
-
-Set order of files
-
-Sets order of the files.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2654,11 +2600,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file unique identifier.
 let opts = {
-  'ordersRequestDtoInteger': new DocspaceApiTypescript.OrdersRequestDtoInteger() // OrdersRequestDtoInteger | 
+  'orderRequestDto': new DocspaceApiJavascript.OrderRequestDto() // OrderRequestDto | The file order information.
 };
-apiInstance.setFilesOrder(opts, (error, data, response) => {
+apiInstance.setFileOrder(fileId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -2666,6 +2613,20 @@ apiInstance.setFilesOrder(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## setFilesOrder
+
+> FileIntegerArrayWrapper setFilesOrder(opts)
+
+Sets order of the files.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/set-files-order/).
 
 ### Parameters
 
@@ -2682,6 +2643,45 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let opts = {
+  'ordersRequestDtoInteger': new DocspaceApiJavascript.OrdersRequestDtoInteger() // OrdersRequestDtoInteger | 
+};
+apiInstance.setFilesOrder(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: application/json
@@ -2692,28 +2692,9 @@ Name | Type | Description  | Notes
 
 > StringWrapper startEditFile(fileId, opts)
 
-Start file editing
-
 Informs about opening a file with the ID specified in the request for editing, locking it from being deleted or moved (this method is called by the mobile editors).
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID to start editing.
-let opts = {
-  'startEdit': new DocspaceApiTypescript.StartEdit() // StartEdit | The file parameters to start editing.
-};
-apiInstance.startEditFile(fileId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/start-edit-file/).
 
 ### Parameters
 
@@ -2731,6 +2712,25 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID to start editing.
+let opts = {
+  'startEdit': new DocspaceApiJavascript.StartEdit() // StartEdit | The file parameters to start editing.
+};
+apiInstance.startEditFile(fileId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: application/json
@@ -2741,15 +2741,30 @@ No authorization required
 
 > FileIntegerWrapper startFillingFile(fileId)
 
-Start file filling
-
 Starts filling a file with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/start-filling-file/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileId** | **Number**| The file ID to start filling. | 
+
+### Return type
+
+[**FileIntegerWrapper**](FileIntegerWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2771,7 +2786,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
 let fileId = 9846; // Number | The file ID to start filling.
 apiInstance.startFillingFile(fileId, (error, data, response) => {
   if (error) {
@@ -2781,21 +2796,6 @@ apiInstance.startFillingFile(fileId, (error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fileId** | **Number**| The file ID to start filling. | 
-
-### Return type
-
-[**FileIntegerWrapper**](FileIntegerWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 
@@ -2807,30 +2807,9 @@ Name | Type | Description  | Notes
 
 > KeyValuePairBooleanStringWrapper trackEditFile(fileId, opts)
 
-Track file editing
-
 Tracks file changes when editing.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID to track editing changes.
-let opts = {
-  'tabId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The tab ID to track editing changes.
-  'docKeyForTrack': "some text", // String | The document key for tracking changes.
-  'isFinish': true // Boolean | Specifies whether to finish file tracking or not.
-};
-apiInstance.trackEditFile(fileId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/track-edit-file/).
 
 ### Parameters
 
@@ -2850,6 +2829,27 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID to track editing changes.
+let opts = {
+  'tabId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The tab ID to track editing changes.
+  'docKeyForTrack': "some text", // String | The document key for tracking changes.
+  'isFinish': true // Boolean | Specifies whether to finish file tracking or not.
+};
+apiInstance.trackEditFile(fileId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -2860,28 +2860,9 @@ No authorization required
 
 > FileIntegerWrapper updateFile(fileId, opts)
 
-Update a file
-
 Updates the information of the selected file with the parameters specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFilesApi();
-let fileId = 9846; // Number | The file ID to update.
-let opts = {
-  'updateFile': new DocspaceApiTypescript.UpdateFile() // UpdateFile | The parameters for updating a file.
-};
-apiInstance.updateFile(fileId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-file/).
 
 ### Parameters
 
@@ -2898,6 +2879,25 @@ Name | Type | Description  | Notes
 ### Authorization
 
 No authorization required
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFilesApi();
+let fileId = 9846; // Number | The file ID to update.
+let opts = {
+  'updateFile': new DocspaceApiJavascript.UpdateFile() // UpdateFile | The parameters for updating a file.
+};
+apiInstance.updateFile(fileId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

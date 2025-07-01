@@ -32,9 +32,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
@@ -61,8 +61,8 @@
   describe('EncryprtionStatus', function() {
     it('should create an instance of EncryprtionStatus', function() {
       // uncomment below and update the code to test EncryprtionStatus
-      //var instance = new DocspaceApiTypescript.EncryprtionStatus();
-      //expect(instance).to.be.a(DocspaceApiTypescript.EncryprtionStatus);
+      //var instance = new DocspaceApiJavascript.EncryprtionStatus();
+      //expect(instance).to.be.a(DocspaceApiJavascript.EncryprtionStatus);
     });
 
   });

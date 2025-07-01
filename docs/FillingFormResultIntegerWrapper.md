@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FillingFormResultIntegerWrapper
+# DocspaceApiJavascript.FillingFormResultIntegerWrapper
 
 ## Properties
 

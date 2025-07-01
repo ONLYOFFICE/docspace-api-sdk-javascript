@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ConfigurationIntegerWrapper
+# DocspaceApiJavascript.ConfigurationIntegerWrapper
 
 ## Properties
 

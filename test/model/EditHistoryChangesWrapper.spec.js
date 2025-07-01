@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.EditHistoryChangesWrapper();
+    instance = new DocspaceApiJavascript.EditHistoryChangesWrapper();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('EditHistoryChangesWrapper', function() {
     it('should create an instance of EditHistoryChangesWrapper', function() {
       // uncomment below and update the code to test EditHistoryChangesWrapper
-      //var instance = new DocspaceApiTypescript.EditHistoryChangesWrapper();
-      //expect(instance).to.be.a(DocspaceApiTypescript.EditHistoryChangesWrapper);
+      //var instance = new DocspaceApiJavascript.EditHistoryChangesWrapper();
+      //expect(instance).to.be.a(DocspaceApiJavascript.EditHistoryChangesWrapper);
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instance = new DocspaceApiTypescript.EditHistoryChangesWrapper();
+      //var instance = new DocspaceApiJavascript.EditHistoryChangesWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property created (base name: "created")', function() {
       // uncomment below and update the code to test the property created
-      //var instance = new DocspaceApiTypescript.EditHistoryChangesWrapper();
+      //var instance = new DocspaceApiJavascript.EditHistoryChangesWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property documentSha256 (base name: "documentSha256")', function() {
       // uncomment below and update the code to test the property documentSha256
-      //var instance = new DocspaceApiTypescript.EditHistoryChangesWrapper();
+      //var instance = new DocspaceApiJavascript.EditHistoryChangesWrapper();
       //expect(instance).to.be();
     });
 

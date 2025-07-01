@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.UpdateRoomsQuotaRequestDtoInteger();
+    instance = new DocspaceApiJavascript.UpdateRoomsQuotaRequestDtoInteger();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('UpdateRoomsQuotaRequestDtoInteger', function() {
     it('should create an instance of UpdateRoomsQuotaRequestDtoInteger', function() {
       // uncomment below and update the code to test UpdateRoomsQuotaRequestDtoInteger
-      //var instance = new DocspaceApiTypescript.UpdateRoomsQuotaRequestDtoInteger();
-      //expect(instance).to.be.a(DocspaceApiTypescript.UpdateRoomsQuotaRequestDtoInteger);
+      //var instance = new DocspaceApiJavascript.UpdateRoomsQuotaRequestDtoInteger();
+      //expect(instance).to.be.a(DocspaceApiJavascript.UpdateRoomsQuotaRequestDtoInteger);
     });
 
     it('should have the property roomIds (base name: "roomIds")', function() {
       // uncomment below and update the code to test the property roomIds
-      //var instance = new DocspaceApiTypescript.UpdateRoomsQuotaRequestDtoInteger();
+      //var instance = new DocspaceApiJavascript.UpdateRoomsQuotaRequestDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property quota (base name: "quota")', function() {
       // uncomment below and update the code to test the property quota
-      //var instance = new DocspaceApiTypescript.UpdateRoomsQuotaRequestDtoInteger();
+      //var instance = new DocspaceApiJavascript.UpdateRoomsQuotaRequestDtoInteger();
       //expect(instance).to.be();
     });
 

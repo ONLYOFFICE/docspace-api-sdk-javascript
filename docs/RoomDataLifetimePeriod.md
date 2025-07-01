@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.RoomDataLifetimePeriod
+# DocspaceApiJavascript.RoomDataLifetimePeriod
+
+
 
 ## Enum
 

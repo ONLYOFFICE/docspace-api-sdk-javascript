@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SsoIdpCertificateAdvanced
+# DocspaceApiJavascript.SsoIdpCertificateAdvanced
 
 ## Properties
 

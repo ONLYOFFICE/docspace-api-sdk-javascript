@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.PeoplePasswordApi
+# DocspaceApiJavascript.PeoplePasswordApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -13,15 +13,31 @@ Method | HTTP request | Description
 
 > EmployeeFullWrapper changeUserPassword(userid, opts)
 
-Change a user password
-
 Sets a new password to the user with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/change-user-password/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userid** | **String**| The user ID. | 
+ **memberBaseRequestDto** | [**MemberBaseRequestDto**](MemberBaseRequestDto.md)| The request parameters for the user generic information. | [optional] 
+
+### Return type
+
+[**EmployeeFullWrapper**](EmployeeFullWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -43,10 +59,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeoplePasswordApi();
+let apiInstance = new DocspaceApiJavascript.PeoplePasswordApi();
 let userid = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The user ID.
 let opts = {
-  'memberBaseRequestDto': new DocspaceApiTypescript.MemberBaseRequestDto() // MemberBaseRequestDto | The request parameters for the user generic information.
+  'memberBaseRequestDto': new DocspaceApiJavascript.MemberBaseRequestDto() // MemberBaseRequestDto | The request parameters for the user generic information.
 };
 apiInstance.changeUserPassword(userid, opts, (error, data, response) => {
   if (error) {
@@ -56,22 +72,6 @@ apiInstance.changeUserPassword(userid, opts, (error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **userid** | **String**| The user ID. | 
- **memberBaseRequestDto** | [**MemberBaseRequestDto**](MemberBaseRequestDto.md)| The request parameters for the user generic information. | [optional] 
-
-### Return type
-
-[**EmployeeFullWrapper**](EmployeeFullWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 
@@ -83,27 +83,9 @@ Name | Type | Description  | Notes
 
 > StringWrapper sendUserPassword(opts)
 
-Remind a user password
-
 Reminds a password to the user using the email address specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.PeoplePasswordApi();
-let opts = {
-  'emailMemberRequestDto': new DocspaceApiTypescript.EmailMemberRequestDto() // EmailMemberRequestDto | 
-};
-apiInstance.sendUserPassword(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/send-user-password/).
 
 ### Parameters
 
@@ -119,6 +101,24 @@ Name | Type | Description  | Notes
 ### Authorization
 
 No authorization required
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.PeoplePasswordApi();
+let opts = {
+  'emailMemberRequestDto': new DocspaceApiJavascript.EmailMemberRequestDto() // EmailMemberRequestDto | 
+};
+apiInstance.sendUserPassword(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

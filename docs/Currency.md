@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.Currency
+# DocspaceApiJavascript.Currency
 
 ## Properties
 

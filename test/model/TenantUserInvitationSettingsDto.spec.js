@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.TenantUserInvitationSettingsDto();
+    instance = new DocspaceApiJavascript.TenantUserInvitationSettingsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('TenantUserInvitationSettingsDto', function() {
     it('should create an instance of TenantUserInvitationSettingsDto', function() {
       // uncomment below and update the code to test TenantUserInvitationSettingsDto
-      //var instance = new DocspaceApiTypescript.TenantUserInvitationSettingsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.TenantUserInvitationSettingsDto);
+      //var instance = new DocspaceApiJavascript.TenantUserInvitationSettingsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.TenantUserInvitationSettingsDto);
     });
 
     it('should have the property allowInvitingMembers (base name: "allowInvitingMembers")', function() {
       // uncomment below and update the code to test the property allowInvitingMembers
-      //var instance = new DocspaceApiTypescript.TenantUserInvitationSettingsDto();
+      //var instance = new DocspaceApiJavascript.TenantUserInvitationSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property allowInvitingGuests (base name: "allowInvitingGuests")', function() {
       // uncomment below and update the code to test the property allowInvitingGuests
-      //var instance = new DocspaceApiTypescript.TenantUserInvitationSettingsDto();
+      //var instance = new DocspaceApiJavascript.TenantUserInvitationSettingsDto();
       //expect(instance).to.be();
     });
 

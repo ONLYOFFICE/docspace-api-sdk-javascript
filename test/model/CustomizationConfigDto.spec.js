@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CustomizationConfigDto();
+    instance = new DocspaceApiJavascript.CustomizationConfigDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,73 +62,73 @@
   describe('CustomizationConfigDto', function() {
     it('should create an instance of CustomizationConfigDto', function() {
       // uncomment below and update the code to test CustomizationConfigDto
-      //var instance = new DocspaceApiTypescript.CustomizationConfigDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CustomizationConfigDto);
+      //var instance = new DocspaceApiJavascript.CustomizationConfigDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CustomizationConfigDto);
     });
 
     it('should have the property about (base name: "about")', function() {
       // uncomment below and update the code to test the property about
-      //var instance = new DocspaceApiTypescript.CustomizationConfigDto();
+      //var instance = new DocspaceApiJavascript.CustomizationConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property customer (base name: "customer")', function() {
       // uncomment below and update the code to test the property customer
-      //var instance = new DocspaceApiTypescript.CustomizationConfigDto();
+      //var instance = new DocspaceApiJavascript.CustomizationConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property anonymous (base name: "anonymous")', function() {
       // uncomment below and update the code to test the property anonymous
-      //var instance = new DocspaceApiTypescript.CustomizationConfigDto();
+      //var instance = new DocspaceApiJavascript.CustomizationConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property feedback (base name: "feedback")', function() {
       // uncomment below and update the code to test the property feedback
-      //var instance = new DocspaceApiTypescript.CustomizationConfigDto();
+      //var instance = new DocspaceApiJavascript.CustomizationConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property forcesave (base name: "forcesave")', function() {
       // uncomment below and update the code to test the property forcesave
-      //var instance = new DocspaceApiTypescript.CustomizationConfigDto();
+      //var instance = new DocspaceApiJavascript.CustomizationConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property goback (base name: "goback")', function() {
       // uncomment below and update the code to test the property goback
-      //var instance = new DocspaceApiTypescript.CustomizationConfigDto();
+      //var instance = new DocspaceApiJavascript.CustomizationConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property logo (base name: "logo")', function() {
       // uncomment below and update the code to test the property logo
-      //var instance = new DocspaceApiTypescript.CustomizationConfigDto();
+      //var instance = new DocspaceApiJavascript.CustomizationConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property mentionShare (base name: "mentionShare")', function() {
       // uncomment below and update the code to test the property mentionShare
-      //var instance = new DocspaceApiTypescript.CustomizationConfigDto();
+      //var instance = new DocspaceApiJavascript.CustomizationConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property reviewDisplay (base name: "reviewDisplay")', function() {
       // uncomment below and update the code to test the property reviewDisplay
-      //var instance = new DocspaceApiTypescript.CustomizationConfigDto();
+      //var instance = new DocspaceApiJavascript.CustomizationConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property submitForm (base name: "submitForm")', function() {
       // uncomment below and update the code to test the property submitForm
-      //var instance = new DocspaceApiTypescript.CustomizationConfigDto();
+      //var instance = new DocspaceApiJavascript.CustomizationConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property startFillingForm (base name: "startFillingForm")', function() {
       // uncomment below and update the code to test the property startFillingForm
-      //var instance = new DocspaceApiTypescript.CustomizationConfigDto();
+      //var instance = new DocspaceApiJavascript.CustomizationConfigDto();
       //expect(instance).to.be();
     });
 

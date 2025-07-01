@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FireBaseUser
+# DocspaceApiJavascript.FireBaseUser
 
 ## Properties
 

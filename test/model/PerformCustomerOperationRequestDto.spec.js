@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.PerformCustomerOperationRequestDto();
+    instance = new DocspaceApiJavascript.PerformCustomerOperationRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('PerformCustomerOperationRequestDto', function() {
     it('should create an instance of PerformCustomerOperationRequestDto', function() {
       // uncomment below and update the code to test PerformCustomerOperationRequestDto
-      //var instance = new DocspaceApiTypescript.PerformCustomerOperationRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.PerformCustomerOperationRequestDto);
+      //var instance = new DocspaceApiJavascript.PerformCustomerOperationRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.PerformCustomerOperationRequestDto);
     });
 
     it('should have the property serviceAccount (base name: "serviceAccount")', function() {
       // uncomment below and update the code to test the property serviceAccount
-      //var instance = new DocspaceApiTypescript.PerformCustomerOperationRequestDto();
+      //var instance = new DocspaceApiJavascript.PerformCustomerOperationRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property sessionId (base name: "sessionId")', function() {
       // uncomment below and update the code to test the property sessionId
-      //var instance = new DocspaceApiTypescript.PerformCustomerOperationRequestDto();
+      //var instance = new DocspaceApiJavascript.PerformCustomerOperationRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new DocspaceApiTypescript.PerformCustomerOperationRequestDto();
+      //var instance = new DocspaceApiJavascript.PerformCustomerOperationRequestDto();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.WebhookGroupStatus
+# DocspaceApiJavascript.WebhookGroupStatus
+
+
 
 ## Enum
 

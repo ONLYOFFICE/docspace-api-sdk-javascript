@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.FileUploadResultDto();
+    instance = new DocspaceApiJavascript.FileUploadResultDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('FileUploadResultDto', function() {
     it('should create an instance of FileUploadResultDto', function() {
       // uncomment below and update the code to test FileUploadResultDto
-      //var instance = new DocspaceApiTypescript.FileUploadResultDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.FileUploadResultDto);
+      //var instance = new DocspaceApiJavascript.FileUploadResultDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.FileUploadResultDto);
     });
 
     it('should have the property success (base name: "success")', function() {
       // uncomment below and update the code to test the property success
-      //var instance = new DocspaceApiTypescript.FileUploadResultDto();
+      //var instance = new DocspaceApiJavascript.FileUploadResultDto();
       //expect(instance).to.be();
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instance = new DocspaceApiTypescript.FileUploadResultDto();
+      //var instance = new DocspaceApiJavascript.FileUploadResultDto();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new DocspaceApiTypescript.FileUploadResultDto();
+      //var instance = new DocspaceApiJavascript.FileUploadResultDto();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.DbTenantPartner
+# DocspaceApiJavascript.DbTenantPartner
 
 ## Properties
 

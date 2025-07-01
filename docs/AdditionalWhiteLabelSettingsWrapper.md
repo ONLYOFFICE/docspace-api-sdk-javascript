@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.AdditionalWhiteLabelSettingsWrapper
+# DocspaceApiJavascript.AdditionalWhiteLabelSettingsWrapper
 
 ## Properties
 

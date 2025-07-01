@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.TenantUserQuotaSettings
+# DocspaceApiJavascript.TenantUserQuotaSettings
 
 ## Properties
 

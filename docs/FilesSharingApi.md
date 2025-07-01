@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FilesSharingApi
+# DocspaceApiJavascript.FilesSharingApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -16,28 +16,9 @@ Method | HTTP request | Description
 
 > ExternalShareWrapper applyExternalSharePassword(key, opts)
 
-Apply external data password
-
 Applies a password specified in the request to get the external data.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesSharingApi();
-let key = "some text"; // String | The unique document identifier.
-let opts = {
-  'externalShareRequestParam': new DocspaceApiTypescript.ExternalShareRequestParam() // ExternalShareRequestParam | The external data share request parameters.
-};
-apiInstance.applyExternalSharePassword(key, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/apply-external-share-password/).
 
 ### Parameters
 
@@ -55,6 +36,25 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesSharingApi();
+let key = "some text"; // String | The unique document identifier.
+let opts = {
+  'externalShareRequestParam': new DocspaceApiJavascript.ExternalShareRequestParam() // ExternalShareRequestParam | The external data share request parameters.
+};
+apiInstance.applyExternalSharePassword(key, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: application/json
@@ -65,15 +65,30 @@ No authorization required
 
 > FileEntryArrayWrapper changeFileOwner(opts)
 
-Change the file owner
-
 Changes the owner of the file with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/change-file-owner/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **changeOwnerRequestDto** | [**ChangeOwnerRequestDto**](ChangeOwnerRequestDto.md)|  | [optional] 
+
+### Return type
+
+[**FileEntryArrayWrapper**](FileEntryArrayWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -95,9 +110,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSharingApi();
+let apiInstance = new DocspaceApiJavascript.FilesSharingApi();
 let opts = {
-  'changeOwnerRequestDto': new DocspaceApiTypescript.ChangeOwnerRequestDto() // ChangeOwnerRequestDto | 
+  'changeOwnerRequestDto': new DocspaceApiJavascript.ChangeOwnerRequestDto() // ChangeOwnerRequestDto | 
 };
 apiInstance.changeFileOwner(opts, (error, data, response) => {
   if (error) {
@@ -107,21 +122,6 @@ apiInstance.changeFileOwner(opts, (error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **changeOwnerRequestDto** | [**ChangeOwnerRequestDto**](ChangeOwnerRequestDto.md)|  | [optional] 
-
-### Return type
-
-[**FileEntryArrayWrapper**](FileEntryArrayWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 
@@ -133,28 +133,9 @@ Name | Type | Description  | Notes
 
 > ExternalShareWrapper getExternalShareData(key, opts)
 
-Get the external data
-
 Returns the external data by the key specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesSharingApi();
-let key = "some text"; // String | The unique key of the external shared data.
-let opts = {
-  'fileId': "9846" // String | The unique document identifier.
-};
-apiInstance.getExternalShareData(key, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-external-share-data/).
 
 ### Parameters
 
@@ -172,6 +153,25 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesSharingApi();
+let key = "some text"; // String | The unique key of the external shared data.
+let opts = {
+  'fileId': "9846" // String | The unique document identifier.
+};
+apiInstance.getExternalShareData(key, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -182,46 +182,9 @@ No authorization required
 
 > MentionWrapperArrayWrapper getSharedUsers(fileId)
 
-Get user access rights by file ID
-
 Returns a list of users with their access rights to the file with the ID specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.FilesSharingApi();
-let fileId = 9846; // Number | The file ID of the request.
-apiInstance.getSharedUsers(fileId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-shared-users/).
 
 ### Parameters
 
@@ -238,25 +201,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## sendEditorNotify
-
-> AceShortWrapperArrayWrapper sendEditorNotify(fileId, opts)
-
-Send the mention message
-
-Sends a message to the users who are mentioned in the file with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -278,12 +227,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSharingApi();
-let fileId = 9846; // Number | The file ID of the mention message.
-let opts = {
-  'mentionMessageWrapper': new DocspaceApiTypescript.MentionMessageWrapper() // MentionMessageWrapper | The mention message.
-};
-apiInstance.sendEditorNotify(fileId, opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.FilesSharingApi();
+let fileId = 9846; // Number | The file ID of the request.
+apiInstance.getSharedUsers(fileId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -291,6 +237,20 @@ apiInstance.sendEditorNotify(fileId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## sendEditorNotify
+
+> AceShortWrapperArrayWrapper sendEditorNotify(fileId, opts)
+
+Sends a message to the users who are mentioned in the file with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/send-editor-notify/).
 
 ### Parameters
 
@@ -307,6 +267,46 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.FilesSharingApi();
+let fileId = 9846; // Number | The file ID of the mention message.
+let opts = {
+  'mentionMessageWrapper': new DocspaceApiJavascript.MentionMessageWrapper() // MentionMessageWrapper | The mention message.
+};
+apiInstance.sendEditorNotify(fileId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

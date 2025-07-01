@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.TenantDevToolsAccessSettingsDto();
+    instance = new DocspaceApiJavascript.TenantDevToolsAccessSettingsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('TenantDevToolsAccessSettingsDto', function() {
     it('should create an instance of TenantDevToolsAccessSettingsDto', function() {
       // uncomment below and update the code to test TenantDevToolsAccessSettingsDto
-      //var instance = new DocspaceApiTypescript.TenantDevToolsAccessSettingsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.TenantDevToolsAccessSettingsDto);
+      //var instance = new DocspaceApiJavascript.TenantDevToolsAccessSettingsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.TenantDevToolsAccessSettingsDto);
     });
 
     it('should have the property limitedAccessForUsers (base name: "limitedAccessForUsers")', function() {
       // uncomment below and update the code to test the property limitedAccessForUsers
-      //var instance = new DocspaceApiTypescript.TenantDevToolsAccessSettingsDto();
+      //var instance = new DocspaceApiJavascript.TenantDevToolsAccessSettingsDto();
       //expect(instance).to.be();
     });
 

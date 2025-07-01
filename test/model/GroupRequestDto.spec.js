@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.GroupRequestDto();
+    instance = new DocspaceApiJavascript.GroupRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('GroupRequestDto', function() {
     it('should create an instance of GroupRequestDto', function() {
       // uncomment below and update the code to test GroupRequestDto
-      //var instance = new DocspaceApiTypescript.GroupRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.GroupRequestDto);
+      //var instance = new DocspaceApiJavascript.GroupRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.GroupRequestDto);
     });
 
     it('should have the property members (base name: "members")', function() {
       // uncomment below and update the code to test the property members
-      //var instance = new DocspaceApiTypescript.GroupRequestDto();
+      //var instance = new DocspaceApiJavascript.GroupRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property groupManager (base name: "groupManager")', function() {
       // uncomment below and update the code to test the property groupManager
-      //var instance = new DocspaceApiTypescript.GroupRequestDto();
+      //var instance = new DocspaceApiJavascript.GroupRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property groupName (base name: "groupName")', function() {
       // uncomment below and update the code to test the property groupName
-      //var instance = new DocspaceApiTypescript.GroupRequestDto();
+      //var instance = new DocspaceApiJavascript.GroupRequestDto();
       //expect(instance).to.be();
     });
 

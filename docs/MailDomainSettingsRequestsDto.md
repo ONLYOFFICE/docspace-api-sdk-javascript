@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.MailDomainSettingsRequestsDto
+# DocspaceApiJavascript.MailDomainSettingsRequestsDto
 
 ## Properties
 

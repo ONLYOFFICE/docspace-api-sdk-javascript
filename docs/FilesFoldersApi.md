@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FilesFoldersApi
+# DocspaceApiJavascript.FilesFoldersApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -33,49 +33,9 @@ Method | HTTP request | Description
 
 > STRINGArrayWrapper checkUpload(folderId, opts)
 
-Check file uploads
-
 Checks the file uploads to the folder with the ID specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-let folderId = 9846; // Number | The folder ID.
-let opts = {
-  'checkUploadRequest': new DocspaceApiTypescript.CheckUploadRequest() // CheckUploadRequest | The request parameters for checking file uploads.
-};
-apiInstance.checkUpload(folderId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/check-upload/).
 
 ### Parameters
 
@@ -93,25 +53,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createFolder
-
-> FolderIntegerWrapper createFolder(folderId, opts)
-
-Create a folder
-
-Creates a new folder with the title specified in the request. The parent folder ID can be also specified.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -133,12 +79,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-let folderId = 9846; // Number | The folder ID for the folder creation.
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let folderId = 9846; // Number | The folder ID.
 let opts = {
-  'createFolder': new DocspaceApiTypescript.CreateFolder() // CreateFolder | The parameters for creating a folder.
+  'checkUploadRequest': new DocspaceApiJavascript.CheckUploadRequest() // CheckUploadRequest | The request parameters for checking file uploads.
 };
-apiInstance.createFolder(folderId, opts, (error, data, response) => {
+apiInstance.checkUpload(folderId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -146,6 +92,20 @@ apiInstance.createFolder(folderId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createFolder
+
+> FolderIntegerWrapper createFolder(folderId, opts)
+
+Creates a new folder with the title specified in the request. The parent folder ID can be also specified.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-folder/).
 
 ### Parameters
 
@@ -163,25 +123,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## deleteFolder
-
-> FileOperationArrayWrapper deleteFolder(folderId, opts)
-
-Delete a folder
-
-Deletes a folder with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -203,12 +149,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-let folderId = 9846; // Number | The folder ID to delete.
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let folderId = 9846; // Number | The folder ID for the folder creation.
 let opts = {
-  'deleteFolder': new DocspaceApiTypescript.DeleteFolder() // DeleteFolder | The parameters for deleting a folder.
+  'createFolder': new DocspaceApiJavascript.CreateFolder() // CreateFolder | The parameters for creating a folder.
 };
-apiInstance.deleteFolder(folderId, opts, (error, data, response) => {
+apiInstance.createFolder(folderId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -216,6 +162,20 @@ apiInstance.deleteFolder(folderId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## deleteFolder
+
+> FileOperationArrayWrapper deleteFolder(folderId, opts)
+
+Deletes a folder with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-folder/).
 
 ### Parameters
 
@@ -233,25 +193,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## getFilesUsedSpace
-
-> FilesStatisticsResultWrapper getFilesUsedSpace()
-
-Get used space of files
-
-Returns the used space of files in the root folders.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -273,8 +219,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-apiInstance.getFilesUsedSpace((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let folderId = 9846; // Number | The folder ID to delete.
+let opts = {
+  'deleteFolder': new DocspaceApiJavascript.DeleteFolder() // DeleteFolder | The parameters for deleting a folder.
+};
+apiInstance.deleteFolder(folderId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -282,6 +232,20 @@ apiInstance.getFilesUsedSpace((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## getFilesUsedSpace
+
+> FilesStatisticsResultWrapper getFilesUsedSpace()
+
+Returns the used space of files in the root folders.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-files-used-space/).
 
 ### Parameters
 
@@ -295,6 +259,42 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+apiInstance.getFilesUsedSpace((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -305,25 +305,9 @@ This endpoint does not need any parameter.
 
 > FormsItemArrayWrapper getFolder(folderId)
 
-Get folder form filter
-
 Returns the form filter of a folder with the ID specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-let folderId = 9846; // Number | The request folder ID.
-apiInstance.getFolder(folderId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-folder/).
 
 ### Parameters
 
@@ -340,6 +324,22 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let folderId = 9846; // Number | The request folder ID.
+apiInstance.getFolder(folderId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -350,41 +350,9 @@ No authorization required
 
 > FolderContentIntegerWrapper getFolderByFolderId(folderId, opts)
 
-Get a folder by ID
-
 Returns the detailed list of files and folders located in the folder with the ID specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-let folderId = 9846; // Number | The folder ID of the request.
-let opts = {
-  'userIdOrGroupId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The user or group ID.
-  'filterType': new DocspaceApiTypescript.FilterType(), // FilterType | The filter type.
-  'roomId': 9846, // Number | The room ID.
-  'excludeSubject': true, // Boolean | Specifies whether to exclude search by user or group ID.
-  'applyFilterOption': new DocspaceApiTypescript.ApplyFilterOption(), // ApplyFilterOption | Specifies whether to return only files, only folders or all elements from the specified folder.
-  'extension': ".txt", // String | Specifies whether to search for the specific file extension.
-  'searchArea': new DocspaceApiTypescript.SearchArea(), // SearchArea | The search area.
-  'formsItemKey': "some text", // String | The forms item key.
-  'formsItemType': "some text", // String | The forms item type.
-  'count': 1234, // Number | The maximum number of items to retrieve in the request.
-  'startIndex': 1234, // Number | The zero-based index of the first item to retrieve in a paginated request.
-  'sortBy': "some text", // String | Specifies the property used for sorting the folder request results.
-  'sortOrder': new DocspaceApiTypescript.SortOrder(), // SortOrder | The order in which the results are sorted.
-  'filterValue': "some text" // String | The text value used as a filter parameter for folder content queries.
-};
-apiInstance.getFolderByFolderId(folderId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-folder-by-folder-id/).
 
 ### Parameters
 
@@ -415,6 +383,38 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let folderId = 9846; // Number | The folder ID of the request.
+let opts = {
+  'userIdOrGroupId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The user or group ID.
+  'filterType': new DocspaceApiJavascript.FilterType(), // FilterType | The filter type.
+  'roomId': 9846, // Number | The room ID.
+  'excludeSubject': true, // Boolean | Specifies whether to exclude search by user or group ID.
+  'applyFilterOption': new DocspaceApiJavascript.ApplyFilterOption(), // ApplyFilterOption | Specifies whether to return only files, only folders or all elements from the specified folder.
+  'extension': ".txt", // String | Specifies whether to search for the specific file extension.
+  'searchArea': new DocspaceApiJavascript.SearchArea(), // SearchArea | The search area.
+  'formsItemKey': "some text", // String | The forms item key.
+  'formsItemType': "some text", // String | The forms item type.
+  'count': 1234, // Number | The maximum number of items to retrieve in the request.
+  'startIndex': 1234, // Number | The zero-based index of the first item to retrieve in a paginated request.
+  'sortBy': "some text", // String | Specifies the property used for sorting the folder request results.
+  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'filterValue': "some text" // String | The text value used as a filter parameter for folder content queries.
+};
+apiInstance.getFolderByFolderId(folderId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -425,52 +425,9 @@ No authorization required
 
 > HistoryArrayWrapper getFolderHistory(folderId, opts)
 
-Get folder history
-
 Returns the activity history of a folder with a specified identifier.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-let folderId = 9846; // Number | The folder ID of the history request.
-let opts = {
-  'fromDate': new DocspaceApiTypescript.ApiDateTime(), // ApiDateTime | The start date of the history request.
-  'toDate': new DocspaceApiTypescript.ApiDateTime(), // ApiDateTime | The end date of the history request.
-  'count': 1234, // Number | The number of records to retrieve for the folder history.
-  'startIndex': 1234 // Number | The starting index from which the history records are retrieved in the request.
-};
-apiInstance.getFolderHistory(folderId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-folder-history/).
 
 ### Parameters
 
@@ -491,6 +448,49 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let folderId = 9846; // Number | The folder ID of the history request.
+let opts = {
+  'fromDate': new DocspaceApiJavascript.ApiDateTime(), // ApiDateTime | The start date of the history request.
+  'toDate': new DocspaceApiJavascript.ApiDateTime(), // ApiDateTime | The end date of the history request.
+  'count': 1234, // Number | The number of records to retrieve for the folder history.
+  'startIndex': 1234 // Number | The starting index from which the history records are retrieved in the request.
+};
+apiInstance.getFolderHistory(folderId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -501,25 +501,9 @@ Name | Type | Description  | Notes
 
 > FolderIntegerWrapper getFolderInfo(folderId)
 
-Get folder information
-
 Returns the detailed information about a folder with the ID specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-let folderId = 9846; // Number | The request folder ID.
-apiInstance.getFolderInfo(folderId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-folder-info/).
 
 ### Parameters
 
@@ -536,6 +520,22 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let folderId = 9846; // Number | The request folder ID.
+apiInstance.getFolderInfo(folderId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -546,15 +546,30 @@ No authorization required
 
 > FileEntryArrayWrapper getFolderPath(folderId)
 
-Get the folder path
-
 Returns a path to the folder with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-folder-path/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **folderId** | **Number**| The request folder ID. | 
+
+### Return type
+
+[**FileEntryArrayWrapper**](FileEntryArrayWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -576,7 +591,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
 let folderId = 9846; // Number | The request folder ID.
 apiInstance.getFolderPath(folderId, (error, data, response) => {
   if (error) {
@@ -586,21 +601,6 @@ apiInstance.getFolderPath(folderId, (error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **folderId** | **Number**| The request folder ID. | 
-
-### Return type
-
-[**FileEntryArrayWrapper**](FileEntryArrayWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 
@@ -612,25 +612,9 @@ Name | Type | Description  | Notes
 
 > FileShareWrapper getFolderPrimaryExternalLink(id)
 
-Get primary external link
-
 Returns the primary external link by the identifier specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-let id = 9846; // Number | The request folder ID.
-apiInstance.getFolderPrimaryExternalLink(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-folder-primary-external-link/).
 
 ### Parameters
 
@@ -647,6 +631,22 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let id = 9846; // Number | The request folder ID.
+apiInstance.getFolderPrimaryExternalLink(id, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -657,46 +657,9 @@ No authorization required
 
 > FileEntryArrayWrapper getFolders(folderId)
 
-Get subfolders
-
 Returns a list of all the subfolders from a folder with the ID specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-let folderId = 9846; // Number | The request folder ID.
-apiInstance.getFolders(folderId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-folders/).
 
 ### Parameters
 
@@ -713,25 +676,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getMyFolder
-
-> FolderContentIntegerWrapper getMyFolder(opts)
-
-Get the \&quot;My documents\&quot; section
-
-Returns the detailed list of files and folders located in the \&quot;My documents\&quot; section.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -753,18 +702,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-let opts = {
-  'userIdOrGroupId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The user or group ID.
-  'filterType': new DocspaceApiTypescript.FilterType(), // FilterType | The filter type.
-  'applyFilterOption': new DocspaceApiTypescript.ApplyFilterOption(), // ApplyFilterOption | Specifies whether to return only files, only folders or all elements.
-  'count': 1234, // Number | The maximum number of items to retrieve in the response.
-  'startIndex': 1234, // Number | The starting position of the items to be retrieved.
-  'sortBy': "some text", // String | The property used to specify the sorting criteria for folder contents.
-  'sortOrder': new DocspaceApiTypescript.SortOrder(), // SortOrder | The order in which the results are sorted.
-  'filterValue': "some text" // String | The text used for filtering or searching folder contents.
-};
-apiInstance.getMyFolder(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let folderId = 9846; // Number | The request folder ID.
+apiInstance.getFolders(folderId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -772,6 +712,20 @@ apiInstance.getMyFolder(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getMyFolder
+
+> FolderContentIntegerWrapper getMyFolder(opts)
+
+Returns the detailed list of files and folders located in the \&quot;My documents\&quot; section.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-my-folder/).
 
 ### Parameters
 
@@ -795,25 +749,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getNewFolderItems
-
-> FileEntryArrayWrapper getNewFolderItems(folderId)
-
-Get new folder items
-
-Returns a list of all the new items from a folder with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -835,9 +775,18 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-let folderId = 9846; // Number | The request folder ID.
-apiInstance.getNewFolderItems(folderId, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let opts = {
+  'userIdOrGroupId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The user or group ID.
+  'filterType': new DocspaceApiJavascript.FilterType(), // FilterType | The filter type.
+  'applyFilterOption': new DocspaceApiJavascript.ApplyFilterOption(), // ApplyFilterOption | Specifies whether to return only files, only folders or all elements.
+  'count': 1234, // Number | The maximum number of items to retrieve in the response.
+  'startIndex': 1234, // Number | The starting position of the items to be retrieved.
+  'sortBy': "some text", // String | The property used to specify the sorting criteria for folder contents.
+  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'filterValue': "some text" // String | The text used for filtering or searching folder contents.
+};
+apiInstance.getMyFolder(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -845,6 +794,20 @@ apiInstance.getNewFolderItems(folderId, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getNewFolderItems
+
+> FileEntryArrayWrapper getNewFolderItems(folderId)
+
+Returns a list of all the new items from a folder with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-new-folder-items/).
 
 ### Parameters
 
@@ -861,25 +824,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getPrivacyFolder
-
-> FolderContentIntegerWrapper getPrivacyFolder(opts)
-
-Get the \&quot;Private Room\&quot; section
-
-Returns the detailed list of files and folders located in the \&quot;Private Room\&quot; section.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -901,17 +850,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-let opts = {
-  'userIdOrGroupId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The user or group ID.
-  'filterType': new DocspaceApiTypescript.FilterType(), // FilterType | The filter type.
-  'count': 1234, // Number | The maximum number of items to retrieve in the request.
-  'startIndex': 1234, // Number | The zero-based index of the first item to retrieve in a paginated list.
-  'sortBy': "some text", // String | Specifies the field by which the folder content should be sorted.
-  'sortOrder': new DocspaceApiTypescript.SortOrder(), // SortOrder | The order in which the results are sorted.
-  'filterValue': "some text" // String | The text used as a filter or search criterion for folder content queries.
-};
-apiInstance.getPrivacyFolder(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let folderId = 9846; // Number | The request folder ID.
+apiInstance.getNewFolderItems(folderId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -919,6 +860,20 @@ apiInstance.getPrivacyFolder(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getPrivacyFolder
+
+> FolderContentIntegerWrapper getPrivacyFolder(opts)
+
+Returns the detailed list of files and folders located in the \&quot;Private Room\&quot; section.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-privacy-folder/).
 
 ### Parameters
 
@@ -941,25 +896,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getRootFolders
-
-> FolderContentIntegerArrayWrapper getRootFolders(opts)
-
-Get filtered sections
-
-Returns all the sections matching the parameters specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -981,18 +922,17 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
 let opts = {
   'userIdOrGroupId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The user or group ID.
-  'filterType': new DocspaceApiTypescript.FilterType(), // FilterType | The filter type.
-  'withoutTrash': true, // Boolean | Specifies whether to return the \"Trash\" section or not.
-  'count': 1234, // Number | The maximum number of items to retrieve in the response.
-  'startIndex': 1234, // Number | The starting position of the items to be retrieved.
+  'filterType': new DocspaceApiJavascript.FilterType(), // FilterType | The filter type.
+  'count': 1234, // Number | The maximum number of items to retrieve in the request.
+  'startIndex': 1234, // Number | The zero-based index of the first item to retrieve in a paginated list.
   'sortBy': "some text", // String | Specifies the field by which the folder content should be sorted.
-  'sortOrder': new DocspaceApiTypescript.SortOrder(), // SortOrder | The order in which the results are sorted.
-  'filterValue': "some text" // String | The text used as a filter for searching or retrieving folder contents.
+  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'filterValue': "some text" // String | The text used as a filter or search criterion for folder content queries.
 };
-apiInstance.getRootFolders(opts, (error, data, response) => {
+apiInstance.getPrivacyFolder(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1000,6 +940,20 @@ apiInstance.getRootFolders(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getRootFolders
+
+> FolderContentIntegerArrayWrapper getRootFolders(opts)
+
+Returns all the sections matching the parameters specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-root-folders/).
 
 ### Parameters
 
@@ -1023,25 +977,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getTrashFolder
-
-> FolderContentIntegerWrapper getTrashFolder(opts)
-
-Get the \&quot;Trash\&quot; section
-
-Returns the detailed list of files and folders located in the \&quot;Trash\&quot; section.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1063,18 +1003,18 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
 let opts = {
   'userIdOrGroupId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The user or group ID.
-  'filterType': new DocspaceApiTypescript.FilterType(), // FilterType | The filter type.
-  'applyFilterOption': new DocspaceApiTypescript.ApplyFilterOption(), // ApplyFilterOption | Specifies whether to return only files, only folders or all elements.
+  'filterType': new DocspaceApiJavascript.FilterType(), // FilterType | The filter type.
+  'withoutTrash': true, // Boolean | Specifies whether to return the \"Trash\" section or not.
   'count': 1234, // Number | The maximum number of items to retrieve in the response.
   'startIndex': 1234, // Number | The starting position of the items to be retrieved.
-  'sortBy': "some text", // String | The property used to specify the sorting criteria for folder contents.
-  'sortOrder': new DocspaceApiTypescript.SortOrder(), // SortOrder | The order in which the results are sorted.
-  'filterValue': "some text" // String | The text used for filtering or searching folder contents.
+  'sortBy': "some text", // String | Specifies the field by which the folder content should be sorted.
+  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'filterValue': "some text" // String | The text used as a filter for searching or retrieving folder contents.
 };
-apiInstance.getTrashFolder(opts, (error, data, response) => {
+apiInstance.getRootFolders(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1082,6 +1022,20 @@ apiInstance.getTrashFolder(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getTrashFolder
+
+> FolderContentIntegerWrapper getTrashFolder(opts)
+
+Returns the detailed list of files and folders located in the \&quot;Trash\&quot; section.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-trash-folder/).
 
 ### Parameters
 
@@ -1105,25 +1059,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## insertFile
-
-> FileIntegerWrapper insertFile(folderId, opts)
-
-Insert a file
-
-Inserts a file specified in the request to the selected folder by single file uploading.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1145,23 +1085,18 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-let folderId = 9846; // Number | The folder ID for inserting a file.
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
 let opts = {
-  'insertFileFile': "/path/to/file", // File | The file to be inserted.
-  'insertFileTitle': "insertFileTitle_example", // String | The file title to be inserted.
-  'insertFileCreateNewIfExist': true, // Boolean | Specifies whether to create a new file if it already exists or not.
-  'insertFileKeepConvertStatus': true, // Boolean | Specifies whether to keep the file converting status or not.
-  'insertFileStreamCanRead': true, // Boolean | 
-  'insertFileStreamCanWrite': true, // Boolean | 
-  'insertFileStreamCanSeek': true, // Boolean | 
-  'insertFileStreamCanTimeout': true, // Boolean | 
-  'insertFileStreamLength': 789, // Number | 
-  'insertFileStreamPosition': 789, // Number | 
-  'insertFileStreamReadTimeout': 56, // Number | 
-  'insertFileStreamWriteTimeout': 56 // Number | 
+  'userIdOrGroupId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The user or group ID.
+  'filterType': new DocspaceApiJavascript.FilterType(), // FilterType | The filter type.
+  'applyFilterOption': new DocspaceApiJavascript.ApplyFilterOption(), // ApplyFilterOption | Specifies whether to return only files, only folders or all elements.
+  'count': 1234, // Number | The maximum number of items to retrieve in the response.
+  'startIndex': 1234, // Number | The starting position of the items to be retrieved.
+  'sortBy': "some text", // String | The property used to specify the sorting criteria for folder contents.
+  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'filterValue': "some text" // String | The text used for filtering or searching folder contents.
 };
-apiInstance.insertFile(folderId, opts, (error, data, response) => {
+apiInstance.getTrashFolder(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1169,6 +1104,20 @@ apiInstance.insertFile(folderId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## insertFile
+
+> FileIntegerWrapper insertFile(folderId, opts)
+
+Inserts a file specified in the request to the selected folder by single file uploading.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/insert-file/).
 
 ### Parameters
 
@@ -1197,25 +1146,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: multipart/form-data
-- **Accept**: application/json
-
-
-## insertFileToMyFromBody
-
-> FileIntegerWrapper insertFileToMyFromBody(opts)
-
-Insert a file to the \&quot;My documents\&quot; section
-
-Inserts a file specified in the request to the \&quot;My documents\&quot; section by single file uploading.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1237,22 +1172,23 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let folderId = 9846; // Number | The folder ID for inserting a file.
 let opts = {
-  'file': "/path/to/file", // File | The file to be inserted.
-  'title': "title_example", // String | The file title to be inserted.
-  'createNewIfExist': true, // Boolean | Specifies whether to create a new file if it already exists or not.
-  'keepConvertStatus': true, // Boolean | Specifies whether to keep the file converting status or not.
-  'streamCanRead': true, // Boolean | 
-  'streamCanWrite': true, // Boolean | 
-  'streamCanSeek': true, // Boolean | 
-  'streamCanTimeout': true, // Boolean | 
-  'streamLength': 789, // Number | 
-  'streamPosition': 789, // Number | 
-  'streamReadTimeout': 56, // Number | 
-  'streamWriteTimeout': 56 // Number | 
+  'insertFileFile': "/path/to/file", // File | The file to be inserted.
+  'insertFileTitle': "insertFileTitle_example", // String | The file title to be inserted.
+  'insertFileCreateNewIfExist': true, // Boolean | Specifies whether to create a new file if it already exists or not.
+  'insertFileKeepConvertStatus': true, // Boolean | Specifies whether to keep the file converting status or not.
+  'insertFileStreamCanRead': true, // Boolean | 
+  'insertFileStreamCanWrite': true, // Boolean | 
+  'insertFileStreamCanSeek': true, // Boolean | 
+  'insertFileStreamCanTimeout': true, // Boolean | 
+  'insertFileStreamLength': 789, // Number | 
+  'insertFileStreamPosition': 789, // Number | 
+  'insertFileStreamReadTimeout': 56, // Number | 
+  'insertFileStreamWriteTimeout': 56 // Number | 
 };
-apiInstance.insertFileToMyFromBody(opts, (error, data, response) => {
+apiInstance.insertFile(folderId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1260,6 +1196,20 @@ apiInstance.insertFileToMyFromBody(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: multipart/form-data
+- **Accept**: application/json
+
+
+## insertFileToMyFromBody
+
+> FileIntegerWrapper insertFileToMyFromBody(opts)
+
+Inserts a file specified in the request to the \&quot;My documents\&quot; section by single file uploading.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/insert-file-to-my-from-body/).
 
 ### Parameters
 
@@ -1287,25 +1237,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: multipart/form-data
-- **Accept**: application/json
-
-
-## renameFolder
-
-> FolderIntegerWrapper renameFolder(folderId, opts)
-
-Rename a folder
-
-Renames the selected folder with a new title specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1327,12 +1263,22 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-let folderId = 9846; // Number | The folder ID for the folder creation.
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
 let opts = {
-  'createFolder': new DocspaceApiTypescript.CreateFolder() // CreateFolder | The parameters for creating a folder.
+  'file': "/path/to/file", // File | The file to be inserted.
+  'title': "title_example", // String | The file title to be inserted.
+  'createNewIfExist': true, // Boolean | Specifies whether to create a new file if it already exists or not.
+  'keepConvertStatus': true, // Boolean | Specifies whether to keep the file converting status or not.
+  'streamCanRead': true, // Boolean | 
+  'streamCanWrite': true, // Boolean | 
+  'streamCanSeek': true, // Boolean | 
+  'streamCanTimeout': true, // Boolean | 
+  'streamLength': 789, // Number | 
+  'streamPosition': 789, // Number | 
+  'streamReadTimeout': 56, // Number | 
+  'streamWriteTimeout': 56 // Number | 
 };
-apiInstance.renameFolder(folderId, opts, (error, data, response) => {
+apiInstance.insertFileToMyFromBody(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1340,6 +1286,20 @@ apiInstance.renameFolder(folderId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: multipart/form-data
+- **Accept**: application/json
+
+
+## renameFolder
+
+> FolderIntegerWrapper renameFolder(folderId, opts)
+
+Renames the selected folder with a new title specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/rename-folder/).
 
 ### Parameters
 
@@ -1357,25 +1317,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## setFolderOrder
-
-> FolderIntegerWrapper setFolderOrder(folderId, opts)
-
-Set folder order
-
-Sets the file order in the folder with ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1397,12 +1343,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-let folderId = 9846; // Number | The folder unique identifier.
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let folderId = 9846; // Number | The folder ID for the folder creation.
 let opts = {
-  'orderRequestDto': new DocspaceApiTypescript.OrderRequestDto() // OrderRequestDto | The folder order information.
+  'createFolder': new DocspaceApiJavascript.CreateFolder() // CreateFolder | The parameters for creating a folder.
 };
-apiInstance.setFolderOrder(folderId, opts, (error, data, response) => {
+apiInstance.renameFolder(folderId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1410,6 +1356,20 @@ apiInstance.setFolderOrder(folderId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## setFolderOrder
+
+> FolderIntegerWrapper setFolderOrder(folderId, opts)
+
+Sets the file order in the folder with ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/set-folder-order/).
 
 ### Parameters
 
@@ -1427,25 +1387,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## uploadFile
-
-> ObjectWrapper uploadFile(folderId, opts)
-
-Upload a file
-
-Uploads a file specified in the request to the selected folder by single file uploading or standart multipart/form-data method.   **Note**:  You can upload files in two different ways:   &lt;ol&gt;  &lt;li&gt;Using single file upload. You should set the Content-Type and Content-Disposition headers to specify a file name and content type, and send the file to the request body.&lt;/li&gt;  &lt;li&gt;Using standart multipart/form-data method.&lt;/li&gt;  &lt;/ol&gt;
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1467,12 +1413,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
-let folderId = 9846; // Number | The folder ID to upload a file.
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let folderId = 9846; // Number | The folder unique identifier.
 let opts = {
-  'uploadRequestDto': new DocspaceApiTypescript.UploadRequestDto() // UploadRequestDto | The request parameters for uploading a file.
+  'orderRequestDto': new DocspaceApiJavascript.OrderRequestDto() // OrderRequestDto | The folder order information.
 };
-apiInstance.uploadFile(folderId, opts, (error, data, response) => {
+apiInstance.setFolderOrder(folderId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1480,6 +1426,20 @@ apiInstance.uploadFile(folderId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## uploadFile
+
+> ObjectWrapper uploadFile(folderId, opts)
+
+Uploads a file specified in the request to the selected folder by single file uploading or standart multipart/form-data method.   **Note**:  You can upload files in two different ways:   &lt;ol&gt;  &lt;li&gt;Using single file upload. You should set the Content-Type and Content-Disposition headers to specify a file name and content type, and send the file to the request body.&lt;/li&gt;  &lt;li&gt;Using standart multipart/form-data method.&lt;/li&gt;  &lt;/ol&gt;
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/upload-file/).
 
 ### Parameters
 
@@ -1497,25 +1457,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## uploadFileToMy
-
-> ObjectWrapper uploadFileToMy(opts)
-
-Upload a file to the \&quot;My documents\&quot; section
-
-Uploads a file specified in the request to the \&quot;My documents\&quot; section by single file uploading or standart multipart/form-data method.   **Note**:  You can upload files in two different ways:   &lt;ol&gt;  &lt;li&gt;Using single file upload. You should set the Content-Type and Content-Disposition headers to specify a file name and content type, and send the file to the request body.&lt;/li&gt;  &lt;li&gt;Using standart multipart/form-data method.&lt;/li&gt;  &lt;/ol&gt;
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1537,11 +1483,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesFoldersApi();
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let folderId = 9846; // Number | The folder ID to upload a file.
 let opts = {
-  'inDto': new DocspaceApiTypescript.UploadRequestDto() // UploadRequestDto | The request parameters for uploading a file.
+  'uploadRequestDto': new DocspaceApiJavascript.UploadRequestDto() // UploadRequestDto | The request parameters for uploading a file.
 };
-apiInstance.uploadFileToMy(opts, (error, data, response) => {
+apiInstance.uploadFile(folderId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1549,6 +1496,20 @@ apiInstance.uploadFileToMy(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## uploadFileToMy
+
+> ObjectWrapper uploadFileToMy(opts)
+
+Uploads a file specified in the request to the \&quot;My documents\&quot; section by single file uploading or standart multipart/form-data method.   **Note**:  You can upload files in two different ways:   &lt;ol&gt;  &lt;li&gt;Using single file upload. You should set the Content-Type and Content-Disposition headers to specify a file name and content type, and send the file to the request body.&lt;/li&gt;  &lt;li&gt;Using standart multipart/form-data method.&lt;/li&gt;  &lt;/ol&gt;
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/upload-file-to-my/).
 
 ### Parameters
 
@@ -1564,6 +1525,45 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let opts = {
+  'inDto': new DocspaceApiJavascript.UploadRequestDto() // UploadRequestDto | The request parameters for uploading a file.
+};
+apiInstance.uploadFileToMy(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

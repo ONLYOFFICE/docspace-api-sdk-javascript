@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.Schedule();
+    instance = new DocspaceApiJavascript.Schedule();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,43 +62,43 @@
   describe('Schedule', function() {
     it('should create an instance of Schedule', function() {
       // uncomment below and update the code to test Schedule
-      //var instance = new DocspaceApiTypescript.Schedule();
-      //expect(instance).to.be.a(DocspaceApiTypescript.Schedule);
+      //var instance = new DocspaceApiJavascript.Schedule();
+      //expect(instance).to.be.a(DocspaceApiJavascript.Schedule);
     });
 
     it('should have the property storageType (base name: "storageType")', function() {
       // uncomment below and update the code to test the property storageType
-      //var instance = new DocspaceApiTypescript.Schedule();
+      //var instance = new DocspaceApiJavascript.Schedule();
       //expect(instance).to.be();
     });
 
     it('should have the property storageParams (base name: "storageParams")', function() {
       // uncomment below and update the code to test the property storageParams
-      //var instance = new DocspaceApiTypescript.Schedule();
+      //var instance = new DocspaceApiJavascript.Schedule();
       //expect(instance).to.be();
     });
 
     it('should have the property cronParams (base name: "cronParams")', function() {
       // uncomment below and update the code to test the property cronParams
-      //var instance = new DocspaceApiTypescript.Schedule();
+      //var instance = new DocspaceApiJavascript.Schedule();
       //expect(instance).to.be();
     });
 
     it('should have the property backupsStored (base name: "backupsStored")', function() {
       // uncomment below and update the code to test the property backupsStored
-      //var instance = new DocspaceApiTypescript.Schedule();
+      //var instance = new DocspaceApiJavascript.Schedule();
       //expect(instance).to.be();
     });
 
     it('should have the property lastBackupTime (base name: "lastBackupTime")', function() {
       // uncomment below and update the code to test the property lastBackupTime
-      //var instance = new DocspaceApiTypescript.Schedule();
+      //var instance = new DocspaceApiJavascript.Schedule();
       //expect(instance).to.be();
     });
 
     it('should have the property dump (base name: "dump")', function() {
       // uncomment below and update the code to test the property dump
-      //var instance = new DocspaceApiTypescript.Schedule();
+      //var instance = new DocspaceApiJavascript.Schedule();
       //expect(instance).to.be();
     });
 

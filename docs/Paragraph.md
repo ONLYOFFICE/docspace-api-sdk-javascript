@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.Paragraph
+# DocspaceApiJavascript.Paragraph
 
 ## Properties
 

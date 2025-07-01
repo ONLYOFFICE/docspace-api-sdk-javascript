@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.TenantQuotaFeatureDto
+# DocspaceApiJavascript.TenantQuotaFeatureDto
 
 ## Properties
 

@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.EmployeeActivationStatus
+# DocspaceApiJavascript.EmployeeActivationStatus
+
+
 
 ## Enum
 

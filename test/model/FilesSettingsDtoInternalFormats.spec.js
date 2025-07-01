@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.FilesSettingsDtoInternalFormats();
+    instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,61 +62,61 @@
   describe('FilesSettingsDtoInternalFormats', function() {
     it('should create an instance of FilesSettingsDtoInternalFormats', function() {
       // uncomment below and update the code to test FilesSettingsDtoInternalFormats
-      //var instance = new DocspaceApiTypescript.FilesSettingsDtoInternalFormats();
-      //expect(instance).to.be.a(DocspaceApiTypescript.FilesSettingsDtoInternalFormats);
+      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
+      //expect(instance).to.be.a(DocspaceApiJavascript.FilesSettingsDtoInternalFormats);
     });
 
     it('should have the property unknown (base name: "Unknown")', function() {
       // uncomment below and update the code to test the property unknown
-      //var instance = new DocspaceApiTypescript.FilesSettingsDtoInternalFormats();
+      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property archive (base name: "Archive")', function() {
       // uncomment below and update the code to test the property archive
-      //var instance = new DocspaceApiTypescript.FilesSettingsDtoInternalFormats();
+      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property video (base name: "Video")', function() {
       // uncomment below and update the code to test the property video
-      //var instance = new DocspaceApiTypescript.FilesSettingsDtoInternalFormats();
+      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property audio (base name: "Audio")', function() {
       // uncomment below and update the code to test the property audio
-      //var instance = new DocspaceApiTypescript.FilesSettingsDtoInternalFormats();
+      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property image (base name: "Image")', function() {
       // uncomment below and update the code to test the property image
-      //var instance = new DocspaceApiTypescript.FilesSettingsDtoInternalFormats();
+      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property spreadsheet (base name: "Spreadsheet")', function() {
       // uncomment below and update the code to test the property spreadsheet
-      //var instance = new DocspaceApiTypescript.FilesSettingsDtoInternalFormats();
+      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property presentation (base name: "Presentation")', function() {
       // uncomment below and update the code to test the property presentation
-      //var instance = new DocspaceApiTypescript.FilesSettingsDtoInternalFormats();
+      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property document (base name: "Document")', function() {
       // uncomment below and update the code to test the property document
-      //var instance = new DocspaceApiTypescript.FilesSettingsDtoInternalFormats();
+      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property pdf (base name: "Pdf")', function() {
       // uncomment below and update the code to test the property pdf
-      //var instance = new DocspaceApiTypescript.FilesSettingsDtoInternalFormats();
+      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.WhiteLabelItemDto();
+    instance = new DocspaceApiJavascript.WhiteLabelItemDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('WhiteLabelItemDto', function() {
     it('should create an instance of WhiteLabelItemDto', function() {
       // uncomment below and update the code to test WhiteLabelItemDto
-      //var instance = new DocspaceApiTypescript.WhiteLabelItemDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.WhiteLabelItemDto);
+      //var instance = new DocspaceApiJavascript.WhiteLabelItemDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.WhiteLabelItemDto);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiTypescript.WhiteLabelItemDto();
+      //var instance = new DocspaceApiJavascript.WhiteLabelItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property size (base name: "size")', function() {
       // uncomment below and update the code to test the property size
-      //var instance = new DocspaceApiTypescript.WhiteLabelItemDto();
+      //var instance = new DocspaceApiJavascript.WhiteLabelItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property path (base name: "path")', function() {
       // uncomment below and update the code to test the property path
-      //var instance = new DocspaceApiTypescript.WhiteLabelItemDto();
+      //var instance = new DocspaceApiJavascript.WhiteLabelItemDto();
       //expect(instance).to.be();
     });
 

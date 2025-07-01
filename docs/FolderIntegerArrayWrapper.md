@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FolderIntegerArrayWrapper
+# DocspaceApiJavascript.FolderIntegerArrayWrapper
 
 ## Properties
 

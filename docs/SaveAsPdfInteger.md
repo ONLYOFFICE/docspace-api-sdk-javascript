@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SaveAsPdfInteger
+# DocspaceApiJavascript.SaveAsPdfInteger
 
 ## Properties
 

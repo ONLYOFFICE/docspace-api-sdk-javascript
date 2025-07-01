@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.RoomInvitationRequest();
+    instance = new DocspaceApiJavascript.RoomInvitationRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('RoomInvitationRequest', function() {
     it('should create an instance of RoomInvitationRequest', function() {
       // uncomment below and update the code to test RoomInvitationRequest
-      //var instance = new DocspaceApiTypescript.RoomInvitationRequest();
-      //expect(instance).to.be.a(DocspaceApiTypescript.RoomInvitationRequest);
+      //var instance = new DocspaceApiJavascript.RoomInvitationRequest();
+      //expect(instance).to.be.a(DocspaceApiJavascript.RoomInvitationRequest);
     });
 
     it('should have the property invitations (base name: "invitations")', function() {
       // uncomment below and update the code to test the property invitations
-      //var instance = new DocspaceApiTypescript.RoomInvitationRequest();
+      //var instance = new DocspaceApiJavascript.RoomInvitationRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property notify (base name: "notify")', function() {
       // uncomment below and update the code to test the property notify
-      //var instance = new DocspaceApiTypescript.RoomInvitationRequest();
+      //var instance = new DocspaceApiJavascript.RoomInvitationRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new DocspaceApiTypescript.RoomInvitationRequest();
+      //var instance = new DocspaceApiJavascript.RoomInvitationRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property culture (base name: "culture")', function() {
       // uncomment below and update the code to test the property culture
-      //var instance = new DocspaceApiTypescript.RoomInvitationRequest();
+      //var instance = new DocspaceApiJavascript.RoomInvitationRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property force (base name: "force")', function() {
       // uncomment below and update the code to test the property force
-      //var instance = new DocspaceApiTypescript.RoomInvitationRequest();
+      //var instance = new DocspaceApiJavascript.RoomInvitationRequest();
       //expect(instance).to.be();
     });
 

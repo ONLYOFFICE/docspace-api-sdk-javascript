@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.LoginSettingsWrapper
+# DocspaceApiJavascript.LoginSettingsWrapper
 
 ## Properties
 

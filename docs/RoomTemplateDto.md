@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.RoomTemplateDto
+# DocspaceApiJavascript.RoomTemplateDto
 
 ## Properties
 

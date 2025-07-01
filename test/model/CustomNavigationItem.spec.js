@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CustomNavigationItem();
+    instance = new DocspaceApiJavascript.CustomNavigationItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,49 +62,49 @@
   describe('CustomNavigationItem', function() {
     it('should create an instance of CustomNavigationItem', function() {
       // uncomment below and update the code to test CustomNavigationItem
-      //var instance = new DocspaceApiTypescript.CustomNavigationItem();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CustomNavigationItem);
+      //var instance = new DocspaceApiJavascript.CustomNavigationItem();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CustomNavigationItem);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.CustomNavigationItem();
+      //var instance = new DocspaceApiJavascript.CustomNavigationItem();
       //expect(instance).to.be();
     });
 
     it('should have the property label (base name: "label")', function() {
       // uncomment below and update the code to test the property label
-      //var instance = new DocspaceApiTypescript.CustomNavigationItem();
+      //var instance = new DocspaceApiJavascript.CustomNavigationItem();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiTypescript.CustomNavigationItem();
+      //var instance = new DocspaceApiJavascript.CustomNavigationItem();
       //expect(instance).to.be();
     });
 
     it('should have the property bigImg (base name: "bigImg")', function() {
       // uncomment below and update the code to test the property bigImg
-      //var instance = new DocspaceApiTypescript.CustomNavigationItem();
+      //var instance = new DocspaceApiJavascript.CustomNavigationItem();
       //expect(instance).to.be();
     });
 
     it('should have the property smallImg (base name: "smallImg")', function() {
       // uncomment below and update the code to test the property smallImg
-      //var instance = new DocspaceApiTypescript.CustomNavigationItem();
+      //var instance = new DocspaceApiJavascript.CustomNavigationItem();
       //expect(instance).to.be();
     });
 
     it('should have the property showInMenu (base name: "showInMenu")', function() {
       // uncomment below and update the code to test the property showInMenu
-      //var instance = new DocspaceApiTypescript.CustomNavigationItem();
+      //var instance = new DocspaceApiJavascript.CustomNavigationItem();
       //expect(instance).to.be();
     });
 
     it('should have the property showOnHomePage (base name: "showOnHomePage")', function() {
       // uncomment below and update the code to test the property showOnHomePage
-      //var instance = new DocspaceApiTypescript.CustomNavigationItem();
+      //var instance = new DocspaceApiJavascript.CustomNavigationItem();
       //expect(instance).to.be();
     });
 

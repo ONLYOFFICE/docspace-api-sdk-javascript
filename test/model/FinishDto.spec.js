@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.FinishDto();
+    instance = new DocspaceApiJavascript.FinishDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('FinishDto', function() {
     it('should create an instance of FinishDto', function() {
       // uncomment below and update the code to test FinishDto
-      //var instance = new DocspaceApiTypescript.FinishDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.FinishDto);
+      //var instance = new DocspaceApiJavascript.FinishDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.FinishDto);
     });
 
     it('should have the property isSendWelcomeEmail (base name: "isSendWelcomeEmail")', function() {
       // uncomment below and update the code to test the property isSendWelcomeEmail
-      //var instance = new DocspaceApiTypescript.FinishDto();
+      //var instance = new DocspaceApiJavascript.FinishDto();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.GroupRoomsApi
+# DocspaceApiJavascript.GroupRoomsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -12,15 +12,34 @@ Method | HTTP request | Description
 
 > GroupArrayWrapper getGroupsWithShared(id, opts)
 
-Get groups with sharing settings
-
 Returns groups with their sharing settings.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-groups-with-shared/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Number**| The group ID. | 
+ **excludeShared** | **Boolean**| Specifies whether to exclude the group sharing settings from the response. | [optional] 
+ **count** | **Number**| The number of groups to retrieve in the request. | [optional] 
+ **startIndex** | **Number**| The starting index from which to begin retrieving groups with their sharing settings. | [optional] 
+ **filterValue** | **String**| The text used as a filter for retrieving groups with their sharing settings. | [optional] 
+
+### Return type
+
+[**GroupArrayWrapper**](GroupArrayWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -42,7 +61,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.GroupRoomsApi();
+let apiInstance = new DocspaceApiJavascript.GroupRoomsApi();
 let id = 9846; // Number | The group ID.
 let opts = {
   'excludeShared': true, // Boolean | Specifies whether to exclude the group sharing settings from the response.
@@ -58,25 +77,6 @@ apiInstance.getGroupsWithShared(id, opts, (error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Number**| The group ID. | 
- **excludeShared** | **Boolean**| Specifies whether to exclude the group sharing settings from the response. | [optional] 
- **count** | **Number**| The number of groups to retrieve in the request. | [optional] 
- **startIndex** | **Number**| The starting index from which to begin retrieving groups with their sharing settings. | [optional] 
- **filterValue** | **String**| The text used as a filter for retrieving groups with their sharing settings. | [optional] 
-
-### Return type
-
-[**GroupArrayWrapper**](GroupArrayWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 

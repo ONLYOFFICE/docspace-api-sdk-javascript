@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.WizardSettings();
+    instance = new DocspaceApiJavascript.WizardSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('WizardSettings', function() {
     it('should create an instance of WizardSettings', function() {
       // uncomment below and update the code to test WizardSettings
-      //var instance = new DocspaceApiTypescript.WizardSettings();
-      //expect(instance).to.be.a(DocspaceApiTypescript.WizardSettings);
+      //var instance = new DocspaceApiJavascript.WizardSettings();
+      //expect(instance).to.be.a(DocspaceApiJavascript.WizardSettings);
     });
 
     it('should have the property completed (base name: "completed")', function() {
       // uncomment below and update the code to test the property completed
-      //var instance = new DocspaceApiTypescript.WizardSettings();
+      //var instance = new DocspaceApiJavascript.WizardSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModified (base name: "lastModified")', function() {
       // uncomment below and update the code to test the property lastModified
-      //var instance = new DocspaceApiTypescript.WizardSettings();
+      //var instance = new DocspaceApiJavascript.WizardSettings();
       //expect(instance).to.be();
     });
 

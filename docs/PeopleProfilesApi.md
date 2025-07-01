@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.PeopleProfilesApi
+# DocspaceApiJavascript.PeopleProfilesApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -25,48 +25,9 @@ Method | HTTP request | Description
 
 > EmployeeFullWrapper addMember(opts)
 
-Add a user
-
 Adds a new portal user with the first name, last name, email address, and several optional parameters specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.PeopleProfilesApi();
-let opts = {
-  'memberRequestDto': new DocspaceApiTypescript.MemberRequestDto() // MemberRequestDto | 
-};
-apiInstance.addMember(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/add-member/).
 
 ### Parameters
 
@@ -83,25 +44,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## deleteMember
-
-> EmployeeFullWrapper deleteMember(userid)
-
-Delete a user
-
-Deletes a user with the ID specified in the request from the portal.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -123,9 +70,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeopleProfilesApi();
-let userid = "9846"; // String | The user ID.
-apiInstance.deleteMember(userid, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let opts = {
+  'memberRequestDto': new DocspaceApiJavascript.MemberRequestDto() // MemberRequestDto | 
+};
+apiInstance.addMember(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -133,6 +82,20 @@ apiInstance.deleteMember(userid, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## deleteMember
+
+> EmployeeFullWrapper deleteMember(userid)
+
+Deletes a user with the ID specified in the request from the portal.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-member/).
 
 ### Parameters
 
@@ -149,25 +112,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## deleteProfile
-
-> EmployeeFullWrapper deleteProfile()
-
-Delete my profile
-
-Deletes the current user profile.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -189,8 +138,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeopleProfilesApi();
-apiInstance.deleteProfile((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let userid = "9846"; // String | The user ID.
+apiInstance.deleteMember(userid, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -198,6 +148,20 @@ apiInstance.deleteProfile((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## deleteProfile
+
+> EmployeeFullWrapper deleteProfile()
+
+Deletes the current user profile.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-profile/).
 
 ### Parameters
 
@@ -211,25 +175,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getAllProfiles
-
-> EmployeeFullArrayWrapper getAllProfiles(opts)
-
-Get profiles
-
-Returns a list of profiles for all the portal users.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -251,17 +201,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeopleProfilesApi();
-let opts = {
-  'count': 1234, // Number | The maximum number of items to be retrieved in the response.
-  'startIndex': 1234, // Number | The zero-based index of the first item to be retrieved in a filtered result set.
-  'filterBy': "some text", // String | Specifies the filter criteria for user-related queries.
-  'sortBy': "some text", // String | Specifies the property or field name by which the results should be sorted.
-  'sortOrder': new DocspaceApiTypescript.SortOrder(), // SortOrder | The order in which the results are sorted.
-  'filterSeparator': "some text", // String | The character or string used to separate multiple filter values in a filtering query.
-  'filterValue': "some text" // String | The text value used as an additional filter criterion for profiles retrieval.
-};
-apiInstance.getAllProfiles(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+apiInstance.deleteProfile((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -269,6 +210,20 @@ apiInstance.getAllProfiles(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getAllProfiles
+
+> EmployeeFullArrayWrapper getAllProfiles(opts)
+
+Returns a list of profiles for all the portal users.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-all-profiles/).
 
 ### Parameters
 
@@ -291,25 +246,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getClaims
-
-> ObjectWrapper getClaims()
-
-Returns the user claims.
-
-Returns the user claims.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -331,8 +272,17 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeopleProfilesApi();
-apiInstance.getClaims((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let opts = {
+  'count': 1234, // Number | The maximum number of items to be retrieved in the response.
+  'startIndex': 1234, // Number | The zero-based index of the first item to be retrieved in a filtered result set.
+  'filterBy': "some text", // String | Specifies the filter criteria for user-related queries.
+  'sortBy': "some text", // String | Specifies the property or field name by which the results should be sorted.
+  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'filterSeparator': "some text", // String | The character or string used to separate multiple filter values in a filtering query.
+  'filterValue': "some text" // String | The text value used as an additional filter criterion for profiles retrieval.
+};
+apiInstance.getAllProfiles(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -340,6 +290,20 @@ apiInstance.getClaims((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getClaims
+
+> ObjectWrapper getClaims()
+
+Returns the user claims.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-claims/).
 
 ### Parameters
 
@@ -353,25 +317,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getProfileByEmail
-
-> EmployeeFullWrapper getProfileByEmail(opts)
-
-Get a profile by user email
-
-Returns the detailed information about a profile of the user with the email specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -393,12 +343,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeopleProfilesApi();
-let opts = {
-  'email': "Sydney_Roberts4@hotmail.com", // String | The user email address.
-  'culture': "some text" // String | Culture
-};
-apiInstance.getProfileByEmail(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+apiInstance.getClaims((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -406,6 +352,20 @@ apiInstance.getProfileByEmail(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getProfileByEmail
+
+> EmployeeFullWrapper getProfileByEmail(opts)
+
+Returns the detailed information about a profile of the user with the email specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-profile-by-email/).
 
 ### Parameters
 
@@ -423,25 +383,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getProfileByUserId
-
-> EmployeeFullWrapper getProfileByUserId(userid)
-
-Get a profile by user name
-
-Returns the detailed information about a profile of the user with the name specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -463,9 +409,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeopleProfilesApi();
-let userid = "9846"; // String | The user ID.
-apiInstance.getProfileByUserId(userid, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let opts = {
+  'email': "Sydney_Roberts4@hotmail.com", // String | The user email address.
+  'culture': "some text" // String | Culture
+};
+apiInstance.getProfileByEmail(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -473,6 +422,20 @@ apiInstance.getProfileByUserId(userid, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getProfileByUserId
+
+> EmployeeFullWrapper getProfileByUserId(userid)
+
+Returns the detailed information about a profile of the user with the name specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-profile-by-user-id/).
 
 ### Parameters
 
@@ -489,25 +452,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getSelfProfile
-
-> EmployeeFullWrapper getSelfProfile()
-
-Get my profile
-
-Returns the detailed information about the current user profile.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -529,8 +478,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeopleProfilesApi();
-apiInstance.getSelfProfile((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let userid = "9846"; // String | The user ID.
+apiInstance.getProfileByUserId(userid, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -538,6 +488,20 @@ apiInstance.getSelfProfile((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getSelfProfile
+
+> EmployeeFullWrapper getSelfProfile()
+
+Returns the detailed information about the current user profile.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-self-profile/).
 
 ### Parameters
 
@@ -551,25 +515,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## inviteUsers
-
-> EmployeeArrayWrapper inviteUsers(opts)
-
-Invite users
-
-Invites users specified in the request to the current portal.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -591,11 +541,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeopleProfilesApi();
-let opts = {
-  'inviteUsersRequestDto': new DocspaceApiTypescript.InviteUsersRequestDto() // InviteUsersRequestDto | 
-};
-apiInstance.inviteUsers(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+apiInstance.getSelfProfile((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -603,6 +550,20 @@ apiInstance.inviteUsers(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## inviteUsers
+
+> EmployeeArrayWrapper inviteUsers(opts)
+
+Invites users specified in the request to the current portal.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/invite-users/).
 
 ### Parameters
 
@@ -619,25 +580,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## removeUsers
-
-> EmployeeFullArrayWrapper removeUsers(opts)
-
-Delete users
-
-Deletes a list of the users with the IDs specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -659,11 +606,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeopleProfilesApi();
+let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
 let opts = {
-  'updateMembersRequestDto': new DocspaceApiTypescript.UpdateMembersRequestDto() // UpdateMembersRequestDto | 
+  'inviteUsersRequestDto': new DocspaceApiJavascript.InviteUsersRequestDto() // InviteUsersRequestDto | 
 };
-apiInstance.removeUsers(opts, (error, data, response) => {
+apiInstance.inviteUsers(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -671,6 +618,20 @@ apiInstance.removeUsers(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## removeUsers
+
+> EmployeeFullArrayWrapper removeUsers(opts)
+
+Deletes a list of the users with the IDs specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/remove-users/).
 
 ### Parameters
 
@@ -686,6 +647,45 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let opts = {
+  'updateMembersRequestDto': new DocspaceApiJavascript.UpdateMembersRequestDto() // UpdateMembersRequestDto | 
+};
+apiInstance.removeUsers(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 
@@ -697,48 +697,9 @@ Name | Type | Description  | Notes
 
 > EmployeeFullArrayWrapper resendUserInvites(opts)
 
-Resend activation emails
-
 Resends emails to the users who have not activated their emails.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.PeopleProfilesApi();
-let opts = {
-  'updateMembersRequestDto': new DocspaceApiTypescript.UpdateMembersRequestDto() // UpdateMembersRequestDto | 
-};
-apiInstance.resendUserInvites(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/resend-user-invites/).
 
 ### Parameters
 
@@ -755,25 +716,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## sendEmailChangeInstructions
-
-> StringWrapper sendEmailChangeInstructions(opts)
-
-Send instructions to change email
-
-Sends a message to the user email with the instructions to change the email address connected to the portal.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -795,11 +742,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeopleProfilesApi();
+let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
 let opts = {
-  'updateMemberRequestDto': new DocspaceApiTypescript.UpdateMemberRequestDto() // UpdateMemberRequestDto | 
+  'updateMembersRequestDto': new DocspaceApiJavascript.UpdateMembersRequestDto() // UpdateMembersRequestDto | 
 };
-apiInstance.sendEmailChangeInstructions(opts, (error, data, response) => {
+apiInstance.resendUserInvites(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -807,6 +754,20 @@ apiInstance.sendEmailChangeInstructions(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## sendEmailChangeInstructions
+
+> StringWrapper sendEmailChangeInstructions(opts)
+
+Sends a message to the user email with the instructions to change the email address connected to the portal.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/send-email-change-instructions/).
 
 ### Parameters
 
@@ -823,25 +784,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## updateMember
-
-> EmployeeFullWrapper updateMember(userid, opts)
-
-Update a user
-
-Updates the data for the selected portal user with the first name, last name, email address, and/or optional parameters specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -863,12 +810,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeopleProfilesApi();
-let userid = "9846"; // String | The user ID.
+let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
 let opts = {
-  'updateMemberRequestDto': new DocspaceApiTypescript.UpdateMemberRequestDto() // UpdateMemberRequestDto | The request parameters for updating the user information.
+  'updateMemberRequestDto': new DocspaceApiJavascript.UpdateMemberRequestDto() // UpdateMemberRequestDto | 
 };
-apiInstance.updateMember(userid, opts, (error, data, response) => {
+apiInstance.sendEmailChangeInstructions(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -876,6 +822,20 @@ apiInstance.updateMember(userid, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## updateMember
+
+> EmployeeFullWrapper updateMember(userid, opts)
+
+Updates the data for the selected portal user with the first name, last name, email address, and/or optional parameters specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-member/).
 
 ### Parameters
 
@@ -893,25 +853,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## updateMemberCulture
-
-> EmployeeFullWrapper updateMemberCulture(userid, opts)
-
-Update a user culture code
-
-Updates the user culture code with the parameters specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -933,12 +879,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeopleProfilesApi();
+let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
 let userid = "9846"; // String | The user ID.
 let opts = {
-  'culture': new DocspaceApiTypescript.Culture() // Culture | The culture code parameters.
+  'updateMemberRequestDto': new DocspaceApiJavascript.UpdateMemberRequestDto() // UpdateMemberRequestDto | The request parameters for updating the user information.
 };
-apiInstance.updateMemberCulture(userid, opts, (error, data, response) => {
+apiInstance.updateMember(userid, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -946,6 +892,20 @@ apiInstance.updateMemberCulture(userid, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## updateMemberCulture
+
+> EmployeeFullWrapper updateMemberCulture(userid, opts)
+
+Updates the user culture code with the parameters specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-member-culture/).
 
 ### Parameters
 
@@ -962,6 +922,46 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let userid = "9846"; // String | The user ID.
+let opts = {
+  'culture': new DocspaceApiJavascript.Culture() // Culture | The culture code parameters.
+};
+apiInstance.updateMemberCulture(userid, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

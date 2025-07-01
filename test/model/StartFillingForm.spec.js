@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.StartFillingForm();
+    instance = new DocspaceApiJavascript.StartFillingForm();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('StartFillingForm', function() {
     it('should create an instance of StartFillingForm', function() {
       // uncomment below and update the code to test StartFillingForm
-      //var instance = new DocspaceApiTypescript.StartFillingForm();
-      //expect(instance).to.be.a(DocspaceApiTypescript.StartFillingForm);
+      //var instance = new DocspaceApiJavascript.StartFillingForm();
+      //expect(instance).to.be.a(DocspaceApiJavascript.StartFillingForm);
     });
 
     it('should have the property text (base name: "text")', function() {
       // uncomment below and update the code to test the property text
-      //var instance = new DocspaceApiTypescript.StartFillingForm();
+      //var instance = new DocspaceApiJavascript.StartFillingForm();
       //expect(instance).to.be();
     });
 

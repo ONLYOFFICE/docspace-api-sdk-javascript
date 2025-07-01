@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.EditHistoryDataWrapper
+# DocspaceApiJavascript.EditHistoryDataWrapper
 
 ## Properties
 

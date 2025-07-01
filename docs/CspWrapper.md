@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.CspWrapper
+# DocspaceApiJavascript.CspWrapper
 
 ## Properties
 

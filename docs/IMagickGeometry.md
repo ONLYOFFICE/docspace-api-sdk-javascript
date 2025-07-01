@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.IMagickGeometry
+# DocspaceApiJavascript.IMagickGeometry
 
 ## Properties
 

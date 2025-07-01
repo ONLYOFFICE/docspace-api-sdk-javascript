@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CustomColorThemesSettingsRequestsDto();
+    instance = new DocspaceApiJavascript.CustomColorThemesSettingsRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('CustomColorThemesSettingsRequestsDto', function() {
     it('should create an instance of CustomColorThemesSettingsRequestsDto', function() {
       // uncomment below and update the code to test CustomColorThemesSettingsRequestsDto
-      //var instance = new DocspaceApiTypescript.CustomColorThemesSettingsRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CustomColorThemesSettingsRequestsDto);
+      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsRequestsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CustomColorThemesSettingsRequestsDto);
     });
 
     it('should have the property theme (base name: "theme")', function() {
       // uncomment below and update the code to test the property theme
-      //var instance = new DocspaceApiTypescript.CustomColorThemesSettingsRequestsDto();
+      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property selected (base name: "selected")', function() {
       // uncomment below and update the code to test the property selected
-      //var instance = new DocspaceApiTypescript.CustomColorThemesSettingsRequestsDto();
+      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsRequestsDto();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.BackupDto
+# DocspaceApiJavascript.BackupDto
 
 ## Properties
 

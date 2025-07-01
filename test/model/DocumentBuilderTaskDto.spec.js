@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.DocumentBuilderTaskDto();
+    instance = new DocspaceApiJavascript.DocumentBuilderTaskDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,55 +62,55 @@
   describe('DocumentBuilderTaskDto', function() {
     it('should create an instance of DocumentBuilderTaskDto', function() {
       // uncomment below and update the code to test DocumentBuilderTaskDto
-      //var instance = new DocspaceApiTypescript.DocumentBuilderTaskDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.DocumentBuilderTaskDto);
+      //var instance = new DocspaceApiJavascript.DocumentBuilderTaskDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.DocumentBuilderTaskDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.DocumentBuilderTaskDto();
+      //var instance = new DocspaceApiJavascript.DocumentBuilderTaskDto();
       //expect(instance).to.be();
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instance = new DocspaceApiTypescript.DocumentBuilderTaskDto();
+      //var instance = new DocspaceApiJavascript.DocumentBuilderTaskDto();
       //expect(instance).to.be();
     });
 
     it('should have the property percentage (base name: "percentage")', function() {
       // uncomment below and update the code to test the property percentage
-      //var instance = new DocspaceApiTypescript.DocumentBuilderTaskDto();
+      //var instance = new DocspaceApiJavascript.DocumentBuilderTaskDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isCompleted (base name: "isCompleted")', function() {
       // uncomment below and update the code to test the property isCompleted
-      //var instance = new DocspaceApiTypescript.DocumentBuilderTaskDto();
+      //var instance = new DocspaceApiJavascript.DocumentBuilderTaskDto();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new DocspaceApiTypescript.DocumentBuilderTaskDto();
+      //var instance = new DocspaceApiJavascript.DocumentBuilderTaskDto();
       //expect(instance).to.be();
     });
 
     it('should have the property resultFileId (base name: "resultFileId")', function() {
       // uncomment below and update the code to test the property resultFileId
-      //var instance = new DocspaceApiTypescript.DocumentBuilderTaskDto();
+      //var instance = new DocspaceApiJavascript.DocumentBuilderTaskDto();
       //expect(instance).to.be();
     });
 
     it('should have the property resultFileName (base name: "resultFileName")', function() {
       // uncomment below and update the code to test the property resultFileName
-      //var instance = new DocspaceApiTypescript.DocumentBuilderTaskDto();
+      //var instance = new DocspaceApiJavascript.DocumentBuilderTaskDto();
       //expect(instance).to.be();
     });
 
     it('should have the property resultFileUrl (base name: "resultFileUrl")', function() {
       // uncomment below and update the code to test the property resultFileUrl
-      //var instance = new DocspaceApiTypescript.DocumentBuilderTaskDto();
+      //var instance = new DocspaceApiJavascript.DocumentBuilderTaskDto();
       //expect(instance).to.be();
     });
 

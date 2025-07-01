@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.NotificationType
+# DocspaceApiJavascript.NotificationType
+
+
 
 ## Enum
 

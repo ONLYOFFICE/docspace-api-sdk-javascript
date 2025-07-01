@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.PluginsDto
+# DocspaceApiJavascript.PluginsDto
 
 ## Properties
 

@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.FileShare
+# DocspaceApiJavascript.FileShare
+
+
 
 ## Enum
 

@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.BackupStorageType
+# DocspaceApiJavascript.BackupStorageType
+
+
 
 ## Enum
 

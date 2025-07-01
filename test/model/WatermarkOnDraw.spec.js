@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.WatermarkOnDraw();
+    instance = new DocspaceApiJavascript.WatermarkOnDraw();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,49 +62,49 @@
   describe('WatermarkOnDraw', function() {
     it('should create an instance of WatermarkOnDraw', function() {
       // uncomment below and update the code to test WatermarkOnDraw
-      //var instance = new DocspaceApiTypescript.WatermarkOnDraw();
-      //expect(instance).to.be.a(DocspaceApiTypescript.WatermarkOnDraw);
+      //var instance = new DocspaceApiJavascript.WatermarkOnDraw();
+      //expect(instance).to.be.a(DocspaceApiJavascript.WatermarkOnDraw);
     });
 
     it('should have the property width (base name: "width")', function() {
       // uncomment below and update the code to test the property width
-      //var instance = new DocspaceApiTypescript.WatermarkOnDraw();
+      //var instance = new DocspaceApiJavascript.WatermarkOnDraw();
       //expect(instance).to.be();
     });
 
     it('should have the property height (base name: "height")', function() {
       // uncomment below and update the code to test the property height
-      //var instance = new DocspaceApiTypescript.WatermarkOnDraw();
+      //var instance = new DocspaceApiJavascript.WatermarkOnDraw();
       //expect(instance).to.be();
     });
 
     it('should have the property margins (base name: "margins")', function() {
       // uncomment below and update the code to test the property margins
-      //var instance = new DocspaceApiTypescript.WatermarkOnDraw();
+      //var instance = new DocspaceApiJavascript.WatermarkOnDraw();
       //expect(instance).to.be();
     });
 
     it('should have the property fill (base name: "fill")', function() {
       // uncomment below and update the code to test the property fill
-      //var instance = new DocspaceApiTypescript.WatermarkOnDraw();
+      //var instance = new DocspaceApiJavascript.WatermarkOnDraw();
       //expect(instance).to.be();
     });
 
     it('should have the property rotate (base name: "rotate")', function() {
       // uncomment below and update the code to test the property rotate
-      //var instance = new DocspaceApiTypescript.WatermarkOnDraw();
+      //var instance = new DocspaceApiJavascript.WatermarkOnDraw();
       //expect(instance).to.be();
     });
 
     it('should have the property transparent (base name: "transparent")', function() {
       // uncomment below and update the code to test the property transparent
-      //var instance = new DocspaceApiTypescript.WatermarkOnDraw();
+      //var instance = new DocspaceApiJavascript.WatermarkOnDraw();
       //expect(instance).to.be();
     });
 
     it('should have the property paragraphs (base name: "paragraphs")', function() {
       // uncomment below and update the code to test the property paragraphs
-      //var instance = new DocspaceApiTypescript.WatermarkOnDraw();
+      //var instance = new DocspaceApiJavascript.WatermarkOnDraw();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ScopeResponse
+# DocspaceApiJavascript.ScopeResponse
 
 ## Properties
 

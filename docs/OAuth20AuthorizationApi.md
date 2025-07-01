@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.OAuth20AuthorizationApi
+# DocspaceApiJavascript.OAuth20AuthorizationApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -14,34 +14,9 @@ Method | HTTP request | Description
 
 > authorizeOAuth(responseType, clientId, redirectUri, scope)
 
-OAuth2 authorization endpoint
-
 Initiates the OAuth2 authorization flow.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-
-let apiInstance = new DocspaceApiTypescript.OAuth20AuthorizationApi();
-let responseType = "code"; // String | The OAuth 2.0 response type, must be 'code' for authorization code flow.
-let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier issued to the client during registration.
-let redirectUri = "https://example.com"; // String | The URL to redirect to after authorization is complete.
-let scope = "files:read"; // String | The space-separated list of requested scope permissions.
-apiInstance.authorizeOAuth(responseType, clientId, redirectUri, scope, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully.');
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/authorize-oauth/).
 
 ### Parameters
 
@@ -61,6 +36,31 @@ null (empty response body)
 
 [asc_auth_key](../README.md#asc_auth_key)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+
+let apiInstance = new DocspaceApiJavascript.OAuth20AuthorizationApi();
+let responseType = "code"; // String | The OAuth 2.0 response type, must be 'code' for authorization code flow.
+let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier issued to the client during registration.
+let redirectUri = "https://example.com"; // String | The URL to redirect to after authorization is complete.
+let scope = "files:read"; // String | The space-separated list of requested scope permissions.
+apiInstance.authorizeOAuth(responseType, clientId, redirectUri, scope, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully.');
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -71,31 +71,9 @@ null (empty response body)
 
 > ExchangeToken200Response exchangeToken(opts)
 
-OAuth2 token endpoint
-
 Exchanges an authorization code specified in the request for the access token.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.OAuth20AuthorizationApi();
-let opts = {
-  'grantType': "grantType_example", // String | The OAuth2 grant type, must be 'authorization_code' for the authorization code flow.
-  'code': "code_example", // String | A temporary authorization code that is sent to the client to be exchanged for a token.
-  'redirectUri': "redirectUri_example", // String | The URL where the user will be redirected after successful or unsuccessful authentication.
-  'clientId': "clientId_example", // String | The client identifier issued to the client during registration.
-  'clientSecret': "clientSecret_example" // String | The client secret issued to the client during registration.
-};
-apiInstance.exchangeToken(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/exchange-token/).
 
 ### Parameters
 
@@ -116,6 +94,28 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.OAuth20AuthorizationApi();
+let opts = {
+  'grantType': "grantType_example", // String | The OAuth2 grant type, must be 'authorization_code' for the authorization code flow.
+  'code': "code_example", // String | A temporary authorization code that is sent to the client to be exchanged for a token.
+  'redirectUri': "redirectUri_example", // String | The URL where the user will be redirected after successful or unsuccessful authentication.
+  'clientId': "clientId_example", // String | The client identifier issued to the client during registration.
+  'clientSecret': "clientSecret_example" // String | The client secret issued to the client during registration.
+};
+apiInstance.exchangeToken(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: application/x-www-form-urlencoded
@@ -126,35 +126,9 @@ No authorization required
 
 > submitConsent(opts)
 
-OAuth2 consent endpoint
-
 Sends a consent request with the specified parameters.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-
-let apiInstance = new DocspaceApiTypescript.OAuth20AuthorizationApi();
-let opts = {
-  'clientId': "clientId_example", // String | The client identifier issued to the client during registration.
-  'state': "state_example", // String | The random string used to solve the CSRF vulnerability problem.
-  'scope': "scope_example" // String | The space-separated list of requested scope permissions.
-};
-apiInstance.submitConsent(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully.');
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/submit-consent/).
 
 ### Parameters
 
@@ -172,6 +146,32 @@ null (empty response body)
 ### Authorization
 
 [asc_auth_key](../README.md#asc_auth_key)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+
+let apiInstance = new DocspaceApiJavascript.OAuth20AuthorizationApi();
+let opts = {
+  'clientId': "clientId_example", // String | The client identifier issued to the client during registration.
+  'state': "state_example", // String | The random string used to solve the CSRF vulnerability problem.
+  'scope': "scope_example" // String | The space-separated list of requested scope permissions.
+};
+apiInstance.submitConsent(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully.');
+  }
+});
+```
 
 ### HTTP request headers
 

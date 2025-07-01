@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.Report();
+    instance = new DocspaceApiJavascript.Report();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,43 +62,43 @@
   describe('Report', function() {
     it('should create an instance of Report', function() {
       // uncomment below and update the code to test Report
-      //var instance = new DocspaceApiTypescript.Report();
-      //expect(instance).to.be.a(DocspaceApiTypescript.Report);
+      //var instance = new DocspaceApiJavascript.Report();
+      //expect(instance).to.be.a(DocspaceApiJavascript.Report);
     });
 
     it('should have the property collection (base name: "collection")', function() {
       // uncomment below and update the code to test the property collection
-      //var instance = new DocspaceApiTypescript.Report();
+      //var instance = new DocspaceApiJavascript.Report();
       //expect(instance).to.be();
     });
 
     it('should have the property offset (base name: "offset")', function() {
       // uncomment below and update the code to test the property offset
-      //var instance = new DocspaceApiTypescript.Report();
+      //var instance = new DocspaceApiJavascript.Report();
       //expect(instance).to.be();
     });
 
     it('should have the property limit (base name: "limit")', function() {
       // uncomment below and update the code to test the property limit
-      //var instance = new DocspaceApiTypescript.Report();
+      //var instance = new DocspaceApiJavascript.Report();
       //expect(instance).to.be();
     });
 
     it('should have the property totalQuantity (base name: "totalQuantity")', function() {
       // uncomment below and update the code to test the property totalQuantity
-      //var instance = new DocspaceApiTypescript.Report();
+      //var instance = new DocspaceApiJavascript.Report();
       //expect(instance).to.be();
     });
 
     it('should have the property totalPage (base name: "totalPage")', function() {
       // uncomment below and update the code to test the property totalPage
-      //var instance = new DocspaceApiTypescript.Report();
+      //var instance = new DocspaceApiJavascript.Report();
       //expect(instance).to.be();
     });
 
     it('should have the property currentPage (base name: "currentPage")', function() {
       // uncomment below and update the code to test the property currentPage
-      //var instance = new DocspaceApiTypescript.Report();
+      //var instance = new DocspaceApiJavascript.Report();
       //expect(instance).to.be();
     });
 

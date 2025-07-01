@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.PermissionsConfig
+# DocspaceApiJavascript.PermissionsConfig
 
 ## Properties
 

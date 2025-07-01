@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.DeepLinkConfigurationRequestsDto
+# DocspaceApiJavascript.DeepLinkConfigurationRequestsDto
 
 ## Properties
 

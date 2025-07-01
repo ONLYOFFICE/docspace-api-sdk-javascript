@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.MigratingApiFiles();
+    instance = new DocspaceApiJavascript.MigratingApiFiles();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('MigratingApiFiles', function() {
     it('should create an instance of MigratingApiFiles', function() {
       // uncomment below and update the code to test MigratingApiFiles
-      //var instance = new DocspaceApiTypescript.MigratingApiFiles();
-      //expect(instance).to.be.a(DocspaceApiTypescript.MigratingApiFiles);
+      //var instance = new DocspaceApiJavascript.MigratingApiFiles();
+      //expect(instance).to.be.a(DocspaceApiJavascript.MigratingApiFiles);
     });
 
     it('should have the property foldersCount (base name: "foldersCount")', function() {
       // uncomment below and update the code to test the property foldersCount
-      //var instance = new DocspaceApiTypescript.MigratingApiFiles();
+      //var instance = new DocspaceApiJavascript.MigratingApiFiles();
       //expect(instance).to.be();
     });
 
     it('should have the property filesCount (base name: "filesCount")', function() {
       // uncomment below and update the code to test the property filesCount
-      //var instance = new DocspaceApiTypescript.MigratingApiFiles();
+      //var instance = new DocspaceApiJavascript.MigratingApiFiles();
       //expect(instance).to.be();
     });
 
     it('should have the property bytesTotal (base name: "bytesTotal")', function() {
       // uncomment below and update the code to test the property bytesTotal
-      //var instance = new DocspaceApiTypescript.MigratingApiFiles();
+      //var instance = new DocspaceApiJavascript.MigratingApiFiles();
       //expect(instance).to.be();
     });
 

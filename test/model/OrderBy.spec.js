@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.OrderBy();
+    instance = new DocspaceApiJavascript.OrderBy();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('OrderBy', function() {
     it('should create an instance of OrderBy', function() {
       // uncomment below and update the code to test OrderBy
-      //var instance = new DocspaceApiTypescript.OrderBy();
-      //expect(instance).to.be.a(DocspaceApiTypescript.OrderBy);
+      //var instance = new DocspaceApiJavascript.OrderBy();
+      //expect(instance).to.be.a(DocspaceApiJavascript.OrderBy);
     });
 
     it('should have the property isAsc (base name: "is_asc")', function() {
       // uncomment below and update the code to test the property isAsc
-      //var instance = new DocspaceApiTypescript.OrderBy();
+      //var instance = new DocspaceApiJavascript.OrderBy();
       //expect(instance).to.be();
     });
 
     it('should have the property property (base name: "property")', function() {
       // uncomment below and update the code to test the property property
-      //var instance = new DocspaceApiTypescript.OrderBy();
+      //var instance = new DocspaceApiJavascript.OrderBy();
       //expect(instance).to.be();
     });
 

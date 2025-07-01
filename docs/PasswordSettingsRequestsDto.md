@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.PasswordSettingsRequestsDto
+# DocspaceApiJavascript.PasswordSettingsRequestsDto
 
 ## Properties
 

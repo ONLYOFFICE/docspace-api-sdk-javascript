@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.StorageSettings();
+    instance = new DocspaceApiJavascript.StorageSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('StorageSettings', function() {
     it('should create an instance of StorageSettings', function() {
       // uncomment below and update the code to test StorageSettings
-      //var instance = new DocspaceApiTypescript.StorageSettings();
-      //expect(instance).to.be.a(DocspaceApiTypescript.StorageSettings);
+      //var instance = new DocspaceApiJavascript.StorageSettings();
+      //expect(instance).to.be.a(DocspaceApiJavascript.StorageSettings);
     });
 
     it('should have the property module (base name: "module")', function() {
       // uncomment below and update the code to test the property module
-      //var instance = new DocspaceApiTypescript.StorageSettings();
+      //var instance = new DocspaceApiJavascript.StorageSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property props (base name: "props")', function() {
       // uncomment below and update the code to test the property props
-      //var instance = new DocspaceApiTypescript.StorageSettings();
+      //var instance = new DocspaceApiJavascript.StorageSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModified (base name: "lastModified")', function() {
       // uncomment below and update the code to test the property lastModified
-      //var instance = new DocspaceApiTypescript.StorageSettings();
+      //var instance = new DocspaceApiJavascript.StorageSettings();
       //expect(instance).to.be();
     });
 

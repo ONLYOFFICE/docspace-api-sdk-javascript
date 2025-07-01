@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FileOperationDto
+# DocspaceApiJavascript.FileOperationDto
 
 ## Properties
 

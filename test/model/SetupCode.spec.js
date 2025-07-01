@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.SetupCode();
+    instance = new DocspaceApiJavascript.SetupCode();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('SetupCode', function() {
     it('should create an instance of SetupCode', function() {
       // uncomment below and update the code to test SetupCode
-      //var instance = new DocspaceApiTypescript.SetupCode();
-      //expect(instance).to.be.a(DocspaceApiTypescript.SetupCode);
+      //var instance = new DocspaceApiJavascript.SetupCode();
+      //expect(instance).to.be.a(DocspaceApiJavascript.SetupCode);
     });
 
     it('should have the property account (base name: "account")', function() {
       // uncomment below and update the code to test the property account
-      //var instance = new DocspaceApiTypescript.SetupCode();
+      //var instance = new DocspaceApiJavascript.SetupCode();
       //expect(instance).to.be();
     });
 
     it('should have the property manualEntryKey (base name: "manualEntryKey")', function() {
       // uncomment below and update the code to test the property manualEntryKey
-      //var instance = new DocspaceApiTypescript.SetupCode();
+      //var instance = new DocspaceApiJavascript.SetupCode();
       //expect(instance).to.be();
     });
 
     it('should have the property qrCodeSetupImageUrl (base name: "qrCodeSetupImageUrl")', function() {
       // uncomment below and update the code to test the property qrCodeSetupImageUrl
-      //var instance = new DocspaceApiTypescript.SetupCode();
+      //var instance = new DocspaceApiJavascript.SetupCode();
       //expect(instance).to.be();
     });
 

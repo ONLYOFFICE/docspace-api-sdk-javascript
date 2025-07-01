@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.AuditEventDto
+# DocspaceApiJavascript.AuditEventDto
 
 ## Properties
 

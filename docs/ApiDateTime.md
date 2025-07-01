@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ApiDateTime
+# DocspaceApiJavascript.ApiDateTime
 
 ## Properties
 

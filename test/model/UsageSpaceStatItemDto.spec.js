@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.UsageSpaceStatItemDto();
+    instance = new DocspaceApiJavascript.UsageSpaceStatItemDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('UsageSpaceStatItemDto', function() {
     it('should create an instance of UsageSpaceStatItemDto', function() {
       // uncomment below and update the code to test UsageSpaceStatItemDto
-      //var instance = new DocspaceApiTypescript.UsageSpaceStatItemDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.UsageSpaceStatItemDto);
+      //var instance = new DocspaceApiJavascript.UsageSpaceStatItemDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.UsageSpaceStatItemDto);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiTypescript.UsageSpaceStatItemDto();
+      //var instance = new DocspaceApiJavascript.UsageSpaceStatItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property icon (base name: "icon")', function() {
       // uncomment below and update the code to test the property icon
-      //var instance = new DocspaceApiTypescript.UsageSpaceStatItemDto();
+      //var instance = new DocspaceApiJavascript.UsageSpaceStatItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property disabled (base name: "disabled")', function() {
       // uncomment below and update the code to test the property disabled
-      //var instance = new DocspaceApiTypescript.UsageSpaceStatItemDto();
+      //var instance = new DocspaceApiJavascript.UsageSpaceStatItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property size (base name: "size")', function() {
       // uncomment below and update the code to test the property size
-      //var instance = new DocspaceApiTypescript.UsageSpaceStatItemDto();
+      //var instance = new DocspaceApiJavascript.UsageSpaceStatItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiTypescript.UsageSpaceStatItemDto();
+      //var instance = new DocspaceApiJavascript.UsageSpaceStatItemDto();
       //expect(instance).to.be();
     });
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CompanyWhiteLabelSettings();
+    instance = new DocspaceApiJavascript.CompanyWhiteLabelSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,49 +62,49 @@
   describe('CompanyWhiteLabelSettings', function() {
     it('should create an instance of CompanyWhiteLabelSettings', function() {
       // uncomment below and update the code to test CompanyWhiteLabelSettings
-      //var instance = new DocspaceApiTypescript.CompanyWhiteLabelSettings();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CompanyWhiteLabelSettings);
+      //var instance = new DocspaceApiJavascript.CompanyWhiteLabelSettings();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CompanyWhiteLabelSettings);
     });
 
     it('should have the property companyName (base name: "companyName")', function() {
       // uncomment below and update the code to test the property companyName
-      //var instance = new DocspaceApiTypescript.CompanyWhiteLabelSettings();
+      //var instance = new DocspaceApiJavascript.CompanyWhiteLabelSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property site (base name: "site")', function() {
       // uncomment below and update the code to test the property site
-      //var instance = new DocspaceApiTypescript.CompanyWhiteLabelSettings();
+      //var instance = new DocspaceApiJavascript.CompanyWhiteLabelSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiTypescript.CompanyWhiteLabelSettings();
+      //var instance = new DocspaceApiJavascript.CompanyWhiteLabelSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property address (base name: "address")', function() {
       // uncomment below and update the code to test the property address
-      //var instance = new DocspaceApiTypescript.CompanyWhiteLabelSettings();
+      //var instance = new DocspaceApiJavascript.CompanyWhiteLabelSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property phone (base name: "phone")', function() {
       // uncomment below and update the code to test the property phone
-      //var instance = new DocspaceApiTypescript.CompanyWhiteLabelSettings();
+      //var instance = new DocspaceApiJavascript.CompanyWhiteLabelSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property isLicensor (base name: "IsLicensor")', function() {
       // uncomment below and update the code to test the property isLicensor
-      //var instance = new DocspaceApiTypescript.CompanyWhiteLabelSettings();
+      //var instance = new DocspaceApiJavascript.CompanyWhiteLabelSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModified (base name: "lastModified")', function() {
       // uncomment below and update the code to test the property lastModified
-      //var instance = new DocspaceApiTypescript.CompanyWhiteLabelSettings();
+      //var instance = new DocspaceApiJavascript.CompanyWhiteLabelSettings();
       //expect(instance).to.be();
     });
 

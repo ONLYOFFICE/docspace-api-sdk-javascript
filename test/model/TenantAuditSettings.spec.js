@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.TenantAuditSettings();
+    instance = new DocspaceApiJavascript.TenantAuditSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('TenantAuditSettings', function() {
     it('should create an instance of TenantAuditSettings', function() {
       // uncomment below and update the code to test TenantAuditSettings
-      //var instance = new DocspaceApiTypescript.TenantAuditSettings();
-      //expect(instance).to.be.a(DocspaceApiTypescript.TenantAuditSettings);
+      //var instance = new DocspaceApiJavascript.TenantAuditSettings();
+      //expect(instance).to.be.a(DocspaceApiJavascript.TenantAuditSettings);
     });
 
     it('should have the property loginHistoryLifeTime (base name: "loginHistoryLifeTime")', function() {
       // uncomment below and update the code to test the property loginHistoryLifeTime
-      //var instance = new DocspaceApiTypescript.TenantAuditSettings();
+      //var instance = new DocspaceApiJavascript.TenantAuditSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property auditTrailLifeTime (base name: "auditTrailLifeTime")', function() {
       // uncomment below and update the code to test the property auditTrailLifeTime
-      //var instance = new DocspaceApiTypescript.TenantAuditSettings();
+      //var instance = new DocspaceApiJavascript.TenantAuditSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModified (base name: "lastModified")', function() {
       // uncomment below and update the code to test the property lastModified
-      //var instance = new DocspaceApiTypescript.TenantAuditSettings();
+      //var instance = new DocspaceApiJavascript.TenantAuditSettings();
       //expect(instance).to.be();
     });
 

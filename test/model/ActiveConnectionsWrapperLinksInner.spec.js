@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ActiveConnectionsWrapperLinksInner();
+    instance = new DocspaceApiJavascript.ActiveConnectionsWrapperLinksInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('ActiveConnectionsWrapperLinksInner', function() {
     it('should create an instance of ActiveConnectionsWrapperLinksInner', function() {
       // uncomment below and update the code to test ActiveConnectionsWrapperLinksInner
-      //var instance = new DocspaceApiTypescript.ActiveConnectionsWrapperLinksInner();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ActiveConnectionsWrapperLinksInner);
+      //var instance = new DocspaceApiJavascript.ActiveConnectionsWrapperLinksInner();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ActiveConnectionsWrapperLinksInner);
     });
 
     it('should have the property href (base name: "href")', function() {
       // uncomment below and update the code to test the property href
-      //var instance = new DocspaceApiTypescript.ActiveConnectionsWrapperLinksInner();
+      //var instance = new DocspaceApiJavascript.ActiveConnectionsWrapperLinksInner();
       //expect(instance).to.be();
     });
 
     it('should have the property action (base name: "action")', function() {
       // uncomment below and update the code to test the property action
-      //var instance = new DocspaceApiTypescript.ActiveConnectionsWrapperLinksInner();
+      //var instance = new DocspaceApiJavascript.ActiveConnectionsWrapperLinksInner();
       //expect(instance).to.be();
     });
 

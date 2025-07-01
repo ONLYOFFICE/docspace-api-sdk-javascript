@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.DarkThemeSettingsRequestDto
+# DocspaceApiJavascript.DarkThemeSettingsRequestDto
 
 ## Properties
 

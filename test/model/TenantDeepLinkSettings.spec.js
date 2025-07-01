@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.TenantDeepLinkSettings();
+    instance = new DocspaceApiJavascript.TenantDeepLinkSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('TenantDeepLinkSettings', function() {
     it('should create an instance of TenantDeepLinkSettings', function() {
       // uncomment below and update the code to test TenantDeepLinkSettings
-      //var instance = new DocspaceApiTypescript.TenantDeepLinkSettings();
-      //expect(instance).to.be.a(DocspaceApiTypescript.TenantDeepLinkSettings);
+      //var instance = new DocspaceApiJavascript.TenantDeepLinkSettings();
+      //expect(instance).to.be.a(DocspaceApiJavascript.TenantDeepLinkSettings);
     });
 
     it('should have the property handlingMode (base name: "handlingMode")', function() {
       // uncomment below and update the code to test the property handlingMode
-      //var instance = new DocspaceApiTypescript.TenantDeepLinkSettings();
+      //var instance = new DocspaceApiJavascript.TenantDeepLinkSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModified (base name: "lastModified")', function() {
       // uncomment below and update the code to test the property lastModified
-      //var instance = new DocspaceApiTypescript.TenantDeepLinkSettings();
+      //var instance = new DocspaceApiJavascript.TenantDeepLinkSettings();
       //expect(instance).to.be();
     });
 

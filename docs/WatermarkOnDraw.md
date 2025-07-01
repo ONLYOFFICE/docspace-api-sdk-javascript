@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.WatermarkOnDraw
+# DocspaceApiJavascript.WatermarkOnDraw
 
 ## Properties
 

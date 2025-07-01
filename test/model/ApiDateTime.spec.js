@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ApiDateTime();
+    instance = new DocspaceApiJavascript.ApiDateTime();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('ApiDateTime', function() {
     it('should create an instance of ApiDateTime', function() {
       // uncomment below and update the code to test ApiDateTime
-      //var instance = new DocspaceApiTypescript.ApiDateTime();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ApiDateTime);
+      //var instance = new DocspaceApiJavascript.ApiDateTime();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ApiDateTime);
     });
 
     it('should have the property utcTime (base name: "utcTime")', function() {
       // uncomment below and update the code to test the property utcTime
-      //var instance = new DocspaceApiTypescript.ApiDateTime();
+      //var instance = new DocspaceApiJavascript.ApiDateTime();
       //expect(instance).to.be();
     });
 
     it('should have the property timeZoneOffset (base name: "timeZoneOffset")', function() {
       // uncomment below and update the code to test the property timeZoneOffset
-      //var instance = new DocspaceApiTypescript.ApiDateTime();
+      //var instance = new DocspaceApiJavascript.ApiDateTime();
       //expect(instance).to.be();
     });
 

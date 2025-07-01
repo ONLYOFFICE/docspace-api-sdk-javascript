@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CreateFileJsonElement();
+    instance = new DocspaceApiJavascript.CreateFileJsonElement();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,31 +62,31 @@
   describe('CreateFileJsonElement', function() {
     it('should create an instance of CreateFileJsonElement', function() {
       // uncomment below and update the code to test CreateFileJsonElement
-      //var instance = new DocspaceApiTypescript.CreateFileJsonElement();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CreateFileJsonElement);
+      //var instance = new DocspaceApiJavascript.CreateFileJsonElement();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CreateFileJsonElement);
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiTypescript.CreateFileJsonElement();
+      //var instance = new DocspaceApiJavascript.CreateFileJsonElement();
       //expect(instance).to.be();
     });
 
     it('should have the property templateId (base name: "templateId")', function() {
       // uncomment below and update the code to test the property templateId
-      //var instance = new DocspaceApiTypescript.CreateFileJsonElement();
+      //var instance = new DocspaceApiJavascript.CreateFileJsonElement();
       //expect(instance).to.be();
     });
 
     it('should have the property enableExternalExt (base name: "enableExternalExt")', function() {
       // uncomment below and update the code to test the property enableExternalExt
-      //var instance = new DocspaceApiTypescript.CreateFileJsonElement();
+      //var instance = new DocspaceApiJavascript.CreateFileJsonElement();
       //expect(instance).to.be();
     });
 
     it('should have the property formId (base name: "formId")', function() {
       // uncomment below and update the code to test the property formId
-      //var instance = new DocspaceApiTypescript.CreateFileJsonElement();
+      //var instance = new DocspaceApiJavascript.CreateFileJsonElement();
       //expect(instance).to.be();
     });
 

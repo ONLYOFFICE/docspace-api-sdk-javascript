@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.CheckDestFolderDto
+# DocspaceApiJavascript.CheckDestFolderDto
 
 ## Properties
 

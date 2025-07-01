@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.SecurityDto();
+    instance = new DocspaceApiJavascript.SecurityDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('SecurityDto', function() {
     it('should create an instance of SecurityDto', function() {
       // uncomment below and update the code to test SecurityDto
-      //var instance = new DocspaceApiTypescript.SecurityDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.SecurityDto);
+      //var instance = new DocspaceApiJavascript.SecurityDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.SecurityDto);
     });
 
     it('should have the property webItemId (base name: "webItemId")', function() {
       // uncomment below and update the code to test the property webItemId
-      //var instance = new DocspaceApiTypescript.SecurityDto();
+      //var instance = new DocspaceApiJavascript.SecurityDto();
       //expect(instance).to.be();
     });
 
     it('should have the property users (base name: "users")', function() {
       // uncomment below and update the code to test the property users
-      //var instance = new DocspaceApiTypescript.SecurityDto();
+      //var instance = new DocspaceApiJavascript.SecurityDto();
       //expect(instance).to.be();
     });
 
     it('should have the property groups (base name: "groups")', function() {
       // uncomment below and update the code to test the property groups
-      //var instance = new DocspaceApiTypescript.SecurityDto();
+      //var instance = new DocspaceApiJavascript.SecurityDto();
       //expect(instance).to.be();
     });
 
     it('should have the property enabled (base name: "enabled")', function() {
       // uncomment below and update the code to test the property enabled
-      //var instance = new DocspaceApiTypescript.SecurityDto();
+      //var instance = new DocspaceApiJavascript.SecurityDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isSubItem (base name: "isSubItem")', function() {
       // uncomment below and update the code to test the property isSubItem
-      //var instance = new DocspaceApiTypescript.SecurityDto();
+      //var instance = new DocspaceApiJavascript.SecurityDto();
       //expect(instance).to.be();
     });
 

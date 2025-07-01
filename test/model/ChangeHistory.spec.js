@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ChangeHistory();
+    instance = new DocspaceApiJavascript.ChangeHistory();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('ChangeHistory', function() {
     it('should create an instance of ChangeHistory', function() {
       // uncomment below and update the code to test ChangeHistory
-      //var instance = new DocspaceApiTypescript.ChangeHistory();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ChangeHistory);
+      //var instance = new DocspaceApiJavascript.ChangeHistory();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ChangeHistory);
     });
 
     it('should have the property version (base name: "version")', function() {
       // uncomment below and update the code to test the property version
-      //var instance = new DocspaceApiTypescript.ChangeHistory();
+      //var instance = new DocspaceApiJavascript.ChangeHistory();
       //expect(instance).to.be();
     });
 
     it('should have the property continueVersion (base name: "continueVersion")', function() {
       // uncomment below and update the code to test the property continueVersion
-      //var instance = new DocspaceApiTypescript.ChangeHistory();
+      //var instance = new DocspaceApiJavascript.ChangeHistory();
       //expect(instance).to.be();
     });
 

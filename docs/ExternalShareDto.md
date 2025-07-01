@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ExternalShareDto
+# DocspaceApiJavascript.ExternalShareDto
 
 ## Properties
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.SignupAccountRequestDto();
+    instance = new DocspaceApiJavascript.SignupAccountRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,55 +62,55 @@
   describe('SignupAccountRequestDto', function() {
     it('should create an instance of SignupAccountRequestDto', function() {
       // uncomment below and update the code to test SignupAccountRequestDto
-      //var instance = new DocspaceApiTypescript.SignupAccountRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.SignupAccountRequestDto);
+      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.SignupAccountRequestDto);
     });
 
     it('should have the property employeeType (base name: "employeeType")', function() {
       // uncomment below and update the code to test the property employeeType
-      //var instance = new DocspaceApiTypescript.SignupAccountRequestDto();
+      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "firstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instance = new DocspaceApiTypescript.SignupAccountRequestDto();
+      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "lastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instance = new DocspaceApiTypescript.SignupAccountRequestDto();
+      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiTypescript.SignupAccountRequestDto();
+      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property passwordHash (base name: "passwordHash")', function() {
       // uncomment below and update the code to test the property passwordHash
-      //var instance = new DocspaceApiTypescript.SignupAccountRequestDto();
+      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiTypescript.SignupAccountRequestDto();
+      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property culture (base name: "culture")', function() {
       // uncomment below and update the code to test the property culture
-      //var instance = new DocspaceApiTypescript.SignupAccountRequestDto();
+      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property serializedProfile (base name: "serializedProfile")', function() {
       // uncomment below and update the code to test the property serializedProfile
-      //var instance = new DocspaceApiTypescript.SignupAccountRequestDto();
+      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
       //expect(instance).to.be();
     });
 

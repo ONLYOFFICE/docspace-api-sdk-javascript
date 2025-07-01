@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.SsoIdpCertificateAdvanced();
+    instance = new DocspaceApiJavascript.SsoIdpCertificateAdvanced();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,43 +62,43 @@
   describe('SsoIdpCertificateAdvanced', function() {
     it('should create an instance of SsoIdpCertificateAdvanced', function() {
       // uncomment below and update the code to test SsoIdpCertificateAdvanced
-      //var instance = new DocspaceApiTypescript.SsoIdpCertificateAdvanced();
-      //expect(instance).to.be.a(DocspaceApiTypescript.SsoIdpCertificateAdvanced);
+      //var instance = new DocspaceApiJavascript.SsoIdpCertificateAdvanced();
+      //expect(instance).to.be.a(DocspaceApiJavascript.SsoIdpCertificateAdvanced);
     });
 
     it('should have the property verifyAlgorithm (base name: "verifyAlgorithm")', function() {
       // uncomment below and update the code to test the property verifyAlgorithm
-      //var instance = new DocspaceApiTypescript.SsoIdpCertificateAdvanced();
+      //var instance = new DocspaceApiJavascript.SsoIdpCertificateAdvanced();
       //expect(instance).to.be();
     });
 
     it('should have the property verifyAuthResponsesSign (base name: "verifyAuthResponsesSign")', function() {
       // uncomment below and update the code to test the property verifyAuthResponsesSign
-      //var instance = new DocspaceApiTypescript.SsoIdpCertificateAdvanced();
+      //var instance = new DocspaceApiJavascript.SsoIdpCertificateAdvanced();
       //expect(instance).to.be();
     });
 
     it('should have the property verifyLogoutRequestsSign (base name: "verifyLogoutRequestsSign")', function() {
       // uncomment below and update the code to test the property verifyLogoutRequestsSign
-      //var instance = new DocspaceApiTypescript.SsoIdpCertificateAdvanced();
+      //var instance = new DocspaceApiJavascript.SsoIdpCertificateAdvanced();
       //expect(instance).to.be();
     });
 
     it('should have the property verifyLogoutResponsesSign (base name: "verifyLogoutResponsesSign")', function() {
       // uncomment below and update the code to test the property verifyLogoutResponsesSign
-      //var instance = new DocspaceApiTypescript.SsoIdpCertificateAdvanced();
+      //var instance = new DocspaceApiJavascript.SsoIdpCertificateAdvanced();
       //expect(instance).to.be();
     });
 
     it('should have the property decryptAlgorithm (base name: "decryptAlgorithm")', function() {
       // uncomment below and update the code to test the property decryptAlgorithm
-      //var instance = new DocspaceApiTypescript.SsoIdpCertificateAdvanced();
+      //var instance = new DocspaceApiJavascript.SsoIdpCertificateAdvanced();
       //expect(instance).to.be();
     });
 
     it('should have the property decryptAssertions (base name: "decryptAssertions")', function() {
       // uncomment below and update the code to test the property decryptAssertions
-      //var instance = new DocspaceApiTypescript.SsoIdpCertificateAdvanced();
+      //var instance = new DocspaceApiJavascript.SsoIdpCertificateAdvanced();
       //expect(instance).to.be();
     });
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CheckFillFormDraft();
+    instance = new DocspaceApiJavascript.CheckFillFormDraft();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,31 +62,31 @@
   describe('CheckFillFormDraft', function() {
     it('should create an instance of CheckFillFormDraft', function() {
       // uncomment below and update the code to test CheckFillFormDraft
-      //var instance = new DocspaceApiTypescript.CheckFillFormDraft();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CheckFillFormDraft);
+      //var instance = new DocspaceApiJavascript.CheckFillFormDraft();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CheckFillFormDraft);
     });
 
     it('should have the property version (base name: "version")', function() {
       // uncomment below and update the code to test the property version
-      //var instance = new DocspaceApiTypescript.CheckFillFormDraft();
+      //var instance = new DocspaceApiJavascript.CheckFillFormDraft();
       //expect(instance).to.be();
     });
 
     it('should have the property action (base name: "action")', function() {
       // uncomment below and update the code to test the property action
-      //var instance = new DocspaceApiTypescript.CheckFillFormDraft();
+      //var instance = new DocspaceApiJavascript.CheckFillFormDraft();
       //expect(instance).to.be();
     });
 
     it('should have the property requestView (base name: "requestView")', function() {
       // uncomment below and update the code to test the property requestView
-      //var instance = new DocspaceApiTypescript.CheckFillFormDraft();
+      //var instance = new DocspaceApiJavascript.CheckFillFormDraft();
       //expect(instance).to.be();
     });
 
     it('should have the property requestEmbedded (base name: "requestEmbedded")', function() {
       // uncomment below and update the code to test the property requestEmbedded
-      //var instance = new DocspaceApiTypescript.CheckFillFormDraft();
+      //var instance = new DocspaceApiJavascript.CheckFillFormDraft();
       //expect(instance).to.be();
     });
 

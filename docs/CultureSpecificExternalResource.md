@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.CultureSpecificExternalResource
+# DocspaceApiJavascript.CultureSpecificExternalResource
 
 ## Properties
 

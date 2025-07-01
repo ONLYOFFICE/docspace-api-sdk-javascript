@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.EditorConfigurationDto();
+    instance = new DocspaceApiJavascript.EditorConfigurationDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,85 +62,85 @@
   describe('EditorConfigurationDto', function() {
     it('should create an instance of EditorConfigurationDto', function() {
       // uncomment below and update the code to test EditorConfigurationDto
-      //var instance = new DocspaceApiTypescript.EditorConfigurationDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.EditorConfigurationDto);
+      //var instance = new DocspaceApiJavascript.EditorConfigurationDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.EditorConfigurationDto);
     });
 
     it('should have the property callbackUrl (base name: "callbackUrl")', function() {
       // uncomment below and update the code to test the property callbackUrl
-      //var instance = new DocspaceApiTypescript.EditorConfigurationDto();
+      //var instance = new DocspaceApiJavascript.EditorConfigurationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property coEditing (base name: "coEditing")', function() {
       // uncomment below and update the code to test the property coEditing
-      //var instance = new DocspaceApiTypescript.EditorConfigurationDto();
+      //var instance = new DocspaceApiJavascript.EditorConfigurationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property createUrl (base name: "createUrl")', function() {
       // uncomment below and update the code to test the property createUrl
-      //var instance = new DocspaceApiTypescript.EditorConfigurationDto();
+      //var instance = new DocspaceApiJavascript.EditorConfigurationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property customization (base name: "customization")', function() {
       // uncomment below and update the code to test the property customization
-      //var instance = new DocspaceApiTypescript.EditorConfigurationDto();
+      //var instance = new DocspaceApiJavascript.EditorConfigurationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property embedded (base name: "embedded")', function() {
       // uncomment below and update the code to test the property embedded
-      //var instance = new DocspaceApiTypescript.EditorConfigurationDto();
+      //var instance = new DocspaceApiJavascript.EditorConfigurationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property encryptionKeys (base name: "encryptionKeys")', function() {
       // uncomment below and update the code to test the property encryptionKeys
-      //var instance = new DocspaceApiTypescript.EditorConfigurationDto();
+      //var instance = new DocspaceApiJavascript.EditorConfigurationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property lang (base name: "lang")', function() {
       // uncomment below and update the code to test the property lang
-      //var instance = new DocspaceApiTypescript.EditorConfigurationDto();
+      //var instance = new DocspaceApiJavascript.EditorConfigurationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property mode (base name: "mode")', function() {
       // uncomment below and update the code to test the property mode
-      //var instance = new DocspaceApiTypescript.EditorConfigurationDto();
+      //var instance = new DocspaceApiJavascript.EditorConfigurationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property modeWrite (base name: "modeWrite")', function() {
       // uncomment below and update the code to test the property modeWrite
-      //var instance = new DocspaceApiTypescript.EditorConfigurationDto();
+      //var instance = new DocspaceApiJavascript.EditorConfigurationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property plugins (base name: "plugins")', function() {
       // uncomment below and update the code to test the property plugins
-      //var instance = new DocspaceApiTypescript.EditorConfigurationDto();
+      //var instance = new DocspaceApiJavascript.EditorConfigurationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property recent (base name: "recent")', function() {
       // uncomment below and update the code to test the property recent
-      //var instance = new DocspaceApiTypescript.EditorConfigurationDto();
+      //var instance = new DocspaceApiJavascript.EditorConfigurationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property templates (base name: "templates")', function() {
       // uncomment below and update the code to test the property templates
-      //var instance = new DocspaceApiTypescript.EditorConfigurationDto();
+      //var instance = new DocspaceApiJavascript.EditorConfigurationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instance = new DocspaceApiTypescript.EditorConfigurationDto();
+      //var instance = new DocspaceApiJavascript.EditorConfigurationDto();
       //expect(instance).to.be();
     });
 

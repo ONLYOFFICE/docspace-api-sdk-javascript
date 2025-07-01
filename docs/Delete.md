@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.Delete
+# DocspaceApiJavascript.Delete
 
 ## Properties
 

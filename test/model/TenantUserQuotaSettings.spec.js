@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.TenantUserQuotaSettings();
+    instance = new DocspaceApiJavascript.TenantUserQuotaSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,31 +62,31 @@
   describe('TenantUserQuotaSettings', function() {
     it('should create an instance of TenantUserQuotaSettings', function() {
       // uncomment below and update the code to test TenantUserQuotaSettings
-      //var instance = new DocspaceApiTypescript.TenantUserQuotaSettings();
-      //expect(instance).to.be.a(DocspaceApiTypescript.TenantUserQuotaSettings);
+      //var instance = new DocspaceApiJavascript.TenantUserQuotaSettings();
+      //expect(instance).to.be.a(DocspaceApiJavascript.TenantUserQuotaSettings);
     });
 
     it('should have the property enableQuota (base name: "enableQuota")', function() {
       // uncomment below and update the code to test the property enableQuota
-      //var instance = new DocspaceApiTypescript.TenantUserQuotaSettings();
+      //var instance = new DocspaceApiJavascript.TenantUserQuotaSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property defaultQuota (base name: "defaultQuota")', function() {
       // uncomment below and update the code to test the property defaultQuota
-      //var instance = new DocspaceApiTypescript.TenantUserQuotaSettings();
+      //var instance = new DocspaceApiJavascript.TenantUserQuotaSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property lastRecalculateDate (base name: "lastRecalculateDate")', function() {
       // uncomment below and update the code to test the property lastRecalculateDate
-      //var instance = new DocspaceApiTypescript.TenantUserQuotaSettings();
+      //var instance = new DocspaceApiJavascript.TenantUserQuotaSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModified (base name: "lastModified")', function() {
       // uncomment below and update the code to test the property lastModified
-      //var instance = new DocspaceApiTypescript.TenantUserQuotaSettings();
+      //var instance = new DocspaceApiJavascript.TenantUserQuotaSettings();
       //expect(instance).to.be();
     });
 

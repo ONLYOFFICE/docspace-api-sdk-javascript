@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.GetReferenceDataDtoInteger();
+    instance = new DocspaceApiJavascript.GetReferenceDataDtoInteger();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('GetReferenceDataDtoInteger', function() {
     it('should create an instance of GetReferenceDataDtoInteger', function() {
       // uncomment below and update the code to test GetReferenceDataDtoInteger
-      //var instance = new DocspaceApiTypescript.GetReferenceDataDtoInteger();
-      //expect(instance).to.be.a(DocspaceApiTypescript.GetReferenceDataDtoInteger);
+      //var instance = new DocspaceApiJavascript.GetReferenceDataDtoInteger();
+      //expect(instance).to.be.a(DocspaceApiJavascript.GetReferenceDataDtoInteger);
     });
 
     it('should have the property fileKey (base name: "fileKey")', function() {
       // uncomment below and update the code to test the property fileKey
-      //var instance = new DocspaceApiTypescript.GetReferenceDataDtoInteger();
+      //var instance = new DocspaceApiJavascript.GetReferenceDataDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property instanceId (base name: "instanceId")', function() {
       // uncomment below and update the code to test the property instanceId
-      //var instance = new DocspaceApiTypescript.GetReferenceDataDtoInteger();
+      //var instance = new DocspaceApiJavascript.GetReferenceDataDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property sourceFileId (base name: "sourceFileId")', function() {
       // uncomment below and update the code to test the property sourceFileId
-      //var instance = new DocspaceApiTypescript.GetReferenceDataDtoInteger();
+      //var instance = new DocspaceApiJavascript.GetReferenceDataDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property path (base name: "path")', function() {
       // uncomment below and update the code to test the property path
-      //var instance = new DocspaceApiTypescript.GetReferenceDataDtoInteger();
+      //var instance = new DocspaceApiJavascript.GetReferenceDataDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property link (base name: "link")', function() {
       // uncomment below and update the code to test the property link
-      //var instance = new DocspaceApiTypescript.GetReferenceDataDtoInteger();
+      //var instance = new DocspaceApiJavascript.GetReferenceDataDtoInteger();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.TenantAuditSettingsWrapper
+# DocspaceApiJavascript.TenantAuditSettingsWrapper
 
 ## Properties
 

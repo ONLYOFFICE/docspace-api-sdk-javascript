@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.UpdateGroupRequest
+# DocspaceApiJavascript.UpdateGroupRequest
 
 ## Properties
 

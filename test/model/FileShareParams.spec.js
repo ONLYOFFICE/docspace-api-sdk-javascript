@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.FileShareParams();
+    instance = new DocspaceApiJavascript.FileShareParams();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('FileShareParams', function() {
     it('should create an instance of FileShareParams', function() {
       // uncomment below and update the code to test FileShareParams
-      //var instance = new DocspaceApiTypescript.FileShareParams();
-      //expect(instance).to.be.a(DocspaceApiTypescript.FileShareParams);
+      //var instance = new DocspaceApiJavascript.FileShareParams();
+      //expect(instance).to.be.a(DocspaceApiJavascript.FileShareParams);
     });
 
     it('should have the property shareTo (base name: "shareTo")', function() {
       // uncomment below and update the code to test the property shareTo
-      //var instance = new DocspaceApiTypescript.FileShareParams();
+      //var instance = new DocspaceApiJavascript.FileShareParams();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiTypescript.FileShareParams();
+      //var instance = new DocspaceApiJavascript.FileShareParams();
       //expect(instance).to.be();
     });
 
     it('should have the property access (base name: "access")', function() {
       // uncomment below and update the code to test the property access
-      //var instance = new DocspaceApiTypescript.FileShareParams();
+      //var instance = new DocspaceApiJavascript.FileShareParams();
       //expect(instance).to.be();
     });
 

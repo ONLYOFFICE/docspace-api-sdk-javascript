@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.SearchArea
+# DocspaceApiJavascript.SearchArea
+
+
 
 ## Enum
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CultureSpecificExternalResource();
+    instance = new DocspaceApiJavascript.CultureSpecificExternalResource();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('CultureSpecificExternalResource', function() {
     it('should create an instance of CultureSpecificExternalResource', function() {
       // uncomment below and update the code to test CultureSpecificExternalResource
-      //var instance = new DocspaceApiTypescript.CultureSpecificExternalResource();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CultureSpecificExternalResource);
+      //var instance = new DocspaceApiJavascript.CultureSpecificExternalResource();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CultureSpecificExternalResource);
     });
 
     it('should have the property domain (base name: "domain")', function() {
       // uncomment below and update the code to test the property domain
-      //var instance = new DocspaceApiTypescript.CultureSpecificExternalResource();
+      //var instance = new DocspaceApiJavascript.CultureSpecificExternalResource();
       //expect(instance).to.be();
     });
 
     it('should have the property entries (base name: "entries")', function() {
       // uncomment below and update the code to test the property entries
-      //var instance = new DocspaceApiTypescript.CultureSpecificExternalResource();
+      //var instance = new DocspaceApiJavascript.CultureSpecificExternalResource();
       //expect(instance).to.be();
     });
 

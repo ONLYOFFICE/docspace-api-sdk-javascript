@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ConfirmDto();
+    instance = new DocspaceApiJavascript.ConfirmDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('ConfirmDto', function() {
     it('should create an instance of ConfirmDto', function() {
       // uncomment below and update the code to test ConfirmDto
-      //var instance = new DocspaceApiTypescript.ConfirmDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ConfirmDto);
+      //var instance = new DocspaceApiJavascript.ConfirmDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ConfirmDto);
     });
 
     it('should have the property result (base name: "result")', function() {
       // uncomment below and update the code to test the property result
-      //var instance = new DocspaceApiTypescript.ConfirmDto();
+      //var instance = new DocspaceApiJavascript.ConfirmDto();
       //expect(instance).to.be();
     });
 
     it('should have the property roomId (base name: "roomId")', function() {
       // uncomment below and update the code to test the property roomId
-      //var instance = new DocspaceApiTypescript.ConfirmDto();
+      //var instance = new DocspaceApiJavascript.ConfirmDto();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiTypescript.ConfirmDto();
+      //var instance = new DocspaceApiJavascript.ConfirmDto();
       //expect(instance).to.be();
     });
 

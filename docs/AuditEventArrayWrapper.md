@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.AuditEventArrayWrapper
+# DocspaceApiJavascript.AuditEventArrayWrapper
 
 ## Properties
 

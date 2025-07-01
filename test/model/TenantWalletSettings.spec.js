@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.TenantWalletSettings();
+    instance = new DocspaceApiJavascript.TenantWalletSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('TenantWalletSettings', function() {
     it('should create an instance of TenantWalletSettings', function() {
       // uncomment below and update the code to test TenantWalletSettings
-      //var instance = new DocspaceApiTypescript.TenantWalletSettings();
-      //expect(instance).to.be.a(DocspaceApiTypescript.TenantWalletSettings);
+      //var instance = new DocspaceApiJavascript.TenantWalletSettings();
+      //expect(instance).to.be.a(DocspaceApiJavascript.TenantWalletSettings);
     });
 
     it('should have the property enabled (base name: "enabled")', function() {
       // uncomment below and update the code to test the property enabled
-      //var instance = new DocspaceApiTypescript.TenantWalletSettings();
+      //var instance = new DocspaceApiJavascript.TenantWalletSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property minBalance (base name: "minBalance")', function() {
       // uncomment below and update the code to test the property minBalance
-      //var instance = new DocspaceApiTypescript.TenantWalletSettings();
+      //var instance = new DocspaceApiJavascript.TenantWalletSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property upToBalance (base name: "upToBalance")', function() {
       // uncomment below and update the code to test the property upToBalance
-      //var instance = new DocspaceApiTypescript.TenantWalletSettings();
+      //var instance = new DocspaceApiJavascript.TenantWalletSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property currency (base name: "currency")', function() {
       // uncomment below and update the code to test the property currency
-      //var instance = new DocspaceApiTypescript.TenantWalletSettings();
+      //var instance = new DocspaceApiJavascript.TenantWalletSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModified (base name: "lastModified")', function() {
       // uncomment below and update the code to test the property lastModified
-      //var instance = new DocspaceApiTypescript.TenantWalletSettings();
+      //var instance = new DocspaceApiJavascript.TenantWalletSettings();
       //expect(instance).to.be();
     });
 

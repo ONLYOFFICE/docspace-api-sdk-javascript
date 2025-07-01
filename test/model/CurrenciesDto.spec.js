@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CurrenciesDto();
+    instance = new DocspaceApiJavascript.CurrenciesDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('CurrenciesDto', function() {
     it('should create an instance of CurrenciesDto', function() {
       // uncomment below and update the code to test CurrenciesDto
-      //var instance = new DocspaceApiTypescript.CurrenciesDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CurrenciesDto);
+      //var instance = new DocspaceApiJavascript.CurrenciesDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CurrenciesDto);
     });
 
     it('should have the property isoCountryCode (base name: "isoCountryCode")', function() {
       // uncomment below and update the code to test the property isoCountryCode
-      //var instance = new DocspaceApiTypescript.CurrenciesDto();
+      //var instance = new DocspaceApiJavascript.CurrenciesDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isoCurrencySymbol (base name: "isoCurrencySymbol")', function() {
       // uncomment below and update the code to test the property isoCurrencySymbol
-      //var instance = new DocspaceApiTypescript.CurrenciesDto();
+      //var instance = new DocspaceApiJavascript.CurrenciesDto();
       //expect(instance).to.be();
     });
 
     it('should have the property currencyNativeName (base name: "currencyNativeName")', function() {
       // uncomment below and update the code to test the property currencyNativeName
-      //var instance = new DocspaceApiTypescript.CurrenciesDto();
+      //var instance = new DocspaceApiJavascript.CurrenciesDto();
       //expect(instance).to.be();
     });
 

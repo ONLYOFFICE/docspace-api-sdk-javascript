@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.DocumentConfigDto();
+    instance = new DocspaceApiJavascript.DocumentConfigDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,79 +62,79 @@
   describe('DocumentConfigDto', function() {
     it('should create an instance of DocumentConfigDto', function() {
       // uncomment below and update the code to test DocumentConfigDto
-      //var instance = new DocspaceApiTypescript.DocumentConfigDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.DocumentConfigDto);
+      //var instance = new DocspaceApiJavascript.DocumentConfigDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.DocumentConfigDto);
     });
 
     it('should have the property fileType (base name: "fileType")', function() {
       // uncomment below and update the code to test the property fileType
-      //var instance = new DocspaceApiTypescript.DocumentConfigDto();
+      //var instance = new DocspaceApiJavascript.DocumentConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property info (base name: "info")', function() {
       // uncomment below and update the code to test the property info
-      //var instance = new DocspaceApiTypescript.DocumentConfigDto();
+      //var instance = new DocspaceApiJavascript.DocumentConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isLinkedForMe (base name: "isLinkedForMe")', function() {
       // uncomment below and update the code to test the property isLinkedForMe
-      //var instance = new DocspaceApiTypescript.DocumentConfigDto();
+      //var instance = new DocspaceApiJavascript.DocumentConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiTypescript.DocumentConfigDto();
+      //var instance = new DocspaceApiJavascript.DocumentConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property permissions (base name: "permissions")', function() {
       // uncomment below and update the code to test the property permissions
-      //var instance = new DocspaceApiTypescript.DocumentConfigDto();
+      //var instance = new DocspaceApiJavascript.DocumentConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property sharedLinkParam (base name: "sharedLinkParam")', function() {
       // uncomment below and update the code to test the property sharedLinkParam
-      //var instance = new DocspaceApiTypescript.DocumentConfigDto();
+      //var instance = new DocspaceApiJavascript.DocumentConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property sharedLinkKey (base name: "sharedLinkKey")', function() {
       // uncomment below and update the code to test the property sharedLinkKey
-      //var instance = new DocspaceApiTypescript.DocumentConfigDto();
+      //var instance = new DocspaceApiJavascript.DocumentConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property referenceData (base name: "referenceData")', function() {
       // uncomment below and update the code to test the property referenceData
-      //var instance = new DocspaceApiTypescript.DocumentConfigDto();
+      //var instance = new DocspaceApiJavascript.DocumentConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiTypescript.DocumentConfigDto();
+      //var instance = new DocspaceApiJavascript.DocumentConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiTypescript.DocumentConfigDto();
+      //var instance = new DocspaceApiJavascript.DocumentConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isForm (base name: "isForm")', function() {
       // uncomment below and update the code to test the property isForm
-      //var instance = new DocspaceApiTypescript.DocumentConfigDto();
+      //var instance = new DocspaceApiJavascript.DocumentConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property options (base name: "options")', function() {
       // uncomment below and update the code to test the property options
-      //var instance = new DocspaceApiTypescript.DocumentConfigDto();
+      //var instance = new DocspaceApiJavascript.DocumentConfigDto();
       //expect(instance).to.be();
     });
 

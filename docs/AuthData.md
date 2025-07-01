@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.AuthData
+# DocspaceApiJavascript.AuthData
 
 ## Properties
 

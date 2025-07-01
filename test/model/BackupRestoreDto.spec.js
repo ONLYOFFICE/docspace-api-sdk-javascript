@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.BackupRestoreDto();
+    instance = new DocspaceApiJavascript.BackupRestoreDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('BackupRestoreDto', function() {
     it('should create an instance of BackupRestoreDto', function() {
       // uncomment below and update the code to test BackupRestoreDto
-      //var instance = new DocspaceApiTypescript.BackupRestoreDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.BackupRestoreDto);
+      //var instance = new DocspaceApiJavascript.BackupRestoreDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.BackupRestoreDto);
     });
 
     it('should have the property backupId (base name: "backupId")', function() {
       // uncomment below and update the code to test the property backupId
-      //var instance = new DocspaceApiTypescript.BackupRestoreDto();
+      //var instance = new DocspaceApiJavascript.BackupRestoreDto();
       //expect(instance).to.be();
     });
 
     it('should have the property storageType (base name: "storageType")', function() {
       // uncomment below and update the code to test the property storageType
-      //var instance = new DocspaceApiTypescript.BackupRestoreDto();
+      //var instance = new DocspaceApiJavascript.BackupRestoreDto();
       //expect(instance).to.be();
     });
 
     it('should have the property storageParams (base name: "storageParams")', function() {
       // uncomment below and update the code to test the property storageParams
-      //var instance = new DocspaceApiTypescript.BackupRestoreDto();
+      //var instance = new DocspaceApiJavascript.BackupRestoreDto();
       //expect(instance).to.be();
     });
 
     it('should have the property notify (base name: "notify")', function() {
       // uncomment below and update the code to test the property notify
-      //var instance = new DocspaceApiTypescript.BackupRestoreDto();
+      //var instance = new DocspaceApiJavascript.BackupRestoreDto();
       //expect(instance).to.be();
     });
 
     it('should have the property dump (base name: "dump")', function() {
       // uncomment below and update the code to test the property dump
-      //var instance = new DocspaceApiTypescript.BackupRestoreDto();
+      //var instance = new DocspaceApiJavascript.BackupRestoreDto();
       //expect(instance).to.be();
     });
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.TfaValidateRequestsDto();
+    instance = new DocspaceApiJavascript.TfaValidateRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('TfaValidateRequestsDto', function() {
     it('should create an instance of TfaValidateRequestsDto', function() {
       // uncomment below and update the code to test TfaValidateRequestsDto
-      //var instance = new DocspaceApiTypescript.TfaValidateRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.TfaValidateRequestsDto);
+      //var instance = new DocspaceApiJavascript.TfaValidateRequestsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.TfaValidateRequestsDto);
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instance = new DocspaceApiTypescript.TfaValidateRequestsDto();
+      //var instance = new DocspaceApiJavascript.TfaValidateRequestsDto();
       //expect(instance).to.be();
     });
 

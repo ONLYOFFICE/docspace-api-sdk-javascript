@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.LoginSettingsDto();
+    instance = new DocspaceApiJavascript.LoginSettingsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,31 +62,31 @@
   describe('LoginSettingsDto', function() {
     it('should create an instance of LoginSettingsDto', function() {
       // uncomment below and update the code to test LoginSettingsDto
-      //var instance = new DocspaceApiTypescript.LoginSettingsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.LoginSettingsDto);
+      //var instance = new DocspaceApiJavascript.LoginSettingsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.LoginSettingsDto);
     });
 
     it('should have the property attemptCount (base name: "attemptCount")', function() {
       // uncomment below and update the code to test the property attemptCount
-      //var instance = new DocspaceApiTypescript.LoginSettingsDto();
+      //var instance = new DocspaceApiJavascript.LoginSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property blockTime (base name: "blockTime")', function() {
       // uncomment below and update the code to test the property blockTime
-      //var instance = new DocspaceApiTypescript.LoginSettingsDto();
+      //var instance = new DocspaceApiJavascript.LoginSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property checkPeriod (base name: "checkPeriod")', function() {
       // uncomment below and update the code to test the property checkPeriod
-      //var instance = new DocspaceApiTypescript.LoginSettingsDto();
+      //var instance = new DocspaceApiJavascript.LoginSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isDefault (base name: "isDefault")', function() {
       // uncomment below and update the code to test the property isDefault
-      //var instance = new DocspaceApiTypescript.LoginSettingsDto();
+      //var instance = new DocspaceApiJavascript.LoginSettingsDto();
       //expect(instance).to.be();
     });
 

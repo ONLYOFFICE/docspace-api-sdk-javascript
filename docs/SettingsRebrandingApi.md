@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SettingsRebrandingApi
+# DocspaceApiJavascript.SettingsRebrandingApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -28,15 +28,27 @@ Method | HTTP request | Description
 
 > AdditionalWhiteLabelSettingsWrapper deleteAdditionalWhiteLabelSettings()
 
-Delete the additional white label settings
-
 Deletes the additional white label settings.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-additional-white-label-settings/).
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**AdditionalWhiteLabelSettingsWrapper**](AdditionalWhiteLabelSettingsWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -58,7 +70,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
 apiInstance.deleteAdditionalWhiteLabelSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -67,18 +79,6 @@ apiInstance.deleteAdditionalWhiteLabelSettings((error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-This endpoint does not need any parameter.
-
-### Return type
-
-[**AdditionalWhiteLabelSettingsWrapper**](AdditionalWhiteLabelSettingsWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 
@@ -90,45 +90,9 @@ This endpoint does not need any parameter.
 
 > CompanyWhiteLabelSettingsWrapper deleteCompanyWhiteLabelSettings()
 
-Delete the company white label settings
-
 Deletes the company white label settings.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
-apiInstance.deleteCompanyWhiteLabelSettings((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-company-white-label-settings/).
 
 ### Parameters
 
@@ -142,25 +106,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getAdditionalWhiteLabelSettings
-
-> AdditionalWhiteLabelSettingsWrapper getAdditionalWhiteLabelSettings()
-
-Get the additional white label settings
-
-Returns the additional white label settings.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -182,8 +132,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
-apiInstance.getAdditionalWhiteLabelSettings((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+apiInstance.deleteCompanyWhiteLabelSettings((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -191,6 +141,20 @@ apiInstance.getAdditionalWhiteLabelSettings((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getAdditionalWhiteLabelSettings
+
+> AdditionalWhiteLabelSettingsWrapper getAdditionalWhiteLabelSettings()
+
+Returns the additional white label settings.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-additional-white-label-settings/).
 
 ### Parameters
 
@@ -204,25 +168,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getCompanyWhiteLabelSettings
-
-> CompanyWhiteLabelSettingsWrapper getCompanyWhiteLabelSettings()
-
-Get the company white label settings
-
-Returns the company white label settings.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -244,8 +194,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
-apiInstance.getCompanyWhiteLabelSettings((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+apiInstance.getAdditionalWhiteLabelSettings((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -253,6 +203,20 @@ apiInstance.getCompanyWhiteLabelSettings((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getCompanyWhiteLabelSettings
+
+> CompanyWhiteLabelSettingsWrapper getCompanyWhiteLabelSettings()
+
+Returns the company white label settings.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-company-white-label-settings/).
 
 ### Parameters
 
@@ -266,25 +230,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getEnableWhitelabel
-
-> BooleanWrapper getEnableWhitelabel()
-
-Check the white label availability
-
-Checks if the white label is enabled or not.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -306,8 +256,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
-apiInstance.getEnableWhitelabel((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+apiInstance.getCompanyWhiteLabelSettings((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -315,6 +265,20 @@ apiInstance.getEnableWhitelabel((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getEnableWhitelabel
+
+> BooleanWrapper getEnableWhitelabel()
+
+Checks if the white label is enabled or not.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-enable-whitelabel/).
 
 ### Parameters
 
@@ -328,25 +292,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getIsDefaultWhiteLabelLogoText
-
-> IsDefaultWhiteLabelLogosWrapper getIsDefaultWhiteLabelLogoText(opts)
-
-Check the default white label logo text
-
-Specifies if the white label logo text are default or not.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -368,12 +318,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
-let opts = {
-  'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
-  'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.
-};
-apiInstance.getIsDefaultWhiteLabelLogoText(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+apiInstance.getEnableWhitelabel((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -381,6 +327,20 @@ apiInstance.getIsDefaultWhiteLabelLogoText(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getIsDefaultWhiteLabelLogoText
+
+> IsDefaultWhiteLabelLogosWrapper getIsDefaultWhiteLabelLogoText(opts)
+
+Specifies if the white label logo text are default or not.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-is-default-white-label-logo-text/).
 
 ### Parameters
 
@@ -398,25 +358,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getIsDefaultWhiteLabelLogos
-
-> IsDefaultWhiteLabelLogosArrayWrapper getIsDefaultWhiteLabelLogos(opts)
-
-Check the default white label logos
-
-Specifies if the white label logos are default or not.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -438,12 +384,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
 let opts = {
   'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
   'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.
 };
-apiInstance.getIsDefaultWhiteLabelLogos(opts, (error, data, response) => {
+apiInstance.getIsDefaultWhiteLabelLogoText(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -451,6 +397,20 @@ apiInstance.getIsDefaultWhiteLabelLogos(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getIsDefaultWhiteLabelLogos
+
+> IsDefaultWhiteLabelLogosArrayWrapper getIsDefaultWhiteLabelLogos(opts)
+
+Specifies if the white label logos are default or not.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-is-default-white-label-logos/).
 
 ### Parameters
 
@@ -468,25 +428,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getLicensorData
-
-> CompanyWhiteLabelSettingsArrayWrapper getLicensorData()
-
-Get the licensor data
-
-Returns the licensor data.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -508,8 +454,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
-apiInstance.getLicensorData((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let opts = {
+  'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
+  'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.
+};
+apiInstance.getIsDefaultWhiteLabelLogos(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -517,6 +467,20 @@ apiInstance.getLicensorData((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getLicensorData
+
+> CompanyWhiteLabelSettingsArrayWrapper getLicensorData()
+
+Returns the licensor data.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-licensor-data/).
 
 ### Parameters
 
@@ -530,25 +494,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getWhiteLabelLogoText
-
-> StringWrapper getWhiteLabelLogoText(opts)
-
-Get the white label logo text
-
-Returns the white label logo text.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -570,12 +520,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
-let opts = {
-  'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
-  'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.
-};
-apiInstance.getWhiteLabelLogoText(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+apiInstance.getLicensorData((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -583,6 +529,20 @@ apiInstance.getWhiteLabelLogoText(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getWhiteLabelLogoText
+
+> StringWrapper getWhiteLabelLogoText(opts)
+
+Returns the white label logo text.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-white-label-logo-text/).
 
 ### Parameters
 
@@ -600,6 +560,46 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let opts = {
+  'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
+  'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.
+};
+apiInstance.getWhiteLabelLogoText(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -610,28 +610,9 @@ Name | Type | Description  | Notes
 
 > WhiteLabelItemArrayWrapper getWhiteLabelLogos(opts)
 
-Get the white label logos
-
 Returns the white label logos.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
-let opts = {
-  'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
-  'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.
-};
-apiInstance.getWhiteLabelLogos(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-white-label-logos/).
 
 ### Parameters
 
@@ -649,6 +630,25 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let opts = {
+  'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
+  'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.
+};
+apiInstance.getWhiteLabelLogos(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -659,15 +659,31 @@ No authorization required
 
 > BooleanWrapper restoreWhiteLabelLogoText(opts)
 
-Restore the white label logo text
-
 Restores the white label logo text.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/restore-white-label-logo-text/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **isDark** | **Boolean**| Specifies if the white label logo is for the dark theme or not. | [optional] 
+ **isDefault** | **Boolean**| Specifies if the logo is for a default tenant or not. | [optional] 
+
+### Return type
+
+[**BooleanWrapper**](BooleanWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -689,7 +705,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
 let opts = {
   'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
   'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.
@@ -703,6 +719,20 @@ apiInstance.restoreWhiteLabelLogoText(opts, (error, data, response) => {
 });
 ```
 
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## restoreWhiteLabelLogos
+
+> BooleanWrapper restoreWhiteLabelLogos(opts)
+
+Restores the white label logos.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/restore-white-label-logos/).
+
 ### Parameters
 
 
@@ -719,25 +749,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## restoreWhiteLabelLogos
-
-> BooleanWrapper restoreWhiteLabelLogos(opts)
-
-Restore the white label logos
-
-Restores the white label logos.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -759,7 +775,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
 let opts = {
   'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
   'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.
@@ -773,22 +789,6 @@ apiInstance.restoreWhiteLabelLogos(opts, (error, data, response) => {
 });
 ```
 
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **isDark** | **Boolean**| Specifies if the white label logo is for the dark theme or not. | [optional] 
- **isDefault** | **Boolean**| Specifies if the logo is for a default tenant or not. | [optional] 
-
-### Return type
-
-[**BooleanWrapper**](BooleanWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
-
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -799,48 +799,9 @@ Name | Type | Description  | Notes
 
 > BooleanWrapper saveAdditionalWhiteLabelSettings(opts)
 
-Save the additional white label settings
-
 Saves the additional white label settings specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
-let opts = {
-  'additionalWhiteLabelSettingsWrapper': new DocspaceApiTypescript.AdditionalWhiteLabelSettingsWrapper() // AdditionalWhiteLabelSettingsWrapper | 
-};
-apiInstance.saveAdditionalWhiteLabelSettings(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/save-additional-white-label-settings/).
 
 ### Parameters
 
@@ -857,25 +818,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## saveCompanyWhiteLabelSettings
-
-> BooleanWrapper saveCompanyWhiteLabelSettings(opts)
-
-Save the company white label settings
-
-Saves the company white label settings specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -897,11 +844,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
 let opts = {
-  'companyWhiteLabelSettingsWrapper': new DocspaceApiTypescript.CompanyWhiteLabelSettingsWrapper() // CompanyWhiteLabelSettingsWrapper | 
+  'additionalWhiteLabelSettingsWrapper': new DocspaceApiJavascript.AdditionalWhiteLabelSettingsWrapper() // AdditionalWhiteLabelSettingsWrapper | 
 };
-apiInstance.saveCompanyWhiteLabelSettings(opts, (error, data, response) => {
+apiInstance.saveAdditionalWhiteLabelSettings(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -909,6 +856,20 @@ apiInstance.saveCompanyWhiteLabelSettings(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## saveCompanyWhiteLabelSettings
+
+> BooleanWrapper saveCompanyWhiteLabelSettings(opts)
+
+Saves the company white label settings specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/save-company-white-label-settings/).
 
 ### Parameters
 
@@ -925,25 +886,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## saveWhiteLabelLogoText
-
-> BooleanWrapper saveWhiteLabelLogoText(opts)
-
-Save the white label logo text settings
-
-Saves the white label logo text specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -965,13 +912,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
 let opts = {
-  'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
-  'isDefault': true, // Boolean | Specifies if the logo is for a default tenant or not.
-  'whiteLabelRequestsDto': new DocspaceApiTypescript.WhiteLabelRequestsDto() // WhiteLabelRequestsDto | 
+  'companyWhiteLabelSettingsWrapper': new DocspaceApiJavascript.CompanyWhiteLabelSettingsWrapper() // CompanyWhiteLabelSettingsWrapper | 
 };
-apiInstance.saveWhiteLabelLogoText(opts, (error, data, response) => {
+apiInstance.saveCompanyWhiteLabelSettings(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -979,6 +924,20 @@ apiInstance.saveWhiteLabelLogoText(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## saveWhiteLabelLogoText
+
+> BooleanWrapper saveWhiteLabelLogoText(opts)
+
+Saves the white label logo text specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/save-white-label-logo-text/).
 
 ### Parameters
 
@@ -996,6 +955,47 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let opts = {
+  'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
+  'isDefault': true, // Boolean | Specifies if the logo is for a default tenant or not.
+  'whiteLabelRequestsDto': new DocspaceApiJavascript.WhiteLabelRequestsDto() // WhiteLabelRequestsDto | 
+};
+apiInstance.saveWhiteLabelLogoText(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 
@@ -1007,50 +1007,9 @@ Name | Type | Description  | Notes
 
 > BooleanWrapper saveWhiteLabelSettings(opts)
 
-Save the white label logos
-
 Saves the white label logos specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
-let opts = {
-  'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
-  'isDefault': true, // Boolean | Specifies if the logo is for a default tenant or not.
-  'whiteLabelRequestsDto': new DocspaceApiTypescript.WhiteLabelRequestsDto() // WhiteLabelRequestsDto | 
-};
-apiInstance.saveWhiteLabelSettings(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/save-white-label-settings/).
 
 ### Parameters
 
@@ -1069,25 +1028,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## saveWhiteLabelSettingsFromFiles
-
-> BooleanWrapper saveWhiteLabelSettingsFromFiles(opts)
-
-Save the white label logos from files
-
-Saves the white label logos from files.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1109,7 +1054,78 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsRebrandingApi();
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let opts = {
+  'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
+  'isDefault': true, // Boolean | Specifies if the logo is for a default tenant or not.
+  'whiteLabelRequestsDto': new DocspaceApiJavascript.WhiteLabelRequestsDto() // WhiteLabelRequestsDto | 
+};
+apiInstance.saveWhiteLabelSettings(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## saveWhiteLabelSettingsFromFiles
+
+> BooleanWrapper saveWhiteLabelSettingsFromFiles(opts)
+
+Saves the white label logos from files.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/save-white-label-settings-from-files/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **isDark** | **Boolean**| Specifies if the white label logo is for the dark theme or not. | [optional] 
+ **isDefault** | **Boolean**| Specifies if the logo is for a default tenant or not. | [optional] 
+
+### Return type
+
+[**BooleanWrapper**](BooleanWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
 let opts = {
   'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
   'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.
@@ -1122,22 +1138,6 @@ apiInstance.saveWhiteLabelSettingsFromFiles(opts, (error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **isDark** | **Boolean**| Specifies if the white label logo is for the dark theme or not. | [optional] 
- **isDefault** | **Boolean**| Specifies if the logo is for a default tenant or not. | [optional] 
-
-### Return type
-
-[**BooleanWrapper**](BooleanWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 

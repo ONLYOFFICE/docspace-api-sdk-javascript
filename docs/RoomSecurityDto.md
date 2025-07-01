@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.RoomSecurityDto
+# DocspaceApiJavascript.RoomSecurityDto
 
 ## Properties
 

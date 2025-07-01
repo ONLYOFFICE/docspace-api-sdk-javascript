@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.PageableResponseClientInfoResponse();
+    instance = new DocspaceApiJavascript.PageableResponseClientInfoResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,31 +62,31 @@
   describe('PageableResponseClientInfoResponse', function() {
     it('should create an instance of PageableResponseClientInfoResponse', function() {
       // uncomment below and update the code to test PageableResponseClientInfoResponse
-      //var instance = new DocspaceApiTypescript.PageableResponseClientInfoResponse();
-      //expect(instance).to.be.a(DocspaceApiTypescript.PageableResponseClientInfoResponse);
+      //var instance = new DocspaceApiJavascript.PageableResponseClientInfoResponse();
+      //expect(instance).to.be.a(DocspaceApiJavascript.PageableResponseClientInfoResponse);
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instance = new DocspaceApiTypescript.PageableResponseClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.PageableResponseClientInfoResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property limit (base name: "limit")', function() {
       // uncomment below and update the code to test the property limit
-      //var instance = new DocspaceApiTypescript.PageableResponseClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.PageableResponseClientInfoResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property lastClientId (base name: "last_client_id")', function() {
       // uncomment below and update the code to test the property lastClientId
-      //var instance = new DocspaceApiTypescript.PageableResponseClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.PageableResponseClientInfoResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property lastCreatedOn (base name: "last_created_on")', function() {
       // uncomment below and update the code to test the property lastCreatedOn
-      //var instance = new DocspaceApiTypescript.PageableResponseClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.PageableResponseClientInfoResponse();
       //expect(instance).to.be();
     });
 

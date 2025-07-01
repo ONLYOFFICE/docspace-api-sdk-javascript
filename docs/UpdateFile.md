@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.UpdateFile
+# DocspaceApiJavascript.UpdateFile
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.UploadResultWrapper
+# DocspaceApiJavascript.UploadResultWrapper
 
 ## Properties
 

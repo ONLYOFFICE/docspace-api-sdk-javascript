@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CreateApiKeyRequestDto();
+    instance = new DocspaceApiJavascript.CreateApiKeyRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('CreateApiKeyRequestDto', function() {
     it('should create an instance of CreateApiKeyRequestDto', function() {
       // uncomment below and update the code to test CreateApiKeyRequestDto
-      //var instance = new DocspaceApiTypescript.CreateApiKeyRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CreateApiKeyRequestDto);
+      //var instance = new DocspaceApiJavascript.CreateApiKeyRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CreateApiKeyRequestDto);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiTypescript.CreateApiKeyRequestDto();
+      //var instance = new DocspaceApiJavascript.CreateApiKeyRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property permissions (base name: "permissions")', function() {
       // uncomment below and update the code to test the property permissions
-      //var instance = new DocspaceApiTypescript.CreateApiKeyRequestDto();
+      //var instance = new DocspaceApiJavascript.CreateApiKeyRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property expiresInDays (base name: "expiresInDays")', function() {
       // uncomment below and update the code to test the property expiresInDays
-      //var instance = new DocspaceApiTypescript.CreateApiKeyRequestDto();
+      //var instance = new DocspaceApiJavascript.CreateApiKeyRequestDto();
       //expect(instance).to.be();
     });
 

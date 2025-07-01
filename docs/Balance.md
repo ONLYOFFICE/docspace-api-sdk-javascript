@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.Balance
+# DocspaceApiJavascript.Balance
 
 ## Properties
 

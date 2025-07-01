@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.TopUpDepositRequestDto
+# DocspaceApiJavascript.TopUpDepositRequestDto
 
 ## Properties
 

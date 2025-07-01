@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.Balance();
+    instance = new DocspaceApiJavascript.Balance();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('Balance', function() {
     it('should create an instance of Balance', function() {
       // uncomment below and update the code to test Balance
-      //var instance = new DocspaceApiTypescript.Balance();
-      //expect(instance).to.be.a(DocspaceApiTypescript.Balance);
+      //var instance = new DocspaceApiJavascript.Balance();
+      //expect(instance).to.be.a(DocspaceApiJavascript.Balance);
     });
 
     it('should have the property accountNumber (base name: "accountNumber")', function() {
       // uncomment below and update the code to test the property accountNumber
-      //var instance = new DocspaceApiTypescript.Balance();
+      //var instance = new DocspaceApiJavascript.Balance();
       //expect(instance).to.be();
     });
 
     it('should have the property subAccounts (base name: "subAccounts")', function() {
       // uncomment below and update the code to test the property subAccounts
-      //var instance = new DocspaceApiTypescript.Balance();
+      //var instance = new DocspaceApiJavascript.Balance();
       //expect(instance).to.be();
     });
 

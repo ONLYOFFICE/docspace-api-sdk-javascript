@@ -677,9 +677,9 @@ import ThirdPartyApi from './api/ThirdPartyApi';
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var DocspaceApiTypescript = require('index'); // See note below*.
-* var xxxSvc = new DocspaceApiTypescript.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new DocspaceApiTypescript.Yyy(); // Construct a model instance.
+* var DocspaceApiJavascript = require('index'); // See note below*.
+* var xxxSvc = new DocspaceApiJavascript.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new DocspaceApiJavascript.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -691,8 +691,8 @@ import ThirdPartyApi from './api/ThirdPartyApi';
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new DocspaceApiTypescript.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new DocspaceApiTypescript.Yyy(); // Construct a model instance.
+* var xxxSvc = new DocspaceApiJavascript.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new DocspaceApiJavascript.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.

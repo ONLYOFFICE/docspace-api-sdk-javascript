@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ConfirmDto
+# DocspaceApiJavascript.ConfirmDto
 
 ## Properties
 

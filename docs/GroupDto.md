@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.GroupDto
+# DocspaceApiJavascript.GroupDto
 
 ## Properties
 

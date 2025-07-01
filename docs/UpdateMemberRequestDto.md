@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.UpdateMemberRequestDto
+# DocspaceApiJavascript.UpdateMemberRequestDto
 
 ## Properties
 

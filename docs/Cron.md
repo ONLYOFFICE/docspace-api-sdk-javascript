@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.Cron
+# DocspaceApiJavascript.Cron
 
 ## Properties
 

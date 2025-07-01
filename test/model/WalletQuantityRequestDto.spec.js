@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.WalletQuantityRequestDto();
+    instance = new DocspaceApiJavascript.WalletQuantityRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('WalletQuantityRequestDto', function() {
     it('should create an instance of WalletQuantityRequestDto', function() {
       // uncomment below and update the code to test WalletQuantityRequestDto
-      //var instance = new DocspaceApiTypescript.WalletQuantityRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.WalletQuantityRequestDto);
+      //var instance = new DocspaceApiJavascript.WalletQuantityRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.WalletQuantityRequestDto);
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new DocspaceApiTypescript.WalletQuantityRequestDto();
+      //var instance = new DocspaceApiJavascript.WalletQuantityRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property productQuantityType (base name: "productQuantityType")', function() {
       // uncomment below and update the code to test the property productQuantityType
-      //var instance = new DocspaceApiTypescript.WalletQuantityRequestDto();
+      //var instance = new DocspaceApiJavascript.WalletQuantityRequestDto();
       //expect(instance).to.be();
     });
 

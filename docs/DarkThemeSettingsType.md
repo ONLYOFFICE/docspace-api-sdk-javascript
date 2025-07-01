@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.DarkThemeSettingsType
+# DocspaceApiJavascript.DarkThemeSettingsType
+
+
 
 ## Enum
 

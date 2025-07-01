@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.FormsItemDto();
+    instance = new DocspaceApiJavascript.FormsItemDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('FormsItemDto', function() {
     it('should create an instance of FormsItemDto', function() {
       // uncomment below and update the code to test FormsItemDto
-      //var instance = new DocspaceApiTypescript.FormsItemDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.FormsItemDto);
+      //var instance = new DocspaceApiJavascript.FormsItemDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.FormsItemDto);
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiTypescript.FormsItemDto();
+      //var instance = new DocspaceApiJavascript.FormsItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new DocspaceApiTypescript.FormsItemDto();
+      //var instance = new DocspaceApiJavascript.FormsItemDto();
       //expect(instance).to.be();
     });
 

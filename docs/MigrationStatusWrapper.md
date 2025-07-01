@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.MigrationStatusWrapper
+# DocspaceApiJavascript.MigrationStatusWrapper
 
 ## Properties
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ThirdPartyBackupRequestDto();
+    instance = new DocspaceApiJavascript.ThirdPartyBackupRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,43 +62,43 @@
   describe('ThirdPartyBackupRequestDto', function() {
     it('should create an instance of ThirdPartyBackupRequestDto', function() {
       // uncomment below and update the code to test ThirdPartyBackupRequestDto
-      //var instance = new DocspaceApiTypescript.ThirdPartyBackupRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ThirdPartyBackupRequestDto);
+      //var instance = new DocspaceApiJavascript.ThirdPartyBackupRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ThirdPartyBackupRequestDto);
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiTypescript.ThirdPartyBackupRequestDto();
+      //var instance = new DocspaceApiJavascript.ThirdPartyBackupRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property login (base name: "login")', function() {
       // uncomment below and update the code to test the property login
-      //var instance = new DocspaceApiTypescript.ThirdPartyBackupRequestDto();
+      //var instance = new DocspaceApiJavascript.ThirdPartyBackupRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instance = new DocspaceApiTypescript.ThirdPartyBackupRequestDto();
+      //var instance = new DocspaceApiJavascript.ThirdPartyBackupRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property token (base name: "token")', function() {
       // uncomment below and update the code to test the property token
-      //var instance = new DocspaceApiTypescript.ThirdPartyBackupRequestDto();
+      //var instance = new DocspaceApiJavascript.ThirdPartyBackupRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property customerTitle (base name: "customerTitle")', function() {
       // uncomment below and update the code to test the property customerTitle
-      //var instance = new DocspaceApiTypescript.ThirdPartyBackupRequestDto();
+      //var instance = new DocspaceApiJavascript.ThirdPartyBackupRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property providerKey (base name: "providerKey")', function() {
       // uncomment below and update the code to test the property providerKey
-      //var instance = new DocspaceApiTypescript.ThirdPartyBackupRequestDto();
+      //var instance = new DocspaceApiJavascript.ThirdPartyBackupRequestDto();
       //expect(instance).to.be();
     });
 

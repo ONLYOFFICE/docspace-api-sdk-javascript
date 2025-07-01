@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SsoIdpSettings
+# DocspaceApiJavascript.SsoIdpSettings
 
 ## Properties
 

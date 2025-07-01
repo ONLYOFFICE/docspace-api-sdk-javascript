@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.LinkType
+# DocspaceApiJavascript.LinkType
+
+
 
 ## Enum
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.NewItemsDtoRoomNewItemsDto
+# DocspaceApiJavascript.NewItemsDtoRoomNewItemsDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.Session
+# DocspaceApiJavascript.Session
 
 ## Properties
 

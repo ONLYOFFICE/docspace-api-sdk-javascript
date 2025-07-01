@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.CustomerOperationsReportRequestDto
+# DocspaceApiJavascript.CustomerOperationsReportRequestDto
 
 ## Properties
 

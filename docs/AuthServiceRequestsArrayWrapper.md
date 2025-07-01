@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.AuthServiceRequestsArrayWrapper
+# DocspaceApiJavascript.AuthServiceRequestsArrayWrapper
 
 ## Properties
 

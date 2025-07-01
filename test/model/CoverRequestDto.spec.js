@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CoverRequestDto();
+    instance = new DocspaceApiJavascript.CoverRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('CoverRequestDto', function() {
     it('should create an instance of CoverRequestDto', function() {
       // uncomment below and update the code to test CoverRequestDto
-      //var instance = new DocspaceApiTypescript.CoverRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CoverRequestDto);
+      //var instance = new DocspaceApiJavascript.CoverRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CoverRequestDto);
     });
 
     it('should have the property color (base name: "color")', function() {
       // uncomment below and update the code to test the property color
-      //var instance = new DocspaceApiTypescript.CoverRequestDto();
+      //var instance = new DocspaceApiJavascript.CoverRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property cover (base name: "cover")', function() {
       // uncomment below and update the code to test the property cover
-      //var instance = new DocspaceApiTypescript.CoverRequestDto();
+      //var instance = new DocspaceApiJavascript.CoverRequestDto();
       //expect(instance).to.be();
     });
 

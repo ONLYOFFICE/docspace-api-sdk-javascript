@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CreateTextOrHtmlFile();
+    instance = new DocspaceApiJavascript.CreateTextOrHtmlFile();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('CreateTextOrHtmlFile', function() {
     it('should create an instance of CreateTextOrHtmlFile', function() {
       // uncomment below and update the code to test CreateTextOrHtmlFile
-      //var instance = new DocspaceApiTypescript.CreateTextOrHtmlFile();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CreateTextOrHtmlFile);
+      //var instance = new DocspaceApiJavascript.CreateTextOrHtmlFile();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CreateTextOrHtmlFile);
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiTypescript.CreateTextOrHtmlFile();
+      //var instance = new DocspaceApiJavascript.CreateTextOrHtmlFile();
       //expect(instance).to.be();
     });
 
     it('should have the property content (base name: "content")', function() {
       // uncomment below and update the code to test the property content
-      //var instance = new DocspaceApiTypescript.CreateTextOrHtmlFile();
+      //var instance = new DocspaceApiJavascript.CreateTextOrHtmlFile();
       //expect(instance).to.be();
     });
 
     it('should have the property createNewIfExist (base name: "createNewIfExist")', function() {
       // uncomment below and update the code to test the property createNewIfExist
-      //var instance = new DocspaceApiTypescript.CreateTextOrHtmlFile();
+      //var instance = new DocspaceApiJavascript.CreateTextOrHtmlFile();
       //expect(instance).to.be();
     });
 

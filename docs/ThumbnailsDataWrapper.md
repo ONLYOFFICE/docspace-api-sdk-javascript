@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ThumbnailsDataWrapper
+# DocspaceApiJavascript.ThumbnailsDataWrapper
 
 ## Properties
 

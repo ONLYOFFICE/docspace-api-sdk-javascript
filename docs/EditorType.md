@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.EditorType
+# DocspaceApiJavascript.EditorType
+
+
 
 ## Enum
 

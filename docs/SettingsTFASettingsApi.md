@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SettingsTFASettingsApi
+# DocspaceApiJavascript.SettingsTFASettingsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -20,45 +20,9 @@ Method | HTTP request | Description
 
 > ObjectArrayWrapper getTfaAppCodes()
 
-Get the TFA codes
-
 Returns the two-factor authentication application codes.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
-apiInstance.getTfaAppCodes((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-tfa-app-codes/).
 
 ### Parameters
 
@@ -72,25 +36,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getTfaConfirmUrl
-
-> StringWrapper getTfaConfirmUrl()
-
-Get confirmation email
-
-Returns the confirmation email URL for authorization via SMS or TFA application.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -112,8 +62,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
-apiInstance.getTfaConfirmUrl((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsTFASettingsApi();
+apiInstance.getTfaAppCodes((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -121,6 +71,20 @@ apiInstance.getTfaConfirmUrl((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getTfaConfirmUrl
+
+> StringWrapper getTfaConfirmUrl()
+
+Returns the confirmation email URL for authorization via SMS or TFA application.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-tfa-confirm-url/).
 
 ### Parameters
 
@@ -134,25 +98,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getTfaSettings
-
-> TfaSettingsArrayWrapper getTfaSettings()
-
-Get the TFA settings
-
-Returns the current two-factor authentication settings.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -174,8 +124,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
-apiInstance.getTfaSettings((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsTFASettingsApi();
+apiInstance.getTfaConfirmUrl((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -183,6 +133,20 @@ apiInstance.getTfaSettings((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getTfaSettings
+
+> TfaSettingsArrayWrapper getTfaSettings()
+
+Returns the current two-factor authentication settings.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-tfa-settings/).
 
 ### Parameters
 
@@ -196,25 +160,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## tfaAppGenerateSetupCode
-
-> SetupCodeWrapper tfaAppGenerateSetupCode()
-
-Generate setup code
-
-Generates the setup TFA code for the current user.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -236,8 +186,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
-apiInstance.tfaAppGenerateSetupCode((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsTFASettingsApi();
+apiInstance.getTfaSettings((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -245,6 +195,20 @@ apiInstance.tfaAppGenerateSetupCode((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## tfaAppGenerateSetupCode
+
+> SetupCodeWrapper tfaAppGenerateSetupCode()
+
+Generates the setup TFA code for the current user.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/tfa-app-generate-setup-code/).
 
 ### Parameters
 
@@ -258,25 +222,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## tfaValidateAuthCode
-
-> BooleanWrapper tfaValidateAuthCode(opts)
-
-Validate the TFA code
-
-Validates the two-factor authentication code specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -298,11 +248,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
-let opts = {
-  'tfaValidateRequestsDto': new DocspaceApiTypescript.TfaValidateRequestsDto() // TfaValidateRequestsDto | 
-};
-apiInstance.tfaValidateAuthCode(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsTFASettingsApi();
+apiInstance.tfaAppGenerateSetupCode((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -310,6 +257,20 @@ apiInstance.tfaValidateAuthCode(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## tfaValidateAuthCode
+
+> BooleanWrapper tfaValidateAuthCode(opts)
+
+Validates the two-factor authentication code specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/tfa-validate-auth-code/).
 
 ### Parameters
 
@@ -326,25 +287,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## unlinkTfaApp
-
-> StringWrapper unlinkTfaApp(opts)
-
-Unlink the TFA application
-
-Unlinks the current two-factor authentication application from the user account specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -366,11 +313,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
+let apiInstance = new DocspaceApiJavascript.SettingsTFASettingsApi();
 let opts = {
-  'tfaRequestsDto': new DocspaceApiTypescript.TfaRequestsDto() // TfaRequestsDto | 
+  'tfaValidateRequestsDto': new DocspaceApiJavascript.TfaValidateRequestsDto() // TfaValidateRequestsDto | 
 };
-apiInstance.unlinkTfaApp(opts, (error, data, response) => {
+apiInstance.tfaValidateAuthCode(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -378,6 +325,20 @@ apiInstance.unlinkTfaApp(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## unlinkTfaApp
+
+> StringWrapper unlinkTfaApp(opts)
+
+Unlinks the current two-factor authentication application from the user account specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/unlink-tfa-app/).
 
 ### Parameters
 
@@ -394,25 +355,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## updateTfaAppCodes
-
-> ObjectArrayWrapper updateTfaAppCodes()
-
-Update the TFA codes
-
-Requests the new backup codes for the two-factor authentication application.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -434,8 +381,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
-apiInstance.updateTfaAppCodes((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsTFASettingsApi();
+let opts = {
+  'tfaRequestsDto': new DocspaceApiJavascript.TfaRequestsDto() // TfaRequestsDto | 
+};
+apiInstance.unlinkTfaApp(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -443,6 +393,20 @@ apiInstance.updateTfaAppCodes((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## updateTfaAppCodes
+
+> ObjectArrayWrapper updateTfaAppCodes()
+
+Requests the new backup codes for the two-factor authentication application.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-tfa-app-codes/).
 
 ### Parameters
 
@@ -456,25 +420,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## updateTfaSettings
-
-> BooleanWrapper updateTfaSettings(opts)
-
-Update the TFA settings
-
-Updates the two-factor authentication settings with the parameters specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -496,11 +446,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
-let opts = {
-  'tfaRequestsDto': new DocspaceApiTypescript.TfaRequestsDto() // TfaRequestsDto | 
-};
-apiInstance.updateTfaSettings(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsTFASettingsApi();
+apiInstance.updateTfaAppCodes((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -508,6 +455,20 @@ apiInstance.updateTfaSettings(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## updateTfaSettings
+
+> BooleanWrapper updateTfaSettings(opts)
+
+Updates the two-factor authentication settings with the parameters specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-tfa-settings/).
 
 ### Parameters
 
@@ -524,25 +485,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## updateTfaSettingsLink
-
-> StringWrapper updateTfaSettingsLink(opts)
-
-Get a confirmation email for updating TFA settings
-
-Returns the confirmation email URL for updating TFA settings.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -564,11 +511,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsTFASettingsApi();
+let apiInstance = new DocspaceApiJavascript.SettingsTFASettingsApi();
 let opts = {
-  'tfaRequestsDto': new DocspaceApiTypescript.TfaRequestsDto() // TfaRequestsDto | 
+  'tfaRequestsDto': new DocspaceApiJavascript.TfaRequestsDto() // TfaRequestsDto | 
 };
-apiInstance.updateTfaSettingsLink(opts, (error, data, response) => {
+apiInstance.updateTfaSettings(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -576,6 +523,20 @@ apiInstance.updateTfaSettingsLink(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## updateTfaSettingsLink
+
+> StringWrapper updateTfaSettingsLink(opts)
+
+Returns the confirmation email URL for updating TFA settings.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-tfa-settings-link/).
 
 ### Parameters
 
@@ -591,6 +552,45 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.SettingsTFASettingsApi();
+let opts = {
+  'tfaRequestsDto': new DocspaceApiJavascript.TfaRequestsDto() // TfaRequestsDto | 
+};
+apiInstance.updateTfaSettingsLink(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

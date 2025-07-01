@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.AccountInfoArrayWrapper
+# DocspaceApiJavascript.AccountInfoArrayWrapper
 
 ## Properties
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.MentionMessageWrapper();
+    instance = new DocspaceApiJavascript.MentionMessageWrapper();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('MentionMessageWrapper', function() {
     it('should create an instance of MentionMessageWrapper', function() {
       // uncomment below and update the code to test MentionMessageWrapper
-      //var instance = new DocspaceApiTypescript.MentionMessageWrapper();
-      //expect(instance).to.be.a(DocspaceApiTypescript.MentionMessageWrapper);
+      //var instance = new DocspaceApiJavascript.MentionMessageWrapper();
+      //expect(instance).to.be.a(DocspaceApiJavascript.MentionMessageWrapper);
     });
 
     it('should have the property actionLink (base name: "actionLink")', function() {
       // uncomment below and update the code to test the property actionLink
-      //var instance = new DocspaceApiTypescript.MentionMessageWrapper();
+      //var instance = new DocspaceApiJavascript.MentionMessageWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property emails (base name: "emails")', function() {
       // uncomment below and update the code to test the property emails
-      //var instance = new DocspaceApiTypescript.MentionMessageWrapper();
+      //var instance = new DocspaceApiJavascript.MentionMessageWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new DocspaceApiTypescript.MentionMessageWrapper();
+      //var instance = new DocspaceApiJavascript.MentionMessageWrapper();
       //expect(instance).to.be();
     });
 

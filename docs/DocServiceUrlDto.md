@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.DocServiceUrlDto
+# DocspaceApiJavascript.DocServiceUrlDto
 
 ## Properties
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.SsoSettingsV2();
+    instance = new DocspaceApiJavascript.SsoSettingsV2();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,79 +62,79 @@
   describe('SsoSettingsV2', function() {
     it('should create an instance of SsoSettingsV2', function() {
       // uncomment below and update the code to test SsoSettingsV2
-      //var instance = new DocspaceApiTypescript.SsoSettingsV2();
-      //expect(instance).to.be.a(DocspaceApiTypescript.SsoSettingsV2);
+      //var instance = new DocspaceApiJavascript.SsoSettingsV2();
+      //expect(instance).to.be.a(DocspaceApiJavascript.SsoSettingsV2);
     });
 
     it('should have the property lastModified (base name: "lastModified")', function() {
       // uncomment below and update the code to test the property lastModified
-      //var instance = new DocspaceApiTypescript.SsoSettingsV2();
+      //var instance = new DocspaceApiJavascript.SsoSettingsV2();
       //expect(instance).to.be();
     });
 
     it('should have the property enableSso (base name: "enableSso")', function() {
       // uncomment below and update the code to test the property enableSso
-      //var instance = new DocspaceApiTypescript.SsoSettingsV2();
+      //var instance = new DocspaceApiJavascript.SsoSettingsV2();
       //expect(instance).to.be();
     });
 
     it('should have the property idpSettings (base name: "idpSettings")', function() {
       // uncomment below and update the code to test the property idpSettings
-      //var instance = new DocspaceApiTypescript.SsoSettingsV2();
+      //var instance = new DocspaceApiJavascript.SsoSettingsV2();
       //expect(instance).to.be();
     });
 
     it('should have the property idpCertificates (base name: "idpCertificates")', function() {
       // uncomment below and update the code to test the property idpCertificates
-      //var instance = new DocspaceApiTypescript.SsoSettingsV2();
+      //var instance = new DocspaceApiJavascript.SsoSettingsV2();
       //expect(instance).to.be();
     });
 
     it('should have the property idpCertificateAdvanced (base name: "idpCertificateAdvanced")', function() {
       // uncomment below and update the code to test the property idpCertificateAdvanced
-      //var instance = new DocspaceApiTypescript.SsoSettingsV2();
+      //var instance = new DocspaceApiJavascript.SsoSettingsV2();
       //expect(instance).to.be();
     });
 
     it('should have the property spLoginLabel (base name: "spLoginLabel")', function() {
       // uncomment below and update the code to test the property spLoginLabel
-      //var instance = new DocspaceApiTypescript.SsoSettingsV2();
+      //var instance = new DocspaceApiJavascript.SsoSettingsV2();
       //expect(instance).to.be();
     });
 
     it('should have the property spCertificates (base name: "spCertificates")', function() {
       // uncomment below and update the code to test the property spCertificates
-      //var instance = new DocspaceApiTypescript.SsoSettingsV2();
+      //var instance = new DocspaceApiJavascript.SsoSettingsV2();
       //expect(instance).to.be();
     });
 
     it('should have the property spCertificateAdvanced (base name: "spCertificateAdvanced")', function() {
       // uncomment below and update the code to test the property spCertificateAdvanced
-      //var instance = new DocspaceApiTypescript.SsoSettingsV2();
+      //var instance = new DocspaceApiJavascript.SsoSettingsV2();
       //expect(instance).to.be();
     });
 
     it('should have the property fieldMapping (base name: "fieldMapping")', function() {
       // uncomment below and update the code to test the property fieldMapping
-      //var instance = new DocspaceApiTypescript.SsoSettingsV2();
+      //var instance = new DocspaceApiJavascript.SsoSettingsV2();
       //expect(instance).to.be();
     });
 
     it('should have the property hideAuthPage (base name: "hideAuthPage")', function() {
       // uncomment below and update the code to test the property hideAuthPage
-      //var instance = new DocspaceApiTypescript.SsoSettingsV2();
+      //var instance = new DocspaceApiJavascript.SsoSettingsV2();
       //expect(instance).to.be();
     });
 
     it('should have the property usersType (base name: "usersType")', function() {
       // uncomment below and update the code to test the property usersType
-      //var instance = new DocspaceApiTypescript.SsoSettingsV2();
+      //var instance = new DocspaceApiJavascript.SsoSettingsV2();
       //expect(instance).to.be();
     });
 
     it('should have the property disableEmailVerification (base name: "disableEmailVerification")', function() {
       // uncomment below and update the code to test the property disableEmailVerification
-      //var instance = new DocspaceApiTypescript.SsoSettingsV2();
+      //var instance = new DocspaceApiJavascript.SsoSettingsV2();
       //expect(instance).to.be();
     });
 

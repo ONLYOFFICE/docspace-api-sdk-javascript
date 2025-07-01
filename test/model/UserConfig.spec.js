@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.UserConfig();
+    instance = new DocspaceApiJavascript.UserConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,31 +62,31 @@
   describe('UserConfig', function() {
     it('should create an instance of UserConfig', function() {
       // uncomment below and update the code to test UserConfig
-      //var instance = new DocspaceApiTypescript.UserConfig();
-      //expect(instance).to.be.a(DocspaceApiTypescript.UserConfig);
+      //var instance = new DocspaceApiJavascript.UserConfig();
+      //expect(instance).to.be.a(DocspaceApiJavascript.UserConfig);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.UserConfig();
+      //var instance = new DocspaceApiJavascript.UserConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiTypescript.UserConfig();
+      //var instance = new DocspaceApiJavascript.UserConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property image (base name: "image")', function() {
       // uncomment below and update the code to test the property image
-      //var instance = new DocspaceApiTypescript.UserConfig();
+      //var instance = new DocspaceApiJavascript.UserConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property roles (base name: "roles")', function() {
       // uncomment below and update the code to test the property roles
-      //var instance = new DocspaceApiTypescript.UserConfig();
+      //var instance = new DocspaceApiJavascript.UserConfig();
       //expect(instance).to.be();
     });
 

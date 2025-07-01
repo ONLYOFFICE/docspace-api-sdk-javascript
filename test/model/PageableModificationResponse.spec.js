@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.PageableModificationResponse();
+    instance = new DocspaceApiJavascript.PageableModificationResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('PageableModificationResponse', function() {
     it('should create an instance of PageableModificationResponse', function() {
       // uncomment below and update the code to test PageableModificationResponse
-      //var instance = new DocspaceApiTypescript.PageableModificationResponse();
-      //expect(instance).to.be.a(DocspaceApiTypescript.PageableModificationResponse);
+      //var instance = new DocspaceApiJavascript.PageableModificationResponse();
+      //expect(instance).to.be.a(DocspaceApiJavascript.PageableModificationResponse);
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instance = new DocspaceApiTypescript.PageableModificationResponse();
+      //var instance = new DocspaceApiJavascript.PageableModificationResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property limit (base name: "limit")', function() {
       // uncomment below and update the code to test the property limit
-      //var instance = new DocspaceApiTypescript.PageableModificationResponse();
+      //var instance = new DocspaceApiJavascript.PageableModificationResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModifiedOn (base name: "last_modified_on")', function() {
       // uncomment below and update the code to test the property lastModifiedOn
-      //var instance = new DocspaceApiTypescript.PageableModificationResponse();
+      //var instance = new DocspaceApiJavascript.PageableModificationResponse();
       //expect(instance).to.be();
     });
 

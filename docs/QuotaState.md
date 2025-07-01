@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.QuotaState
+# DocspaceApiJavascript.QuotaState
+
+
 
 ## Enum
 

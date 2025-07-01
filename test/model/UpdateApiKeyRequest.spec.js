@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.UpdateApiKeyRequest();
+    instance = new DocspaceApiJavascript.UpdateApiKeyRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('UpdateApiKeyRequest', function() {
     it('should create an instance of UpdateApiKeyRequest', function() {
       // uncomment below and update the code to test UpdateApiKeyRequest
-      //var instance = new DocspaceApiTypescript.UpdateApiKeyRequest();
-      //expect(instance).to.be.a(DocspaceApiTypescript.UpdateApiKeyRequest);
+      //var instance = new DocspaceApiJavascript.UpdateApiKeyRequest();
+      //expect(instance).to.be.a(DocspaceApiJavascript.UpdateApiKeyRequest);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiTypescript.UpdateApiKeyRequest();
+      //var instance = new DocspaceApiJavascript.UpdateApiKeyRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property permissions (base name: "permissions")', function() {
       // uncomment below and update the code to test the property permissions
-      //var instance = new DocspaceApiTypescript.UpdateApiKeyRequest();
+      //var instance = new DocspaceApiJavascript.UpdateApiKeyRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property isActive (base name: "isActive")', function() {
       // uncomment below and update the code to test the property isActive
-      //var instance = new DocspaceApiTypescript.UpdateApiKeyRequest();
+      //var instance = new DocspaceApiJavascript.UpdateApiKeyRequest();
       //expect(instance).to.be();
     });
 

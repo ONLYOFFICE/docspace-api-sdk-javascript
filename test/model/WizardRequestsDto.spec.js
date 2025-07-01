@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.WizardRequestsDto();
+    instance = new DocspaceApiJavascript.WizardRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,43 +62,43 @@
   describe('WizardRequestsDto', function() {
     it('should create an instance of WizardRequestsDto', function() {
       // uncomment below and update the code to test WizardRequestsDto
-      //var instance = new DocspaceApiTypescript.WizardRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.WizardRequestsDto);
+      //var instance = new DocspaceApiJavascript.WizardRequestsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.WizardRequestsDto);
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiTypescript.WizardRequestsDto();
+      //var instance = new DocspaceApiJavascript.WizardRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property passwordHash (base name: "passwordHash")', function() {
       // uncomment below and update the code to test the property passwordHash
-      //var instance = new DocspaceApiTypescript.WizardRequestsDto();
+      //var instance = new DocspaceApiJavascript.WizardRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property lng (base name: "lng")', function() {
       // uncomment below and update the code to test the property lng
-      //var instance = new DocspaceApiTypescript.WizardRequestsDto();
+      //var instance = new DocspaceApiJavascript.WizardRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property timeZone (base name: "timeZone")', function() {
       // uncomment below and update the code to test the property timeZone
-      //var instance = new DocspaceApiTypescript.WizardRequestsDto();
+      //var instance = new DocspaceApiJavascript.WizardRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property amiId (base name: "amiId")', function() {
       // uncomment below and update the code to test the property amiId
-      //var instance = new DocspaceApiTypescript.WizardRequestsDto();
+      //var instance = new DocspaceApiJavascript.WizardRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property subscribeFromSite (base name: "subscribeFromSite")', function() {
       // uncomment below and update the code to test the property subscribeFromSite
-      //var instance = new DocspaceApiTypescript.WizardRequestsDto();
+      //var instance = new DocspaceApiJavascript.WizardRequestsDto();
       //expect(instance).to.be();
     });
 

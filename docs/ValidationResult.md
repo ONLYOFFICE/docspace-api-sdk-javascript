@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.ValidationResult
+# DocspaceApiJavascript.ValidationResult
+
+
 
 ## Enum
 

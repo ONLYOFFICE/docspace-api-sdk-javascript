@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.RoomsApi
+# DocspaceApiJavascript.RoomsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -49,49 +49,9 @@ Method | HTTP request | Description
 
 > FolderIntegerWrapper addRoomTags(id, opts)
 
-Add the room tags
-
 Adds the tags to a room with the ID specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room Id.
-let opts = {
-  'batchTagsRequestDto': new DocspaceApiTypescript.BatchTagsRequestDto() // BatchTagsRequestDto | The parameters for adding tags.
-};
-apiInstance.addRoomTags(id, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/add-room-tags/).
 
 ### Parameters
 
@@ -109,25 +69,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## archiveRoom
-
-> FileOperationWrapper archiveRoom(id, opts)
-
-Archive a room
-
-Moves a room with the ID specified in the request to the \&quot;Archive\&quot; section.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -149,12 +95,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room ID.
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room Id.
 let opts = {
-  'archiveRoomRequest': new DocspaceApiTypescript.ArchiveRoomRequest() // ArchiveRoomRequest | The parameters for archiving a room.
+  'batchTagsRequestDto': new DocspaceApiJavascript.BatchTagsRequestDto() // BatchTagsRequestDto | The parameters for adding tags.
 };
-apiInstance.archiveRoom(id, opts, (error, data, response) => {
+apiInstance.addRoomTags(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -162,6 +108,20 @@ apiInstance.archiveRoom(id, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## archiveRoom
+
+> FileOperationWrapper archiveRoom(id, opts)
+
+Moves a room with the ID specified in the request to the \&quot;Archive\&quot; section.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/archive-room/).
 
 ### Parameters
 
@@ -179,25 +139,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## changeRoomCover
-
-> FolderIntegerWrapper changeRoomCover(id, opts)
-
-Change the room cover
-
-Changes a cover of a room with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -219,12 +165,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
 let id = 9846; // Number | The room ID.
 let opts = {
-  'coverRequestDto': new DocspaceApiTypescript.CoverRequestDto() // CoverRequestDto | The request parameters to change the room cover.
+  'archiveRoomRequest': new DocspaceApiJavascript.ArchiveRoomRequest() // ArchiveRoomRequest | The parameters for archiving a room.
 };
-apiInstance.changeRoomCover(id, opts, (error, data, response) => {
+apiInstance.archiveRoom(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -232,6 +178,20 @@ apiInstance.changeRoomCover(id, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## changeRoomCover
+
+> FolderIntegerWrapper changeRoomCover(id, opts)
+
+Changes a cover of a room with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/change-room-cover/).
 
 ### Parameters
 
@@ -249,25 +209,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createRoom
-
-> FolderIntegerWrapper createRoom(opts)
-
-Create a room
-
-Creates a room in the \&quot;Rooms\&quot; section.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -289,11 +235,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room ID.
 let opts = {
-  'createRoomRequestDto': new DocspaceApiTypescript.CreateRoomRequestDto() // CreateRoomRequestDto | 
+  'coverRequestDto': new DocspaceApiJavascript.CoverRequestDto() // CoverRequestDto | The request parameters to change the room cover.
 };
-apiInstance.createRoom(opts, (error, data, response) => {
+apiInstance.changeRoomCover(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -301,6 +248,20 @@ apiInstance.createRoom(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createRoom
+
+> FolderIntegerWrapper createRoom(opts)
+
+Creates a room in the \&quot;Rooms\&quot; section.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-room/).
 
 ### Parameters
 
@@ -317,25 +278,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createRoomFromTemplate
-
-> RoomFromTemplateStatusWrapper createRoomFromTemplate(opts)
-
-Create a room from the template
-
-Creates a room in the \&quot;Rooms\&quot; section based on the template.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -357,11 +304,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
 let opts = {
-  'createRoomFromTemplateDto': new DocspaceApiTypescript.CreateRoomFromTemplateDto() // CreateRoomFromTemplateDto | 
+  'createRoomRequestDto': new DocspaceApiJavascript.CreateRoomRequestDto() // CreateRoomRequestDto | 
 };
-apiInstance.createRoomFromTemplate(opts, (error, data, response) => {
+apiInstance.createRoom(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -369,6 +316,20 @@ apiInstance.createRoomFromTemplate(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createRoomFromTemplate
+
+> RoomFromTemplateStatusWrapper createRoomFromTemplate(opts)
+
+Creates a room in the \&quot;Rooms\&quot; section based on the template.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-room-from-template/).
 
 ### Parameters
 
@@ -385,25 +346,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createRoomLogo
-
-> FolderIntegerWrapper createRoomLogo(id, opts)
-
-Create a room logo
-
-Creates a logo for a room with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -425,12 +372,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room ID.
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
 let opts = {
-  'logoRequest': new DocspaceApiTypescript.LogoRequest() // LogoRequest | The logo request parameters.
+  'createRoomFromTemplateDto': new DocspaceApiJavascript.CreateRoomFromTemplateDto() // CreateRoomFromTemplateDto | 
 };
-apiInstance.createRoomLogo(id, opts, (error, data, response) => {
+apiInstance.createRoomFromTemplate(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -438,6 +384,20 @@ apiInstance.createRoomLogo(id, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createRoomLogo
+
+> FolderIntegerWrapper createRoomLogo(id, opts)
+
+Creates a logo for a room with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-room-logo/).
 
 ### Parameters
 
@@ -455,25 +415,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createRoomTag
-
-> ObjectWrapper createRoomTag(opts)
-
-Create a tag
-
-Creates a custom tag with the parameters specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -495,11 +441,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room ID.
 let opts = {
-  'createTagRequestDto': new DocspaceApiTypescript.CreateTagRequestDto() // CreateTagRequestDto | 
+  'logoRequest': new DocspaceApiJavascript.LogoRequest() // LogoRequest | The logo request parameters.
 };
-apiInstance.createRoomTag(opts, (error, data, response) => {
+apiInstance.createRoomLogo(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -507,6 +454,20 @@ apiInstance.createRoomTag(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createRoomTag
+
+> ObjectWrapper createRoomTag(opts)
+
+Creates a custom tag with the parameters specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-room-tag/).
 
 ### Parameters
 
@@ -523,25 +484,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createRoomTemplate
-
-> RoomTemplateStatusWrapper createRoomTemplate(opts)
-
-Start creating room template
-
-Starts creating the room template.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -563,11 +510,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
 let opts = {
-  'roomTemplateDto': new DocspaceApiTypescript.RoomTemplateDto() // RoomTemplateDto | 
+  'createTagRequestDto': new DocspaceApiJavascript.CreateTagRequestDto() // CreateTagRequestDto | 
 };
-apiInstance.createRoomTemplate(opts, (error, data, response) => {
+apiInstance.createRoomTag(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -575,6 +522,20 @@ apiInstance.createRoomTemplate(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createRoomTemplate
+
+> RoomTemplateStatusWrapper createRoomTemplate(opts)
+
+Starts creating the room template.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-room-template/).
 
 ### Parameters
 
@@ -591,25 +552,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createRoomThirdParty
-
-> FolderStringWrapper createRoomThirdParty(id, opts)
-
-Create a third-party room
-
-Creates a room in the \&quot;Rooms\&quot; section stored in a third-party storage.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -631,12 +578,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = "9846"; // String | The ID of the folder in the third-party storage in which the contents of the room will be stored.
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
 let opts = {
-  'createThirdPartyRoom': new DocspaceApiTypescript.CreateThirdPartyRoom() // CreateThirdPartyRoom | The third-party room information.
+  'roomTemplateDto': new DocspaceApiJavascript.RoomTemplateDto() // RoomTemplateDto | 
 };
-apiInstance.createRoomThirdParty(id, opts, (error, data, response) => {
+apiInstance.createRoomTemplate(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -644,6 +590,20 @@ apiInstance.createRoomThirdParty(id, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createRoomThirdParty
+
+> FolderStringWrapper createRoomThirdParty(id, opts)
+
+Creates a room in the \&quot;Rooms\&quot; section stored in a third-party storage.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-room-third-party/).
 
 ### Parameters
 
@@ -661,25 +621,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## deleteCustomTags
-
-> deleteCustomTags(opts)
-
-Delete tags
-
-Deletes a bunch of custom tags specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -701,18 +647,33 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = "9846"; // String | The ID of the folder in the third-party storage in which the contents of the room will be stored.
 let opts = {
-  'batchTagsRequestDto': new DocspaceApiTypescript.BatchTagsRequestDto() // BatchTagsRequestDto | 
+  'createThirdPartyRoom': new DocspaceApiJavascript.CreateThirdPartyRoom() // CreateThirdPartyRoom | The third-party room information.
 };
-apiInstance.deleteCustomTags(opts, (error, data, response) => {
+apiInstance.createRoomThirdParty(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully.');
+    console.log('API called successfully. Returned data: ' + data);
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## deleteCustomTags
+
+> deleteCustomTags(opts)
+
+Deletes a bunch of custom tags specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-custom-tags/).
 
 ### Parameters
 
@@ -729,25 +690,11 @@ null (empty response body)
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: Not defined
-
-
-## deleteRoom
-
-> FileOperationWrapper deleteRoom(id, opts)
-
-Remove a room
-
-Removes a room with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -769,19 +716,32 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room ID.
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
 let opts = {
-  'deleteRoomRequest': new DocspaceApiTypescript.DeleteRoomRequest() // DeleteRoomRequest | The parameters for deleting a room.
+  'batchTagsRequestDto': new DocspaceApiJavascript.BatchTagsRequestDto() // BatchTagsRequestDto | 
 };
-apiInstance.deleteRoom(id, opts, (error, data, response) => {
+apiInstance.deleteCustomTags(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully.');
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: Not defined
+
+
+## deleteRoom
+
+> FileOperationWrapper deleteRoom(id, opts)
+
+Removes a room with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-room/).
 
 ### Parameters
 
@@ -799,25 +759,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## deleteRoomLogo
-
-> FolderIntegerWrapper deleteRoomLogo(id)
-
-Remove a room logo
-
-Removes a logo from a room with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -839,9 +785,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room ID of the request.
-apiInstance.deleteRoomLogo(id, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room ID.
+let opts = {
+  'deleteRoomRequest': new DocspaceApiJavascript.DeleteRoomRequest() // DeleteRoomRequest | The parameters for deleting a room.
+};
+apiInstance.deleteRoom(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -849,6 +798,20 @@ apiInstance.deleteRoomLogo(id, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## deleteRoomLogo
+
+> FolderIntegerWrapper deleteRoomLogo(id)
+
+Removes a logo from a room with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-room-logo/).
 
 ### Parameters
 
@@ -865,25 +828,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## deleteRoomTags
-
-> FolderIntegerWrapper deleteRoomTags(id, opts)
-
-Remove the room tags
-
-Removes the tags from a room with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -905,12 +854,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room Id.
-let opts = {
-  'batchTagsRequestDto': new DocspaceApiTypescript.BatchTagsRequestDto() // BatchTagsRequestDto | The parameters for adding tags.
-};
-apiInstance.deleteRoomTags(id, opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room ID of the request.
+apiInstance.deleteRoomLogo(id, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -918,6 +864,20 @@ apiInstance.deleteRoomTags(id, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## deleteRoomTags
+
+> FolderIntegerWrapper deleteRoomTags(id, opts)
+
+Removes the tags from a room with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-room-tags/).
 
 ### Parameters
 
@@ -935,25 +895,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## getNewRoomItems
-
-> NewItemsFileEntryArrayWrapper getNewRoomItems(id)
-
-Get the new room items
-
-Returns a list of all the new items from a room with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -975,9 +921,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room ID of the request.
-apiInstance.getNewRoomItems(id, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room Id.
+let opts = {
+  'batchTagsRequestDto': new DocspaceApiJavascript.BatchTagsRequestDto() // BatchTagsRequestDto | The parameters for adding tags.
+};
+apiInstance.deleteRoomTags(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -985,6 +934,20 @@ apiInstance.getNewRoomItems(id, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## getNewRoomItems
+
+> NewItemsFileEntryArrayWrapper getNewRoomItems(id)
+
+Returns a list of all the new items from a room with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-new-room-items/).
 
 ### Parameters
 
@@ -1001,25 +964,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getPublicSettings
-
-> BooleanWrapper getPublicSettings(id)
-
-Get public settings
-
-Returns the public settings of the room template with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1041,9 +990,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room template ID.
-apiInstance.getPublicSettings(id, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room ID of the request.
+apiInstance.getNewRoomItems(id, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1051,6 +1000,20 @@ apiInstance.getPublicSettings(id, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getPublicSettings
+
+> BooleanWrapper getPublicSettings(id)
+
+Returns the public settings of the room template with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-public-settings/).
 
 ### Parameters
 
@@ -1067,25 +1030,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getRoomCovers
-
-> CoversResultArrayWrapper getRoomCovers()
-
-Get covers
-
-Returns a list of all covers.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1107,8 +1056,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-apiInstance.getRoomCovers((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room template ID.
+apiInstance.getPublicSettings(id, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1116,6 +1066,20 @@ apiInstance.getRoomCovers((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getRoomCovers
+
+> CoversResultArrayWrapper getRoomCovers()
+
+Returns a list of all covers.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-room-covers/).
 
 ### Parameters
 
@@ -1129,25 +1093,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getRoomCreatingStatus
-
-> RoomFromTemplateStatusWrapper getRoomCreatingStatus()
-
-Get the room creation progress
-
-Returns the progress of creating a room from the template.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1169,8 +1119,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-apiInstance.getRoomCreatingStatus((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+apiInstance.getRoomCovers((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1178,6 +1128,20 @@ apiInstance.getRoomCreatingStatus((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getRoomCreatingStatus
+
+> RoomFromTemplateStatusWrapper getRoomCreatingStatus()
+
+Returns the progress of creating a room from the template.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-room-creating-status/).
 
 ### Parameters
 
@@ -1191,25 +1155,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getRoomIndexExport
-
-> DocumentBuilderTaskWrapper getRoomIndexExport()
-
-Get the room index export
-
-Returns the room index export.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1231,8 +1181,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-apiInstance.getRoomIndexExport((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+apiInstance.getRoomCreatingStatus((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1240,6 +1190,20 @@ apiInstance.getRoomIndexExport((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getRoomIndexExport
+
+> DocumentBuilderTaskWrapper getRoomIndexExport()
+
+Returns the room index export.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-room-index-export/).
 
 ### Parameters
 
@@ -1253,6 +1217,42 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+apiInstance.getRoomIndexExport((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -1263,25 +1263,9 @@ This endpoint does not need any parameter.
 
 > FolderIntegerWrapper getRoomInfo(id)
 
-Get room information
-
 Returns the room information.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room ID of the request.
-apiInstance.getRoomInfo(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-room-info/).
 
 ### Parameters
 
@@ -1298,6 +1282,22 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room ID of the request.
+apiInstance.getRoomInfo(id, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -1308,49 +1308,9 @@ No authorization required
 
 > FileShareArrayWrapper getRoomLinks(id, opts)
 
-Get the room links
-
 Returns the links of the room with the ID specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room ID.
-let opts = {
-  'type': new DocspaceApiTypescript.LinkType() // LinkType | The link type.
-};
-apiInstance.getRoomLinks(id, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-room-links/).
 
 ### Parameters
 
@@ -1368,25 +1328,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getRoomSecurityInfo
-
-> FileShareArrayWrapper getRoomSecurityInfo(id, opts)
-
-Get the room access rights
-
-Returns the access rights of a room with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1408,15 +1354,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
 let id = 9846; // Number | The room ID.
 let opts = {
-  'filterType': new DocspaceApiTypescript.ShareFilterType(), // ShareFilterType | The filter type of the access rights.
-  'count': 1234, // Number | The number of items to be retrieved or processed.
-  'startIndex': 1234, // Number | The starting index of the items to retrieve in a paginated request.
-  'filterValue': "some text" // String | The text filter value used for filtering room security information.
+  'type': new DocspaceApiJavascript.LinkType() // LinkType | The link type.
 };
-apiInstance.getRoomSecurityInfo(id, opts, (error, data, response) => {
+apiInstance.getRoomLinks(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1424,6 +1367,20 @@ apiInstance.getRoomSecurityInfo(id, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getRoomSecurityInfo
+
+> FileShareArrayWrapper getRoomSecurityInfo(id, opts)
+
+Returns the access rights of a room with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-room-security-info/).
 
 ### Parameters
 
@@ -1444,25 +1401,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getRoomTagsInfo
-
-> ObjectArrayWrapper getRoomTagsInfo(opts)
-
-Get tags
-
-Returns a list of custom tags.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1484,13 +1427,15 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room ID.
 let opts = {
-  'count': 1234, // Number | Gets or sets the number of tag results to retrieve.  This property specifies the maximum amount of tag data to be included in the result set.
-  'startIndex': 1234, // Number | Represents the starting index from which the tags' information will be retrieved.  This property is used to define the offset for pagination when retrieving a list of tags. It determines  the point in the data set from which the retrieval begins.
-  'filterValue': "some text" // String | Gets or sets the text value used for searching tags.  This property is typically used as a filter value when retrieving tag information.
+  'filterType': new DocspaceApiJavascript.ShareFilterType(), // ShareFilterType | The filter type of the access rights.
+  'count': 1234, // Number | The number of items to be retrieved or processed.
+  'startIndex': 1234, // Number | The starting index of the items to retrieve in a paginated request.
+  'filterValue': "some text" // String | The text filter value used for filtering room security information.
 };
-apiInstance.getRoomTagsInfo(opts, (error, data, response) => {
+apiInstance.getRoomSecurityInfo(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1498,6 +1443,20 @@ apiInstance.getRoomTagsInfo(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getRoomTagsInfo
+
+> ObjectArrayWrapper getRoomTagsInfo(opts)
+
+Returns a list of custom tags.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-room-tags-info/).
 
 ### Parameters
 
@@ -1516,25 +1475,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getRoomTemplateCreatingStatus
-
-> RoomTemplateStatusWrapper getRoomTemplateCreatingStatus()
-
-Get status of room template creation
-
-Returns the progress status of the room template creation process.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1556,8 +1501,13 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-apiInstance.getRoomTemplateCreatingStatus((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let opts = {
+  'count': 1234, // Number | Gets or sets the number of tag results to retrieve.  This property specifies the maximum amount of tag data to be included in the result set.
+  'startIndex': 1234, // Number | Represents the starting index from which the tags' information will be retrieved.  This property is used to define the offset for pagination when retrieving a list of tags. It determines  the point in the data set from which the retrieval begins.
+  'filterValue': "some text" // String | Gets or sets the text value used for searching tags.  This property is typically used as a filter value when retrieving tag information.
+};
+apiInstance.getRoomTagsInfo(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1565,6 +1515,20 @@ apiInstance.getRoomTemplateCreatingStatus((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getRoomTemplateCreatingStatus
+
+> RoomTemplateStatusWrapper getRoomTemplateCreatingStatus()
+
+Returns the progress status of the room template creation process.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-room-template-creating-status/).
 
 ### Parameters
 
@@ -1578,25 +1542,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getRoomsFolder
-
-> FolderContentIntegerWrapper getRoomsFolder(opts)
-
-Get rooms
-
-Returns the contents of the \&quot;Rooms\&quot; section by the parameters specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1618,25 +1568,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let opts = {
-  'type': [null], // [RoomType] | The filter by room type.
-  'subjectId': "some text", // String | The filter by user ID.
-  'searchArea': new DocspaceApiTypescript.SearchArea(), // SearchArea | The room search area (Active, Archive, Any, Recent by links).
-  'withoutTags': true, // Boolean | Specifies whether to search by tags or not.
-  'tags': "some text", // String | The tags in the serialized format.
-  'excludeSubject': true, // Boolean | Specifies whether to exclude search by user or group ID.
-  'provider': new DocspaceApiTypescript.ProviderFilter(), // ProviderFilter | The filter by provider name (None, Box, DropBox, GoogleDrive, kDrive, OneDrive, SharePoint, WebDav, Yandex, Storage).
-  'subjectFilter': new DocspaceApiTypescript.SubjectFilter(), // SubjectFilter | The filter by user (Owner - 0, Member - 1).
-  'quotaFilter': new DocspaceApiTypescript.QuotaFilter(), // QuotaFilter | The filter by quota (All - 0, Default - 1, Custom - 2).
-  'storageFilter': new DocspaceApiTypescript.StorageFilter(), // StorageFilter | The filter by storage (None - 0, Internal - 1, ThirdParty - 2).
-  'count': 1234, // Number | Specifies the maximum number of items to retrieve.
-  'startIndex': 1234, // Number | The index from which to start retrieving the room content.
-  'sortBy': "some text", // String | Specifies the field by which the room content should be sorted.
-  'sortOrder': new DocspaceApiTypescript.SortOrder(), // SortOrder | The order in which the results are sorted.
-  'filterValue': "some text" // String | The text filter value used to refine search or query operations.
-};
-apiInstance.getRoomsFolder(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+apiInstance.getRoomTemplateCreatingStatus((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1644,6 +1577,20 @@ apiInstance.getRoomsFolder(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getRoomsFolder
+
+> FolderContentIntegerWrapper getRoomsFolder(opts)
+
+Returns the contents of the \&quot;Rooms\&quot; section by the parameters specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-rooms-folder/).
 
 ### Parameters
 
@@ -1674,25 +1621,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getRoomsNewItems
-
-> NewItemsRoomNewItemsArrayWrapper getRoomsNewItems()
-
-Get the room new items
-
-Returns the room new items.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1714,8 +1647,25 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-apiInstance.getRoomsNewItems((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let opts = {
+  'type': [null], // [RoomType] | The filter by room type.
+  'subjectId': "some text", // String | The filter by user ID.
+  'searchArea': new DocspaceApiJavascript.SearchArea(), // SearchArea | The room search area (Active, Archive, Any, Recent by links).
+  'withoutTags': true, // Boolean | Specifies whether to search by tags or not.
+  'tags': "some text", // String | The tags in the serialized format.
+  'excludeSubject': true, // Boolean | Specifies whether to exclude search by user or group ID.
+  'provider': new DocspaceApiJavascript.ProviderFilter(), // ProviderFilter | The filter by provider name (None, Box, DropBox, GoogleDrive, kDrive, OneDrive, SharePoint, WebDav, Yandex, Storage).
+  'subjectFilter': new DocspaceApiJavascript.SubjectFilter(), // SubjectFilter | The filter by user (Owner - 0, Member - 1).
+  'quotaFilter': new DocspaceApiJavascript.QuotaFilter(), // QuotaFilter | The filter by quota (All - 0, Default - 1, Custom - 2).
+  'storageFilter': new DocspaceApiJavascript.StorageFilter(), // StorageFilter | The filter by storage (None - 0, Internal - 1, ThirdParty - 2).
+  'count': 1234, // Number | Specifies the maximum number of items to retrieve.
+  'startIndex': 1234, // Number | The index from which to start retrieving the room content.
+  'sortBy': "some text", // String | Specifies the field by which the room content should be sorted.
+  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'filterValue': "some text" // String | The text filter value used to refine search or query operations.
+};
+apiInstance.getRoomsFolder(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1723,6 +1673,20 @@ apiInstance.getRoomsNewItems((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getRoomsNewItems
+
+> NewItemsRoomNewItemsArrayWrapper getRoomsNewItems()
+
+Returns the room new items.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-rooms-new-items/).
 
 ### Parameters
 
@@ -1736,25 +1700,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getRoomsPrimaryExternalLink
-
-> FileShareWrapper getRoomsPrimaryExternalLink(id)
-
-Get the room primary external link
-
-Returns the primary external link of the room with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1776,9 +1726,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room ID of the request.
-apiInstance.getRoomsPrimaryExternalLink(id, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+apiInstance.getRoomsNewItems((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1786,6 +1735,20 @@ apiInstance.getRoomsPrimaryExternalLink(id, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getRoomsPrimaryExternalLink
+
+> FileShareWrapper getRoomsPrimaryExternalLink(id)
+
+Returns the primary external link of the room with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-rooms-primary-external-link/).
 
 ### Parameters
 
@@ -1802,25 +1765,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## pinRoom
-
-> FolderIntegerWrapper pinRoom(id)
-
-Pin a room
-
-Pins a room with the ID specified in the request to the top of the list.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1842,9 +1791,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
 let id = 9846; // Number | The room ID of the request.
-apiInstance.pinRoom(id, (error, data, response) => {
+apiInstance.getRoomsPrimaryExternalLink(id, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1852,6 +1801,20 @@ apiInstance.pinRoom(id, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## pinRoom
+
+> FolderIntegerWrapper pinRoom(id)
+
+Pins a room with the ID specified in the request to the top of the list.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/pin-room/).
 
 ### Parameters
 
@@ -1867,6 +1830,43 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room ID of the request.
+apiInstance.pinRoom(id, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 
@@ -1878,46 +1878,9 @@ Name | Type | Description  | Notes
 
 > FolderIntegerWrapper reorderRoom(id)
 
-Reorder the room
-
 Reorders the room with ID specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room ID of the request.
-apiInstance.reorderRoom(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/reorder-room/).
 
 ### Parameters
 
@@ -1934,25 +1897,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## resendEmailInvitations
-
-> resendEmailInvitations(id, opts)
-
-Resend the room invitations
-
-Resends the email invitations to a room with the ID specified in the request to the selected users.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1974,19 +1923,30 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room ID.
-let opts = {
-  'userInvitation': new DocspaceApiTypescript.UserInvitation() // UserInvitation | The user invitation parameters.
-};
-apiInstance.resendEmailInvitations(id, opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room ID of the request.
+apiInstance.reorderRoom(id, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully.');
+    console.log('API called successfully. Returned data: ' + data);
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## resendEmailInvitations
+
+> resendEmailInvitations(id, opts)
+
+Resends the email invitations to a room with the ID specified in the request to the selected users.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/resend-email-invitations/).
 
 ### Parameters
 
@@ -2004,25 +1964,11 @@ null (empty response body)
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: Not defined
-
-
-## setPublicSettings
-
-> setPublicSettings(opts)
-
-Set public settings
-
-Sets the public settings for the room template with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2044,11 +1990,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room ID.
 let opts = {
-  'setPublicDto': new DocspaceApiTypescript.SetPublicDto() // SetPublicDto | 
+  'userInvitation': new DocspaceApiJavascript.UserInvitation() // UserInvitation | The user invitation parameters.
 };
-apiInstance.setPublicSettings(opts, (error, data, response) => {
+apiInstance.resendEmailInvitations(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -2056,6 +2003,20 @@ apiInstance.setPublicSettings(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: Not defined
+
+
+## setPublicSettings
+
+> setPublicSettings(opts)
+
+Sets the public settings for the room template with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/set-public-settings/).
 
 ### Parameters
 
@@ -2072,25 +2033,11 @@ null (empty response body)
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: Not defined
-
-
-## setRoomLink
-
-> FileShareWrapper setRoomLink(id, opts)
-
-Set the room external or invitation link
-
-Sets the room external or invitation link with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2112,19 +2059,32 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room ID.
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
 let opts = {
-  'roomLinkRequest': new DocspaceApiTypescript.RoomLinkRequest() // RoomLinkRequest | The room link parameters.
+  'setPublicDto': new DocspaceApiJavascript.SetPublicDto() // SetPublicDto | 
 };
-apiInstance.setRoomLink(id, opts, (error, data, response) => {
+apiInstance.setPublicSettings(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully.');
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: Not defined
+
+
+## setRoomLink
+
+> FileShareWrapper setRoomLink(id, opts)
+
+Sets the room external or invitation link with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/set-room-link/).
 
 ### Parameters
 
@@ -2142,25 +2102,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## setRoomSecurity
-
-> RoomSecurityWrapper setRoomSecurity(id, opts)
-
-Set the room access rights
-
-Sets the access rights to the room with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2182,12 +2128,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
 let id = 9846; // Number | The room ID.
 let opts = {
-  'roomInvitationRequest': new DocspaceApiTypescript.RoomInvitationRequest() // RoomInvitationRequest | The room invitation request.
+  'roomLinkRequest': new DocspaceApiJavascript.RoomLinkRequest() // RoomLinkRequest | The room link parameters.
 };
-apiInstance.setRoomSecurity(id, opts, (error, data, response) => {
+apiInstance.setRoomLink(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -2195,6 +2141,20 @@ apiInstance.setRoomSecurity(id, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## setRoomSecurity
+
+> RoomSecurityWrapper setRoomSecurity(id, opts)
+
+Sets the access rights to the room with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/set-room-security/).
 
 ### Parameters
 
@@ -2212,25 +2172,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## startRoomIndexExport
-
-> DocumentBuilderTaskWrapper startRoomIndexExport(id)
-
-Start the room index export
-
-Starts the index export of a room with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2252,9 +2198,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room ID of the request.
-apiInstance.startRoomIndexExport(id, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room ID.
+let opts = {
+  'roomInvitationRequest': new DocspaceApiJavascript.RoomInvitationRequest() // RoomInvitationRequest | The room invitation request.
+};
+apiInstance.setRoomSecurity(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -2262,6 +2211,20 @@ apiInstance.startRoomIndexExport(id, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## startRoomIndexExport
+
+> DocumentBuilderTaskWrapper startRoomIndexExport(id)
+
+Starts the index export of a room with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/start-room-index-export/).
 
 ### Parameters
 
@@ -2278,25 +2241,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## terminateRoomIndexExport
-
-> terminateRoomIndexExport()
-
-Terminate the room index export
-
-Terminates the room index export.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2318,15 +2267,30 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-apiInstance.terminateRoomIndexExport((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room ID of the request.
+apiInstance.startRoomIndexExport(id, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully.');
+    console.log('API called successfully. Returned data: ' + data);
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## terminateRoomIndexExport
+
+> terminateRoomIndexExport()
+
+Terminates the room index export.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/terminate-room-index-export/).
 
 ### Parameters
 
@@ -2340,25 +2304,11 @@ null (empty response body)
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: Not defined
-
-
-## unarchiveRoom
-
-> FileOperationWrapper unarchiveRoom(id, opts)
-
-Unarchive a room
-
-Moves a room with the ID specified in the request from the \&quot;Archive\&quot; section to the \&quot;Rooms\&quot; section.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2380,19 +2330,29 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room ID.
-let opts = {
-  'archiveRoomRequest': new DocspaceApiTypescript.ArchiveRoomRequest() // ArchiveRoomRequest | The parameters for archiving a room.
-};
-apiInstance.unarchiveRoom(id, opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+apiInstance.terminateRoomIndexExport((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully.');
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+
+## unarchiveRoom
+
+> FileOperationWrapper unarchiveRoom(id, opts)
+
+Moves a room with the ID specified in the request from the \&quot;Archive\&quot; section to the \&quot;Rooms\&quot; section.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/unarchive-room/).
 
 ### Parameters
 
@@ -2410,25 +2370,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## unpinRoom
-
-> FolderIntegerWrapper unpinRoom(id)
-
-Unpin a room
-
-Unpins a room with the ID specified in the request from the top of the list.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2450,9 +2396,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room ID of the request.
-apiInstance.unpinRoom(id, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room ID.
+let opts = {
+  'archiveRoomRequest': new DocspaceApiJavascript.ArchiveRoomRequest() // ArchiveRoomRequest | The parameters for archiving a room.
+};
+apiInstance.unarchiveRoom(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -2460,6 +2409,20 @@ apiInstance.unpinRoom(id, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## unpinRoom
+
+> FolderIntegerWrapper unpinRoom(id)
+
+Unpins a room with the ID specified in the request from the top of the list.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/unpin-room/).
 
 ### Parameters
 
@@ -2476,25 +2439,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## updateRoom
-
-> FolderIntegerWrapper updateRoom(id, opts)
-
-Update a room
-
-Updates a room with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2516,12 +2465,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
-let id = 9846; // Number | The room ID.
-let opts = {
-  'updateRoomRequest': new DocspaceApiTypescript.UpdateRoomRequest() // UpdateRoomRequest | The request parameters for updating a room.
-};
-apiInstance.updateRoom(id, opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room ID of the request.
+apiInstance.unpinRoom(id, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -2529,6 +2475,20 @@ apiInstance.updateRoom(id, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## updateRoom
+
+> FolderIntegerWrapper updateRoom(id, opts)
+
+Updates a room with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-room/).
 
 ### Parameters
 
@@ -2546,25 +2506,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## uploadRoomLogo
-
-> UploadResultWrapper uploadRoomLogo(opts)
-
-Upload a room logo image
-
-Uploads a temporary image to create a room logo.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2586,11 +2532,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.RoomsApi();
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let id = 9846; // Number | The room ID.
 let opts = {
-  'formCollection': [new DocspaceApiTypescript.KeyValuePairStringStringValues()] // [KeyValuePairStringStringValues] | The image data.
+  'updateRoomRequest': new DocspaceApiJavascript.UpdateRoomRequest() // UpdateRoomRequest | The request parameters for updating a room.
 };
-apiInstance.uploadRoomLogo(opts, (error, data, response) => {
+apiInstance.updateRoom(id, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -2598,6 +2545,20 @@ apiInstance.uploadRoomLogo(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## uploadRoomLogo
+
+> UploadResultWrapper uploadRoomLogo(opts)
+
+Uploads a temporary image to create a room logo.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/upload-room-logo/).
 
 ### Parameters
 
@@ -2613,6 +2574,45 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let opts = {
+  'formCollection': [new DocspaceApiJavascript.KeyValuePairStringStringValues()] // [KeyValuePairStringStringValues] | The image data.
+};
+apiInstance.uploadRoomLogo(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

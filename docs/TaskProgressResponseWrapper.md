@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.TaskProgressResponseWrapper
+# DocspaceApiJavascript.TaskProgressResponseWrapper
 
 ## Properties
 

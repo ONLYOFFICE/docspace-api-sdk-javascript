@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ClientSecretResponse();
+    instance = new DocspaceApiJavascript.ClientSecretResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('ClientSecretResponse', function() {
     it('should create an instance of ClientSecretResponse', function() {
       // uncomment below and update the code to test ClientSecretResponse
-      //var instance = new DocspaceApiTypescript.ClientSecretResponse();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ClientSecretResponse);
+      //var instance = new DocspaceApiJavascript.ClientSecretResponse();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ClientSecretResponse);
     });
 
     it('should have the property clientSecret (base name: "client_secret")', function() {
       // uncomment below and update the code to test the property clientSecret
-      //var instance = new DocspaceApiTypescript.ClientSecretResponse();
+      //var instance = new DocspaceApiJavascript.ClientSecretResponse();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.UploadResultDto
+# DocspaceApiJavascript.UploadResultDto
 
 ## Properties
 

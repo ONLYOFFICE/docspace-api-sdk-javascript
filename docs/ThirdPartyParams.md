@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ThirdPartyParams
+# DocspaceApiJavascript.ThirdPartyParams
 
 ## Properties
 

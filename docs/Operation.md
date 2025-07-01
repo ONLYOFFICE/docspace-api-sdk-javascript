@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.Operation
+# DocspaceApiJavascript.Operation
 
 ## Properties
 

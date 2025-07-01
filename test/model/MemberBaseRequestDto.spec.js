@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.MemberBaseRequestDto();
+    instance = new DocspaceApiJavascript.MemberBaseRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('MemberBaseRequestDto', function() {
     it('should create an instance of MemberBaseRequestDto', function() {
       // uncomment below and update the code to test MemberBaseRequestDto
-      //var instance = new DocspaceApiTypescript.MemberBaseRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.MemberBaseRequestDto);
+      //var instance = new DocspaceApiJavascript.MemberBaseRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.MemberBaseRequestDto);
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instance = new DocspaceApiTypescript.MemberBaseRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberBaseRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property passwordHash (base name: "passwordHash")', function() {
       // uncomment below and update the code to test the property passwordHash
-      //var instance = new DocspaceApiTypescript.MemberBaseRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberBaseRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiTypescript.MemberBaseRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberBaseRequestDto();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.StartUpdateUserTypeDto
+# DocspaceApiJavascript.StartUpdateUserTypeDto
 
 ## Properties
 

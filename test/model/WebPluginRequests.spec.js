@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.WebPluginRequests();
+    instance = new DocspaceApiJavascript.WebPluginRequests();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('WebPluginRequests', function() {
     it('should create an instance of WebPluginRequests', function() {
       // uncomment below and update the code to test WebPluginRequests
-      //var instance = new DocspaceApiTypescript.WebPluginRequests();
-      //expect(instance).to.be.a(DocspaceApiTypescript.WebPluginRequests);
+      //var instance = new DocspaceApiJavascript.WebPluginRequests();
+      //expect(instance).to.be.a(DocspaceApiJavascript.WebPluginRequests);
     });
 
     it('should have the property enabled (base name: "enabled")', function() {
       // uncomment below and update the code to test the property enabled
-      //var instance = new DocspaceApiTypescript.WebPluginRequests();
+      //var instance = new DocspaceApiJavascript.WebPluginRequests();
       //expect(instance).to.be();
     });
 
     it('should have the property settings (base name: "settings")', function() {
       // uncomment below and update the code to test the property settings
-      //var instance = new DocspaceApiTypescript.WebPluginRequests();
+      //var instance = new DocspaceApiJavascript.WebPluginRequests();
       //expect(instance).to.be();
     });
 

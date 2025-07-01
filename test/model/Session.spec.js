@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.Session();
+    instance = new DocspaceApiJavascript.Session();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('Session', function() {
     it('should create an instance of Session', function() {
       // uncomment below and update the code to test Session
-      //var instance = new DocspaceApiTypescript.Session();
-      //expect(instance).to.be.a(DocspaceApiTypescript.Session);
+      //var instance = new DocspaceApiJavascript.Session();
+      //expect(instance).to.be.a(DocspaceApiJavascript.Session);
     });
 
     it('should have the property sessionId (base name: "sessionId")', function() {
       // uncomment below and update the code to test the property sessionId
-      //var instance = new DocspaceApiTypescript.Session();
+      //var instance = new DocspaceApiJavascript.Session();
       //expect(instance).to.be();
     });
 
     it('should have the property reservedAmount (base name: "reservedAmount")', function() {
       // uncomment below and update the code to test the property reservedAmount
-      //var instance = new DocspaceApiTypescript.Session();
+      //var instance = new DocspaceApiJavascript.Session();
       //expect(instance).to.be();
     });
 
     it('should have the property currency (base name: "currency")', function() {
       // uncomment below and update the code to test the property currency
-      //var instance = new DocspaceApiTypescript.Session();
+      //var instance = new DocspaceApiJavascript.Session();
       //expect(instance).to.be();
     });
 

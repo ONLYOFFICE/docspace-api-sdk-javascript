@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FilesStatisticsResultDto
+# DocspaceApiJavascript.FilesStatisticsResultDto
 
 ## Properties
 

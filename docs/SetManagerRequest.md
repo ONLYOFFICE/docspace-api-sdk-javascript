@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SetManagerRequest
+# DocspaceApiJavascript.SetManagerRequest
 
 ## Properties
 

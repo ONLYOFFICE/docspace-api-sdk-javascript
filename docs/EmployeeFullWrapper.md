@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.EmployeeFullWrapper
+# DocspaceApiJavascript.EmployeeFullWrapper
 
 ## Properties
 

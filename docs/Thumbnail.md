@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.Thumbnail
+# DocspaceApiJavascript.Thumbnail
+
+
 
 ## Enum
 

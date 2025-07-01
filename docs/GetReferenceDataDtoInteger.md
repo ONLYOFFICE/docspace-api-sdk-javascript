@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.GetReferenceDataDtoInteger
+# DocspaceApiJavascript.GetReferenceDataDtoInteger
 
 ## Properties
 

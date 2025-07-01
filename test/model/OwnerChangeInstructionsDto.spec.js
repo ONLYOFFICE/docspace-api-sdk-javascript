@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.OwnerChangeInstructionsDto();
+    instance = new DocspaceApiJavascript.OwnerChangeInstructionsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('OwnerChangeInstructionsDto', function() {
     it('should create an instance of OwnerChangeInstructionsDto', function() {
       // uncomment below and update the code to test OwnerChangeInstructionsDto
-      //var instance = new DocspaceApiTypescript.OwnerChangeInstructionsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.OwnerChangeInstructionsDto);
+      //var instance = new DocspaceApiJavascript.OwnerChangeInstructionsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.OwnerChangeInstructionsDto);
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new DocspaceApiTypescript.OwnerChangeInstructionsDto();
+      //var instance = new DocspaceApiJavascript.OwnerChangeInstructionsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new DocspaceApiTypescript.OwnerChangeInstructionsDto();
+      //var instance = new DocspaceApiJavascript.OwnerChangeInstructionsDto();
       //expect(instance).to.be();
     });
 

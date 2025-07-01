@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.HistoryData();
+    instance = new DocspaceApiJavascript.HistoryData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('HistoryData', function() {
     it('should create an instance of HistoryData', function() {
       // uncomment below and update the code to test HistoryData
-      //var instance = new DocspaceApiTypescript.HistoryData();
-      //expect(instance).to.be.a(DocspaceApiTypescript.HistoryData);
+      //var instance = new DocspaceApiJavascript.HistoryData();
+      //expect(instance).to.be.a(DocspaceApiJavascript.HistoryData);
     });
 
     it('should have the property initiatorName (base name: "initiatorName")', function() {
       // uncomment below and update the code to test the property initiatorName
-      //var instance = new DocspaceApiTypescript.HistoryData();
+      //var instance = new DocspaceApiJavascript.HistoryData();
       //expect(instance).to.be();
     });
 

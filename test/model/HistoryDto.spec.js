@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.HistoryDto();
+    instance = new DocspaceApiJavascript.HistoryDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('HistoryDto', function() {
     it('should create an instance of HistoryDto', function() {
       // uncomment below and update the code to test HistoryDto
-      //var instance = new DocspaceApiTypescript.HistoryDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.HistoryDto);
+      //var instance = new DocspaceApiJavascript.HistoryDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.HistoryDto);
     });
 
     it('should have the property action (base name: "action")', function() {
       // uncomment below and update the code to test the property action
-      //var instance = new DocspaceApiTypescript.HistoryDto();
+      //var instance = new DocspaceApiJavascript.HistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property initiator (base name: "initiator")', function() {
       // uncomment below and update the code to test the property initiator
-      //var instance = new DocspaceApiTypescript.HistoryDto();
+      //var instance = new DocspaceApiJavascript.HistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property date (base name: "date")', function() {
       // uncomment below and update the code to test the property date
-      //var instance = new DocspaceApiTypescript.HistoryDto();
+      //var instance = new DocspaceApiJavascript.HistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instance = new DocspaceApiTypescript.HistoryDto();
+      //var instance = new DocspaceApiJavascript.HistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property related (base name: "related")', function() {
       // uncomment below and update the code to test the property related
-      //var instance = new DocspaceApiTypescript.HistoryDto();
+      //var instance = new DocspaceApiJavascript.HistoryDto();
       //expect(instance).to.be();
     });
 

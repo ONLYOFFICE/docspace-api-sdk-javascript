@@ -57,12 +57,12 @@ class ApiClient {
          * @type {Array.<String>}
          */
         this.authentications = {
-            'asc_auth_key': {type: 'apiKey', 'in': 'query', name: 'asc_auth_key'},
+            'asc_auth_key': {type: 'apiKey', 'in': 'cookie', name: 'asc_auth_key'},
             'Basic': {type: 'basic'},
             'Bearer': {type: 'bearer'}, // JWT
             'ApiKeyBearer': {type: 'apiKey', 'in': 'header', name: 'ApiKeyBearer'},
             'OAuth2': {type: 'oauth2'},
-            'x-signature': {type: 'apiKey', 'in': 'query', name: 'x-signature'}
+            'x-signature': {type: 'apiKey', 'in': 'cookie', name: 'x-signature'}
         }
 
 	/**
@@ -341,6 +341,19 @@ class ApiClient {
 
                         if (auth['in'] === 'header') {
                             request.set(data);
+                        } else if (auth['in'] === 'cookie') {
+                            // For cookie-based authentication, we need to enable withCredentials
+                            request.withCredentials();
+                            
+                            // Set the cookie header manually if needed
+                            var cookieHeader = auth.name + '=' + data[auth.name];
+                            var currentCookies = request.get('Cookie');
+                            
+                            if (currentCookies) {
+                                request.set('Cookie', currentCookies + '; ' + cookieHeader);
+                            } else {
+                                request.set('Cookie', cookieHeader);
+                            }
                         } else {
                             request.query(data);
                         }
@@ -351,6 +364,14 @@ class ApiClient {
                     if (auth.accessToken) {
                         request.set({'Authorization': 'Bearer ' + auth.accessToken});
                     }
+
+                    break;
+                case 'openIdConnect':
+                    if(auth.accessToken) {
+                        request.set({'Authorization': 'Bearer ' + auth.accessToken});
+                    }
+
+                    request.withCredentials();
 
                     break;
                 default:

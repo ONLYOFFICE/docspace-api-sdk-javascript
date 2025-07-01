@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.UpdateMembersRequestDto();
+    instance = new DocspaceApiJavascript.UpdateMembersRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('UpdateMembersRequestDto', function() {
     it('should create an instance of UpdateMembersRequestDto', function() {
       // uncomment below and update the code to test UpdateMembersRequestDto
-      //var instance = new DocspaceApiTypescript.UpdateMembersRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.UpdateMembersRequestDto);
+      //var instance = new DocspaceApiJavascript.UpdateMembersRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.UpdateMembersRequestDto);
     });
 
     it('should have the property userIds (base name: "userIds")', function() {
       // uncomment below and update the code to test the property userIds
-      //var instance = new DocspaceApiTypescript.UpdateMembersRequestDto();
+      //var instance = new DocspaceApiJavascript.UpdateMembersRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property resendAll (base name: "resendAll")', function() {
       // uncomment below and update the code to test the property resendAll
-      //var instance = new DocspaceApiTypescript.UpdateMembersRequestDto();
+      //var instance = new DocspaceApiJavascript.UpdateMembersRequestDto();
       //expect(instance).to.be();
     });
 

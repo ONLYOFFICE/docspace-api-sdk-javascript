@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.WebPluginDto();
+    instance = new DocspaceApiJavascript.WebPluginDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,97 +62,97 @@
   describe('WebPluginDto', function() {
     it('should create an instance of WebPluginDto', function() {
       // uncomment below and update the code to test WebPluginDto
-      //var instance = new DocspaceApiTypescript.WebPluginDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.WebPluginDto);
+      //var instance = new DocspaceApiJavascript.WebPluginDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.WebPluginDto);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiTypescript.WebPluginDto();
+      //var instance = new DocspaceApiJavascript.WebPluginDto();
       //expect(instance).to.be();
     });
 
     it('should have the property version (base name: "version")', function() {
       // uncomment below and update the code to test the property version
-      //var instance = new DocspaceApiTypescript.WebPluginDto();
+      //var instance = new DocspaceApiJavascript.WebPluginDto();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new DocspaceApiTypescript.WebPluginDto();
+      //var instance = new DocspaceApiJavascript.WebPluginDto();
       //expect(instance).to.be();
     });
 
     it('should have the property license (base name: "license")', function() {
       // uncomment below and update the code to test the property license
-      //var instance = new DocspaceApiTypescript.WebPluginDto();
+      //var instance = new DocspaceApiJavascript.WebPluginDto();
       //expect(instance).to.be();
     });
 
     it('should have the property author (base name: "author")', function() {
       // uncomment below and update the code to test the property author
-      //var instance = new DocspaceApiTypescript.WebPluginDto();
+      //var instance = new DocspaceApiJavascript.WebPluginDto();
       //expect(instance).to.be();
     });
 
     it('should have the property homePage (base name: "homePage")', function() {
       // uncomment below and update the code to test the property homePage
-      //var instance = new DocspaceApiTypescript.WebPluginDto();
+      //var instance = new DocspaceApiJavascript.WebPluginDto();
       //expect(instance).to.be();
     });
 
     it('should have the property pluginName (base name: "pluginName")', function() {
       // uncomment below and update the code to test the property pluginName
-      //var instance = new DocspaceApiTypescript.WebPluginDto();
+      //var instance = new DocspaceApiJavascript.WebPluginDto();
       //expect(instance).to.be();
     });
 
     it('should have the property scopes (base name: "scopes")', function() {
       // uncomment below and update the code to test the property scopes
-      //var instance = new DocspaceApiTypescript.WebPluginDto();
+      //var instance = new DocspaceApiJavascript.WebPluginDto();
       //expect(instance).to.be();
     });
 
     it('should have the property image (base name: "image")', function() {
       // uncomment below and update the code to test the property image
-      //var instance = new DocspaceApiTypescript.WebPluginDto();
+      //var instance = new DocspaceApiJavascript.WebPluginDto();
       //expect(instance).to.be();
     });
 
     it('should have the property createBy (base name: "createBy")', function() {
       // uncomment below and update the code to test the property createBy
-      //var instance = new DocspaceApiTypescript.WebPluginDto();
+      //var instance = new DocspaceApiJavascript.WebPluginDto();
       //expect(instance).to.be();
     });
 
     it('should have the property createOn (base name: "createOn")', function() {
       // uncomment below and update the code to test the property createOn
-      //var instance = new DocspaceApiTypescript.WebPluginDto();
+      //var instance = new DocspaceApiJavascript.WebPluginDto();
       //expect(instance).to.be();
     });
 
     it('should have the property enabled (base name: "enabled")', function() {
       // uncomment below and update the code to test the property enabled
-      //var instance = new DocspaceApiTypescript.WebPluginDto();
+      //var instance = new DocspaceApiJavascript.WebPluginDto();
       //expect(instance).to.be();
     });
 
     it('should have the property system (base name: "system")', function() {
       // uncomment below and update the code to test the property system
-      //var instance = new DocspaceApiTypescript.WebPluginDto();
+      //var instance = new DocspaceApiJavascript.WebPluginDto();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiTypescript.WebPluginDto();
+      //var instance = new DocspaceApiJavascript.WebPluginDto();
       //expect(instance).to.be();
     });
 
     it('should have the property settings (base name: "settings")', function() {
       // uncomment below and update the code to test the property settings
-      //var instance = new DocspaceApiTypescript.WebPluginDto();
+      //var instance = new DocspaceApiJavascript.WebPluginDto();
       //expect(instance).to.be();
     });
 

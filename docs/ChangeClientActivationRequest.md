@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ChangeClientActivationRequest
+# DocspaceApiJavascript.ChangeClientActivationRequest
 
 ## Properties
 

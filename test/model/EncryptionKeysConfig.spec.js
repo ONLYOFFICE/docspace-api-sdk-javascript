@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.EncryptionKeysConfig();
+    instance = new DocspaceApiJavascript.EncryptionKeysConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('EncryptionKeysConfig', function() {
     it('should create an instance of EncryptionKeysConfig', function() {
       // uncomment below and update the code to test EncryptionKeysConfig
-      //var instance = new DocspaceApiTypescript.EncryptionKeysConfig();
-      //expect(instance).to.be.a(DocspaceApiTypescript.EncryptionKeysConfig);
+      //var instance = new DocspaceApiJavascript.EncryptionKeysConfig();
+      //expect(instance).to.be.a(DocspaceApiJavascript.EncryptionKeysConfig);
     });
 
     it('should have the property cryptoEngineId (base name: "cryptoEngineId")', function() {
       // uncomment below and update the code to test the property cryptoEngineId
-      //var instance = new DocspaceApiTypescript.EncryptionKeysConfig();
+      //var instance = new DocspaceApiJavascript.EncryptionKeysConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property privateKeyEnc (base name: "privateKeyEnc")', function() {
       // uncomment below and update the code to test the property privateKeyEnc
-      //var instance = new DocspaceApiTypescript.EncryptionKeysConfig();
+      //var instance = new DocspaceApiJavascript.EncryptionKeysConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property publicKey (base name: "publicKey")', function() {
       // uncomment below and update the code to test the property publicKey
-      //var instance = new DocspaceApiTypescript.EncryptionKeysConfig();
+      //var instance = new DocspaceApiJavascript.EncryptionKeysConfig();
       //expect(instance).to.be();
     });
 

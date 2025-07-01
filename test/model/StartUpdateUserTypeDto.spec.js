@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.StartUpdateUserTypeDto();
+    instance = new DocspaceApiJavascript.StartUpdateUserTypeDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('StartUpdateUserTypeDto', function() {
     it('should create an instance of StartUpdateUserTypeDto', function() {
       // uncomment below and update the code to test StartUpdateUserTypeDto
-      //var instance = new DocspaceApiTypescript.StartUpdateUserTypeDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.StartUpdateUserTypeDto);
+      //var instance = new DocspaceApiJavascript.StartUpdateUserTypeDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.StartUpdateUserTypeDto);
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new DocspaceApiTypescript.StartUpdateUserTypeDto();
+      //var instance = new DocspaceApiJavascript.StartUpdateUserTypeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "userId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instance = new DocspaceApiTypescript.StartUpdateUserTypeDto();
+      //var instance = new DocspaceApiJavascript.StartUpdateUserTypeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property reassignUserId (base name: "reassignUserId")', function() {
       // uncomment below and update the code to test the property reassignUserId
-      //var instance = new DocspaceApiTypescript.StartUpdateUserTypeDto();
+      //var instance = new DocspaceApiJavascript.StartUpdateUserTypeDto();
       //expect(instance).to.be();
     });
 

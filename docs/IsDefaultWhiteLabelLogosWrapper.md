@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.IsDefaultWhiteLabelLogosWrapper
+# DocspaceApiJavascript.IsDefaultWhiteLabelLogosWrapper
 
 ## Properties
 

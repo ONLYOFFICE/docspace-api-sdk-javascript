@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FormRoleWrapper
+# DocspaceApiJavascript.FormRoleWrapper
 
 ## Properties
 

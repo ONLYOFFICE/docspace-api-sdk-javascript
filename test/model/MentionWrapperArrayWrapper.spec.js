@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.MentionWrapperArrayWrapper();
+    instance = new DocspaceApiJavascript.MentionWrapperArrayWrapper();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('MentionWrapperArrayWrapper', function() {
     it('should create an instance of MentionWrapperArrayWrapper', function() {
       // uncomment below and update the code to test MentionWrapperArrayWrapper
-      //var instance = new DocspaceApiTypescript.MentionWrapperArrayWrapper();
-      //expect(instance).to.be.a(DocspaceApiTypescript.MentionWrapperArrayWrapper);
+      //var instance = new DocspaceApiJavascript.MentionWrapperArrayWrapper();
+      //expect(instance).to.be.a(DocspaceApiJavascript.MentionWrapperArrayWrapper);
     });
 
     it('should have the property response (base name: "response")', function() {
       // uncomment below and update the code to test the property response
-      //var instance = new DocspaceApiTypescript.MentionWrapperArrayWrapper();
+      //var instance = new DocspaceApiJavascript.MentionWrapperArrayWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property count (base name: "count")', function() {
       // uncomment below and update the code to test the property count
-      //var instance = new DocspaceApiTypescript.MentionWrapperArrayWrapper();
+      //var instance = new DocspaceApiJavascript.MentionWrapperArrayWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instance = new DocspaceApiTypescript.MentionWrapperArrayWrapper();
+      //var instance = new DocspaceApiJavascript.MentionWrapperArrayWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new DocspaceApiTypescript.MentionWrapperArrayWrapper();
+      //var instance = new DocspaceApiJavascript.MentionWrapperArrayWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property statusCode (base name: "statusCode")', function() {
       // uncomment below and update the code to test the property statusCode
-      //var instance = new DocspaceApiTypescript.MentionWrapperArrayWrapper();
+      //var instance = new DocspaceApiJavascript.MentionWrapperArrayWrapper();
       //expect(instance).to.be();
     });
 

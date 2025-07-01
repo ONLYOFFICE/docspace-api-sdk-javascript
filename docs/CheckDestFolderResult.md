@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.CheckDestFolderResult
+# DocspaceApiJavascript.CheckDestFolderResult
+
+
 
 ## Enum
 

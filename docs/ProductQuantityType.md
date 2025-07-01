@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.ProductQuantityType
+# DocspaceApiJavascript.ProductQuantityType
+
+
 
 ## Enum
 

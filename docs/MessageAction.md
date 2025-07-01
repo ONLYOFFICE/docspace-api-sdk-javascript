@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.MessageAction
+# DocspaceApiJavascript.MessageAction
+
+
 
 ## Enum
 

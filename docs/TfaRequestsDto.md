@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.TfaRequestsDto
+# DocspaceApiJavascript.TfaRequestsDto
 
 ## Properties
 

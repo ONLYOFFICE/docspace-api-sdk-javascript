@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SettingsWebhooksApi
+# DocspaceApiJavascript.SettingsWebhooksApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -20,48 +20,9 @@ Method | HTTP request | Description
 
 > WebhooksConfigWrapper createWebhook(opts)
 
-Create a webhook
-
 Creates a new tenant webhook with the parameters specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.SettingsWebhooksApi();
-let opts = {
-  'createWebhooksConfigRequestsDto': new DocspaceApiTypescript.CreateWebhooksConfigRequestsDto() // CreateWebhooksConfigRequestsDto | 
-};
-apiInstance.createWebhook(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-webhook/).
 
 ### Parameters
 
@@ -78,25 +39,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## enableWebhook
-
-> WebhooksConfigWrapper enableWebhook(opts)
-
-Enable a webhook
-
-Enables or disables a tenant webhook with the parameters specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -118,11 +65,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsWebhooksApi();
+let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
 let opts = {
-  'updateWebhooksConfigRequestsDto': new DocspaceApiTypescript.UpdateWebhooksConfigRequestsDto() // UpdateWebhooksConfigRequestsDto | 
+  'createWebhooksConfigRequestsDto': new DocspaceApiJavascript.CreateWebhooksConfigRequestsDto() // CreateWebhooksConfigRequestsDto | 
 };
-apiInstance.enableWebhook(opts, (error, data, response) => {
+apiInstance.createWebhook(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -130,6 +77,20 @@ apiInstance.enableWebhook(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## enableWebhook
+
+> WebhooksConfigWrapper enableWebhook(opts)
+
+Enables or disables a tenant webhook with the parameters specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/enable-webhook/).
 
 ### Parameters
 
@@ -146,25 +107,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## getTenantWebhooks
-
-> WebhooksConfigWithStatusArrayWrapper getTenantWebhooks()
-
-Get webhooks
-
-Returns a list of the tenant webhooks.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -186,8 +133,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsWebhooksApi();
-apiInstance.getTenantWebhooks((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
+let opts = {
+  'updateWebhooksConfigRequestsDto': new DocspaceApiJavascript.UpdateWebhooksConfigRequestsDto() // UpdateWebhooksConfigRequestsDto | 
+};
+apiInstance.enableWebhook(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -195,6 +145,20 @@ apiInstance.getTenantWebhooks((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## getTenantWebhooks
+
+> WebhooksConfigWithStatusArrayWrapper getTenantWebhooks()
+
+Returns a list of the tenant webhooks.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-tenant-webhooks/).
 
 ### Parameters
 
@@ -208,25 +172,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getWebhookTriggers
-
-> UnknownWrapper getWebhookTriggers()
-
-Get webhook triggers
-
-Returns a list of triggers for a webhook.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -248,8 +198,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsWebhooksApi();
-apiInstance.getWebhookTriggers((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
+apiInstance.getTenantWebhooks((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -257,6 +207,20 @@ apiInstance.getWebhookTriggers((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getWebhookTriggers
+
+> UnknownWrapper getWebhookTriggers()
+
+Returns a list of triggers for a webhook.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-webhook-triggers/).
 
 ### Parameters
 
@@ -270,25 +234,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getWebhooksLogs
-
-> WebhooksLogArrayWrapper getWebhooksLogs(opts)
-
-Get webhook logs
-
-Returns the logs of the webhook activities.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -310,20 +260,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsWebhooksApi();
-let opts = {
-  'deliveryFrom': new Date("2008-04-10T06:30+04:00"), // Date | The delivery start time for filtering webhook logs.
-  'deliveryTo': new Date("2008-04-10T06:30+04:00"), // Date | The delivery end time for filtering webhook logs.
-  'hookUri': "some text", // String | The destination URL where webhooks are delivered.
-  'configId': 1234, // Number | The webhook configuration identifier.
-  'eventId': 1234, // Number | The unique identifier of the event that triggered the webhook.
-  'groupStatus': new DocspaceApiTypescript.WebhookGroupStatus(), // WebhookGroupStatus | The status of the webhook delivery group.
-  'userId': "aae1e103-bca5-9fa1-ba8c-42058b4abf28", // String | The identifier of the user associated with the webhook event.
-  'trigger': new DocspaceApiTypescript.WebhookTrigger(), // WebhookTrigger | The type of event that triggered the webhook.
-  'count': 1234, // Number | The maximum number of webhook log records to return in the query response.
-  'startIndex': 1234 // Number | Specifies the starting index for retrieving webhook logs.  Used for pagination in the webhook delivery log queries.
-};
-apiInstance.getWebhooksLogs(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
+apiInstance.getWebhookTriggers((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -331,6 +269,20 @@ apiInstance.getWebhooksLogs(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getWebhooksLogs
+
+> WebhooksLogArrayWrapper getWebhooksLogs(opts)
+
+Returns the logs of the webhook activities.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-webhooks-logs/).
 
 ### Parameters
 
@@ -356,25 +308,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## removeWebhook
-
-> WebhooksConfigWrapper removeWebhook(id)
-
-Remove a webhook
-
-Removes a tenant webhook with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -396,9 +334,20 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsWebhooksApi();
-let id = 9846; // Number | The ID extracted from the route parameters.
-apiInstance.removeWebhook(id, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
+let opts = {
+  'deliveryFrom': new Date("2008-04-10T06:30+04:00"), // Date | The delivery start time for filtering webhook logs.
+  'deliveryTo': new Date("2008-04-10T06:30+04:00"), // Date | The delivery end time for filtering webhook logs.
+  'hookUri': "some text", // String | The destination URL where webhooks are delivered.
+  'configId': 1234, // Number | The webhook configuration identifier.
+  'eventId': 1234, // Number | The unique identifier of the event that triggered the webhook.
+  'groupStatus': new DocspaceApiJavascript.WebhookGroupStatus(), // WebhookGroupStatus | The status of the webhook delivery group.
+  'userId': "aae1e103-bca5-9fa1-ba8c-42058b4abf28", // String | The identifier of the user associated with the webhook event.
+  'trigger': new DocspaceApiJavascript.WebhookTrigger(), // WebhookTrigger | The type of event that triggered the webhook.
+  'count': 1234, // Number | The maximum number of webhook log records to return in the query response.
+  'startIndex': 1234 // Number | Specifies the starting index for retrieving webhook logs.  Used for pagination in the webhook delivery log queries.
+};
+apiInstance.getWebhooksLogs(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -406,6 +355,20 @@ apiInstance.removeWebhook(id, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## removeWebhook
+
+> WebhooksConfigWrapper removeWebhook(id)
+
+Removes a tenant webhook with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/remove-webhook/).
 
 ### Parameters
 
@@ -422,25 +385,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## retryWebhook
-
-> WebhooksLogWrapper retryWebhook(id)
-
-Retry a webhook
-
-Retries a webhook with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -462,9 +411,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsWebhooksApi();
+let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
 let id = 9846; // Number | The ID extracted from the route parameters.
-apiInstance.retryWebhook(id, (error, data, response) => {
+apiInstance.removeWebhook(id, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -472,6 +421,20 @@ apiInstance.retryWebhook(id, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## retryWebhook
+
+> WebhooksLogWrapper retryWebhook(id)
+
+Retries a webhook with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/retry-webhook/).
 
 ### Parameters
 
@@ -488,25 +451,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## retryWebhooks
-
-> WebhooksLogArrayWrapper retryWebhooks(opts)
-
-Retry webhooks
-
-Retries all the webhooks with the IDs specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -528,11 +477,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsWebhooksApi();
-let opts = {
-  'webhookRetryRequestsDto': new DocspaceApiTypescript.WebhookRetryRequestsDto() // WebhookRetryRequestsDto | 
-};
-apiInstance.retryWebhooks(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
+let id = 9846; // Number | The ID extracted from the route parameters.
+apiInstance.retryWebhook(id, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -540,6 +487,20 @@ apiInstance.retryWebhooks(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## retryWebhooks
+
+> WebhooksLogArrayWrapper retryWebhooks(opts)
+
+Retries all the webhooks with the IDs specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/retry-webhooks/).
 
 ### Parameters
 
@@ -556,25 +517,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## updateWebhook
-
-> WebhooksConfigWrapper updateWebhook(opts)
-
-Update a webhook
-
-Updates a tenant webhook with the parameters specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -596,11 +543,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsWebhooksApi();
+let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
 let opts = {
-  'updateWebhooksConfigRequestsDto': new DocspaceApiTypescript.UpdateWebhooksConfigRequestsDto() // UpdateWebhooksConfigRequestsDto | 
+  'webhookRetryRequestsDto': new DocspaceApiJavascript.WebhookRetryRequestsDto() // WebhookRetryRequestsDto | 
 };
-apiInstance.updateWebhook(opts, (error, data, response) => {
+apiInstance.retryWebhooks(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -608,6 +555,20 @@ apiInstance.updateWebhook(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## updateWebhook
+
+> WebhooksConfigWrapper updateWebhook(opts)
+
+Updates a tenant webhook with the parameters specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-webhook/).
 
 ### Parameters
 
@@ -623,6 +584,45 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
+let opts = {
+  'updateWebhooksConfigRequestsDto': new DocspaceApiJavascript.UpdateWebhooksConfigRequestsDto() // UpdateWebhooksConfigRequestsDto | 
+};
+apiInstance.updateWebhook(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

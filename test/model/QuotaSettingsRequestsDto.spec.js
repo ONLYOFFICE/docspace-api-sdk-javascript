@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.QuotaSettingsRequestsDto();
+    instance = new DocspaceApiJavascript.QuotaSettingsRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('QuotaSettingsRequestsDto', function() {
     it('should create an instance of QuotaSettingsRequestsDto', function() {
       // uncomment below and update the code to test QuotaSettingsRequestsDto
-      //var instance = new DocspaceApiTypescript.QuotaSettingsRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.QuotaSettingsRequestsDto);
+      //var instance = new DocspaceApiJavascript.QuotaSettingsRequestsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.QuotaSettingsRequestsDto);
     });
 
     it('should have the property enableQuota (base name: "enableQuota")', function() {
       // uncomment below and update the code to test the property enableQuota
-      //var instance = new DocspaceApiTypescript.QuotaSettingsRequestsDto();
+      //var instance = new DocspaceApiJavascript.QuotaSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property defaultQuota (base name: "defaultQuota")', function() {
       // uncomment below and update the code to test the property defaultQuota
-      //var instance = new DocspaceApiTypescript.QuotaSettingsRequestsDto();
+      //var instance = new DocspaceApiJavascript.QuotaSettingsRequestsDto();
       //expect(instance).to.be();
     });
 

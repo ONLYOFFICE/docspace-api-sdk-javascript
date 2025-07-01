@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.UploadRequestDto();
+    instance = new DocspaceApiJavascript.UploadRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,55 +62,55 @@
   describe('UploadRequestDto', function() {
     it('should create an instance of UploadRequestDto', function() {
       // uncomment below and update the code to test UploadRequestDto
-      //var instance = new DocspaceApiTypescript.UploadRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.UploadRequestDto);
+      //var instance = new DocspaceApiJavascript.UploadRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.UploadRequestDto);
     });
 
     it('should have the property file (base name: "file")', function() {
       // uncomment below and update the code to test the property file
-      //var instance = new DocspaceApiTypescript.UploadRequestDto();
+      //var instance = new DocspaceApiJavascript.UploadRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property contentType (base name: "contentType")', function() {
       // uncomment below and update the code to test the property contentType
-      //var instance = new DocspaceApiTypescript.UploadRequestDto();
+      //var instance = new DocspaceApiJavascript.UploadRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property contentDisposition (base name: "contentDisposition")', function() {
       // uncomment below and update the code to test the property contentDisposition
-      //var instance = new DocspaceApiTypescript.UploadRequestDto();
+      //var instance = new DocspaceApiJavascript.UploadRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property files (base name: "files")', function() {
       // uncomment below and update the code to test the property files
-      //var instance = new DocspaceApiTypescript.UploadRequestDto();
+      //var instance = new DocspaceApiJavascript.UploadRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property createNewIfExist (base name: "createNewIfExist")', function() {
       // uncomment below and update the code to test the property createNewIfExist
-      //var instance = new DocspaceApiTypescript.UploadRequestDto();
+      //var instance = new DocspaceApiJavascript.UploadRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property storeOriginalFileFlag (base name: "storeOriginalFileFlag")', function() {
       // uncomment below and update the code to test the property storeOriginalFileFlag
-      //var instance = new DocspaceApiTypescript.UploadRequestDto();
+      //var instance = new DocspaceApiJavascript.UploadRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property keepConvertStatus (base name: "keepConvertStatus")', function() {
       // uncomment below and update the code to test the property keepConvertStatus
-      //var instance = new DocspaceApiTypescript.UploadRequestDto();
+      //var instance = new DocspaceApiJavascript.UploadRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property stream (base name: "stream")', function() {
       // uncomment below and update the code to test the property stream
-      //var instance = new DocspaceApiTypescript.UploadRequestDto();
+      //var instance = new DocspaceApiJavascript.UploadRequestDto();
       //expect(instance).to.be();
     });
 

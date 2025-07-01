@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.OrdersItemRequestDtoInteger();
+    instance = new DocspaceApiJavascript.OrdersItemRequestDtoInteger();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('OrdersItemRequestDtoInteger', function() {
     it('should create an instance of OrdersItemRequestDtoInteger', function() {
       // uncomment below and update the code to test OrdersItemRequestDtoInteger
-      //var instance = new DocspaceApiTypescript.OrdersItemRequestDtoInteger();
-      //expect(instance).to.be.a(DocspaceApiTypescript.OrdersItemRequestDtoInteger);
+      //var instance = new DocspaceApiJavascript.OrdersItemRequestDtoInteger();
+      //expect(instance).to.be.a(DocspaceApiJavascript.OrdersItemRequestDtoInteger);
     });
 
     it('should have the property entryId (base name: "entryId")', function() {
       // uncomment below and update the code to test the property entryId
-      //var instance = new DocspaceApiTypescript.OrdersItemRequestDtoInteger();
+      //var instance = new DocspaceApiJavascript.OrdersItemRequestDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property entryType (base name: "entryType")', function() {
       // uncomment below and update the code to test the property entryType
-      //var instance = new DocspaceApiTypescript.OrdersItemRequestDtoInteger();
+      //var instance = new DocspaceApiJavascript.OrdersItemRequestDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property order (base name: "order")', function() {
       // uncomment below and update the code to test the property order
-      //var instance = new DocspaceApiTypescript.OrdersItemRequestDtoInteger();
+      //var instance = new DocspaceApiJavascript.OrdersItemRequestDtoInteger();
       //expect(instance).to.be();
     });
 

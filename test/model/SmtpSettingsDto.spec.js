@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.SmtpSettingsDto();
+    instance = new DocspaceApiJavascript.SmtpSettingsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,67 +62,67 @@
   describe('SmtpSettingsDto', function() {
     it('should create an instance of SmtpSettingsDto', function() {
       // uncomment below and update the code to test SmtpSettingsDto
-      //var instance = new DocspaceApiTypescript.SmtpSettingsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.SmtpSettingsDto);
+      //var instance = new DocspaceApiJavascript.SmtpSettingsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.SmtpSettingsDto);
     });
 
     it('should have the property host (base name: "host")', function() {
       // uncomment below and update the code to test the property host
-      //var instance = new DocspaceApiTypescript.SmtpSettingsDto();
+      //var instance = new DocspaceApiJavascript.SmtpSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property port (base name: "port")', function() {
       // uncomment below and update the code to test the property port
-      //var instance = new DocspaceApiTypescript.SmtpSettingsDto();
+      //var instance = new DocspaceApiJavascript.SmtpSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property senderAddress (base name: "senderAddress")', function() {
       // uncomment below and update the code to test the property senderAddress
-      //var instance = new DocspaceApiTypescript.SmtpSettingsDto();
+      //var instance = new DocspaceApiJavascript.SmtpSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property senderDisplayName (base name: "senderDisplayName")', function() {
       // uncomment below and update the code to test the property senderDisplayName
-      //var instance = new DocspaceApiTypescript.SmtpSettingsDto();
+      //var instance = new DocspaceApiJavascript.SmtpSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property credentialsUserName (base name: "credentialsUserName")', function() {
       // uncomment below and update the code to test the property credentialsUserName
-      //var instance = new DocspaceApiTypescript.SmtpSettingsDto();
+      //var instance = new DocspaceApiJavascript.SmtpSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property credentialsUserPassword (base name: "credentialsUserPassword")', function() {
       // uncomment below and update the code to test the property credentialsUserPassword
-      //var instance = new DocspaceApiTypescript.SmtpSettingsDto();
+      //var instance = new DocspaceApiJavascript.SmtpSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property enableSSL (base name: "enableSSL")', function() {
       // uncomment below and update the code to test the property enableSSL
-      //var instance = new DocspaceApiTypescript.SmtpSettingsDto();
+      //var instance = new DocspaceApiJavascript.SmtpSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property enableAuth (base name: "enableAuth")', function() {
       // uncomment below and update the code to test the property enableAuth
-      //var instance = new DocspaceApiTypescript.SmtpSettingsDto();
+      //var instance = new DocspaceApiJavascript.SmtpSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property useNtlm (base name: "useNtlm")', function() {
       // uncomment below and update the code to test the property useNtlm
-      //var instance = new DocspaceApiTypescript.SmtpSettingsDto();
+      //var instance = new DocspaceApiJavascript.SmtpSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isDefaultSettings (base name: "isDefaultSettings")', function() {
       // uncomment below and update the code to test the property isDefaultSettings
-      //var instance = new DocspaceApiTypescript.SmtpSettingsDto();
+      //var instance = new DocspaceApiJavascript.SmtpSettingsDto();
       //expect(instance).to.be();
     });
 

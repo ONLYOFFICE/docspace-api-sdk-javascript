@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.HistoryArrayWrapper
+# DocspaceApiJavascript.HistoryArrayWrapper
 
 ## Properties
 

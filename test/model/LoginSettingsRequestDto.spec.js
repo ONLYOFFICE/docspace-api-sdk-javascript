@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.LoginSettingsRequestDto();
+    instance = new DocspaceApiJavascript.LoginSettingsRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('LoginSettingsRequestDto', function() {
     it('should create an instance of LoginSettingsRequestDto', function() {
       // uncomment below and update the code to test LoginSettingsRequestDto
-      //var instance = new DocspaceApiTypescript.LoginSettingsRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.LoginSettingsRequestDto);
+      //var instance = new DocspaceApiJavascript.LoginSettingsRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.LoginSettingsRequestDto);
     });
 
     it('should have the property attemptCount (base name: "attemptCount")', function() {
       // uncomment below and update the code to test the property attemptCount
-      //var instance = new DocspaceApiTypescript.LoginSettingsRequestDto();
+      //var instance = new DocspaceApiJavascript.LoginSettingsRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property blockTime (base name: "blockTime")', function() {
       // uncomment below and update the code to test the property blockTime
-      //var instance = new DocspaceApiTypescript.LoginSettingsRequestDto();
+      //var instance = new DocspaceApiJavascript.LoginSettingsRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property checkPeriod (base name: "checkPeriod")', function() {
       // uncomment below and update the code to test the property checkPeriod
-      //var instance = new DocspaceApiTypescript.LoginSettingsRequestDto();
+      //var instance = new DocspaceApiJavascript.LoginSettingsRequestDto();
       //expect(instance).to.be();
     });
 

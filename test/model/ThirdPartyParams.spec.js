@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ThirdPartyParams();
+    instance = new DocspaceApiJavascript.ThirdPartyParams();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,43 +62,43 @@
   describe('ThirdPartyParams', function() {
     it('should create an instance of ThirdPartyParams', function() {
       // uncomment below and update the code to test ThirdPartyParams
-      //var instance = new DocspaceApiTypescript.ThirdPartyParams();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ThirdPartyParams);
+      //var instance = new DocspaceApiJavascript.ThirdPartyParams();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ThirdPartyParams);
     });
 
     it('should have the property authData (base name: "auth_data")', function() {
       // uncomment below and update the code to test the property authData
-      //var instance = new DocspaceApiTypescript.ThirdPartyParams();
+      //var instance = new DocspaceApiJavascript.ThirdPartyParams();
       //expect(instance).to.be();
     });
 
     it('should have the property corporate (base name: "corporate")', function() {
       // uncomment below and update the code to test the property corporate
-      //var instance = new DocspaceApiTypescript.ThirdPartyParams();
+      //var instance = new DocspaceApiJavascript.ThirdPartyParams();
       //expect(instance).to.be();
     });
 
     it('should have the property roomsStorage (base name: "roomsStorage")', function() {
       // uncomment below and update the code to test the property roomsStorage
-      //var instance = new DocspaceApiTypescript.ThirdPartyParams();
+      //var instance = new DocspaceApiJavascript.ThirdPartyParams();
       //expect(instance).to.be();
     });
 
     it('should have the property customerTitle (base name: "customer_title")', function() {
       // uncomment below and update the code to test the property customerTitle
-      //var instance = new DocspaceApiTypescript.ThirdPartyParams();
+      //var instance = new DocspaceApiJavascript.ThirdPartyParams();
       //expect(instance).to.be();
     });
 
     it('should have the property providerId (base name: "provider_id")', function() {
       // uncomment below and update the code to test the property providerId
-      //var instance = new DocspaceApiTypescript.ThirdPartyParams();
+      //var instance = new DocspaceApiJavascript.ThirdPartyParams();
       //expect(instance).to.be();
     });
 
     it('should have the property providerKey (base name: "provider_key")', function() {
       // uncomment below and update the code to test the property providerKey
-      //var instance = new DocspaceApiTypescript.ThirdPartyParams();
+      //var instance = new DocspaceApiJavascript.ThirdPartyParams();
       //expect(instance).to.be();
     });
 

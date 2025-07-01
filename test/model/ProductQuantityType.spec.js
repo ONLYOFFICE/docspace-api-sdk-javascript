@@ -32,9 +32,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
@@ -61,8 +61,8 @@
   describe('ProductQuantityType', function() {
     it('should create an instance of ProductQuantityType', function() {
       // uncomment below and update the code to test ProductQuantityType
-      //var instance = new DocspaceApiTypescript.ProductQuantityType();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ProductQuantityType);
+      //var instance = new DocspaceApiJavascript.ProductQuantityType();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ProductQuantityType);
     });
 
   });

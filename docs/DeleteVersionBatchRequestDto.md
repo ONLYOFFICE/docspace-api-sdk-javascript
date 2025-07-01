@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.DeleteVersionBatchRequestDto
+# DocspaceApiJavascript.DeleteVersionBatchRequestDto
 
 ## Properties
 

@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.ConfirmType
+# DocspaceApiJavascript.ConfirmType
+
+
 
 ## Enum
 

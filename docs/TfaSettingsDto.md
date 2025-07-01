@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.TfaSettingsDto
+# DocspaceApiJavascript.TfaSettingsDto
 
 ## Properties
 

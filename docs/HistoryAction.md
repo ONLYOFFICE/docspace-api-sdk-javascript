@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.HistoryAction
+# DocspaceApiJavascript.HistoryAction
 
 ## Properties
 

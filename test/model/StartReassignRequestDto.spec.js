@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.StartReassignRequestDto();
+    instance = new DocspaceApiJavascript.StartReassignRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('StartReassignRequestDto', function() {
     it('should create an instance of StartReassignRequestDto', function() {
       // uncomment below and update the code to test StartReassignRequestDto
-      //var instance = new DocspaceApiTypescript.StartReassignRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.StartReassignRequestDto);
+      //var instance = new DocspaceApiJavascript.StartReassignRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.StartReassignRequestDto);
     });
 
     it('should have the property fromUserId (base name: "fromUserId")', function() {
       // uncomment below and update the code to test the property fromUserId
-      //var instance = new DocspaceApiTypescript.StartReassignRequestDto();
+      //var instance = new DocspaceApiJavascript.StartReassignRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property toUserId (base name: "toUserId")', function() {
       // uncomment below and update the code to test the property toUserId
-      //var instance = new DocspaceApiTypescript.StartReassignRequestDto();
+      //var instance = new DocspaceApiJavascript.StartReassignRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property deleteProfile (base name: "deleteProfile")', function() {
       // uncomment below and update the code to test the property deleteProfile
-      //var instance = new DocspaceApiTypescript.StartReassignRequestDto();
+      //var instance = new DocspaceApiJavascript.StartReassignRequestDto();
       //expect(instance).to.be();
     });
 

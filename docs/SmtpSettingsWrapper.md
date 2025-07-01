@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SmtpSettingsWrapper
+# DocspaceApiJavascript.SmtpSettingsWrapper
 
 ## Properties
 

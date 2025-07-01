@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ApiKeyResponseDto();
+    instance = new DocspaceApiJavascript.ApiKeyResponseDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,67 +62,67 @@
   describe('ApiKeyResponseDto', function() {
     it('should create an instance of ApiKeyResponseDto', function() {
       // uncomment below and update the code to test ApiKeyResponseDto
-      //var instance = new DocspaceApiTypescript.ApiKeyResponseDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ApiKeyResponseDto);
+      //var instance = new DocspaceApiJavascript.ApiKeyResponseDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ApiKeyResponseDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.ApiKeyResponseDto();
+      //var instance = new DocspaceApiJavascript.ApiKeyResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiTypescript.ApiKeyResponseDto();
+      //var instance = new DocspaceApiJavascript.ApiKeyResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiTypescript.ApiKeyResponseDto();
+      //var instance = new DocspaceApiJavascript.ApiKeyResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property keyPostfix (base name: "keyPostfix")', function() {
       // uncomment below and update the code to test the property keyPostfix
-      //var instance = new DocspaceApiTypescript.ApiKeyResponseDto();
+      //var instance = new DocspaceApiJavascript.ApiKeyResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property permissions (base name: "permissions")', function() {
       // uncomment below and update the code to test the property permissions
-      //var instance = new DocspaceApiTypescript.ApiKeyResponseDto();
+      //var instance = new DocspaceApiJavascript.ApiKeyResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property lastUsed (base name: "lastUsed")', function() {
       // uncomment below and update the code to test the property lastUsed
-      //var instance = new DocspaceApiTypescript.ApiKeyResponseDto();
+      //var instance = new DocspaceApiJavascript.ApiKeyResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property createOn (base name: "createOn")', function() {
       // uncomment below and update the code to test the property createOn
-      //var instance = new DocspaceApiTypescript.ApiKeyResponseDto();
+      //var instance = new DocspaceApiJavascript.ApiKeyResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property createBy (base name: "createBy")', function() {
       // uncomment below and update the code to test the property createBy
-      //var instance = new DocspaceApiTypescript.ApiKeyResponseDto();
+      //var instance = new DocspaceApiJavascript.ApiKeyResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property expiresAt (base name: "expiresAt")', function() {
       // uncomment below and update the code to test the property expiresAt
-      //var instance = new DocspaceApiTypescript.ApiKeyResponseDto();
+      //var instance = new DocspaceApiJavascript.ApiKeyResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isActive (base name: "isActive")', function() {
       // uncomment below and update the code to test the property isActive
-      //var instance = new DocspaceApiTypescript.ApiKeyResponseDto();
+      //var instance = new DocspaceApiJavascript.ApiKeyResponseDto();
       //expect(instance).to.be();
     });
 

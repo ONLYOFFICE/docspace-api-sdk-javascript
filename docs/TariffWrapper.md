@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.TariffWrapper
+# DocspaceApiJavascript.TariffWrapper
 
 ## Properties
 

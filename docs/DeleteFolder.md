@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.DeleteFolder
+# DocspaceApiJavascript.DeleteFolder
 
 ## Properties
 

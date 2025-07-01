@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SignupAccountRequestDto
+# DocspaceApiJavascript.SignupAccountRequestDto
 
 ## Properties
 

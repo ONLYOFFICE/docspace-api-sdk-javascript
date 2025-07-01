@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CustomColorThemesSettingsColorItem();
+    instance = new DocspaceApiJavascript.CustomColorThemesSettingsColorItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('CustomColorThemesSettingsColorItem', function() {
     it('should create an instance of CustomColorThemesSettingsColorItem', function() {
       // uncomment below and update the code to test CustomColorThemesSettingsColorItem
-      //var instance = new DocspaceApiTypescript.CustomColorThemesSettingsColorItem();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CustomColorThemesSettingsColorItem);
+      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsColorItem();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CustomColorThemesSettingsColorItem);
     });
 
     it('should have the property accent (base name: "accent")', function() {
       // uncomment below and update the code to test the property accent
-      //var instance = new DocspaceApiTypescript.CustomColorThemesSettingsColorItem();
+      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsColorItem();
       //expect(instance).to.be();
     });
 
     it('should have the property buttons (base name: "buttons")', function() {
       // uncomment below and update the code to test the property buttons
-      //var instance = new DocspaceApiTypescript.CustomColorThemesSettingsColorItem();
+      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsColorItem();
       //expect(instance).to.be();
     });
 

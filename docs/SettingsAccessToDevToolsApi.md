@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SettingsAccessToDevToolsApi
+# DocspaceApiJavascript.SettingsAccessToDevToolsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -12,15 +12,27 @@ Method | HTTP request | Description
 
 > TenantDevToolsAccessSettingsWrapper getTenantAccessDevToolsSettings()
 
-Get the Developer Tools access settings
-
 Returns the Developer Tools access settings for the portal.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-tenant-access-dev-tools-settings/).
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**TenantDevToolsAccessSettingsWrapper**](TenantDevToolsAccessSettingsWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -42,7 +54,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsAccessToDevToolsApi();
+let apiInstance = new DocspaceApiJavascript.SettingsAccessToDevToolsApi();
 apiInstance.getTenantAccessDevToolsSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -51,18 +63,6 @@ apiInstance.getTenantAccessDevToolsSettings((error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-This endpoint does not need any parameter.
-
-### Return type
-
-[**TenantDevToolsAccessSettingsWrapper**](TenantDevToolsAccessSettingsWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 

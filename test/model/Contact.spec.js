@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.Contact();
+    instance = new DocspaceApiJavascript.Contact();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('Contact', function() {
     it('should create an instance of Contact', function() {
       // uncomment below and update the code to test Contact
-      //var instance = new DocspaceApiTypescript.Contact();
-      //expect(instance).to.be.a(DocspaceApiTypescript.Contact);
+      //var instance = new DocspaceApiJavascript.Contact();
+      //expect(instance).to.be.a(DocspaceApiJavascript.Contact);
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new DocspaceApiTypescript.Contact();
+      //var instance = new DocspaceApiJavascript.Contact();
       //expect(instance).to.be();
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new DocspaceApiTypescript.Contact();
+      //var instance = new DocspaceApiJavascript.Contact();
       //expect(instance).to.be();
     });
 

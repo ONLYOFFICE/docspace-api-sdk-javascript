@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.DeleteVersionBatchRequestDto();
+    instance = new DocspaceApiJavascript.DeleteVersionBatchRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,31 +62,31 @@
   describe('DeleteVersionBatchRequestDto', function() {
     it('should create an instance of DeleteVersionBatchRequestDto', function() {
       // uncomment below and update the code to test DeleteVersionBatchRequestDto
-      //var instance = new DocspaceApiTypescript.DeleteVersionBatchRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.DeleteVersionBatchRequestDto);
+      //var instance = new DocspaceApiJavascript.DeleteVersionBatchRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.DeleteVersionBatchRequestDto);
     });
 
     it('should have the property returnSingleOperation (base name: "returnSingleOperation")', function() {
       // uncomment below and update the code to test the property returnSingleOperation
-      //var instance = new DocspaceApiTypescript.DeleteVersionBatchRequestDto();
+      //var instance = new DocspaceApiJavascript.DeleteVersionBatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property deleteAfter (base name: "deleteAfter")', function() {
       // uncomment below and update the code to test the property deleteAfter
-      //var instance = new DocspaceApiTypescript.DeleteVersionBatchRequestDto();
+      //var instance = new DocspaceApiJavascript.DeleteVersionBatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property fileId (base name: "fileId")', function() {
       // uncomment below and update the code to test the property fileId
-      //var instance = new DocspaceApiTypescript.DeleteVersionBatchRequestDto();
+      //var instance = new DocspaceApiJavascript.DeleteVersionBatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property versions (base name: "versions")', function() {
       // uncomment below and update the code to test the property versions
-      //var instance = new DocspaceApiTypescript.DeleteVersionBatchRequestDto();
+      //var instance = new DocspaceApiJavascript.DeleteVersionBatchRequestDto();
       //expect(instance).to.be();
     });
 

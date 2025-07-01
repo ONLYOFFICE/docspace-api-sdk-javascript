@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.NoContentResult();
+    instance = new DocspaceApiJavascript.NoContentResult();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('NoContentResult', function() {
     it('should create an instance of NoContentResult', function() {
       // uncomment below and update the code to test NoContentResult
-      //var instance = new DocspaceApiTypescript.NoContentResult();
-      //expect(instance).to.be.a(DocspaceApiTypescript.NoContentResult);
+      //var instance = new DocspaceApiJavascript.NoContentResult();
+      //expect(instance).to.be.a(DocspaceApiJavascript.NoContentResult);
     });
 
     it('should have the property statusCode (base name: "statusCode")', function() {
       // uncomment below and update the code to test the property statusCode
-      //var instance = new DocspaceApiTypescript.NoContentResult();
+      //var instance = new DocspaceApiJavascript.NoContentResult();
       //expect(instance).to.be();
     });
 

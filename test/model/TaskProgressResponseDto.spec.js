@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.TaskProgressResponseDto();
+    instance = new DocspaceApiJavascript.TaskProgressResponseDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('TaskProgressResponseDto', function() {
     it('should create an instance of TaskProgressResponseDto', function() {
       // uncomment below and update the code to test TaskProgressResponseDto
-      //var instance = new DocspaceApiTypescript.TaskProgressResponseDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.TaskProgressResponseDto);
+      //var instance = new DocspaceApiJavascript.TaskProgressResponseDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.TaskProgressResponseDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.TaskProgressResponseDto();
+      //var instance = new DocspaceApiJavascript.TaskProgressResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instance = new DocspaceApiTypescript.TaskProgressResponseDto();
+      //var instance = new DocspaceApiJavascript.TaskProgressResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property percentage (base name: "percentage")', function() {
       // uncomment below and update the code to test the property percentage
-      //var instance = new DocspaceApiTypescript.TaskProgressResponseDto();
+      //var instance = new DocspaceApiJavascript.TaskProgressResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isCompleted (base name: "isCompleted")', function() {
       // uncomment below and update the code to test the property isCompleted
-      //var instance = new DocspaceApiTypescript.TaskProgressResponseDto();
+      //var instance = new DocspaceApiJavascript.TaskProgressResponseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new DocspaceApiTypescript.TaskProgressResponseDto();
+      //var instance = new DocspaceApiJavascript.TaskProgressResponseDto();
       //expect(instance).to.be();
     });
 

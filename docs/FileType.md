@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.FileType
+# DocspaceApiJavascript.FileType
+
+
 
 ## Enum
 

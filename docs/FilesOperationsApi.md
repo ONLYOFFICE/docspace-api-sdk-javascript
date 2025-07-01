@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FilesOperationsApi
+# DocspaceApiJavascript.FilesOperationsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -28,27 +28,9 @@ Method | HTTP request | Description
 
 > FileOperationArrayWrapper bulkDownload(opts)
 
-Bulk download
-
 Starts the download process of files and folders with the IDs specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
-let opts = {
-  'downloadRequestDto': new DocspaceApiTypescript.DownloadRequestDto() // DownloadRequestDto | 
-};
-apiInstance.bulkDownload(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/bulk-download/).
 
 ### Parameters
 
@@ -65,6 +47,24 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
+let opts = {
+  'downloadRequestDto': new DocspaceApiJavascript.DownloadRequestDto() // DownloadRequestDto | 
+};
+apiInstance.bulkDownload(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: application/json
@@ -75,49 +75,9 @@ No authorization required
 
 > ConversationResultArrayWrapper checkConversionStatus(fileId, opts)
 
-Get conversion status
-
 Checks the conversion status of a file with the ID specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
-let fileId = 9846; // Number | The file ID to check conversion status.
-let opts = {
-  'start': true // Boolean | Specifies whether a conversion operation is started or not.
-};
-apiInstance.checkConversionStatus(fileId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/check-conversion-status/).
 
 ### Parameters
 
@@ -135,25 +95,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## checkMoveOrCopyBatchItems
-
-> FileEntryArrayWrapper checkMoveOrCopyBatchItems(opts)
-
-Check and move or copy to a folder
-
-Checks if files or folders can be moved or copied to the specified folder, moves or copies them, and returns their information.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -175,11 +121,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
+let fileId = 9846; // Number | The file ID to check conversion status.
 let opts = {
-  'inDto': new DocspaceApiTypescript.BatchRequestDto() // BatchRequestDto | The request parameters for copying/moving files.
+  'start': true // Boolean | Specifies whether a conversion operation is started or not.
 };
-apiInstance.checkMoveOrCopyBatchItems(opts, (error, data, response) => {
+apiInstance.checkConversionStatus(fileId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -187,6 +134,20 @@ apiInstance.checkMoveOrCopyBatchItems(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## checkMoveOrCopyBatchItems
+
+> FileEntryArrayWrapper checkMoveOrCopyBatchItems(opts)
+
+Checks if files or folders can be moved or copied to the specified folder, moves or copies them, and returns their information.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/check-move-or-copy-batch-items/).
 
 ### Parameters
 
@@ -203,25 +164,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## checkMoveOrCopyDestFolder
-
-> CheckDestFolderWrapper checkMoveOrCopyDestFolder(opts)
-
-Check for moving or copying to a folder
-
-Checks if files can be moved or copied to the specified folder.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -243,11 +190,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
 let opts = {
-  'inDto': new DocspaceApiTypescript.BatchRequestDto() // BatchRequestDto | The request parameters for copying/moving files.
+  'inDto': new DocspaceApiJavascript.BatchRequestDto() // BatchRequestDto | The request parameters for copying/moving files.
 };
-apiInstance.checkMoveOrCopyDestFolder(opts, (error, data, response) => {
+apiInstance.checkMoveOrCopyBatchItems(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -255,6 +202,20 @@ apiInstance.checkMoveOrCopyDestFolder(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## checkMoveOrCopyDestFolder
+
+> CheckDestFolderWrapper checkMoveOrCopyDestFolder(opts)
+
+Checks if files can be moved or copied to the specified folder.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/check-move-or-copy-dest-folder/).
 
 ### Parameters
 
@@ -271,25 +232,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## copyBatchItems
-
-> FileOperationArrayWrapper copyBatchItems(opts)
-
-Copy to the folder
-
-Copies all the selected files and folders to the folder with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -311,11 +258,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
 let opts = {
-  'batchRequestDto': new DocspaceApiTypescript.BatchRequestDto() // BatchRequestDto | 
+  'inDto': new DocspaceApiJavascript.BatchRequestDto() // BatchRequestDto | The request parameters for copying/moving files.
 };
-apiInstance.copyBatchItems(opts, (error, data, response) => {
+apiInstance.checkMoveOrCopyDestFolder(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -323,6 +270,20 @@ apiInstance.copyBatchItems(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## copyBatchItems
+
+> FileOperationArrayWrapper copyBatchItems(opts)
+
+Copies all the selected files and folders to the folder with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/copy-batch-items/).
 
 ### Parameters
 
@@ -339,25 +300,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## createUploadSession
-
-> ObjectWrapper createUploadSession(folderId, opts)
-
-Chunked upload
-
-Creates the session to upload large files in multiple chunks to the folder with the ID specified in the request.   **Note**: Each chunk can have different length but the length should be multiple of &lt;b&gt;512&lt;/b&gt; and greater or equal to &lt;b&gt;10 mb&lt;/b&gt;. Last chunk can have any size.  After the initial response to the request with the &lt;b&gt;200 OK&lt;/b&gt; status, you must get the &lt;em&gt;location&lt;/em&gt; field value from the response. Send all your chunks to this location.  Each chunk must be sent in the exact order the chunks appear in the file.  After receiving each chunk, the server will respond with the current information about the upload session if no errors occurred.  When the number of bytes uploaded is equal to the number of bytes you sent in the initial request, the server responds with the &lt;b&gt;201 Created&lt;/b&gt; status and sends you information about the uploaded file.  Information about created session which includes:  &lt;ul&gt;  &lt;li&gt;&lt;b&gt;id:&lt;/b&gt; unique ID of this upload session,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;created:&lt;/b&gt; UTC time when the session was created,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;expired:&lt;/b&gt; UTC time when the session will expire if no chunks are sent before that time,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;location:&lt;/b&gt; URL where you should send your next chunk,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;bytes_uploaded:&lt;/b&gt; number of bytes uploaded for the specific upload ID,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;bytes_total:&lt;/b&gt; total number of bytes which will be uploaded.&lt;/li&gt;  &lt;/ul&gt;
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -379,12 +326,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
-let folderId = 9846; // Number | The folder ID of the session.
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
 let opts = {
-  'sessionRequest': new DocspaceApiTypescript.SessionRequest() // SessionRequest | The session parameters.
+  'batchRequestDto': new DocspaceApiJavascript.BatchRequestDto() // BatchRequestDto | 
 };
-apiInstance.createUploadSession(folderId, opts, (error, data, response) => {
+apiInstance.copyBatchItems(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -392,6 +338,20 @@ apiInstance.createUploadSession(folderId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## createUploadSession
+
+> ObjectWrapper createUploadSession(folderId, opts)
+
+Creates the session to upload large files in multiple chunks to the folder with the ID specified in the request.   **Note**: Each chunk can have different length but the length should be multiple of &lt;b&gt;512&lt;/b&gt; and greater or equal to &lt;b&gt;10 mb&lt;/b&gt;. Last chunk can have any size.  After the initial response to the request with the &lt;b&gt;200 OK&lt;/b&gt; status, you must get the &lt;em&gt;location&lt;/em&gt; field value from the response. Send all your chunks to this location.  Each chunk must be sent in the exact order the chunks appear in the file.  After receiving each chunk, the server will respond with the current information about the upload session if no errors occurred.  When the number of bytes uploaded is equal to the number of bytes you sent in the initial request, the server responds with the &lt;b&gt;201 Created&lt;/b&gt; status and sends you information about the uploaded file.  Information about created session which includes:  &lt;ul&gt;  &lt;li&gt;&lt;b&gt;id:&lt;/b&gt; unique ID of this upload session,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;created:&lt;/b&gt; UTC time when the session was created,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;expired:&lt;/b&gt; UTC time when the session will expire if no chunks are sent before that time,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;location:&lt;/b&gt; URL where you should send your next chunk,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;bytes_uploaded:&lt;/b&gt; number of bytes uploaded for the specific upload ID,&lt;/li&gt;  &lt;li&gt;&lt;b&gt;bytes_total:&lt;/b&gt; total number of bytes which will be uploaded.&lt;/li&gt;  &lt;/ul&gt;
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/create-upload-session/).
 
 ### Parameters
 
@@ -409,25 +369,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## deleteBatchItems
-
-> FileOperationArrayWrapper deleteBatchItems(opts)
-
-Delete files and folders
-
-Deletes the files and folders with the IDs specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -449,11 +395,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
+let folderId = 9846; // Number | The folder ID of the session.
 let opts = {
-  'deleteBatchRequestDto': new DocspaceApiTypescript.DeleteBatchRequestDto() // DeleteBatchRequestDto | 
+  'sessionRequest': new DocspaceApiJavascript.SessionRequest() // SessionRequest | The session parameters.
 };
-apiInstance.deleteBatchItems(opts, (error, data, response) => {
+apiInstance.createUploadSession(folderId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -461,6 +408,20 @@ apiInstance.deleteBatchItems(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## deleteBatchItems
+
+> FileOperationArrayWrapper deleteBatchItems(opts)
+
+Deletes the files and folders with the IDs specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-batch-items/).
 
 ### Parameters
 
@@ -477,25 +438,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## deleteFileVersions
-
-> FileOperationWrapper deleteFileVersions(opts)
-
-Delete file versions
-
-Deletes the file versions with the IDs specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -517,11 +464,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
 let opts = {
-  'deleteVersionBatchRequestDto': new DocspaceApiTypescript.DeleteVersionBatchRequestDto() // DeleteVersionBatchRequestDto | 
+  'deleteBatchRequestDto': new DocspaceApiJavascript.DeleteBatchRequestDto() // DeleteBatchRequestDto | 
 };
-apiInstance.deleteFileVersions(opts, (error, data, response) => {
+apiInstance.deleteBatchItems(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -529,6 +476,20 @@ apiInstance.deleteFileVersions(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## deleteFileVersions
+
+> FileOperationWrapper deleteFileVersions(opts)
+
+Deletes the file versions with the IDs specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/delete-file-versions/).
 
 ### Parameters
 
@@ -545,25 +506,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## duplicateBatchItems
-
-> FileOperationArrayWrapper duplicateBatchItems(opts)
-
-Duplicate files and folders
-
-Duplicates all the selected files and folders.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -585,11 +532,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
 let opts = {
-  'duplicateRequestDto': new DocspaceApiTypescript.DuplicateRequestDto() // DuplicateRequestDto | 
+  'deleteVersionBatchRequestDto': new DocspaceApiJavascript.DeleteVersionBatchRequestDto() // DeleteVersionBatchRequestDto | 
 };
-apiInstance.duplicateBatchItems(opts, (error, data, response) => {
+apiInstance.deleteFileVersions(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -597,6 +544,20 @@ apiInstance.duplicateBatchItems(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## duplicateBatchItems
+
+> FileOperationArrayWrapper duplicateBatchItems(opts)
+
+Duplicates all the selected files and folders.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/duplicate-batch-items/).
 
 ### Parameters
 
@@ -613,25 +574,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## emptyTrash
-
-> FileOperationArrayWrapper emptyTrash(opts)
-
-Empty the \&quot;Trash\&quot; folder
-
-Deletes all the files and folders from the \&quot;Trash\&quot; folder.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -653,11 +600,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
 let opts = {
-  'single': true // Boolean | Specifies whether to return only the current operation
+  'duplicateRequestDto': new DocspaceApiJavascript.DuplicateRequestDto() // DuplicateRequestDto | 
 };
-apiInstance.emptyTrash(opts, (error, data, response) => {
+apiInstance.duplicateBatchItems(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -665,6 +612,20 @@ apiInstance.emptyTrash(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## emptyTrash
+
+> FileOperationArrayWrapper emptyTrash(opts)
+
+Deletes all the files and folders from the \&quot;Trash\&quot; folder.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/empty-trash/).
 
 ### Parameters
 
@@ -681,6 +642,45 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
+let opts = {
+  'single': true // Boolean | Specifies whether to return only the current operation
+};
+apiInstance.emptyTrash(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -691,27 +691,9 @@ Name | Type | Description  | Notes
 
 > FileOperationArrayWrapper getOperationStatuses(opts)
 
-Get active file operations
-
 Returns a list of all the active file operations.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
-let opts = {
-  'id': "9846" // String | The ID of the file operation.
-};
-apiInstance.getOperationStatuses(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-operation-statuses/).
 
 ### Parameters
 
@@ -728,6 +710,24 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
+let opts = {
+  'id': "9846" // String | The ID of the file operation.
+};
+apiInstance.getOperationStatuses(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -738,28 +738,9 @@ No authorization required
 
 > FileOperationArrayWrapper getOperationStatusesByType(operationType, opts)
 
-Get file operation statuses
-
 Retrieves the statuses of operations filtered by the specified operation type.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
-let operationType = new DocspaceApiTypescript.FileOperationType(); // FileOperationType | Specifies the type of file operation to be retrieved.
-let opts = {
-  'id': "9846" // String | The ID of the file operation.
-};
-apiInstance.getOperationStatusesByType(operationType, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-operation-statuses-by-type/).
 
 ### Parameters
 
@@ -777,6 +758,25 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
+let operationType = new DocspaceApiJavascript.FileOperationType(); // FileOperationType | Specifies the type of file operation to be retrieved.
+let opts = {
+  'id': "9846" // String | The ID of the file operation.
+};
+apiInstance.getOperationStatusesByType(operationType, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -787,48 +787,9 @@ No authorization required
 
 > FileOperationArrayWrapper markAsRead(opts)
 
-Mark as read
-
 Marks the files and folders with the IDs specified in the request as read.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
-let opts = {
-  'baseBatchRequestDto': new DocspaceApiTypescript.BaseBatchRequestDto() // BaseBatchRequestDto | 
-};
-apiInstance.markAsRead(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/mark-as-read/).
 
 ### Parameters
 
@@ -845,25 +806,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## moveBatchItems
-
-> FileOperationArrayWrapper moveBatchItems(opts)
-
-Move or copy to a folder
-
-Moves or copies all the selected files and folders to the folder with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -885,11 +832,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
 let opts = {
-  'batchRequestDto': new DocspaceApiTypescript.BatchRequestDto() // BatchRequestDto | 
+  'baseBatchRequestDto': new DocspaceApiJavascript.BaseBatchRequestDto() // BaseBatchRequestDto | 
 };
-apiInstance.moveBatchItems(opts, (error, data, response) => {
+apiInstance.markAsRead(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -897,6 +844,20 @@ apiInstance.moveBatchItems(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## moveBatchItems
+
+> FileOperationArrayWrapper moveBatchItems(opts)
+
+Moves or copies all the selected files and folders to the folder with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/move-batch-items/).
 
 ### Parameters
 
@@ -913,25 +874,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## startFileConversion
-
-> ConversationResultArrayWrapper startFileConversion(fileId, opts)
-
-Start file conversion
-
-Starts a conversion operation of a file with the ID specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -953,12 +900,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
-let fileId = 9846; // Number | The file ID to start conversion proccess.
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
 let opts = {
-  'checkConversionRequestDtoInteger': new DocspaceApiTypescript.CheckConversionRequestDtoInteger() // CheckConversionRequestDtoInteger | The parameters for checking file conversion.
+  'batchRequestDto': new DocspaceApiJavascript.BatchRequestDto() // BatchRequestDto | 
 };
-apiInstance.startFileConversion(fileId, opts, (error, data, response) => {
+apiInstance.moveBatchItems(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -966,6 +912,20 @@ apiInstance.startFileConversion(fileId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## startFileConversion
+
+> ConversationResultArrayWrapper startFileConversion(fileId, opts)
+
+Starts a conversion operation of a file with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/start-file-conversion/).
 
 ### Parameters
 
@@ -983,70 +943,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## terminateTasks
-
-> FileOperationArrayWrapper terminateTasks(id)
-
-Finish active operations
-
-Finishes an operation with the ID specified in the request or all the active operations.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
-let id = "9846"; // String | The operation ID of the request.
-apiInstance.terminateTasks(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**| The operation ID of the request. | 
-
-### Return type
-
-[**FileOperationArrayWrapper**](FileOperationArrayWrapper.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## updateFileComment
-
-> StringWrapper updateFileComment(fileId, opts)
-
-Update a comment
-
-Updates a comment in a file with the ID specified in the request.
-
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1068,12 +969,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesOperationsApi();
-let fileId = 9846; // Number | The file ID where the comment is located.
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
+let fileId = 9846; // Number | The file ID to start conversion proccess.
 let opts = {
-  'updateComment': new DocspaceApiTypescript.UpdateComment() // UpdateComment | The parameters for updating a comment.
+  'checkConversionRequestDtoInteger': new DocspaceApiJavascript.CheckConversionRequestDtoInteger() // CheckConversionRequestDtoInteger | The parameters for checking file conversion.
 };
-apiInstance.updateFileComment(fileId, opts, (error, data, response) => {
+apiInstance.startFileConversion(fileId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1081,6 +982,65 @@ apiInstance.updateFileComment(fileId, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## terminateTasks
+
+> FileOperationArrayWrapper terminateTasks(id)
+
+Finishes an operation with the ID specified in the request or all the active operations.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/terminate-tasks/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**| The operation ID of the request. | 
+
+### Return type
+
+[**FileOperationArrayWrapper**](FileOperationArrayWrapper.md)
+
+### Authorization
+
+No authorization required
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
+let id = "9846"; // String | The operation ID of the request.
+apiInstance.terminateTasks(id, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## updateFileComment
+
+> StringWrapper updateFileComment(fileId, opts)
+
+Updates a comment in a file with the ID specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-file-comment/).
 
 ### Parameters
 
@@ -1097,6 +1057,46 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.FilesOperationsApi();
+let fileId = 9846; // Number | The file ID where the comment is located.
+let opts = {
+  'updateComment': new DocspaceApiJavascript.UpdateComment() // UpdateComment | The parameters for updating a comment.
+};
+apiInstance.updateFileComment(fileId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

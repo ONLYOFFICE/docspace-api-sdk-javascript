@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.CustomFilterParameters
+# DocspaceApiJavascript.CustomFilterParameters
 
 ## Properties
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.AccountInfoDto();
+    instance = new DocspaceApiJavascript.AccountInfoDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('AccountInfoDto', function() {
     it('should create an instance of AccountInfoDto', function() {
       // uncomment below and update the code to test AccountInfoDto
-      //var instance = new DocspaceApiTypescript.AccountInfoDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.AccountInfoDto);
+      //var instance = new DocspaceApiJavascript.AccountInfoDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.AccountInfoDto);
     });
 
     it('should have the property provider (base name: "provider")', function() {
       // uncomment below and update the code to test the property provider
-      //var instance = new DocspaceApiTypescript.AccountInfoDto();
+      //var instance = new DocspaceApiJavascript.AccountInfoDto();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiTypescript.AccountInfoDto();
+      //var instance = new DocspaceApiJavascript.AccountInfoDto();
       //expect(instance).to.be();
     });
 
     it('should have the property linked (base name: "linked")', function() {
       // uncomment below and update the code to test the property linked
-      //var instance = new DocspaceApiTypescript.AccountInfoDto();
+      //var instance = new DocspaceApiJavascript.AccountInfoDto();
       //expect(instance).to.be();
     });
 

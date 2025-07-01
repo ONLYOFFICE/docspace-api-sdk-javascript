@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.EmbeddedConfig();
+    instance = new DocspaceApiJavascript.EmbeddedConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('EmbeddedConfig', function() {
     it('should create an instance of EmbeddedConfig', function() {
       // uncomment below and update the code to test EmbeddedConfig
-      //var instance = new DocspaceApiTypescript.EmbeddedConfig();
-      //expect(instance).to.be.a(DocspaceApiTypescript.EmbeddedConfig);
+      //var instance = new DocspaceApiJavascript.EmbeddedConfig();
+      //expect(instance).to.be.a(DocspaceApiJavascript.EmbeddedConfig);
     });
 
     it('should have the property embedUrl (base name: "embedUrl")', function() {
       // uncomment below and update the code to test the property embedUrl
-      //var instance = new DocspaceApiTypescript.EmbeddedConfig();
+      //var instance = new DocspaceApiJavascript.EmbeddedConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property saveUrl (base name: "saveUrl")', function() {
       // uncomment below and update the code to test the property saveUrl
-      //var instance = new DocspaceApiTypescript.EmbeddedConfig();
+      //var instance = new DocspaceApiJavascript.EmbeddedConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property shareLinkParam (base name: "shareLinkParam")', function() {
       // uncomment below and update the code to test the property shareLinkParam
-      //var instance = new DocspaceApiTypescript.EmbeddedConfig();
+      //var instance = new DocspaceApiJavascript.EmbeddedConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property shareUrl (base name: "shareUrl")', function() {
       // uncomment below and update the code to test the property shareUrl
-      //var instance = new DocspaceApiTypescript.EmbeddedConfig();
+      //var instance = new DocspaceApiJavascript.EmbeddedConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property toolbarDocked (base name: "toolbarDocked")', function() {
       // uncomment below and update the code to test the property toolbarDocked
-      //var instance = new DocspaceApiTypescript.EmbeddedConfig();
+      //var instance = new DocspaceApiJavascript.EmbeddedConfig();
       //expect(instance).to.be();
     });
 

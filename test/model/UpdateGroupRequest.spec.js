@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.UpdateGroupRequest();
+    instance = new DocspaceApiJavascript.UpdateGroupRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,31 +62,31 @@
   describe('UpdateGroupRequest', function() {
     it('should create an instance of UpdateGroupRequest', function() {
       // uncomment below and update the code to test UpdateGroupRequest
-      //var instance = new DocspaceApiTypescript.UpdateGroupRequest();
-      //expect(instance).to.be.a(DocspaceApiTypescript.UpdateGroupRequest);
+      //var instance = new DocspaceApiJavascript.UpdateGroupRequest();
+      //expect(instance).to.be.a(DocspaceApiJavascript.UpdateGroupRequest);
     });
 
     it('should have the property membersToAdd (base name: "membersToAdd")', function() {
       // uncomment below and update the code to test the property membersToAdd
-      //var instance = new DocspaceApiTypescript.UpdateGroupRequest();
+      //var instance = new DocspaceApiJavascript.UpdateGroupRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property membersToRemove (base name: "membersToRemove")', function() {
       // uncomment below and update the code to test the property membersToRemove
-      //var instance = new DocspaceApiTypescript.UpdateGroupRequest();
+      //var instance = new DocspaceApiJavascript.UpdateGroupRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property groupManager (base name: "groupManager")', function() {
       // uncomment below and update the code to test the property groupManager
-      //var instance = new DocspaceApiTypescript.UpdateGroupRequest();
+      //var instance = new DocspaceApiJavascript.UpdateGroupRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property groupName (base name: "groupName")', function() {
       // uncomment below and update the code to test the property groupName
-      //var instance = new DocspaceApiTypescript.UpdateGroupRequest();
+      //var instance = new DocspaceApiJavascript.UpdateGroupRequest();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.ProviderFilter
+# DocspaceApiJavascript.ProviderFilter
+
+
 
 ## Enum
 

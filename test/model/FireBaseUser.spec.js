@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.FireBaseUser();
+    instance = new DocspaceApiJavascript.FireBaseUser();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,49 +62,49 @@
   describe('FireBaseUser', function() {
     it('should create an instance of FireBaseUser', function() {
       // uncomment below and update the code to test FireBaseUser
-      //var instance = new DocspaceApiTypescript.FireBaseUser();
-      //expect(instance).to.be.a(DocspaceApiTypescript.FireBaseUser);
+      //var instance = new DocspaceApiJavascript.FireBaseUser();
+      //expect(instance).to.be.a(DocspaceApiJavascript.FireBaseUser);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.FireBaseUser();
+      //var instance = new DocspaceApiJavascript.FireBaseUser();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "userId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instance = new DocspaceApiTypescript.FireBaseUser();
+      //var instance = new DocspaceApiJavascript.FireBaseUser();
       //expect(instance).to.be();
     });
 
     it('should have the property tenantId (base name: "tenantId")', function() {
       // uncomment below and update the code to test the property tenantId
-      //var instance = new DocspaceApiTypescript.FireBaseUser();
+      //var instance = new DocspaceApiJavascript.FireBaseUser();
       //expect(instance).to.be();
     });
 
     it('should have the property firebaseDeviceToken (base name: "firebaseDeviceToken")', function() {
       // uncomment below and update the code to test the property firebaseDeviceToken
-      //var instance = new DocspaceApiTypescript.FireBaseUser();
+      //var instance = new DocspaceApiJavascript.FireBaseUser();
       //expect(instance).to.be();
     });
 
     it('should have the property application (base name: "application")', function() {
       // uncomment below and update the code to test the property application
-      //var instance = new DocspaceApiTypescript.FireBaseUser();
+      //var instance = new DocspaceApiJavascript.FireBaseUser();
       //expect(instance).to.be();
     });
 
     it('should have the property isSubscribed (base name: "isSubscribed")', function() {
       // uncomment below and update the code to test the property isSubscribed
-      //var instance = new DocspaceApiTypescript.FireBaseUser();
+      //var instance = new DocspaceApiJavascript.FireBaseUser();
       //expect(instance).to.be();
     });
 
     it('should have the property tenant (base name: "tenant")', function() {
       // uncomment below and update the code to test the property tenant
-      //var instance = new DocspaceApiTypescript.FireBaseUser();
+      //var instance = new DocspaceApiJavascript.FireBaseUser();
       //expect(instance).to.be();
     });
 

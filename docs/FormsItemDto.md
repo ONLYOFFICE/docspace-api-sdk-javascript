@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FormsItemDto
+# DocspaceApiJavascript.FormsItemDto
 
 ## Properties
 

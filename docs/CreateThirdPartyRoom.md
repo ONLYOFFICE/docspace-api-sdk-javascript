@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.CreateThirdPartyRoom
+# DocspaceApiJavascript.CreateThirdPartyRoom
 
 ## Properties
 

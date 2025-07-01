@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CheckUploadRequest();
+    instance = new DocspaceApiJavascript.CheckUploadRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('CheckUploadRequest', function() {
     it('should create an instance of CheckUploadRequest', function() {
       // uncomment below and update the code to test CheckUploadRequest
-      //var instance = new DocspaceApiTypescript.CheckUploadRequest();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CheckUploadRequest);
+      //var instance = new DocspaceApiJavascript.CheckUploadRequest();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CheckUploadRequest);
     });
 
     it('should have the property filesTitle (base name: "filesTitle")', function() {
       // uncomment below and update the code to test the property filesTitle
-      //var instance = new DocspaceApiTypescript.CheckUploadRequest();
+      //var instance = new DocspaceApiJavascript.CheckUploadRequest();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.UpdateWebhooksConfigRequestsDto
+# DocspaceApiJavascript.UpdateWebhooksConfigRequestsDto
 
 ## Properties
 

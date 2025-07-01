@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.TariffState
+# DocspaceApiJavascript.TariffState
+
+
 
 ## Enum
 

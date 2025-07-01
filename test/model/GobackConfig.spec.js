@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.GobackConfig();
+    instance = new DocspaceApiJavascript.GobackConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('GobackConfig', function() {
     it('should create an instance of GobackConfig', function() {
       // uncomment below and update the code to test GobackConfig
-      //var instance = new DocspaceApiTypescript.GobackConfig();
-      //expect(instance).to.be.a(DocspaceApiTypescript.GobackConfig);
+      //var instance = new DocspaceApiJavascript.GobackConfig();
+      //expect(instance).to.be.a(DocspaceApiJavascript.GobackConfig);
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiTypescript.GobackConfig();
+      //var instance = new DocspaceApiJavascript.GobackConfig();
       //expect(instance).to.be();
     });
 

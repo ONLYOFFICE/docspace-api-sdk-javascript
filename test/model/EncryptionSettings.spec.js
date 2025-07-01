@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.EncryptionSettings();
+    instance = new DocspaceApiJavascript.EncryptionSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('EncryptionSettings', function() {
     it('should create an instance of EncryptionSettings', function() {
       // uncomment below and update the code to test EncryptionSettings
-      //var instance = new DocspaceApiTypescript.EncryptionSettings();
-      //expect(instance).to.be.a(DocspaceApiTypescript.EncryptionSettings);
+      //var instance = new DocspaceApiJavascript.EncryptionSettings();
+      //expect(instance).to.be.a(DocspaceApiJavascript.EncryptionSettings);
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instance = new DocspaceApiTypescript.EncryptionSettings();
+      //var instance = new DocspaceApiJavascript.EncryptionSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new DocspaceApiTypescript.EncryptionSettings();
+      //var instance = new DocspaceApiJavascript.EncryptionSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property notifyUsers (base name: "notifyUsers")', function() {
       // uncomment below and update the code to test the property notifyUsers
-      //var instance = new DocspaceApiTypescript.EncryptionSettings();
+      //var instance = new DocspaceApiJavascript.EncryptionSettings();
       //expect(instance).to.be();
     });
 

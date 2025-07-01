@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.TenantDomainValidator();
+    instance = new DocspaceApiJavascript.TenantDomainValidator();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('TenantDomainValidator', function() {
     it('should create an instance of TenantDomainValidator', function() {
       // uncomment below and update the code to test TenantDomainValidator
-      //var instance = new DocspaceApiTypescript.TenantDomainValidator();
-      //expect(instance).to.be.a(DocspaceApiTypescript.TenantDomainValidator);
+      //var instance = new DocspaceApiJavascript.TenantDomainValidator();
+      //expect(instance).to.be.a(DocspaceApiJavascript.TenantDomainValidator);
     });
 
     it('should have the property regex (base name: "regex")', function() {
       // uncomment below and update the code to test the property regex
-      //var instance = new DocspaceApiTypescript.TenantDomainValidator();
+      //var instance = new DocspaceApiJavascript.TenantDomainValidator();
       //expect(instance).to.be();
     });
 
     it('should have the property minLength (base name: "minLength")', function() {
       // uncomment below and update the code to test the property minLength
-      //var instance = new DocspaceApiTypescript.TenantDomainValidator();
+      //var instance = new DocspaceApiJavascript.TenantDomainValidator();
       //expect(instance).to.be();
     });
 
     it('should have the property maxLength (base name: "maxLength")', function() {
       // uncomment below and update the code to test the property maxLength
-      //var instance = new DocspaceApiTypescript.TenantDomainValidator();
+      //var instance = new DocspaceApiJavascript.TenantDomainValidator();
       //expect(instance).to.be();
     });
 

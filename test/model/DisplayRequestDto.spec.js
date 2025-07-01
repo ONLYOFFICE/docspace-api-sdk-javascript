@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.DisplayRequestDto();
+    instance = new DocspaceApiJavascript.DisplayRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('DisplayRequestDto', function() {
     it('should create an instance of DisplayRequestDto', function() {
       // uncomment below and update the code to test DisplayRequestDto
-      //var instance = new DocspaceApiTypescript.DisplayRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.DisplayRequestDto);
+      //var instance = new DocspaceApiJavascript.DisplayRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.DisplayRequestDto);
     });
 
     it('should have the property set (base name: "set")', function() {
       // uncomment below and update the code to test the property set
-      //var instance = new DocspaceApiTypescript.DisplayRequestDto();
+      //var instance = new DocspaceApiJavascript.DisplayRequestDto();
       //expect(instance).to.be();
     });
 

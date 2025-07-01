@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.EditHistoryDataDto();
+    instance = new DocspaceApiJavascript.EditHistoryDataDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,49 +62,49 @@
   describe('EditHistoryDataDto', function() {
     it('should create an instance of EditHistoryDataDto', function() {
       // uncomment below and update the code to test EditHistoryDataDto
-      //var instance = new DocspaceApiTypescript.EditHistoryDataDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.EditHistoryDataDto);
+      //var instance = new DocspaceApiJavascript.EditHistoryDataDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.EditHistoryDataDto);
     });
 
     it('should have the property changesUrl (base name: "changesUrl")', function() {
       // uncomment below and update the code to test the property changesUrl
-      //var instance = new DocspaceApiTypescript.EditHistoryDataDto();
+      //var instance = new DocspaceApiJavascript.EditHistoryDataDto();
       //expect(instance).to.be();
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiTypescript.EditHistoryDataDto();
+      //var instance = new DocspaceApiJavascript.EditHistoryDataDto();
       //expect(instance).to.be();
     });
 
     it('should have the property previous (base name: "previous")', function() {
       // uncomment below and update the code to test the property previous
-      //var instance = new DocspaceApiTypescript.EditHistoryDataDto();
+      //var instance = new DocspaceApiJavascript.EditHistoryDataDto();
       //expect(instance).to.be();
     });
 
     it('should have the property token (base name: "token")', function() {
       // uncomment below and update the code to test the property token
-      //var instance = new DocspaceApiTypescript.EditHistoryDataDto();
+      //var instance = new DocspaceApiJavascript.EditHistoryDataDto();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiTypescript.EditHistoryDataDto();
+      //var instance = new DocspaceApiJavascript.EditHistoryDataDto();
       //expect(instance).to.be();
     });
 
     it('should have the property version (base name: "version")', function() {
       // uncomment below and update the code to test the property version
-      //var instance = new DocspaceApiTypescript.EditHistoryDataDto();
+      //var instance = new DocspaceApiJavascript.EditHistoryDataDto();
       //expect(instance).to.be();
     });
 
     it('should have the property fileType (base name: "fileType")', function() {
       // uncomment below and update the code to test the property fileType
-      //var instance = new DocspaceApiTypescript.EditHistoryDataDto();
+      //var instance = new DocspaceApiJavascript.EditHistoryDataDto();
       //expect(instance).to.be();
     });
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ExternalShareDto();
+    instance = new DocspaceApiJavascript.ExternalShareDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,61 +62,61 @@
   describe('ExternalShareDto', function() {
     it('should create an instance of ExternalShareDto', function() {
       // uncomment below and update the code to test ExternalShareDto
-      //var instance = new DocspaceApiTypescript.ExternalShareDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ExternalShareDto);
+      //var instance = new DocspaceApiJavascript.ExternalShareDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ExternalShareDto);
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new DocspaceApiTypescript.ExternalShareDto();
+      //var instance = new DocspaceApiJavascript.ExternalShareDto();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.ExternalShareDto();
+      //var instance = new DocspaceApiJavascript.ExternalShareDto();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiTypescript.ExternalShareDto();
+      //var instance = new DocspaceApiJavascript.ExternalShareDto();
       //expect(instance).to.be();
     });
 
     it('should have the property tenantId (base name: "tenantId")', function() {
       // uncomment below and update the code to test the property tenantId
-      //var instance = new DocspaceApiTypescript.ExternalShareDto();
+      //var instance = new DocspaceApiJavascript.ExternalShareDto();
       //expect(instance).to.be();
     });
 
     it('should have the property entityId (base name: "entityId")', function() {
       // uncomment below and update the code to test the property entityId
-      //var instance = new DocspaceApiTypescript.ExternalShareDto();
+      //var instance = new DocspaceApiJavascript.ExternalShareDto();
       //expect(instance).to.be();
     });
 
     it('should have the property entryTitle (base name: "entryTitle")', function() {
       // uncomment below and update the code to test the property entryTitle
-      //var instance = new DocspaceApiTypescript.ExternalShareDto();
+      //var instance = new DocspaceApiJavascript.ExternalShareDto();
       //expect(instance).to.be();
     });
 
     it('should have the property shared (base name: "shared")', function() {
       // uncomment below and update the code to test the property shared
-      //var instance = new DocspaceApiTypescript.ExternalShareDto();
+      //var instance = new DocspaceApiJavascript.ExternalShareDto();
       //expect(instance).to.be();
     });
 
     it('should have the property linkId (base name: "linkId")', function() {
       // uncomment below and update the code to test the property linkId
-      //var instance = new DocspaceApiTypescript.ExternalShareDto();
+      //var instance = new DocspaceApiJavascript.ExternalShareDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isAuthenticated (base name: "isAuthenticated")', function() {
       // uncomment below and update the code to test the property isAuthenticated
-      //var instance = new DocspaceApiTypescript.ExternalShareDto();
+      //var instance = new DocspaceApiJavascript.ExternalShareDto();
       //expect(instance).to.be();
     });
 

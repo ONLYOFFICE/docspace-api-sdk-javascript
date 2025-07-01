@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.FileOperationArrayWrapper();
+    instance = new DocspaceApiJavascript.FileOperationArrayWrapper();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('FileOperationArrayWrapper', function() {
     it('should create an instance of FileOperationArrayWrapper', function() {
       // uncomment below and update the code to test FileOperationArrayWrapper
-      //var instance = new DocspaceApiTypescript.FileOperationArrayWrapper();
-      //expect(instance).to.be.a(DocspaceApiTypescript.FileOperationArrayWrapper);
+      //var instance = new DocspaceApiJavascript.FileOperationArrayWrapper();
+      //expect(instance).to.be.a(DocspaceApiJavascript.FileOperationArrayWrapper);
     });
 
     it('should have the property response (base name: "response")', function() {
       // uncomment below and update the code to test the property response
-      //var instance = new DocspaceApiTypescript.FileOperationArrayWrapper();
+      //var instance = new DocspaceApiJavascript.FileOperationArrayWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property count (base name: "count")', function() {
       // uncomment below and update the code to test the property count
-      //var instance = new DocspaceApiTypescript.FileOperationArrayWrapper();
+      //var instance = new DocspaceApiJavascript.FileOperationArrayWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instance = new DocspaceApiTypescript.FileOperationArrayWrapper();
+      //var instance = new DocspaceApiJavascript.FileOperationArrayWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new DocspaceApiTypescript.FileOperationArrayWrapper();
+      //var instance = new DocspaceApiJavascript.FileOperationArrayWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property statusCode (base name: "statusCode")', function() {
       // uncomment below and update the code to test the property statusCode
-      //var instance = new DocspaceApiTypescript.FileOperationArrayWrapper();
+      //var instance = new DocspaceApiJavascript.FileOperationArrayWrapper();
       //expect(instance).to.be();
     });
 

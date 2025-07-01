@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.StorageRequestsDto
+# DocspaceApiJavascript.StorageRequestsDto
 
 ## Properties
 

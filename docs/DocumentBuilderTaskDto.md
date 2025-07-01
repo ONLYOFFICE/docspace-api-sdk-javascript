@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.DocumentBuilderTaskDto
+# DocspaceApiJavascript.DocumentBuilderTaskDto
 
 ## Properties
 

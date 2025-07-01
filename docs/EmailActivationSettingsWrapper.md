@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.EmailActivationSettingsWrapper
+# DocspaceApiJavascript.EmailActivationSettingsWrapper
 
 ## Properties
 

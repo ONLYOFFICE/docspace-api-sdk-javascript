@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.OpenCustomerSessionRequestDto();
+    instance = new DocspaceApiJavascript.OpenCustomerSessionRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('OpenCustomerSessionRequestDto', function() {
     it('should create an instance of OpenCustomerSessionRequestDto', function() {
       // uncomment below and update the code to test OpenCustomerSessionRequestDto
-      //var instance = new DocspaceApiTypescript.OpenCustomerSessionRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.OpenCustomerSessionRequestDto);
+      //var instance = new DocspaceApiJavascript.OpenCustomerSessionRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.OpenCustomerSessionRequestDto);
     });
 
     it('should have the property serviceAccount (base name: "serviceAccount")', function() {
       // uncomment below and update the code to test the property serviceAccount
-      //var instance = new DocspaceApiTypescript.OpenCustomerSessionRequestDto();
+      //var instance = new DocspaceApiJavascript.OpenCustomerSessionRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property externalRef (base name: "externalRef")', function() {
       // uncomment below and update the code to test the property externalRef
-      //var instance = new DocspaceApiTypescript.OpenCustomerSessionRequestDto();
+      //var instance = new DocspaceApiJavascript.OpenCustomerSessionRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new DocspaceApiTypescript.OpenCustomerSessionRequestDto();
+      //var instance = new DocspaceApiJavascript.OpenCustomerSessionRequestDto();
       //expect(instance).to.be();
     });
 

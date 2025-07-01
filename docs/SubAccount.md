@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SubAccount
+# DocspaceApiJavascript.SubAccount
 
 ## Properties
 

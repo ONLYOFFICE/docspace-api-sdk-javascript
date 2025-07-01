@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.AutoCleanUpDataWrapper
+# DocspaceApiJavascript.AutoCleanUpDataWrapper
 
 ## Properties
 

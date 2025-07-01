@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.TenantStatus
+# DocspaceApiJavascript.TenantStatus
+
+
 
 ## Enum
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ActionLinkConfig();
+    instance = new DocspaceApiJavascript.ActionLinkConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('ActionLinkConfig', function() {
     it('should create an instance of ActionLinkConfig', function() {
       // uncomment below and update the code to test ActionLinkConfig
-      //var instance = new DocspaceApiTypescript.ActionLinkConfig();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ActionLinkConfig);
+      //var instance = new DocspaceApiJavascript.ActionLinkConfig();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ActionLinkConfig);
     });
 
     it('should have the property action (base name: "action")', function() {
       // uncomment below and update the code to test the property action
-      //var instance = new DocspaceApiTypescript.ActionLinkConfig();
+      //var instance = new DocspaceApiJavascript.ActionLinkConfig();
       //expect(instance).to.be();
     });
 

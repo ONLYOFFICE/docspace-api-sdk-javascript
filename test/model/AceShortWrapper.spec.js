@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.AceShortWrapper();
+    instance = new DocspaceApiJavascript.AceShortWrapper();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('AceShortWrapper', function() {
     it('should create an instance of AceShortWrapper', function() {
       // uncomment below and update the code to test AceShortWrapper
-      //var instance = new DocspaceApiTypescript.AceShortWrapper();
-      //expect(instance).to.be.a(DocspaceApiTypescript.AceShortWrapper);
+      //var instance = new DocspaceApiJavascript.AceShortWrapper();
+      //expect(instance).to.be.a(DocspaceApiJavascript.AceShortWrapper);
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instance = new DocspaceApiTypescript.AceShortWrapper();
+      //var instance = new DocspaceApiJavascript.AceShortWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property permissions (base name: "permissions")', function() {
       // uncomment below and update the code to test the property permissions
-      //var instance = new DocspaceApiTypescript.AceShortWrapper();
+      //var instance = new DocspaceApiJavascript.AceShortWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property isLink (base name: "isLink")', function() {
       // uncomment below and update the code to test the property isLink
-      //var instance = new DocspaceApiTypescript.AceShortWrapper();
+      //var instance = new DocspaceApiJavascript.AceShortWrapper();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ContactsRequest
+# DocspaceApiJavascript.ContactsRequest
 
 ## Properties
 

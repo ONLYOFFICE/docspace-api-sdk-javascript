@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.AutoCleanUpData();
+    instance = new DocspaceApiJavascript.AutoCleanUpData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('AutoCleanUpData', function() {
     it('should create an instance of AutoCleanUpData', function() {
       // uncomment below and update the code to test AutoCleanUpData
-      //var instance = new DocspaceApiTypescript.AutoCleanUpData();
-      //expect(instance).to.be.a(DocspaceApiTypescript.AutoCleanUpData);
+      //var instance = new DocspaceApiJavascript.AutoCleanUpData();
+      //expect(instance).to.be.a(DocspaceApiJavascript.AutoCleanUpData);
     });
 
     it('should have the property isAutoCleanUp (base name: "isAutoCleanUp")', function() {
       // uncomment below and update the code to test the property isAutoCleanUp
-      //var instance = new DocspaceApiTypescript.AutoCleanUpData();
+      //var instance = new DocspaceApiJavascript.AutoCleanUpData();
       //expect(instance).to.be();
     });
 
     it('should have the property gap (base name: "gap")', function() {
       // uncomment below and update the code to test the property gap
-      //var instance = new DocspaceApiTypescript.AutoCleanUpData();
+      //var instance = new DocspaceApiJavascript.AutoCleanUpData();
       //expect(instance).to.be();
     });
 

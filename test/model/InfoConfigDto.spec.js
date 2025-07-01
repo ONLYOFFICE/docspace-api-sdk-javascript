@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.InfoConfigDto();
+    instance = new DocspaceApiJavascript.InfoConfigDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,43 +62,43 @@
   describe('InfoConfigDto', function() {
     it('should create an instance of InfoConfigDto', function() {
       // uncomment below and update the code to test InfoConfigDto
-      //var instance = new DocspaceApiTypescript.InfoConfigDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.InfoConfigDto);
+      //var instance = new DocspaceApiJavascript.InfoConfigDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.InfoConfigDto);
     });
 
     it('should have the property favorite (base name: "favorite")', function() {
       // uncomment below and update the code to test the property favorite
-      //var instance = new DocspaceApiTypescript.InfoConfigDto();
+      //var instance = new DocspaceApiJavascript.InfoConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property folder (base name: "folder")', function() {
       // uncomment below and update the code to test the property folder
-      //var instance = new DocspaceApiTypescript.InfoConfigDto();
+      //var instance = new DocspaceApiJavascript.InfoConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property owner (base name: "owner")', function() {
       // uncomment below and update the code to test the property owner
-      //var instance = new DocspaceApiTypescript.InfoConfigDto();
+      //var instance = new DocspaceApiJavascript.InfoConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property sharingSettings (base name: "sharingSettings")', function() {
       // uncomment below and update the code to test the property sharingSettings
-      //var instance = new DocspaceApiTypescript.InfoConfigDto();
+      //var instance = new DocspaceApiJavascript.InfoConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new DocspaceApiTypescript.InfoConfigDto();
+      //var instance = new DocspaceApiJavascript.InfoConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property uploaded (base name: "uploaded")', function() {
       // uncomment below and update the code to test the property uploaded
-      //var instance = new DocspaceApiTypescript.InfoConfigDto();
+      //var instance = new DocspaceApiJavascript.InfoConfigDto();
       //expect(instance).to.be();
     });
 

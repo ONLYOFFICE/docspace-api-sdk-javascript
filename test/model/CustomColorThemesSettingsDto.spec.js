@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CustomColorThemesSettingsDto();
+    instance = new DocspaceApiJavascript.CustomColorThemesSettingsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('CustomColorThemesSettingsDto', function() {
     it('should create an instance of CustomColorThemesSettingsDto', function() {
       // uncomment below and update the code to test CustomColorThemesSettingsDto
-      //var instance = new DocspaceApiTypescript.CustomColorThemesSettingsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CustomColorThemesSettingsDto);
+      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CustomColorThemesSettingsDto);
     });
 
     it('should have the property themes (base name: "themes")', function() {
       // uncomment below and update the code to test the property themes
-      //var instance = new DocspaceApiTypescript.CustomColorThemesSettingsDto();
+      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property selected (base name: "selected")', function() {
       // uncomment below and update the code to test the property selected
-      //var instance = new DocspaceApiTypescript.CustomColorThemesSettingsDto();
+      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property limit (base name: "limit")', function() {
       // uncomment below and update the code to test the property limit
-      //var instance = new DocspaceApiTypescript.CustomColorThemesSettingsDto();
+      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsDto();
       //expect(instance).to.be();
     });
 

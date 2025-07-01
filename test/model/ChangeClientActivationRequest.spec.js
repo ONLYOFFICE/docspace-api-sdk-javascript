@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ChangeClientActivationRequest();
+    instance = new DocspaceApiJavascript.ChangeClientActivationRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('ChangeClientActivationRequest', function() {
     it('should create an instance of ChangeClientActivationRequest', function() {
       // uncomment below and update the code to test ChangeClientActivationRequest
-      //var instance = new DocspaceApiTypescript.ChangeClientActivationRequest();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ChangeClientActivationRequest);
+      //var instance = new DocspaceApiJavascript.ChangeClientActivationRequest();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ChangeClientActivationRequest);
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new DocspaceApiTypescript.ChangeClientActivationRequest();
+      //var instance = new DocspaceApiJavascript.ChangeClientActivationRequest();
       //expect(instance).to.be();
     });
 

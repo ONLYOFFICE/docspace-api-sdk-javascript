@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.FileConflictResolveType
+# DocspaceApiJavascript.FileConflictResolveType
+
+
 
 ## Enum
 

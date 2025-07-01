@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.QuantityRequestDto
+# DocspaceApiJavascript.QuantityRequestDto
 
 ## Properties
 

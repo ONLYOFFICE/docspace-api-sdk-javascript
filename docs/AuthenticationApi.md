@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.AuthenticationApi
+# DocspaceApiJavascript.AuthenticationApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -18,27 +18,9 @@ Method | HTTP request | Description
 
 > AuthenticationTokenWrapper authenticateMe(opts)
 
-Authenticate a user
-
 Authenticates the current user by SMS, authenticator app, or without two-factor authentication.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.AuthenticationApi();
-let opts = {
-  'authRequestsDto': new DocspaceApiTypescript.AuthRequestsDto() // AuthRequestsDto | 
-};
-apiInstance.authenticateMe(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/authenticate-me/).
 
 ### Parameters
 
@@ -55,6 +37,24 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.AuthenticationApi();
+let opts = {
+  'authRequestsDto': new DocspaceApiJavascript.AuthRequestsDto() // AuthRequestsDto | 
+};
+apiInstance.authenticateMe(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: application/json
@@ -65,28 +65,9 @@ No authorization required
 
 > AuthenticationTokenWrapper authenticateMeFromBodyWithCode(code, opts)
 
-Authenticate a user by code
-
 Authenticates the current user by SMS or two-factor authentication code.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.AuthenticationApi();
-let code = "code_example"; // String | 
-let opts = {
-  'authRequestsDto': new DocspaceApiTypescript.AuthRequestsDto() // AuthRequestsDto | 
-};
-apiInstance.authenticateMeFromBodyWithCode(code, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/authenticate-me-from-body-with-code/).
 
 ### Parameters
 
@@ -104,6 +85,25 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.AuthenticationApi();
+let code = "code_example"; // String | 
+let opts = {
+  'authRequestsDto': new DocspaceApiJavascript.AuthRequestsDto() // AuthRequestsDto | 
+};
+apiInstance.authenticateMeFromBodyWithCode(code, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: application/json
@@ -114,27 +114,9 @@ No authorization required
 
 > ConfirmWrapper checkConfirm(opts)
 
-Open confirmation email URL
-
 Opens a confirmation email URL to validate a certain action (employee invitation, portal removal, phone activation, etc.).
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.AuthenticationApi();
-let opts = {
-  'emailValidationKeyModel': new DocspaceApiTypescript.EmailValidationKeyModel() // EmailValidationKeyModel | 
-};
-apiInstance.checkConfirm(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/check-confirm/).
 
 ### Parameters
 
@@ -151,6 +133,24 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.AuthenticationApi();
+let opts = {
+  'emailValidationKeyModel': new DocspaceApiJavascript.EmailValidationKeyModel() // EmailValidationKeyModel | 
+};
+apiInstance.checkConfirm(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: application/json
@@ -161,24 +161,9 @@ No authorization required
 
 > BooleanWrapper getIsAuthentificated()
 
-Check authentication
-
 Checks if the current user is authenticated or not.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.AuthenticationApi();
-apiInstance.getIsAuthentificated((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-is-authentificated/).
 
 ### Parameters
 
@@ -192,6 +177,21 @@ This endpoint does not need any parameter.
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.AuthenticationApi();
+apiInstance.getIsAuthentificated((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -202,24 +202,9 @@ No authorization required
 
 > StringWrapper logout()
 
-Log out
-
 Logs out of the current user account.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.AuthenticationApi();
-apiInstance.logout((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/logout/).
 
 ### Parameters
 
@@ -233,6 +218,21 @@ This endpoint does not need any parameter.
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.AuthenticationApi();
+apiInstance.logout((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -243,15 +243,30 @@ No authorization required
 
 > AuthenticationTokenWrapper saveMobilePhone(opts)
 
-Set a mobile phone
-
 Sets a mobile phone for the current user.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/save-mobile-phone/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **mobileRequestsDto** | [**MobileRequestsDto**](MobileRequestsDto.md)|  | [optional] 
+
+### Return type
+
+[**AuthenticationTokenWrapper**](AuthenticationTokenWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -273,9 +288,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.AuthenticationApi();
+let apiInstance = new DocspaceApiJavascript.AuthenticationApi();
 let opts = {
-  'mobileRequestsDto': new DocspaceApiTypescript.MobileRequestsDto() // MobileRequestsDto | 
+  'mobileRequestsDto': new DocspaceApiJavascript.MobileRequestsDto() // MobileRequestsDto | 
 };
 apiInstance.saveMobilePhone(opts, (error, data, response) => {
   if (error) {
@@ -285,21 +300,6 @@ apiInstance.saveMobilePhone(opts, (error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **mobileRequestsDto** | [**MobileRequestsDto**](MobileRequestsDto.md)|  | [optional] 
-
-### Return type
-
-[**AuthenticationTokenWrapper**](AuthenticationTokenWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 
@@ -311,27 +311,9 @@ Name | Type | Description  | Notes
 
 > AuthenticationTokenWrapper sendSmsCode(opts)
 
-Send SMS code
-
 Sends SMS with an authentication code.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.AuthenticationApi();
-let opts = {
-  'authRequestsDto': new DocspaceApiTypescript.AuthRequestsDto() // AuthRequestsDto | 
-};
-apiInstance.sendSmsCode(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/send-sms-code/).
 
 ### Parameters
 
@@ -347,6 +329,24 @@ Name | Type | Description  | Notes
 ### Authorization
 
 No authorization required
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.AuthenticationApi();
+let opts = {
+  'authRequestsDto': new DocspaceApiJavascript.AuthRequestsDto() // AuthRequestsDto | 
+};
+apiInstance.sendSmsCode(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

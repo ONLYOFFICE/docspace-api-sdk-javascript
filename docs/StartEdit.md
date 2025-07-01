@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.StartEdit
+# DocspaceApiJavascript.StartEdit
 
 ## Properties
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ConfirmData();
+    instance = new DocspaceApiJavascript.ConfirmData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('ConfirmData', function() {
     it('should create an instance of ConfirmData', function() {
       // uncomment below and update the code to test ConfirmData
-      //var instance = new DocspaceApiTypescript.ConfirmData();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ConfirmData);
+      //var instance = new DocspaceApiJavascript.ConfirmData();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ConfirmData);
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiTypescript.ConfirmData();
+      //var instance = new DocspaceApiJavascript.ConfirmData();
       //expect(instance).to.be();
     });
 
     it('should have the property first (base name: "first")', function() {
       // uncomment below and update the code to test the property first
-      //var instance = new DocspaceApiTypescript.ConfirmData();
+      //var instance = new DocspaceApiJavascript.ConfirmData();
       //expect(instance).to.be();
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiTypescript.ConfirmData();
+      //var instance = new DocspaceApiJavascript.ConfirmData();
       //expect(instance).to.be();
     });
 

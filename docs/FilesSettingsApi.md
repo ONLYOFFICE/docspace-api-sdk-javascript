@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FilesSettingsApi
+# DocspaceApiJavascript.FilesSettingsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -34,48 +34,9 @@ Method | HTTP request | Description
 
 > BooleanWrapper changeAccessToThirdparty(opts)
 
-Change the third-party settings access
-
 Changes the access to the third-party settings.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
-let opts = {
-  'settingsRequestDto': new DocspaceApiTypescript.SettingsRequestDto() // SettingsRequestDto | 
-};
-apiInstance.changeAccessToThirdparty(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/change-access-to-thirdparty/).
 
 ### Parameters
 
@@ -92,25 +53,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## changeAutomaticallyCleanUp
-
-> AutoCleanUpDataWrapper changeAutomaticallyCleanUp(opts)
-
-Update the trash bin auto-clearing setting
-
-Updates the trash bin auto-clearing setting.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -132,11 +79,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
 let opts = {
-  'autoCleanupRequestDto': new DocspaceApiTypescript.AutoCleanupRequestDto() // AutoCleanupRequestDto | 
+  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
 };
-apiInstance.changeAutomaticallyCleanUp(opts, (error, data, response) => {
+apiInstance.changeAccessToThirdparty(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -144,6 +91,20 @@ apiInstance.changeAutomaticallyCleanUp(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## changeAutomaticallyCleanUp
+
+> AutoCleanUpDataWrapper changeAutomaticallyCleanUp(opts)
+
+Updates the trash bin auto-clearing setting.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/change-automatically-clean-up/).
 
 ### Parameters
 
@@ -160,25 +121,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## changeDefaultAccessRights
-
-> FileShareArrayWrapper changeDefaultAccessRights(opts)
-
-Change the default access rights
-
-Changes the default access rights in the sharing settings.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -200,11 +147,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
 let opts = {
-  'requestBody': [0] // [Number] | Sharing rights (None, ReadWrite, Read, Restrict, Varies, Review, Comment, FillForms, CustomFilter, RoomAdmin, Editing, Collaborator).
+  'autoCleanupRequestDto': new DocspaceApiJavascript.AutoCleanupRequestDto() // AutoCleanupRequestDto | 
 };
-apiInstance.changeDefaultAccessRights(opts, (error, data, response) => {
+apiInstance.changeAutomaticallyCleanUp(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -212,6 +159,20 @@ apiInstance.changeDefaultAccessRights(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## changeDefaultAccessRights
+
+> FileShareArrayWrapper changeDefaultAccessRights(opts)
+
+Changes the default access rights in the sharing settings.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/change-default-access-rights/).
 
 ### Parameters
 
@@ -228,25 +189,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## changeDeleteConfirm
-
-> BooleanWrapper changeDeleteConfirm(opts)
-
-Confirm the file deletion
-
-Specifies whether to confirm the file deletion or not.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -268,11 +215,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
 let opts = {
-  'settingsRequestDto': new DocspaceApiTypescript.SettingsRequestDto() // SettingsRequestDto | 
+  'requestBody': [0] // [Number] | Sharing rights (None, ReadWrite, Read, Restrict, Varies, Review, Comment, FillForms, CustomFilter, RoomAdmin, Editing, Collaborator).
 };
-apiInstance.changeDeleteConfirm(opts, (error, data, response) => {
+apiInstance.changeDefaultAccessRights(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -280,6 +227,20 @@ apiInstance.changeDeleteConfirm(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## changeDeleteConfirm
+
+> BooleanWrapper changeDeleteConfirm(opts)
+
+Specifies whether to confirm the file deletion or not.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/change-delete-confirm/).
 
 ### Parameters
 
@@ -296,25 +257,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## changeDownloadZipFromBody
-
-> ICompressWrapper changeDownloadZipFromBody(opts)
-
-Change the archive format (using body parameters)
-
-Changes the format of the downloaded archive from .zip to .tar.gz. This method uses the body parameters.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -336,11 +283,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
 let opts = {
-  'displayRequestDto': new DocspaceApiTypescript.DisplayRequestDto() // DisplayRequestDto | 
+  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
 };
-apiInstance.changeDownloadZipFromBody(opts, (error, data, response) => {
+apiInstance.changeDeleteConfirm(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -348,6 +295,20 @@ apiInstance.changeDownloadZipFromBody(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## changeDownloadZipFromBody
+
+> ICompressWrapper changeDownloadZipFromBody(opts)
+
+Changes the format of the downloaded archive from .zip to .tar.gz. This method uses the body parameters.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/change-download-zip-from-body/).
 
 ### Parameters
 
@@ -364,25 +325,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## checkDocServiceUrl
-
-> DocServiceUrlWrapper checkDocServiceUrl(opts)
-
-Check the document service URL
-
-Checks the document service location URL.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -404,11 +351,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
 let opts = {
-  'checkDocServiceUrlRequestDto': new DocspaceApiTypescript.CheckDocServiceUrlRequestDto() // CheckDocServiceUrlRequestDto | 
+  'displayRequestDto': new DocspaceApiJavascript.DisplayRequestDto() // DisplayRequestDto | 
 };
-apiInstance.checkDocServiceUrl(opts, (error, data, response) => {
+apiInstance.changeDownloadZipFromBody(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -416,6 +363,20 @@ apiInstance.checkDocServiceUrl(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## checkDocServiceUrl
+
+> DocServiceUrlWrapper checkDocServiceUrl(opts)
+
+Checks the document service location URL.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/check-doc-service-url/).
 
 ### Parameters
 
@@ -432,25 +393,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## displayFileExtension
-
-> BooleanWrapper displayFileExtension(opts)
-
-Display a file extension
-
-Specifies whether to display a file extension or not.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -472,11 +419,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
 let opts = {
-  'settingsRequestDto': new DocspaceApiTypescript.SettingsRequestDto() // SettingsRequestDto | 
+  'checkDocServiceUrlRequestDto': new DocspaceApiJavascript.CheckDocServiceUrlRequestDto() // CheckDocServiceUrlRequestDto | 
 };
-apiInstance.displayFileExtension(opts, (error, data, response) => {
+apiInstance.checkDocServiceUrl(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -484,6 +431,20 @@ apiInstance.displayFileExtension(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## displayFileExtension
+
+> BooleanWrapper displayFileExtension(opts)
+
+Specifies whether to display a file extension or not.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/display-file-extension/).
 
 ### Parameters
 
@@ -500,25 +461,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## externalShare
-
-> BooleanWrapper externalShare(opts)
-
-Change the external sharing ability
-
-Changes the ability to share a file externally.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -540,11 +487,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
 let opts = {
-  'displayRequestDto': new DocspaceApiTypescript.DisplayRequestDto() // DisplayRequestDto | 
+  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
 };
-apiInstance.externalShare(opts, (error, data, response) => {
+apiInstance.displayFileExtension(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -552,6 +499,20 @@ apiInstance.externalShare(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## externalShare
+
+> BooleanWrapper externalShare(opts)
+
+Changes the ability to share a file externally.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/external-share/).
 
 ### Parameters
 
@@ -567,6 +528,45 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let opts = {
+  'displayRequestDto': new DocspaceApiJavascript.DisplayRequestDto() // DisplayRequestDto | 
+};
+apiInstance.externalShare(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 
@@ -578,48 +578,9 @@ Name | Type | Description  | Notes
 
 > BooleanWrapper externalShareSocialMedia(opts)
 
-Change the external sharing ability on social networks
-
 Changes the ability to share a file externally on social networks.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
-let opts = {
-  'displayRequestDto': new DocspaceApiTypescript.DisplayRequestDto() // DisplayRequestDto | 
-};
-apiInstance.externalShareSocialMedia(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/external-share-social-media/).
 
 ### Parameters
 
@@ -636,25 +597,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## forcesave
-
-> BooleanWrapper forcesave()
-
-Change the forcesaving ability
-
-Specifies if the file forcesaving is enabled or not.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -676,8 +623,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
-apiInstance.forcesave((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let opts = {
+  'displayRequestDto': new DocspaceApiJavascript.DisplayRequestDto() // DisplayRequestDto | 
+};
+apiInstance.externalShareSocialMedia(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -685,6 +635,20 @@ apiInstance.forcesave((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## forcesave
+
+> BooleanWrapper forcesave()
+
+Specifies if the file forcesaving is enabled or not.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/forcesave/).
 
 ### Parameters
 
@@ -698,25 +662,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getAutomaticallyCleanUp
-
-> AutoCleanUpDataWrapper getAutomaticallyCleanUp()
-
-Get the trash bin auto-clearing setting
-
-Returns the trash bin auto-clearing setting.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -738,8 +688,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
-apiInstance.getAutomaticallyCleanUp((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+apiInstance.forcesave((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -747,6 +697,20 @@ apiInstance.getAutomaticallyCleanUp((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getAutomaticallyCleanUp
+
+> AutoCleanUpDataWrapper getAutomaticallyCleanUp()
+
+Returns the trash bin auto-clearing setting.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-automatically-clean-up/).
 
 ### Parameters
 
@@ -760,6 +724,42 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+apiInstance.getAutomaticallyCleanUp((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -770,27 +770,9 @@ This endpoint does not need any parameter.
 
 > DocServiceUrlWrapper getDocServiceUrl(opts)
 
-Get the document service URL
-
 Returns the URL address of the connected editors.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
-let opts = {
-  'version': true // Boolean | Specifies whether to return the editor version or not.
-};
-apiInstance.getDocServiceUrl(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-doc-service-url/).
 
 ### Parameters
 
@@ -807,6 +789,24 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let opts = {
+  'version': true // Boolean | Specifies whether to return the editor version or not.
+};
+apiInstance.getDocServiceUrl(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -817,45 +817,9 @@ No authorization required
 
 > ModuleWrapper getFilesModule()
 
-Get the \&quot;Documents\&quot; information
-
 Returns the information about the \&quot;Documents\&quot; module.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
-apiInstance.getFilesModule((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-files-module/).
 
 ### Parameters
 
@@ -869,66 +833,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getFilesSettings
-
-> FilesSettingsWrapper getFilesSettings()
-
-Get file settings
-
-Returns all the file settings.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
-apiInstance.getFilesSettings((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-This endpoint does not need any parameter.
-
-### Return type
-
-[**FilesSettingsWrapper**](FilesSettingsWrapper.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## hideConfirmCancelOperation
-
-> BooleanWrapper hideConfirmCancelOperation(opts)
-
-Hide confirmation dialog when canceling operations
-
-Hides the confirmation dialog when canceling operations.
-
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -950,11 +859,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
-let opts = {
-  'settingsRequestDto': new DocspaceApiTypescript.SettingsRequestDto() // SettingsRequestDto | 
-};
-apiInstance.hideConfirmCancelOperation(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+apiInstance.getFilesModule((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -962,6 +868,61 @@ apiInstance.hideConfirmCancelOperation(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getFilesSettings
+
+> FilesSettingsWrapper getFilesSettings()
+
+Returns all the file settings.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-files-settings/).
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**FilesSettingsWrapper**](FilesSettingsWrapper.md)
+
+### Authorization
+
+No authorization required
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+apiInstance.getFilesSettings((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## hideConfirmCancelOperation
+
+> BooleanWrapper hideConfirmCancelOperation(opts)
+
+Hides the confirmation dialog when canceling operations.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/hide-confirm-cancel-operation/).
 
 ### Parameters
 
@@ -978,25 +939,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## hideConfirmConvert
-
-> ModuleWrapper hideConfirmConvert(opts)
-
-Hide the confirmation dialog when converting
-
-Hides the confirmation dialog for saving the file copy in the original format when converting a file.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1018,11 +965,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
 let opts = {
-  'hideConfirmConvertRequestDto': new DocspaceApiTypescript.HideConfirmConvertRequestDto() // HideConfirmConvertRequestDto | 
+  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
 };
-apiInstance.hideConfirmConvert(opts, (error, data, response) => {
+apiInstance.hideConfirmCancelOperation(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1030,6 +977,20 @@ apiInstance.hideConfirmConvert(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## hideConfirmConvert
+
+> ModuleWrapper hideConfirmConvert(opts)
+
+Hides the confirmation dialog for saving the file copy in the original format when converting a file.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/hide-confirm-convert/).
 
 ### Parameters
 
@@ -1046,25 +1007,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## hideConfirmRoomLifetime
-
-> BooleanWrapper hideConfirmRoomLifetime(opts)
-
-Hide confirmation dialog when changing room lifetime settings
-
-Hides the confirmation dialog when changing the room lifetime settings.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1086,11 +1033,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
 let opts = {
-  'settingsRequestDto': new DocspaceApiTypescript.SettingsRequestDto() // SettingsRequestDto | 
+  'hideConfirmConvertRequestDto': new DocspaceApiJavascript.HideConfirmConvertRequestDto() // HideConfirmConvertRequestDto | 
 };
-apiInstance.hideConfirmRoomLifetime(opts, (error, data, response) => {
+apiInstance.hideConfirmConvert(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1098,6 +1045,20 @@ apiInstance.hideConfirmRoomLifetime(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## hideConfirmRoomLifetime
+
+> BooleanWrapper hideConfirmRoomLifetime(opts)
+
+Hides the confirmation dialog when changing the room lifetime settings.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/hide-confirm-room-lifetime/).
 
 ### Parameters
 
@@ -1113,6 +1074,45 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let opts = {
+  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
+};
+apiInstance.hideConfirmRoomLifetime(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 
@@ -1124,15 +1124,27 @@ Name | Type | Description  | Notes
 
 > BooleanWrapper isAvailablePrivacyRoomSettings()
 
-Check the \&quot;Private Room\&quot; availability
-
 Checks if the \&quot;Private Room\&quot; settings are available or not.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/is-available-privacy-room-settings/).
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**BooleanWrapper**](BooleanWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1154,7 +1166,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
 apiInstance.isAvailablePrivacyRoomSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -1163,18 +1175,6 @@ apiInstance.isAvailablePrivacyRoomSettings((error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-This endpoint does not need any parameter.
-
-### Return type
-
-[**BooleanWrapper**](BooleanWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 
@@ -1186,15 +1186,30 @@ This endpoint does not need any parameter.
 
 > BooleanWrapper keepNewFileName(opts)
 
-Ask a new file name
-
 Specifies whether to ask a user for a file name on creation or not.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/keep-new-file-name/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **settingsRequestDto** | [**SettingsRequestDto**](SettingsRequestDto.md)|  | [optional] 
+
+### Return type
+
+[**BooleanWrapper**](BooleanWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1216,9 +1231,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
 let opts = {
-  'settingsRequestDto': new DocspaceApiTypescript.SettingsRequestDto() // SettingsRequestDto | 
+  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
 };
 apiInstance.keepNewFileName(opts, (error, data, response) => {
   if (error) {
@@ -1228,21 +1243,6 @@ apiInstance.keepNewFileName(opts, (error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **settingsRequestDto** | [**SettingsRequestDto**](SettingsRequestDto.md)|  | [optional] 
-
-### Return type
-
-[**BooleanWrapper**](BooleanWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 
@@ -1254,48 +1254,9 @@ Name | Type | Description  | Notes
 
 > BooleanWrapper setOpenEditorInSameTab(opts)
 
-Open document in the same browser tab
-
 Changes the ability to open the document in the same browser tab.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
-let opts = {
-  'settingsRequestDto': new DocspaceApiTypescript.SettingsRequestDto() // SettingsRequestDto | 
-};
-apiInstance.setOpenEditorInSameTab(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/set-open-editor-in-same-tab/).
 
 ### Parameters
 
@@ -1312,25 +1273,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## storeForcesave
-
-> BooleanWrapper storeForcesave()
-
-Change the ability to store the forcesaved files
-
-Changes the ability to store the forcesaved file versions.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1352,8 +1299,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
-apiInstance.storeForcesave((error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let opts = {
+  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
+};
+apiInstance.setOpenEditorInSameTab(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1361,6 +1311,20 @@ apiInstance.storeForcesave((error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## storeForcesave
+
+> BooleanWrapper storeForcesave()
+
+Changes the ability to store the forcesaved file versions.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/store-forcesave/).
 
 ### Parameters
 
@@ -1374,25 +1338,11 @@ This endpoint does not need any parameter.
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## storeOriginal
-
-> BooleanWrapper storeOriginal(opts)
-
-Change the ability to upload original formats
-
-Changes the ability to upload documents in the original formats as well.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1414,11 +1364,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
-let opts = {
-  'settingsRequestDto': new DocspaceApiTypescript.SettingsRequestDto() // SettingsRequestDto | 
-};
-apiInstance.storeOriginal(opts, (error, data, response) => {
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+apiInstance.storeForcesave((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1426,6 +1373,20 @@ apiInstance.storeOriginal(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## storeOriginal
+
+> BooleanWrapper storeOriginal(opts)
+
+Changes the ability to upload documents in the original formats as well.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/store-original/).
 
 ### Parameters
 
@@ -1441,6 +1402,45 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let opts = {
+  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
+};
+apiInstance.storeOriginal(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 
@@ -1452,15 +1452,30 @@ Name | Type | Description  | Notes
 
 > BooleanWrapper updateFileIfExist(opts)
 
-Update a file version if it exists
-
 Updates a file version if a file with such a name already exists.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-file-if-exist/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **settingsRequestDto** | [**SettingsRequestDto**](SettingsRequestDto.md)|  | [optional] 
+
+### Return type
+
+[**BooleanWrapper**](BooleanWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1482,9 +1497,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.FilesSettingsApi();
+let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
 let opts = {
-  'settingsRequestDto': new DocspaceApiTypescript.SettingsRequestDto() // SettingsRequestDto | 
+  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
 };
 apiInstance.updateFileIfExist(opts, (error, data, response) => {
   if (error) {
@@ -1494,21 +1509,6 @@ apiInstance.updateFileIfExist(opts, (error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **settingsRequestDto** | [**SettingsRequestDto**](SettingsRequestDto.md)|  | [optional] 
-
-### Return type
-
-[**BooleanWrapper**](BooleanWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 

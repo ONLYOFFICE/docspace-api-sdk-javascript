@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.TemplatesConfig
+# DocspaceApiJavascript.TemplatesConfig
 
 ## Properties
 

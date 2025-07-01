@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.AnonymousConfigDto();
+    instance = new DocspaceApiJavascript.AnonymousConfigDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('AnonymousConfigDto', function() {
     it('should create an instance of AnonymousConfigDto', function() {
       // uncomment below and update the code to test AnonymousConfigDto
-      //var instance = new DocspaceApiTypescript.AnonymousConfigDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.AnonymousConfigDto);
+      //var instance = new DocspaceApiJavascript.AnonymousConfigDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.AnonymousConfigDto);
     });
 
     it('should have the property request (base name: "request")', function() {
       // uncomment below and update the code to test the property request
-      //var instance = new DocspaceApiTypescript.AnonymousConfigDto();
+      //var instance = new DocspaceApiJavascript.AnonymousConfigDto();
       //expect(instance).to.be();
     });
 

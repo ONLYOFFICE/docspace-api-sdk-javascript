@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.RoomInvitation();
+    instance = new DocspaceApiJavascript.RoomInvitation();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('RoomInvitation', function() {
     it('should create an instance of RoomInvitation', function() {
       // uncomment below and update the code to test RoomInvitation
-      //var instance = new DocspaceApiTypescript.RoomInvitation();
-      //expect(instance).to.be.a(DocspaceApiTypescript.RoomInvitation);
+      //var instance = new DocspaceApiJavascript.RoomInvitation();
+      //expect(instance).to.be.a(DocspaceApiJavascript.RoomInvitation);
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiTypescript.RoomInvitation();
+      //var instance = new DocspaceApiJavascript.RoomInvitation();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.RoomInvitation();
+      //var instance = new DocspaceApiJavascript.RoomInvitation();
       //expect(instance).to.be();
     });
 
     it('should have the property access (base name: "access")', function() {
       // uncomment below and update the code to test the property access
-      //var instance = new DocspaceApiTypescript.RoomInvitation();
+      //var instance = new DocspaceApiJavascript.RoomInvitation();
       //expect(instance).to.be();
     });
 

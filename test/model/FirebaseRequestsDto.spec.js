@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.FirebaseRequestsDto();
+    instance = new DocspaceApiJavascript.FirebaseRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('FirebaseRequestsDto', function() {
     it('should create an instance of FirebaseRequestsDto', function() {
       // uncomment below and update the code to test FirebaseRequestsDto
-      //var instance = new DocspaceApiTypescript.FirebaseRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.FirebaseRequestsDto);
+      //var instance = new DocspaceApiJavascript.FirebaseRequestsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.FirebaseRequestsDto);
     });
 
     it('should have the property firebaseDeviceToken (base name: "firebaseDeviceToken")', function() {
       // uncomment below and update the code to test the property firebaseDeviceToken
-      //var instance = new DocspaceApiTypescript.FirebaseRequestsDto();
+      //var instance = new DocspaceApiJavascript.FirebaseRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isSubscribed (base name: "isSubscribed")', function() {
       // uncomment below and update the code to test the property isSubscribed
-      //var instance = new DocspaceApiTypescript.FirebaseRequestsDto();
+      //var instance = new DocspaceApiJavascript.FirebaseRequestsDto();
       //expect(instance).to.be();
     });
 

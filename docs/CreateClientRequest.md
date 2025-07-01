@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.CreateClientRequest
+# DocspaceApiJavascript.CreateClientRequest
 
 ## Properties
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CustomerOperationsReportRequestDto();
+    instance = new DocspaceApiJavascript.CustomerOperationsReportRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,31 +62,31 @@
   describe('CustomerOperationsReportRequestDto', function() {
     it('should create an instance of CustomerOperationsReportRequestDto', function() {
       // uncomment below and update the code to test CustomerOperationsReportRequestDto
-      //var instance = new DocspaceApiTypescript.CustomerOperationsReportRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CustomerOperationsReportRequestDto);
+      //var instance = new DocspaceApiJavascript.CustomerOperationsReportRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CustomerOperationsReportRequestDto);
     });
 
     it('should have the property startDate (base name: "startDate")', function() {
       // uncomment below and update the code to test the property startDate
-      //var instance = new DocspaceApiTypescript.CustomerOperationsReportRequestDto();
+      //var instance = new DocspaceApiJavascript.CustomerOperationsReportRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property endDate (base name: "endDate")', function() {
       // uncomment below and update the code to test the property endDate
-      //var instance = new DocspaceApiTypescript.CustomerOperationsReportRequestDto();
+      //var instance = new DocspaceApiJavascript.CustomerOperationsReportRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property credit (base name: "credit")', function() {
       // uncomment below and update the code to test the property credit
-      //var instance = new DocspaceApiTypescript.CustomerOperationsReportRequestDto();
+      //var instance = new DocspaceApiJavascript.CustomerOperationsReportRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property withdrawal (base name: "withdrawal")', function() {
       // uncomment below and update the code to test the property withdrawal
-      //var instance = new DocspaceApiTypescript.CustomerOperationsReportRequestDto();
+      //var instance = new DocspaceApiJavascript.CustomerOperationsReportRequestDto();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.CreateFileJsonElement
+# DocspaceApiJavascript.CreateFileJsonElement
 
 ## Properties
 

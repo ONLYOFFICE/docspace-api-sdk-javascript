@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.StorageRequestsDto();
+    instance = new DocspaceApiJavascript.StorageRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('StorageRequestsDto', function() {
     it('should create an instance of StorageRequestsDto', function() {
       // uncomment below and update the code to test StorageRequestsDto
-      //var instance = new DocspaceApiTypescript.StorageRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.StorageRequestsDto);
+      //var instance = new DocspaceApiJavascript.StorageRequestsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.StorageRequestsDto);
     });
 
     it('should have the property module (base name: "module")', function() {
       // uncomment below and update the code to test the property module
-      //var instance = new DocspaceApiTypescript.StorageRequestsDto();
+      //var instance = new DocspaceApiJavascript.StorageRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property props (base name: "props")', function() {
       // uncomment below and update the code to test the property props
-      //var instance = new DocspaceApiTypescript.StorageRequestsDto();
+      //var instance = new DocspaceApiJavascript.StorageRequestsDto();
       //expect(instance).to.be();
     });
 

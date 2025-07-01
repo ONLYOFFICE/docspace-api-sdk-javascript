@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ActionConfig();
+    instance = new DocspaceApiJavascript.ActionConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('ActionConfig', function() {
     it('should create an instance of ActionConfig', function() {
       // uncomment below and update the code to test ActionConfig
-      //var instance = new DocspaceApiTypescript.ActionConfig();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ActionConfig);
+      //var instance = new DocspaceApiJavascript.ActionConfig();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ActionConfig);
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instance = new DocspaceApiTypescript.ActionConfig();
+      //var instance = new DocspaceApiJavascript.ActionConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new DocspaceApiTypescript.ActionConfig();
+      //var instance = new DocspaceApiJavascript.ActionConfig();
       //expect(instance).to.be();
     });
 

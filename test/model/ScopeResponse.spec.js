@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ScopeResponse();
+    instance = new DocspaceApiJavascript.ScopeResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('ScopeResponse', function() {
     it('should create an instance of ScopeResponse', function() {
       // uncomment below and update the code to test ScopeResponse
-      //var instance = new DocspaceApiTypescript.ScopeResponse();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ScopeResponse);
+      //var instance = new DocspaceApiJavascript.ScopeResponse();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ScopeResponse);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiTypescript.ScopeResponse();
+      //var instance = new DocspaceApiJavascript.ScopeResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property group (base name: "group")', function() {
       // uncomment below and update the code to test the property group
-      //var instance = new DocspaceApiTypescript.ScopeResponse();
+      //var instance = new DocspaceApiJavascript.ScopeResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new DocspaceApiTypescript.ScopeResponse();
+      //var instance = new DocspaceApiJavascript.ScopeResponse();
       //expect(instance).to.be();
     });
 

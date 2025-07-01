@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.SmtpOperationStatusRequestsDto();
+    instance = new DocspaceApiJavascript.SmtpOperationStatusRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('SmtpOperationStatusRequestsDto', function() {
     it('should create an instance of SmtpOperationStatusRequestsDto', function() {
       // uncomment below and update the code to test SmtpOperationStatusRequestsDto
-      //var instance = new DocspaceApiTypescript.SmtpOperationStatusRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.SmtpOperationStatusRequestsDto);
+      //var instance = new DocspaceApiJavascript.SmtpOperationStatusRequestsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.SmtpOperationStatusRequestsDto);
     });
 
     it('should have the property completed (base name: "completed")', function() {
       // uncomment below and update the code to test the property completed
-      //var instance = new DocspaceApiTypescript.SmtpOperationStatusRequestsDto();
+      //var instance = new DocspaceApiJavascript.SmtpOperationStatusRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.SmtpOperationStatusRequestsDto();
+      //var instance = new DocspaceApiJavascript.SmtpOperationStatusRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instance = new DocspaceApiTypescript.SmtpOperationStatusRequestsDto();
+      //var instance = new DocspaceApiJavascript.SmtpOperationStatusRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new DocspaceApiTypescript.SmtpOperationStatusRequestsDto();
+      //var instance = new DocspaceApiJavascript.SmtpOperationStatusRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property percents (base name: "percents")', function() {
       // uncomment below and update the code to test the property percents
-      //var instance = new DocspaceApiTypescript.SmtpOperationStatusRequestsDto();
+      //var instance = new DocspaceApiJavascript.SmtpOperationStatusRequestsDto();
       //expect(instance).to.be();
     });
 

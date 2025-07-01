@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CultureSpecificExternalResources();
+    instance = new DocspaceApiJavascript.CultureSpecificExternalResources();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,61 +62,61 @@
   describe('CultureSpecificExternalResources', function() {
     it('should create an instance of CultureSpecificExternalResources', function() {
       // uncomment below and update the code to test CultureSpecificExternalResources
-      //var instance = new DocspaceApiTypescript.CultureSpecificExternalResources();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CultureSpecificExternalResources);
+      //var instance = new DocspaceApiJavascript.CultureSpecificExternalResources();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CultureSpecificExternalResources);
     });
 
     it('should have the property api (base name: "api")', function() {
       // uncomment below and update the code to test the property api
-      //var instance = new DocspaceApiTypescript.CultureSpecificExternalResources();
+      //var instance = new DocspaceApiJavascript.CultureSpecificExternalResources();
       //expect(instance).to.be();
     });
 
     it('should have the property common (base name: "common")', function() {
       // uncomment below and update the code to test the property common
-      //var instance = new DocspaceApiTypescript.CultureSpecificExternalResources();
+      //var instance = new DocspaceApiJavascript.CultureSpecificExternalResources();
       //expect(instance).to.be();
     });
 
     it('should have the property forum (base name: "forum")', function() {
       // uncomment below and update the code to test the property forum
-      //var instance = new DocspaceApiTypescript.CultureSpecificExternalResources();
+      //var instance = new DocspaceApiJavascript.CultureSpecificExternalResources();
       //expect(instance).to.be();
     });
 
     it('should have the property helpcenter (base name: "helpcenter")', function() {
       // uncomment below and update the code to test the property helpcenter
-      //var instance = new DocspaceApiTypescript.CultureSpecificExternalResources();
+      //var instance = new DocspaceApiJavascript.CultureSpecificExternalResources();
       //expect(instance).to.be();
     });
 
     it('should have the property integrations (base name: "integrations")', function() {
       // uncomment below and update the code to test the property integrations
-      //var instance = new DocspaceApiTypescript.CultureSpecificExternalResources();
+      //var instance = new DocspaceApiJavascript.CultureSpecificExternalResources();
       //expect(instance).to.be();
     });
 
     it('should have the property site (base name: "site")', function() {
       // uncomment below and update the code to test the property site
-      //var instance = new DocspaceApiTypescript.CultureSpecificExternalResources();
+      //var instance = new DocspaceApiJavascript.CultureSpecificExternalResources();
       //expect(instance).to.be();
     });
 
     it('should have the property socialNetworks (base name: "socialNetworks")', function() {
       // uncomment below and update the code to test the property socialNetworks
-      //var instance = new DocspaceApiTypescript.CultureSpecificExternalResources();
+      //var instance = new DocspaceApiJavascript.CultureSpecificExternalResources();
       //expect(instance).to.be();
     });
 
     it('should have the property support (base name: "support")', function() {
       // uncomment below and update the code to test the property support
-      //var instance = new DocspaceApiTypescript.CultureSpecificExternalResources();
+      //var instance = new DocspaceApiJavascript.CultureSpecificExternalResources();
       //expect(instance).to.be();
     });
 
     it('should have the property videoguides (base name: "videoguides")', function() {
       // uncomment below and update the code to test the property videoguides
-      //var instance = new DocspaceApiTypescript.CultureSpecificExternalResources();
+      //var instance = new DocspaceApiJavascript.CultureSpecificExternalResources();
       //expect(instance).to.be();
     });
 

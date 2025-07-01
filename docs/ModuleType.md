@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.ModuleType
+# DocspaceApiJavascript.ModuleType
+
+
 
 ## Enum
 

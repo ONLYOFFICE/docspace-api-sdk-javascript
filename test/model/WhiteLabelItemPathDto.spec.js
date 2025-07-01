@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.WhiteLabelItemPathDto();
+    instance = new DocspaceApiJavascript.WhiteLabelItemPathDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('WhiteLabelItemPathDto', function() {
     it('should create an instance of WhiteLabelItemPathDto', function() {
       // uncomment below and update the code to test WhiteLabelItemPathDto
-      //var instance = new DocspaceApiTypescript.WhiteLabelItemPathDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.WhiteLabelItemPathDto);
+      //var instance = new DocspaceApiJavascript.WhiteLabelItemPathDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.WhiteLabelItemPathDto);
     });
 
     it('should have the property light (base name: "light")', function() {
       // uncomment below and update the code to test the property light
-      //var instance = new DocspaceApiTypescript.WhiteLabelItemPathDto();
+      //var instance = new DocspaceApiJavascript.WhiteLabelItemPathDto();
       //expect(instance).to.be();
     });
 
     it('should have the property dark (base name: "dark")', function() {
       // uncomment below and update the code to test the property dark
-      //var instance = new DocspaceApiTypescript.WhiteLabelItemPathDto();
+      //var instance = new DocspaceApiJavascript.WhiteLabelItemPathDto();
       //expect(instance).to.be();
     });
 

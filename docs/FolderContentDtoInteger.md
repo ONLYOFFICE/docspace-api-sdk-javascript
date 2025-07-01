@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.FolderContentDtoInteger
+# DocspaceApiJavascript.FolderContentDtoInteger
 
 ## Properties
 

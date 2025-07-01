@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.BackupPeriod
+# DocspaceApiJavascript.BackupPeriod
+
+
 
 ## Enum
 

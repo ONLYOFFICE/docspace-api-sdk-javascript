@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.Contact
+# DocspaceApiJavascript.Contact
 
 ## Properties
 

@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.SexEnum
+# DocspaceApiJavascript.SexEnum
+
+
 
 ## Enum
 

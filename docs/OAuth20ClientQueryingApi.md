@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.OAuth20ClientQueryingApi
+# DocspaceApiJavascript.OAuth20ClientQueryingApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -17,31 +17,9 @@ Method | HTTP request | Description
 
 > ClientResponse getClient(clientId)
 
-Get client details
-
 Retrieves detailed information about a specific OAuth2 client including its name, description, redirect URIs, and scopes.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-
-let apiInstance = new DocspaceApiTypescript.OAuth20ClientQueryingApi();
-let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
-apiInstance.getClient(clientId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-client/).
 
 ### Parameters
 
@@ -58,6 +36,28 @@ Name | Type | Description  | Notes
 
 [asc_auth_key](../README.md#asc_auth_key)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+
+let apiInstance = new DocspaceApiJavascript.OAuth20ClientQueryingApi();
+let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
+apiInstance.getClient(clientId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -68,31 +68,9 @@ Name | Type | Description  | Notes
 
 > ClientInfoResponse getClientInfo(clientId)
 
-Get detailed client information
-
 Retrieves the detailed information for a client with the ID specified in the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-
-let apiInstance = new DocspaceApiTypescript.OAuth20ClientQueryingApi();
-let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
-apiInstance.getClientInfo(clientId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-client-info/).
 
 ### Parameters
 
@@ -109,6 +87,28 @@ Name | Type | Description  | Notes
 
 [asc_auth_key](../README.md#asc_auth_key)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+
+let apiInstance = new DocspaceApiJavascript.OAuth20ClientQueryingApi();
+let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
+apiInstance.getClientInfo(clientId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -119,35 +119,9 @@ Name | Type | Description  | Notes
 
 > PageableResponse getClients(limit, opts)
 
-Get clients
-
 Retrieves a paginated list of OAuth2 clients. The results can be paginated using the &#39;limit&#39; parameter and the last seen client ID or creation date.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-
-let apiInstance = new DocspaceApiTypescript.OAuth20ClientQueryingApi();
-let limit = 1; // Number | The maximum number of results returned per page.
-let opts = {
-  'lastClientId': "6c7cf17b-1bd3-47d5-94c6-be2d3570e168", // String | The ID of the last retrieved client.
-  'lastCreatedOn': new Date("2024-04-04T12:00:00Z") // Date | The creation date of the last retrieved client.
-};
-apiInstance.getClients(limit, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-clients/).
 
 ### Parameters
 
@@ -166,6 +140,32 @@ Name | Type | Description  | Notes
 
 [asc_auth_key](../README.md#asc_auth_key)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+
+let apiInstance = new DocspaceApiJavascript.OAuth20ClientQueryingApi();
+let limit = 1; // Number | The maximum number of results returned per page.
+let opts = {
+  'lastClientId': "6c7cf17b-1bd3-47d5-94c6-be2d3570e168", // String | The ID of the last retrieved client.
+  'lastCreatedOn': new Date("2024-04-04T12:00:00Z") // Date | The creation date of the last retrieved client.
+};
+apiInstance.getClients(limit, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -176,35 +176,9 @@ Name | Type | Description  | Notes
 
 > PageableResponseClientInfoResponse getClientsInfo(limit, opts)
 
-Get detailed information of clients
-
 Retrieves a paginated list of information for all clients.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-
-let apiInstance = new DocspaceApiTypescript.OAuth20ClientQueryingApi();
-let limit = 1; // Number | The maximum number of results returned per page.
-let opts = {
-  'lastClientId': "6c7cf17b-1bd3-47d5-94c6-be2d3570e168", // String | The identifier of the last retrieved client.
-  'lastCreatedOn': new Date("2024-04-04T12:00:00Z") // Date | The creation date of the last retrieved client.
-};
-apiInstance.getClientsInfo(limit, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-clients-info/).
 
 ### Parameters
 
@@ -223,6 +197,32 @@ Name | Type | Description  | Notes
 
 [asc_auth_key](../README.md#asc_auth_key)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+
+let apiInstance = new DocspaceApiJavascript.OAuth20ClientQueryingApi();
+let limit = 1; // Number | The maximum number of results returned per page.
+let opts = {
+  'lastClientId': "6c7cf17b-1bd3-47d5-94c6-be2d3570e168", // String | The identifier of the last retrieved client.
+  'lastCreatedOn': new Date("2024-04-04T12:00:00Z") // Date | The creation date of the last retrieved client.
+};
+apiInstance.getClientsInfo(limit, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -233,34 +233,9 @@ Name | Type | Description  | Notes
 
 > PageableModificationResponse getConsents(limit, opts)
 
-Get user consents
-
 Retrieves a paginated list of user consents.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-
-let apiInstance = new DocspaceApiTypescript.OAuth20ClientQueryingApi();
-let limit = 1; // Number | The maximum number of results returned per page.
-let opts = {
-  'lastModifiedOn': new Date("2024-04-04T12:00:00Z") // Date | The date when the user consent was last modified.
-};
-apiInstance.getConsents(limit, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-consents/).
 
 ### Parameters
 
@@ -278,6 +253,31 @@ Name | Type | Description  | Notes
 
 [asc_auth_key](../README.md#asc_auth_key)
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+
+let apiInstance = new DocspaceApiJavascript.OAuth20ClientQueryingApi();
+let limit = 1; // Number | The maximum number of results returned per page.
+let opts = {
+  'lastModifiedOn': new Date("2024-04-04T12:00:00Z") // Date | The date when the user consent was last modified.
+};
+apiInstance.getConsents(limit, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -288,25 +288,9 @@ Name | Type | Description  | Notes
 
 > ClientInfoResponse getPublicClientInfo(clientId)
 
-Get public client information
-
 Returns the public information for a client with the ID secified din the request.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.OAuth20ClientQueryingApi();
-let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
-apiInstance.getPublicClientInfo(clientId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-public-client-info/).
 
 ### Parameters
 
@@ -322,6 +306,22 @@ Name | Type | Description  | Notes
 ### Authorization
 
 No authorization required
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.OAuth20ClientQueryingApi();
+let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
+apiInstance.getPublicClientInfo(clientId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

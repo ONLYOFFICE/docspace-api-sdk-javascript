@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.PluginsDto();
+    instance = new DocspaceApiJavascript.PluginsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('PluginsDto', function() {
     it('should create an instance of PluginsDto', function() {
       // uncomment below and update the code to test PluginsDto
-      //var instance = new DocspaceApiTypescript.PluginsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.PluginsDto);
+      //var instance = new DocspaceApiJavascript.PluginsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.PluginsDto);
     });
 
     it('should have the property enabled (base name: "enabled")', function() {
       // uncomment below and update the code to test the property enabled
-      //var instance = new DocspaceApiTypescript.PluginsDto();
+      //var instance = new DocspaceApiJavascript.PluginsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property upload (base name: "upload")', function() {
       // uncomment below and update the code to test the property upload
-      //var instance = new DocspaceApiTypescript.PluginsDto();
+      //var instance = new DocspaceApiJavascript.PluginsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property _delete (base name: "delete")', function() {
       // uncomment below and update the code to test the property _delete
-      //var instance = new DocspaceApiTypescript.PluginsDto();
+      //var instance = new DocspaceApiJavascript.PluginsDto();
       //expect(instance).to.be();
     });
 

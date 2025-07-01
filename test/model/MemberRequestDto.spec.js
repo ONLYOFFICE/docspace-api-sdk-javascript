@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.MemberRequestDto();
+    instance = new DocspaceApiJavascript.MemberRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,133 +62,133 @@
   describe('MemberRequestDto', function() {
     it('should create an instance of MemberRequestDto', function() {
       // uncomment below and update the code to test MemberRequestDto
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.MemberRequestDto);
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.MemberRequestDto);
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property passwordHash (base name: "passwordHash")', function() {
       // uncomment below and update the code to test the property passwordHash
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isUser (base name: "isUser")', function() {
       // uncomment below and update the code to test the property isUser
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "firstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "lastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property department (base name: "department")', function() {
       // uncomment below and update the code to test the property department
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property location (base name: "location")', function() {
       // uncomment below and update the code to test the property location
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property sex (base name: "sex")', function() {
       // uncomment below and update the code to test the property sex
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property birthday (base name: "birthday")', function() {
       // uncomment below and update the code to test the property birthday
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property worksfrom (base name: "worksfrom")', function() {
       // uncomment below and update the code to test the property worksfrom
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property comment (base name: "comment")', function() {
       // uncomment below and update the code to test the property comment
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property contacts (base name: "contacts")', function() {
       // uncomment below and update the code to test the property contacts
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property files (base name: "files")', function() {
       // uncomment below and update the code to test the property files
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property fromInviteLink (base name: "fromInviteLink")', function() {
       // uncomment below and update the code to test the property fromInviteLink
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property cultureName (base name: "cultureName")', function() {
       // uncomment below and update the code to test the property cultureName
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property target (base name: "target")', function() {
       // uncomment below and update the code to test the property target
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property spam (base name: "spam")', function() {
       // uncomment below and update the code to test the property spam
-      //var instance = new DocspaceApiTypescript.MemberRequestDto();
+      //var instance = new DocspaceApiJavascript.MemberRequestDto();
       //expect(instance).to.be();
     });
 

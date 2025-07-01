@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.NewItemsFileEntryArrayWrapper
+# DocspaceApiJavascript.NewItemsFileEntryArrayWrapper
 
 ## Properties
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.Logo();
+    instance = new DocspaceApiJavascript.Logo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,43 +62,43 @@
   describe('Logo', function() {
     it('should create an instance of Logo', function() {
       // uncomment below and update the code to test Logo
-      //var instance = new DocspaceApiTypescript.Logo();
-      //expect(instance).to.be.a(DocspaceApiTypescript.Logo);
+      //var instance = new DocspaceApiJavascript.Logo();
+      //expect(instance).to.be.a(DocspaceApiJavascript.Logo);
     });
 
     it('should have the property original (base name: "original")', function() {
       // uncomment below and update the code to test the property original
-      //var instance = new DocspaceApiTypescript.Logo();
+      //var instance = new DocspaceApiJavascript.Logo();
       //expect(instance).to.be();
     });
 
     it('should have the property large (base name: "large")', function() {
       // uncomment below and update the code to test the property large
-      //var instance = new DocspaceApiTypescript.Logo();
+      //var instance = new DocspaceApiJavascript.Logo();
       //expect(instance).to.be();
     });
 
     it('should have the property medium (base name: "medium")', function() {
       // uncomment below and update the code to test the property medium
-      //var instance = new DocspaceApiTypescript.Logo();
+      //var instance = new DocspaceApiJavascript.Logo();
       //expect(instance).to.be();
     });
 
     it('should have the property small (base name: "small")', function() {
       // uncomment below and update the code to test the property small
-      //var instance = new DocspaceApiTypescript.Logo();
+      //var instance = new DocspaceApiJavascript.Logo();
       //expect(instance).to.be();
     });
 
     it('should have the property color (base name: "color")', function() {
       // uncomment below and update the code to test the property color
-      //var instance = new DocspaceApiTypescript.Logo();
+      //var instance = new DocspaceApiJavascript.Logo();
       //expect(instance).to.be();
     });
 
     it('should have the property cover (base name: "cover")', function() {
       // uncomment below and update the code to test the property cover
-      //var instance = new DocspaceApiTypescript.Logo();
+      //var instance = new DocspaceApiJavascript.Logo();
       //expect(instance).to.be();
     });
 

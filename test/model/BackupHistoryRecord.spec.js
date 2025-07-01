@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.BackupHistoryRecord();
+    instance = new DocspaceApiJavascript.BackupHistoryRecord();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('BackupHistoryRecord', function() {
     it('should create an instance of BackupHistoryRecord', function() {
       // uncomment below and update the code to test BackupHistoryRecord
-      //var instance = new DocspaceApiTypescript.BackupHistoryRecord();
-      //expect(instance).to.be.a(DocspaceApiTypescript.BackupHistoryRecord);
+      //var instance = new DocspaceApiJavascript.BackupHistoryRecord();
+      //expect(instance).to.be.a(DocspaceApiJavascript.BackupHistoryRecord);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.BackupHistoryRecord();
+      //var instance = new DocspaceApiJavascript.BackupHistoryRecord();
       //expect(instance).to.be();
     });
 
     it('should have the property fileName (base name: "fileName")', function() {
       // uncomment below and update the code to test the property fileName
-      //var instance = new DocspaceApiTypescript.BackupHistoryRecord();
+      //var instance = new DocspaceApiJavascript.BackupHistoryRecord();
       //expect(instance).to.be();
     });
 
     it('should have the property storageType (base name: "storageType")', function() {
       // uncomment below and update the code to test the property storageType
-      //var instance = new DocspaceApiTypescript.BackupHistoryRecord();
+      //var instance = new DocspaceApiJavascript.BackupHistoryRecord();
       //expect(instance).to.be();
     });
 
     it('should have the property createdOn (base name: "createdOn")', function() {
       // uncomment below and update the code to test the property createdOn
-      //var instance = new DocspaceApiTypescript.BackupHistoryRecord();
+      //var instance = new DocspaceApiJavascript.BackupHistoryRecord();
       //expect(instance).to.be();
     });
 
     it('should have the property expiresOn (base name: "expiresOn")', function() {
       // uncomment below and update the code to test the property expiresOn
-      //var instance = new DocspaceApiTypescript.BackupHistoryRecord();
+      //var instance = new DocspaceApiJavascript.BackupHistoryRecord();
       //expect(instance).to.be();
     });
 

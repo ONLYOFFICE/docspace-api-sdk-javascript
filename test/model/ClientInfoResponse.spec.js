@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ClientInfoResponse();
+    instance = new DocspaceApiJavascript.ClientInfoResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,91 +62,91 @@
   describe('ClientInfoResponse', function() {
     it('should create an instance of ClientInfoResponse', function() {
       // uncomment below and update the code to test ClientInfoResponse
-      //var instance = new DocspaceApiTypescript.ClientInfoResponse();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ClientInfoResponse);
+      //var instance = new DocspaceApiJavascript.ClientInfoResponse();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ClientInfoResponse);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiTypescript.ClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.ClientInfoResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new DocspaceApiTypescript.ClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.ClientInfoResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property scopes (base name: "scopes")', function() {
       // uncomment below and update the code to test the property scopes
-      //var instance = new DocspaceApiTypescript.ClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.ClientInfoResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property clientId (base name: "client_id")', function() {
       // uncomment below and update the code to test the property clientId
-      //var instance = new DocspaceApiTypescript.ClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.ClientInfoResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property websiteUrl (base name: "website_url")', function() {
       // uncomment below and update the code to test the property websiteUrl
-      //var instance = new DocspaceApiTypescript.ClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.ClientInfoResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property termsUrl (base name: "terms_url")', function() {
       // uncomment below and update the code to test the property termsUrl
-      //var instance = new DocspaceApiTypescript.ClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.ClientInfoResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property policyUrl (base name: "policy_url")', function() {
       // uncomment below and update the code to test the property policyUrl
-      //var instance = new DocspaceApiTypescript.ClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.ClientInfoResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property logo (base name: "logo")', function() {
       // uncomment below and update the code to test the property logo
-      //var instance = new DocspaceApiTypescript.ClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.ClientInfoResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property authenticationMethods (base name: "authentication_methods")', function() {
       // uncomment below and update the code to test the property authenticationMethods
-      //var instance = new DocspaceApiTypescript.ClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.ClientInfoResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property isPublic (base name: "is_public")', function() {
       // uncomment below and update the code to test the property isPublic
-      //var instance = new DocspaceApiTypescript.ClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.ClientInfoResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property createdOn (base name: "created_on")', function() {
       // uncomment below and update the code to test the property createdOn
-      //var instance = new DocspaceApiTypescript.ClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.ClientInfoResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property createdBy (base name: "created_by")', function() {
       // uncomment below and update the code to test the property createdBy
-      //var instance = new DocspaceApiTypescript.ClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.ClientInfoResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property modifiedOn (base name: "modified_on")', function() {
       // uncomment below and update the code to test the property modifiedOn
-      //var instance = new DocspaceApiTypescript.ClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.ClientInfoResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property modifiedBy (base name: "modified_by")', function() {
       // uncomment below and update the code to test the property modifiedBy
-      //var instance = new DocspaceApiTypescript.ClientInfoResponse();
+      //var instance = new DocspaceApiJavascript.ClientInfoResponse();
       //expect(instance).to.be();
     });
 

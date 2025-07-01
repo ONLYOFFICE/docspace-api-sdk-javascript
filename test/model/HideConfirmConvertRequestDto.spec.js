@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.HideConfirmConvertRequestDto();
+    instance = new DocspaceApiJavascript.HideConfirmConvertRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('HideConfirmConvertRequestDto', function() {
     it('should create an instance of HideConfirmConvertRequestDto', function() {
       // uncomment below and update the code to test HideConfirmConvertRequestDto
-      //var instance = new DocspaceApiTypescript.HideConfirmConvertRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.HideConfirmConvertRequestDto);
+      //var instance = new DocspaceApiJavascript.HideConfirmConvertRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.HideConfirmConvertRequestDto);
     });
 
     it('should have the property save (base name: "save")', function() {
       // uncomment below and update the code to test the property save
-      //var instance = new DocspaceApiTypescript.HideConfirmConvertRequestDto();
+      //var instance = new DocspaceApiJavascript.HideConfirmConvertRequestDto();
       //expect(instance).to.be();
     });
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.Operation();
+    instance = new DocspaceApiJavascript.Operation();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,55 +62,55 @@
   describe('Operation', function() {
     it('should create an instance of Operation', function() {
       // uncomment below and update the code to test Operation
-      //var instance = new DocspaceApiTypescript.Operation();
-      //expect(instance).to.be.a(DocspaceApiTypescript.Operation);
+      //var instance = new DocspaceApiJavascript.Operation();
+      //expect(instance).to.be.a(DocspaceApiJavascript.Operation);
     });
 
     it('should have the property date (base name: "date")', function() {
       // uncomment below and update the code to test the property date
-      //var instance = new DocspaceApiTypescript.Operation();
+      //var instance = new DocspaceApiJavascript.Operation();
       //expect(instance).to.be();
     });
 
     it('should have the property service (base name: "service")', function() {
       // uncomment below and update the code to test the property service
-      //var instance = new DocspaceApiTypescript.Operation();
+      //var instance = new DocspaceApiJavascript.Operation();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new DocspaceApiTypescript.Operation();
+      //var instance = new DocspaceApiJavascript.Operation();
       //expect(instance).to.be();
     });
 
     it('should have the property serviceUnit (base name: "serviceUnit")', function() {
       // uncomment below and update the code to test the property serviceUnit
-      //var instance = new DocspaceApiTypescript.Operation();
+      //var instance = new DocspaceApiJavascript.Operation();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new DocspaceApiTypescript.Operation();
+      //var instance = new DocspaceApiJavascript.Operation();
       //expect(instance).to.be();
     });
 
     it('should have the property currency (base name: "currency")', function() {
       // uncomment below and update the code to test the property currency
-      //var instance = new DocspaceApiTypescript.Operation();
+      //var instance = new DocspaceApiJavascript.Operation();
       //expect(instance).to.be();
     });
 
     it('should have the property credit (base name: "credit")', function() {
       // uncomment below and update the code to test the property credit
-      //var instance = new DocspaceApiTypescript.Operation();
+      //var instance = new DocspaceApiJavascript.Operation();
       //expect(instance).to.be();
     });
 
     it('should have the property withdrawal (base name: "withdrawal")', function() {
       // uncomment below and update the code to test the property withdrawal
-      //var instance = new DocspaceApiTypescript.Operation();
+      //var instance = new DocspaceApiJavascript.Operation();
       //expect(instance).to.be();
     });
 

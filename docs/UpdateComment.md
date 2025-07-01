@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.UpdateComment
+# DocspaceApiJavascript.UpdateComment
 
 ## Properties
 

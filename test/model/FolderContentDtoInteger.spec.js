@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.FolderContentDtoInteger();
+    instance = new DocspaceApiJavascript.FolderContentDtoInteger();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,55 +62,55 @@
   describe('FolderContentDtoInteger', function() {
     it('should create an instance of FolderContentDtoInteger', function() {
       // uncomment below and update the code to test FolderContentDtoInteger
-      //var instance = new DocspaceApiTypescript.FolderContentDtoInteger();
-      //expect(instance).to.be.a(DocspaceApiTypescript.FolderContentDtoInteger);
+      //var instance = new DocspaceApiJavascript.FolderContentDtoInteger();
+      //expect(instance).to.be.a(DocspaceApiJavascript.FolderContentDtoInteger);
     });
 
     it('should have the property files (base name: "files")', function() {
       // uncomment below and update the code to test the property files
-      //var instance = new DocspaceApiTypescript.FolderContentDtoInteger();
+      //var instance = new DocspaceApiJavascript.FolderContentDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property folders (base name: "folders")', function() {
       // uncomment below and update the code to test the property folders
-      //var instance = new DocspaceApiTypescript.FolderContentDtoInteger();
+      //var instance = new DocspaceApiJavascript.FolderContentDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property current (base name: "current")', function() {
       // uncomment below and update the code to test the property current
-      //var instance = new DocspaceApiTypescript.FolderContentDtoInteger();
+      //var instance = new DocspaceApiJavascript.FolderContentDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property pathParts (base name: "pathParts")', function() {
       // uncomment below and update the code to test the property pathParts
-      //var instance = new DocspaceApiTypescript.FolderContentDtoInteger();
+      //var instance = new DocspaceApiJavascript.FolderContentDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property startIndex (base name: "startIndex")', function() {
       // uncomment below and update the code to test the property startIndex
-      //var instance = new DocspaceApiTypescript.FolderContentDtoInteger();
+      //var instance = new DocspaceApiJavascript.FolderContentDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property count (base name: "count")', function() {
       // uncomment below and update the code to test the property count
-      //var instance = new DocspaceApiTypescript.FolderContentDtoInteger();
+      //var instance = new DocspaceApiJavascript.FolderContentDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property total (base name: "total")', function() {
       // uncomment below and update the code to test the property total
-      //var instance = new DocspaceApiTypescript.FolderContentDtoInteger();
+      //var instance = new DocspaceApiJavascript.FolderContentDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property _new (base name: "new")', function() {
       // uncomment below and update the code to test the property _new
-      //var instance = new DocspaceApiTypescript.FolderContentDtoInteger();
+      //var instance = new DocspaceApiJavascript.FolderContentDtoInteger();
       //expect(instance).to.be();
     });
 

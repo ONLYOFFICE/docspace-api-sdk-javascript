@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.WebPluginWrapper
+# DocspaceApiJavascript.WebPluginWrapper
 
 ## Properties
 

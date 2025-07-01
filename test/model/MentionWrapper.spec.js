@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.MentionWrapper();
+    instance = new DocspaceApiJavascript.MentionWrapper();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,43 +62,43 @@
   describe('MentionWrapper', function() {
     it('should create an instance of MentionWrapper', function() {
       // uncomment below and update the code to test MentionWrapper
-      //var instance = new DocspaceApiTypescript.MentionWrapper();
-      //expect(instance).to.be.a(DocspaceApiTypescript.MentionWrapper);
+      //var instance = new DocspaceApiJavascript.MentionWrapper();
+      //expect(instance).to.be.a(DocspaceApiJavascript.MentionWrapper);
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instance = new DocspaceApiTypescript.MentionWrapper();
+      //var instance = new DocspaceApiJavascript.MentionWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiTypescript.MentionWrapper();
+      //var instance = new DocspaceApiJavascript.MentionWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.MentionWrapper();
+      //var instance = new DocspaceApiJavascript.MentionWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property image (base name: "image")', function() {
       // uncomment below and update the code to test the property image
-      //var instance = new DocspaceApiTypescript.MentionWrapper();
+      //var instance = new DocspaceApiJavascript.MentionWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property hasAccess (base name: "hasAccess")', function() {
       // uncomment below and update the code to test the property hasAccess
-      //var instance = new DocspaceApiTypescript.MentionWrapper();
+      //var instance = new DocspaceApiJavascript.MentionWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiTypescript.MentionWrapper();
+      //var instance = new DocspaceApiJavascript.MentionWrapper();
       //expect(instance).to.be();
     });
 

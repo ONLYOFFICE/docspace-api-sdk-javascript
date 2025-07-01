@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.AnonymousConfigDto
+# DocspaceApiJavascript.AnonymousConfigDto
 
 ## Properties
 

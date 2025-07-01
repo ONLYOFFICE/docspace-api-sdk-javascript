@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CoEditingConfig();
+    instance = new DocspaceApiJavascript.CoEditingConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('CoEditingConfig', function() {
     it('should create an instance of CoEditingConfig', function() {
       // uncomment below and update the code to test CoEditingConfig
-      //var instance = new DocspaceApiTypescript.CoEditingConfig();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CoEditingConfig);
+      //var instance = new DocspaceApiJavascript.CoEditingConfig();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CoEditingConfig);
     });
 
     it('should have the property change (base name: "change")', function() {
       // uncomment below and update the code to test the property change
-      //var instance = new DocspaceApiTypescript.CoEditingConfig();
+      //var instance = new DocspaceApiJavascript.CoEditingConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property fast (base name: "fast")', function() {
       // uncomment below and update the code to test the property fast
-      //var instance = new DocspaceApiTypescript.CoEditingConfig();
+      //var instance = new DocspaceApiJavascript.CoEditingConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property mode (base name: "mode")', function() {
       // uncomment below and update the code to test the property mode
-      //var instance = new DocspaceApiTypescript.CoEditingConfig();
+      //var instance = new DocspaceApiJavascript.CoEditingConfig();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.OwnerChangeInstructionsDto
+# DocspaceApiJavascript.OwnerChangeInstructionsDto
 
 ## Properties
 

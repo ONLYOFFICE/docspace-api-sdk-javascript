@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.CspDto
+# DocspaceApiJavascript.CspDto
 
 ## Properties
 

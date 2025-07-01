@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.MobileRequestsDto
+# DocspaceApiJavascript.MobileRequestsDto
 
 ## Properties
 

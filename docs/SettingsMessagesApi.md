@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SettingsMessagesApi
+# DocspaceApiJavascript.SettingsMessagesApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -14,15 +14,30 @@ Method | HTTP request | Description
 
 > StringWrapper enableAdminMessageSettings(opts)
 
-Enable the administrator message settings
-
 Displays the contact form on the \&quot;Sign In\&quot; page, allowing users to send a message to the DocSpace administrator in case they encounter any issues while accessing DocSpace.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/enable-admin-message-settings/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **turnOnAdminMessageSettingsRequestDto** | [**TurnOnAdminMessageSettingsRequestDto**](TurnOnAdminMessageSettingsRequestDto.md)|  | [optional] 
+
+### Return type
+
+[**StringWrapper**](StringWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -44,9 +59,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SettingsMessagesApi();
+let apiInstance = new DocspaceApiJavascript.SettingsMessagesApi();
 let opts = {
-  'turnOnAdminMessageSettingsRequestDto': new DocspaceApiTypescript.TurnOnAdminMessageSettingsRequestDto() // TurnOnAdminMessageSettingsRequestDto | 
+  'turnOnAdminMessageSettingsRequestDto': new DocspaceApiJavascript.TurnOnAdminMessageSettingsRequestDto() // TurnOnAdminMessageSettingsRequestDto | 
 };
 apiInstance.enableAdminMessageSettings(opts, (error, data, response) => {
   if (error) {
@@ -56,21 +71,6 @@ apiInstance.enableAdminMessageSettings(opts, (error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **turnOnAdminMessageSettingsRequestDto** | [**TurnOnAdminMessageSettingsRequestDto**](TurnOnAdminMessageSettingsRequestDto.md)|  | [optional] 
-
-### Return type
-
-[**StringWrapper**](StringWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 
@@ -82,27 +82,9 @@ Name | Type | Description  | Notes
 
 > StringWrapper sendAdminMail(opts)
 
-Send a message to the administrator
-
 Sends a message to the administrator email when unauthorized users encounter issues accessing DocSpace.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.SettingsMessagesApi();
-let opts = {
-  'adminMessageSettingsRequestsDto': new DocspaceApiTypescript.AdminMessageSettingsRequestsDto() // AdminMessageSettingsRequestsDto | 
-};
-apiInstance.sendAdminMail(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/send-admin-mail/).
 
 ### Parameters
 
@@ -119,6 +101,24 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.SettingsMessagesApi();
+let opts = {
+  'adminMessageSettingsRequestsDto': new DocspaceApiJavascript.AdminMessageSettingsRequestsDto() // AdminMessageSettingsRequestsDto | 
+};
+apiInstance.sendAdminMail(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: application/json
@@ -129,27 +129,9 @@ No authorization required
 
 > StringWrapper sendJoinInviteMail(opts)
 
-Sends an invitation email
-
 Sends an invitation email with a link to the DocSpace.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.SettingsMessagesApi();
-let opts = {
-  'adminMessageBaseSettingsRequestsDto': new DocspaceApiTypescript.AdminMessageBaseSettingsRequestsDto() // AdminMessageBaseSettingsRequestsDto | 
-};
-apiInstance.sendJoinInviteMail(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/send-join-invite-mail/).
 
 ### Parameters
 
@@ -165,6 +147,24 @@ Name | Type | Description  | Notes
 ### Authorization
 
 No authorization required
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.SettingsMessagesApi();
+let opts = {
+  'adminMessageBaseSettingsRequestsDto': new DocspaceApiJavascript.AdminMessageBaseSettingsRequestsDto() // AdminMessageBaseSettingsRequestsDto | 
+};
+apiInstance.sendJoinInviteMail(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

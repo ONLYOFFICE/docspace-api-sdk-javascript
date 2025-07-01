@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.FilesStatisticsResultDto();
+    instance = new DocspaceApiJavascript.FilesStatisticsResultDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,31 +62,31 @@
   describe('FilesStatisticsResultDto', function() {
     it('should create an instance of FilesStatisticsResultDto', function() {
       // uncomment below and update the code to test FilesStatisticsResultDto
-      //var instance = new DocspaceApiTypescript.FilesStatisticsResultDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.FilesStatisticsResultDto);
+      //var instance = new DocspaceApiJavascript.FilesStatisticsResultDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.FilesStatisticsResultDto);
     });
 
     it('should have the property myDocumentsUsedSpace (base name: "myDocumentsUsedSpace")', function() {
       // uncomment below and update the code to test the property myDocumentsUsedSpace
-      //var instance = new DocspaceApiTypescript.FilesStatisticsResultDto();
+      //var instance = new DocspaceApiJavascript.FilesStatisticsResultDto();
       //expect(instance).to.be();
     });
 
     it('should have the property trashUsedSpace (base name: "trashUsedSpace")', function() {
       // uncomment below and update the code to test the property trashUsedSpace
-      //var instance = new DocspaceApiTypescript.FilesStatisticsResultDto();
+      //var instance = new DocspaceApiJavascript.FilesStatisticsResultDto();
       //expect(instance).to.be();
     });
 
     it('should have the property archiveUsedSpace (base name: "archiveUsedSpace")', function() {
       // uncomment below and update the code to test the property archiveUsedSpace
-      //var instance = new DocspaceApiTypescript.FilesStatisticsResultDto();
+      //var instance = new DocspaceApiJavascript.FilesStatisticsResultDto();
       //expect(instance).to.be();
     });
 
     it('should have the property roomsUsedSpace (base name: "roomsUsedSpace")', function() {
       // uncomment below and update the code to test the property roomsUsedSpace
-      //var instance = new DocspaceApiTypescript.FilesStatisticsResultDto();
+      //var instance = new DocspaceApiJavascript.FilesStatisticsResultDto();
       //expect(instance).to.be();
     });
 

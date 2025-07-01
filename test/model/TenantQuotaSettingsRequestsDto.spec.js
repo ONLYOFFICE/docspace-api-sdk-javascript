@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.TenantQuotaSettingsRequestsDto();
+    instance = new DocspaceApiJavascript.TenantQuotaSettingsRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('TenantQuotaSettingsRequestsDto', function() {
     it('should create an instance of TenantQuotaSettingsRequestsDto', function() {
       // uncomment below and update the code to test TenantQuotaSettingsRequestsDto
-      //var instance = new DocspaceApiTypescript.TenantQuotaSettingsRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.TenantQuotaSettingsRequestsDto);
+      //var instance = new DocspaceApiJavascript.TenantQuotaSettingsRequestsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.TenantQuotaSettingsRequestsDto);
     });
 
     it('should have the property tenantId (base name: "tenantId")', function() {
       // uncomment below and update the code to test the property tenantId
-      //var instance = new DocspaceApiTypescript.TenantQuotaSettingsRequestsDto();
+      //var instance = new DocspaceApiJavascript.TenantQuotaSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property quota (base name: "quota")', function() {
       // uncomment below and update the code to test the property quota
-      //var instance = new DocspaceApiTypescript.TenantQuotaSettingsRequestsDto();
+      //var instance = new DocspaceApiJavascript.TenantQuotaSettingsRequestsDto();
       //expect(instance).to.be();
     });
 

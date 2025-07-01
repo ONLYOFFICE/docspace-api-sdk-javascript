@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.HistoryDto
+# DocspaceApiJavascript.HistoryDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.WebhookRetryRequestsDto
+# DocspaceApiJavascript.WebhookRetryRequestsDto
 
 ## Properties
 

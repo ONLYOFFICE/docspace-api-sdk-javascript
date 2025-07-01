@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.StorageArrayWrapper
+# DocspaceApiJavascript.StorageArrayWrapper
 
 ## Properties
 

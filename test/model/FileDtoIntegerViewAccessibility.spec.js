@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.FileDtoIntegerViewAccessibility();
+    instance = new DocspaceApiJavascript.FileDtoIntegerViewAccessibility();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,73 +62,73 @@
   describe('FileDtoIntegerViewAccessibility', function() {
     it('should create an instance of FileDtoIntegerViewAccessibility', function() {
       // uncomment below and update the code to test FileDtoIntegerViewAccessibility
-      //var instance = new DocspaceApiTypescript.FileDtoIntegerViewAccessibility();
-      //expect(instance).to.be.a(DocspaceApiTypescript.FileDtoIntegerViewAccessibility);
+      //var instance = new DocspaceApiJavascript.FileDtoIntegerViewAccessibility();
+      //expect(instance).to.be.a(DocspaceApiJavascript.FileDtoIntegerViewAccessibility);
     });
 
     it('should have the property imageView (base name: "ImageView")', function() {
       // uncomment below and update the code to test the property imageView
-      //var instance = new DocspaceApiTypescript.FileDtoIntegerViewAccessibility();
+      //var instance = new DocspaceApiJavascript.FileDtoIntegerViewAccessibility();
       //expect(instance).to.be();
     });
 
     it('should have the property mediaView (base name: "MediaView")', function() {
       // uncomment below and update the code to test the property mediaView
-      //var instance = new DocspaceApiTypescript.FileDtoIntegerViewAccessibility();
+      //var instance = new DocspaceApiJavascript.FileDtoIntegerViewAccessibility();
       //expect(instance).to.be();
     });
 
     it('should have the property webView (base name: "WebView")', function() {
       // uncomment below and update the code to test the property webView
-      //var instance = new DocspaceApiTypescript.FileDtoIntegerViewAccessibility();
+      //var instance = new DocspaceApiJavascript.FileDtoIntegerViewAccessibility();
       //expect(instance).to.be();
     });
 
     it('should have the property webEdit (base name: "WebEdit")', function() {
       // uncomment below and update the code to test the property webEdit
-      //var instance = new DocspaceApiTypescript.FileDtoIntegerViewAccessibility();
+      //var instance = new DocspaceApiJavascript.FileDtoIntegerViewAccessibility();
       //expect(instance).to.be();
     });
 
     it('should have the property webReview (base name: "WebReview")', function() {
       // uncomment below and update the code to test the property webReview
-      //var instance = new DocspaceApiTypescript.FileDtoIntegerViewAccessibility();
+      //var instance = new DocspaceApiJavascript.FileDtoIntegerViewAccessibility();
       //expect(instance).to.be();
     });
 
     it('should have the property webCustomFilterEditing (base name: "WebCustomFilterEditing")', function() {
       // uncomment below and update the code to test the property webCustomFilterEditing
-      //var instance = new DocspaceApiTypescript.FileDtoIntegerViewAccessibility();
+      //var instance = new DocspaceApiJavascript.FileDtoIntegerViewAccessibility();
       //expect(instance).to.be();
     });
 
     it('should have the property webRestrictedEditing (base name: "WebRestrictedEditing")', function() {
       // uncomment below and update the code to test the property webRestrictedEditing
-      //var instance = new DocspaceApiTypescript.FileDtoIntegerViewAccessibility();
+      //var instance = new DocspaceApiJavascript.FileDtoIntegerViewAccessibility();
       //expect(instance).to.be();
     });
 
     it('should have the property webComment (base name: "WebComment")', function() {
       // uncomment below and update the code to test the property webComment
-      //var instance = new DocspaceApiTypescript.FileDtoIntegerViewAccessibility();
+      //var instance = new DocspaceApiJavascript.FileDtoIntegerViewAccessibility();
       //expect(instance).to.be();
     });
 
     it('should have the property coAuhtoring (base name: "CoAuhtoring")', function() {
       // uncomment below and update the code to test the property coAuhtoring
-      //var instance = new DocspaceApiTypescript.FileDtoIntegerViewAccessibility();
+      //var instance = new DocspaceApiJavascript.FileDtoIntegerViewAccessibility();
       //expect(instance).to.be();
     });
 
     it('should have the property canConvert (base name: "CanConvert")', function() {
       // uncomment below and update the code to test the property canConvert
-      //var instance = new DocspaceApiTypescript.FileDtoIntegerViewAccessibility();
+      //var instance = new DocspaceApiJavascript.FileDtoIntegerViewAccessibility();
       //expect(instance).to.be();
     });
 
     it('should have the property mustConvert (base name: "MustConvert")', function() {
       // uncomment below and update the code to test the property mustConvert
-      //var instance = new DocspaceApiTypescript.FileDtoIntegerViewAccessibility();
+      //var instance = new DocspaceApiJavascript.FileDtoIntegerViewAccessibility();
       //expect(instance).to.be();
     });
 

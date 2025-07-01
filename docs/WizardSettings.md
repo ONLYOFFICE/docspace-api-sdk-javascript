@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.WizardSettings
+# DocspaceApiJavascript.WizardSettings
 
 ## Properties
 

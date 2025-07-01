@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.UserInfoWrapper
+# DocspaceApiJavascript.UserInfoWrapper
 
 ## Properties
 

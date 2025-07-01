@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.PaymentSettingsDto();
+    instance = new DocspaceApiJavascript.PaymentSettingsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,43 +62,43 @@
   describe('PaymentSettingsDto', function() {
     it('should create an instance of PaymentSettingsDto', function() {
       // uncomment below and update the code to test PaymentSettingsDto
-      //var instance = new DocspaceApiTypescript.PaymentSettingsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.PaymentSettingsDto);
+      //var instance = new DocspaceApiJavascript.PaymentSettingsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.PaymentSettingsDto);
     });
 
     it('should have the property salesEmail (base name: "salesEmail")', function() {
       // uncomment below and update the code to test the property salesEmail
-      //var instance = new DocspaceApiTypescript.PaymentSettingsDto();
+      //var instance = new DocspaceApiJavascript.PaymentSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property feedbackAndSupportUrl (base name: "feedbackAndSupportUrl")', function() {
       // uncomment below and update the code to test the property feedbackAndSupportUrl
-      //var instance = new DocspaceApiTypescript.PaymentSettingsDto();
+      //var instance = new DocspaceApiJavascript.PaymentSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property buyUrl (base name: "buyUrl")', function() {
       // uncomment below and update the code to test the property buyUrl
-      //var instance = new DocspaceApiTypescript.PaymentSettingsDto();
+      //var instance = new DocspaceApiJavascript.PaymentSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property standalone (base name: "standalone")', function() {
       // uncomment below and update the code to test the property standalone
-      //var instance = new DocspaceApiTypescript.PaymentSettingsDto();
+      //var instance = new DocspaceApiJavascript.PaymentSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property currentLicense (base name: "currentLicense")', function() {
       // uncomment below and update the code to test the property currentLicense
-      //var instance = new DocspaceApiTypescript.PaymentSettingsDto();
+      //var instance = new DocspaceApiJavascript.PaymentSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property max (base name: "max")', function() {
       // uncomment below and update the code to test the property max
-      //var instance = new DocspaceApiTypescript.PaymentSettingsDto();
+      //var instance = new DocspaceApiJavascript.PaymentSettingsDto();
       //expect(instance).to.be();
     });
 

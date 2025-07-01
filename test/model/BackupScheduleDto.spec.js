@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.BackupScheduleDto();
+    instance = new DocspaceApiJavascript.BackupScheduleDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,37 +62,37 @@
   describe('BackupScheduleDto', function() {
     it('should create an instance of BackupScheduleDto', function() {
       // uncomment below and update the code to test BackupScheduleDto
-      //var instance = new DocspaceApiTypescript.BackupScheduleDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.BackupScheduleDto);
+      //var instance = new DocspaceApiJavascript.BackupScheduleDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.BackupScheduleDto);
     });
 
     it('should have the property storageType (base name: "storageType")', function() {
       // uncomment below and update the code to test the property storageType
-      //var instance = new DocspaceApiTypescript.BackupScheduleDto();
+      //var instance = new DocspaceApiJavascript.BackupScheduleDto();
       //expect(instance).to.be();
     });
 
     it('should have the property storageParams (base name: "storageParams")', function() {
       // uncomment below and update the code to test the property storageParams
-      //var instance = new DocspaceApiTypescript.BackupScheduleDto();
+      //var instance = new DocspaceApiJavascript.BackupScheduleDto();
       //expect(instance).to.be();
     });
 
     it('should have the property backupsStored (base name: "backupsStored")', function() {
       // uncomment below and update the code to test the property backupsStored
-      //var instance = new DocspaceApiTypescript.BackupScheduleDto();
+      //var instance = new DocspaceApiJavascript.BackupScheduleDto();
       //expect(instance).to.be();
     });
 
     it('should have the property cronParams (base name: "cronParams")', function() {
       // uncomment below and update the code to test the property cronParams
-      //var instance = new DocspaceApiTypescript.BackupScheduleDto();
+      //var instance = new DocspaceApiJavascript.BackupScheduleDto();
       //expect(instance).to.be();
     });
 
     it('should have the property dump (base name: "dump")', function() {
       // uncomment below and update the code to test the property dump
-      //var instance = new DocspaceApiTypescript.BackupScheduleDto();
+      //var instance = new DocspaceApiJavascript.BackupScheduleDto();
       //expect(instance).to.be();
     });
 

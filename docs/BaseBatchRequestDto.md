@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.BaseBatchRequestDto
+# DocspaceApiJavascript.BaseBatchRequestDto
 
 ## Properties
 

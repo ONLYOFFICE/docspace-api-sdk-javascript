@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SsoSettingsV2
+# DocspaceApiJavascript.SsoSettingsV2
 
 ## Properties
 

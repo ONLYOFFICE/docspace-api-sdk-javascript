@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.PeopleUserStatusApi
+# DocspaceApiJavascript.PeopleUserStatusApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -14,55 +14,9 @@ Method | HTTP request | Description
 
 > EmployeeFullArrayWrapper getByStatus(status, opts)
 
-Get profiles by status
-
 Returns a list of profiles filtered by the user status.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.PeopleUserStatusApi();
-let status = new DocspaceApiTypescript.EmployeeStatus(); // EmployeeStatus | The user status.
-let opts = {
-  'filterBy': "some text", // String | Specifies the criteria used to filter the profiles in the request.
-  'count': 1234, // Number | The maximum number of user profiles to retrieve.
-  'startIndex': 1234, // Number | The starting index for retrieving data in a paginated request.
-  'sortBy': "some text", // String | Specifies the property or field name by which the results should be sorted.
-  'sortOrder': new DocspaceApiTypescript.SortOrder(), // SortOrder | The order in which the results are sorted.
-  'filterSeparator': "some text", // String | Represents the separator used to split multiple filter criteria in a query string.
-  'filterValue': "some text" // String | A string value representing additional filter criteria used in query parameters.
-};
-apiInstance.getByStatus(status, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-by-status/).
 
 ### Parameters
 
@@ -86,25 +40,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## updateUserActivationStatus
-
-> EmployeeFullArrayWrapper updateUserActivationStatus(activationstatus, opts)
-
-Set an activation status to the users
-
-Sets the required activation status to the list of users with the IDs specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -126,12 +66,18 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeopleUserStatusApi();
-let activationstatus = new DocspaceApiTypescript.EmployeeActivationStatus(); // EmployeeActivationStatus | The new user activation status.
+let apiInstance = new DocspaceApiJavascript.PeopleUserStatusApi();
+let status = new DocspaceApiJavascript.EmployeeStatus(); // EmployeeStatus | The user status.
 let opts = {
-  'updateMembersRequestDto': new DocspaceApiTypescript.UpdateMembersRequestDto() // UpdateMembersRequestDto | The request parameters for updating the user information.
+  'filterBy': "some text", // String | Specifies the criteria used to filter the profiles in the request.
+  'count': 1234, // Number | The maximum number of user profiles to retrieve.
+  'startIndex': 1234, // Number | The starting index for retrieving data in a paginated request.
+  'sortBy': "some text", // String | Specifies the property or field name by which the results should be sorted.
+  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'filterSeparator': "some text", // String | Represents the separator used to split multiple filter criteria in a query string.
+  'filterValue': "some text" // String | A string value representing additional filter criteria used in query parameters.
 };
-apiInstance.updateUserActivationStatus(activationstatus, opts, (error, data, response) => {
+apiInstance.getByStatus(status, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -139,6 +85,20 @@ apiInstance.updateUserActivationStatus(activationstatus, opts, (error, data, res
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## updateUserActivationStatus
+
+> EmployeeFullArrayWrapper updateUserActivationStatus(activationstatus, opts)
+
+Sets the required activation status to the list of users with the IDs specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-user-activation-status/).
 
 ### Parameters
 
@@ -156,25 +116,11 @@ Name | Type | Description  | Notes
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## updateUserStatus
-
-> EmployeeFullArrayWrapper updateUserStatus(status, opts)
-
-Change a user status
-
-Changes a status of the users with the IDs specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -196,12 +142,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeopleUserStatusApi();
-let status = new DocspaceApiTypescript.EmployeeStatus(); // EmployeeStatus | The new user status.
+let apiInstance = new DocspaceApiJavascript.PeopleUserStatusApi();
+let activationstatus = new DocspaceApiJavascript.EmployeeActivationStatus(); // EmployeeActivationStatus | The new user activation status.
 let opts = {
-  'updateMembersRequestDto': new DocspaceApiTypescript.UpdateMembersRequestDto() // UpdateMembersRequestDto | The request parameters for updating the user information.
+  'updateMembersRequestDto': new DocspaceApiJavascript.UpdateMembersRequestDto() // UpdateMembersRequestDto | The request parameters for updating the user information.
 };
-apiInstance.updateUserStatus(status, opts, (error, data, response) => {
+apiInstance.updateUserActivationStatus(activationstatus, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -209,6 +155,20 @@ apiInstance.updateUserStatus(status, opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## updateUserStatus
+
+> EmployeeFullArrayWrapper updateUserStatus(status, opts)
+
+Changes a status of the users with the IDs specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/update-user-status/).
 
 ### Parameters
 
@@ -225,6 +185,46 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.PeopleUserStatusApi();
+let status = new DocspaceApiJavascript.EmployeeStatus(); // EmployeeStatus | The new user status.
+let opts = {
+  'updateMembersRequestDto': new DocspaceApiJavascript.UpdateMembersRequestDto() // UpdateMembersRequestDto | The request parameters for updating the user information.
+};
+apiInstance.updateUserStatus(status, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

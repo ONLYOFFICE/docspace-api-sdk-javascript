@@ -32,9 +32,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
@@ -61,8 +61,8 @@
   describe('LoginProvider', function() {
     it('should create an instance of LoginProvider', function() {
       // uncomment below and update the code to test LoginProvider
-      //var instance = new DocspaceApiTypescript.LoginProvider();
-      //expect(instance).to.be.a(DocspaceApiTypescript.LoginProvider);
+      //var instance = new DocspaceApiJavascript.LoginProvider();
+      //expect(instance).to.be.a(DocspaceApiJavascript.LoginProvider);
     });
 
   });

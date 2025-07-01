@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.PaymentCalculation();
+    instance = new DocspaceApiJavascript.PaymentCalculation();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,31 +62,31 @@
   describe('PaymentCalculation', function() {
     it('should create an instance of PaymentCalculation', function() {
       // uncomment below and update the code to test PaymentCalculation
-      //var instance = new DocspaceApiTypescript.PaymentCalculation();
-      //expect(instance).to.be.a(DocspaceApiTypescript.PaymentCalculation);
+      //var instance = new DocspaceApiJavascript.PaymentCalculation();
+      //expect(instance).to.be.a(DocspaceApiJavascript.PaymentCalculation);
     });
 
     it('should have the property operationId (base name: "operationId")', function() {
       // uncomment below and update the code to test the property operationId
-      //var instance = new DocspaceApiTypescript.PaymentCalculation();
+      //var instance = new DocspaceApiJavascript.PaymentCalculation();
       //expect(instance).to.be();
     });
 
     it('should have the property amount (base name: "amount")', function() {
       // uncomment below and update the code to test the property amount
-      //var instance = new DocspaceApiTypescript.PaymentCalculation();
+      //var instance = new DocspaceApiJavascript.PaymentCalculation();
       //expect(instance).to.be();
     });
 
     it('should have the property currency (base name: "currency")', function() {
       // uncomment below and update the code to test the property currency
-      //var instance = new DocspaceApiTypescript.PaymentCalculation();
+      //var instance = new DocspaceApiJavascript.PaymentCalculation();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new DocspaceApiTypescript.PaymentCalculation();
+      //var instance = new DocspaceApiJavascript.PaymentCalculation();
       //expect(instance).to.be();
     });
 

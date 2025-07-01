@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.Int64Wrapper
+# DocspaceApiJavascript.Int64Wrapper
 
 ## Properties
 

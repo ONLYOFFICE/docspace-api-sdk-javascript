@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CustomerInfo();
+    instance = new DocspaceApiJavascript.CustomerInfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('CustomerInfo', function() {
     it('should create an instance of CustomerInfo', function() {
       // uncomment below and update the code to test CustomerInfo
-      //var instance = new DocspaceApiTypescript.CustomerInfo();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CustomerInfo);
+      //var instance = new DocspaceApiJavascript.CustomerInfo();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CustomerInfo);
     });
 
     it('should have the property portalId (base name: "portalId")', function() {
       // uncomment below and update the code to test the property portalId
-      //var instance = new DocspaceApiTypescript.CustomerInfo();
+      //var instance = new DocspaceApiJavascript.CustomerInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property paymentMethodStatus (base name: "paymentMethodStatus")', function() {
       // uncomment below and update the code to test the property paymentMethodStatus
-      //var instance = new DocspaceApiTypescript.CustomerInfo();
+      //var instance = new DocspaceApiJavascript.CustomerInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiTypescript.CustomerInfo();
+      //var instance = new DocspaceApiJavascript.CustomerInfo();
       //expect(instance).to.be();
     });
 

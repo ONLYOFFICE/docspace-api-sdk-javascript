@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.WizardSettingsWrapper
+# DocspaceApiJavascript.WizardSettingsWrapper
 
 ## Properties
 

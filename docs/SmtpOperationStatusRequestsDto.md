@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SmtpOperationStatusRequestsDto
+# DocspaceApiJavascript.SmtpOperationStatusRequestsDto
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.WalletQuantityRequestDto
+# DocspaceApiJavascript.WalletQuantityRequestDto
 
 ## Properties
 

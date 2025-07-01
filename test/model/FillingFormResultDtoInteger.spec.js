@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.FillingFormResultDtoInteger();
+    instance = new DocspaceApiJavascript.FillingFormResultDtoInteger();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,43 +62,43 @@
   describe('FillingFormResultDtoInteger', function() {
     it('should create an instance of FillingFormResultDtoInteger', function() {
       // uncomment below and update the code to test FillingFormResultDtoInteger
-      //var instance = new DocspaceApiTypescript.FillingFormResultDtoInteger();
-      //expect(instance).to.be.a(DocspaceApiTypescript.FillingFormResultDtoInteger);
+      //var instance = new DocspaceApiJavascript.FillingFormResultDtoInteger();
+      //expect(instance).to.be.a(DocspaceApiJavascript.FillingFormResultDtoInteger);
     });
 
     it('should have the property formNumber (base name: "formNumber")', function() {
       // uncomment below and update the code to test the property formNumber
-      //var instance = new DocspaceApiTypescript.FillingFormResultDtoInteger();
+      //var instance = new DocspaceApiJavascript.FillingFormResultDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property completedForm (base name: "completedForm")', function() {
       // uncomment below and update the code to test the property completedForm
-      //var instance = new DocspaceApiTypescript.FillingFormResultDtoInteger();
+      //var instance = new DocspaceApiJavascript.FillingFormResultDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property originalForm (base name: "originalForm")', function() {
       // uncomment below and update the code to test the property originalForm
-      //var instance = new DocspaceApiTypescript.FillingFormResultDtoInteger();
+      //var instance = new DocspaceApiJavascript.FillingFormResultDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property manager (base name: "manager")', function() {
       // uncomment below and update the code to test the property manager
-      //var instance = new DocspaceApiTypescript.FillingFormResultDtoInteger();
+      //var instance = new DocspaceApiJavascript.FillingFormResultDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property roomId (base name: "roomId")', function() {
       // uncomment below and update the code to test the property roomId
-      //var instance = new DocspaceApiTypescript.FillingFormResultDtoInteger();
+      //var instance = new DocspaceApiJavascript.FillingFormResultDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property isRoomMember (base name: "isRoomMember")', function() {
       // uncomment below and update the code to test the property isRoomMember
-      //var instance = new DocspaceApiTypescript.FillingFormResultDtoInteger();
+      //var instance = new DocspaceApiJavascript.FillingFormResultDtoInteger();
       //expect(instance).to.be();
     });
 

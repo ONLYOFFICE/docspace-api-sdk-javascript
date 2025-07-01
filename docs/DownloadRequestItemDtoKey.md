@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.DownloadRequestItemDtoKey
+# DocspaceApiJavascript.DownloadRequestItemDtoKey
 
 ## Properties
 

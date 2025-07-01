@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.AuthKey();
+    instance = new DocspaceApiJavascript.AuthKey();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('AuthKey', function() {
     it('should create an instance of AuthKey', function() {
       // uncomment below and update the code to test AuthKey
-      //var instance = new DocspaceApiTypescript.AuthKey();
-      //expect(instance).to.be.a(DocspaceApiTypescript.AuthKey);
+      //var instance = new DocspaceApiJavascript.AuthKey();
+      //expect(instance).to.be.a(DocspaceApiJavascript.AuthKey);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiTypescript.AuthKey();
+      //var instance = new DocspaceApiJavascript.AuthKey();
       //expect(instance).to.be();
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new DocspaceApiTypescript.AuthKey();
+      //var instance = new DocspaceApiJavascript.AuthKey();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiTypescript.AuthKey();
+      //var instance = new DocspaceApiJavascript.AuthKey();
       //expect(instance).to.be();
     });
 

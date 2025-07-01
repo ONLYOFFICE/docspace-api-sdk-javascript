@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.PeopleThirdPartyAccountsApi
+# DocspaceApiJavascript.PeopleThirdPartyAccountsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -15,30 +15,9 @@ Method | HTTP request | Description
 
 > AccountInfoArrayWrapper getThirdPartyAuthProviders(opts)
 
-Get third-party accounts
-
 Returns a list of the available third-party accounts.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.PeopleThirdPartyAccountsApi();
-let opts = {
-  'inviteView': true, // Boolean | Specifies whether to return providers that are available for invitation links, i.e. the user can login or register through these providers.
-  'settingsView': true, // Boolean | Specifies whether to display the provider settings in a pop-up window (true) or redirect them to the desktop application (false).
-  'clientCallback': "some text", // String | The method that is called after authentication.
-  'fromOnly': "some text" // String | The provider name if a response is required only from this provider.
-};
-apiInstance.getThirdPartyAuthProviders(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-third-party-auth-providers/).
 
 ### Parameters
 
@@ -58,6 +37,27 @@ Name | Type | Description  | Notes
 
 No authorization required
 
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.PeopleThirdPartyAccountsApi();
+let opts = {
+  'inviteView': true, // Boolean | Specifies whether to return providers that are available for invitation links, i.e. the user can login or register through these providers.
+  'settingsView': true, // Boolean | Specifies whether to display the provider settings in a pop-up window (true) or redirect them to the desktop application (false).
+  'clientCallback': "some text", // String | The method that is called after authentication.
+  'fromOnly': "some text" // String | The provider name if a response is required only from this provider.
+};
+apiInstance.getThirdPartyAuthProviders(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -68,48 +68,9 @@ No authorization required
 
 > linkThirdPartyAccount(opts)
 
-Link a third-pary account
-
 Links a third-party account specified in the request to the user profile.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiTypescript.PeopleThirdPartyAccountsApi();
-let opts = {
-  'linkAccountRequestDto': new DocspaceApiTypescript.LinkAccountRequestDto() // LinkAccountRequestDto | 
-};
-apiInstance.linkThirdPartyAccount(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully.');
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/link-third-party-account/).
 
 ### Parameters
 
@@ -126,72 +87,11 @@ null (empty response body)
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: Not defined
-
-
-## signupThirdPartyAccount
-
-> signupThirdPartyAccount(opts)
-
-Create a third-pary account
-
-Creates a third-party account with the parameters specified in the request.
-
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.PeopleThirdPartyAccountsApi();
-let opts = {
-  'signupAccountRequestDto': new DocspaceApiTypescript.SignupAccountRequestDto() // SignupAccountRequestDto | 
-};
-apiInstance.signupThirdPartyAccount(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully.');
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **signupAccountRequestDto** | [**SignupAccountRequestDto**](SignupAccountRequestDto.md)|  | [optional] 
-
-### Return type
-
-null (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: Not defined
-
-
-## unlinkThirdPartyAccount
-
-> unlinkThirdPartyAccount(opts)
-
-Unlink a third-pary account
-
-Unlinks a third-party account specified in the request from the user profile.
-
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -213,11 +113,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.PeopleThirdPartyAccountsApi();
+let apiInstance = new DocspaceApiJavascript.PeopleThirdPartyAccountsApi();
 let opts = {
-  'provider': "some text" // String | The provider name.
+  'linkAccountRequestDto': new DocspaceApiJavascript.LinkAccountRequestDto() // LinkAccountRequestDto | 
 };
-apiInstance.unlinkThirdPartyAccount(opts, (error, data, response) => {
+apiInstance.linkThirdPartyAccount(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -225,6 +125,67 @@ apiInstance.unlinkThirdPartyAccount(opts, (error, data, response) => {
   }
 });
 ```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: Not defined
+
+
+## signupThirdPartyAccount
+
+> signupThirdPartyAccount(opts)
+
+Creates a third-party account with the parameters specified in the request.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/signup-third-party-account/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **signupAccountRequestDto** | [**SignupAccountRequestDto**](SignupAccountRequestDto.md)|  | [optional] 
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.PeopleThirdPartyAccountsApi();
+let opts = {
+  'signupAccountRequestDto': new DocspaceApiJavascript.SignupAccountRequestDto() // SignupAccountRequestDto | 
+};
+apiInstance.signupThirdPartyAccount(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully.');
+  }
+});
+```
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: Not defined
+
+
+## unlinkThirdPartyAccount
+
+> unlinkThirdPartyAccount(opts)
+
+Unlinks a third-party account specified in the request from the user profile.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/unlink-third-party-account/).
 
 ### Parameters
 
@@ -240,6 +201,45 @@ null (empty response body)
 ### Authorization
 
 [Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+// Configure HTTP basic authorization: Basic
+let Basic = defaultClient.authentications['Basic'];
+Basic.username = 'YOUR USERNAME';
+Basic.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: OAuth2
+let OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
+// Configure API key authorization: ApiKeyBearer
+let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
+ApiKeyBearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKeyBearer.apiKeyPrefix = 'Token';
+// Configure API key authorization: asc_auth_key
+let asc_auth_key = defaultClient.authentications['asc_auth_key'];
+asc_auth_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//asc_auth_key.apiKeyPrefix = 'Token';
+// Configure Bearer (JWT) access token for authorization: Bearer
+let Bearer = defaultClient.authentications['Bearer'];
+Bearer.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new DocspaceApiJavascript.PeopleThirdPartyAccountsApi();
+let opts = {
+  'provider': "some text" // String | The provider name.
+};
+apiInstance.unlinkThirdPartyAccount(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully.');
+  }
+});
+```
 
 ### HTTP request headers
 

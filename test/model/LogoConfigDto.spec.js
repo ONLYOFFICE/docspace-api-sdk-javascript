@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.LogoConfigDto();
+    instance = new DocspaceApiJavascript.LogoConfigDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,43 +62,43 @@
   describe('LogoConfigDto', function() {
     it('should create an instance of LogoConfigDto', function() {
       // uncomment below and update the code to test LogoConfigDto
-      //var instance = new DocspaceApiTypescript.LogoConfigDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.LogoConfigDto);
+      //var instance = new DocspaceApiJavascript.LogoConfigDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.LogoConfigDto);
     });
 
     it('should have the property image (base name: "image")', function() {
       // uncomment below and update the code to test the property image
-      //var instance = new DocspaceApiTypescript.LogoConfigDto();
+      //var instance = new DocspaceApiJavascript.LogoConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property imageDark (base name: "imageDark")', function() {
       // uncomment below and update the code to test the property imageDark
-      //var instance = new DocspaceApiTypescript.LogoConfigDto();
+      //var instance = new DocspaceApiJavascript.LogoConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property imageLight (base name: "imageLight")', function() {
       // uncomment below and update the code to test the property imageLight
-      //var instance = new DocspaceApiTypescript.LogoConfigDto();
+      //var instance = new DocspaceApiJavascript.LogoConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property imageEmbedded (base name: "imageEmbedded")', function() {
       // uncomment below and update the code to test the property imageEmbedded
-      //var instance = new DocspaceApiTypescript.LogoConfigDto();
+      //var instance = new DocspaceApiJavascript.LogoConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiTypescript.LogoConfigDto();
+      //var instance = new DocspaceApiJavascript.LogoConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property visible (base name: "visible")', function() {
       // uncomment below and update the code to test the property visible
-      //var instance = new DocspaceApiTypescript.LogoConfigDto();
+      //var instance = new DocspaceApiJavascript.LogoConfigDto();
       //expect(instance).to.be();
     });
 

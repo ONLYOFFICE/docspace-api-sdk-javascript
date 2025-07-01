@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.Quota();
+    instance = new DocspaceApiJavascript.Quota();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,43 +62,43 @@
   describe('Quota', function() {
     it('should create an instance of Quota', function() {
       // uncomment below and update the code to test Quota
-      //var instance = new DocspaceApiTypescript.Quota();
-      //expect(instance).to.be.a(DocspaceApiTypescript.Quota);
+      //var instance = new DocspaceApiJavascript.Quota();
+      //expect(instance).to.be.a(DocspaceApiJavascript.Quota);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.Quota();
+      //var instance = new DocspaceApiJavascript.Quota();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new DocspaceApiTypescript.Quota();
+      //var instance = new DocspaceApiJavascript.Quota();
       //expect(instance).to.be();
     });
 
     it('should have the property wallet (base name: "wallet")', function() {
       // uncomment below and update the code to test the property wallet
-      //var instance = new DocspaceApiTypescript.Quota();
+      //var instance = new DocspaceApiJavascript.Quota();
       //expect(instance).to.be();
     });
 
     it('should have the property dueDate (base name: "dueDate")', function() {
       // uncomment below and update the code to test the property dueDate
-      //var instance = new DocspaceApiTypescript.Quota();
+      //var instance = new DocspaceApiJavascript.Quota();
       //expect(instance).to.be();
     });
 
     it('should have the property nextQuantity (base name: "nextQuantity")', function() {
       // uncomment below and update the code to test the property nextQuantity
-      //var instance = new DocspaceApiTypescript.Quota();
+      //var instance = new DocspaceApiJavascript.Quota();
       //expect(instance).to.be();
     });
 
     it('should have the property state (base name: "state")', function() {
       // uncomment below and update the code to test the property state
-      //var instance = new DocspaceApiTypescript.Quota();
+      //var instance = new DocspaceApiJavascript.Quota();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.GroupArrayWrapper
+# DocspaceApiJavascript.GroupArrayWrapper
 
 ## Properties
 

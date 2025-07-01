@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.ActiveConnectionsDto();
+    instance = new DocspaceApiJavascript.ActiveConnectionsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('ActiveConnectionsDto', function() {
     it('should create an instance of ActiveConnectionsDto', function() {
       // uncomment below and update the code to test ActiveConnectionsDto
-      //var instance = new DocspaceApiTypescript.ActiveConnectionsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.ActiveConnectionsDto);
+      //var instance = new DocspaceApiJavascript.ActiveConnectionsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.ActiveConnectionsDto);
     });
 
     it('should have the property loginEvent (base name: "loginEvent")', function() {
       // uncomment below and update the code to test the property loginEvent
-      //var instance = new DocspaceApiTypescript.ActiveConnectionsDto();
+      //var instance = new DocspaceApiJavascript.ActiveConnectionsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property items (base name: "items")', function() {
       // uncomment below and update the code to test the property items
-      //var instance = new DocspaceApiTypescript.ActiveConnectionsDto();
+      //var instance = new DocspaceApiJavascript.ActiveConnectionsDto();
       //expect(instance).to.be();
     });
 

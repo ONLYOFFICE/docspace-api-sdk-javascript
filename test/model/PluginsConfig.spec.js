@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.PluginsConfig();
+    instance = new DocspaceApiJavascript.PluginsConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,13 +62,13 @@
   describe('PluginsConfig', function() {
     it('should create an instance of PluginsConfig', function() {
       // uncomment below and update the code to test PluginsConfig
-      //var instance = new DocspaceApiTypescript.PluginsConfig();
-      //expect(instance).to.be.a(DocspaceApiTypescript.PluginsConfig);
+      //var instance = new DocspaceApiJavascript.PluginsConfig();
+      //expect(instance).to.be.a(DocspaceApiJavascript.PluginsConfig);
     });
 
     it('should have the property pluginsData (base name: "pluginsData")', function() {
       // uncomment below and update the code to test the property pluginsData
-      //var instance = new DocspaceApiTypescript.PluginsConfig();
+      //var instance = new DocspaceApiJavascript.PluginsConfig();
       //expect(instance).to.be();
     });
 

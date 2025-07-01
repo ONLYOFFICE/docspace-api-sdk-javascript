@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.PasswordHasher();
+    instance = new DocspaceApiJavascript.PasswordHasher();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('PasswordHasher', function() {
     it('should create an instance of PasswordHasher', function() {
       // uncomment below and update the code to test PasswordHasher
-      //var instance = new DocspaceApiTypescript.PasswordHasher();
-      //expect(instance).to.be.a(DocspaceApiTypescript.PasswordHasher);
+      //var instance = new DocspaceApiJavascript.PasswordHasher();
+      //expect(instance).to.be.a(DocspaceApiJavascript.PasswordHasher);
     });
 
     it('should have the property size (base name: "size")', function() {
       // uncomment below and update the code to test the property size
-      //var instance = new DocspaceApiTypescript.PasswordHasher();
+      //var instance = new DocspaceApiJavascript.PasswordHasher();
       //expect(instance).to.be();
     });
 
     it('should have the property iterations (base name: "iterations")', function() {
       // uncomment below and update the code to test the property iterations
-      //var instance = new DocspaceApiTypescript.PasswordHasher();
+      //var instance = new DocspaceApiJavascript.PasswordHasher();
       //expect(instance).to.be();
     });
 
     it('should have the property salt (base name: "salt")', function() {
       // uncomment below and update the code to test the property salt
-      //var instance = new DocspaceApiTypescript.PasswordHasher();
+      //var instance = new DocspaceApiJavascript.PasswordHasher();
       //expect(instance).to.be();
     });
 

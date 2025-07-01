@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.TopUpDepositRequestDto();
+    instance = new DocspaceApiJavascript.TopUpDepositRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('TopUpDepositRequestDto', function() {
     it('should create an instance of TopUpDepositRequestDto', function() {
       // uncomment below and update the code to test TopUpDepositRequestDto
-      //var instance = new DocspaceApiTypescript.TopUpDepositRequestDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.TopUpDepositRequestDto);
+      //var instance = new DocspaceApiJavascript.TopUpDepositRequestDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.TopUpDepositRequestDto);
     });
 
     it('should have the property amount (base name: "amount")', function() {
       // uncomment below and update the code to test the property amount
-      //var instance = new DocspaceApiTypescript.TopUpDepositRequestDto();
+      //var instance = new DocspaceApiJavascript.TopUpDepositRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property currency (base name: "currency")', function() {
       // uncomment below and update the code to test the property currency
-      //var instance = new DocspaceApiTypescript.TopUpDepositRequestDto();
+      //var instance = new DocspaceApiJavascript.TopUpDepositRequestDto();
       //expect(instance).to.be();
     });
 

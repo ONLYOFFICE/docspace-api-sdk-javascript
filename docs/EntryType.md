@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.EntryType
+# DocspaceApiJavascript.EntryType
+
+
 
 ## Enum
 

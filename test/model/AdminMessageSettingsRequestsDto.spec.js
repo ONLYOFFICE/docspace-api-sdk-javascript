@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.AdminMessageSettingsRequestsDto();
+    instance = new DocspaceApiJavascript.AdminMessageSettingsRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('AdminMessageSettingsRequestsDto', function() {
     it('should create an instance of AdminMessageSettingsRequestsDto', function() {
       // uncomment below and update the code to test AdminMessageSettingsRequestsDto
-      //var instance = new DocspaceApiTypescript.AdminMessageSettingsRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.AdminMessageSettingsRequestsDto);
+      //var instance = new DocspaceApiJavascript.AdminMessageSettingsRequestsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.AdminMessageSettingsRequestsDto);
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new DocspaceApiTypescript.AdminMessageSettingsRequestsDto();
+      //var instance = new DocspaceApiJavascript.AdminMessageSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiTypescript.AdminMessageSettingsRequestsDto();
+      //var instance = new DocspaceApiJavascript.AdminMessageSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property culture (base name: "culture")', function() {
       // uncomment below and update the code to test the property culture
-      //var instance = new DocspaceApiTypescript.AdminMessageSettingsRequestsDto();
+      //var instance = new DocspaceApiJavascript.AdminMessageSettingsRequestsDto();
       //expect(instance).to.be();
     });
 

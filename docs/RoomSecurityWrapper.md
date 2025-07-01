@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.RoomSecurityWrapper
+# DocspaceApiJavascript.RoomSecurityWrapper
 
 ## Properties
 

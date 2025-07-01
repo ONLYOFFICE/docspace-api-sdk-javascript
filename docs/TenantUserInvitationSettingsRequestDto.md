@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.TenantUserInvitationSettingsRequestDto
+# DocspaceApiJavascript.TenantUserInvitationSettingsRequestDto
 
 ## Properties
 

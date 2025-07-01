@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CurrentLicenseInfo();
+    instance = new DocspaceApiJavascript.CurrentLicenseInfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('CurrentLicenseInfo', function() {
     it('should create an instance of CurrentLicenseInfo', function() {
       // uncomment below and update the code to test CurrentLicenseInfo
-      //var instance = new DocspaceApiTypescript.CurrentLicenseInfo();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CurrentLicenseInfo);
+      //var instance = new DocspaceApiJavascript.CurrentLicenseInfo();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CurrentLicenseInfo);
     });
 
     it('should have the property trial (base name: "trial")', function() {
       // uncomment below and update the code to test the property trial
-      //var instance = new DocspaceApiTypescript.CurrentLicenseInfo();
+      //var instance = new DocspaceApiJavascript.CurrentLicenseInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property dueDate (base name: "dueDate")', function() {
       // uncomment below and update the code to test the property dueDate
-      //var instance = new DocspaceApiTypescript.CurrentLicenseInfo();
+      //var instance = new DocspaceApiJavascript.CurrentLicenseInfo();
       //expect(instance).to.be();
     });
 

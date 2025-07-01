@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.WebItemSecurityRequestsDto();
+    instance = new DocspaceApiJavascript.WebItemSecurityRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('WebItemSecurityRequestsDto', function() {
     it('should create an instance of WebItemSecurityRequestsDto', function() {
       // uncomment below and update the code to test WebItemSecurityRequestsDto
-      //var instance = new DocspaceApiTypescript.WebItemSecurityRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.WebItemSecurityRequestsDto);
+      //var instance = new DocspaceApiJavascript.WebItemSecurityRequestsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.WebItemSecurityRequestsDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.WebItemSecurityRequestsDto();
+      //var instance = new DocspaceApiJavascript.WebItemSecurityRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property enabled (base name: "enabled")', function() {
       // uncomment below and update the code to test the property enabled
-      //var instance = new DocspaceApiTypescript.WebItemSecurityRequestsDto();
+      //var instance = new DocspaceApiJavascript.WebItemSecurityRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property subjects (base name: "subjects")', function() {
       // uncomment below and update the code to test the property subjects
-      //var instance = new DocspaceApiTypescript.WebItemSecurityRequestsDto();
+      //var instance = new DocspaceApiJavascript.WebItemSecurityRequestsDto();
       //expect(instance).to.be();
     });
 

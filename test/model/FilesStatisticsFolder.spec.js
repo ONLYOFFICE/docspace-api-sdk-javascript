@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.FilesStatisticsFolder();
+    instance = new DocspaceApiJavascript.FilesStatisticsFolder();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('FilesStatisticsFolder', function() {
     it('should create an instance of FilesStatisticsFolder', function() {
       // uncomment below and update the code to test FilesStatisticsFolder
-      //var instance = new DocspaceApiTypescript.FilesStatisticsFolder();
-      //expect(instance).to.be.a(DocspaceApiTypescript.FilesStatisticsFolder);
+      //var instance = new DocspaceApiJavascript.FilesStatisticsFolder();
+      //expect(instance).to.be.a(DocspaceApiJavascript.FilesStatisticsFolder);
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiTypescript.FilesStatisticsFolder();
+      //var instance = new DocspaceApiJavascript.FilesStatisticsFolder();
       //expect(instance).to.be();
     });
 
     it('should have the property usedSpace (base name: "usedSpace")', function() {
       // uncomment below and update the code to test the property usedSpace
-      //var instance = new DocspaceApiTypescript.FilesStatisticsFolder();
+      //var instance = new DocspaceApiJavascript.FilesStatisticsFolder();
       //expect(instance).to.be();
     });
 

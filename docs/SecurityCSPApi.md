@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SecurityCSPApi
+# DocspaceApiJavascript.SecurityCSPApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -13,15 +13,30 @@ Method | HTTP request | Description
 
 > CspWrapper configureCsp(opts)
 
-Configure CSP settings
-
 Configures the CSP (Content Security Policy) settings for the current portal.
+
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/configure-csp/).
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **cspRequestsDto** | [**CspRequestsDto**](CspRequestsDto.md)|  | [optional] 
+
+### Return type
+
+[**CspWrapper**](CspWrapper.md)
+
+### Authorization
+
+[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### Example
 
 ```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-let defaultClient = DocspaceApiTypescript.ApiClient.instance;
+import DocspaceApiJavascript from 'docspace-api-javascript';
+let defaultClient = DocspaceApiJavascript.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -43,9 +58,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiTypescript.SecurityCSPApi();
+let apiInstance = new DocspaceApiJavascript.SecurityCSPApi();
 let opts = {
-  'cspRequestsDto': new DocspaceApiTypescript.CspRequestsDto() // CspRequestsDto | 
+  'cspRequestsDto': new DocspaceApiJavascript.CspRequestsDto() // CspRequestsDto | 
 };
 apiInstance.configureCsp(opts, (error, data, response) => {
   if (error) {
@@ -55,21 +70,6 @@ apiInstance.configureCsp(opts, (error, data, response) => {
   }
 });
 ```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **cspRequestsDto** | [**CspRequestsDto**](CspRequestsDto.md)|  | [optional] 
-
-### Return type
-
-[**CspWrapper**](CspWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
 
 ### HTTP request headers
 
@@ -81,24 +81,9 @@ Name | Type | Description  | Notes
 
 > CspWrapper getCspSettings()
 
-Get CSP settings
-
 Returns the CSP (Content Security Policy) settings for the current portal.
 
-### Example
-
-```javascript
-import DocspaceApiTypescript from 'docspace-api-typescript';
-
-let apiInstance = new DocspaceApiTypescript.SecurityCSPApi();
-apiInstance.getCspSettings((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
+For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-csp-settings/).
 
 ### Parameters
 
@@ -111,6 +96,21 @@ This endpoint does not need any parameter.
 ### Authorization
 
 No authorization required
+
+### Example
+
+```javascript
+import DocspaceApiJavascript from 'docspace-api-javascript';
+
+let apiInstance = new DocspaceApiJavascript.SecurityCSPApi();
+apiInstance.getCspSettings((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
 
 ### HTTP request headers
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.FileOperationDto();
+    instance = new DocspaceApiJavascript.FileOperationDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,61 +62,61 @@
   describe('FileOperationDto', function() {
     it('should create an instance of FileOperationDto', function() {
       // uncomment below and update the code to test FileOperationDto
-      //var instance = new DocspaceApiTypescript.FileOperationDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.FileOperationDto);
+      //var instance = new DocspaceApiJavascript.FileOperationDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.FileOperationDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiTypescript.FileOperationDto();
+      //var instance = new DocspaceApiJavascript.FileOperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property operation (base name: "Operation")', function() {
       // uncomment below and update the code to test the property operation
-      //var instance = new DocspaceApiTypescript.FileOperationDto();
+      //var instance = new DocspaceApiJavascript.FileOperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property progress (base name: "progress")', function() {
       // uncomment below and update the code to test the property progress
-      //var instance = new DocspaceApiTypescript.FileOperationDto();
+      //var instance = new DocspaceApiJavascript.FileOperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instance = new DocspaceApiTypescript.FileOperationDto();
+      //var instance = new DocspaceApiJavascript.FileOperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property processed (base name: "processed")', function() {
       // uncomment below and update the code to test the property processed
-      //var instance = new DocspaceApiTypescript.FileOperationDto();
+      //var instance = new DocspaceApiJavascript.FileOperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property finished (base name: "finished")', function() {
       // uncomment below and update the code to test the property finished
-      //var instance = new DocspaceApiTypescript.FileOperationDto();
+      //var instance = new DocspaceApiJavascript.FileOperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiTypescript.FileOperationDto();
+      //var instance = new DocspaceApiJavascript.FileOperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property files (base name: "files")', function() {
       // uncomment below and update the code to test the property files
-      //var instance = new DocspaceApiTypescript.FileOperationDto();
+      //var instance = new DocspaceApiJavascript.FileOperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property folders (base name: "folders")', function() {
       // uncomment below and update the code to test the property folders
-      //var instance = new DocspaceApiTypescript.FileOperationDto();
+      //var instance = new DocspaceApiJavascript.FileOperationDto();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.StartReassignRequestDto
+# DocspaceApiJavascript.StartReassignRequestDto
 
 ## Properties
 

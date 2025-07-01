@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.CheckDestFolderWrapper
+# DocspaceApiJavascript.CheckDestFolderWrapper
 
 ## Properties
 

@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.DnsSettingsRequestsDto();
+    instance = new DocspaceApiJavascript.DnsSettingsRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('DnsSettingsRequestsDto', function() {
     it('should create an instance of DnsSettingsRequestsDto', function() {
       // uncomment below and update the code to test DnsSettingsRequestsDto
-      //var instance = new DocspaceApiTypescript.DnsSettingsRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.DnsSettingsRequestsDto);
+      //var instance = new DocspaceApiJavascript.DnsSettingsRequestsDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.DnsSettingsRequestsDto);
     });
 
     it('should have the property dnsName (base name: "dnsName")', function() {
       // uncomment below and update the code to test the property dnsName
-      //var instance = new DocspaceApiTypescript.DnsSettingsRequestsDto();
+      //var instance = new DocspaceApiJavascript.DnsSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property enable (base name: "enable")', function() {
       // uncomment below and update the code to test the property enable
-      //var instance = new DocspaceApiTypescript.DnsSettingsRequestsDto();
+      //var instance = new DocspaceApiJavascript.DnsSettingsRequestsDto();
       //expect(instance).to.be();
     });
 

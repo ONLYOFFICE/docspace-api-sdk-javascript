@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.WebhooksConfigWithStatusDto
+# DocspaceApiJavascript.WebhooksConfigWithStatusDto
 
 ## Properties
 

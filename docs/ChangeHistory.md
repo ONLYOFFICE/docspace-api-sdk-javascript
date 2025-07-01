@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.ChangeHistory
+# DocspaceApiJavascript.ChangeHistory
 
 ## Properties
 

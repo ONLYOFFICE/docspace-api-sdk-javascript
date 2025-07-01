@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.EditHistoryUrl
+# DocspaceApiJavascript.EditHistoryUrl
 
 ## Properties
 

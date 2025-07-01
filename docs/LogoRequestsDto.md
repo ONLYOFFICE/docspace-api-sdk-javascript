@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.LogoRequestsDto
+# DocspaceApiJavascript.LogoRequestsDto
 
 ## Properties
 

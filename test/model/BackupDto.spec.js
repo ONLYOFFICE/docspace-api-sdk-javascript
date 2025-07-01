@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.BackupDto();
+    instance = new DocspaceApiJavascript.BackupDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('BackupDto', function() {
     it('should create an instance of BackupDto', function() {
       // uncomment below and update the code to test BackupDto
-      //var instance = new DocspaceApiTypescript.BackupDto();
-      //expect(instance).to.be.a(DocspaceApiTypescript.BackupDto);
+      //var instance = new DocspaceApiJavascript.BackupDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.BackupDto);
     });
 
     it('should have the property storageType (base name: "storageType")', function() {
       // uncomment below and update the code to test the property storageType
-      //var instance = new DocspaceApiTypescript.BackupDto();
+      //var instance = new DocspaceApiJavascript.BackupDto();
       //expect(instance).to.be();
     });
 
     it('should have the property storageParams (base name: "storageParams")', function() {
       // uncomment below and update the code to test the property storageParams
-      //var instance = new DocspaceApiTypescript.BackupDto();
+      //var instance = new DocspaceApiJavascript.BackupDto();
       //expect(instance).to.be();
     });
 
     it('should have the property dump (base name: "dump")', function() {
       // uncomment below and update the code to test the property dump
-      //var instance = new DocspaceApiTypescript.BackupDto();
+      //var instance = new DocspaceApiJavascript.BackupDto();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.EncryptionSettingsWrapper
+# DocspaceApiJavascript.EncryptionSettingsWrapper
 
 ## Properties
 

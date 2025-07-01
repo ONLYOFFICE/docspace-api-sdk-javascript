@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.OrdersItemRequestDtoInteger
+# DocspaceApiJavascript.OrdersItemRequestDtoInteger
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.DocServiceUrlWrapper
+# DocspaceApiJavascript.DocServiceUrlWrapper
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SecurityArrayWrapper
+# DocspaceApiJavascript.SecurityArrayWrapper
 
 ## Properties
 

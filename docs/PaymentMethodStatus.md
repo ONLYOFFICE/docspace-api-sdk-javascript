@@ -1,4 +1,6 @@
-# DocspaceApiTypescript.PaymentMethodStatus
+# DocspaceApiJavascript.PaymentMethodStatus
+
+
 
 ## Enum
 

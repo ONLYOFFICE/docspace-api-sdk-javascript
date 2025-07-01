@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.SubmitForm();
+    instance = new DocspaceApiJavascript.SubmitForm();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,19 +62,19 @@
   describe('SubmitForm', function() {
     it('should create an instance of SubmitForm', function() {
       // uncomment below and update the code to test SubmitForm
-      //var instance = new DocspaceApiTypescript.SubmitForm();
-      //expect(instance).to.be.a(DocspaceApiTypescript.SubmitForm);
+      //var instance = new DocspaceApiJavascript.SubmitForm();
+      //expect(instance).to.be.a(DocspaceApiJavascript.SubmitForm);
     });
 
     it('should have the property visible (base name: "visible")', function() {
       // uncomment below and update the code to test the property visible
-      //var instance = new DocspaceApiTypescript.SubmitForm();
+      //var instance = new DocspaceApiJavascript.SubmitForm();
       //expect(instance).to.be();
     });
 
     it('should have the property resultMessage (base name: "resultMessage")', function() {
       // uncomment below and update the code to test the property resultMessage
-      //var instance = new DocspaceApiTypescript.SubmitForm();
+      //var instance = new DocspaceApiJavascript.SubmitForm();
       //expect(instance).to.be();
     });
 

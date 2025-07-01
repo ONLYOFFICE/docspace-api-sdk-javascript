@@ -1,4 +1,4 @@
-# DocspaceApiTypescript.SetupCode
+# DocspaceApiJavascript.SetupCode
 
 ## Properties
 

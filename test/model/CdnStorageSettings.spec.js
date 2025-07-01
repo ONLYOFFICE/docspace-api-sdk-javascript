@@ -32,15 +32,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiTypescript);
+    factory(root.expect, root.DocspaceApiJavascript);
   }
-}(this, function(expect, DocspaceApiTypescript) {
+}(this, function(expect, DocspaceApiJavascript) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiTypescript.CdnStorageSettings();
+    instance = new DocspaceApiJavascript.CdnStorageSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -62,25 +62,25 @@
   describe('CdnStorageSettings', function() {
     it('should create an instance of CdnStorageSettings', function() {
       // uncomment below and update the code to test CdnStorageSettings
-      //var instance = new DocspaceApiTypescript.CdnStorageSettings();
-      //expect(instance).to.be.a(DocspaceApiTypescript.CdnStorageSettings);
+      //var instance = new DocspaceApiJavascript.CdnStorageSettings();
+      //expect(instance).to.be.a(DocspaceApiJavascript.CdnStorageSettings);
     });
 
     it('should have the property module (base name: "module")', function() {
       // uncomment below and update the code to test the property module
-      //var instance = new DocspaceApiTypescript.CdnStorageSettings();
+      //var instance = new DocspaceApiJavascript.CdnStorageSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property props (base name: "props")', function() {
       // uncomment below and update the code to test the property props
-      //var instance = new DocspaceApiTypescript.CdnStorageSettings();
+      //var instance = new DocspaceApiJavascript.CdnStorageSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModified (base name: "lastModified")', function() {
       // uncomment below and update the code to test the property lastModified
-      //var instance = new DocspaceApiTypescript.CdnStorageSettings();
+      //var instance = new DocspaceApiJavascript.CdnStorageSettings();
       //expect(instance).to.be();
     });
 
