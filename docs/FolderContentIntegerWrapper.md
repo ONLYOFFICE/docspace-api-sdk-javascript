@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.FolderContentIntegerWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

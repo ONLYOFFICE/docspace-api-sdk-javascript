@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.DarkThemeSettings
+The theme parameters.
 
 ## Properties
 

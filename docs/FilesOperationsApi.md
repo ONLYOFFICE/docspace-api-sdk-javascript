@@ -4,23 +4,23 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**bulkDownload**](FilesOperationsApi.md#bulkDownload) | **PUT** /api/2.0/files/fileops/bulkdownload | Bulk download
-[**checkConversionStatus**](FilesOperationsApi.md#checkConversionStatus) | **GET** /api/2.0/files/file/{fileId}/checkconversion | Get conversion status
-[**checkMoveOrCopyBatchItems**](FilesOperationsApi.md#checkMoveOrCopyBatchItems) | **GET** /api/2.0/files/fileops/move | Check and move or copy to a folder
-[**checkMoveOrCopyDestFolder**](FilesOperationsApi.md#checkMoveOrCopyDestFolder) | **GET** /api/2.0/files/fileops/checkdestfolder | Check for moving or copying to a folder
-[**copyBatchItems**](FilesOperationsApi.md#copyBatchItems) | **PUT** /api/2.0/files/fileops/copy | Copy to the folder
-[**createUploadSession**](FilesOperationsApi.md#createUploadSession) | **POST** /api/2.0/files/{folderId}/upload/create_session | Chunked upload
-[**deleteBatchItems**](FilesOperationsApi.md#deleteBatchItems) | **PUT** /api/2.0/files/fileops/delete | Delete files and folders
-[**deleteFileVersions**](FilesOperationsApi.md#deleteFileVersions) | **PUT** /api/2.0/files/fileops/deleteversion | Delete file versions
-[**duplicateBatchItems**](FilesOperationsApi.md#duplicateBatchItems) | **PUT** /api/2.0/files/fileops/duplicate | Duplicate files and folders
-[**emptyTrash**](FilesOperationsApi.md#emptyTrash) | **PUT** /api/2.0/files/fileops/emptytrash | Empty the \&quot;Trash\&quot; folder
-[**getOperationStatuses**](FilesOperationsApi.md#getOperationStatuses) | **GET** /api/2.0/files/fileops | Get active file operations
-[**getOperationStatusesByType**](FilesOperationsApi.md#getOperationStatusesByType) | **GET** /api/2.0/files/fileops/{operationType} | Get file operation statuses
-[**markAsRead**](FilesOperationsApi.md#markAsRead) | **PUT** /api/2.0/files/fileops/markasread | Mark as read
-[**moveBatchItems**](FilesOperationsApi.md#moveBatchItems) | **PUT** /api/2.0/files/fileops/move | Move or copy to a folder
-[**startFileConversion**](FilesOperationsApi.md#startFileConversion) | **PUT** /api/2.0/files/file/{fileId}/checkconversion | Start file conversion
-[**terminateTasks**](FilesOperationsApi.md#terminateTasks) | **PUT** /api/2.0/files/fileops/terminate/{id} | Finish active operations
-[**updateFileComment**](FilesOperationsApi.md#updateFileComment) | **PUT** /api/2.0/files/file/{fileId}/comment | Update a comment
+[**bulkDownload**](#bulkdownload) | **PUT** /api/2.0/files/fileops/bulkdownload | Bulk download
+[**checkConversionStatus**](#checkconversionstatus) | **GET** /api/2.0/files/file/{fileId}/checkconversion | Get conversion status
+[**checkMoveOrCopyBatchItems**](#checkmoveorcopybatchitems) | **GET** /api/2.0/files/fileops/move | Check and move or copy to a folder
+[**checkMoveOrCopyDestFolder**](#checkmoveorcopydestfolder) | **GET** /api/2.0/files/fileops/checkdestfolder | Check for moving or copying to a folder
+[**copyBatchItems**](#copybatchitems) | **PUT** /api/2.0/files/fileops/copy | Copy to the folder
+[**createUploadSession**](#createuploadsession) | **POST** /api/2.0/files/{folderId}/upload/create_session | Chunked upload
+[**deleteBatchItems**](#deletebatchitems) | **PUT** /api/2.0/files/fileops/delete | Delete files and folders
+[**deleteFileVersions**](#deletefileversions) | **PUT** /api/2.0/files/fileops/deleteversion | Delete file versions
+[**duplicateBatchItems**](#duplicatebatchitems) | **PUT** /api/2.0/files/fileops/duplicate | Duplicate files and folders
+[**emptyTrash**](#emptytrash) | **PUT** /api/2.0/files/fileops/emptytrash | Empty the \&quot;Trash\&quot; folder
+[**getOperationStatuses**](#getoperationstatuses) | **GET** /api/2.0/files/fileops | Get active file operations
+[**getOperationStatusesByType**](#getoperationstatusesbytype) | **GET** /api/2.0/files/fileops/{operationType} | Get file operation statuses
+[**markAsRead**](#markasread) | **PUT** /api/2.0/files/fileops/markasread | Mark as read
+[**moveBatchItems**](#movebatchitems) | **PUT** /api/2.0/files/fileops/move | Move or copy to a folder
+[**startFileConversion**](#startfileconversion) | **PUT** /api/2.0/files/file/{fileId}/checkconversion | Start file conversion
+[**terminateTasks**](#terminatetasks) | **PUT** /api/2.0/files/fileops/terminate/{id} | Finish active operations
+[**updateFileComment**](#updatefilecomment) | **PUT** /api/2.0/files/file/{fileId}/comment | Update a comment
 
 
 

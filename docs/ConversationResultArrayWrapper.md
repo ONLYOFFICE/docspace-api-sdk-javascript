@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.ConversationResultArrayWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.TenantRoomQuotaSettingsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

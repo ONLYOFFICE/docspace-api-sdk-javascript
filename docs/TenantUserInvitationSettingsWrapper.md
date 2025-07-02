@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.TenantUserInvitationSettingsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

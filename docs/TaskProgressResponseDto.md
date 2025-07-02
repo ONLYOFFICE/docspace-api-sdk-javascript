@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.TaskProgressResponseDto
+The task progress response parameters.
 
 ## Properties
 

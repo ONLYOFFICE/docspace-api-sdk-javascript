@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.CustomerInfoWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

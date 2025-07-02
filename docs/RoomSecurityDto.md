@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.RoomSecurityDto
+The room security parameters.
 
 ## Properties
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.PageableModificationResponse
+The response containing paginated modification information.
 
 ## Properties
 

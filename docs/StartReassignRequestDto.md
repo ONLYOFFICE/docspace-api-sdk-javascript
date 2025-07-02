@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.StartReassignRequestDto
+The request parameters for starting the reassignment process.
 
 ## Properties
 

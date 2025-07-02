@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.RoomSecurityWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

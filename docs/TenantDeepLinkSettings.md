@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.TenantDeepLinkSettings
+The deep link settings.
 
 ## Properties
 

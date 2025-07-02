@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.SessionWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

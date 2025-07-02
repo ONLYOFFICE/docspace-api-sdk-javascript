@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.CheckDestFolderWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

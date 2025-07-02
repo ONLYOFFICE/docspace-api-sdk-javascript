@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getGuestSharingLink**](PortalGuestsApi.md#getGuestSharingLink) | **GET** /api/2.0/people/guests/{userid}/share | Get a guest sharing link
+[**getGuestSharingLink**](#getguestsharinglink) | **GET** /api/2.0/people/guests/{userid}/share | Get a guest sharing link
 
 
 

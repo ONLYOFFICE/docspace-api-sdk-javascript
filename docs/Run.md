@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.Run
+The text run parameters.
 
 ## Properties
 

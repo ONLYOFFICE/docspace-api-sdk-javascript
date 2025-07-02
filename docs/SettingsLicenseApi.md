@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**acceptLicense**](SettingsLicenseApi.md#acceptLicense) | **POST** /api/2.0/settings/license/accept | Activate a license
-[**getIsLicenseRequired**](SettingsLicenseApi.md#getIsLicenseRequired) | **GET** /api/2.0/settings/license/required | Request a license
-[**refreshLicense**](SettingsLicenseApi.md#refreshLicense) | **GET** /api/2.0/settings/license/refresh | Refresh the license
-[**uploadLicense**](SettingsLicenseApi.md#uploadLicense) | **POST** /api/2.0/settings/license | Upload a license
+[**acceptLicense**](#acceptlicense) | **POST** /api/2.0/settings/license/accept | Activate a license
+[**getIsLicenseRequired**](#getislicenserequired) | **GET** /api/2.0/settings/license/required | Request a license
+[**refreshLicense**](#refreshlicense) | **GET** /api/2.0/settings/license/refresh | Refresh the license
+[**uploadLicense**](#uploadlicense) | **POST** /api/2.0/settings/license | Upload a license
 
 
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.Operation
+Represents an operation.
 
 ## Properties
 

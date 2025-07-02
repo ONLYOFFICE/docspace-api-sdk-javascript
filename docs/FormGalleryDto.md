@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.FormGalleryDto
+The form gallery parameters.
 
 ## Properties
 

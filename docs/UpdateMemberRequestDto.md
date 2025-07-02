@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.UpdateMemberRequestDto
+The request parameters for updating the user information.
 
 ## Properties
 

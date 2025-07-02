@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.TenantUserInvitationSettingsDto
+User invitation settings
 
 ## Properties
 

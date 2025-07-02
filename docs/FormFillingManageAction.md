@@ -1,6 +1,5 @@
 # DocspaceApiJavascript.FormFillingManageAction
-
-
+[0 - Stop, 1 - Resume]
 
 ## Enum
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.ConfirmData
+The additional confirmation data required for authentication.
 
 ## Properties
 

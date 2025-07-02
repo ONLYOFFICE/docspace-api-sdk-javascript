@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.PasswordSettingsDto
+The password settings parameters.
 
 ## Properties
 

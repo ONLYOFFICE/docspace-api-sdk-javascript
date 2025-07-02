@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.TenantQuotaFeatureDto
+The tenant quota feature parameters.
 
 ## Properties
 

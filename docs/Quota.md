@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.Quota
+The quota parameters.
 
 ## Properties
 

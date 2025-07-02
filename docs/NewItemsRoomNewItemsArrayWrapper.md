@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.NewItemsRoomNewItemsArrayWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

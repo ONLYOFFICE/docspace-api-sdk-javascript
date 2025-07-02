@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.EmployeeFullDto
+The full list of user parameters.
 
 ## Properties
 

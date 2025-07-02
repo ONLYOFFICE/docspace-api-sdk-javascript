@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**changePortalTheme**](PeopleThemeApi.md#changePortalTheme) | **PUT** /api/2.0/people/theme | Change the portal theme
-[**getPortalTheme**](PeopleThemeApi.md#getPortalTheme) | **GET** /api/2.0/people/theme | Get the portal theme
+[**changePortalTheme**](#changeportaltheme) | **PUT** /api/2.0/people/theme | Change the portal theme
+[**getPortalTheme**](#getportaltheme) | **GET** /api/2.0/people/theme | Get the portal theme
 
 
 

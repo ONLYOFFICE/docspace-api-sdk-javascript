@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.FileShareWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

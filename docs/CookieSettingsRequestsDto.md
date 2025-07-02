@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CookieSettingsRequestsDto
+The request parameters for managing cookie settings.
 
 ## Properties
 

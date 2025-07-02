@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.TenantQuota
+The current tenant quota.
 
 ## Properties
 

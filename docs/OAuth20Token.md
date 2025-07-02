@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.OAuth20Token
 
+
 ## Properties
 
 Name | Type | Description | Notes

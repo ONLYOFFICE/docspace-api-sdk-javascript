@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.NotificationSettingsDto
+The notification settings parameters.
 
 ## Properties
 

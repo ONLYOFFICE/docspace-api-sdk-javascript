@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.StorageSettingsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

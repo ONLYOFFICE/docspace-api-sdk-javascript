@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.UpdateFile
+The parameters for updating a file.
 
 ## Properties
 

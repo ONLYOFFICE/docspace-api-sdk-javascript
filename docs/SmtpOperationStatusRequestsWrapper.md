@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.SmtpOperationStatusRequestsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

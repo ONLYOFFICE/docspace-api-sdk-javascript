@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.MailDomainSettingsRequestsDto
+The request parameters for configuring trusted mail domains and visitor invitation settings.
 
 ## Properties
 

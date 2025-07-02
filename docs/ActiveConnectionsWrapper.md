@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.ActiveConnectionsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

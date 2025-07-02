@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.DisplayRequestDto
+The settings request parameters.
 
 ## Properties
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.TenantEntityQuotaSettings
+The tenant entity quota settings.
 
 ## Properties
 

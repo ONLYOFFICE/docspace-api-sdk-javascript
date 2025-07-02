@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.IPRestrictionsSettingsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

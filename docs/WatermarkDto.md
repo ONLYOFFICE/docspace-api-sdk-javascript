@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.WatermarkDto
+The watermark settings.
 
 ## Properties
 

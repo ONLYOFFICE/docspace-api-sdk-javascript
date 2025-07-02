@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.CdnStorageSettings
 
+
 ## Properties
 
 Name | Type | Description | Notes

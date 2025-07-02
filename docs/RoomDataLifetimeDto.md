@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.RoomDataLifetimeDto
+The room data lifetime information.
 
 ## Properties
 

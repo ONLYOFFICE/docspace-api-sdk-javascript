@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.DarkThemeSettingsRequestDto
+The theme settings request parameters.
 
 ## Properties
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.UpdateComment
+The parameters for updating a comment.
 
 ## Properties
 

@@ -1,6 +1,5 @@
 # DocspaceApiJavascript.SubjectFilter
-
-
+[0 - Owner, 1 - Member]
 
 ## Enum
 

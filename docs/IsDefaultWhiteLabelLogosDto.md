@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.IsDefaultWhiteLabelLogosDto
+The default white label logos parameters.
 
 ## Properties
 

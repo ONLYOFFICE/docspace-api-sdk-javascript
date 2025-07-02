@@ -1,6 +1,5 @@
 # DocspaceApiJavascript.SearchArea
-
-
+[0 - Active, 1 - Archive, 2 - Any, 3 - Recent by links, 4 - Template]
 
 ## Enum
 

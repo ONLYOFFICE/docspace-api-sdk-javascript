@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CustomizationConfigDto
+The customization config parameters.
 
 ## Properties
 

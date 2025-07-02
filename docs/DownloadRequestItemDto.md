@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.DownloadRequestItemDto
+The download request item with conversion parameters and security settings.
 
 ## Properties
 

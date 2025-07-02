@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.SmtpSettingsDto
+The SMTP settings parameters.
 
 ## Properties
 

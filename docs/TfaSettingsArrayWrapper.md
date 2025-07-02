@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.TfaSettingsArrayWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

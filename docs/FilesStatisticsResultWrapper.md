@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.FilesStatisticsResultWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

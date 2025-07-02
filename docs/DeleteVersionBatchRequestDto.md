@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.DeleteVersionBatchRequestDto
+The request parameters for deleting file versions.
 
 ## Properties
 

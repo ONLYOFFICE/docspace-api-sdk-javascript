@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**docRegisterPusnNotificationDevice**](SecurityFirebaseApi.md#docRegisterPusnNotificationDevice) | **POST** /api/2.0/settings/push/docregisterdevice | Save the Documents Firebase device token
-[**subscribeDocumentsPushNotification**](SecurityFirebaseApi.md#subscribeDocumentsPushNotification) | **PUT** /api/2.0/settings/push/docsubscribe | Subscribe to Documents push notification
+[**docRegisterPusnNotificationDevice**](#docregisterpusnnotificationdevice) | **POST** /api/2.0/settings/push/docregisterdevice | Save the Documents Firebase device token
+[**subscribeDocumentsPushNotification**](#subscribedocumentspushnotification) | **PUT** /api/2.0/settings/push/docsubscribe | Subscribe to Documents push notification
 
 
 

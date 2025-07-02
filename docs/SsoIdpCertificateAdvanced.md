@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.SsoIdpCertificateAdvanced
+The IdP advanced certificate parameters.
 
 ## Properties
 

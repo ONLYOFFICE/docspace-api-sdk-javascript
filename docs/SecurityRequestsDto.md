@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.SecurityRequestsDto
+The request parameters for managing user security and access permissions.
 
 ## Properties
 

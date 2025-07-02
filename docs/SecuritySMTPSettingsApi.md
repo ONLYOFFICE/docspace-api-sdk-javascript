@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getSmtpOperationStatus**](SecuritySMTPSettingsApi.md#getSmtpOperationStatus) | **GET** /api/2.0/smtpsettings/smtp/test/status | Get the SMTP testing process status
-[**getSmtpSettings**](SecuritySMTPSettingsApi.md#getSmtpSettings) | **GET** /api/2.0/smtpsettings/smtp | Get the SMTP settings
-[**resetSmtpSettings**](SecuritySMTPSettingsApi.md#resetSmtpSettings) | **DELETE** /api/2.0/smtpsettings/smtp | Reset the SMTP settings
-[**saveSmtpSettings**](SecuritySMTPSettingsApi.md#saveSmtpSettings) | **POST** /api/2.0/smtpsettings/smtp | Save the SMTP settings
-[**testSmtpSettings**](SecuritySMTPSettingsApi.md#testSmtpSettings) | **GET** /api/2.0/smtpsettings/smtp/test | Test the SMTP settings
+[**getSmtpOperationStatus**](#getsmtpoperationstatus) | **GET** /api/2.0/smtpsettings/smtp/test/status | Get the SMTP testing process status
+[**getSmtpSettings**](#getsmtpsettings) | **GET** /api/2.0/smtpsettings/smtp | Get the SMTP settings
+[**resetSmtpSettings**](#resetsmtpsettings) | **DELETE** /api/2.0/smtpsettings/smtp | Reset the SMTP settings
+[**saveSmtpSettings**](#savesmtpsettings) | **POST** /api/2.0/smtpsettings/smtp | Save the SMTP settings
+[**testSmtpSettings**](#testsmtpsettings) | **GET** /api/2.0/smtpsettings/smtp/test | Test the SMTP settings
 
 
 

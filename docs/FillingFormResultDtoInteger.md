@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.FillingFormResultDtoInteger
+The parameters of the form filling result.
 
 ## Properties
 

@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getSpaceUsageStatistics**](SettingsStatisticsApi.md#getSpaceUsageStatistics) | **GET** /api/2.0/settings/statistics/spaceusage/{id} | Get the space usage statistics
+[**getSpaceUsageStatistics**](#getspaceusagestatistics) | **GET** /api/2.0/settings/statistics/spaceusage/{id} | Get the space usage statistics
 
 
 

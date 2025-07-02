@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.EncryptionSettings
+The encryption settings.
 
 ## Properties
 

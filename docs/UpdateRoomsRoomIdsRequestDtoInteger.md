@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.UpdateRoomsRoomIdsRequestDtoInteger
+The request parameters for updating the room.
 
 ## Properties
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CheckDocServiceUrlRequestDto
+The request parameters for checking the document service location.
 
 ## Properties
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.Options
+The document options.
 
 ## Properties
 

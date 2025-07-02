@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CreateFileJsonElement
+The parameters for creating a file.
 
 ## Properties
 

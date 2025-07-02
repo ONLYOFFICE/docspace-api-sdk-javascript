@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.OwnerChangeInstructionsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

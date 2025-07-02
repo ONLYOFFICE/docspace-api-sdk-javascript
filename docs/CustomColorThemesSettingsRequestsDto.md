@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CustomColorThemesSettingsRequestsDto
+The request parameters for managing the portal theme settings.
 
 ## Properties
 

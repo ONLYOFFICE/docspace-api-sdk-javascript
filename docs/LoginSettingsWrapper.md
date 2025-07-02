@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.LoginSettingsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

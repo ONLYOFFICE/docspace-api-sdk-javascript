@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.FileLink
+The file link properties.
 
 ## Properties
 

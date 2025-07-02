@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createApiKey**](ApiKeysApi.md#createApiKey) | **POST** /api/2.0/keys | Create a user API key
-[**deleteApiKey**](ApiKeysApi.md#deleteApiKey) | **DELETE** /api/2.0/keys/{keyId} | Delete a user API key
-[**getAllPermissions**](ApiKeysApi.md#getAllPermissions) | **GET** /api/2.0/keys/permissions | Get API key permissions
-[**getApiKey**](ApiKeysApi.md#getApiKey) | **GET** /api/2.0/keys/@self | Get user API key info
-[**getApiKeys**](ApiKeysApi.md#getApiKeys) | **GET** /api/2.0/keys | Get user API keys
-[**updateApiKey**](ApiKeysApi.md#updateApiKey) | **PUT** /api/2.0/keys/{keyId} | Update an API key
+[**createApiKey**](#createapikey) | **POST** /api/2.0/keys | Create a user API key
+[**deleteApiKey**](#deleteapikey) | **DELETE** /api/2.0/keys/{keyId} | Delete a user API key
+[**getAllPermissions**](#getallpermissions) | **GET** /api/2.0/keys/permissions | Get API key permissions
+[**getApiKey**](#getapikey) | **GET** /api/2.0/keys/@self | Get user API key info
+[**getApiKeys**](#getapikeys) | **GET** /api/2.0/keys | Get user API keys
+[**updateApiKey**](#updateapikey) | **PUT** /api/2.0/keys/{keyId} | Update an API key
 
 
 

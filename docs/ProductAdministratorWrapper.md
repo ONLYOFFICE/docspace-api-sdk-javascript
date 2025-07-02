@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.ProductAdministratorWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

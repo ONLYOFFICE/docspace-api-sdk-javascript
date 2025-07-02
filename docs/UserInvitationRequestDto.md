@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.UserInvitationRequestDto
+The user invitation parameters.
 
 ## Properties
 

@@ -1,6 +1,5 @@
 # DocspaceApiJavascript.SexEnum
-
-
+[0 - Female, 1 - Male]
 
 ## Enum
 

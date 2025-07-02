@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.ActiveConnectionsDto
+The active connections parameters.
 
 ## Properties
 

@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.ConfigurationIntegerWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

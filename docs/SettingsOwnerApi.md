@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**sendOwnerChangeInstructions**](SettingsOwnerApi.md#sendOwnerChangeInstructions) | **POST** /api/2.0/settings/owner | Send the owner change instructions
-[**updatePortalOwner**](SettingsOwnerApi.md#updatePortalOwner) | **PUT** /api/2.0/settings/owner | Update the portal owner
+[**sendOwnerChangeInstructions**](#sendownerchangeinstructions) | **POST** /api/2.0/settings/owner | Send the owner change instructions
+[**updatePortalOwner**](#updateportalowner) | **PUT** /api/2.0/settings/owner | Update the portal owner
 
 
 

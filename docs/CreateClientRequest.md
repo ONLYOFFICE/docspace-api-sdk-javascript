@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CreateClientRequest
+The request parameters for creating a client.
 
 ## Properties
 

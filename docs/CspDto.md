@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CspDto
+The CSP (Content Security Policy) parameters.
 
 ## Properties
 

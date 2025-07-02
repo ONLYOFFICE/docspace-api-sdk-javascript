@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.SsoCertificate
+The SSO certificate parameters.
 
 ## Properties
 

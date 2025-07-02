@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.LogoRequestsDto
+The request parameters for the theme-specific logo configurations.
 
 ## Properties
 

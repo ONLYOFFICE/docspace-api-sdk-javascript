@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**generateJwtToken**](SecurityOAuth2Api.md#generateJwtToken) | **GET** /api/2.0/security/oauth2/token | Generate JWT token
+[**generateJwtToken**](#generatejwttoken) | **GET** /api/2.0/security/oauth2/token | Generate JWT token
 
 
 

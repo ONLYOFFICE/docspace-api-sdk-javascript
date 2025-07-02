@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.PluginsConfig
+The configuration settings to connect the special add-ons.
 
 ## Properties
 

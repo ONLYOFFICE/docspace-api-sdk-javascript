@@ -4,16 +4,16 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createBackupSchedule**](BackupApi.md#createBackupSchedule) | **POST** /api/2.0/backup/createbackupschedule | Create the backup schedule
-[**deleteBackup**](BackupApi.md#deleteBackup) | **DELETE** /api/2.0/backup/deletebackup/{id} | Delete the backup
-[**deleteBackupHistory**](BackupApi.md#deleteBackupHistory) | **DELETE** /api/2.0/backup/deletebackuphistory | Delete the backup history
-[**deleteBackupSchedule**](BackupApi.md#deleteBackupSchedule) | **DELETE** /api/2.0/backup/deletebackupschedule | Delete the backup schedule
-[**getBackupHistory**](BackupApi.md#getBackupHistory) | **GET** /api/2.0/backup/getbackuphistory | Get the backup history
-[**getBackupProgress**](BackupApi.md#getBackupProgress) | **GET** /api/2.0/backup/getbackupprogress | Get the backup progress
-[**getBackupSchedule**](BackupApi.md#getBackupSchedule) | **GET** /api/2.0/backup/getbackupschedule | Get the backup schedule
-[**getRestoreProgress**](BackupApi.md#getRestoreProgress) | **GET** /api/2.0/backup/getrestoreprogress | Get the restoring progress
-[**startBackup**](BackupApi.md#startBackup) | **POST** /api/2.0/backup/startbackup | Start the backup
-[**startBackupRestore**](BackupApi.md#startBackupRestore) | **POST** /api/2.0/backup/startrestore | Start the restoring process
+[**createBackupSchedule**](#createbackupschedule) | **POST** /api/2.0/backup/createbackupschedule | Create the backup schedule
+[**deleteBackup**](#deletebackup) | **DELETE** /api/2.0/backup/deletebackup/{id} | Delete the backup
+[**deleteBackupHistory**](#deletebackuphistory) | **DELETE** /api/2.0/backup/deletebackuphistory | Delete the backup history
+[**deleteBackupSchedule**](#deletebackupschedule) | **DELETE** /api/2.0/backup/deletebackupschedule | Delete the backup schedule
+[**getBackupHistory**](#getbackuphistory) | **GET** /api/2.0/backup/getbackuphistory | Get the backup history
+[**getBackupProgress**](#getbackupprogress) | **GET** /api/2.0/backup/getbackupprogress | Get the backup progress
+[**getBackupSchedule**](#getbackupschedule) | **GET** /api/2.0/backup/getbackupschedule | Get the backup schedule
+[**getRestoreProgress**](#getrestoreprogress) | **GET** /api/2.0/backup/getrestoreprogress | Get the restoring progress
+[**startBackup**](#startbackup) | **POST** /api/2.0/backup/startbackup | Start the backup
+[**startBackupRestore**](#startbackuprestore) | **POST** /api/2.0/backup/startrestore | Start the restoring process
 
 
 

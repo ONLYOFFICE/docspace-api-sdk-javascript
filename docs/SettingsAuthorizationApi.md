@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getAuthServices**](SettingsAuthorizationApi.md#getAuthServices) | **GET** /api/2.0/settings/authservice | Get the authorization services
-[**saveAuthKeys**](SettingsAuthorizationApi.md#saveAuthKeys) | **POST** /api/2.0/settings/authservice | Save the authorization keys
+[**getAuthServices**](#getauthservices) | **GET** /api/2.0/settings/authservice | Get the authorization services
+[**saveAuthKeys**](#saveauthkeys) | **POST** /api/2.0/settings/authservice | Save the authorization keys
 
 
 

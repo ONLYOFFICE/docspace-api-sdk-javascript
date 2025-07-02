@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.FileOperationDto
+The file operation information.
 
 ## Properties
 

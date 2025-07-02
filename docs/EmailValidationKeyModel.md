@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.EmailValidationKeyModel
+The confirmation email parameters.
 
 ## Properties
 

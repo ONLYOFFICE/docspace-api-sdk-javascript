@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getIpRestrictions**](SettingsIPRestrictionsApi.md#getIpRestrictions) | **GET** /api/2.0/settings/iprestrictions | Get the IP portal restrictions
-[**readIpRestrictionsSettings**](SettingsIPRestrictionsApi.md#readIpRestrictionsSettings) | **GET** /api/2.0/settings/iprestrictions/settings | Get the IP restriction settings
-[**saveIpRestrictions**](SettingsIPRestrictionsApi.md#saveIpRestrictions) | **PUT** /api/2.0/settings/iprestrictions | Update the IP restrictions
-[**updateIpRestrictionsSettings**](SettingsIPRestrictionsApi.md#updateIpRestrictionsSettings) | **PUT** /api/2.0/settings/iprestrictions/settings | Update the IP restriction settings
+[**getIpRestrictions**](#getiprestrictions) | **GET** /api/2.0/settings/iprestrictions | Get the IP portal restrictions
+[**readIpRestrictionsSettings**](#readiprestrictionssettings) | **GET** /api/2.0/settings/iprestrictions/settings | Get the IP restriction settings
+[**saveIpRestrictions**](#saveiprestrictions) | **PUT** /api/2.0/settings/iprestrictions | Update the IP restrictions
+[**updateIpRestrictionsSettings**](#updateiprestrictionssettings) | **PUT** /api/2.0/settings/iprestrictions/settings | Update the IP restriction settings
 
 
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.FilesSettingsDto
+The file settings parameters.
 
 ## Properties
 

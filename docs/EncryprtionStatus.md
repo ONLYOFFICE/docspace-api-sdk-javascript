@@ -1,7 +1,6 @@
 # DocspaceApiJavascript.EncryprtionStatus
 
 
-
 ## Enum
 
 

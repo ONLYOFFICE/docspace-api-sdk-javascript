@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.CapabilitiesWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

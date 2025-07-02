@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.ExternalShareDto
+The external sharing information and validation data.
 
 ## Properties
 

@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.AccountInfoArrayWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

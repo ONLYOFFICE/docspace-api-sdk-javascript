@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.EditorConfigurationDto
+The editor configuration parameters.
 
 ## Properties
 

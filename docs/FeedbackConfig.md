@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.FeedbackConfig
+The settings for the \&quot;Feedback &amp; Support\&quot; menu button.
 
 ## Properties
 

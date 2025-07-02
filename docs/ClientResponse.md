@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.ClientResponse
 
+
 ## Properties
 
 Name | Type | Description | Notes

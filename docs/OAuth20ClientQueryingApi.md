@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getClient**](OAuth20ClientQueryingApi.md#getClient) | **GET** /api/2.0/clients/{clientId} | Get client details
-[**getClientInfo**](OAuth20ClientQueryingApi.md#getClientInfo) | **GET** /api/2.0/clients/{clientId}/info | Get detailed client information
-[**getClients**](OAuth20ClientQueryingApi.md#getClients) | **GET** /api/2.0/clients | Get clients
-[**getClientsInfo**](OAuth20ClientQueryingApi.md#getClientsInfo) | **GET** /api/2.0/clients/info | Get detailed information of clients
-[**getConsents**](OAuth20ClientQueryingApi.md#getConsents) | **GET** /api/2.0/clients/consents | Get user consents
-[**getPublicClientInfo**](OAuth20ClientQueryingApi.md#getPublicClientInfo) | **GET** /api/2.0/clients/{clientId}/public/info | Get public client information
+[**getClient**](#getclient) | **GET** /api/2.0/clients/{clientId} | Get client details
+[**getClientInfo**](#getclientinfo) | **GET** /api/2.0/clients/{clientId}/info | Get detailed client information
+[**getClients**](#getclients) | **GET** /api/2.0/clients | Get clients
+[**getClientsInfo**](#getclientsinfo) | **GET** /api/2.0/clients/info | Get detailed information of clients
+[**getConsents**](#getconsents) | **GET** /api/2.0/clients/consents | Get user consents
+[**getPublicClientInfo**](#getpublicclientinfo) | **GET** /api/2.0/clients/{clientId}/public/info | Get public client information
 
 
 

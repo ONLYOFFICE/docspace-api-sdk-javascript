@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.DownloadRequestDto
+The request parameters for downloading files.
 
 ## Properties
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.ManageFormFillingDtoInteger
+The parameters for managing form filling.
 
 ## Properties
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.SsoIdpSettings
+The SSO IdP settings.
 
 ## Properties
 

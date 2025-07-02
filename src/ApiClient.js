@@ -62,6 +62,7 @@ class ApiClient {
             'Bearer': {type: 'bearer'}, // JWT
             'ApiKeyBearer': {type: 'apiKey', 'in': 'header', name: 'ApiKeyBearer'},
             'OAuth2': {type: 'oauth2'},
+            'OpenId': {type: 'openIdConnect', openIdConnectUrl: ''},
             'x-signature': {type: 'apiKey', 'in': 'cookie', name: 'x-signature'}
         }
 

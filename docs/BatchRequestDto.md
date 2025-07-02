@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.BatchRequestDto
+The request parameters for copying/moving files.
 
 ## Properties
 

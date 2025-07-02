@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**changeUserPassword**](PeoplePasswordApi.md#changeUserPassword) | **PUT** /api/2.0/people/{userid}/password | Change a user password
-[**sendUserPassword**](PeoplePasswordApi.md#sendUserPassword) | **POST** /api/2.0/people/password | Remind a user password
+[**changeUserPassword**](#changeuserpassword) | **PUT** /api/2.0/people/{userid}/password | Change a user password
+[**sendUserPassword**](#senduserpassword) | **POST** /api/2.0/people/password | Remind a user password
 
 
 

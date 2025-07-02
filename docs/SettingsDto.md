@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.SettingsDto
+The settings information.
 
 ## Properties
 

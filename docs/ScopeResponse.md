@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.ScopeResponse
+The response containing the scope information.
 
 ## Properties
 

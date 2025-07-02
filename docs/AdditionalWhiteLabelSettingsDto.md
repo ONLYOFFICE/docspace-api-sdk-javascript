@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.AdditionalWhiteLabelSettingsDto
+The additional white label settings parameters.
 
 ## Properties
 

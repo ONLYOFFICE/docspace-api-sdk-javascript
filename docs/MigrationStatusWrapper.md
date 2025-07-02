@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.MigrationStatusWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

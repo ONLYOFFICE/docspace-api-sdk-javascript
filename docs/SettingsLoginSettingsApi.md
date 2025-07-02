@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getLoginSettings**](SettingsLoginSettingsApi.md#getLoginSettings) | **GET** /api/2.0/settings/security/loginsettings | Get the login settings
-[**setDefaultLoginSettings**](SettingsLoginSettingsApi.md#setDefaultLoginSettings) | **DELETE** /api/2.0/settings/security/loginsettings | Reset the login settings
-[**updateLoginSettings**](SettingsLoginSettingsApi.md#updateLoginSettings) | **PUT** /api/2.0/settings/security/loginsettings | Update the login settings
+[**getLoginSettings**](#getloginsettings) | **GET** /api/2.0/settings/security/loginsettings | Get the login settings
+[**setDefaultLoginSettings**](#setdefaultloginsettings) | **DELETE** /api/2.0/settings/security/loginsettings | Reset the login settings
+[**updateLoginSettings**](#updateloginsettings) | **PUT** /api/2.0/settings/security/loginsettings | Update the login settings
 
 
 

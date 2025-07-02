@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.AuthenticationTokenWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

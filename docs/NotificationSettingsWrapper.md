@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.NotificationSettingsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

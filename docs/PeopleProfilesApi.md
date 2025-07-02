@@ -4,20 +4,20 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addMember**](PeopleProfilesApi.md#addMember) | **POST** /api/2.0/people | Add a user
-[**deleteMember**](PeopleProfilesApi.md#deleteMember) | **DELETE** /api/2.0/people/{userid} | Delete a user
-[**deleteProfile**](PeopleProfilesApi.md#deleteProfile) | **DELETE** /api/2.0/people/@self | Delete my profile
-[**getAllProfiles**](PeopleProfilesApi.md#getAllProfiles) | **GET** /api/2.0/people | Get profiles
-[**getClaims**](PeopleProfilesApi.md#getClaims) | **GET** /api/2.0/people/tokendiagnostics | Returns the user claims.
-[**getProfileByEmail**](PeopleProfilesApi.md#getProfileByEmail) | **GET** /api/2.0/people/email | Get a profile by user email
-[**getProfileByUserId**](PeopleProfilesApi.md#getProfileByUserId) | **GET** /api/2.0/people/{userid} | Get a profile by user name
-[**getSelfProfile**](PeopleProfilesApi.md#getSelfProfile) | **GET** /api/2.0/people/@self | Get my profile
-[**inviteUsers**](PeopleProfilesApi.md#inviteUsers) | **POST** /api/2.0/people/invite | Invite users
-[**removeUsers**](PeopleProfilesApi.md#removeUsers) | **PUT** /api/2.0/people/delete | Delete users
-[**resendUserInvites**](PeopleProfilesApi.md#resendUserInvites) | **PUT** /api/2.0/people/invite | Resend activation emails
-[**sendEmailChangeInstructions**](PeopleProfilesApi.md#sendEmailChangeInstructions) | **POST** /api/2.0/people/email | Send instructions to change email
-[**updateMember**](PeopleProfilesApi.md#updateMember) | **PUT** /api/2.0/people/{userid} | Update a user
-[**updateMemberCulture**](PeopleProfilesApi.md#updateMemberCulture) | **PUT** /api/2.0/people/{userid}/culture | Update a user culture code
+[**addMember**](#addmember) | **POST** /api/2.0/people | Add a user
+[**deleteMember**](#deletemember) | **DELETE** /api/2.0/people/{userid} | Delete a user
+[**deleteProfile**](#deleteprofile) | **DELETE** /api/2.0/people/@self | Delete my profile
+[**getAllProfiles**](#getallprofiles) | **GET** /api/2.0/people | Get profiles
+[**getClaims**](#getclaims) | **GET** /api/2.0/people/tokendiagnostics | Returns the user claims.
+[**getProfileByEmail**](#getprofilebyemail) | **GET** /api/2.0/people/email | Get a profile by user email
+[**getProfileByUserId**](#getprofilebyuserid) | **GET** /api/2.0/people/{userid} | Get a profile by user name
+[**getSelfProfile**](#getselfprofile) | **GET** /api/2.0/people/@self | Get my profile
+[**inviteUsers**](#inviteusers) | **POST** /api/2.0/people/invite | Invite users
+[**removeUsers**](#removeusers) | **PUT** /api/2.0/people/delete | Delete users
+[**resendUserInvites**](#resenduserinvites) | **PUT** /api/2.0/people/invite | Resend activation emails
+[**sendEmailChangeInstructions**](#sendemailchangeinstructions) | **POST** /api/2.0/people/email | Send instructions to change email
+[**updateMember**](#updatemember) | **PUT** /api/2.0/people/{userid} | Update a user
+[**updateMemberCulture**](#updatememberculture) | **PUT** /api/2.0/people/{userid}/culture | Update a user culture code
 
 
 

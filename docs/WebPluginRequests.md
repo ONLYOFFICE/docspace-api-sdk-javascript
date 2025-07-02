@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.WebPluginRequests
+The configuration settings for the web plugin instance.
 
 ## Properties
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.FilesSettingsDtoInternalFormats
+The internal file formats.
 
 ## Properties
 

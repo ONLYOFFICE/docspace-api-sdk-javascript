@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.WebhooksConfigWithStatusDto
+The webhook configuration with its status.
 
 ## Properties
 

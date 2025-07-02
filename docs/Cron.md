@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.Cron
+The backup cron parameters.
 
 ## Properties
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.SetManagerRequest
+The request for setting a group manager.
 
 ## Properties
 

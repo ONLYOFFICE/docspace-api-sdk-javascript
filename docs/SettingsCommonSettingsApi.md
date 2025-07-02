@@ -4,25 +4,25 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**closeAdminHelper**](SettingsCommonSettingsApi.md#closeAdminHelper) | **PUT** /api/2.0/settings/closeadminhelper | Close the admin helper
-[**completeWizard**](SettingsCommonSettingsApi.md#completeWizard) | **PUT** /api/2.0/settings/wizard/complete | Complete the Wizard settings
-[**configureDeepLink**](SettingsCommonSettingsApi.md#configureDeepLink) | **POST** /api/2.0/settings/deeplink | Configure the deep link settings
-[**deletePortalColorTheme**](SettingsCommonSettingsApi.md#deletePortalColorTheme) | **DELETE** /api/2.0/settings/colortheme | Delete a color theme
-[**getDeepLinkSettings**](SettingsCommonSettingsApi.md#getDeepLinkSettings) | **GET** /api/2.0/settings/deeplink | Get the deep link settings
-[**getPaymentSettings**](SettingsCommonSettingsApi.md#getPaymentSettings) | **GET** /api/2.0/settings/payment | Get the payment settings
-[**getPortalColorTheme**](SettingsCommonSettingsApi.md#getPortalColorTheme) | **GET** /api/2.0/settings/colortheme | Get a color theme
-[**getPortalHostname**](SettingsCommonSettingsApi.md#getPortalHostname) | **GET** /api/2.0/settings/machine | Get hostname
-[**getPortalLogo**](SettingsCommonSettingsApi.md#getPortalLogo) | **GET** /api/2.0/settings/logo | Get a portal logo
-[**getPortalSettings**](SettingsCommonSettingsApi.md#getPortalSettings) | **GET** /api/2.0/settings | Get the portal settings
-[**getSocketSettings**](SettingsCommonSettingsApi.md#getSocketSettings) | **GET** /api/2.0/settings/socket | Get the socket settings
-[**getSupportedCultures**](SettingsCommonSettingsApi.md#getSupportedCultures) | **GET** /api/2.0/settings/cultures | Get supported languages
-[**getTenantUserInvitationSettings**](SettingsCommonSettingsApi.md#getTenantUserInvitationSettings) | **GET** /api/2.0/settings/invitationsettings | Get the user invitation settings
-[**getTimeZones**](SettingsCommonSettingsApi.md#getTimeZones) | **GET** /api/2.0/settings/timezones | Get time zones
-[**saveDnsSettings**](SettingsCommonSettingsApi.md#saveDnsSettings) | **PUT** /api/2.0/settings/dns | Save the DNS settings
-[**saveMailDomainSettings**](SettingsCommonSettingsApi.md#saveMailDomainSettings) | **POST** /api/2.0/settings/maildomainsettings | Save the mail domain settings
-[**savePortalColorTheme**](SettingsCommonSettingsApi.md#savePortalColorTheme) | **PUT** /api/2.0/settings/colortheme | Save a color theme
-[**updateEmailActivationSettings**](SettingsCommonSettingsApi.md#updateEmailActivationSettings) | **PUT** /api/2.0/settings/emailactivation | Update the email activation settings
-[**updateInvitationSettings**](SettingsCommonSettingsApi.md#updateInvitationSettings) | **PUT** /api/2.0/settings/invitationsettings | Update user invitation settings
+[**closeAdminHelper**](#closeadminhelper) | **PUT** /api/2.0/settings/closeadminhelper | Close the admin helper
+[**completeWizard**](#completewizard) | **PUT** /api/2.0/settings/wizard/complete | Complete the Wizard settings
+[**configureDeepLink**](#configuredeeplink) | **POST** /api/2.0/settings/deeplink | Configure the deep link settings
+[**deletePortalColorTheme**](#deleteportalcolortheme) | **DELETE** /api/2.0/settings/colortheme | Delete a color theme
+[**getDeepLinkSettings**](#getdeeplinksettings) | **GET** /api/2.0/settings/deeplink | Get the deep link settings
+[**getPaymentSettings**](#getpaymentsettings) | **GET** /api/2.0/settings/payment | Get the payment settings
+[**getPortalColorTheme**](#getportalcolortheme) | **GET** /api/2.0/settings/colortheme | Get a color theme
+[**getPortalHostname**](#getportalhostname) | **GET** /api/2.0/settings/machine | Get hostname
+[**getPortalLogo**](#getportallogo) | **GET** /api/2.0/settings/logo | Get a portal logo
+[**getPortalSettings**](#getportalsettings) | **GET** /api/2.0/settings | Get the portal settings
+[**getSocketSettings**](#getsocketsettings) | **GET** /api/2.0/settings/socket | Get the socket settings
+[**getSupportedCultures**](#getsupportedcultures) | **GET** /api/2.0/settings/cultures | Get supported languages
+[**getTenantUserInvitationSettings**](#gettenantuserinvitationsettings) | **GET** /api/2.0/settings/invitationsettings | Get the user invitation settings
+[**getTimeZones**](#gettimezones) | **GET** /api/2.0/settings/timezones | Get time zones
+[**saveDnsSettings**](#savednssettings) | **PUT** /api/2.0/settings/dns | Save the DNS settings
+[**saveMailDomainSettings**](#savemaildomainsettings) | **POST** /api/2.0/settings/maildomainsettings | Save the mail domain settings
+[**savePortalColorTheme**](#saveportalcolortheme) | **PUT** /api/2.0/settings/colortheme | Save a color theme
+[**updateEmailActivationSettings**](#updateemailactivationsettings) | **PUT** /api/2.0/settings/emailactivation | Update the email activation settings
+[**updateInvitationSettings**](#updateinvitationsettings) | **PUT** /api/2.0/settings/invitationsettings | Update user invitation settings
 
 
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.WebhooksLogDto
+The webhook log parameters.
 
 ## Properties
 

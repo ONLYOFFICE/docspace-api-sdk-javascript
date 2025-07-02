@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.TurnOnAdminMessageSettingsRequestDto
+The request parameters for enabling or disabling administrator messaging system.
 
 ## Properties
 

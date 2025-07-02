@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.MigratingApiGroup
 
+
 ## Properties
 
 Name | Type | Description | Notes

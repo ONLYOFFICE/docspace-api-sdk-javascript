@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.UpdateWebhooksConfigRequestsDto
+The request parameters for updating the webhook configuration.
 
 ## Properties
 

@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.SsoSettingsV2Wrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

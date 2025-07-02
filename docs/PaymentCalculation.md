@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.PaymentCalculation
+The payment calculation.
 
 ## Properties
 

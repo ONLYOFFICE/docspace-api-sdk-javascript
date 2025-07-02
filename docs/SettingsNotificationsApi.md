@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getNotificationSettings**](SettingsNotificationsApi.md#getNotificationSettings) | **GET** /api/2.0/settings/notification/{type} | Check notification availability
-[**getRoomsNotificationSettings**](SettingsNotificationsApi.md#getRoomsNotificationSettings) | **GET** /api/2.0/settings/notification/rooms | Get room notification settings
-[**setNotificationSettings**](SettingsNotificationsApi.md#setNotificationSettings) | **POST** /api/2.0/settings/notification | Enable notifications
-[**setRoomsNotificationStatus**](SettingsNotificationsApi.md#setRoomsNotificationStatus) | **POST** /api/2.0/settings/notification/rooms | Set room notification status
+[**getNotificationSettings**](#getnotificationsettings) | **GET** /api/2.0/settings/notification/{type} | Check notification availability
+[**getRoomsNotificationSettings**](#getroomsnotificationsettings) | **GET** /api/2.0/settings/notification/rooms | Get room notification settings
+[**setNotificationSettings**](#setnotificationsettings) | **POST** /api/2.0/settings/notification | Enable notifications
+[**setRoomsNotificationStatus**](#setroomsnotificationstatus) | **POST** /api/2.0/settings/notification/rooms | Set room notification status
 
 
 

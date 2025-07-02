@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.AuditEventDto
+The audit event parameters.
 
 ## Properties
 

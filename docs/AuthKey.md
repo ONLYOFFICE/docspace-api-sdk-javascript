@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.AuthKey
+The authentication key parameters.
 
 ## Properties
 

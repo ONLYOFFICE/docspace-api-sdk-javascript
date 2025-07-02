@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.EmailMemberRequestDto
+The request parameters for the user email.
 
 ## Properties
 

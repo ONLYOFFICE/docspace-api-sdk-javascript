@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.WebhooksLogWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

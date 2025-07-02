@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.DraftLocationInteger
+The file draft parameters.
 
 ## Properties
 

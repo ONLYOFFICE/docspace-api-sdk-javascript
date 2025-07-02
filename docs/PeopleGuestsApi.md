@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**approveGuestShareLink**](PeopleGuestsApi.md#approveGuestShareLink) | **POST** /api/2.0/people/guests/share/approve | Approve a guest sharing link
-[**deleteGuests**](PeopleGuestsApi.md#deleteGuests) | **DELETE** /api/2.0/people/guests | Delete guests
+[**approveGuestShareLink**](#approveguestsharelink) | **POST** /api/2.0/people/guests/share/approve | Approve a guest sharing link
+[**deleteGuests**](#deleteguests) | **DELETE** /api/2.0/people/guests | Delete guests
 
 
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.AuthData
+The authentication data.
 
 ## Properties
 

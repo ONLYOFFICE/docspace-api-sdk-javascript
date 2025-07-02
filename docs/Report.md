@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.Report
+Represents a report containing a collection of operations.
 
 ## Properties
 

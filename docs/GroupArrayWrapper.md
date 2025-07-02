@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.GroupArrayWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

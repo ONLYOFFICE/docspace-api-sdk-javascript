@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.OpenCustomerSessionRequestDto
+Client session opening parameters
 
 ## Properties
 

@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.ICompressWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

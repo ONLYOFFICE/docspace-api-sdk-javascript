@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getCookieSettings**](SettingsCookiesApi.md#getCookieSettings) | **GET** /api/2.0/settings/cookiesettings | Get cookies lifetime
-[**updateCookieSettings**](SettingsCookiesApi.md#updateCookieSettings) | **PUT** /api/2.0/settings/cookiesettings | Update cookies lifetime
+[**getCookieSettings**](#getcookiesettings) | **GET** /api/2.0/settings/cookiesettings | Get cookies lifetime
+[**updateCookieSettings**](#updatecookiesettings) | **PUT** /api/2.0/settings/cookiesettings | Update cookies lifetime
 
 
 

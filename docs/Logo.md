@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.Logo
+The room logo information.
 
 ## Properties
 

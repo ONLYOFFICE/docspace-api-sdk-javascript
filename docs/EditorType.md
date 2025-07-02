@@ -1,6 +1,5 @@
 # DocspaceApiJavascript.EditorType
-
-
+[0 - Desktop, 1 - Mobile, 2 - Embedded]
 
 ## Enum
 

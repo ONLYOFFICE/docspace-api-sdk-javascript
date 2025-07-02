@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.WhiteLabelItemDto
+The white label item parameters.
 
 ## Properties
 

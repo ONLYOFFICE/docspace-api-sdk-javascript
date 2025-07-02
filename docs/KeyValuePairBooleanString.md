@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.KeyValuePairBooleanString
 
+
 ## Properties
 
 Name | Type | Description | Notes

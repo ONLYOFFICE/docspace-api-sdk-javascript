@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.ArchiveRoomRequest
+The parameters for archiving a room.
 
 ## Properties
 

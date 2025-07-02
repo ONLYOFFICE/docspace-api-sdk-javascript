@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.UploadRequestDto
+The request parameters for uploading a file.
 
 ## Properties
 

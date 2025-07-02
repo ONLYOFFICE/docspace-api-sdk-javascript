@@ -4,16 +4,16 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getEnabledModules**](SettingsSecurityApi.md#getEnabledModules) | **GET** /api/2.0/settings/security/modules | Get the enabled modules
-[**getIsProductAdministrator**](SettingsSecurityApi.md#getIsProductAdministrator) | **GET** /api/2.0/settings/security/administrator | Check a product administrator
-[**getPasswordSettings**](SettingsSecurityApi.md#getPasswordSettings) | **GET** /api/2.0/settings/security/password | Get the password settings
-[**getProductAdministrators**](SettingsSecurityApi.md#getProductAdministrators) | **GET** /api/2.0/settings/security/administrator/{productid} | Get the product administrators
-[**getWebItemSecurityInfo**](SettingsSecurityApi.md#getWebItemSecurityInfo) | **GET** /api/2.0/settings/security/{id} | Get the module availability
-[**getWebItemSettingsSecurityInfo**](SettingsSecurityApi.md#getWebItemSettingsSecurityInfo) | **GET** /api/2.0/settings/security | Get the security settings
-[**setAccessToWebItems**](SettingsSecurityApi.md#setAccessToWebItems) | **PUT** /api/2.0/settings/security/access | Set the security settings to modules
-[**setProductAdministrator**](SettingsSecurityApi.md#setProductAdministrator) | **PUT** /api/2.0/settings/security/administrator | Set a product administrator
-[**setWebItemSecurity**](SettingsSecurityApi.md#setWebItemSecurity) | **PUT** /api/2.0/settings/security | Set the module security settings
-[**updatePasswordSettings**](SettingsSecurityApi.md#updatePasswordSettings) | **PUT** /api/2.0/settings/security/password | Set the password settings
+[**getEnabledModules**](#getenabledmodules) | **GET** /api/2.0/settings/security/modules | Get the enabled modules
+[**getIsProductAdministrator**](#getisproductadministrator) | **GET** /api/2.0/settings/security/administrator | Check a product administrator
+[**getPasswordSettings**](#getpasswordsettings) | **GET** /api/2.0/settings/security/password | Get the password settings
+[**getProductAdministrators**](#getproductadministrators) | **GET** /api/2.0/settings/security/administrator/{productid} | Get the product administrators
+[**getWebItemSecurityInfo**](#getwebitemsecurityinfo) | **GET** /api/2.0/settings/security/{id} | Get the module availability
+[**getWebItemSettingsSecurityInfo**](#getwebitemsettingssecurityinfo) | **GET** /api/2.0/settings/security | Get the security settings
+[**setAccessToWebItems**](#setaccesstowebitems) | **PUT** /api/2.0/settings/security/access | Set the security settings to modules
+[**setProductAdministrator**](#setproductadministrator) | **PUT** /api/2.0/settings/security/administrator | Set a product administrator
+[**setWebItemSecurity**](#setwebitemsecurity) | **PUT** /api/2.0/settings/security | Set the module security settings
+[**updatePasswordSettings**](#updatepasswordsettings) | **PUT** /api/2.0/settings/security/password | Set the password settings
 
 
 

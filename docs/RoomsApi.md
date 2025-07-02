@@ -4,44 +4,44 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addRoomTags**](RoomsApi.md#addRoomTags) | **PUT** /api/2.0/files/rooms/{id}/tags | Add the room tags
-[**archiveRoom**](RoomsApi.md#archiveRoom) | **PUT** /api/2.0/files/rooms/{id}/archive | Archive a room
-[**changeRoomCover**](RoomsApi.md#changeRoomCover) | **POST** /api/2.0/files/rooms/{id}/cover | Change the room cover
-[**createRoom**](RoomsApi.md#createRoom) | **POST** /api/2.0/files/rooms | Create a room
-[**createRoomFromTemplate**](RoomsApi.md#createRoomFromTemplate) | **POST** /api/2.0/files/rooms/fromtemplate | Create a room from the template
-[**createRoomLogo**](RoomsApi.md#createRoomLogo) | **POST** /api/2.0/files/rooms/{id}/logo | Create a room logo
-[**createRoomTag**](RoomsApi.md#createRoomTag) | **POST** /api/2.0/files/tags | Create a tag
-[**createRoomTemplate**](RoomsApi.md#createRoomTemplate) | **POST** /api/2.0/files/roomtemplate | Start creating room template
-[**createRoomThirdParty**](RoomsApi.md#createRoomThirdParty) | **POST** /api/2.0/files/rooms/thirdparty/{id} | Create a third-party room
-[**deleteCustomTags**](RoomsApi.md#deleteCustomTags) | **DELETE** /api/2.0/files/tags | Delete tags
-[**deleteRoom**](RoomsApi.md#deleteRoom) | **DELETE** /api/2.0/files/rooms/{id} | Remove a room
-[**deleteRoomLogo**](RoomsApi.md#deleteRoomLogo) | **DELETE** /api/2.0/files/rooms/{id}/logo | Remove a room logo
-[**deleteRoomTags**](RoomsApi.md#deleteRoomTags) | **DELETE** /api/2.0/files/rooms/{id}/tags | Remove the room tags
-[**getNewRoomItems**](RoomsApi.md#getNewRoomItems) | **GET** /api/2.0/files/rooms/{id}/news | Get the new room items
-[**getPublicSettings**](RoomsApi.md#getPublicSettings) | **GET** /api/2.0/files/roomtemplate/{id}/public | Get public settings
-[**getRoomCovers**](RoomsApi.md#getRoomCovers) | **GET** /api/2.0/files/rooms/covers | Get covers
-[**getRoomCreatingStatus**](RoomsApi.md#getRoomCreatingStatus) | **GET** /api/2.0/files/rooms/fromtemplate/status | Get the room creation progress
-[**getRoomIndexExport**](RoomsApi.md#getRoomIndexExport) | **GET** /api/2.0/files/rooms/indexexport | Get the room index export
-[**getRoomInfo**](RoomsApi.md#getRoomInfo) | **GET** /api/2.0/files/rooms/{id} | Get room information
-[**getRoomLinks**](RoomsApi.md#getRoomLinks) | **GET** /api/2.0/files/rooms/{id}/links | Get the room links
-[**getRoomSecurityInfo**](RoomsApi.md#getRoomSecurityInfo) | **GET** /api/2.0/files/rooms/{id}/share | Get the room access rights
-[**getRoomTagsInfo**](RoomsApi.md#getRoomTagsInfo) | **GET** /api/2.0/files/tags | Get tags
-[**getRoomTemplateCreatingStatus**](RoomsApi.md#getRoomTemplateCreatingStatus) | **GET** /api/2.0/files/roomtemplate/status | Get status of room template creation
-[**getRoomsFolder**](RoomsApi.md#getRoomsFolder) | **GET** /api/2.0/files/rooms | Get rooms
-[**getRoomsNewItems**](RoomsApi.md#getRoomsNewItems) | **GET** /api/2.0/files/rooms/news | Get the room new items
-[**getRoomsPrimaryExternalLink**](RoomsApi.md#getRoomsPrimaryExternalLink) | **GET** /api/2.0/files/rooms/{id}/link | Get the room primary external link
-[**pinRoom**](RoomsApi.md#pinRoom) | **PUT** /api/2.0/files/rooms/{id}/pin | Pin a room
-[**reorderRoom**](RoomsApi.md#reorderRoom) | **PUT** /api/2.0/files/rooms/{id}/reorder | Reorder the room
-[**resendEmailInvitations**](RoomsApi.md#resendEmailInvitations) | **POST** /api/2.0/files/rooms/{id}/resend | Resend the room invitations
-[**setPublicSettings**](RoomsApi.md#setPublicSettings) | **PUT** /api/2.0/files/roomtemplate/public | Set public settings
-[**setRoomLink**](RoomsApi.md#setRoomLink) | **PUT** /api/2.0/files/rooms/{id}/links | Set the room external or invitation link
-[**setRoomSecurity**](RoomsApi.md#setRoomSecurity) | **PUT** /api/2.0/files/rooms/{id}/share | Set the room access rights
-[**startRoomIndexExport**](RoomsApi.md#startRoomIndexExport) | **POST** /api/2.0/files/rooms/{id}/indexexport | Start the room index export
-[**terminateRoomIndexExport**](RoomsApi.md#terminateRoomIndexExport) | **DELETE** /api/2.0/files/rooms/indexexport | Terminate the room index export
-[**unarchiveRoom**](RoomsApi.md#unarchiveRoom) | **PUT** /api/2.0/files/rooms/{id}/unarchive | Unarchive a room
-[**unpinRoom**](RoomsApi.md#unpinRoom) | **PUT** /api/2.0/files/rooms/{id}/unpin | Unpin a room
-[**updateRoom**](RoomsApi.md#updateRoom) | **PUT** /api/2.0/files/rooms/{id} | Update a room
-[**uploadRoomLogo**](RoomsApi.md#uploadRoomLogo) | **POST** /api/2.0/files/logos | Upload a room logo image
+[**addRoomTags**](#addroomtags) | **PUT** /api/2.0/files/rooms/{id}/tags | Add the room tags
+[**archiveRoom**](#archiveroom) | **PUT** /api/2.0/files/rooms/{id}/archive | Archive a room
+[**changeRoomCover**](#changeroomcover) | **POST** /api/2.0/files/rooms/{id}/cover | Change the room cover
+[**createRoom**](#createroom) | **POST** /api/2.0/files/rooms | Create a room
+[**createRoomFromTemplate**](#createroomfromtemplate) | **POST** /api/2.0/files/rooms/fromtemplate | Create a room from the template
+[**createRoomLogo**](#createroomlogo) | **POST** /api/2.0/files/rooms/{id}/logo | Create a room logo
+[**createRoomTag**](#createroomtag) | **POST** /api/2.0/files/tags | Create a tag
+[**createRoomTemplate**](#createroomtemplate) | **POST** /api/2.0/files/roomtemplate | Start creating room template
+[**createRoomThirdParty**](#createroomthirdparty) | **POST** /api/2.0/files/rooms/thirdparty/{id} | Create a third-party room
+[**deleteCustomTags**](#deletecustomtags) | **DELETE** /api/2.0/files/tags | Delete tags
+[**deleteRoom**](#deleteroom) | **DELETE** /api/2.0/files/rooms/{id} | Remove a room
+[**deleteRoomLogo**](#deleteroomlogo) | **DELETE** /api/2.0/files/rooms/{id}/logo | Remove a room logo
+[**deleteRoomTags**](#deleteroomtags) | **DELETE** /api/2.0/files/rooms/{id}/tags | Remove the room tags
+[**getNewRoomItems**](#getnewroomitems) | **GET** /api/2.0/files/rooms/{id}/news | Get the new room items
+[**getPublicSettings**](#getpublicsettings) | **GET** /api/2.0/files/roomtemplate/{id}/public | Get public settings
+[**getRoomCovers**](#getroomcovers) | **GET** /api/2.0/files/rooms/covers | Get covers
+[**getRoomCreatingStatus**](#getroomcreatingstatus) | **GET** /api/2.0/files/rooms/fromtemplate/status | Get the room creation progress
+[**getRoomIndexExport**](#getroomindexexport) | **GET** /api/2.0/files/rooms/indexexport | Get the room index export
+[**getRoomInfo**](#getroominfo) | **GET** /api/2.0/files/rooms/{id} | Get room information
+[**getRoomLinks**](#getroomlinks) | **GET** /api/2.0/files/rooms/{id}/links | Get the room links
+[**getRoomSecurityInfo**](#getroomsecurityinfo) | **GET** /api/2.0/files/rooms/{id}/share | Get the room access rights
+[**getRoomTagsInfo**](#getroomtagsinfo) | **GET** /api/2.0/files/tags | Get tags
+[**getRoomTemplateCreatingStatus**](#getroomtemplatecreatingstatus) | **GET** /api/2.0/files/roomtemplate/status | Get status of room template creation
+[**getRoomsFolder**](#getroomsfolder) | **GET** /api/2.0/files/rooms | Get rooms
+[**getRoomsNewItems**](#getroomsnewitems) | **GET** /api/2.0/files/rooms/news | Get the room new items
+[**getRoomsPrimaryExternalLink**](#getroomsprimaryexternallink) | **GET** /api/2.0/files/rooms/{id}/link | Get the room primary external link
+[**pinRoom**](#pinroom) | **PUT** /api/2.0/files/rooms/{id}/pin | Pin a room
+[**reorderRoom**](#reorderroom) | **PUT** /api/2.0/files/rooms/{id}/reorder | Reorder the room
+[**resendEmailInvitations**](#resendemailinvitations) | **POST** /api/2.0/files/rooms/{id}/resend | Resend the room invitations
+[**setPublicSettings**](#setpublicsettings) | **PUT** /api/2.0/files/roomtemplate/public | Set public settings
+[**setRoomLink**](#setroomlink) | **PUT** /api/2.0/files/rooms/{id}/links | Set the room external or invitation link
+[**setRoomSecurity**](#setroomsecurity) | **PUT** /api/2.0/files/rooms/{id}/share | Set the room access rights
+[**startRoomIndexExport**](#startroomindexexport) | **POST** /api/2.0/files/rooms/{id}/indexexport | Start the room index export
+[**terminateRoomIndexExport**](#terminateroomindexexport) | **DELETE** /api/2.0/files/rooms/indexexport | Terminate the room index export
+[**unarchiveRoom**](#unarchiveroom) | **PUT** /api/2.0/files/rooms/{id}/unarchive | Unarchive a room
+[**unpinRoom**](#unpinroom) | **PUT** /api/2.0/files/rooms/{id}/unpin | Unpin a room
+[**updateRoom**](#updateroom) | **PUT** /api/2.0/files/rooms/{id} | Update a room
+[**uploadRoomLogo**](#uploadroomlogo) | **POST** /api/2.0/files/logos | Upload a room logo image
 
 
 

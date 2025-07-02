@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.PerformCustomerOperationRequestDto
+Parameters for performing a customer operation
 
 ## Properties
 

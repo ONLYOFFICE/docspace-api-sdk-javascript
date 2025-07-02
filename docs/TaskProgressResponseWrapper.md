@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.TaskProgressResponseWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

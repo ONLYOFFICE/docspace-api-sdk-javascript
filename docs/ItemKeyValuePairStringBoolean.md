@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.ItemKeyValuePairStringBoolean
 
+
 ## Properties
 
 Name | Type | Description | Notes

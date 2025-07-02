@@ -4,16 +4,16 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getDeletePersonalFolderProgress**](PeopleUserDataApi.md#getDeletePersonalFolderProgress) | **GET** /api/2.0/people/delete/personal/progress | Get the progress of deleting the personal folder
-[**getReassignProgress**](PeopleUserDataApi.md#getReassignProgress) | **GET** /api/2.0/people/reassign/progress/{userid} | Get the reassignment progress
-[**getRemoveProgress**](PeopleUserDataApi.md#getRemoveProgress) | **GET** /api/2.0/people/remove/progress/{userid} | Get the deletion progress
-[**necessaryReassign**](PeopleUserDataApi.md#necessaryReassign) | **GET** /api/2.0/people/reassign/necessary | Check the data reassignment need
-[**sendInstructionsToDelete**](PeopleUserDataApi.md#sendInstructionsToDelete) | **PUT** /api/2.0/people/self/delete | Send the deletion instructions
-[**startDeletePersonalFolder**](PeopleUserDataApi.md#startDeletePersonalFolder) | **POST** /api/2.0/people/delete/personal/start | Delete the personal folder
-[**startReassign**](PeopleUserDataApi.md#startReassign) | **POST** /api/2.0/people/reassign/start | Start the data reassignment
-[**startRemove**](PeopleUserDataApi.md#startRemove) | **POST** /api/2.0/people/remove/start | Start the data deletion
-[**terminateReassign**](PeopleUserDataApi.md#terminateReassign) | **PUT** /api/2.0/people/reassign/terminate | Terminate the data reassignment
-[**terminateRemove**](PeopleUserDataApi.md#terminateRemove) | **PUT** /api/2.0/people/remove/terminate | Terminate the data deletion
+[**getDeletePersonalFolderProgress**](#getdeletepersonalfolderprogress) | **GET** /api/2.0/people/delete/personal/progress | Get the progress of deleting the personal folder
+[**getReassignProgress**](#getreassignprogress) | **GET** /api/2.0/people/reassign/progress/{userid} | Get the reassignment progress
+[**getRemoveProgress**](#getremoveprogress) | **GET** /api/2.0/people/remove/progress/{userid} | Get the deletion progress
+[**necessaryReassign**](#necessaryreassign) | **GET** /api/2.0/people/reassign/necessary | Check the data reassignment need
+[**sendInstructionsToDelete**](#sendinstructionstodelete) | **PUT** /api/2.0/people/self/delete | Send the deletion instructions
+[**startDeletePersonalFolder**](#startdeletepersonalfolder) | **POST** /api/2.0/people/delete/personal/start | Delete the personal folder
+[**startReassign**](#startreassign) | **POST** /api/2.0/people/reassign/start | Start the data reassignment
+[**startRemove**](#startremove) | **POST** /api/2.0/people/remove/start | Start the data deletion
+[**terminateReassign**](#terminatereassign) | **PUT** /api/2.0/people/reassign/terminate | Terminate the data reassignment
+[**terminateRemove**](#terminateremove) | **PUT** /api/2.0/people/remove/terminate | Terminate the data deletion
 
 
 

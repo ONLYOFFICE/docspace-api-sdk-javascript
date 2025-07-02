@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.IsDefaultWhiteLabelLogosArrayWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

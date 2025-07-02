@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.ThumbnailsRequest
+The thumbnail request.
 
 ## Properties
 

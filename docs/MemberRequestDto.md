@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.MemberRequestDto
+The user request parameters.
 
 ## Properties
 

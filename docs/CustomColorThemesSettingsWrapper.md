@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.CustomColorThemesSettingsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.Contact
+The contact information.
 
 ## Properties
 

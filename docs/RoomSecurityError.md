@@ -1,6 +1,5 @@
 # DocspaceApiJavascript.RoomSecurityError
-
-
+The error type.
 
 ## Enum
 

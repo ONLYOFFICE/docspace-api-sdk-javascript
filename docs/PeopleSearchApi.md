@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getAccountsEntriesWithShared**](PeopleSearchApi.md#getAccountsEntriesWithShared) | **GET** /api/2.0/accounts/room/{id}/search | Get account entries
-[**getSearch**](PeopleSearchApi.md#getSearch) | **GET** /api/2.0/people/@search/{query} | Search users
-[**getSimpleByFilter**](PeopleSearchApi.md#getSimpleByFilter) | **GET** /api/2.0/people/simple/filter | Search users by extended filter
-[**getUsersWithRoomShared**](PeopleSearchApi.md#getUsersWithRoomShared) | **GET** /api/2.0/people/room/{id} | Get users with room sharing settings
-[**searchUsersByExtendedFilter**](PeopleSearchApi.md#searchUsersByExtendedFilter) | **GET** /api/2.0/people/filter | Search users with detaailed information by extended filter
-[**searchUsersByQuery**](PeopleSearchApi.md#searchUsersByQuery) | **GET** /api/2.0/people/search | Search users (using query parameters)
-[**searchUsersByStatus**](PeopleSearchApi.md#searchUsersByStatus) | **GET** /api/2.0/people/status/{status}/search | Search users by status filter
+[**getAccountsEntriesWithShared**](#getaccountsentrieswithshared) | **GET** /api/2.0/accounts/room/{id}/search | Get account entries
+[**getSearch**](#getsearch) | **GET** /api/2.0/people/@search/{query} | Search users
+[**getSimpleByFilter**](#getsimplebyfilter) | **GET** /api/2.0/people/simple/filter | Search users by extended filter
+[**getUsersWithRoomShared**](#getuserswithroomshared) | **GET** /api/2.0/people/room/{id} | Get users with room sharing settings
+[**searchUsersByExtendedFilter**](#searchusersbyextendedfilter) | **GET** /api/2.0/people/filter | Search users with detaailed information by extended filter
+[**searchUsersByQuery**](#searchusersbyquery) | **GET** /api/2.0/people/search | Search users (using query parameters)
+[**searchUsersByStatus**](#searchusersbystatus) | **GET** /api/2.0/people/status/{status}/search | Search users by status filter
 
 
 

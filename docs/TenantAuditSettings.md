@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.TenantAuditSettings
+The tenant audit settings parameters.
 
 ## Properties
 

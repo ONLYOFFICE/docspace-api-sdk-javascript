@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.SecurityArrayWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

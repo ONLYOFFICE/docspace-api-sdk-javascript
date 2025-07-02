@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CreateFolder
+The parameters for creating a folder.
 
 ## Properties
 

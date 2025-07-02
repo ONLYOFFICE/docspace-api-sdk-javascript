@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.UserInfo
+The user information.
 
 ## Properties
 

@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createCustomNavigationItem**](SettingsCustomNavigationApi.md#createCustomNavigationItem) | **POST** /api/2.0/settings/customnavigation/create | Add a custom navigation item
-[**deleteCustomNavigationItem**](SettingsCustomNavigationApi.md#deleteCustomNavigationItem) | **DELETE** /api/2.0/settings/customnavigation/delete/{id} | Delete a custom navigation item
-[**getCustomNavigationItem**](SettingsCustomNavigationApi.md#getCustomNavigationItem) | **GET** /api/2.0/settings/customnavigation/get/{id} | Get a custom navigation item by ID
-[**getCustomNavigationItemSample**](SettingsCustomNavigationApi.md#getCustomNavigationItemSample) | **GET** /api/2.0/settings/customnavigation/getsample | Get a custom navigation item sample
-[**getCustomNavigationItems**](SettingsCustomNavigationApi.md#getCustomNavigationItems) | **GET** /api/2.0/settings/customnavigation/getall | Get the custom navigation items
+[**createCustomNavigationItem**](#createcustomnavigationitem) | **POST** /api/2.0/settings/customnavigation/create | Add a custom navigation item
+[**deleteCustomNavigationItem**](#deletecustomnavigationitem) | **DELETE** /api/2.0/settings/customnavigation/delete/{id} | Delete a custom navigation item
+[**getCustomNavigationItem**](#getcustomnavigationitem) | **GET** /api/2.0/settings/customnavigation/get/{id} | Get a custom navigation item by ID
+[**getCustomNavigationItemSample**](#getcustomnavigationitemsample) | **GET** /api/2.0/settings/customnavigation/getsample | Get a custom navigation item sample
+[**getCustomNavigationItems**](#getcustomnavigationitems) | **GET** /api/2.0/settings/customnavigation/getall | Get the custom navigation items
 
 
 

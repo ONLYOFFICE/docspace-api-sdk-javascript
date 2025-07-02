@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**applyExternalSharePassword**](FilesSharingApi.md#applyExternalSharePassword) | **POST** /api/2.0/files/share/{key}/password | Apply external data password
-[**changeFileOwner**](FilesSharingApi.md#changeFileOwner) | **POST** /api/2.0/files/owner | Change the file owner
-[**getExternalShareData**](FilesSharingApi.md#getExternalShareData) | **GET** /api/2.0/files/share/{key} | Get the external data
-[**getSharedUsers**](FilesSharingApi.md#getSharedUsers) | **GET** /api/2.0/files/file/{fileId}/sharedusers | Get user access rights by file ID
-[**sendEditorNotify**](FilesSharingApi.md#sendEditorNotify) | **POST** /api/2.0/files/file/{fileId}/sendeditornotify | Send the mention message
+[**applyExternalSharePassword**](#applyexternalsharepassword) | **POST** /api/2.0/files/share/{key}/password | Apply external data password
+[**changeFileOwner**](#changefileowner) | **POST** /api/2.0/files/owner | Change the file owner
+[**getExternalShareData**](#getexternalsharedata) | **GET** /api/2.0/files/share/{key} | Get the external data
+[**getSharedUsers**](#getsharedusers) | **GET** /api/2.0/files/file/{fileId}/sharedusers | Get user access rights by file ID
+[**sendEditorNotify**](#sendeditornotify) | **POST** /api/2.0/files/file/{fileId}/sendeditornotify | Send the mention message
 
 
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.SignupAccountRequestDto
+The request parameters for creating a third-party account.
 
 ## Properties
 

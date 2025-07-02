@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CurrenciesDto
+The currencies parameters.
 
 ## Properties
 

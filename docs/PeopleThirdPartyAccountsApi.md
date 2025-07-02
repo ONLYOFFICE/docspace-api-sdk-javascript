@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getThirdPartyAuthProviders**](PeopleThirdPartyAccountsApi.md#getThirdPartyAuthProviders) | **GET** /api/2.0/people/thirdparty/providers | Get third-party accounts
-[**linkThirdPartyAccount**](PeopleThirdPartyAccountsApi.md#linkThirdPartyAccount) | **PUT** /api/2.0/people/thirdparty/linkaccount | Link a third-pary account
-[**signupThirdPartyAccount**](PeopleThirdPartyAccountsApi.md#signupThirdPartyAccount) | **POST** /api/2.0/people/thirdparty/signup | Create a third-pary account
-[**unlinkThirdPartyAccount**](PeopleThirdPartyAccountsApi.md#unlinkThirdPartyAccount) | **DELETE** /api/2.0/people/thirdparty/unlinkaccount | Unlink a third-pary account
+[**getThirdPartyAuthProviders**](#getthirdpartyauthproviders) | **GET** /api/2.0/people/thirdparty/providers | Get third-party accounts
+[**linkThirdPartyAccount**](#linkthirdpartyaccount) | **PUT** /api/2.0/people/thirdparty/linkaccount | Link a third-pary account
+[**signupThirdPartyAccount**](#signupthirdpartyaccount) | **POST** /api/2.0/people/thirdparty/signup | Create a third-pary account
+[**unlinkThirdPartyAccount**](#unlinkthirdpartyaccount) | **DELETE** /api/2.0/people/thirdparty/unlinkaccount | Unlink a third-pary account
 
 
 

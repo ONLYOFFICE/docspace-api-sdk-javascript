@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.IMagickGeometry
 
+
 ## Properties
 
 Name | Type | Description | Notes

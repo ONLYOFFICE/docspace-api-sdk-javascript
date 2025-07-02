@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.RoomFromTemplateStatusWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

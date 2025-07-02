@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.LoginEventDto
+The login event parameters.
 
 ## Properties
 

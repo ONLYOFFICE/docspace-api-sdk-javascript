@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.FileShareDto
+The file sharing information and access rights.
 
 ## Properties
 

@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getGreetingSettings**](SettingsGreetingSettingsApi.md#getGreetingSettings) | **GET** /api/2.0/settings/greetingsettings | Get greeting settings
-[**getIsDefaultGreetingSettings**](SettingsGreetingSettingsApi.md#getIsDefaultGreetingSettings) | **GET** /api/2.0/settings/greetingsettings/isdefault | Check the default greeting settings
-[**restoreGreetingSettings**](SettingsGreetingSettingsApi.md#restoreGreetingSettings) | **POST** /api/2.0/settings/greetingsettings/restore | Restore the greeting settings
-[**saveGreetingSettings**](SettingsGreetingSettingsApi.md#saveGreetingSettings) | **POST** /api/2.0/settings/greetingsettings | Save the greeting settings
+[**getGreetingSettings**](#getgreetingsettings) | **GET** /api/2.0/settings/greetingsettings | Get greeting settings
+[**getIsDefaultGreetingSettings**](#getisdefaultgreetingsettings) | **GET** /api/2.0/settings/greetingsettings/isdefault | Check the default greeting settings
+[**restoreGreetingSettings**](#restoregreetingsettings) | **POST** /api/2.0/settings/greetingsettings/restore | Restore the greeting settings
+[**saveGreetingSettings**](#savegreetingsettings) | **POST** /api/2.0/settings/greetingsettings | Save the greeting settings
 
 
 

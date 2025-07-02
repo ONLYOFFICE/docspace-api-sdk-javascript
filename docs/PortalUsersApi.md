@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getInvitationLink**](PortalUsersApi.md#getInvitationLink) | **GET** /api/2.0/portal/users/invite/{employeeType} | Get an invitation link
-[**getPortalUsersCount**](PortalUsersApi.md#getPortalUsersCount) | **GET** /api/2.0/portal/userscount | Get a number of portal users
-[**getUserById**](PortalUsersApi.md#getUserById) | **GET** /api/2.0/portal/users/{userID} | Get a user by ID
-[**markGiftMessageAsRead**](PortalUsersApi.md#markGiftMessageAsRead) | **POST** /api/2.0/portal/present/mark | Mark a gift message as read
-[**sendCongratulations**](PortalUsersApi.md#sendCongratulations) | **POST** /api/2.0/portal/sendcongratulations | Send congratulations
+[**getInvitationLink**](#getinvitationlink) | **GET** /api/2.0/portal/users/invite/{employeeType} | Get an invitation link
+[**getPortalUsersCount**](#getportaluserscount) | **GET** /api/2.0/portal/userscount | Get a number of portal users
+[**getUserById**](#getuserbyid) | **GET** /api/2.0/portal/users/{userID} | Get a user by ID
+[**markGiftMessageAsRead**](#markgiftmessageasread) | **POST** /api/2.0/portal/present/mark | Mark a gift message as read
+[**sendCongratulations**](#sendcongratulations) | **POST** /api/2.0/portal/sendcongratulations | Send congratulations
 
 
 

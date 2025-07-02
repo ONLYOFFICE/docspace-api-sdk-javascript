@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.EmailActivationSettings
+The email activation settings.
 
 ## Properties
 

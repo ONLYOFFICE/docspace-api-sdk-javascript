@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.HistoryData
+The history data.
 
 ## Properties
 

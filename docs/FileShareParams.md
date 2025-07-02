@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.FileShareParams
+The collection of file sharing parameters.
 
 ## Properties
 

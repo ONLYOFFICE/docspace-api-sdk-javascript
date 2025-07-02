@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.TenantDevToolsAccessSettingsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

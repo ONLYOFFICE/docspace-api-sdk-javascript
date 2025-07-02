@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.Session
+Represents a session with reserved amount and currency.
 
 ## Properties
 

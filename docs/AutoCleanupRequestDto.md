@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.AutoCleanupRequestDto
+The auto-clearing request parameters.
 
 ## Properties
 

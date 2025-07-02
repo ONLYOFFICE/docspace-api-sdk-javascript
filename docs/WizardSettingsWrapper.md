@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.WizardSettingsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

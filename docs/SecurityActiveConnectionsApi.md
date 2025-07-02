@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getAllActiveConnections**](SecurityActiveConnectionsApi.md#getAllActiveConnections) | **GET** /api/2.0/security/activeconnections | Get active connections
-[**logOutActiveConnection**](SecurityActiveConnectionsApi.md#logOutActiveConnection) | **PUT** /api/2.0/security/activeconnections/logout/{loginEventId} | Log out from the connection
-[**logOutAllActiveConnectionsChangePassword**](SecurityActiveConnectionsApi.md#logOutAllActiveConnectionsChangePassword) | **PUT** /api/2.0/security/activeconnections/logoutallchangepassword | Log out and change password
-[**logOutAllActiveConnectionsForUser**](SecurityActiveConnectionsApi.md#logOutAllActiveConnectionsForUser) | **PUT** /api/2.0/security/activeconnections/logoutall/{userId} | Log out for the user by ID
-[**logOutAllExceptThisConnection**](SecurityActiveConnectionsApi.md#logOutAllExceptThisConnection) | **PUT** /api/2.0/security/activeconnections/logoutallexceptthis | Log out from all connections except the current one
+[**getAllActiveConnections**](#getallactiveconnections) | **GET** /api/2.0/security/activeconnections | Get active connections
+[**logOutActiveConnection**](#logoutactiveconnection) | **PUT** /api/2.0/security/activeconnections/logout/{loginEventId} | Log out from the connection
+[**logOutAllActiveConnectionsChangePassword**](#logoutallactiveconnectionschangepassword) | **PUT** /api/2.0/security/activeconnections/logoutallchangepassword | Log out and change password
+[**logOutAllActiveConnectionsForUser**](#logoutallactiveconnectionsforuser) | **PUT** /api/2.0/security/activeconnections/logoutall/{userId} | Log out for the user by ID
+[**logOutAllExceptThisConnection**](#logoutallexceptthisconnection) | **PUT** /api/2.0/security/activeconnections/logoutallexceptthis | Log out from all connections except the current one
 
 
 

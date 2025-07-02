@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.ReportWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

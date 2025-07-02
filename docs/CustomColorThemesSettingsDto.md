@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CustomColorThemesSettingsDto
+The custom color themes settings.
 
 ## Properties
 

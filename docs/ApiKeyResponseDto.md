@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.ApiKeyResponseDto
+The response data for the API key operations.
 
 ## Properties
 

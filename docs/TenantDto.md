@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.TenantDto
+The tenant parameters.
 
 ## Properties
 

@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**authorizeOAuth**](OAuth20AuthorizationApi.md#authorizeOAuth) | **GET** /oauth2/authorize | OAuth2 authorization endpoint
-[**exchangeToken**](OAuth20AuthorizationApi.md#exchangeToken) | **POST** /oauth2/token | OAuth2 token endpoint
-[**submitConsent**](OAuth20AuthorizationApi.md#submitConsent) | **POST** /oauth2/authorize | OAuth2 consent endpoint
+[**authorizeOAuth**](#authorizeoauth) | **GET** /oauth2/authorize | OAuth2 authorization endpoint
+[**exchangeToken**](#exchangetoken) | **POST** /oauth2/token | OAuth2 token endpoint
+[**submitConsent**](#submitconsent) | **POST** /oauth2/authorize | OAuth2 consent endpoint
 
 
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.ChangeOwnerRequestDto
+The request parameters for changing the file owner.
 
 ## Properties
 

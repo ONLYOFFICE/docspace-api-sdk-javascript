@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**configureCsp**](SecurityCSPApi.md#configureCsp) | **POST** /api/2.0/security/csp | Configure CSP settings
-[**getCspSettings**](SecurityCSPApi.md#getCspSettings) | **GET** /api/2.0/security/csp | Get CSP settings
+[**configureCsp**](#configurecsp) | **POST** /api/2.0/security/csp | Configure CSP settings
+[**getCspSettings**](#getcspsettings) | **GET** /api/2.0/security/csp | Get CSP settings
 
 
 

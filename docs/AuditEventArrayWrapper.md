@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.AuditEventArrayWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

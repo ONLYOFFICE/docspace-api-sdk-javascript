@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.Paragraph
+The paragraph parameters.
 
 ## Properties
 

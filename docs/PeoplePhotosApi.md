@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createMemberPhotoThumbnails**](PeoplePhotosApi.md#createMemberPhotoThumbnails) | **POST** /api/2.0/people/{userid}/photo/thumbnails | Create photo thumbnails
-[**deleteMemberPhoto**](PeoplePhotosApi.md#deleteMemberPhoto) | **DELETE** /api/2.0/people/{userid}/photo | Delete a user photo
-[**getMemberPhoto**](PeoplePhotosApi.md#getMemberPhoto) | **GET** /api/2.0/people/{userid}/photo | Get a user photo
-[**updateMemberPhoto**](PeoplePhotosApi.md#updateMemberPhoto) | **PUT** /api/2.0/people/{userid}/photo | Update a user photo
-[**uploadMemberPhoto**](PeoplePhotosApi.md#uploadMemberPhoto) | **POST** /api/2.0/people/{userid}/photo | Upload a user photo
+[**createMemberPhotoThumbnails**](#creatememberphotothumbnails) | **POST** /api/2.0/people/{userid}/photo/thumbnails | Create photo thumbnails
+[**deleteMemberPhoto**](#deletememberphoto) | **DELETE** /api/2.0/people/{userid}/photo | Delete a user photo
+[**getMemberPhoto**](#getmemberphoto) | **GET** /api/2.0/people/{userid}/photo | Get a user photo
+[**updateMemberPhoto**](#updatememberphoto) | **PUT** /api/2.0/people/{userid}/photo | Update a user photo
+[**uploadMemberPhoto**](#uploadmemberphoto) | **POST** /api/2.0/people/{userid}/photo | Upload a user photo
 
 
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.SsoSettingsRequestsDto
+The request parameters for the Single Sign-On (SSO) configuration settings.
 
 ## Properties
 

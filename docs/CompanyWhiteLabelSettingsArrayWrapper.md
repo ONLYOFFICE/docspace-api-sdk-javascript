@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.CompanyWhiteLabelSettingsArrayWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

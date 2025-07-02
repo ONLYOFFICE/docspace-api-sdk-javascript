@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.TenantRoomQuotaSettings
+The room quota settings.
 
 ## Properties
 

@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.CoversResultArrayWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

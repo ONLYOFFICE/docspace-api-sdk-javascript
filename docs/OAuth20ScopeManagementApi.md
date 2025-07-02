@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getScopes**](OAuth20ScopeManagementApi.md#getScopes) | **GET** /api/2.0/scopes | Get available OAuth2 scopes
+[**getScopes**](#getscopes) | **GET** /api/2.0/scopes | Get available OAuth2 scopes
 
 
 

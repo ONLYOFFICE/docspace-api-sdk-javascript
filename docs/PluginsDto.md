@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.PluginsDto
+The plugins parameters.
 
 ## Properties
 

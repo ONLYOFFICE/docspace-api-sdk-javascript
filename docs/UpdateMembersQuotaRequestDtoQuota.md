@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.UpdateMembersQuotaRequestDtoQuota
+The quota in JSON format.
 
 ## Properties
 

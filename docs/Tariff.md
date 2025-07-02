@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.Tariff
+The tariff parameters.
 
 ## Properties
 

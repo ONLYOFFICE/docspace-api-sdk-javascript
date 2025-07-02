@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CustomerConfigDto
+The customer config parameters.
 
 ## Properties
 

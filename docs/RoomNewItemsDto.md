@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.RoomNewItemsDto
+The room new items information.
 
 ## Properties
 

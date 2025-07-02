@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.ContactsRequest
+The contacts request.
 
 ## Properties
 

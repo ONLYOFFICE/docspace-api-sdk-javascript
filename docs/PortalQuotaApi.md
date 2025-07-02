@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getPortalQuota**](PortalQuotaApi.md#getPortalQuota) | **GET** /api/2.0/portal/quota | Get a portal quota
-[**getPortalTariff**](PortalQuotaApi.md#getPortalTariff) | **GET** /api/2.0/portal/tariff | Get a portal tariff
-[**getPortalUsedSpace**](PortalQuotaApi.md#getPortalUsedSpace) | **GET** /api/2.0/portal/usedspace | Get the portal used space
-[**getRightQuota**](PortalQuotaApi.md#getRightQuota) | **GET** /api/2.0/portal/quota/right | Get the recommended quota
+[**getPortalQuota**](#getportalquota) | **GET** /api/2.0/portal/quota | Get a portal quota
+[**getPortalTariff**](#getportaltariff) | **GET** /api/2.0/portal/tariff | Get a portal tariff
+[**getPortalUsedSpace**](#getportalusedspace) | **GET** /api/2.0/portal/usedspace | Get the portal used space
+[**getRightQuota**](#getrightquota) | **GET** /api/2.0/portal/quota/right | Get the recommended quota
 
 
 

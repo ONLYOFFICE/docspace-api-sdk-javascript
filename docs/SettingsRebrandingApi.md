@@ -4,23 +4,23 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**deleteAdditionalWhiteLabelSettings**](SettingsRebrandingApi.md#deleteAdditionalWhiteLabelSettings) | **DELETE** /api/2.0/settings/rebranding/additional | Delete the additional white label settings
-[**deleteCompanyWhiteLabelSettings**](SettingsRebrandingApi.md#deleteCompanyWhiteLabelSettings) | **DELETE** /api/2.0/settings/rebranding/company | Delete the company white label settings
-[**getAdditionalWhiteLabelSettings**](SettingsRebrandingApi.md#getAdditionalWhiteLabelSettings) | **GET** /api/2.0/settings/rebranding/additional | Get the additional white label settings
-[**getCompanyWhiteLabelSettings**](SettingsRebrandingApi.md#getCompanyWhiteLabelSettings) | **GET** /api/2.0/settings/rebranding/company | Get the company white label settings
-[**getEnableWhitelabel**](SettingsRebrandingApi.md#getEnableWhitelabel) | **GET** /api/2.0/settings/enablewhitelabel | Check the white label availability
-[**getIsDefaultWhiteLabelLogoText**](SettingsRebrandingApi.md#getIsDefaultWhiteLabelLogoText) | **GET** /api/2.0/settings/whitelabel/logotext/isdefault | Check the default white label logo text
-[**getIsDefaultWhiteLabelLogos**](SettingsRebrandingApi.md#getIsDefaultWhiteLabelLogos) | **GET** /api/2.0/settings/whitelabel/logos/isdefault | Check the default white label logos
-[**getLicensorData**](SettingsRebrandingApi.md#getLicensorData) | **GET** /api/2.0/settings/companywhitelabel | Get the licensor data
-[**getWhiteLabelLogoText**](SettingsRebrandingApi.md#getWhiteLabelLogoText) | **GET** /api/2.0/settings/whitelabel/logotext | Get the white label logo text
-[**getWhiteLabelLogos**](SettingsRebrandingApi.md#getWhiteLabelLogos) | **GET** /api/2.0/settings/whitelabel/logos | Get the white label logos
-[**restoreWhiteLabelLogoText**](SettingsRebrandingApi.md#restoreWhiteLabelLogoText) | **PUT** /api/2.0/settings/whitelabel/logotext/restore | Restore the white label logo text
-[**restoreWhiteLabelLogos**](SettingsRebrandingApi.md#restoreWhiteLabelLogos) | **PUT** /api/2.0/settings/whitelabel/logos/restore | Restore the white label logos
-[**saveAdditionalWhiteLabelSettings**](SettingsRebrandingApi.md#saveAdditionalWhiteLabelSettings) | **POST** /api/2.0/settings/rebranding/additional | Save the additional white label settings
-[**saveCompanyWhiteLabelSettings**](SettingsRebrandingApi.md#saveCompanyWhiteLabelSettings) | **POST** /api/2.0/settings/rebranding/company | Save the company white label settings
-[**saveWhiteLabelLogoText**](SettingsRebrandingApi.md#saveWhiteLabelLogoText) | **POST** /api/2.0/settings/whitelabel/logotext/save | Save the white label logo text settings
-[**saveWhiteLabelSettings**](SettingsRebrandingApi.md#saveWhiteLabelSettings) | **POST** /api/2.0/settings/whitelabel/logos/save | Save the white label logos
-[**saveWhiteLabelSettingsFromFiles**](SettingsRebrandingApi.md#saveWhiteLabelSettingsFromFiles) | **POST** /api/2.0/settings/whitelabel/logos/savefromfiles | Save the white label logos from files
+[**deleteAdditionalWhiteLabelSettings**](#deleteadditionalwhitelabelsettings) | **DELETE** /api/2.0/settings/rebranding/additional | Delete the additional white label settings
+[**deleteCompanyWhiteLabelSettings**](#deletecompanywhitelabelsettings) | **DELETE** /api/2.0/settings/rebranding/company | Delete the company white label settings
+[**getAdditionalWhiteLabelSettings**](#getadditionalwhitelabelsettings) | **GET** /api/2.0/settings/rebranding/additional | Get the additional white label settings
+[**getCompanyWhiteLabelSettings**](#getcompanywhitelabelsettings) | **GET** /api/2.0/settings/rebranding/company | Get the company white label settings
+[**getEnableWhitelabel**](#getenablewhitelabel) | **GET** /api/2.0/settings/enablewhitelabel | Check the white label availability
+[**getIsDefaultWhiteLabelLogoText**](#getisdefaultwhitelabellogotext) | **GET** /api/2.0/settings/whitelabel/logotext/isdefault | Check the default white label logo text
+[**getIsDefaultWhiteLabelLogos**](#getisdefaultwhitelabellogos) | **GET** /api/2.0/settings/whitelabel/logos/isdefault | Check the default white label logos
+[**getLicensorData**](#getlicensordata) | **GET** /api/2.0/settings/companywhitelabel | Get the licensor data
+[**getWhiteLabelLogoText**](#getwhitelabellogotext) | **GET** /api/2.0/settings/whitelabel/logotext | Get the white label logo text
+[**getWhiteLabelLogos**](#getwhitelabellogos) | **GET** /api/2.0/settings/whitelabel/logos | Get the white label logos
+[**restoreWhiteLabelLogoText**](#restorewhitelabellogotext) | **PUT** /api/2.0/settings/whitelabel/logotext/restore | Restore the white label logo text
+[**restoreWhiteLabelLogos**](#restorewhitelabellogos) | **PUT** /api/2.0/settings/whitelabel/logos/restore | Restore the white label logos
+[**saveAdditionalWhiteLabelSettings**](#saveadditionalwhitelabelsettings) | **POST** /api/2.0/settings/rebranding/additional | Save the additional white label settings
+[**saveCompanyWhiteLabelSettings**](#savecompanywhitelabelsettings) | **POST** /api/2.0/settings/rebranding/company | Save the company white label settings
+[**saveWhiteLabelLogoText**](#savewhitelabellogotext) | **POST** /api/2.0/settings/whitelabel/logotext/save | Save the white label logo text settings
+[**saveWhiteLabelSettings**](#savewhitelabelsettings) | **POST** /api/2.0/settings/whitelabel/logos/save | Save the white label logos
+[**saveWhiteLabelSettingsFromFiles**](#savewhitelabelsettingsfromfiles) | **POST** /api/2.0/settings/whitelabel/logos/savefromfiles | Save the white label logos from files
 
 
 

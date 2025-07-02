@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CheckDestFolderDto
+The destination folder checking information.
 
 ## Properties
 

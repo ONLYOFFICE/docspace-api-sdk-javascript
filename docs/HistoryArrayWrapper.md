@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.HistoryArrayWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.UsageSpaceStatItemDto
+The parameters of the usage space statistics item.
 
 ## Properties
 

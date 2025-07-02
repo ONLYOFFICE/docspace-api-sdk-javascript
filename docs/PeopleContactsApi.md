@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**deleteMemberContacts**](PeopleContactsApi.md#deleteMemberContacts) | **DELETE** /api/2.0/people/{userid}/contacts | Delete user contacts
-[**setMemberContacts**](PeopleContactsApi.md#setMemberContacts) | **POST** /api/2.0/people/{userid}/contacts | Set user contacts
-[**updateMemberContacts**](PeopleContactsApi.md#updateMemberContacts) | **PUT** /api/2.0/people/{userid}/contacts | Update user contacts
+[**deleteMemberContacts**](#deletemembercontacts) | **DELETE** /api/2.0/people/{userid}/contacts | Delete user contacts
+[**setMemberContacts**](#setmembercontacts) | **POST** /api/2.0/people/{userid}/contacts | Set user contacts
+[**updateMemberContacts**](#updatemembercontacts) | **PUT** /api/2.0/people/{userid}/contacts | Update user contacts
 
 
 

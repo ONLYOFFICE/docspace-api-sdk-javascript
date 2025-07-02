@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.LogoRequest
+The logo request parameters.
 
 ## Properties
 

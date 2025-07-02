@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getStorageEncryptionProgress**](SettingsEncryptionApi.md#getStorageEncryptionProgress) | **GET** /api/2.0/settings/encryption/progress | Get the storage encryption progress
-[**getStorageEncryptionSettings**](SettingsEncryptionApi.md#getStorageEncryptionSettings) | **GET** /api/2.0/settings/encryption/settings | Get the storage encryption settings
-[**startStorageEncryption**](SettingsEncryptionApi.md#startStorageEncryption) | **POST** /api/2.0/settings/encryption/start | Start the storage encryption process
+[**getStorageEncryptionProgress**](#getstorageencryptionprogress) | **GET** /api/2.0/settings/encryption/progress | Get the storage encryption progress
+[**getStorageEncryptionSettings**](#getstorageencryptionsettings) | **GET** /api/2.0/settings/encryption/settings | Get the storage encryption settings
+[**startStorageEncryption**](#startstorageencryption) | **POST** /api/2.0/settings/encryption/start | Start the storage encryption process
 
 
 

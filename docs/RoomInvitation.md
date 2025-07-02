@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.RoomInvitation
+The room invitation parameters.
 
 ## Properties
 

@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addWebPluginFromFile**](SettingsWebpluginsApi.md#addWebPluginFromFile) | **POST** /api/2.0/settings/webplugins | Add a web plugin
-[**deleteWebPlugin**](SettingsWebpluginsApi.md#deleteWebPlugin) | **DELETE** /api/2.0/settings/webplugins/{name} | Delete a web plugin
-[**getWebPlugin**](SettingsWebpluginsApi.md#getWebPlugin) | **GET** /api/2.0/settings/webplugins/{name} | Get a web plugin by name
-[**getWebPlugins**](SettingsWebpluginsApi.md#getWebPlugins) | **GET** /api/2.0/settings/webplugins | Get web plugins
-[**updateWebPlugin**](SettingsWebpluginsApi.md#updateWebPlugin) | **PUT** /api/2.0/settings/webplugins/{name} | Update a web plugin
+[**addWebPluginFromFile**](#addwebpluginfromfile) | **POST** /api/2.0/settings/webplugins | Add a web plugin
+[**deleteWebPlugin**](#deletewebplugin) | **DELETE** /api/2.0/settings/webplugins/{name} | Delete a web plugin
+[**getWebPlugin**](#getwebplugin) | **GET** /api/2.0/settings/webplugins/{name} | Get a web plugin by name
+[**getWebPlugins**](#getwebplugins) | **GET** /api/2.0/settings/webplugins | Get web plugins
+[**updateWebPlugin**](#updatewebplugin) | **PUT** /api/2.0/settings/webplugins/{name} | Update a web plugin
 
 
 

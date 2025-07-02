@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.PasswordSettingsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

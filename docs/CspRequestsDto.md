@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CspRequestsDto
+The request parameters for configuring the Content Security Policy (CSP) settings.
 
 ## Properties
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.GroupRequestDto
+The group request parameters.
 
 ## Properties
 

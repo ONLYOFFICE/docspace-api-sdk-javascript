@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.SmtpSettingsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -4,17 +4,17 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addGroup**](GroupApi.md#addGroup) | **POST** /api/2.0/group | Add a new group
-[**addMembersTo**](GroupApi.md#addMembersTo) | **PUT** /api/2.0/group/{id}/members | Add group members
-[**deleteGroup**](GroupApi.md#deleteGroup) | **DELETE** /api/2.0/group/{id} | Delete a group
-[**getGroup**](GroupApi.md#getGroup) | **GET** /api/2.0/group/{id} | Get a group
-[**getGroupByUserId**](GroupApi.md#getGroupByUserId) | **GET** /api/2.0/group/user/{userid} | Get user groups
-[**getGroups**](GroupApi.md#getGroups) | **GET** /api/2.0/group | Get groups
-[**moveMembersTo**](GroupApi.md#moveMembersTo) | **PUT** /api/2.0/group/{fromId}/members/{toId} | Move group members
-[**removeMembersFrom**](GroupApi.md#removeMembersFrom) | **DELETE** /api/2.0/group/{id}/members | Remove group members
-[**setGroupManager**](GroupApi.md#setGroupManager) | **PUT** /api/2.0/group/{id}/manager | Set a group manager
-[**setMembersTo**](GroupApi.md#setMembersTo) | **POST** /api/2.0/group/{id}/members | Replace group members
-[**updateGroup**](GroupApi.md#updateGroup) | **PUT** /api/2.0/group/{id} | Update a group
+[**addGroup**](#addgroup) | **POST** /api/2.0/group | Add a new group
+[**addMembersTo**](#addmembersto) | **PUT** /api/2.0/group/{id}/members | Add group members
+[**deleteGroup**](#deletegroup) | **DELETE** /api/2.0/group/{id} | Delete a group
+[**getGroup**](#getgroup) | **GET** /api/2.0/group/{id} | Get a group
+[**getGroupByUserId**](#getgroupbyuserid) | **GET** /api/2.0/group/user/{userid} | Get user groups
+[**getGroups**](#getgroups) | **GET** /api/2.0/group | Get groups
+[**moveMembersTo**](#movemembersto) | **PUT** /api/2.0/group/{fromId}/members/{toId} | Move group members
+[**removeMembersFrom**](#removemembersfrom) | **DELETE** /api/2.0/group/{id}/members | Remove group members
+[**setGroupManager**](#setgroupmanager) | **PUT** /api/2.0/group/{id}/manager | Set a group manager
+[**setMembersTo**](#setmembersto) | **POST** /api/2.0/group/{id}/members | Replace group members
+[**updateGroup**](#updategroup) | **PUT** /api/2.0/group/{id} | Update a group
 
 
 

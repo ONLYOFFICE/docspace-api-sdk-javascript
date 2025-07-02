@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.FolderDtoInteger
+The folder parameters.
 
 ## Properties
 

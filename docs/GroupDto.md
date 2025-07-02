@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.GroupDto
+The group parameters.
 
 ## Properties
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CreateApiKeyRequestDto
+The request parameters for creating a new API key.
 
 ## Properties
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.Currency
+Represents a currency.
 
 ## Properties
 

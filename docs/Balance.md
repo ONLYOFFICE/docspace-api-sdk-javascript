@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.Balance
+Represents a balance with an account number and a list of sub-accounts.
 
 ## Properties
 

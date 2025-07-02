@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.FireBaseUser
+The Firebase user parameters.
 
 ## Properties
 

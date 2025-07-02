@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.FormsItemDto
+The forms item information.
 
 ## Properties
 

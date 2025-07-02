@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.TenantDeepLinkSettingsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

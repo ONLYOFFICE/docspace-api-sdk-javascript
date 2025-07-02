@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.BaseBatchRequestDto
+The base batch request parameters.
 
 ## Properties
 

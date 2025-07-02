@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.FileEntryWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.ThirdPartyRequestDto
+The third-party request parameters.
 
 ## Properties
 

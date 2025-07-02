@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.WebPluginWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

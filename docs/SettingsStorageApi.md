@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getAllBackupStorages**](SettingsStorageApi.md#getAllBackupStorages) | **GET** /api/2.0/settings/storage/backup | Get the backup storages
-[**getAllCdnStorages**](SettingsStorageApi.md#getAllCdnStorages) | **GET** /api/2.0/settings/storage/cdn | Get the CDN storages
-[**getAllStorages**](SettingsStorageApi.md#getAllStorages) | **GET** /api/2.0/settings/storage | Get storages
-[**getAmazonS3Regions**](SettingsStorageApi.md#getAmazonS3Regions) | **GET** /api/2.0/settings/storage/s3/regions | Get Amazon regions
-[**getStorageProgress**](SettingsStorageApi.md#getStorageProgress) | **GET** /api/2.0/settings/storage/progress | Get the storage progress
-[**resetCdnToDefault**](SettingsStorageApi.md#resetCdnToDefault) | **DELETE** /api/2.0/settings/storage/cdn | Reset the CDN storage settings
-[**resetStorageToDefault**](SettingsStorageApi.md#resetStorageToDefault) | **DELETE** /api/2.0/settings/storage | Reset the storage settings
-[**updateCdnStorage**](SettingsStorageApi.md#updateCdnStorage) | **PUT** /api/2.0/settings/storage/cdn | Update the CDN storage
-[**updateStorage**](SettingsStorageApi.md#updateStorage) | **PUT** /api/2.0/settings/storage | Update a storage
+[**getAllBackupStorages**](#getallbackupstorages) | **GET** /api/2.0/settings/storage/backup | Get the backup storages
+[**getAllCdnStorages**](#getallcdnstorages) | **GET** /api/2.0/settings/storage/cdn | Get the CDN storages
+[**getAllStorages**](#getallstorages) | **GET** /api/2.0/settings/storage | Get storages
+[**getAmazonS3Regions**](#getamazons3regions) | **GET** /api/2.0/settings/storage/s3/regions | Get Amazon regions
+[**getStorageProgress**](#getstorageprogress) | **GET** /api/2.0/settings/storage/progress | Get the storage progress
+[**resetCdnToDefault**](#resetcdntodefault) | **DELETE** /api/2.0/settings/storage/cdn | Reset the CDN storage settings
+[**resetStorageToDefault**](#resetstoragetodefault) | **DELETE** /api/2.0/settings/storage | Reset the storage settings
+[**updateCdnStorage**](#updatecdnstorage) | **PUT** /api/2.0/settings/storage/cdn | Update the CDN storage
+[**updateStorage**](#updatestorage) | **PUT** /api/2.0/settings/storage | Update a storage
 
 
 

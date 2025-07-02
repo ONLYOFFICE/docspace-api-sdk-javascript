@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.WebhooksConfigWithStatusArrayWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

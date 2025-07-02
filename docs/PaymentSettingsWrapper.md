@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.PaymentSettingsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

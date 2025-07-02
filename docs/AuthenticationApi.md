@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**authenticateMe**](AuthenticationApi.md#authenticateMe) | **POST** /api/2.0/authentication | Authenticate a user
-[**authenticateMeFromBodyWithCode**](AuthenticationApi.md#authenticateMeFromBodyWithCode) | **POST** /api/2.0/authentication/{code} | Authenticate a user by code
-[**checkConfirm**](AuthenticationApi.md#checkConfirm) | **POST** /api/2.0/authentication/confirm | Open confirmation email URL
-[**getIsAuthentificated**](AuthenticationApi.md#getIsAuthentificated) | **GET** /api/2.0/authentication | Check authentication
-[**logout**](AuthenticationApi.md#logout) | **POST** /api/2.0/authentication/logout | Log out
-[**saveMobilePhone**](AuthenticationApi.md#saveMobilePhone) | **POST** /api/2.0/authentication/setphone | Set a mobile phone
-[**sendSmsCode**](AuthenticationApi.md#sendSmsCode) | **POST** /api/2.0/authentication/sendsms | Send SMS code
+[**authenticateMe**](#authenticateme) | **POST** /api/2.0/authentication | Authenticate a user
+[**authenticateMeFromBodyWithCode**](#authenticatemefrombodywithcode) | **POST** /api/2.0/authentication/{code} | Authenticate a user by code
+[**checkConfirm**](#checkconfirm) | **POST** /api/2.0/authentication/confirm | Open confirmation email URL
+[**getIsAuthentificated**](#getisauthentificated) | **GET** /api/2.0/authentication | Check authentication
+[**logout**](#logout) | **POST** /api/2.0/authentication/logout | Log out
+[**saveMobilePhone**](#savemobilephone) | **POST** /api/2.0/authentication/setphone | Set a mobile phone
+[**sendSmsCode**](#sendsmscode) | **POST** /api/2.0/authentication/sendsms | Send SMS code
 
 
 

@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getGroupsWithShared**](GroupRoomsApi.md#getGroupsWithShared) | **GET** /api/2.0/group/room/{id} | Get groups with sharing settings
+[**getGroupsWithShared**](#getgroupswithshared) | **GET** /api/2.0/group/room/{id} | Get groups with sharing settings
 
 
 

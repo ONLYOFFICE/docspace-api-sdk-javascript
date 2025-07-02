@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.UserInfoWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

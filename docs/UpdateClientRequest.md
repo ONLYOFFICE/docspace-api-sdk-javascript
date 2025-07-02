@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.UpdateClientRequest
+The request for updating client details.
 
 ## Properties
 

@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getDefaultSsoSettingsV2**](SettingsSSOApi.md#getDefaultSsoSettingsV2) | **GET** /api/2.0/settings/ssov2/default | Get the default SSO settings
-[**getSsoSettingsV2**](SettingsSSOApi.md#getSsoSettingsV2) | **GET** /api/2.0/settings/ssov2 | Get the SSO settings
-[**getSsoSettingsV2Constants**](SettingsSSOApi.md#getSsoSettingsV2Constants) | **GET** /api/2.0/settings/ssov2/constants | Get the SSO settings constants
-[**resetSsoSettingsV2**](SettingsSSOApi.md#resetSsoSettingsV2) | **DELETE** /api/2.0/settings/ssov2 | Reset the SSO settings
-[**saveSsoSettingsV2**](SettingsSSOApi.md#saveSsoSettingsV2) | **POST** /api/2.0/settings/ssov2 | Save the SSO settings
+[**getDefaultSsoSettingsV2**](#getdefaultssosettingsv2) | **GET** /api/2.0/settings/ssov2/default | Get the default SSO settings
+[**getSsoSettingsV2**](#getssosettingsv2) | **GET** /api/2.0/settings/ssov2 | Get the SSO settings
+[**getSsoSettingsV2Constants**](#getssosettingsv2constants) | **GET** /api/2.0/settings/ssov2/constants | Get the SSO settings constants
+[**resetSsoSettingsV2**](#resetssosettingsv2) | **DELETE** /api/2.0/settings/ssov2 | Reset the SSO settings
+[**saveSsoSettingsV2**](#savessosettingsv2) | **POST** /api/2.0/settings/ssov2 | Save the SSO settings
 
 
 

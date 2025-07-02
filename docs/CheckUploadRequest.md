@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CheckUploadRequest
+The request parameters for checking file uploads.
 
 ## Properties
 

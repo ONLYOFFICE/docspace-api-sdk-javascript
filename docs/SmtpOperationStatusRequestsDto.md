@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.SmtpOperationStatusRequestsDto
+The request parameters for tracking SMTP (Simple Mail Transfer Protocol) operation status.
 
 ## Properties
 

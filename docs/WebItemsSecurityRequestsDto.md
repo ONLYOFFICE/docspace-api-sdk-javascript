@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.WebItemsSecurityRequestsDto
+The request parameters for configuring security settings across multiple web modules.
 
 ## Properties
 

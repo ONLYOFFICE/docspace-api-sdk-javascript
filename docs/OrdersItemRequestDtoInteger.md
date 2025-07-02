@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.OrdersItemRequestDtoInteger
+An item in the ordering request with its entry type and ID.
 
 ## Properties
 

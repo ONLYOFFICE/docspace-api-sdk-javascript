@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.PaymentSettingsDto
+The payment settings parameters.
 
 ## Properties
 

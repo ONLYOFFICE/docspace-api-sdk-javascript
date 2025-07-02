@@ -4,14 +4,14 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**cancelMigration**](MigrationApi.md#cancelMigration) | **POST** /api/2.0/migration/cancel | Cancel migration
-[**clearMigration**](MigrationApi.md#clearMigration) | **POST** /api/2.0/migration/clear | Clear migration
-[**finishMigration**](MigrationApi.md#finishMigration) | **POST** /api/2.0/migration/finish | Finish migration
-[**getMigrationLogs**](MigrationApi.md#getMigrationLogs) | **GET** /api/2.0/migration/logs | Get migration logs
-[**getMigrationStatus**](MigrationApi.md#getMigrationStatus) | **GET** /api/2.0/migration/status | Get migration status
-[**listMigrations**](MigrationApi.md#listMigrations) | **GET** /api/2.0/migration/list | Get migrations
-[**startMigration**](MigrationApi.md#startMigration) | **POST** /api/2.0/migration/migrate | Start migration
-[**uploadAndInitializeMigration**](MigrationApi.md#uploadAndInitializeMigration) | **POST** /api/2.0/migration/init/{migratorName} | Upload and initialize migration
+[**cancelMigration**](#cancelmigration) | **POST** /api/2.0/migration/cancel | Cancel migration
+[**clearMigration**](#clearmigration) | **POST** /api/2.0/migration/clear | Clear migration
+[**finishMigration**](#finishmigration) | **POST** /api/2.0/migration/finish | Finish migration
+[**getMigrationLogs**](#getmigrationlogs) | **GET** /api/2.0/migration/logs | Get migration logs
+[**getMigrationStatus**](#getmigrationstatus) | **GET** /api/2.0/migration/status | Get migration status
+[**listMigrations**](#listmigrations) | **GET** /api/2.0/migration/list | Get migrations
+[**startMigration**](#startmigration) | **POST** /api/2.0/migration/migrate | Start migration
+[**uploadAndInitializeMigration**](#uploadandinitializemigration) | **POST** /api/2.0/migration/init/{migratorName} | Upload and initialize migration
 
 
 

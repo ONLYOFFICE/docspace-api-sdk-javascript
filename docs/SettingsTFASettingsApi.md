@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getTfaAppCodes**](SettingsTFASettingsApi.md#getTfaAppCodes) | **GET** /api/2.0/settings/tfaappcodes | Get the TFA codes
-[**getTfaConfirmUrl**](SettingsTFASettingsApi.md#getTfaConfirmUrl) | **GET** /api/2.0/settings/tfaapp/confirm | Get confirmation email
-[**getTfaSettings**](SettingsTFASettingsApi.md#getTfaSettings) | **GET** /api/2.0/settings/tfaapp | Get the TFA settings
-[**tfaAppGenerateSetupCode**](SettingsTFASettingsApi.md#tfaAppGenerateSetupCode) | **GET** /api/2.0/settings/tfaapp/setup | Generate setup code
-[**tfaValidateAuthCode**](SettingsTFASettingsApi.md#tfaValidateAuthCode) | **POST** /api/2.0/settings/tfaapp/validate | Validate the TFA code
-[**unlinkTfaApp**](SettingsTFASettingsApi.md#unlinkTfaApp) | **PUT** /api/2.0/settings/tfaappnewapp | Unlink the TFA application
-[**updateTfaAppCodes**](SettingsTFASettingsApi.md#updateTfaAppCodes) | **PUT** /api/2.0/settings/tfaappnewcodes | Update the TFA codes
-[**updateTfaSettings**](SettingsTFASettingsApi.md#updateTfaSettings) | **PUT** /api/2.0/settings/tfaapp | Update the TFA settings
-[**updateTfaSettingsLink**](SettingsTFASettingsApi.md#updateTfaSettingsLink) | **PUT** /api/2.0/settings/tfaappwithlink | Get a confirmation email for updating TFA settings
+[**getTfaAppCodes**](#gettfaappcodes) | **GET** /api/2.0/settings/tfaappcodes | Get the TFA codes
+[**getTfaConfirmUrl**](#gettfaconfirmurl) | **GET** /api/2.0/settings/tfaapp/confirm | Get confirmation email
+[**getTfaSettings**](#gettfasettings) | **GET** /api/2.0/settings/tfaapp | Get the TFA settings
+[**tfaAppGenerateSetupCode**](#tfaappgeneratesetupcode) | **GET** /api/2.0/settings/tfaapp/setup | Generate setup code
+[**tfaValidateAuthCode**](#tfavalidateauthcode) | **POST** /api/2.0/settings/tfaapp/validate | Validate the TFA code
+[**unlinkTfaApp**](#unlinktfaapp) | **PUT** /api/2.0/settings/tfaappnewapp | Unlink the TFA application
+[**updateTfaAppCodes**](#updatetfaappcodes) | **PUT** /api/2.0/settings/tfaappnewcodes | Update the TFA codes
+[**updateTfaSettings**](#updatetfasettings) | **PUT** /api/2.0/settings/tfaapp | Update the TFA settings
+[**updateTfaSettingsLink**](#updatetfasettingslink) | **PUT** /api/2.0/settings/tfaappwithlink | Get a confirmation email for updating TFA settings
 
 
 

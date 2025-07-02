@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CookieSettingsDto
+The cookie settings.
 
 ## Properties
 

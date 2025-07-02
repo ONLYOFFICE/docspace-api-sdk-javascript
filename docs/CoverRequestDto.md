@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CoverRequestDto
+The request parameters to change the room cover.
 
 ## Properties
 

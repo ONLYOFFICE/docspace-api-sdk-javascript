@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**resetUsersQuota**](PeopleQuotaApi.md#resetUsersQuota) | **PUT** /api/2.0/people/resetquota | Reset a user quota limit
-[**updateUserQuota**](PeopleQuotaApi.md#updateUserQuota) | **PUT** /api/2.0/people/userquota | Change a user quota limit
+[**resetUsersQuota**](#resetusersquota) | **PUT** /api/2.0/people/resetquota | Reset a user quota limit
+[**updateUserQuota**](#updateuserquota) | **PUT** /api/2.0/people/userquota | Change a user quota limit
 
 
 

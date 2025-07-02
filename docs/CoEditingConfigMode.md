@@ -1,6 +1,5 @@
 # DocspaceApiJavascript.CoEditingConfigMode
-
-
+[0 - Fast, 1 - Strict]
 
 ## Enum
 

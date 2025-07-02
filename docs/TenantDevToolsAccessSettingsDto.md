@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.TenantDevToolsAccessSettingsDto
+The request parameters for managing the Developer Tools access settings for the current tenant.
 
 ## Properties
 

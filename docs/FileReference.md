@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.FileReference
+The file reference parameters.
 
 ## Properties
 

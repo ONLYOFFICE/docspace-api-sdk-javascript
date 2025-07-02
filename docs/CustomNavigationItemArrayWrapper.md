@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.CustomNavigationItemArrayWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

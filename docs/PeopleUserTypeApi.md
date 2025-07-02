@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getUserTypeUpdateProgress**](PeopleUserTypeApi.md#getUserTypeUpdateProgress) | **GET** /api/2.0/people/type/progress/{userid} | Get the progress of updating user type
-[**starUserTypetUpdate**](PeopleUserTypeApi.md#starUserTypetUpdate) | **POST** /api/2.0/people/type | Update user type
-[**terminateUserTypeUpdate**](PeopleUserTypeApi.md#terminateUserTypeUpdate) | **PUT** /api/2.0/people/type/terminate | Terminate update user type
-[**updateUserType**](PeopleUserTypeApi.md#updateUserType) | **PUT** /api/2.0/people/type/{type} | Change a user type
+[**getUserTypeUpdateProgress**](#getusertypeupdateprogress) | **GET** /api/2.0/people/type/progress/{userid} | Get the progress of updating user type
+[**starUserTypetUpdate**](#starusertypetupdate) | **POST** /api/2.0/people/type | Update user type
+[**terminateUserTypeUpdate**](#terminateusertypeupdate) | **PUT** /api/2.0/people/type/terminate | Terminate update user type
+[**updateUserType**](#updateusertype) | **PUT** /api/2.0/people/type/{type} | Change a user type
 
 
 

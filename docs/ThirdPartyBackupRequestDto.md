@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.ThirdPartyBackupRequestDto
+The third-party backup request parameters.
 
 ## Properties
 

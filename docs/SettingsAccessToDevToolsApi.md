@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getTenantAccessDevToolsSettings**](SettingsAccessToDevToolsApi.md#getTenantAccessDevToolsSettings) | **GET** /api/2.0/settings/devtoolsaccess | Get the Developer Tools access settings
+[**getTenantAccessDevToolsSettings**](#gettenantaccessdevtoolssettings) | **GET** /api/2.0/settings/devtoolsaccess | Get the Developer Tools access settings
 
 
 

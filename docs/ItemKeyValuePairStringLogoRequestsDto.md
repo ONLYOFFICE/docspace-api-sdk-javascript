@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.ItemKeyValuePairStringLogoRequestsDto
 
+
 ## Properties
 
 Name | Type | Description | Notes

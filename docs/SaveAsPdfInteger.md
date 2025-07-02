@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.SaveAsPdfInteger
+The parameters for saving the file as PDF.
 
 ## Properties
 

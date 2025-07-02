@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.TemplatesConfig
+The presence or absence of the templates in the \&quot;Create New...\&quot; menu option.
 
 ## Properties
 

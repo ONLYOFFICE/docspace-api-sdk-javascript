@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.InfoConfigDto
+The information config parameters.
 
 ## Properties
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.SecurityDto
+The security information.
 
 ## Properties
 

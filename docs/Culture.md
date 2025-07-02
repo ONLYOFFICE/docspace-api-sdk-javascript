@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.Culture
+The culture code parameters.
 
 ## Properties
 

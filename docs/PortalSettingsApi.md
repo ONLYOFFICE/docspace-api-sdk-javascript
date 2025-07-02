@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**continuePortal**](PortalSettingsApi.md#continuePortal) | **PUT** /api/2.0/portal/continue | Restore a portal
-[**deletePortal**](PortalSettingsApi.md#deletePortal) | **DELETE** /api/2.0/portal/delete | Delete a portal
-[**getPortalInformation**](PortalSettingsApi.md#getPortalInformation) | **GET** /api/2.0/portal | Get a portal
-[**getPortalPath**](PortalSettingsApi.md#getPortalPath) | **GET** /api/2.0/portal/path | Get a path to the portal
-[**sendDeleteInstructions**](PortalSettingsApi.md#sendDeleteInstructions) | **POST** /api/2.0/portal/delete | Send removal instructions
-[**sendSuspendInstructions**](PortalSettingsApi.md#sendSuspendInstructions) | **POST** /api/2.0/portal/suspend | Send suspension instructions
-[**suspendPortal**](PortalSettingsApi.md#suspendPortal) | **PUT** /api/2.0/portal/suspend | Deactivate a portal
+[**continuePortal**](#continueportal) | **PUT** /api/2.0/portal/continue | Restore a portal
+[**deletePortal**](#deleteportal) | **DELETE** /api/2.0/portal/delete | Delete a portal
+[**getPortalInformation**](#getportalinformation) | **GET** /api/2.0/portal | Get a portal
+[**getPortalPath**](#getportalpath) | **GET** /api/2.0/portal/path | Get a path to the portal
+[**sendDeleteInstructions**](#senddeleteinstructions) | **POST** /api/2.0/portal/delete | Send removal instructions
+[**sendSuspendInstructions**](#sendsuspendinstructions) | **POST** /api/2.0/portal/suspend | Send suspension instructions
+[**suspendPortal**](#suspendportal) | **PUT** /api/2.0/portal/suspend | Deactivate a portal
 
 
 

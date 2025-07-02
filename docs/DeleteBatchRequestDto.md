@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.DeleteBatchRequestDto
+The request parameters for deleting files.
 
 ## Properties
 

@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.WebhooksConfigWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

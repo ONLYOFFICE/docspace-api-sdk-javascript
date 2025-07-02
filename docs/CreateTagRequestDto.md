@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CreateTagRequestDto
+The request parameters for creating a tag.
 
 ## Properties
 

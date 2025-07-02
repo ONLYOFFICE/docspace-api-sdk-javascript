@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getUserQuotaSettings**](SettingsQuotaApi.md#getUserQuotaSettings) | **GET** /api/2.0/settings/userquotasettings | Get the user quota settings
-[**saveRoomQuotaSettings**](SettingsQuotaApi.md#saveRoomQuotaSettings) | **POST** /api/2.0/settings/roomquotasettings | Save the room quota settings
-[**setTenantQuotaSettings**](SettingsQuotaApi.md#setTenantQuotaSettings) | **PUT** /api/2.0/settings/tenantquotasettings | Save the tenant quota settings
+[**getUserQuotaSettings**](#getuserquotasettings) | **GET** /api/2.0/settings/userquotasettings | Get the user quota settings
+[**saveRoomQuotaSettings**](#saveroomquotasettings) | **POST** /api/2.0/settings/roomquotasettings | Save the room quota settings
+[**setTenantQuotaSettings**](#settenantquotasettings) | **PUT** /api/2.0/settings/tenantquotasettings | Save the tenant quota settings
 
 
 

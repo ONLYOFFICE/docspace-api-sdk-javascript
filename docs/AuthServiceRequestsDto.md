@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.AuthServiceRequestsDto
+The request parameters for handling the authorization service.
 
 ## Properties
 

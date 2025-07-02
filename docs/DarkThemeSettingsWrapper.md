@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.DarkThemeSettingsWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

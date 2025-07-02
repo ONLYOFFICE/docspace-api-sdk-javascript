@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:8092*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**changeActivation**](OAuth20ClientManagementApi.md#changeActivation) | **PATCH** /api/2.0/clients/{clientId}/activation | Change the client activation status
-[**createClient**](OAuth20ClientManagementApi.md#createClient) | **POST** /api/2.0/clients | Create a new OAuth2 client
-[**deleteClient**](OAuth20ClientManagementApi.md#deleteClient) | **DELETE** /api/2.0/clients/{clientId} | Delete an OAuth2 client
-[**regenerateSecret**](OAuth20ClientManagementApi.md#regenerateSecret) | **PATCH** /api/2.0/clients/{clientId}/regenerate | Regenerate the client secret
-[**revokeUserClient**](OAuth20ClientManagementApi.md#revokeUserClient) | **DELETE** /api/2.0/clients/{clientId}/revoke | Revoke client consent
-[**updateClient**](OAuth20ClientManagementApi.md#updateClient) | **PUT** /api/2.0/clients/{clientId} | Update an existing OAuth2 client
+[**changeActivation**](#changeactivation) | **PATCH** /api/2.0/clients/{clientId}/activation | Change the client activation status
+[**createClient**](#createclient) | **POST** /api/2.0/clients | Create a new OAuth2 client
+[**deleteClient**](#deleteclient) | **DELETE** /api/2.0/clients/{clientId} | Delete an OAuth2 client
+[**regenerateSecret**](#regeneratesecret) | **PATCH** /api/2.0/clients/{clientId}/regenerate | Regenerate the client secret
+[**revokeUserClient**](#revokeuserclient) | **DELETE** /api/2.0/clients/{clientId}/revoke | Revoke client consent
+[**updateClient**](#updateclient) | **PUT** /api/2.0/clients/{clientId} | Update an existing OAuth2 client
 
 
 

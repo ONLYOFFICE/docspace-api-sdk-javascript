@@ -1,5 +1,6 @@
 # DocspaceApiJavascript.FolderStringArrayWrapper
 
+
 ## Properties
 
 Name | Type | Description | Notes

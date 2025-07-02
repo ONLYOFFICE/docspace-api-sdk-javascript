@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.CoEditingConfig
+The co-editing configuration parameters.
 
 ## Properties
 

@@ -1,4 +1,5 @@
 # DocspaceApiJavascript.Delete
+The parameters for deleting a file.
 
 ## Properties
 
