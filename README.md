@@ -13,7 +13,7 @@ For more information, please visit [https://helpdesk.onlyoffice.com/hc/en-us](ht
 
 #### npm
 
-To publish the library as an [npm](https://www.npmjs.com/) package, please follow the instructions ["here"](https://docs.npmjs.com/getting-started/publishing-npm-packages).
+To publish the library as an [npm](https://www.npmjs.com/) package, please follow the instructions [here](https://docs.npmjs.com/getting-started/publishing-npm-packages).
 
 To install the package, run:
 
@@ -104,6 +104,55 @@ module: {
 }
 ```
 
+## Documentation for Authorization
+
+
+Authentication schemes defined for the API:
+### asc_auth_key
+
+
+- **Type**: API key
+- **API key parameter name**: asc_auth_key
+- **Location**: Cookie
+
+### Basic
+
+- **Type**: HTTP basic authentication
+
+### Bearer
+
+- **Type**: Bearer authentication (JWT)
+
+### ApiKeyBearer
+
+
+- **Type**: API key
+- **API key parameter name**: ApiKeyBearer
+- **Location**: HTTP header
+
+### OAuth2
+
+- **Type**: OAuth
+- **Flow**: accessCode
+- **Authorization URL**: 
+- **Token Url**: 
+- **Scopes**: 
+  - read: Read access to protected resources
+  - write: Write access to protected resources
+
+### OpenId
+
+- **Type**: OpenId Connect
+- **OpenId Connect URL**: 
+
+### x-signature
+
+
+- **Type**: API key
+- **API key parameter name**: x-signature
+- **Location**: Cookie
+
+
 ## Getting Started
 
 Please follow the [installation](#installation) instruction and execute the following JS code:
@@ -152,6 +201,7 @@ api.createApiKey(opts, callback);
 
 All URIs are relative to *http://localhost:8092*
 
+<details><summary>API Endoints table</summary>
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *DocspaceApiJavascript.ApiKeysApi* | [**createApiKey**](docs/ApiKeysApi.md#createApiKey) | **POST** /api/2.0/keys | Create a user API key
@@ -618,9 +668,11 @@ Class | Method | HTTP request | Description
 *DocspaceApiJavascript.SettingsWebpluginsApi* | [**updateWebPlugin**](docs/SettingsWebpluginsApi.md#updateWebPlugin) | **PUT** /api/2.0/settings/webplugins/{name} | Update a web plugin
 *DocspaceApiJavascript.ThirdPartyApi* | [**getThirdPartyCode**](docs/ThirdPartyApi.md#getThirdPartyCode) | **GET** /api/2.0/thirdparty/{provider} | Get the code request
 
+</details>
 
 ## Documentation for Models
 
+<details><summary>Models list</summary>
  - [DocspaceApiJavascript.AccountInfoArrayWrapper](docs/AccountInfoArrayWrapper.md)
  - [DocspaceApiJavascript.AccountInfoDto](docs/AccountInfoDto.md)
  - [DocspaceApiJavascript.AccountLoginType](docs/AccountLoginType.md)
@@ -1196,52 +1248,4 @@ Class | Method | HTTP request | Description
  - [DocspaceApiJavascript.WizardSettings](docs/WizardSettings.md)
  - [DocspaceApiJavascript.WizardSettingsWrapper](docs/WizardSettingsWrapper.md)
 
-
-## Documentation for Authorization
-
-
-Authentication schemes defined for the API:
-### asc_auth_key
-
-
-- **Type**: API key
-- **API key parameter name**: asc_auth_key
-- **Location**: Cookie
-
-### Basic
-
-- **Type**: HTTP basic authentication
-
-### Bearer
-
-- **Type**: Bearer authentication (JWT)
-
-### ApiKeyBearer
-
-
-- **Type**: API key
-- **API key parameter name**: ApiKeyBearer
-- **Location**: HTTP header
-
-### OAuth2
-
-- **Type**: OAuth
-- **Flow**: accessCode
-- **Authorization URL**: 
-- **Token Url**: 
-- **Scopes**: 
-  - read: Read access to protected resources
-  - write: Write access to protected resources
-
-### OpenId
-
-- **Type**: OpenId Connect
-- **OpenId Connect URL**: 
-
-### x-signature
-
-
-- **Type**: API key
-- **API key parameter name**: x-signature
-- **Location**: Cookie
-
+</details>
