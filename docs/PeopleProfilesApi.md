@@ -237,6 +237,7 @@ Name | Type | Description  | Notes
  **sortOrder** | [**SortOrder**](.md)| The order in which the results are sorted. | [optional] 
  **filterSeparator** | **String**| The character or string used to separate multiple filter values in a filtering query. | [optional] 
  **filterValue** | **String**| The text value used as an additional filter criterion for profiles retrieval. | [optional] 
+ **fields** | **string**| Comma-separated list of fields to include in the response | [optional] 
 
 ### Return type
 

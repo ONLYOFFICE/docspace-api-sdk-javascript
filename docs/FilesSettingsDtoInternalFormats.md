@@ -14,5 +14,6 @@ Name | Type | Description | Notes
 **presentation** | **String** |  | [optional] 
 **document** | **String** |  | [optional] 
 **pdf** | **String** |  | [optional] 
+**diagram** | **String** |  | [optional] 
 
 

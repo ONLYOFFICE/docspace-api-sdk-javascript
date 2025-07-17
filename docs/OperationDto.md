@@ -1,11 +1,11 @@
-# DocspaceApiJavascript.Operation
+# DocspaceApiJavascript.OperationDto
 Represents an operation.
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**date** | **Date** | Date of the operation. | [optional] 
+**date** | [**ApiDateTime**](ApiDateTime.md) |  | [optional] 
 **service** | **String** | Service related to the operation. | [optional] 
 **description** | **String** | Brief description of the operation. | [optional] 
 **serviceUnit** | **String** | Unit of the service. | [optional] 

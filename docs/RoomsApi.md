@@ -1466,6 +1466,7 @@ Name | Type | Description  | Notes
  **count** | **Number**| Gets or sets the number of tag results to retrieve.  This property specifies the maximum amount of tag data to be included in the result set. | [optional] 
  **startIndex** | **Number**| Represents the starting index from which the tags&#39; information will be retrieved.  This property is used to define the offset for pagination when retrieving a list of tags. It determines  the point in the data set from which the retrieval begins. | [optional] 
  **filterValue** | **String**| Gets or sets the text value used for searching tags.  This property is typically used as a filter value when retrieving tag information. | [optional] 
+ **fields** | **string**| Comma-separated list of fields to include in the response | [optional] 
 
 ### Return type
 
@@ -1612,6 +1613,7 @@ Name | Type | Description  | Notes
  **sortBy** | **String**| Specifies the field by which the room content should be sorted. | [optional] 
  **sortOrder** | [**SortOrder**](.md)| The order in which the results are sorted. | [optional] 
  **filterValue** | **String**| The text filter value used to refine search or query operations. | [optional] 
+ **fields** | **string**| Comma-separated list of fields to include in the response | [optional] 
 
 ### Return type
 

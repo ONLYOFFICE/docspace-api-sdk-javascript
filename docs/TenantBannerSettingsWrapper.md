@@ -1,11 +1,11 @@
-# DocspaceApiJavascript.SessionWrapper
+# DocspaceApiJavascript.TenantBannerSettingsWrapper
 
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**response** | [**Session**](Session.md) |  | [optional] 
+**response** | [**TenantBannerSettings**](TenantBannerSettings.md) |  | [optional] 
 **count** | **Number** |  | [optional] 
 **links** | [**[ActiveConnectionsWrapperLinksInner]**](ActiveConnectionsWrapperLinksInner.md) |  | [optional] 
 **status** | **Number** |  | [optional] 

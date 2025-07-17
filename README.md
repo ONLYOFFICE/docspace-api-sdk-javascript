@@ -336,9 +336,6 @@ Class | Method | HTTP request | Description
 *DocspaceApiJavascript.OAuth20ClientQueryingApi* | [**getConsents**](docs/OAuth20ClientQueryingApi.md#getConsents) | **GET** /api/2.0/clients/consents | Get user consents
 *DocspaceApiJavascript.OAuth20ClientQueryingApi* | [**getPublicClientInfo**](docs/OAuth20ClientQueryingApi.md#getPublicClientInfo) | **GET** /api/2.0/clients/{clientId}/public/info | Get public client information
 *DocspaceApiJavascript.OAuth20ScopeManagementApi* | [**getScopes**](docs/OAuth20ScopeManagementApi.md#getScopes) | **GET** /api/2.0/scopes | Get available OAuth2 scopes
-*DocspaceApiJavascript.PeopleContactsApi* | [**deleteMemberContacts**](docs/PeopleContactsApi.md#deleteMemberContacts) | **DELETE** /api/2.0/people/{userid}/contacts | Delete user contacts
-*DocspaceApiJavascript.PeopleContactsApi* | [**setMemberContacts**](docs/PeopleContactsApi.md#setMemberContacts) | **POST** /api/2.0/people/{userid}/contacts | Set user contacts
-*DocspaceApiJavascript.PeopleContactsApi* | [**updateMemberContacts**](docs/PeopleContactsApi.md#updateMemberContacts) | **PUT** /api/2.0/people/{userid}/contacts | Update user contacts
 *DocspaceApiJavascript.PeopleGuestsApi* | [**approveGuestShareLink**](docs/PeopleGuestsApi.md#approveGuestShareLink) | **POST** /api/2.0/people/guests/share/approve | Approve a guest sharing link
 *DocspaceApiJavascript.PeopleGuestsApi* | [**deleteGuests**](docs/PeopleGuestsApi.md#deleteGuests) | **DELETE** /api/2.0/people/guests | Delete guests
 *DocspaceApiJavascript.PeoplePasswordApi* | [**changeUserPassword**](docs/PeoplePasswordApi.md#changeUserPassword) | **PUT** /api/2.0/people/{userid}/password | Change a user password
@@ -397,7 +394,6 @@ Class | Method | HTTP request | Description
 *DocspaceApiJavascript.PortalGuestsApi* | [**getGuestSharingLink**](docs/PortalGuestsApi.md#getGuestSharingLink) | **GET** /api/2.0/people/guests/{userid}/share | Get a guest sharing link
 *DocspaceApiJavascript.PortalPaymentApi* | [**calculateWalletPayment**](docs/PortalPaymentApi.md#calculateWalletPayment) | **PUT** /api/2.0/portal/payment/calculatewallet | Calculate amount of the wallet payment
 *DocspaceApiJavascript.PortalPaymentApi* | [**createCustomerOperationsReport**](docs/PortalPaymentApi.md#createCustomerOperationsReport) | **POST** /api/2.0/portal/payment/customer/operationsreport | Generate the customer operations report
-*DocspaceApiJavascript.PortalPaymentApi* | [**getAccountingCurrencies**](docs/PortalPaymentApi.md#getAccountingCurrencies) | **GET** /api/2.0/portal/payment/accounting/currencies | Get list of currencies
 *DocspaceApiJavascript.PortalPaymentApi* | [**getCheckoutSetupUrl**](docs/PortalPaymentApi.md#getCheckoutSetupUrl) | **GET** /api/2.0/portal/payment/chechoutsetupurl | Get the checkout setup page URL
 *DocspaceApiJavascript.PortalPaymentApi* | [**getCustomerBalance**](docs/PortalPaymentApi.md#getCustomerBalance) | **GET** /api/2.0/portal/payment/customer/balance | Get the customer balance
 *DocspaceApiJavascript.PortalPaymentApi* | [**getCustomerInfo**](docs/PortalPaymentApi.md#getCustomerInfo) | **GET** /api/2.0/portal/payment/customerinfo | Get the customer info
@@ -409,8 +405,6 @@ Class | Method | HTTP request | Description
 *DocspaceApiJavascript.PortalPaymentApi* | [**getPortalPrices**](docs/PortalPaymentApi.md#getPortalPrices) | **GET** /api/2.0/portal/payment/prices | Get prices
 *DocspaceApiJavascript.PortalPaymentApi* | [**getQuotaPaymentInformation**](docs/PortalPaymentApi.md#getQuotaPaymentInformation) | **GET** /api/2.0/portal/payment/quota | Get quota payment information
 *DocspaceApiJavascript.PortalPaymentApi* | [**getTenantWalletSettings**](docs/PortalPaymentApi.md#getTenantWalletSettings) | **GET** /api/2.0/portal/payment/topupsettings | Get wallet auto top up settings
-*DocspaceApiJavascript.PortalPaymentApi* | [**openCustomerSession**](docs/PortalPaymentApi.md#openCustomerSession) | **POST** /api/2.0/portal/payment/customer/opensession | Open customer session
-*DocspaceApiJavascript.PortalPaymentApi* | [**performCustomerOperation**](docs/PortalPaymentApi.md#performCustomerOperation) | **POST** /api/2.0/portal/payment/customer/performoperation | Perform customer operation
 *DocspaceApiJavascript.PortalPaymentApi* | [**sendPaymentRequest**](docs/PortalPaymentApi.md#sendPaymentRequest) | **POST** /api/2.0/portal/payment/request | Send a payment request
 *DocspaceApiJavascript.PortalPaymentApi* | [**setTenantWalletSettings**](docs/PortalPaymentApi.md#setTenantWalletSettings) | **POST** /api/2.0/portal/payment/topupsettings | Set wallet auto top up settings
 *DocspaceApiJavascript.PortalPaymentApi* | [**topUpDeposit**](docs/PortalPaymentApi.md#topUpDeposit) | **POST** /api/2.0/portal/payment/deposit | Put money on deposit
@@ -483,6 +477,7 @@ Class | Method | HTTP request | Description
 *DocspaceApiJavascript.SecurityAuditTrailDataApi* | [**getAuditTrailTypes**](docs/SecurityAuditTrailDataApi.md#getAuditTrailTypes) | **GET** /api/2.0/security/audit/types | Get audit trail types
 *DocspaceApiJavascript.SecurityAuditTrailDataApi* | [**getLastAuditEvents**](docs/SecurityAuditTrailDataApi.md#getLastAuditEvents) | **GET** /api/2.0/security/audit/events/last | Get audit trail data
 *DocspaceApiJavascript.SecurityAuditTrailDataApi* | [**setAuditSettings**](docs/SecurityAuditTrailDataApi.md#setAuditSettings) | **POST** /api/2.0/security/audit/settings/lifetime | Set the audit trail settings
+*DocspaceApiJavascript.SecurityBannersVisibilityApi* | [**setTenantBannerSettings**](docs/SecurityBannersVisibilityApi.md#setTenantBannerSettings) | **POST** /api/2.0/settings/banner | Set the promotional banners visibility settings
 *DocspaceApiJavascript.SecurityCSPApi* | [**configureCsp**](docs/SecurityCSPApi.md#configureCsp) | **POST** /api/2.0/security/csp | Configure CSP settings
 *DocspaceApiJavascript.SecurityCSPApi* | [**getCspSettings**](docs/SecurityCSPApi.md#getCspSettings) | **GET** /api/2.0/security/csp | Get CSP settings
 *DocspaceApiJavascript.SecurityFirebaseApi* | [**docRegisterPusnNotificationDevice**](docs/SecurityFirebaseApi.md#docRegisterPusnNotificationDevice) | **POST** /api/2.0/settings/push/docregisterdevice | Save the Documents Firebase device token
@@ -499,6 +494,7 @@ Class | Method | HTTP request | Description
 *DocspaceApiJavascript.SettingsAccessToDevToolsApi* | [**getTenantAccessDevToolsSettings**](docs/SettingsAccessToDevToolsApi.md#getTenantAccessDevToolsSettings) | **GET** /api/2.0/settings/devtoolsaccess | Get the Developer Tools access settings
 *DocspaceApiJavascript.SettingsAuthorizationApi* | [**getAuthServices**](docs/SettingsAuthorizationApi.md#getAuthServices) | **GET** /api/2.0/settings/authservice | Get the authorization services
 *DocspaceApiJavascript.SettingsAuthorizationApi* | [**saveAuthKeys**](docs/SettingsAuthorizationApi.md#saveAuthKeys) | **POST** /api/2.0/settings/authservice | Save the authorization keys
+*DocspaceApiJavascript.SettingsBannersVisibilityApi* | [**getTenantBannerSettings**](docs/SettingsBannersVisibilityApi.md#getTenantBannerSettings) | **GET** /api/2.0/settings/banner | Get the promotional banners visibility settings
 *DocspaceApiJavascript.SettingsCommonSettingsApi* | [**closeAdminHelper**](docs/SettingsCommonSettingsApi.md#closeAdminHelper) | **PUT** /api/2.0/settings/closeadminhelper | Close the admin helper
 *DocspaceApiJavascript.SettingsCommonSettingsApi* | [**completeWizard**](docs/SettingsCommonSettingsApi.md#completeWizard) | **PUT** /api/2.0/settings/wizard/complete | Complete the Wizard settings
 *DocspaceApiJavascript.SettingsCommonSettingsApi* | [**configureDeepLink**](docs/SettingsCommonSettingsApi.md#configureDeepLink) | **POST** /api/2.0/settings/deeplink | Configure the deep link settings
@@ -711,7 +707,6 @@ Class | Method | HTTP request | Description
  - [DocspaceApiJavascript.ConfirmType](docs/ConfirmType.md)
  - [DocspaceApiJavascript.ConfirmWrapper](docs/ConfirmWrapper.md)
  - [DocspaceApiJavascript.Contact](docs/Contact.md)
- - [DocspaceApiJavascript.ContactsRequest](docs/ContactsRequest.md)
  - [DocspaceApiJavascript.ContentDisposition](docs/ContentDisposition.md)
  - [DocspaceApiJavascript.ContentType](docs/ContentType.md)
  - [DocspaceApiJavascript.ConversationResultArrayWrapper](docs/ConversationResultArrayWrapper.md)
@@ -745,8 +740,6 @@ Class | Method | HTTP request | Description
  - [DocspaceApiJavascript.CultureSpecificExternalResources](docs/CultureSpecificExternalResources.md)
  - [DocspaceApiJavascript.CurrenciesArrayWrapper](docs/CurrenciesArrayWrapper.md)
  - [DocspaceApiJavascript.CurrenciesDto](docs/CurrenciesDto.md)
- - [DocspaceApiJavascript.Currency](docs/Currency.md)
- - [DocspaceApiJavascript.CurrencyArrayWrapper](docs/CurrencyArrayWrapper.md)
  - [DocspaceApiJavascript.CurrentLicenseInfo](docs/CurrentLicenseInfo.md)
  - [DocspaceApiJavascript.CustomColorThemesSettingsColorItem](docs/CustomColorThemesSettingsColorItem.md)
  - [DocspaceApiJavascript.CustomColorThemesSettingsDto](docs/CustomColorThemesSettingsDto.md)
@@ -758,7 +751,7 @@ Class | Method | HTTP request | Description
  - [DocspaceApiJavascript.CustomNavigationItemArrayWrapper](docs/CustomNavigationItemArrayWrapper.md)
  - [DocspaceApiJavascript.CustomNavigationItemWrapper](docs/CustomNavigationItemWrapper.md)
  - [DocspaceApiJavascript.CustomerConfigDto](docs/CustomerConfigDto.md)
- - [DocspaceApiJavascript.CustomerInfo](docs/CustomerInfo.md)
+ - [DocspaceApiJavascript.CustomerInfoDto](docs/CustomerInfoDto.md)
  - [DocspaceApiJavascript.CustomerInfoWrapper](docs/CustomerInfoWrapper.md)
  - [DocspaceApiJavascript.CustomerOperationsReportRequestDto](docs/CustomerOperationsReportRequestDto.md)
  - [DocspaceApiJavascript.CustomizationConfigDto](docs/CustomizationConfigDto.md)
@@ -969,8 +962,7 @@ Class | Method | HTTP request | Description
  - [DocspaceApiJavascript.OAuth20Token](docs/OAuth20Token.md)
  - [DocspaceApiJavascript.ObjectArrayWrapper](docs/ObjectArrayWrapper.md)
  - [DocspaceApiJavascript.ObjectWrapper](docs/ObjectWrapper.md)
- - [DocspaceApiJavascript.OpenCustomerSessionRequestDto](docs/OpenCustomerSessionRequestDto.md)
- - [DocspaceApiJavascript.Operation](docs/Operation.md)
+ - [DocspaceApiJavascript.OperationDto](docs/OperationDto.md)
  - [DocspaceApiJavascript.Options](docs/Options.md)
  - [DocspaceApiJavascript.OrderBy](docs/OrderBy.md)
  - [DocspaceApiJavascript.OrderRequestDto](docs/OrderRequestDto.md)
@@ -994,7 +986,6 @@ Class | Method | HTTP request | Description
  - [DocspaceApiJavascript.PaymentSettingsWrapper](docs/PaymentSettingsWrapper.md)
  - [DocspaceApiJavascript.PaymentUrlRequestsDto](docs/PaymentUrlRequestsDto.md)
  - [DocspaceApiJavascript.Payments](docs/Payments.md)
- - [DocspaceApiJavascript.PerformCustomerOperationRequestDto](docs/PerformCustomerOperationRequestDto.md)
  - [DocspaceApiJavascript.PermissionsConfig](docs/PermissionsConfig.md)
  - [DocspaceApiJavascript.PluginsConfig](docs/PluginsConfig.md)
  - [DocspaceApiJavascript.PluginsDto](docs/PluginsDto.md)
@@ -1017,8 +1008,9 @@ Class | Method | HTTP request | Description
  - [DocspaceApiJavascript.QuotaWrapper](docs/QuotaWrapper.md)
  - [DocspaceApiJavascript.RecaptchaType](docs/RecaptchaType.md)
  - [DocspaceApiJavascript.RecentConfig](docs/RecentConfig.md)
- - [DocspaceApiJavascript.Report](docs/Report.md)
+ - [DocspaceApiJavascript.ReportDto](docs/ReportDto.md)
  - [DocspaceApiJavascript.ReportWrapper](docs/ReportWrapper.md)
+ - [DocspaceApiJavascript.ReviewConfig](docs/ReviewConfig.md)
  - [DocspaceApiJavascript.RoomDataLifetimeDto](docs/RoomDataLifetimeDto.md)
  - [DocspaceApiJavascript.RoomDataLifetimePeriod](docs/RoomDataLifetimePeriod.md)
  - [DocspaceApiJavascript.RoomFromTemplateStatusDto](docs/RoomFromTemplateStatusDto.md)
@@ -1049,9 +1041,7 @@ Class | Method | HTTP request | Description
  - [DocspaceApiJavascript.SecurityArrayWrapper](docs/SecurityArrayWrapper.md)
  - [DocspaceApiJavascript.SecurityDto](docs/SecurityDto.md)
  - [DocspaceApiJavascript.SecurityRequestsDto](docs/SecurityRequestsDto.md)
- - [DocspaceApiJavascript.Session](docs/Session.md)
  - [DocspaceApiJavascript.SessionRequest](docs/SessionRequest.md)
- - [DocspaceApiJavascript.SessionWrapper](docs/SessionWrapper.md)
  - [DocspaceApiJavascript.SetManagerRequest](docs/SetManagerRequest.md)
  - [DocspaceApiJavascript.SetPublicDto](docs/SetPublicDto.md)
  - [DocspaceApiJavascript.SettingsDto](docs/SettingsDto.md)
@@ -1103,6 +1093,9 @@ Class | Method | HTTP request | Description
  - [DocspaceApiJavascript.TemplatesRequestDto](docs/TemplatesRequestDto.md)
  - [DocspaceApiJavascript.TenantAuditSettings](docs/TenantAuditSettings.md)
  - [DocspaceApiJavascript.TenantAuditSettingsWrapper](docs/TenantAuditSettingsWrapper.md)
+ - [DocspaceApiJavascript.TenantBannerSettings](docs/TenantBannerSettings.md)
+ - [DocspaceApiJavascript.TenantBannerSettingsDto](docs/TenantBannerSettingsDto.md)
+ - [DocspaceApiJavascript.TenantBannerSettingsWrapper](docs/TenantBannerSettingsWrapper.md)
  - [DocspaceApiJavascript.TenantDeepLinkSettings](docs/TenantDeepLinkSettings.md)
  - [DocspaceApiJavascript.TenantDeepLinkSettingsWrapper](docs/TenantDeepLinkSettingsWrapper.md)
  - [DocspaceApiJavascript.TenantDevToolsAccessSettings](docs/TenantDevToolsAccessSettings.md)

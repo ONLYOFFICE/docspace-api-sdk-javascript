@@ -378,6 +378,7 @@ Name | Type | Description  | Notes
  **sortBy** | **String**| Specifies the property used to sort the query results. | [optional] 
  **sortOrder** | [**SortOrder**](.md)| The order in which the results are sorted. | [optional] 
  **filterValue** | **String**| The text used for filtering or searching group data. | [optional] 
+ **fields** | **string**| Comma-separated list of fields to include in the response | [optional] 
 
 ### Return type
 

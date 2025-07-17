@@ -11,9 +11,9 @@ Name | Type | Description | Notes
 **feedback** | [**FeedbackConfig**](FeedbackConfig.md) |  | [optional] 
 **forcesave** | **Boolean** | Specifies if the customization should be force saved. | [optional] 
 **goback** | [**GobackConfig**](GobackConfig.md) |  | [optional] 
+**review** | [**ReviewConfig**](ReviewConfig.md) |  | [optional] 
 **logo** | [**LogoConfigDto**](LogoConfigDto.md) |  | [optional] 
 **mentionShare** | **Boolean** | Specifies if the share should be mentioned. | [optional] 
-**reviewDisplay** | **String** | The review display of the customization. | [optional] 
 **submitForm** | [**SubmitForm**](SubmitForm.md) |  | [optional] 
 **startFillingForm** | [**StartFillingForm**](StartFillingForm.md) |  | [optional] 
 

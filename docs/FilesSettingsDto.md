@@ -26,6 +26,7 @@ Name | Type | Description | Notes
 **extsSpreadsheet** | **[String]** | The list of the spreadsheet extensions. | [optional] 
 **extsPresentation** | **[String]** | The list of the presentation extensions. | [optional] 
 **extsDocument** | **[String]** | The list of the text document extensions. | [optional] 
+**extsDiagram** | **[String]** | The list of the diagram extensions. | [optional] 
 **internalFormats** | [**FilesSettingsDtoInternalFormats**](FilesSettingsDtoInternalFormats.md) |  | [optional] 
 **masterFormExtension** | **String** | The master form extension. | [optional] 
 **paramVersion** | **String** | The URL parameter which specifies the file version. | [optional] 

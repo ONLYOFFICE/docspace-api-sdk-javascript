@@ -6,7 +6,6 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**calculateWalletPayment**](#calculatewalletpayment) | **PUT** /api/2.0/portal/payment/calculatewallet | Calculate amount of the wallet payment
 [**createCustomerOperationsReport**](#createcustomeroperationsreport) | **POST** /api/2.0/portal/payment/customer/operationsreport | Generate the customer operations report
-[**getAccountingCurrencies**](#getaccountingcurrencies) | **GET** /api/2.0/portal/payment/accounting/currencies | Get list of currencies
 [**getCheckoutSetupUrl**](#getcheckoutsetupurl) | **GET** /api/2.0/portal/payment/chechoutsetupurl | Get the checkout setup page URL
 [**getCustomerBalance**](#getcustomerbalance) | **GET** /api/2.0/portal/payment/customer/balance | Get the customer balance
 [**getCustomerInfo**](#getcustomerinfo) | **GET** /api/2.0/portal/payment/customerinfo | Get the customer info
@@ -18,8 +17,6 @@ Method | HTTP request | Description
 [**getPortalPrices**](#getportalprices) | **GET** /api/2.0/portal/payment/prices | Get prices
 [**getQuotaPaymentInformation**](#getquotapaymentinformation) | **GET** /api/2.0/portal/payment/quota | Get quota payment information
 [**getTenantWalletSettings**](#gettenantwalletsettings) | **GET** /api/2.0/portal/payment/topupsettings | Get wallet auto top up settings
-[**openCustomerSession**](#opencustomersession) | **POST** /api/2.0/portal/payment/customer/opensession | Open customer session
-[**performCustomerOperation**](#performcustomeroperation) | **POST** /api/2.0/portal/payment/customer/performoperation | Perform customer operation
 [**sendPaymentRequest**](#sendpaymentrequest) | **POST** /api/2.0/portal/payment/request | Send a payment request
 [**setTenantWalletSettings**](#settenantwalletsettings) | **POST** /api/2.0/portal/payment/topupsettings | Set wallet auto top up settings
 [**topUpDeposit**](#topupdeposit) | **POST** /api/2.0/portal/payment/deposit | Put money on deposit
@@ -161,68 +158,6 @@ apiInstance.createCustomerOperationsReport(opts, (error, data, response) => {
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## getAccountingCurrencies
-
-> CurrencyArrayWrapper getAccountingCurrencies()
-
-Returns the list of currencies from accounting service.
-
-For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/get-accounting-currencies/).
-
-### Parameters
-
-This endpoint does not need any parameter.
-
-### Return type
-
-[**CurrencyArrayWrapper**](CurrencyArrayWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
-
-### Example
-
-```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
-apiInstance.getAccountingCurrencies((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
 - **Accept**: application/json
 
 
@@ -963,142 +898,6 @@ apiInstance.getTenantWalletSettings((error, data, response) => {
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## openCustomerSession
-
-> SessionWrapper openCustomerSession(opts)
-
-Trying to open a customer session and block amount money on the balance.
-
-For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/open-customer-session/).
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **openCustomerSessionRequestDto** | [**OpenCustomerSessionRequestDto**](OpenCustomerSessionRequestDto.md)|  | [optional] 
-
-### Return type
-
-[**SessionWrapper**](SessionWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
-
-### Example
-
-```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
-let opts = {
-  'openCustomerSessionRequestDto': new DocspaceApiJavascript.OpenCustomerSessionRequestDto() // OpenCustomerSessionRequestDto | 
-};
-apiInstance.openCustomerSession(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-## performCustomerOperation
-
-> BooleanWrapper performCustomerOperation(opts)
-
-Perform customer operation and return true if the operation is succesfully provided.
-
-For more information, see [api.onlyoffice.com](https://api.onlyoffice.com/docspace/api-backend/usage-api/perform-customer-operation/).
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **performCustomerOperationRequestDto** | [**PerformCustomerOperationRequestDto**](PerformCustomerOperationRequestDto.md)|  | [optional] 
-
-### Return type
-
-[**BooleanWrapper**](BooleanWrapper.md)
-
-### Authorization
-
-[Basic](../README.md#Basic), [OAuth2](../README.md#OAuth2), [ApiKeyBearer](../README.md#ApiKeyBearer), [asc_auth_key](../README.md#asc_auth_key), [Bearer](../README.md#Bearer), [OpenId](../README.md#OpenId)
-
-### Example
-
-```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
-// Configure HTTP basic authorization: Basic
-let Basic = defaultClient.authentications['Basic'];
-Basic.username = 'YOUR USERNAME';
-Basic.password = 'YOUR PASSWORD';
-// Configure OAuth2 access token for authorization: OAuth2
-let OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-// Configure API key authorization: ApiKeyBearer
-let ApiKeyBearer = defaultClient.authentications['ApiKeyBearer'];
-ApiKeyBearer.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKeyBearer.apiKeyPrefix = 'Token';
-// Configure API key authorization: asc_auth_key
-let asc_auth_key = defaultClient.authentications['asc_auth_key'];
-asc_auth_key.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//asc_auth_key.apiKeyPrefix = 'Token';
-// Configure Bearer (JWT) access token for authorization: Bearer
-let Bearer = defaultClient.authentications['Bearer'];
-Bearer.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
-let opts = {
-  'performCustomerOperationRequestDto': new DocspaceApiJavascript.PerformCustomerOperationRequestDto() // PerformCustomerOperationRequestDto | 
-};
-apiInstance.performCustomerOperation(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### HTTP request headers
-
-- **Content-Type**: application/json
 - **Accept**: application/json
 
 

@@ -299,6 +299,7 @@ Name | Type | Description  | Notes
  **trigger** | [**WebhookTrigger**](.md)| The type of event that triggered the webhook. | [optional] 
  **count** | **Number**| The maximum number of webhook log records to return in the query response. | [optional] 
  **startIndex** | **Number**| Specifies the starting index for retrieving webhook logs.  Used for pagination in the webhook delivery log queries. | [optional] 
+ **fields** | **string**| Comma-separated list of fields to include in the response | [optional] 
 
 ### Return type
 

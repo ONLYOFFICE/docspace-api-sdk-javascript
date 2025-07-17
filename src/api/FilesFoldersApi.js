@@ -1,28 +1,20 @@
-// (c) Copyright Ascensio System SIA 2009-2025
-// 
-// This program is a free software product.
-// You can redistribute it and/or modify it under the terms
-// of the GNU Affero General Public License (AGPL) version 3 as published by the Free Software
-// Foundation. In accordance with Section 7(a) of the GNU AGPL its Section 15 shall be amended
-// to the effect that Ascensio System SIA expressly excludes the warranty of non-infringement of
-// any third-party rights.
-// 
-// This program is distributed WITHOUT ANY WARRANTY, without even the implied warranty
-// of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For details, see
-// the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
-// 
-// You can contact Ascensio System SIA at Lubanas st. 125a-25, Riga, Latvia, EU, LV-1021.
-// 
-// The  interactive user interfaces in modified source and object code versions of the Program must
-// display Appropriate Legal Notices, as required under Section 5 of the GNU AGPL version 3.
-// 
-// Pursuant to Section 7(b) of the License you must retain the original Product logo when
-// distributing the program. Pursuant to Section 7(e) we decline to grant you any rights under
-// trademark law for use of our trademarks.
-// 
-// All the Product's GUI elements, including illustrations and icon sets, as well as technical writing
-// content are licensed under the terms of the Creative Commons Attribution-ShareAlike 4.0
-// International. See the License terms at http://creativecommons.org/licenses/by-sa/4.0/legalcode
+/**
+ *
+ * (c) Copyright Ascensio System SIA 2025
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
 
 import ApiClient from "../ApiClient";
 import ApiDateTime from '../models/ApiDateTime';
@@ -625,6 +617,7 @@ export default class FilesFoldersApi {
      * @param {String} [sortBy] The property used to specify the sorting criteria for folder contents.
      * @param {module:models/SortOrder} [sortOrder] The order in which the results are sorted.
      * @param {String} [filterValue] The text used for filtering or searching folder contents.
+     * @param {} [fields] Comma-separated list of fields to include in the response
      * @param {module:api/FilesFoldersApi~getMyFolderCallback} callback The callback function, accepting three arguments: error, data, response
      * REST API Reference for {{operationId}} operation
      * @see {{vendorExtensions.x-seealsoUrl}}
@@ -644,7 +637,8 @@ export default class FilesFoldersApi {
         'startIndex': opts['startIndex'],
         'sortBy': opts['sortBy'],
         'sortOrder': opts['sortOrder'],
-        'filterValue': opts['filterValue']
+        'filterValue': opts['filterValue'],
+        'fields': this.apiClient.buildCollectionParam(opts['fields'], 'csv')
       };
       let headerParams = {
       };
@@ -726,6 +720,7 @@ export default class FilesFoldersApi {
      * @param {String} [sortBy] Specifies the field by which the folder content should be sorted.
      * @param {module:models/SortOrder} [sortOrder] The order in which the results are sorted.
      * @param {String} [filterValue] The text used as a filter or search criterion for folder content queries.
+     * @param {} [fields] Comma-separated list of fields to include in the response
      * @param {module:api/FilesFoldersApi~getPrivacyFolderCallback} callback The callback function, accepting three arguments: error, data, response
      * REST API Reference for {{operationId}} operation
      * @see {{vendorExtensions.x-seealsoUrl}}
@@ -744,7 +739,8 @@ export default class FilesFoldersApi {
         'startIndex': opts['startIndex'],
         'sortBy': opts['sortBy'],
         'sortOrder': opts['sortOrder'],
-        'filterValue': opts['filterValue']
+        'filterValue': opts['filterValue'],
+        'fields': this.apiClient.buildCollectionParam(opts['fields'], 'csv')
       };
       let headerParams = {
       };
@@ -782,6 +778,7 @@ export default class FilesFoldersApi {
      * @param {String} [sortBy] Specifies the field by which the folder content should be sorted.
      * @param {module:models/SortOrder} [sortOrder] The order in which the results are sorted.
      * @param {String} [filterValue] The text used as a filter for searching or retrieving folder contents.
+     * @param {} [fields] Comma-separated list of fields to include in the response
      * @param {module:api/FilesFoldersApi~getRootFoldersCallback} callback The callback function, accepting three arguments: error, data, response
      * REST API Reference for {{operationId}} operation
      * @see {{vendorExtensions.x-seealsoUrl}}
@@ -801,7 +798,8 @@ export default class FilesFoldersApi {
         'startIndex': opts['startIndex'],
         'sortBy': opts['sortBy'],
         'sortOrder': opts['sortOrder'],
-        'filterValue': opts['filterValue']
+        'filterValue': opts['filterValue'],
+        'fields': this.apiClient.buildCollectionParam(opts['fields'], 'csv')
       };
       let headerParams = {
       };
@@ -839,6 +837,7 @@ export default class FilesFoldersApi {
      * @param {String} [sortBy] The property used to specify the sorting criteria for folder contents.
      * @param {module:models/SortOrder} [sortOrder] The order in which the results are sorted.
      * @param {String} [filterValue] The text used for filtering or searching folder contents.
+     * @param {} [fields] Comma-separated list of fields to include in the response
      * @param {module:api/FilesFoldersApi~getTrashFolderCallback} callback The callback function, accepting three arguments: error, data, response
      * REST API Reference for {{operationId}} operation
      * @see {{vendorExtensions.x-seealsoUrl}}
@@ -858,7 +857,8 @@ export default class FilesFoldersApi {
         'startIndex': opts['startIndex'],
         'sortBy': opts['sortBy'],
         'sortOrder': opts['sortOrder'],
-        'filterValue': opts['filterValue']
+        'filterValue': opts['filterValue'],
+        'fields': this.apiClient.buildCollectionParam(opts['fields'], 'csv')
       };
       let headerParams = {
       };

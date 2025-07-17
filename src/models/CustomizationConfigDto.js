@@ -1,34 +1,27 @@
-// (c) Copyright Ascensio System SIA 2009-2025
-// 
-// This program is a free software product.
-// You can redistribute it and/or modify it under the terms
-// of the GNU Affero General Public License (AGPL) version 3 as published by the Free Software
-// Foundation. In accordance with Section 7(a) of the GNU AGPL its Section 15 shall be amended
-// to the effect that Ascensio System SIA expressly excludes the warranty of non-infringement of
-// any third-party rights.
-// 
-// This program is distributed WITHOUT ANY WARRANTY, without even the implied warranty
-// of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For details, see
-// the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
-// 
-// You can contact Ascensio System SIA at Lubanas st. 125a-25, Riga, Latvia, EU, LV-1021.
-// 
-// The  interactive user interfaces in modified source and object code versions of the Program must
-// display Appropriate Legal Notices, as required under Section 5 of the GNU AGPL version 3.
-// 
-// Pursuant to Section 7(b) of the License you must retain the original Product logo when
-// distributing the program. Pursuant to Section 7(e) we decline to grant you any rights under
-// trademark law for use of our trademarks.
-// 
-// All the Product's GUI elements, including illustrations and icon sets, as well as technical writing
-// content are licensed under the terms of the Creative Commons Attribution-ShareAlike 4.0
-// International. See the License terms at http://creativecommons.org/licenses/by-sa/4.0/legalcode
+/**
+ *
+ * (c) Copyright Ascensio System SIA 2025
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
 import ApiClient from '../ApiClient';
 import AnonymousConfigDto from './AnonymousConfigDto';
 import CustomerConfigDto from './CustomerConfigDto';
 import FeedbackConfig from './FeedbackConfig';
 import GobackConfig from './GobackConfig';
 import LogoConfigDto from './LogoConfigDto';
+import ReviewConfig from './ReviewConfig';
 import StartFillingForm from './StartFillingForm';
 import SubmitForm from './SubmitForm';
 
@@ -85,14 +78,14 @@ class CustomizationConfigDto {
             if (data.hasOwnProperty('goback')) {
                 obj['goback'] = GobackConfig.constructFromObject(data['goback']);
             }
+            if (data.hasOwnProperty('review')) {
+                obj['review'] = ReviewConfig.constructFromObject(data['review']);
+            }
             if (data.hasOwnProperty('logo')) {
                 obj['logo'] = LogoConfigDto.constructFromObject(data['logo']);
             }
             if (data.hasOwnProperty('mentionShare')) {
                 obj['mentionShare'] = ApiClient.convertToType(data['mentionShare'], 'Boolean');
-            }
-            if (data.hasOwnProperty('reviewDisplay')) {
-                obj['reviewDisplay'] = ApiClient.convertToType(data['reviewDisplay'], 'String');
             }
             if (data.hasOwnProperty('submitForm')) {
                 obj['submitForm'] = SubmitForm.constructFromObject(data['submitForm']);
@@ -126,13 +119,13 @@ class CustomizationConfigDto {
         if (data['goback']) { // data not null
           GobackConfig.validateJSON(data['goback']);
         }
+        // validate the optional field `review`
+        if (data['review']) { // data not null
+          ReviewConfig.validateJSON(data['review']);
+        }
         // validate the optional field `logo`
         if (data['logo']) { // data not null
           LogoConfigDto.validateJSON(data['logo']);
-        }
-        // ensure the json data is a string
-        if (data['reviewDisplay'] && !(typeof data['reviewDisplay'] === 'string' || data['reviewDisplay'] instanceof String)) {
-            throw new Error("Expected the field `reviewDisplay` to be a primitive type in the JSON string but got " + data['reviewDisplay']);
         }
         // validate the optional field `submitForm`
         if (data['submitForm']) { // data not null
@@ -184,6 +177,11 @@ CustomizationConfigDto.prototype['forcesave'] = undefined;
 CustomizationConfigDto.prototype['goback'] = undefined;
 
 /**
+ * @member {module:models/ReviewConfig} review
+ */
+CustomizationConfigDto.prototype['review'] = undefined;
+
+/**
  * @member {module:models/LogoConfigDto} logo
  */
 CustomizationConfigDto.prototype['logo'] = undefined;
@@ -193,12 +191,6 @@ CustomizationConfigDto.prototype['logo'] = undefined;
  * @member {Boolean} mentionShare
  */
 CustomizationConfigDto.prototype['mentionShare'] = undefined;
-
-/**
- * The review display of the customization.
- * @member {String} reviewDisplay
- */
-CustomizationConfigDto.prototype['reviewDisplay'] = undefined;
 
 /**
  * @member {module:models/SubmitForm} submitForm

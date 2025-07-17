@@ -211,6 +211,7 @@ Name | Type | Description  | Notes
  **sortOrder** | [**SortOrder**](.md)| The order in which the results are sorted. | [optional] 
  **filterSeparator** | **String**| Represents the separator used to split filter criteria in query parameters. | [optional] 
  **filterValue** | **String**| The search text used to filter results based on user input. | [optional] 
+ **fields** | **string**| Comma-separated list of fields to include in the response | [optional] 
 
 ### Return type
 
@@ -409,6 +410,7 @@ Name | Type | Description  | Notes
  **sortOrder** | [**SortOrder**](.md)| The order in which the results are sorted. | [optional] 
  **filterSeparator** | **String**| Represents the separator used to split filter criteria in query parameters. | [optional] 
  **filterValue** | **String**| The search text used to filter results based on user input. | [optional] 
+ **fields** | **string**| Comma-separated list of fields to include in the response | [optional] 
 
 ### Return type
 

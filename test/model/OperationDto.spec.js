@@ -1,28 +1,20 @@
-// (c) Copyright Ascensio System SIA 2009-2025
-// 
-// This program is a free software product.
-// You can redistribute it and/or modify it under the terms
-// of the GNU Affero General Public License (AGPL) version 3 as published by the Free Software
-// Foundation. In accordance with Section 7(a) of the GNU AGPL its Section 15 shall be amended
-// to the effect that Ascensio System SIA expressly excludes the warranty of non-infringement of
-// any third-party rights.
-// 
-// This program is distributed WITHOUT ANY WARRANTY, without even the implied warranty
-// of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For details, see
-// the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
-// 
-// You can contact Ascensio System SIA at Lubanas st. 125a-25, Riga, Latvia, EU, LV-1021.
-// 
-// The  interactive user interfaces in modified source and object code versions of the Program must
-// display Appropriate Legal Notices, as required under Section 5 of the GNU AGPL version 3.
-// 
-// Pursuant to Section 7(b) of the License you must retain the original Product logo when
-// distributing the program. Pursuant to Section 7(e) we decline to grant you any rights under
-// trademark law for use of our trademarks.
-// 
-// All the Product's GUI elements, including illustrations and icon sets, as well as technical writing
-// content are licensed under the terms of the Creative Commons Attribution-ShareAlike 4.0
-// International. See the License terms at http://creativecommons.org/licenses/by-sa/4.0/legalcode
+/**
+ *
+ * (c) Copyright Ascensio System SIA 2025
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD.
@@ -40,7 +32,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.Operation();
+    instance = new DocspaceApiJavascript.OperationDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -59,58 +51,58 @@
       object[property] = value;
   }
 
-  describe('Operation', function() {
-    it('should create an instance of Operation', function() {
-      // uncomment below and update the code to test Operation
-      //var instance = new DocspaceApiJavascript.Operation();
-      //expect(instance).to.be.a(DocspaceApiJavascript.Operation);
+  describe('OperationDto', function() {
+    it('should create an instance of OperationDto', function() {
+      // uncomment below and update the code to test OperationDto
+      //var instance = new DocspaceApiJavascript.OperationDto();
+      //expect(instance).to.be.a(DocspaceApiJavascript.OperationDto);
     });
 
     it('should have the property date (base name: "date")', function() {
       // uncomment below and update the code to test the property date
-      //var instance = new DocspaceApiJavascript.Operation();
+      //var instance = new DocspaceApiJavascript.OperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property service (base name: "service")', function() {
       // uncomment below and update the code to test the property service
-      //var instance = new DocspaceApiJavascript.Operation();
+      //var instance = new DocspaceApiJavascript.OperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new DocspaceApiJavascript.Operation();
+      //var instance = new DocspaceApiJavascript.OperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property serviceUnit (base name: "serviceUnit")', function() {
       // uncomment below and update the code to test the property serviceUnit
-      //var instance = new DocspaceApiJavascript.Operation();
+      //var instance = new DocspaceApiJavascript.OperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new DocspaceApiJavascript.Operation();
+      //var instance = new DocspaceApiJavascript.OperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property currency (base name: "currency")', function() {
       // uncomment below and update the code to test the property currency
-      //var instance = new DocspaceApiJavascript.Operation();
+      //var instance = new DocspaceApiJavascript.OperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property credit (base name: "credit")', function() {
       // uncomment below and update the code to test the property credit
-      //var instance = new DocspaceApiJavascript.Operation();
+      //var instance = new DocspaceApiJavascript.OperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property withdrawal (base name: "withdrawal")', function() {
       // uncomment below and update the code to test the property withdrawal
-      //var instance = new DocspaceApiJavascript.Operation();
+      //var instance = new DocspaceApiJavascript.OperationDto();
       //expect(instance).to.be();
     });
 

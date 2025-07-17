@@ -1,28 +1,20 @@
-// (c) Copyright Ascensio System SIA 2009-2025
-// 
-// This program is a free software product.
-// You can redistribute it and/or modify it under the terms
-// of the GNU Affero General Public License (AGPL) version 3 as published by the Free Software
-// Foundation. In accordance with Section 7(a) of the GNU AGPL its Section 15 shall be amended
-// to the effect that Ascensio System SIA expressly excludes the warranty of non-infringement of
-// any third-party rights.
-// 
-// This program is distributed WITHOUT ANY WARRANTY, without even the implied warranty
-// of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For details, see
-// the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
-// 
-// You can contact Ascensio System SIA at Lubanas st. 125a-25, Riga, Latvia, EU, LV-1021.
-// 
-// The  interactive user interfaces in modified source and object code versions of the Program must
-// display Appropriate Legal Notices, as required under Section 5 of the GNU AGPL version 3.
-// 
-// Pursuant to Section 7(b) of the License you must retain the original Product logo when
-// distributing the program. Pursuant to Section 7(e) we decline to grant you any rights under
-// trademark law for use of our trademarks.
-// 
-// All the Product's GUI elements, including illustrations and icon sets, as well as technical writing
-// content are licensed under the terms of the Creative Commons Attribution-ShareAlike 4.0
-// International. See the License terms at http://creativecommons.org/licenses/by-sa/4.0/legalcode
+/**
+ *
+ * (c) Copyright Ascensio System SIA 2025
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
 
 import ApiClient from './ApiClient';
 import AccountInfoArrayWrapper from './models/AccountInfoArrayWrapper';
@@ -111,7 +103,6 @@ import ConfirmDto from './models/ConfirmDto';
 import ConfirmType from './models/ConfirmType';
 import ConfirmWrapper from './models/ConfirmWrapper';
 import Contact from './models/Contact';
-import ContactsRequest from './models/ContactsRequest';
 import ContentDisposition from './models/ContentDisposition';
 import ContentType from './models/ContentType';
 import ConversationResultArrayWrapper from './models/ConversationResultArrayWrapper';
@@ -145,8 +136,6 @@ import CultureSpecificExternalResource from './models/CultureSpecificExternalRes
 import CultureSpecificExternalResources from './models/CultureSpecificExternalResources';
 import CurrenciesArrayWrapper from './models/CurrenciesArrayWrapper';
 import CurrenciesDto from './models/CurrenciesDto';
-import Currency from './models/Currency';
-import CurrencyArrayWrapper from './models/CurrencyArrayWrapper';
 import CurrentLicenseInfo from './models/CurrentLicenseInfo';
 import CustomColorThemesSettingsColorItem from './models/CustomColorThemesSettingsColorItem';
 import CustomColorThemesSettingsDto from './models/CustomColorThemesSettingsDto';
@@ -158,7 +147,7 @@ import CustomNavigationItem from './models/CustomNavigationItem';
 import CustomNavigationItemArrayWrapper from './models/CustomNavigationItemArrayWrapper';
 import CustomNavigationItemWrapper from './models/CustomNavigationItemWrapper';
 import CustomerConfigDto from './models/CustomerConfigDto';
-import CustomerInfo from './models/CustomerInfo';
+import CustomerInfoDto from './models/CustomerInfoDto';
 import CustomerInfoWrapper from './models/CustomerInfoWrapper';
 import CustomerOperationsReportRequestDto from './models/CustomerOperationsReportRequestDto';
 import CustomizationConfigDto from './models/CustomizationConfigDto';
@@ -369,8 +358,7 @@ import NotificationType from './models/NotificationType';
 import OAuth20Token from './models/OAuth20Token';
 import ObjectArrayWrapper from './models/ObjectArrayWrapper';
 import ObjectWrapper from './models/ObjectWrapper';
-import OpenCustomerSessionRequestDto from './models/OpenCustomerSessionRequestDto';
-import Operation from './models/Operation';
+import OperationDto from './models/OperationDto';
 import Options from './models/Options';
 import OrderBy from './models/OrderBy';
 import OrderRequestDto from './models/OrderRequestDto';
@@ -394,7 +382,6 @@ import PaymentSettingsDto from './models/PaymentSettingsDto';
 import PaymentSettingsWrapper from './models/PaymentSettingsWrapper';
 import PaymentUrlRequestsDto from './models/PaymentUrlRequestsDto';
 import Payments from './models/Payments';
-import PerformCustomerOperationRequestDto from './models/PerformCustomerOperationRequestDto';
 import PermissionsConfig from './models/PermissionsConfig';
 import PluginsConfig from './models/PluginsConfig';
 import PluginsDto from './models/PluginsDto';
@@ -417,8 +404,9 @@ import QuotaState from './models/QuotaState';
 import QuotaWrapper from './models/QuotaWrapper';
 import RecaptchaType from './models/RecaptchaType';
 import RecentConfig from './models/RecentConfig';
-import Report from './models/Report';
+import ReportDto from './models/ReportDto';
 import ReportWrapper from './models/ReportWrapper';
+import ReviewConfig from './models/ReviewConfig';
 import RoomDataLifetimeDto from './models/RoomDataLifetimeDto';
 import RoomDataLifetimePeriod from './models/RoomDataLifetimePeriod';
 import RoomFromTemplateStatusDto from './models/RoomFromTemplateStatusDto';
@@ -449,9 +437,7 @@ import SearchArea from './models/SearchArea';
 import SecurityArrayWrapper from './models/SecurityArrayWrapper';
 import SecurityDto from './models/SecurityDto';
 import SecurityRequestsDto from './models/SecurityRequestsDto';
-import Session from './models/Session';
 import SessionRequest from './models/SessionRequest';
-import SessionWrapper from './models/SessionWrapper';
 import SetManagerRequest from './models/SetManagerRequest';
 import SetPublicDto from './models/SetPublicDto';
 import SettingsDto from './models/SettingsDto';
@@ -503,6 +489,9 @@ import TemplatesConfig from './models/TemplatesConfig';
 import TemplatesRequestDto from './models/TemplatesRequestDto';
 import TenantAuditSettings from './models/TenantAuditSettings';
 import TenantAuditSettingsWrapper from './models/TenantAuditSettingsWrapper';
+import TenantBannerSettings from './models/TenantBannerSettings';
+import TenantBannerSettingsDto from './models/TenantBannerSettingsDto';
+import TenantBannerSettingsWrapper from './models/TenantBannerSettingsWrapper';
 import TenantDeepLinkSettings from './models/TenantDeepLinkSettings';
 import TenantDeepLinkSettingsWrapper from './models/TenantDeepLinkSettingsWrapper';
 import TenantDevToolsAccessSettings from './models/TenantDevToolsAccessSettings';
@@ -620,7 +609,6 @@ import OAuth20AuthorizationApi from './api/OAuth20AuthorizationApi';
 import OAuth20ClientManagementApi from './api/OAuth20ClientManagementApi';
 import OAuth20ClientQueryingApi from './api/OAuth20ClientQueryingApi';
 import OAuth20ScopeManagementApi from './api/OAuth20ScopeManagementApi';
-import PeopleContactsApi from './api/PeopleContactsApi';
 import PeopleGuestsApi from './api/PeopleGuestsApi';
 import PeoplePasswordApi from './api/PeoplePasswordApi';
 import PeoplePhotosApi from './api/PeoplePhotosApi';
@@ -641,6 +629,7 @@ import RoomsApi from './api/RoomsApi';
 import SecurityAccessToDevToolsApi from './api/SecurityAccessToDevToolsApi';
 import SecurityActiveConnectionsApi from './api/SecurityActiveConnectionsApi';
 import SecurityAuditTrailDataApi from './api/SecurityAuditTrailDataApi';
+import SecurityBannersVisibilityApi from './api/SecurityBannersVisibilityApi';
 import SecurityCSPApi from './api/SecurityCSPApi';
 import SecurityFirebaseApi from './api/SecurityFirebaseApi';
 import SecurityLoginHistoryApi from './api/SecurityLoginHistoryApi';
@@ -648,6 +637,7 @@ import SecurityOAuth2Api from './api/SecurityOAuth2Api';
 import SecuritySMTPSettingsApi from './api/SecuritySMTPSettingsApi';
 import SettingsAccessToDevToolsApi from './api/SettingsAccessToDevToolsApi';
 import SettingsAuthorizationApi from './api/SettingsAuthorizationApi';
+import SettingsBannersVisibilityApi from './api/SettingsBannersVisibilityApi';
 import SettingsCommonSettingsApi from './api/SettingsCommonSettingsApi';
 import SettingsCookiesApi from './api/SettingsCookiesApi';
 import SettingsCustomNavigationApi from './api/SettingsCustomNavigationApi';
@@ -1226,12 +1216,6 @@ export {
     Contact,
 
     /**
-     * The ContactsRequest model constructor.
-     * @property {module:models/ContactsRequest}
-     */
-    ContactsRequest,
-
-    /**
      * The ContentDisposition model constructor.
      * @property {module:models/ContentDisposition}
      */
@@ -1430,18 +1414,6 @@ export {
     CurrenciesDto,
 
     /**
-     * The Currency model constructor.
-     * @property {module:models/Currency}
-     */
-    Currency,
-
-    /**
-     * The CurrencyArrayWrapper model constructor.
-     * @property {module:models/CurrencyArrayWrapper}
-     */
-    CurrencyArrayWrapper,
-
-    /**
      * The CurrentLicenseInfo model constructor.
      * @property {module:models/CurrentLicenseInfo}
      */
@@ -1508,10 +1480,10 @@ export {
     CustomerConfigDto,
 
     /**
-     * The CustomerInfo model constructor.
-     * @property {module:models/CustomerInfo}
+     * The CustomerInfoDto model constructor.
+     * @property {module:models/CustomerInfoDto}
      */
-    CustomerInfo,
+    CustomerInfoDto,
 
     /**
      * The CustomerInfoWrapper model constructor.
@@ -2774,16 +2746,10 @@ export {
     ObjectWrapper,
 
     /**
-     * The OpenCustomerSessionRequestDto model constructor.
-     * @property {module:models/OpenCustomerSessionRequestDto}
+     * The OperationDto model constructor.
+     * @property {module:models/OperationDto}
      */
-    OpenCustomerSessionRequestDto,
-
-    /**
-     * The Operation model constructor.
-     * @property {module:models/Operation}
-     */
-    Operation,
+    OperationDto,
 
     /**
      * The Options model constructor.
@@ -2924,12 +2890,6 @@ export {
     Payments,
 
     /**
-     * The PerformCustomerOperationRequestDto model constructor.
-     * @property {module:models/PerformCustomerOperationRequestDto}
-     */
-    PerformCustomerOperationRequestDto,
-
-    /**
      * The PermissionsConfig model constructor.
      * @property {module:models/PermissionsConfig}
      */
@@ -3062,16 +3022,22 @@ export {
     RecentConfig,
 
     /**
-     * The Report model constructor.
-     * @property {module:models/Report}
+     * The ReportDto model constructor.
+     * @property {module:models/ReportDto}
      */
-    Report,
+    ReportDto,
 
     /**
      * The ReportWrapper model constructor.
      * @property {module:models/ReportWrapper}
      */
     ReportWrapper,
+
+    /**
+     * The ReviewConfig model constructor.
+     * @property {module:models/ReviewConfig}
+     */
+    ReviewConfig,
 
     /**
      * The RoomDataLifetimeDto model constructor.
@@ -3254,22 +3220,10 @@ export {
     SecurityRequestsDto,
 
     /**
-     * The Session model constructor.
-     * @property {module:models/Session}
-     */
-    Session,
-
-    /**
      * The SessionRequest model constructor.
      * @property {module:models/SessionRequest}
      */
     SessionRequest,
-
-    /**
-     * The SessionWrapper model constructor.
-     * @property {module:models/SessionWrapper}
-     */
-    SessionWrapper,
 
     /**
      * The SetManagerRequest model constructor.
@@ -3576,6 +3530,24 @@ export {
      * @property {module:models/TenantAuditSettingsWrapper}
      */
     TenantAuditSettingsWrapper,
+
+    /**
+     * The TenantBannerSettings model constructor.
+     * @property {module:models/TenantBannerSettings}
+     */
+    TenantBannerSettings,
+
+    /**
+     * The TenantBannerSettingsDto model constructor.
+     * @property {module:models/TenantBannerSettingsDto}
+     */
+    TenantBannerSettingsDto,
+
+    /**
+     * The TenantBannerSettingsWrapper model constructor.
+     * @property {module:models/TenantBannerSettingsWrapper}
+     */
+    TenantBannerSettingsWrapper,
 
     /**
      * The TenantDeepLinkSettings model constructor.
@@ -4280,12 +4252,6 @@ export {
     OAuth20ScopeManagementApi,
 
     /**
-    * The PeopleContactsApi service constructor.
-    * @property {module:api/PeopleContactsApi}
-    */
-    PeopleContactsApi,
-
-    /**
     * The PeopleGuestsApi service constructor.
     * @property {module:api/PeopleGuestsApi}
     */
@@ -4406,6 +4372,12 @@ export {
     SecurityAuditTrailDataApi,
 
     /**
+    * The SecurityBannersVisibilityApi service constructor.
+    * @property {module:api/SecurityBannersVisibilityApi}
+    */
+    SecurityBannersVisibilityApi,
+
+    /**
     * The SecurityCSPApi service constructor.
     * @property {module:api/SecurityCSPApi}
     */
@@ -4446,6 +4418,12 @@ export {
     * @property {module:api/SettingsAuthorizationApi}
     */
     SettingsAuthorizationApi,
+
+    /**
+    * The SettingsBannersVisibilityApi service constructor.
+    * @property {module:api/SettingsBannersVisibilityApi}
+    */
+    SettingsBannersVisibilityApi,
 
     /**
     * The SettingsCommonSettingsApi service constructor.

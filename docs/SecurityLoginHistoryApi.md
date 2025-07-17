@@ -153,6 +153,7 @@ Name | Type | Description  | Notes
  **to** | [**ApiDateTime**](.md)| The ending date and time for filtering login events. | [optional] 
  **count** | **Number**| The number of login events to retrieve in the query. | [optional] 
  **startIndex** | **Number**| The starting index for fetching a subset of login events from the query results. | [optional] 
+ **fields** | **string**| Comma-separated list of fields to include in the response | [optional] 
 
 ### Return type
 

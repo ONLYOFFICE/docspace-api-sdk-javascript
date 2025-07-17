@@ -740,6 +740,7 @@ Name | Type | Description  | Notes
  **sortBy** | **String**| The property used to specify the sorting criteria for folder contents. | [optional] 
  **sortOrder** | [**SortOrder**](.md)| The order in which the results are sorted. | [optional] 
  **filterValue** | **String**| The text used for filtering or searching folder contents. | [optional] 
+ **fields** | **string**| Comma-separated list of fields to include in the response | [optional] 
 
 ### Return type
 
@@ -887,6 +888,7 @@ Name | Type | Description  | Notes
  **sortBy** | **String**| Specifies the field by which the folder content should be sorted. | [optional] 
  **sortOrder** | [**SortOrder**](.md)| The order in which the results are sorted. | [optional] 
  **filterValue** | **String**| The text used as a filter or search criterion for folder content queries. | [optional] 
+ **fields** | **string**| Comma-separated list of fields to include in the response | [optional] 
 
 ### Return type
 
@@ -968,6 +970,7 @@ Name | Type | Description  | Notes
  **sortBy** | **String**| Specifies the field by which the folder content should be sorted. | [optional] 
  **sortOrder** | [**SortOrder**](.md)| The order in which the results are sorted. | [optional] 
  **filterValue** | **String**| The text used as a filter for searching or retrieving folder contents. | [optional] 
+ **fields** | **string**| Comma-separated list of fields to include in the response | [optional] 
 
 ### Return type
 
@@ -1050,6 +1053,7 @@ Name | Type | Description  | Notes
  **sortBy** | **String**| The property used to specify the sorting criteria for folder contents. | [optional] 
  **sortOrder** | [**SortOrder**](.md)| The order in which the results are sorted. | [optional] 
  **filterValue** | **String**| The text used for filtering or searching folder contents. | [optional] 
+ **fields** | **string**| Comma-separated list of fields to include in the response | [optional] 
 
 ### Return type
 

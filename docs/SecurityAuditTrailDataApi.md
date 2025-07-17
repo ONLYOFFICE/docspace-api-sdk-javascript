@@ -100,6 +100,7 @@ Name | Type | Description  | Notes
  **to** | [**ApiDateTime**](.md)| The ending date and time for filtering audit events. | [optional] 
  **count** | **Number**| The maximum number of audit event records to retrieve. | [optional] 
  **startIndex** | **Number**| The index of the first audit event record to retrieve in a paged query. | [optional] 
+ **fields** | **string**| Comma-separated list of fields to include in the response | [optional] 
 
 ### Return type
 
