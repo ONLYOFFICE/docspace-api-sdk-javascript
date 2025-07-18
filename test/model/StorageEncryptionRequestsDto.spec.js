@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.StorageEncryptionRequestsDto();
+    instance = new Api.StorageEncryptionRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('StorageEncryptionRequestsDto', function() {
     it('should create an instance of StorageEncryptionRequestsDto', function() {
       // uncomment below and update the code to test StorageEncryptionRequestsDto
-      //var instance = new DocspaceApiJavascript.StorageEncryptionRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.StorageEncryptionRequestsDto);
+      //var instance = new Api.StorageEncryptionRequestsDto();
+      //expect(instance).to.be.a(Api.StorageEncryptionRequestsDto);
     });
 
     it('should have the property notifyUsers (base name: "notifyUsers")', function() {
       // uncomment below and update the code to test the property notifyUsers
-      //var instance = new DocspaceApiJavascript.StorageEncryptionRequestsDto();
+      //var instance = new Api.StorageEncryptionRequestsDto();
       //expect(instance).to.be();
     });
 

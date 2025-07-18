@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.WizardRequestsDto
+# Api.WizardRequestsDto
 The request parameters for initial configuration of the setup wizard.
 
 ## Properties

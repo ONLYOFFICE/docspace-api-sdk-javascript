@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.BaseBatchRequestDto();
+    instance = new Api.BaseBatchRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('BaseBatchRequestDto', function() {
     it('should create an instance of BaseBatchRequestDto', function() {
       // uncomment below and update the code to test BaseBatchRequestDto
-      //var instance = new DocspaceApiJavascript.BaseBatchRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.BaseBatchRequestDto);
+      //var instance = new Api.BaseBatchRequestDto();
+      //expect(instance).to.be.a(Api.BaseBatchRequestDto);
     });
 
     it('should have the property returnSingleOperation (base name: "returnSingleOperation")', function() {
       // uncomment below and update the code to test the property returnSingleOperation
-      //var instance = new DocspaceApiJavascript.BaseBatchRequestDto();
+      //var instance = new Api.BaseBatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property folderIds (base name: "folderIds")', function() {
       // uncomment below and update the code to test the property folderIds
-      //var instance = new DocspaceApiJavascript.BaseBatchRequestDto();
+      //var instance = new Api.BaseBatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property fileIds (base name: "fileIds")', function() {
       // uncomment below and update the code to test the property fileIds
-      //var instance = new DocspaceApiJavascript.BaseBatchRequestDto();
+      //var instance = new Api.BaseBatchRequestDto();
       //expect(instance).to.be();
     });
 

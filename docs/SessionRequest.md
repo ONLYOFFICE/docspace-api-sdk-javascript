@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SessionRequest
+# Api.SessionRequest
 The session request parameters.
 
 ## Properties

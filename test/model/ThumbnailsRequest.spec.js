@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ThumbnailsRequest();
+    instance = new Api.ThumbnailsRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,37 +54,37 @@
   describe('ThumbnailsRequest', function() {
     it('should create an instance of ThumbnailsRequest', function() {
       // uncomment below and update the code to test ThumbnailsRequest
-      //var instance = new DocspaceApiJavascript.ThumbnailsRequest();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ThumbnailsRequest);
+      //var instance = new Api.ThumbnailsRequest();
+      //expect(instance).to.be.a(Api.ThumbnailsRequest);
     });
 
     it('should have the property tmpFile (base name: "tmpFile")', function() {
       // uncomment below and update the code to test the property tmpFile
-      //var instance = new DocspaceApiJavascript.ThumbnailsRequest();
+      //var instance = new Api.ThumbnailsRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property x (base name: "x")', function() {
       // uncomment below and update the code to test the property x
-      //var instance = new DocspaceApiJavascript.ThumbnailsRequest();
+      //var instance = new Api.ThumbnailsRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property y (base name: "y")', function() {
       // uncomment below and update the code to test the property y
-      //var instance = new DocspaceApiJavascript.ThumbnailsRequest();
+      //var instance = new Api.ThumbnailsRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property width (base name: "width")', function() {
       // uncomment below and update the code to test the property width
-      //var instance = new DocspaceApiJavascript.ThumbnailsRequest();
+      //var instance = new Api.ThumbnailsRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property height (base name: "height")', function() {
       // uncomment below and update the code to test the property height
-      //var instance = new DocspaceApiJavascript.ThumbnailsRequest();
+      //var instance = new Api.ThumbnailsRequest();
       //expect(instance).to.be();
     });
 

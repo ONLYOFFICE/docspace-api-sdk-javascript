@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.TemplatesConfig();
+    instance = new Api.TemplatesConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('TemplatesConfig', function() {
     it('should create an instance of TemplatesConfig', function() {
       // uncomment below and update the code to test TemplatesConfig
-      //var instance = new DocspaceApiJavascript.TemplatesConfig();
-      //expect(instance).to.be.a(DocspaceApiJavascript.TemplatesConfig);
+      //var instance = new Api.TemplatesConfig();
+      //expect(instance).to.be.a(Api.TemplatesConfig);
     });
 
     it('should have the property image (base name: "image")', function() {
       // uncomment below and update the code to test the property image
-      //var instance = new DocspaceApiJavascript.TemplatesConfig();
+      //var instance = new Api.TemplatesConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiJavascript.TemplatesConfig();
+      //var instance = new Api.TemplatesConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiJavascript.TemplatesConfig();
+      //var instance = new Api.TemplatesConfig();
       //expect(instance).to.be();
     });
 

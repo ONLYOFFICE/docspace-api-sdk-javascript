@@ -24,9 +24,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
@@ -53,8 +53,8 @@
   describe('EmployeeStatus', function() {
     it('should create an instance of EmployeeStatus', function() {
       // uncomment below and update the code to test EmployeeStatus
-      //var instance = new DocspaceApiJavascript.EmployeeStatus();
-      //expect(instance).to.be.a(DocspaceApiJavascript.EmployeeStatus);
+      //var instance = new Api.EmployeeStatus();
+      //expect(instance).to.be.a(Api.EmployeeStatus);
     });
 
   });

@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ItemKeyValuePairObjectObject();
+    instance = new Api.ItemKeyValuePairObjectObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('ItemKeyValuePairObjectObject', function() {
     it('should create an instance of ItemKeyValuePairObjectObject', function() {
       // uncomment below and update the code to test ItemKeyValuePairObjectObject
-      //var instance = new DocspaceApiJavascript.ItemKeyValuePairObjectObject();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ItemKeyValuePairObjectObject);
+      //var instance = new Api.ItemKeyValuePairObjectObject();
+      //expect(instance).to.be.a(Api.ItemKeyValuePairObjectObject);
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiJavascript.ItemKeyValuePairObjectObject();
+      //var instance = new Api.ItemKeyValuePairObjectObject();
       //expect(instance).to.be();
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new DocspaceApiJavascript.ItemKeyValuePairObjectObject();
+      //var instance = new Api.ItemKeyValuePairObjectObject();
       //expect(instance).to.be();
     });
 

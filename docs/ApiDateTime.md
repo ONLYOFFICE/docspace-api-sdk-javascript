@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ApiDateTime
+# Api.ApiDateTime
 The API date and time parameters.
 
 ## Properties

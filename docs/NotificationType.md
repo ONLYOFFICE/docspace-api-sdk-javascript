@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.NotificationType
+# Api.NotificationType
 [0 - Badges, 1 - Rooms activity, 2 - Daily feed, 3 - Usefull tips]
 
 ## Enum

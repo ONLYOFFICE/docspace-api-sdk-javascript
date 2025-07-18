@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CoversResultDto();
+    instance = new Api.CoversResultDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('CoversResultDto', function() {
     it('should create an instance of CoversResultDto', function() {
       // uncomment below and update the code to test CoversResultDto
-      //var instance = new DocspaceApiJavascript.CoversResultDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CoversResultDto);
+      //var instance = new Api.CoversResultDto();
+      //expect(instance).to.be.a(Api.CoversResultDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.CoversResultDto();
+      //var instance = new Api.CoversResultDto();
       //expect(instance).to.be();
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instance = new DocspaceApiJavascript.CoversResultDto();
+      //var instance = new Api.CoversResultDto();
       //expect(instance).to.be();
     });
 

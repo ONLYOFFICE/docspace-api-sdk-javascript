@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.UpdateMembersQuotaRequestDto();
+    instance = new Api.UpdateMembersQuotaRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('UpdateMembersQuotaRequestDto', function() {
     it('should create an instance of UpdateMembersQuotaRequestDto', function() {
       // uncomment below and update the code to test UpdateMembersQuotaRequestDto
-      //var instance = new DocspaceApiJavascript.UpdateMembersQuotaRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.UpdateMembersQuotaRequestDto);
+      //var instance = new Api.UpdateMembersQuotaRequestDto();
+      //expect(instance).to.be.a(Api.UpdateMembersQuotaRequestDto);
     });
 
     it('should have the property userIds (base name: "userIds")', function() {
       // uncomment below and update the code to test the property userIds
-      //var instance = new DocspaceApiJavascript.UpdateMembersQuotaRequestDto();
+      //var instance = new Api.UpdateMembersQuotaRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property quota (base name: "quota")', function() {
       // uncomment below and update the code to test the property quota
-      //var instance = new DocspaceApiJavascript.UpdateMembersQuotaRequestDto();
+      //var instance = new Api.UpdateMembersQuotaRequestDto();
       //expect(instance).to.be();
     });
 

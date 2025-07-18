@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.IpRestrictionsDto
+# Api.IpRestrictionsDto
 The parameters for configuring new IP restriction settings.
 
 ## Properties

@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.RoomTemplateStatusDto();
+    instance = new Api.RoomTemplateStatusDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,31 +54,31 @@
   describe('RoomTemplateStatusDto', function() {
     it('should create an instance of RoomTemplateStatusDto', function() {
       // uncomment below and update the code to test RoomTemplateStatusDto
-      //var instance = new DocspaceApiJavascript.RoomTemplateStatusDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.RoomTemplateStatusDto);
+      //var instance = new Api.RoomTemplateStatusDto();
+      //expect(instance).to.be.a(Api.RoomTemplateStatusDto);
     });
 
     it('should have the property templateId (base name: "templateId")', function() {
       // uncomment below and update the code to test the property templateId
-      //var instance = new DocspaceApiJavascript.RoomTemplateStatusDto();
+      //var instance = new Api.RoomTemplateStatusDto();
       //expect(instance).to.be();
     });
 
     it('should have the property progress (base name: "progress")', function() {
       // uncomment below and update the code to test the property progress
-      //var instance = new DocspaceApiJavascript.RoomTemplateStatusDto();
+      //var instance = new Api.RoomTemplateStatusDto();
       //expect(instance).to.be();
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instance = new DocspaceApiJavascript.RoomTemplateStatusDto();
+      //var instance = new Api.RoomTemplateStatusDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isCompleted (base name: "isCompleted")', function() {
       // uncomment below and update the code to test the property isCompleted
-      //var instance = new DocspaceApiJavascript.RoomTemplateStatusDto();
+      //var instance = new Api.RoomTemplateStatusDto();
       //expect(instance).to.be();
     });
 

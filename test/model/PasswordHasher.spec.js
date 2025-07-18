@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.PasswordHasher();
+    instance = new Api.PasswordHasher();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('PasswordHasher', function() {
     it('should create an instance of PasswordHasher', function() {
       // uncomment below and update the code to test PasswordHasher
-      //var instance = new DocspaceApiJavascript.PasswordHasher();
-      //expect(instance).to.be.a(DocspaceApiJavascript.PasswordHasher);
+      //var instance = new Api.PasswordHasher();
+      //expect(instance).to.be.a(Api.PasswordHasher);
     });
 
     it('should have the property size (base name: "size")', function() {
       // uncomment below and update the code to test the property size
-      //var instance = new DocspaceApiJavascript.PasswordHasher();
+      //var instance = new Api.PasswordHasher();
       //expect(instance).to.be();
     });
 
     it('should have the property iterations (base name: "iterations")', function() {
       // uncomment below and update the code to test the property iterations
-      //var instance = new DocspaceApiJavascript.PasswordHasher();
+      //var instance = new Api.PasswordHasher();
       //expect(instance).to.be();
     });
 
     it('should have the property salt (base name: "salt")', function() {
       // uncomment below and update the code to test the property salt
-      //var instance = new DocspaceApiJavascript.PasswordHasher();
+      //var instance = new Api.PasswordHasher();
       //expect(instance).to.be();
     });
 

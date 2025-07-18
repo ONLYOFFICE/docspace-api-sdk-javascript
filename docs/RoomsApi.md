@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.RoomsApi
+# Api.RoomsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -72,8 +72,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -95,10 +95,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room Id.
 let opts = {
-  'batchTagsRequestDto': new DocspaceApiJavascript.BatchTagsRequestDto() // BatchTagsRequestDto | The parameters for adding tags.
+  'batchTagsRequestDto': new Api.BatchTagsRequestDto() // BatchTagsRequestDto | The parameters for adding tags.
 };
 apiInstance.addRoomTags(id, opts, (error, data, response) => {
   if (error) {
@@ -142,8 +142,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -165,10 +165,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID.
 let opts = {
-  'archiveRoomRequest': new DocspaceApiJavascript.ArchiveRoomRequest() // ArchiveRoomRequest | The parameters for archiving a room.
+  'archiveRoomRequest': new Api.ArchiveRoomRequest() // ArchiveRoomRequest | The parameters for archiving a room.
 };
 apiInstance.archiveRoom(id, opts, (error, data, response) => {
   if (error) {
@@ -212,8 +212,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -235,10 +235,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID.
 let opts = {
-  'coverRequestDto': new DocspaceApiJavascript.CoverRequestDto() // CoverRequestDto | The request parameters to change the room cover.
+  'coverRequestDto': new Api.CoverRequestDto() // CoverRequestDto | The request parameters to change the room cover.
 };
 apiInstance.changeRoomCover(id, opts, (error, data, response) => {
   if (error) {
@@ -281,8 +281,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -304,9 +304,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let opts = {
-  'createRoomRequestDto': new DocspaceApiJavascript.CreateRoomRequestDto() // CreateRoomRequestDto | 
+  'createRoomRequestDto': new Api.CreateRoomRequestDto() // CreateRoomRequestDto | 
 };
 apiInstance.createRoom(opts, (error, data, response) => {
   if (error) {
@@ -349,8 +349,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -372,9 +372,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let opts = {
-  'createRoomFromTemplateDto': new DocspaceApiJavascript.CreateRoomFromTemplateDto() // CreateRoomFromTemplateDto | 
+  'createRoomFromTemplateDto': new Api.CreateRoomFromTemplateDto() // CreateRoomFromTemplateDto | 
 };
 apiInstance.createRoomFromTemplate(opts, (error, data, response) => {
   if (error) {
@@ -418,8 +418,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -441,10 +441,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID.
 let opts = {
-  'logoRequest': new DocspaceApiJavascript.LogoRequest() // LogoRequest | The logo request parameters.
+  'logoRequest': new Api.LogoRequest() // LogoRequest | The logo request parameters.
 };
 apiInstance.createRoomLogo(id, opts, (error, data, response) => {
   if (error) {
@@ -487,8 +487,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -510,9 +510,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let opts = {
-  'createTagRequestDto': new DocspaceApiJavascript.CreateTagRequestDto() // CreateTagRequestDto | 
+  'createTagRequestDto': new Api.CreateTagRequestDto() // CreateTagRequestDto | 
 };
 apiInstance.createRoomTag(opts, (error, data, response) => {
   if (error) {
@@ -555,8 +555,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -578,9 +578,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let opts = {
-  'roomTemplateDto': new DocspaceApiJavascript.RoomTemplateDto() // RoomTemplateDto | 
+  'roomTemplateDto': new Api.RoomTemplateDto() // RoomTemplateDto | 
 };
 apiInstance.createRoomTemplate(opts, (error, data, response) => {
   if (error) {
@@ -624,8 +624,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -647,10 +647,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = "9846"; // String | The ID of the folder in the third-party storage in which the contents of the room will be stored.
 let opts = {
-  'createThirdPartyRoom': new DocspaceApiJavascript.CreateThirdPartyRoom() // CreateThirdPartyRoom | The third-party room information.
+  'createThirdPartyRoom': new Api.CreateThirdPartyRoom() // CreateThirdPartyRoom | The third-party room information.
 };
 apiInstance.createRoomThirdParty(id, opts, (error, data, response) => {
   if (error) {
@@ -693,8 +693,8 @@ null (empty response body)
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -716,9 +716,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let opts = {
-  'batchTagsRequestDto': new DocspaceApiJavascript.BatchTagsRequestDto() // BatchTagsRequestDto | 
+  'batchTagsRequestDto': new Api.BatchTagsRequestDto() // BatchTagsRequestDto | 
 };
 apiInstance.deleteCustomTags(opts, (error, data, response) => {
   if (error) {
@@ -762,8 +762,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -785,10 +785,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID.
 let opts = {
-  'deleteRoomRequest': new DocspaceApiJavascript.DeleteRoomRequest() // DeleteRoomRequest | The parameters for deleting a room.
+  'deleteRoomRequest': new Api.DeleteRoomRequest() // DeleteRoomRequest | The parameters for deleting a room.
 };
 apiInstance.deleteRoom(id, opts, (error, data, response) => {
   if (error) {
@@ -831,8 +831,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -854,7 +854,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID of the request.
 apiInstance.deleteRoomLogo(id, (error, data, response) => {
   if (error) {
@@ -898,8 +898,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -921,10 +921,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room Id.
 let opts = {
-  'batchTagsRequestDto': new DocspaceApiJavascript.BatchTagsRequestDto() // BatchTagsRequestDto | The parameters for adding tags.
+  'batchTagsRequestDto': new Api.BatchTagsRequestDto() // BatchTagsRequestDto | The parameters for adding tags.
 };
 apiInstance.deleteRoomTags(id, opts, (error, data, response) => {
   if (error) {
@@ -967,8 +967,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -990,7 +990,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID of the request.
 apiInstance.getNewRoomItems(id, (error, data, response) => {
   if (error) {
@@ -1033,8 +1033,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1056,7 +1056,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room template ID.
 apiInstance.getPublicSettings(id, (error, data, response) => {
   if (error) {
@@ -1096,8 +1096,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1119,7 +1119,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 apiInstance.getRoomCovers((error, data, response) => {
   if (error) {
     console.error(error);
@@ -1158,8 +1158,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1181,7 +1181,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 apiInstance.getRoomCreatingStatus((error, data, response) => {
   if (error) {
     console.error(error);
@@ -1220,8 +1220,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1243,7 +1243,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 apiInstance.getRoomIndexExport((error, data, response) => {
   if (error) {
     console.error(error);
@@ -1285,9 +1285,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID of the request.
 apiInstance.getRoomInfo(id, (error, data, response) => {
   if (error) {
@@ -1331,8 +1331,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1354,10 +1354,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID.
 let opts = {
-  'type': new DocspaceApiJavascript.LinkType() // LinkType | The link type.
+  'type': new Api.LinkType() // LinkType | The link type.
 };
 apiInstance.getRoomLinks(id, opts, (error, data, response) => {
   if (error) {
@@ -1404,8 +1404,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1427,10 +1427,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID.
 let opts = {
-  'filterType': new DocspaceApiJavascript.ShareFilterType(), // ShareFilterType | The filter type of the access rights.
+  'filterType': new Api.ShareFilterType(), // ShareFilterType | The filter type of the access rights.
   'count': 1234, // Number | The number of items to be retrieved or processed.
   'startIndex': 1234, // Number | The starting index of the items to retrieve in a paginated request.
   'filterValue': "some text" // String | The text filter value used for filtering room security information.
@@ -1479,8 +1479,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1502,7 +1502,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let opts = {
   'count': 1234, // Number | Gets or sets the number of tag results to retrieve.  This property specifies the maximum amount of tag data to be included in the result set.
   'startIndex': 1234, // Number | Represents the starting index from which the tags' information will be retrieved.  This property is used to define the offset for pagination when retrieving a list of tags. It determines  the point in the data set from which the retrieval begins.
@@ -1546,8 +1546,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1569,7 +1569,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 apiInstance.getRoomTemplateCreatingStatus((error, data, response) => {
   if (error) {
     console.error(error);
@@ -1626,8 +1626,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1649,22 +1649,22 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let opts = {
   'type': [null], // [RoomType] | The filter by room type.
   'subjectId': "some text", // String | The filter by user ID.
-  'searchArea': new DocspaceApiJavascript.SearchArea(), // SearchArea | The room search area (Active, Archive, Any, Recent by links).
+  'searchArea': new Api.SearchArea(), // SearchArea | The room search area (Active, Archive, Any, Recent by links).
   'withoutTags': true, // Boolean | Specifies whether to search by tags or not.
   'tags': "some text", // String | The tags in the serialized format.
   'excludeSubject': true, // Boolean | Specifies whether to exclude search by user or group ID.
-  'provider': new DocspaceApiJavascript.ProviderFilter(), // ProviderFilter | The filter by provider name (None, Box, DropBox, GoogleDrive, kDrive, OneDrive, SharePoint, WebDav, Yandex, Storage).
-  'subjectFilter': new DocspaceApiJavascript.SubjectFilter(), // SubjectFilter | The filter by user (Owner - 0, Member - 1).
-  'quotaFilter': new DocspaceApiJavascript.QuotaFilter(), // QuotaFilter | The filter by quota (All - 0, Default - 1, Custom - 2).
-  'storageFilter': new DocspaceApiJavascript.StorageFilter(), // StorageFilter | The filter by storage (None - 0, Internal - 1, ThirdParty - 2).
+  'provider': new Api.ProviderFilter(), // ProviderFilter | The filter by provider name (None, Box, DropBox, GoogleDrive, kDrive, OneDrive, SharePoint, WebDav, Yandex, Storage).
+  'subjectFilter': new Api.SubjectFilter(), // SubjectFilter | The filter by user (Owner - 0, Member - 1).
+  'quotaFilter': new Api.QuotaFilter(), // QuotaFilter | The filter by quota (All - 0, Default - 1, Custom - 2).
+  'storageFilter': new Api.StorageFilter(), // StorageFilter | The filter by storage (None - 0, Internal - 1, ThirdParty - 2).
   'count': 1234, // Number | Specifies the maximum number of items to retrieve.
   'startIndex': 1234, // Number | The index from which to start retrieving the room content.
   'sortBy': "some text", // String | Specifies the field by which the room content should be sorted.
-  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'sortOrder': new Api.SortOrder(), // SortOrder | The order in which the results are sorted.
   'filterValue': "some text" // String | The text filter value used to refine search or query operations.
 };
 apiInstance.getRoomsFolder(opts, (error, data, response) => {
@@ -1705,8 +1705,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1728,7 +1728,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 apiInstance.getRoomsNewItems((error, data, response) => {
   if (error) {
     console.error(error);
@@ -1770,8 +1770,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1793,7 +1793,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID of the request.
 apiInstance.getRoomsPrimaryExternalLink(id, (error, data, response) => {
   if (error) {
@@ -1836,8 +1836,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1859,7 +1859,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID of the request.
 apiInstance.pinRoom(id, (error, data, response) => {
   if (error) {
@@ -1902,8 +1902,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1925,7 +1925,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID of the request.
 apiInstance.reorderRoom(id, (error, data, response) => {
   if (error) {
@@ -1969,8 +1969,8 @@ null (empty response body)
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1992,10 +1992,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID.
 let opts = {
-  'userInvitation': new DocspaceApiJavascript.UserInvitation() // UserInvitation | The user invitation parameters.
+  'userInvitation': new Api.UserInvitation() // UserInvitation | The user invitation parameters.
 };
 apiInstance.resendEmailInvitations(id, opts, (error, data, response) => {
   if (error) {
@@ -2038,8 +2038,8 @@ null (empty response body)
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2061,9 +2061,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let opts = {
-  'setPublicDto': new DocspaceApiJavascript.SetPublicDto() // SetPublicDto | 
+  'setPublicDto': new Api.SetPublicDto() // SetPublicDto | 
 };
 apiInstance.setPublicSettings(opts, (error, data, response) => {
   if (error) {
@@ -2107,8 +2107,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2130,10 +2130,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID.
 let opts = {
-  'roomLinkRequest': new DocspaceApiJavascript.RoomLinkRequest() // RoomLinkRequest | The room link parameters.
+  'roomLinkRequest': new Api.RoomLinkRequest() // RoomLinkRequest | The room link parameters.
 };
 apiInstance.setRoomLink(id, opts, (error, data, response) => {
   if (error) {
@@ -2177,8 +2177,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2200,10 +2200,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID.
 let opts = {
-  'roomInvitationRequest': new DocspaceApiJavascript.RoomInvitationRequest() // RoomInvitationRequest | The room invitation request.
+  'roomInvitationRequest': new Api.RoomInvitationRequest() // RoomInvitationRequest | The room invitation request.
 };
 apiInstance.setRoomSecurity(id, opts, (error, data, response) => {
   if (error) {
@@ -2246,8 +2246,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2269,7 +2269,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID of the request.
 apiInstance.startRoomIndexExport(id, (error, data, response) => {
   if (error) {
@@ -2309,8 +2309,8 @@ null (empty response body)
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2332,7 +2332,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 apiInstance.terminateRoomIndexExport((error, data, response) => {
   if (error) {
     console.error(error);
@@ -2375,8 +2375,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2398,10 +2398,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID.
 let opts = {
-  'archiveRoomRequest': new DocspaceApiJavascript.ArchiveRoomRequest() // ArchiveRoomRequest | The parameters for archiving a room.
+  'archiveRoomRequest': new Api.ArchiveRoomRequest() // ArchiveRoomRequest | The parameters for archiving a room.
 };
 apiInstance.unarchiveRoom(id, opts, (error, data, response) => {
   if (error) {
@@ -2444,8 +2444,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2467,7 +2467,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID of the request.
 apiInstance.unpinRoom(id, (error, data, response) => {
   if (error) {
@@ -2511,8 +2511,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2534,10 +2534,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let id = 9846; // Number | The room ID.
 let opts = {
-  'updateRoomRequest': new DocspaceApiJavascript.UpdateRoomRequest() // UpdateRoomRequest | The request parameters for updating a room.
+  'updateRoomRequest': new Api.UpdateRoomRequest() // UpdateRoomRequest | The request parameters for updating a room.
 };
 apiInstance.updateRoom(id, opts, (error, data, response) => {
   if (error) {
@@ -2580,8 +2580,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -2603,9 +2603,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.RoomsApi();
+let apiInstance = new Api.RoomsApi();
 let opts = {
-  'formCollection': [new DocspaceApiJavascript.KeyValuePairStringStringValues()] // [KeyValuePairStringStringValues] | The image data.
+  'formCollection': [new Api.KeyValuePairStringStringValues()] // [KeyValuePairStringStringValues] | The image data.
 };
 apiInstance.uploadRoomLogo(opts, (error, data, response) => {
   if (error) {

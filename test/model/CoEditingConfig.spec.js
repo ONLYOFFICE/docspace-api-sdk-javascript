@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CoEditingConfig();
+    instance = new Api.CoEditingConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('CoEditingConfig', function() {
     it('should create an instance of CoEditingConfig', function() {
       // uncomment below and update the code to test CoEditingConfig
-      //var instance = new DocspaceApiJavascript.CoEditingConfig();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CoEditingConfig);
+      //var instance = new Api.CoEditingConfig();
+      //expect(instance).to.be.a(Api.CoEditingConfig);
     });
 
     it('should have the property change (base name: "change")', function() {
       // uncomment below and update the code to test the property change
-      //var instance = new DocspaceApiJavascript.CoEditingConfig();
+      //var instance = new Api.CoEditingConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property fast (base name: "fast")', function() {
       // uncomment below and update the code to test the property fast
-      //var instance = new DocspaceApiJavascript.CoEditingConfig();
+      //var instance = new Api.CoEditingConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property mode (base name: "mode")', function() {
       // uncomment below and update the code to test the property mode
-      //var instance = new DocspaceApiJavascript.CoEditingConfig();
+      //var instance = new Api.CoEditingConfig();
       //expect(instance).to.be();
     });
 

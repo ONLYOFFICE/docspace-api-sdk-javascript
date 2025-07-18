@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.BackupRestoreDto
+# Api.BackupRestoreDto
 The backup restoring parameters.
 
 ## Properties

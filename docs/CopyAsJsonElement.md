@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CopyAsJsonElement
+# Api.CopyAsJsonElement
 The parameters for copying a file.
 
 ## Properties

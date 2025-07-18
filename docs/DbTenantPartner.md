@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.DbTenantPartner
+# Api.DbTenantPartner
 The database tenant partner parameters.
 
 ## Properties

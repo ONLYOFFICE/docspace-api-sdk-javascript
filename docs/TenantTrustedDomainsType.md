@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TenantTrustedDomainsType
+# Api.TenantTrustedDomainsType
 [0 - None, 1 - Custom, 2 - All]
 
 ## Enum

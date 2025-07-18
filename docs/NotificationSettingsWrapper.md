@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.NotificationSettingsWrapper
+# Api.NotificationSettingsWrapper
 
 
 ## Properties

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.NoContentResult
+# Api.NoContentResult
 
 
 ## Properties

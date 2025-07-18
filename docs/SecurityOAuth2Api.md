@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SecurityOAuth2Api
+# Api.SecurityOAuth2Api
 
 All URIs are relative to *http://localhost:8092*
 
@@ -31,8 +31,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -54,7 +54,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SecurityOAuth2Api();
+let apiInstance = new Api.SecurityOAuth2Api();
 apiInstance.generateJwtToken((error, data, response) => {
   if (error) {
     console.error(error);

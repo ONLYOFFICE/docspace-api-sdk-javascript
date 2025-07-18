@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SettingsCustomNavigationApi
+# Api.SettingsCustomNavigationApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -38,8 +38,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -61,9 +61,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsCustomNavigationApi();
+let apiInstance = new Api.SettingsCustomNavigationApi();
 let opts = {
-  'customNavigationItem': new DocspaceApiJavascript.CustomNavigationItem() // CustomNavigationItem | 
+  'customNavigationItem': new Api.CustomNavigationItem() // CustomNavigationItem | 
 };
 apiInstance.createCustomNavigationItem(opts, (error, data, response) => {
   if (error) {
@@ -106,8 +106,8 @@ null (empty response body)
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -129,7 +129,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsCustomNavigationApi();
+let apiInstance = new Api.SettingsCustomNavigationApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The ID extracted from the route parameters.
 apiInstance.deleteCustomNavigationItem(id, (error, data, response) => {
   if (error) {
@@ -172,8 +172,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -195,7 +195,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsCustomNavigationApi();
+let apiInstance = new Api.SettingsCustomNavigationApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The ID extracted from the route parameters.
 apiInstance.getCustomNavigationItem(id, (error, data, response) => {
   if (error) {
@@ -235,8 +235,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -258,7 +258,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsCustomNavigationApi();
+let apiInstance = new Api.SettingsCustomNavigationApi();
 apiInstance.getCustomNavigationItemSample((error, data, response) => {
   if (error) {
     console.error(error);
@@ -297,8 +297,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -320,7 +320,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsCustomNavigationApi();
+let apiInstance = new Api.SettingsCustomNavigationApi();
 apiInstance.getCustomNavigationItems((error, data, response) => {
   if (error) {
     console.error(error);

@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.DownloadRequestItemDtoKey();
+    instance = new Api.DownloadRequestItemDtoKey();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,8 +54,8 @@
   describe('DownloadRequestItemDtoKey', function() {
     it('should create an instance of DownloadRequestItemDtoKey', function() {
       // uncomment below and update the code to test DownloadRequestItemDtoKey
-      //var instance = new DocspaceApiJavascript.DownloadRequestItemDtoKey();
-      //expect(instance).to.be.a(DocspaceApiJavascript.DownloadRequestItemDtoKey);
+      //var instance = new Api.DownloadRequestItemDtoKey();
+      //expect(instance).to.be.a(Api.DownloadRequestItemDtoKey);
     });
 
   });

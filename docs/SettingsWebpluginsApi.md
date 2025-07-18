@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SettingsWebpluginsApi
+# Api.SettingsWebpluginsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -38,8 +38,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -61,7 +61,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsWebpluginsApi();
+let apiInstance = new Api.SettingsWebpluginsApi();
 let opts = {
   'system': true // Boolean | Specifies whether to load the system plugins or not.
 };
@@ -106,8 +106,8 @@ null (empty response body)
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -129,7 +129,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsWebpluginsApi();
+let apiInstance = new Api.SettingsWebpluginsApi();
 let name = "Winfield Upton"; // String | The web plugin name.
 apiInstance.deleteWebPlugin(name, (error, data, response) => {
   if (error) {
@@ -172,8 +172,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -195,7 +195,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsWebpluginsApi();
+let apiInstance = new Api.SettingsWebpluginsApi();
 let name = "Winfield Upton"; // String | The web plugin name.
 apiInstance.getWebPlugin(name, (error, data, response) => {
   if (error) {
@@ -238,8 +238,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -261,7 +261,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsWebpluginsApi();
+let apiInstance = new Api.SettingsWebpluginsApi();
 let opts = {
   'enabled': true // Boolean | The optional filter for the plugin enabled state.
 };
@@ -307,8 +307,8 @@ null (empty response body)
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -330,10 +330,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsWebpluginsApi();
+let apiInstance = new Api.SettingsWebpluginsApi();
 let name = "Winfield Upton"; // String | The web plugin name.
 let opts = {
-  'webPluginRequests': new DocspaceApiJavascript.WebPluginRequests() // WebPluginRequests | The configuration settings for the web plugin instance.
+  'webPluginRequests': new Api.WebPluginRequests() // WebPluginRequests | The configuration settings for the web plugin instance.
 };
 apiInstance.updateWebPlugin(name, opts, (error, data, response) => {
   if (error) {

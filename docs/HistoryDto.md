@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.HistoryDto
+# Api.HistoryDto
 The file history information.
 
 ## Properties

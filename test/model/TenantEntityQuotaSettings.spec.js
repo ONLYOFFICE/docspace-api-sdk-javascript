@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.TenantEntityQuotaSettings();
+    instance = new Api.TenantEntityQuotaSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('TenantEntityQuotaSettings', function() {
     it('should create an instance of TenantEntityQuotaSettings', function() {
       // uncomment below and update the code to test TenantEntityQuotaSettings
-      //var instance = new DocspaceApiJavascript.TenantEntityQuotaSettings();
-      //expect(instance).to.be.a(DocspaceApiJavascript.TenantEntityQuotaSettings);
+      //var instance = new Api.TenantEntityQuotaSettings();
+      //expect(instance).to.be.a(Api.TenantEntityQuotaSettings);
     });
 
     it('should have the property enableQuota (base name: "enableQuota")', function() {
       // uncomment below and update the code to test the property enableQuota
-      //var instance = new DocspaceApiJavascript.TenantEntityQuotaSettings();
+      //var instance = new Api.TenantEntityQuotaSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property defaultQuota (base name: "defaultQuota")', function() {
       // uncomment below and update the code to test the property defaultQuota
-      //var instance = new DocspaceApiJavascript.TenantEntityQuotaSettings();
+      //var instance = new Api.TenantEntityQuotaSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property lastRecalculateDate (base name: "lastRecalculateDate")', function() {
       // uncomment below and update the code to test the property lastRecalculateDate
-      //var instance = new DocspaceApiJavascript.TenantEntityQuotaSettings();
+      //var instance = new Api.TenantEntityQuotaSettings();
       //expect(instance).to.be();
     });
 

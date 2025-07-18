@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.SsoFieldMapping();
+    instance = new Api.SsoFieldMapping();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,43 +54,43 @@
   describe('SsoFieldMapping', function() {
     it('should create an instance of SsoFieldMapping', function() {
       // uncomment below and update the code to test SsoFieldMapping
-      //var instance = new DocspaceApiJavascript.SsoFieldMapping();
-      //expect(instance).to.be.a(DocspaceApiJavascript.SsoFieldMapping);
+      //var instance = new Api.SsoFieldMapping();
+      //expect(instance).to.be.a(Api.SsoFieldMapping);
     });
 
     it('should have the property firstName (base name: "firstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instance = new DocspaceApiJavascript.SsoFieldMapping();
+      //var instance = new Api.SsoFieldMapping();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "lastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instance = new DocspaceApiJavascript.SsoFieldMapping();
+      //var instance = new Api.SsoFieldMapping();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiJavascript.SsoFieldMapping();
+      //var instance = new Api.SsoFieldMapping();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiJavascript.SsoFieldMapping();
+      //var instance = new Api.SsoFieldMapping();
       //expect(instance).to.be();
     });
 
     it('should have the property location (base name: "location")', function() {
       // uncomment below and update the code to test the property location
-      //var instance = new DocspaceApiJavascript.SsoFieldMapping();
+      //var instance = new Api.SsoFieldMapping();
       //expect(instance).to.be();
     });
 
     it('should have the property phone (base name: "phone")', function() {
       // uncomment below and update the code to test the property phone
-      //var instance = new DocspaceApiJavascript.SsoFieldMapping();
+      //var instance = new Api.SsoFieldMapping();
       //expect(instance).to.be();
     });
 

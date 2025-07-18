@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.SessionRequest();
+    instance = new Api.SessionRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,43 +54,43 @@
   describe('SessionRequest', function() {
     it('should create an instance of SessionRequest', function() {
       // uncomment below and update the code to test SessionRequest
-      //var instance = new DocspaceApiJavascript.SessionRequest();
-      //expect(instance).to.be.a(DocspaceApiJavascript.SessionRequest);
+      //var instance = new Api.SessionRequest();
+      //expect(instance).to.be.a(Api.SessionRequest);
     });
 
     it('should have the property fileName (base name: "fileName")', function() {
       // uncomment below and update the code to test the property fileName
-      //var instance = new DocspaceApiJavascript.SessionRequest();
+      //var instance = new Api.SessionRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property fileSize (base name: "fileSize")', function() {
       // uncomment below and update the code to test the property fileSize
-      //var instance = new DocspaceApiJavascript.SessionRequest();
+      //var instance = new Api.SessionRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property relativePath (base name: "relativePath")', function() {
       // uncomment below and update the code to test the property relativePath
-      //var instance = new DocspaceApiJavascript.SessionRequest();
+      //var instance = new Api.SessionRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property createOn (base name: "createOn")', function() {
       // uncomment below and update the code to test the property createOn
-      //var instance = new DocspaceApiJavascript.SessionRequest();
+      //var instance = new Api.SessionRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property encrypted (base name: "encrypted")', function() {
       // uncomment below and update the code to test the property encrypted
-      //var instance = new DocspaceApiJavascript.SessionRequest();
+      //var instance = new Api.SessionRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property createNewIfExist (base name: "createNewIfExist")', function() {
       // uncomment below and update the code to test the property createNewIfExist
-      //var instance = new DocspaceApiJavascript.SessionRequest();
+      //var instance = new Api.SessionRequest();
       //expect(instance).to.be();
     });
 

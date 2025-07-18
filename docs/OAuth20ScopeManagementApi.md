@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.OAuth20ScopeManagementApi
+# Api.OAuth20ScopeManagementApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -31,15 +31,15 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new DocspaceApiJavascript.OAuth20ScopeManagementApi();
+let apiInstance = new Api.OAuth20ScopeManagementApi();
 apiInstance.getScopes((error, data, response) => {
   if (error) {
     console.error(error);

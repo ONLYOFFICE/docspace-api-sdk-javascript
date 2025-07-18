@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.BatchTagsRequestDto
+# Api.BatchTagsRequestDto
 The parameters for adding tags.
 
 ## Properties

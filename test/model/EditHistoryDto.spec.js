@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.EditHistoryDto();
+    instance = new Api.EditHistoryDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,61 +54,61 @@
   describe('EditHistoryDto', function() {
     it('should create an instance of EditHistoryDto', function() {
       // uncomment below and update the code to test EditHistoryDto
-      //var instance = new DocspaceApiJavascript.EditHistoryDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.EditHistoryDto);
+      //var instance = new Api.EditHistoryDto();
+      //expect(instance).to.be.a(Api.EditHistoryDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.EditHistoryDto();
+      //var instance = new Api.EditHistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiJavascript.EditHistoryDto();
+      //var instance = new Api.EditHistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property version (base name: "version")', function() {
       // uncomment below and update the code to test the property version
-      //var instance = new DocspaceApiJavascript.EditHistoryDto();
+      //var instance = new Api.EditHistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property versionGroup (base name: "versionGroup")', function() {
       // uncomment below and update the code to test the property versionGroup
-      //var instance = new DocspaceApiJavascript.EditHistoryDto();
+      //var instance = new Api.EditHistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instance = new DocspaceApiJavascript.EditHistoryDto();
+      //var instance = new Api.EditHistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property created (base name: "created")', function() {
       // uncomment below and update the code to test the property created
-      //var instance = new DocspaceApiJavascript.EditHistoryDto();
+      //var instance = new Api.EditHistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property changesHistory (base name: "changesHistory")', function() {
       // uncomment below and update the code to test the property changesHistory
-      //var instance = new DocspaceApiJavascript.EditHistoryDto();
+      //var instance = new Api.EditHistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property changes (base name: "changes")', function() {
       // uncomment below and update the code to test the property changes
-      //var instance = new DocspaceApiJavascript.EditHistoryDto();
+      //var instance = new Api.EditHistoryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property serverVersion (base name: "serverVersion")', function() {
       // uncomment below and update the code to test the property serverVersion
-      //var instance = new DocspaceApiJavascript.EditHistoryDto();
+      //var instance = new Api.EditHistoryDto();
       //expect(instance).to.be();
     });
 

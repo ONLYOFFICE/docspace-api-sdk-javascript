@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CurrentLicenseInfo
+# Api.CurrentLicenseInfo
 The current license information.
 
 ## Properties

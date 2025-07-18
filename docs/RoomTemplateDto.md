@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.RoomTemplateDto
+# Api.RoomTemplateDto
 The room template parameters.
 
 ## Properties

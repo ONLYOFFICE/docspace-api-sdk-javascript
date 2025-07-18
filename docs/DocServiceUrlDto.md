@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.DocServiceUrlDto
+# Api.DocServiceUrlDto
 The document service URL parameters.
 
 ## Properties

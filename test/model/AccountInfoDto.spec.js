@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.AccountInfoDto();
+    instance = new Api.AccountInfoDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('AccountInfoDto', function() {
     it('should create an instance of AccountInfoDto', function() {
       // uncomment below and update the code to test AccountInfoDto
-      //var instance = new DocspaceApiJavascript.AccountInfoDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.AccountInfoDto);
+      //var instance = new Api.AccountInfoDto();
+      //expect(instance).to.be.a(Api.AccountInfoDto);
     });
 
     it('should have the property provider (base name: "provider")', function() {
       // uncomment below and update the code to test the property provider
-      //var instance = new DocspaceApiJavascript.AccountInfoDto();
+      //var instance = new Api.AccountInfoDto();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiJavascript.AccountInfoDto();
+      //var instance = new Api.AccountInfoDto();
       //expect(instance).to.be();
     });
 
     it('should have the property linked (base name: "linked")', function() {
       // uncomment below and update the code to test the property linked
-      //var instance = new DocspaceApiJavascript.AccountInfoDto();
+      //var instance = new Api.AccountInfoDto();
       //expect(instance).to.be();
     });
 

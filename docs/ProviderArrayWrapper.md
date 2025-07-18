@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ProviderArrayWrapper
+# Api.ProviderArrayWrapper
 
 
 ## Properties

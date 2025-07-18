@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ProviderDto
+# Api.ProviderDto
 The provider information.
 
 ## Properties

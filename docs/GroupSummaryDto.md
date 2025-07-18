@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.GroupSummaryDto
+# Api.GroupSummaryDto
 The group summary parameters.
 
 ## Properties

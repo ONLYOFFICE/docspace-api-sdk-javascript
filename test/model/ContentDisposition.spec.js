@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ContentDisposition();
+    instance = new Api.ContentDisposition();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,55 +54,55 @@
   describe('ContentDisposition', function() {
     it('should create an instance of ContentDisposition', function() {
       // uncomment below and update the code to test ContentDisposition
-      //var instance = new DocspaceApiJavascript.ContentDisposition();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ContentDisposition);
+      //var instance = new Api.ContentDisposition();
+      //expect(instance).to.be.a(Api.ContentDisposition);
     });
 
     it('should have the property dispositionType (base name: "dispositionType")', function() {
       // uncomment below and update the code to test the property dispositionType
-      //var instance = new DocspaceApiJavascript.ContentDisposition();
+      //var instance = new Api.ContentDisposition();
       //expect(instance).to.be();
     });
 
     it('should have the property parameters (base name: "parameters")', function() {
       // uncomment below and update the code to test the property parameters
-      //var instance = new DocspaceApiJavascript.ContentDisposition();
+      //var instance = new Api.ContentDisposition();
       //expect(instance).to.be();
     });
 
     it('should have the property fileName (base name: "fileName")', function() {
       // uncomment below and update the code to test the property fileName
-      //var instance = new DocspaceApiJavascript.ContentDisposition();
+      //var instance = new Api.ContentDisposition();
       //expect(instance).to.be();
     });
 
     it('should have the property creationDate (base name: "creationDate")', function() {
       // uncomment below and update the code to test the property creationDate
-      //var instance = new DocspaceApiJavascript.ContentDisposition();
+      //var instance = new Api.ContentDisposition();
       //expect(instance).to.be();
     });
 
     it('should have the property modificationDate (base name: "modificationDate")', function() {
       // uncomment below and update the code to test the property modificationDate
-      //var instance = new DocspaceApiJavascript.ContentDisposition();
+      //var instance = new Api.ContentDisposition();
       //expect(instance).to.be();
     });
 
     it('should have the property inline (base name: "inline")', function() {
       // uncomment below and update the code to test the property inline
-      //var instance = new DocspaceApiJavascript.ContentDisposition();
+      //var instance = new Api.ContentDisposition();
       //expect(instance).to.be();
     });
 
     it('should have the property readDate (base name: "readDate")', function() {
       // uncomment below and update the code to test the property readDate
-      //var instance = new DocspaceApiJavascript.ContentDisposition();
+      //var instance = new Api.ContentDisposition();
       //expect(instance).to.be();
     });
 
     it('should have the property size (base name: "size")', function() {
       // uncomment below and update the code to test the property size
-      //var instance = new DocspaceApiJavascript.ContentDisposition();
+      //var instance = new Api.ContentDisposition();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TenantWalletSettingsWrapper
+# Api.TenantWalletSettingsWrapper
 Tenant wallet settings
 
 ## Properties

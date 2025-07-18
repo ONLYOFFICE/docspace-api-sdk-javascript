@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CreateRoomFromTemplateDto
+# Api.CreateRoomFromTemplateDto
 The parameters for creating a room from a template.
 
 ## Properties

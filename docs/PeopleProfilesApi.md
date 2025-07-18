@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.PeopleProfilesApi
+# Api.PeopleProfilesApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -47,8 +47,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -70,9 +70,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let apiInstance = new Api.PeopleProfilesApi();
 let opts = {
-  'memberRequestDto': new DocspaceApiJavascript.MemberRequestDto() // MemberRequestDto | 
+  'memberRequestDto': new Api.MemberRequestDto() // MemberRequestDto | 
 };
 apiInstance.addMember(opts, (error, data, response) => {
   if (error) {
@@ -115,8 +115,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -138,7 +138,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let apiInstance = new Api.PeopleProfilesApi();
 let userid = "9846"; // String | The user ID.
 apiInstance.deleteMember(userid, (error, data, response) => {
   if (error) {
@@ -178,8 +178,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -201,7 +201,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let apiInstance = new Api.PeopleProfilesApi();
 apiInstance.deleteProfile((error, data, response) => {
   if (error) {
     console.error(error);
@@ -250,8 +250,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -273,13 +273,13 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let apiInstance = new Api.PeopleProfilesApi();
 let opts = {
   'count': 1234, // Number | The maximum number of items to be retrieved in the response.
   'startIndex': 1234, // Number | The zero-based index of the first item to be retrieved in a filtered result set.
   'filterBy': "some text", // String | Specifies the filter criteria for user-related queries.
   'sortBy': "some text", // String | Specifies the property or field name by which the results should be sorted.
-  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'sortOrder': new Api.SortOrder(), // SortOrder | The order in which the results are sorted.
   'filterSeparator': "some text", // String | The character or string used to separate multiple filter values in a filtering query.
   'filterValue': "some text" // String | The text value used as an additional filter criterion for profiles retrieval.
 };
@@ -321,8 +321,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -344,7 +344,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let apiInstance = new Api.PeopleProfilesApi();
 apiInstance.getClaims((error, data, response) => {
   if (error) {
     console.error(error);
@@ -387,8 +387,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -410,7 +410,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let apiInstance = new Api.PeopleProfilesApi();
 let opts = {
   'email': "Sydney_Roberts4@hotmail.com", // String | The user email address.
   'culture': "some text" // String | Culture
@@ -456,8 +456,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -479,7 +479,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let apiInstance = new Api.PeopleProfilesApi();
 let userid = "9846"; // String | The user ID.
 apiInstance.getProfileByUserId(userid, (error, data, response) => {
   if (error) {
@@ -519,8 +519,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -542,7 +542,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let apiInstance = new Api.PeopleProfilesApi();
 apiInstance.getSelfProfile((error, data, response) => {
   if (error) {
     console.error(error);
@@ -584,8 +584,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -607,9 +607,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let apiInstance = new Api.PeopleProfilesApi();
 let opts = {
-  'inviteUsersRequestDto': new DocspaceApiJavascript.InviteUsersRequestDto() // InviteUsersRequestDto | 
+  'inviteUsersRequestDto': new Api.InviteUsersRequestDto() // InviteUsersRequestDto | 
 };
 apiInstance.inviteUsers(opts, (error, data, response) => {
   if (error) {
@@ -652,8 +652,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -675,9 +675,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let apiInstance = new Api.PeopleProfilesApi();
 let opts = {
-  'updateMembersRequestDto': new DocspaceApiJavascript.UpdateMembersRequestDto() // UpdateMembersRequestDto | 
+  'updateMembersRequestDto': new Api.UpdateMembersRequestDto() // UpdateMembersRequestDto | 
 };
 apiInstance.removeUsers(opts, (error, data, response) => {
   if (error) {
@@ -720,8 +720,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -743,9 +743,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let apiInstance = new Api.PeopleProfilesApi();
 let opts = {
-  'updateMembersRequestDto': new DocspaceApiJavascript.UpdateMembersRequestDto() // UpdateMembersRequestDto | 
+  'updateMembersRequestDto': new Api.UpdateMembersRequestDto() // UpdateMembersRequestDto | 
 };
 apiInstance.resendUserInvites(opts, (error, data, response) => {
   if (error) {
@@ -788,8 +788,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -811,9 +811,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let apiInstance = new Api.PeopleProfilesApi();
 let opts = {
-  'updateMemberRequestDto': new DocspaceApiJavascript.UpdateMemberRequestDto() // UpdateMemberRequestDto | 
+  'updateMemberRequestDto': new Api.UpdateMemberRequestDto() // UpdateMemberRequestDto | 
 };
 apiInstance.sendEmailChangeInstructions(opts, (error, data, response) => {
   if (error) {
@@ -857,8 +857,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -880,10 +880,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let apiInstance = new Api.PeopleProfilesApi();
 let userid = "9846"; // String | The user ID.
 let opts = {
-  'updateMemberRequestDto': new DocspaceApiJavascript.UpdateMemberRequestDto() // UpdateMemberRequestDto | The request parameters for updating the user information.
+  'updateMemberRequestDto': new Api.UpdateMemberRequestDto() // UpdateMemberRequestDto | The request parameters for updating the user information.
 };
 apiInstance.updateMember(userid, opts, (error, data, response) => {
   if (error) {
@@ -927,8 +927,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -950,10 +950,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleProfilesApi();
+let apiInstance = new Api.PeopleProfilesApi();
 let userid = "9846"; // String | The user ID.
 let opts = {
-  'culture': new DocspaceApiJavascript.Culture() // Culture | The culture code parameters.
+  'culture': new Api.Culture() // Culture | The culture code parameters.
 };
 apiInstance.updateMemberCulture(userid, opts, (error, data, response) => {
   if (error) {

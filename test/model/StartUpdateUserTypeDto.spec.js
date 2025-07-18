@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.StartUpdateUserTypeDto();
+    instance = new Api.StartUpdateUserTypeDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('StartUpdateUserTypeDto', function() {
     it('should create an instance of StartUpdateUserTypeDto', function() {
       // uncomment below and update the code to test StartUpdateUserTypeDto
-      //var instance = new DocspaceApiJavascript.StartUpdateUserTypeDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.StartUpdateUserTypeDto);
+      //var instance = new Api.StartUpdateUserTypeDto();
+      //expect(instance).to.be.a(Api.StartUpdateUserTypeDto);
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new DocspaceApiJavascript.StartUpdateUserTypeDto();
+      //var instance = new Api.StartUpdateUserTypeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "userId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instance = new DocspaceApiJavascript.StartUpdateUserTypeDto();
+      //var instance = new Api.StartUpdateUserTypeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property reassignUserId (base name: "reassignUserId")', function() {
       // uncomment below and update the code to test the property reassignUserId
-      //var instance = new DocspaceApiJavascript.StartUpdateUserTypeDto();
+      //var instance = new Api.StartUpdateUserTypeDto();
       //expect(instance).to.be();
     });
 

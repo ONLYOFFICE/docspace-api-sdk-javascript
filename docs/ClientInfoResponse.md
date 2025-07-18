@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ClientInfoResponse
+# Api.ClientInfoResponse
 The response containing public client information.
 
 ## Properties

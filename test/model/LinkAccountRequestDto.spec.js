@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.LinkAccountRequestDto();
+    instance = new Api.LinkAccountRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('LinkAccountRequestDto', function() {
     it('should create an instance of LinkAccountRequestDto', function() {
       // uncomment below and update the code to test LinkAccountRequestDto
-      //var instance = new DocspaceApiJavascript.LinkAccountRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.LinkAccountRequestDto);
+      //var instance = new Api.LinkAccountRequestDto();
+      //expect(instance).to.be.a(Api.LinkAccountRequestDto);
     });
 
     it('should have the property serializedProfile (base name: "serializedProfile")', function() {
       // uncomment below and update the code to test the property serializedProfile
-      //var instance = new DocspaceApiJavascript.LinkAccountRequestDto();
+      //var instance = new Api.LinkAccountRequestDto();
       //expect(instance).to.be();
     });
 

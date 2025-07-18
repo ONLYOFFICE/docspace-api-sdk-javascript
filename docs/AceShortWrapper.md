@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.AceShortWrapper
+# Api.AceShortWrapper
 The information about the settings which allow to share the document with other users.
 
 ## Properties

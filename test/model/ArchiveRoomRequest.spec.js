@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ArchiveRoomRequest();
+    instance = new Api.ArchiveRoomRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('ArchiveRoomRequest', function() {
     it('should create an instance of ArchiveRoomRequest', function() {
       // uncomment below and update the code to test ArchiveRoomRequest
-      //var instance = new DocspaceApiJavascript.ArchiveRoomRequest();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ArchiveRoomRequest);
+      //var instance = new Api.ArchiveRoomRequest();
+      //expect(instance).to.be.a(Api.ArchiveRoomRequest);
     });
 
     it('should have the property deleteAfter (base name: "deleteAfter")', function() {
       // uncomment below and update the code to test the property deleteAfter
-      //var instance = new DocspaceApiJavascript.ArchiveRoomRequest();
+      //var instance = new Api.ArchiveRoomRequest();
       //expect(instance).to.be();
     });
 

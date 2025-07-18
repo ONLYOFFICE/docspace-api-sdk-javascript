@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.PeoplePhotosApi
+# Api.PeoplePhotosApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -39,8 +39,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -62,10 +62,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeoplePhotosApi();
+let apiInstance = new Api.PeoplePhotosApi();
 let userid = "9846"; // String | The user ID.
 let opts = {
-  'thumbnailsRequest': new DocspaceApiJavascript.ThumbnailsRequest() // ThumbnailsRequest | The thumbnail request.
+  'thumbnailsRequest': new Api.ThumbnailsRequest() // ThumbnailsRequest | The thumbnail request.
 };
 apiInstance.createMemberPhotoThumbnails(userid, opts, (error, data, response) => {
   if (error) {
@@ -108,8 +108,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -131,7 +131,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeoplePhotosApi();
+let apiInstance = new Api.PeoplePhotosApi();
 let userid = "9846"; // String | The user ID.
 apiInstance.deleteMemberPhoto(userid, (error, data, response) => {
   if (error) {
@@ -174,8 +174,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -197,7 +197,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeoplePhotosApi();
+let apiInstance = new Api.PeoplePhotosApi();
 let userid = "9846"; // String | The user ID.
 apiInstance.getMemberPhoto(userid, (error, data, response) => {
   if (error) {
@@ -241,8 +241,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -264,10 +264,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeoplePhotosApi();
+let apiInstance = new Api.PeoplePhotosApi();
 let userid = "9846"; // String | The user ID.
 let opts = {
-  'updatePhotoMemberRequest': new DocspaceApiJavascript.UpdatePhotoMemberRequest() // UpdatePhotoMemberRequest | The request parameters for updating a photo.
+  'updatePhotoMemberRequest': new Api.UpdatePhotoMemberRequest() // UpdatePhotoMemberRequest | The request parameters for updating a photo.
 };
 apiInstance.updateMemberPhoto(userid, opts, (error, data, response) => {
   if (error) {
@@ -311,8 +311,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -334,9 +334,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeoplePhotosApi();
+let apiInstance = new Api.PeoplePhotosApi();
 let userid = "9846"; // String | The user ID.
-let formCollection = [new DocspaceApiJavascript.KeyValuePairStringStringValues()]; // [KeyValuePairStringStringValues] | The image data.
+let formCollection = [new Api.KeyValuePairStringStringValues()]; // [KeyValuePairStringStringValues] | The image data.
 apiInstance.uploadMemberPhoto(userid, formCollection, (error, data, response) => {
   if (error) {
     console.error(error);

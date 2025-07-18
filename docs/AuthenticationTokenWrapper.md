@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.AuthenticationTokenWrapper
+# Api.AuthenticationTokenWrapper
 
 
 ## Properties

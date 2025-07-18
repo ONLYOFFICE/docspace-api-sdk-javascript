@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ClientResponse();
+    instance = new Api.ClientResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,127 +54,127 @@
   describe('ClientResponse', function() {
     it('should create an instance of ClientResponse', function() {
       // uncomment below and update the code to test ClientResponse
-      //var instance = new DocspaceApiJavascript.ClientResponse();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ClientResponse);
+      //var instance = new Api.ClientResponse();
+      //expect(instance).to.be.a(Api.ClientResponse);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property tenant (base name: "tenant")', function() {
       // uncomment below and update the code to test the property tenant
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property scopes (base name: "scopes")', function() {
       // uncomment below and update the code to test the property scopes
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property enabled (base name: "enabled")', function() {
       // uncomment below and update the code to test the property enabled
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property clientId (base name: "client_id")', function() {
       // uncomment below and update the code to test the property clientId
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property clientSecret (base name: "client_secret")', function() {
       // uncomment below and update the code to test the property clientSecret
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property websiteUrl (base name: "website_url")', function() {
       // uncomment below and update the code to test the property websiteUrl
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property termsUrl (base name: "terms_url")', function() {
       // uncomment below and update the code to test the property termsUrl
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property policyUrl (base name: "policy_url")', function() {
       // uncomment below and update the code to test the property policyUrl
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property logo (base name: "logo")', function() {
       // uncomment below and update the code to test the property logo
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property authenticationMethods (base name: "authentication_methods")', function() {
       // uncomment below and update the code to test the property authenticationMethods
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property redirectUris (base name: "redirect_uris")', function() {
       // uncomment below and update the code to test the property redirectUris
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property allowedOrigins (base name: "allowed_origins")', function() {
       // uncomment below and update the code to test the property allowedOrigins
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property logoutRedirectUris (base name: "logout_redirect_uris")', function() {
       // uncomment below and update the code to test the property logoutRedirectUris
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property createdOn (base name: "created_on")', function() {
       // uncomment below and update the code to test the property createdOn
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property createdBy (base name: "created_by")', function() {
       // uncomment below and update the code to test the property createdBy
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property modifiedOn (base name: "modified_on")', function() {
       // uncomment below and update the code to test the property modifiedOn
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property modifiedBy (base name: "modified_by")', function() {
       // uncomment below and update the code to test the property modifiedBy
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property isPublic (base name: "is_public")', function() {
       // uncomment below and update the code to test the property isPublic
-      //var instance = new DocspaceApiJavascript.ClientResponse();
+      //var instance = new Api.ClientResponse();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.AccountInfoDto
+# Api.AccountInfoDto
 The account information parameters.
 
 ## Properties

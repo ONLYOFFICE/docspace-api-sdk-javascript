@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.PaymentUrlRequestsDto();
+    instance = new Api.PaymentUrlRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('PaymentUrlRequestsDto', function() {
     it('should create an instance of PaymentUrlRequestsDto', function() {
       // uncomment below and update the code to test PaymentUrlRequestsDto
-      //var instance = new DocspaceApiJavascript.PaymentUrlRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.PaymentUrlRequestsDto);
+      //var instance = new Api.PaymentUrlRequestsDto();
+      //expect(instance).to.be.a(Api.PaymentUrlRequestsDto);
     });
 
     it('should have the property backUrl (base name: "backUrl")', function() {
       // uncomment below and update the code to test the property backUrl
-      //var instance = new DocspaceApiJavascript.PaymentUrlRequestsDto();
+      //var instance = new Api.PaymentUrlRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new DocspaceApiJavascript.PaymentUrlRequestsDto();
+      //var instance = new Api.PaymentUrlRequestsDto();
       //expect(instance).to.be();
     });
 

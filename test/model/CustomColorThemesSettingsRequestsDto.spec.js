@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CustomColorThemesSettingsRequestsDto();
+    instance = new Api.CustomColorThemesSettingsRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('CustomColorThemesSettingsRequestsDto', function() {
     it('should create an instance of CustomColorThemesSettingsRequestsDto', function() {
       // uncomment below and update the code to test CustomColorThemesSettingsRequestsDto
-      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CustomColorThemesSettingsRequestsDto);
+      //var instance = new Api.CustomColorThemesSettingsRequestsDto();
+      //expect(instance).to.be.a(Api.CustomColorThemesSettingsRequestsDto);
     });
 
     it('should have the property theme (base name: "theme")', function() {
       // uncomment below and update the code to test the property theme
-      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsRequestsDto();
+      //var instance = new Api.CustomColorThemesSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property selected (base name: "selected")', function() {
       // uncomment below and update the code to test the property selected
-      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsRequestsDto();
+      //var instance = new Api.CustomColorThemesSettingsRequestsDto();
       //expect(instance).to.be();
     });
 

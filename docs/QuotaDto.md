@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.QuotaDto
+# Api.QuotaDto
 The quota information.
 
 ## Properties

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TopUpDepositRequestDto
+# Api.TopUpDepositRequestDto
 Put money on deposit request parameters
 
 ## Properties

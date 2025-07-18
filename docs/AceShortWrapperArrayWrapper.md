@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.AceShortWrapperArrayWrapper
+# Api.AceShortWrapperArrayWrapper
 
 
 ## Properties

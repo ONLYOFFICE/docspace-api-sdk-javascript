@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ConfigurationIntegerWrapper();
+    instance = new Api.ConfigurationIntegerWrapper();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,37 +54,37 @@
   describe('ConfigurationIntegerWrapper', function() {
     it('should create an instance of ConfigurationIntegerWrapper', function() {
       // uncomment below and update the code to test ConfigurationIntegerWrapper
-      //var instance = new DocspaceApiJavascript.ConfigurationIntegerWrapper();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ConfigurationIntegerWrapper);
+      //var instance = new Api.ConfigurationIntegerWrapper();
+      //expect(instance).to.be.a(Api.ConfigurationIntegerWrapper);
     });
 
     it('should have the property response (base name: "response")', function() {
       // uncomment below and update the code to test the property response
-      //var instance = new DocspaceApiJavascript.ConfigurationIntegerWrapper();
+      //var instance = new Api.ConfigurationIntegerWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property count (base name: "count")', function() {
       // uncomment below and update the code to test the property count
-      //var instance = new DocspaceApiJavascript.ConfigurationIntegerWrapper();
+      //var instance = new Api.ConfigurationIntegerWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instance = new DocspaceApiJavascript.ConfigurationIntegerWrapper();
+      //var instance = new Api.ConfigurationIntegerWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new DocspaceApiJavascript.ConfigurationIntegerWrapper();
+      //var instance = new Api.ConfigurationIntegerWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property statusCode (base name: "statusCode")', function() {
       // uncomment below and update the code to test the property statusCode
-      //var instance = new DocspaceApiJavascript.ConfigurationIntegerWrapper();
+      //var instance = new Api.ConfigurationIntegerWrapper();
       //expect(instance).to.be();
     });
 

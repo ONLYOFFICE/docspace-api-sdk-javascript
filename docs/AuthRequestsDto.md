@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.AuthRequestsDto
+# Api.AuthRequestsDto
 The parameters required for the user authentication requests.
 
 ## Properties

@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ErrorResponse();
+    instance = new Api.ErrorResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('ErrorResponse', function() {
     it('should create an instance of ErrorResponse', function() {
       // uncomment below and update the code to test ErrorResponse
-      //var instance = new DocspaceApiJavascript.ErrorResponse();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ErrorResponse);
+      //var instance = new Api.ErrorResponse();
+      //expect(instance).to.be.a(Api.ErrorResponse);
     });
 
     it('should have the property reason (base name: "reason")', function() {
       // uncomment below and update the code to test the property reason
-      //var instance = new DocspaceApiJavascript.ErrorResponse();
+      //var instance = new Api.ErrorResponse();
       //expect(instance).to.be();
     });
 

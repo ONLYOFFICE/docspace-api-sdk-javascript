@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.WebhookRetryRequestsDto();
+    instance = new Api.WebhookRetryRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('WebhookRetryRequestsDto', function() {
     it('should create an instance of WebhookRetryRequestsDto', function() {
       // uncomment below and update the code to test WebhookRetryRequestsDto
-      //var instance = new DocspaceApiJavascript.WebhookRetryRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.WebhookRetryRequestsDto);
+      //var instance = new Api.WebhookRetryRequestsDto();
+      //expect(instance).to.be.a(Api.WebhookRetryRequestsDto);
     });
 
     it('should have the property ids (base name: "ids")', function() {
       // uncomment below and update the code to test the property ids
-      //var instance = new DocspaceApiJavascript.WebhookRetryRequestsDto();
+      //var instance = new Api.WebhookRetryRequestsDto();
       //expect(instance).to.be();
     });
 

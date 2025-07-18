@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.UpdateApiKeyRequest();
+    instance = new Api.UpdateApiKeyRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('UpdateApiKeyRequest', function() {
     it('should create an instance of UpdateApiKeyRequest', function() {
       // uncomment below and update the code to test UpdateApiKeyRequest
-      //var instance = new DocspaceApiJavascript.UpdateApiKeyRequest();
-      //expect(instance).to.be.a(DocspaceApiJavascript.UpdateApiKeyRequest);
+      //var instance = new Api.UpdateApiKeyRequest();
+      //expect(instance).to.be.a(Api.UpdateApiKeyRequest);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiJavascript.UpdateApiKeyRequest();
+      //var instance = new Api.UpdateApiKeyRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property permissions (base name: "permissions")', function() {
       // uncomment below and update the code to test the property permissions
-      //var instance = new DocspaceApiJavascript.UpdateApiKeyRequest();
+      //var instance = new Api.UpdateApiKeyRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property isActive (base name: "isActive")', function() {
       // uncomment below and update the code to test the property isActive
-      //var instance = new DocspaceApiJavascript.UpdateApiKeyRequest();
+      //var instance = new Api.UpdateApiKeyRequest();
       //expect(instance).to.be();
     });
 

@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.DocServiceUrlDto();
+    instance = new Api.DocServiceUrlDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,55 +54,55 @@
   describe('DocServiceUrlDto', function() {
     it('should create an instance of DocServiceUrlDto', function() {
       // uncomment below and update the code to test DocServiceUrlDto
-      //var instance = new DocspaceApiJavascript.DocServiceUrlDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.DocServiceUrlDto);
+      //var instance = new Api.DocServiceUrlDto();
+      //expect(instance).to.be.a(Api.DocServiceUrlDto);
     });
 
     it('should have the property version (base name: "version")', function() {
       // uncomment below and update the code to test the property version
-      //var instance = new DocspaceApiJavascript.DocServiceUrlDto();
+      //var instance = new Api.DocServiceUrlDto();
       //expect(instance).to.be();
     });
 
     it('should have the property docServiceUrlApi (base name: "docServiceUrlApi")', function() {
       // uncomment below and update the code to test the property docServiceUrlApi
-      //var instance = new DocspaceApiJavascript.DocServiceUrlDto();
+      //var instance = new Api.DocServiceUrlDto();
       //expect(instance).to.be();
     });
 
     it('should have the property docServiceUrl (base name: "docServiceUrl")', function() {
       // uncomment below and update the code to test the property docServiceUrl
-      //var instance = new DocspaceApiJavascript.DocServiceUrlDto();
+      //var instance = new Api.DocServiceUrlDto();
       //expect(instance).to.be();
     });
 
     it('should have the property docServiceUrlInternal (base name: "docServiceUrlInternal")', function() {
       // uncomment below and update the code to test the property docServiceUrlInternal
-      //var instance = new DocspaceApiJavascript.DocServiceUrlDto();
+      //var instance = new Api.DocServiceUrlDto();
       //expect(instance).to.be();
     });
 
     it('should have the property docServicePortalUrl (base name: "docServicePortalUrl")', function() {
       // uncomment below and update the code to test the property docServicePortalUrl
-      //var instance = new DocspaceApiJavascript.DocServiceUrlDto();
+      //var instance = new Api.DocServiceUrlDto();
       //expect(instance).to.be();
     });
 
     it('should have the property docServiceSignatureHeader (base name: "docServiceSignatureHeader")', function() {
       // uncomment below and update the code to test the property docServiceSignatureHeader
-      //var instance = new DocspaceApiJavascript.DocServiceUrlDto();
+      //var instance = new Api.DocServiceUrlDto();
       //expect(instance).to.be();
     });
 
     it('should have the property docServiceSslVerification (base name: "docServiceSslVerification")', function() {
       // uncomment below and update the code to test the property docServiceSslVerification
-      //var instance = new DocspaceApiJavascript.DocServiceUrlDto();
+      //var instance = new Api.DocServiceUrlDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isDefault (base name: "isDefault")', function() {
       // uncomment below and update the code to test the property isDefault
-      //var instance = new DocspaceApiJavascript.DocServiceUrlDto();
+      //var instance = new Api.DocServiceUrlDto();
       //expect(instance).to.be();
     });
 

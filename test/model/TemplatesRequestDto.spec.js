@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.TemplatesRequestDto();
+    instance = new Api.TemplatesRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('TemplatesRequestDto', function() {
     it('should create an instance of TemplatesRequestDto', function() {
       // uncomment below and update the code to test TemplatesRequestDto
-      //var instance = new DocspaceApiJavascript.TemplatesRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.TemplatesRequestDto);
+      //var instance = new Api.TemplatesRequestDto();
+      //expect(instance).to.be.a(Api.TemplatesRequestDto);
     });
 
     it('should have the property fileIds (base name: "fileIds")', function() {
       // uncomment below and update the code to test the property fileIds
-      //var instance = new DocspaceApiJavascript.TemplatesRequestDto();
+      //var instance = new Api.TemplatesRequestDto();
       //expect(instance).to.be();
     });
 

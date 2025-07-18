@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.FormGalleryDto();
+    instance = new Api.FormGalleryDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,49 +54,49 @@
   describe('FormGalleryDto', function() {
     it('should create an instance of FormGalleryDto', function() {
       // uncomment below and update the code to test FormGalleryDto
-      //var instance = new DocspaceApiJavascript.FormGalleryDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.FormGalleryDto);
+      //var instance = new Api.FormGalleryDto();
+      //expect(instance).to.be.a(Api.FormGalleryDto);
     });
 
     it('should have the property path (base name: "path")', function() {
       // uncomment below and update the code to test the property path
-      //var instance = new DocspaceApiJavascript.FormGalleryDto();
+      //var instance = new Api.FormGalleryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property domain (base name: "domain")', function() {
       // uncomment below and update the code to test the property domain
-      //var instance = new DocspaceApiJavascript.FormGalleryDto();
+      //var instance = new Api.FormGalleryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property ext (base name: "ext")', function() {
       // uncomment below and update the code to test the property ext
-      //var instance = new DocspaceApiJavascript.FormGalleryDto();
+      //var instance = new Api.FormGalleryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property uploadPath (base name: "uploadPath")', function() {
       // uncomment below and update the code to test the property uploadPath
-      //var instance = new DocspaceApiJavascript.FormGalleryDto();
+      //var instance = new Api.FormGalleryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property uploadDomain (base name: "uploadDomain")', function() {
       // uncomment below and update the code to test the property uploadDomain
-      //var instance = new DocspaceApiJavascript.FormGalleryDto();
+      //var instance = new Api.FormGalleryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property uploadExt (base name: "uploadExt")', function() {
       // uncomment below and update the code to test the property uploadExt
-      //var instance = new DocspaceApiJavascript.FormGalleryDto();
+      //var instance = new Api.FormGalleryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property uploadDashboard (base name: "uploadDashboard")', function() {
       // uncomment below and update the code to test the property uploadDashboard
-      //var instance = new DocspaceApiJavascript.FormGalleryDto();
+      //var instance = new Api.FormGalleryDto();
       //expect(instance).to.be();
     });
 

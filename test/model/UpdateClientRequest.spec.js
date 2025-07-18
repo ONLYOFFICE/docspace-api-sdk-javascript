@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.UpdateClientRequest();
+    instance = new Api.UpdateClientRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,43 +54,43 @@
   describe('UpdateClientRequest', function() {
     it('should create an instance of UpdateClientRequest', function() {
       // uncomment below and update the code to test UpdateClientRequest
-      //var instance = new DocspaceApiJavascript.UpdateClientRequest();
-      //expect(instance).to.be.a(DocspaceApiJavascript.UpdateClientRequest);
+      //var instance = new Api.UpdateClientRequest();
+      //expect(instance).to.be.a(Api.UpdateClientRequest);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiJavascript.UpdateClientRequest();
+      //var instance = new Api.UpdateClientRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new DocspaceApiJavascript.UpdateClientRequest();
+      //var instance = new Api.UpdateClientRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property logo (base name: "logo")', function() {
       // uncomment below and update the code to test the property logo
-      //var instance = new DocspaceApiJavascript.UpdateClientRequest();
+      //var instance = new Api.UpdateClientRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property allowPkce (base name: "allow_pkce")', function() {
       // uncomment below and update the code to test the property allowPkce
-      //var instance = new DocspaceApiJavascript.UpdateClientRequest();
+      //var instance = new Api.UpdateClientRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property isPublic (base name: "is_public")', function() {
       // uncomment below and update the code to test the property isPublic
-      //var instance = new DocspaceApiJavascript.UpdateClientRequest();
+      //var instance = new Api.UpdateClientRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property allowedOrigins (base name: "allowed_origins")', function() {
       // uncomment below and update the code to test the property allowedOrigins
-      //var instance = new DocspaceApiJavascript.UpdateClientRequest();
+      //var instance = new Api.UpdateClientRequest();
       //expect(instance).to.be();
     });
 

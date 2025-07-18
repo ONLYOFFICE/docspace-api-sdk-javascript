@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.UpdateComment();
+    instance = new Api.UpdateComment();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('UpdateComment', function() {
     it('should create an instance of UpdateComment', function() {
       // uncomment below and update the code to test UpdateComment
-      //var instance = new DocspaceApiJavascript.UpdateComment();
-      //expect(instance).to.be.a(DocspaceApiJavascript.UpdateComment);
+      //var instance = new Api.UpdateComment();
+      //expect(instance).to.be.a(Api.UpdateComment);
     });
 
     it('should have the property version (base name: "version")', function() {
       // uncomment below and update the code to test the property version
-      //var instance = new DocspaceApiJavascript.UpdateComment();
+      //var instance = new Api.UpdateComment();
       //expect(instance).to.be();
     });
 
     it('should have the property comment (base name: "comment")', function() {
       // uncomment below and update the code to test the property comment
-      //var instance = new DocspaceApiJavascript.UpdateComment();
+      //var instance = new Api.UpdateComment();
       //expect(instance).to.be();
     });
 

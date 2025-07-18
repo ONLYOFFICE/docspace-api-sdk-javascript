@@ -24,9 +24,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
@@ -53,8 +53,8 @@
   describe('QuotaFilter', function() {
     it('should create an instance of QuotaFilter', function() {
       // uncomment below and update the code to test QuotaFilter
-      //var instance = new DocspaceApiJavascript.QuotaFilter();
-      //expect(instance).to.be.a(DocspaceApiJavascript.QuotaFilter);
+      //var instance = new Api.QuotaFilter();
+      //expect(instance).to.be.a(Api.QuotaFilter);
     });
 
   });

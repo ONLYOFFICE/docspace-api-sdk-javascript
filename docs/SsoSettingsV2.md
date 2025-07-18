@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SsoSettingsV2
+# Api.SsoSettingsV2
 The SSO portal settings.
 
 ## Properties

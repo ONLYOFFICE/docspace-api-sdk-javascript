@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.SalesRequestsDto();
+    instance = new Api.SalesRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('SalesRequestsDto', function() {
     it('should create an instance of SalesRequestsDto', function() {
       // uncomment below and update the code to test SalesRequestsDto
-      //var instance = new DocspaceApiJavascript.SalesRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.SalesRequestsDto);
+      //var instance = new Api.SalesRequestsDto();
+      //expect(instance).to.be.a(Api.SalesRequestsDto);
     });
 
     it('should have the property userName (base name: "userName")', function() {
       // uncomment below and update the code to test the property userName
-      //var instance = new DocspaceApiJavascript.SalesRequestsDto();
+      //var instance = new Api.SalesRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiJavascript.SalesRequestsDto();
+      //var instance = new Api.SalesRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new DocspaceApiJavascript.SalesRequestsDto();
+      //var instance = new Api.SalesRequestsDto();
       //expect(instance).to.be();
     });
 

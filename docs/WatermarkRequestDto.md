@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.WatermarkRequestDto
+# Api.WatermarkRequestDto
 The request parameters for adding watermarks.
 
 ## Properties

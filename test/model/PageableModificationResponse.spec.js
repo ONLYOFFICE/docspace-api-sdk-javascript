@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.PageableModificationResponse();
+    instance = new Api.PageableModificationResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('PageableModificationResponse', function() {
     it('should create an instance of PageableModificationResponse', function() {
       // uncomment below and update the code to test PageableModificationResponse
-      //var instance = new DocspaceApiJavascript.PageableModificationResponse();
-      //expect(instance).to.be.a(DocspaceApiJavascript.PageableModificationResponse);
+      //var instance = new Api.PageableModificationResponse();
+      //expect(instance).to.be.a(Api.PageableModificationResponse);
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instance = new DocspaceApiJavascript.PageableModificationResponse();
+      //var instance = new Api.PageableModificationResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property limit (base name: "limit")', function() {
       // uncomment below and update the code to test the property limit
-      //var instance = new DocspaceApiJavascript.PageableModificationResponse();
+      //var instance = new Api.PageableModificationResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModifiedOn (base name: "last_modified_on")', function() {
       // uncomment below and update the code to test the property lastModifiedOn
-      //var instance = new DocspaceApiJavascript.PageableModificationResponse();
+      //var instance = new Api.PageableModificationResponse();
       //expect(instance).to.be();
     });
 

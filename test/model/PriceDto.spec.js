@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.PriceDto();
+    instance = new Api.PriceDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('PriceDto', function() {
     it('should create an instance of PriceDto', function() {
       // uncomment below and update the code to test PriceDto
-      //var instance = new DocspaceApiJavascript.PriceDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.PriceDto);
+      //var instance = new Api.PriceDto();
+      //expect(instance).to.be.a(Api.PriceDto);
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new DocspaceApiJavascript.PriceDto();
+      //var instance = new Api.PriceDto();
       //expect(instance).to.be();
     });
 
     it('should have the property currencySymbol (base name: "currencySymbol")', function() {
       // uncomment below and update the code to test the property currencySymbol
-      //var instance = new DocspaceApiJavascript.PriceDto();
+      //var instance = new Api.PriceDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isoCurrencySymbol (base name: "isoCurrencySymbol")', function() {
       // uncomment below and update the code to test the property isoCurrencySymbol
-      //var instance = new DocspaceApiJavascript.PriceDto();
+      //var instance = new Api.PriceDto();
       //expect(instance).to.be();
     });
 

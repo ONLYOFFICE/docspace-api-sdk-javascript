@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.EmployeeDto();
+    instance = new Api.EmployeeDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,73 +54,73 @@
   describe('EmployeeDto', function() {
     it('should create an instance of EmployeeDto', function() {
       // uncomment below and update the code to test EmployeeDto
-      //var instance = new DocspaceApiJavascript.EmployeeDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.EmployeeDto);
+      //var instance = new Api.EmployeeDto();
+      //expect(instance).to.be.a(Api.EmployeeDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.EmployeeDto();
+      //var instance = new Api.EmployeeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property displayName (base name: "displayName")', function() {
       // uncomment below and update the code to test the property displayName
-      //var instance = new DocspaceApiJavascript.EmployeeDto();
+      //var instance = new Api.EmployeeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiJavascript.EmployeeDto();
+      //var instance = new Api.EmployeeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property avatar (base name: "avatar")', function() {
       // uncomment below and update the code to test the property avatar
-      //var instance = new DocspaceApiJavascript.EmployeeDto();
+      //var instance = new Api.EmployeeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property avatarOriginal (base name: "avatarOriginal")', function() {
       // uncomment below and update the code to test the property avatarOriginal
-      //var instance = new DocspaceApiJavascript.EmployeeDto();
+      //var instance = new Api.EmployeeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property avatarMax (base name: "avatarMax")', function() {
       // uncomment below and update the code to test the property avatarMax
-      //var instance = new DocspaceApiJavascript.EmployeeDto();
+      //var instance = new Api.EmployeeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property avatarMedium (base name: "avatarMedium")', function() {
       // uncomment below and update the code to test the property avatarMedium
-      //var instance = new DocspaceApiJavascript.EmployeeDto();
+      //var instance = new Api.EmployeeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property avatarSmall (base name: "avatarSmall")', function() {
       // uncomment below and update the code to test the property avatarSmall
-      //var instance = new DocspaceApiJavascript.EmployeeDto();
+      //var instance = new Api.EmployeeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property profileUrl (base name: "profileUrl")', function() {
       // uncomment below and update the code to test the property profileUrl
-      //var instance = new DocspaceApiJavascript.EmployeeDto();
+      //var instance = new Api.EmployeeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property hasAvatar (base name: "hasAvatar")', function() {
       // uncomment below and update the code to test the property hasAvatar
-      //var instance = new DocspaceApiJavascript.EmployeeDto();
+      //var instance = new Api.EmployeeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isAnonim (base name: "isAnonim")', function() {
       // uncomment below and update the code to test the property isAnonim
-      //var instance = new DocspaceApiJavascript.EmployeeDto();
+      //var instance = new Api.EmployeeDto();
       //expect(instance).to.be();
     });
 

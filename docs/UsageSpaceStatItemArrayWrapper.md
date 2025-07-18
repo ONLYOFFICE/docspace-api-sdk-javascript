@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.UsageSpaceStatItemArrayWrapper
+# Api.UsageSpaceStatItemArrayWrapper
 
 
 ## Properties

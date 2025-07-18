@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.MemberBaseRequestDto
+# Api.MemberBaseRequestDto
 The request parameters for the user generic information.
 
 ## Properties

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.MobileRequestsDto
+# Api.MobileRequestsDto
 The parameters required for the mobile phone verification.
 
 ## Properties

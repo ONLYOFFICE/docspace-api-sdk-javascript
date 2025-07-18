@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.StartFillingForm
+# Api.StartFillingForm
 The parameters of the button that starts filling out the form.
 
 ## Properties

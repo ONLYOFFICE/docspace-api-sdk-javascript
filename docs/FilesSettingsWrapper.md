@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FilesSettingsWrapper
+# Api.FilesSettingsWrapper
 
 
 ## Properties

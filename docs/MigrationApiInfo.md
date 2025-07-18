@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.MigrationApiInfo
+# Api.MigrationApiInfo
 
 
 ## Properties

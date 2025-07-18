@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.PeopleSearchApi
+# Api.PeopleSearchApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -52,8 +52,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -75,16 +75,16 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleSearchApi();
+let apiInstance = new Api.PeopleSearchApi();
 let id = 9846; // Number | The user ID.
 let opts = {
-  'employeeStatus': new DocspaceApiJavascript.EmployeeStatus(), // EmployeeStatus | The user status.
-  'activationStatus': new DocspaceApiJavascript.EmployeeActivationStatus(), // EmployeeActivationStatus | The user activation status.
+  'employeeStatus': new Api.EmployeeStatus(), // EmployeeStatus | The user status.
+  'activationStatus': new Api.EmployeeActivationStatus(), // EmployeeActivationStatus | The user activation status.
   'excludeShared': true, // Boolean | Specifies whether to exclude the account sharing settings from the response.
   'includeShared': true, // Boolean | Specifies whether to include the account sharing settings in the response.
   'invitedByMe': true, // Boolean | Specifies whether the user is invited by the current user or not.
   'inviterId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The inviter ID.
-  'area': new DocspaceApiJavascript.Area(), // Area | The area of the account entries.
+  'area': new Api.Area(), // Area | The area of the account entries.
   'employeeTypes': [null], // [EmployeeType] | The list of the user types.
   'count': 1234, // Number | The number of items to retrieve in a request.
   'startIndex': 1234, // Number | The starting index for the query results.
@@ -134,8 +134,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -157,7 +157,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleSearchApi();
+let apiInstance = new Api.PeopleSearchApi();
 let query = "some text"; // String | The search query.
 let opts = {
   'filterBy': "some text", // String | Specifies a filter criteria for the user search query.
@@ -224,8 +224,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -247,26 +247,26 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleSearchApi();
+let apiInstance = new Api.PeopleSearchApi();
 let opts = {
-  'employeeStatus': new DocspaceApiJavascript.EmployeeStatus(), // EmployeeStatus | The user status.
+  'employeeStatus': new Api.EmployeeStatus(), // EmployeeStatus | The user status.
   'groupId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The group ID.
-  'activationStatus': new DocspaceApiJavascript.EmployeeActivationStatus(), // EmployeeActivationStatus | The user activation status.
-  'employeeType': new DocspaceApiJavascript.EmployeeType(), // EmployeeType | The user type.
+  'activationStatus': new Api.EmployeeActivationStatus(), // EmployeeActivationStatus | The user activation status.
+  'employeeType': new Api.EmployeeType(), // EmployeeType | The user type.
   'employeeTypes': [null], // [Number] | The list of user types.
   'isAdministrator': true, // Boolean | Specifies if the user is an administrator or not.
-  'payments': new DocspaceApiJavascript.Payments(), // Payments | The user payment status.
-  'accountLoginType': new DocspaceApiJavascript.AccountLoginType(), // AccountLoginType | The account login type.
-  'quotaFilter': new DocspaceApiJavascript.QuotaFilter(), // QuotaFilter | The quota filter (All - 0, Default - 1, Custom - 2).
+  'payments': new Api.Payments(), // Payments | The user payment status.
+  'accountLoginType': new Api.AccountLoginType(), // AccountLoginType | The account login type.
+  'quotaFilter': new Api.QuotaFilter(), // QuotaFilter | The quota filter (All - 0, Default - 1, Custom - 2).
   'withoutGroup': true, // Boolean | Specifies whether the user should be a member of a group or not.
   'excludeGroup': true, // Boolean | Specifies whether the user should be a member of the group with the specified ID.
   'invitedByMe': true, // Boolean | Specifies whether the user is invited by the current user or not.
   'inviterId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The inviter ID.
-  'area': new DocspaceApiJavascript.Area(), // Area | The filter area.
+  'area': new Api.Area(), // Area | The filter area.
   'count': 1234, // Number | The maximum number of items to be retrieved in the response.
   'startIndex': 1234, // Number | The zero-based index of the first item to be retrieved in a filtered result set.
   'sortBy': "some text", // String | Specifies the property or field name by which the results should be sorted.
-  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'sortOrder': new Api.SortOrder(), // SortOrder | The order in which the results are sorted.
   'filterSeparator': "some text", // String | Represents the separator used to split filter criteria in query parameters.
   'filterValue': "some text" // String | The search text used to filter results based on user input.
 };
@@ -323,8 +323,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -346,16 +346,16 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleSearchApi();
+let apiInstance = new Api.PeopleSearchApi();
 let id = 9846; // Number | The user ID.
 let opts = {
-  'employeeStatus': new DocspaceApiJavascript.EmployeeStatus(), // EmployeeStatus | The user status.
-  'activationStatus': new DocspaceApiJavascript.EmployeeActivationStatus(), // EmployeeActivationStatus | The user activation status.
+  'employeeStatus': new Api.EmployeeStatus(), // EmployeeStatus | The user status.
+  'activationStatus': new Api.EmployeeActivationStatus(), // EmployeeActivationStatus | The user activation status.
   'excludeShared': true, // Boolean | Specifies whether to exclude the user sharing settings or not.
   'includeShared': true, // Boolean | Specifies whether to include the user sharing settings or not.
   'invitedByMe': true, // Boolean | Specifies whether the user was invited by the current user or not.
   'inviterId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The inviter ID.
-  'area': new DocspaceApiJavascript.Area(), // Area | The user area.
+  'area': new Api.Area(), // Area | The user area.
   'employeeTypes': [null], // [EmployeeType] | The list of user types.
   'count': 1234, // Number | The maximum number of users to be retrieved in the request.
   'startIndex': 1234, // Number | The zero-based index of the first record to retrieve in a paged query.
@@ -423,8 +423,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -446,26 +446,26 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleSearchApi();
+let apiInstance = new Api.PeopleSearchApi();
 let opts = {
-  'employeeStatus': new DocspaceApiJavascript.EmployeeStatus(), // EmployeeStatus | The user status.
+  'employeeStatus': new Api.EmployeeStatus(), // EmployeeStatus | The user status.
   'groupId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The group ID.
-  'activationStatus': new DocspaceApiJavascript.EmployeeActivationStatus(), // EmployeeActivationStatus | The user activation status.
-  'employeeType': new DocspaceApiJavascript.EmployeeType(), // EmployeeType | The user type.
+  'activationStatus': new Api.EmployeeActivationStatus(), // EmployeeActivationStatus | The user activation status.
+  'employeeType': new Api.EmployeeType(), // EmployeeType | The user type.
   'employeeTypes': [null], // [Number] | The list of user types.
   'isAdministrator': true, // Boolean | Specifies if the user is an administrator or not.
-  'payments': new DocspaceApiJavascript.Payments(), // Payments | The user payment status.
-  'accountLoginType': new DocspaceApiJavascript.AccountLoginType(), // AccountLoginType | The account login type.
-  'quotaFilter': new DocspaceApiJavascript.QuotaFilter(), // QuotaFilter | The quota filter (All - 0, Default - 1, Custom - 2).
+  'payments': new Api.Payments(), // Payments | The user payment status.
+  'accountLoginType': new Api.AccountLoginType(), // AccountLoginType | The account login type.
+  'quotaFilter': new Api.QuotaFilter(), // QuotaFilter | The quota filter (All - 0, Default - 1, Custom - 2).
   'withoutGroup': true, // Boolean | Specifies whether the user should be a member of a group or not.
   'excludeGroup': true, // Boolean | Specifies whether the user should be a member of the group with the specified ID.
   'invitedByMe': true, // Boolean | Specifies whether the user is invited by the current user or not.
   'inviterId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The inviter ID.
-  'area': new DocspaceApiJavascript.Area(), // Area | The filter area.
+  'area': new Api.Area(), // Area | The filter area.
   'count': 1234, // Number | The maximum number of items to be retrieved in the response.
   'startIndex': 1234, // Number | The zero-based index of the first item to be retrieved in a filtered result set.
   'sortBy': "some text", // String | Specifies the property or field name by which the results should be sorted.
-  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'sortOrder': new Api.SortOrder(), // SortOrder | The order in which the results are sorted.
   'filterSeparator': "some text", // String | Represents the separator used to split filter criteria in query parameters.
   'filterValue': "some text" // String | The search text used to filter results based on user input.
 };
@@ -510,8 +510,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -533,7 +533,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleSearchApi();
+let apiInstance = new Api.PeopleSearchApi();
 let opts = {
   'query': "some text" // String | The search query.
 };
@@ -581,8 +581,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -604,8 +604,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleSearchApi();
-let status = new DocspaceApiJavascript.EmployeeStatus(); // EmployeeStatus | The user status.
+let apiInstance = new Api.PeopleSearchApi();
+let status = new Api.EmployeeStatus(); // EmployeeStatus | The user status.
 let opts = {
   'query': "some text", // String | The advanced search query.
   'filterBy': "some text", // String | Specifies the criteria used to filter search results in advanced queries.

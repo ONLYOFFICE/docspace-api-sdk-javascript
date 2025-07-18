@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.BackupDto
+# Api.BackupDto
 The backup parameters.
 
 ## Properties

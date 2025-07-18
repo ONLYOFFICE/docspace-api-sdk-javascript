@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TenantQuotaSettingsRequestsDto
+# Api.TenantQuotaSettingsRequestsDto
 The request parameters for managing the tenant storage quota settings in a multi-tenant system.
 
 ## Properties

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FirebaseRequestsDto
+# Api.FirebaseRequestsDto
 The Firebase-related request parameters.
 
 ## Properties

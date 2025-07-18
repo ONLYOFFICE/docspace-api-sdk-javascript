@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.PeopleThirdPartyAccountsApi
+# Api.PeopleThirdPartyAccountsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -40,9 +40,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.PeopleThirdPartyAccountsApi();
+let apiInstance = new Api.PeopleThirdPartyAccountsApi();
 let opts = {
   'inviteView': true, // Boolean | Specifies whether to return providers that are available for invitation links, i.e. the user can login or register through these providers.
   'settingsView': true, // Boolean | Specifies whether to display the provider settings in a pop-up window (true) or redirect them to the desktop application (false).
@@ -90,8 +90,8 @@ null (empty response body)
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -113,9 +113,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleThirdPartyAccountsApi();
+let apiInstance = new Api.PeopleThirdPartyAccountsApi();
 let opts = {
-  'linkAccountRequestDto': new DocspaceApiJavascript.LinkAccountRequestDto() // LinkAccountRequestDto | 
+  'linkAccountRequestDto': new Api.LinkAccountRequestDto() // LinkAccountRequestDto | 
 };
 apiInstance.linkThirdPartyAccount(opts, (error, data, response) => {
   if (error) {
@@ -158,11 +158,11 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.PeopleThirdPartyAccountsApi();
+let apiInstance = new Api.PeopleThirdPartyAccountsApi();
 let opts = {
-  'signupAccountRequestDto': new DocspaceApiJavascript.SignupAccountRequestDto() // SignupAccountRequestDto | 
+  'signupAccountRequestDto': new Api.SignupAccountRequestDto() // SignupAccountRequestDto | 
 };
 apiInstance.signupThirdPartyAccount(opts, (error, data, response) => {
   if (error) {
@@ -205,8 +205,8 @@ null (empty response body)
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -228,7 +228,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleThirdPartyAccountsApi();
+let apiInstance = new Api.PeopleThirdPartyAccountsApi();
 let opts = {
   'provider': "some text" // String | The provider name.
 };

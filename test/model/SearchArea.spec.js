@@ -24,9 +24,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
@@ -53,8 +53,8 @@
   describe('SearchArea', function() {
     it('should create an instance of SearchArea', function() {
       // uncomment below and update the code to test SearchArea
-      //var instance = new DocspaceApiJavascript.SearchArea();
-      //expect(instance).to.be.a(DocspaceApiJavascript.SearchArea);
+      //var instance = new Api.SearchArea();
+      //expect(instance).to.be.a(Api.SearchArea);
     });
 
   });

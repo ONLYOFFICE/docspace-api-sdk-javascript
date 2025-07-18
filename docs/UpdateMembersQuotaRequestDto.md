@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.UpdateMembersQuotaRequestDto
+# Api.UpdateMembersQuotaRequestDto
 The request parameters for updating a user quota.
 
 ## Properties

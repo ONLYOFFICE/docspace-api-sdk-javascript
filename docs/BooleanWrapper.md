@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.BooleanWrapper
+# Api.BooleanWrapper
 
 
 ## Properties

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CapabilitiesDto
+# Api.CapabilitiesDto
 The capabilities parameters.
 
 ## Properties

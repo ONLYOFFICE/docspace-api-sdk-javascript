@@ -24,9 +24,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
@@ -53,8 +53,8 @@
   describe('BackupPeriod', function() {
     it('should create an instance of BackupPeriod', function() {
       // uncomment below and update the code to test BackupPeriod
-      //var instance = new DocspaceApiJavascript.BackupPeriod();
-      //expect(instance).to.be.a(DocspaceApiJavascript.BackupPeriod);
+      //var instance = new Api.BackupPeriod();
+      //expect(instance).to.be.a(Api.BackupPeriod);
     });
 
   });

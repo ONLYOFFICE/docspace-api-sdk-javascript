@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.OwnerChangeInstructionsWrapper
+# Api.OwnerChangeInstructionsWrapper
 
 
 ## Properties

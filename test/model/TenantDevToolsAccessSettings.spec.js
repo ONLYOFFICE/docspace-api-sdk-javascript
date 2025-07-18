@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.TenantDevToolsAccessSettings();
+    instance = new Api.TenantDevToolsAccessSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('TenantDevToolsAccessSettings', function() {
     it('should create an instance of TenantDevToolsAccessSettings', function() {
       // uncomment below and update the code to test TenantDevToolsAccessSettings
-      //var instance = new DocspaceApiJavascript.TenantDevToolsAccessSettings();
-      //expect(instance).to.be.a(DocspaceApiJavascript.TenantDevToolsAccessSettings);
+      //var instance = new Api.TenantDevToolsAccessSettings();
+      //expect(instance).to.be.a(Api.TenantDevToolsAccessSettings);
     });
 
     it('should have the property limitedAccessForUsers (base name: "limitedAccessForUsers")', function() {
       // uncomment below and update the code to test the property limitedAccessForUsers
-      //var instance = new DocspaceApiJavascript.TenantDevToolsAccessSettings();
+      //var instance = new Api.TenantDevToolsAccessSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModified (base name: "lastModified")', function() {
       // uncomment below and update the code to test the property lastModified
-      //var instance = new DocspaceApiJavascript.TenantDevToolsAccessSettings();
+      //var instance = new Api.TenantDevToolsAccessSettings();
       //expect(instance).to.be();
     });
 

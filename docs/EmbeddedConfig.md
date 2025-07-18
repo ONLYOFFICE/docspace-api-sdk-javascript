@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.EmbeddedConfig
+# Api.EmbeddedConfig
 The configuration parameters for the embedded document type.
 
 ## Properties

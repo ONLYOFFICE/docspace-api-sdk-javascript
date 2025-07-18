@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ManageFormFillingDtoInteger();
+    instance = new Api.ManageFormFillingDtoInteger();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('ManageFormFillingDtoInteger', function() {
     it('should create an instance of ManageFormFillingDtoInteger', function() {
       // uncomment below and update the code to test ManageFormFillingDtoInteger
-      //var instance = new DocspaceApiJavascript.ManageFormFillingDtoInteger();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ManageFormFillingDtoInteger);
+      //var instance = new Api.ManageFormFillingDtoInteger();
+      //expect(instance).to.be.a(Api.ManageFormFillingDtoInteger);
     });
 
     it('should have the property formId (base name: "formId")', function() {
       // uncomment below and update the code to test the property formId
-      //var instance = new DocspaceApiJavascript.ManageFormFillingDtoInteger();
+      //var instance = new Api.ManageFormFillingDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property action (base name: "action")', function() {
       // uncomment below and update the code to test the property action
-      //var instance = new DocspaceApiJavascript.ManageFormFillingDtoInteger();
+      //var instance = new Api.ManageFormFillingDtoInteger();
       //expect(instance).to.be();
     });
 

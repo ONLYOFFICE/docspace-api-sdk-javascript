@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.BalanceWrapper
+# Api.BalanceWrapper
 
 
 ## Properties

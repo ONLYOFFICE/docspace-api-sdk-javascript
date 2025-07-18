@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ExternalShareRequestParam
+# Api.ExternalShareRequestParam
 The external data parameters.
 
 ## Properties

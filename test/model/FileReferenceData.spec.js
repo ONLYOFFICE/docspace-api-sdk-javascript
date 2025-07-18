@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.FileReferenceData();
+    instance = new Api.FileReferenceData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,31 +54,31 @@
   describe('FileReferenceData', function() {
     it('should create an instance of FileReferenceData', function() {
       // uncomment below and update the code to test FileReferenceData
-      //var instance = new DocspaceApiJavascript.FileReferenceData();
-      //expect(instance).to.be.a(DocspaceApiJavascript.FileReferenceData);
+      //var instance = new Api.FileReferenceData();
+      //expect(instance).to.be.a(Api.FileReferenceData);
     });
 
     it('should have the property fileKey (base name: "fileKey")', function() {
       // uncomment below and update the code to test the property fileKey
-      //var instance = new DocspaceApiJavascript.FileReferenceData();
+      //var instance = new Api.FileReferenceData();
       //expect(instance).to.be();
     });
 
     it('should have the property instanceId (base name: "instanceId")', function() {
       // uncomment below and update the code to test the property instanceId
-      //var instance = new DocspaceApiJavascript.FileReferenceData();
+      //var instance = new Api.FileReferenceData();
       //expect(instance).to.be();
     });
 
     it('should have the property roomId (base name: "roomId")', function() {
       // uncomment below and update the code to test the property roomId
-      //var instance = new DocspaceApiJavascript.FileReferenceData();
+      //var instance = new Api.FileReferenceData();
       //expect(instance).to.be();
     });
 
     it('should have the property canEditRoom (base name: "canEditRoom")', function() {
       // uncomment below and update the code to test the property canEditRoom
-      //var instance = new DocspaceApiJavascript.FileReferenceData();
+      //var instance = new Api.FileReferenceData();
       //expect(instance).to.be();
     });
 

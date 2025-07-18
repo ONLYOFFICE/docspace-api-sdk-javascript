@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FilesStatisticsResultDto
+# Api.FilesStatisticsResultDto
 The file statistics result parameters.
 
 ## Properties

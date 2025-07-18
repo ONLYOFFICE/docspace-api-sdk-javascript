@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.OrderRequestDto();
+    instance = new Api.OrderRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('OrderRequestDto', function() {
     it('should create an instance of OrderRequestDto', function() {
       // uncomment below and update the code to test OrderRequestDto
-      //var instance = new DocspaceApiJavascript.OrderRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.OrderRequestDto);
+      //var instance = new Api.OrderRequestDto();
+      //expect(instance).to.be.a(Api.OrderRequestDto);
     });
 
     it('should have the property order (base name: "order")', function() {
       // uncomment below and update the code to test the property order
-      //var instance = new DocspaceApiJavascript.OrderRequestDto();
+      //var instance = new Api.OrderRequestDto();
       //expect(instance).to.be();
     });
 

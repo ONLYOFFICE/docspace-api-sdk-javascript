@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SsoSettingsV2Wrapper
+# Api.SsoSettingsV2Wrapper
 
 
 ## Properties

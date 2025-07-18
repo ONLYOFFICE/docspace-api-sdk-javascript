@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.QuantityRequestDto
+# Api.QuantityRequestDto
 The request parameters for the payment quantity specifications.
 
 ## Properties

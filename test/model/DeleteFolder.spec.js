@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.DeleteFolder();
+    instance = new Api.DeleteFolder();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('DeleteFolder', function() {
     it('should create an instance of DeleteFolder', function() {
       // uncomment below and update the code to test DeleteFolder
-      //var instance = new DocspaceApiJavascript.DeleteFolder();
-      //expect(instance).to.be.a(DocspaceApiJavascript.DeleteFolder);
+      //var instance = new Api.DeleteFolder();
+      //expect(instance).to.be.a(Api.DeleteFolder);
     });
 
     it('should have the property deleteAfter (base name: "deleteAfter")', function() {
       // uncomment below and update the code to test the property deleteAfter
-      //var instance = new DocspaceApiJavascript.DeleteFolder();
+      //var instance = new Api.DeleteFolder();
       //expect(instance).to.be();
     });
 
     it('should have the property immediately (base name: "immediately")', function() {
       // uncomment below and update the code to test the property immediately
-      //var instance = new DocspaceApiJavascript.DeleteFolder();
+      //var instance = new Api.DeleteFolder();
       //expect(instance).to.be();
     });
 

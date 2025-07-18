@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FileOperationArrayWrapper
+# Api.FileOperationArrayWrapper
 
 
 ## Properties

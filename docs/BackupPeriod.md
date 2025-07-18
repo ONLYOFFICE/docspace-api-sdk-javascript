@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.BackupPeriod
+# Api.BackupPeriod
 [0 - Every day, 1 - Every week, 2 - Every month]
 
 ## Enum

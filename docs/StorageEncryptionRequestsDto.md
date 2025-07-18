@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.StorageEncryptionRequestsDto
+# Api.StorageEncryptionRequestsDto
 The request parameters for managing storage encryption operations and notifications.
 
 ## Properties

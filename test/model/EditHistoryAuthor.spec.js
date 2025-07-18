@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.EditHistoryAuthor();
+    instance = new Api.EditHistoryAuthor();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('EditHistoryAuthor', function() {
     it('should create an instance of EditHistoryAuthor', function() {
       // uncomment below and update the code to test EditHistoryAuthor
-      //var instance = new DocspaceApiJavascript.EditHistoryAuthor();
-      //expect(instance).to.be.a(DocspaceApiJavascript.EditHistoryAuthor);
+      //var instance = new Api.EditHistoryAuthor();
+      //expect(instance).to.be.a(Api.EditHistoryAuthor);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.EditHistoryAuthor();
+      //var instance = new Api.EditHistoryAuthor();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiJavascript.EditHistoryAuthor();
+      //var instance = new Api.EditHistoryAuthor();
       //expect(instance).to.be();
     });
 

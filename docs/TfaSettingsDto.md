@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TfaSettingsDto
+# Api.TfaSettingsDto
 The parameters representing the Two-Factor Authentication (TFA) configuration settings.
 
 ## Properties

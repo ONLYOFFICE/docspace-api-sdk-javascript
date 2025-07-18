@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CustomColorThemesSettingsDto();
+    instance = new Api.CustomColorThemesSettingsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('CustomColorThemesSettingsDto', function() {
     it('should create an instance of CustomColorThemesSettingsDto', function() {
       // uncomment below and update the code to test CustomColorThemesSettingsDto
-      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CustomColorThemesSettingsDto);
+      //var instance = new Api.CustomColorThemesSettingsDto();
+      //expect(instance).to.be.a(Api.CustomColorThemesSettingsDto);
     });
 
     it('should have the property themes (base name: "themes")', function() {
       // uncomment below and update the code to test the property themes
-      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsDto();
+      //var instance = new Api.CustomColorThemesSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property selected (base name: "selected")', function() {
       // uncomment below and update the code to test the property selected
-      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsDto();
+      //var instance = new Api.CustomColorThemesSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property limit (base name: "limit")', function() {
       // uncomment below and update the code to test the property limit
-      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsDto();
+      //var instance = new Api.CustomColorThemesSettingsDto();
       //expect(instance).to.be();
     });
 

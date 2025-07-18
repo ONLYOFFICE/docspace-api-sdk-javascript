@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.StorageSettings();
+    instance = new Api.StorageSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('StorageSettings', function() {
     it('should create an instance of StorageSettings', function() {
       // uncomment below and update the code to test StorageSettings
-      //var instance = new DocspaceApiJavascript.StorageSettings();
-      //expect(instance).to.be.a(DocspaceApiJavascript.StorageSettings);
+      //var instance = new Api.StorageSettings();
+      //expect(instance).to.be.a(Api.StorageSettings);
     });
 
     it('should have the property module (base name: "module")', function() {
       // uncomment below and update the code to test the property module
-      //var instance = new DocspaceApiJavascript.StorageSettings();
+      //var instance = new Api.StorageSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property props (base name: "props")', function() {
       // uncomment below and update the code to test the property props
-      //var instance = new DocspaceApiJavascript.StorageSettings();
+      //var instance = new Api.StorageSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModified (base name: "lastModified")', function() {
       // uncomment below and update the code to test the property lastModified
-      //var instance = new DocspaceApiJavascript.StorageSettings();
+      //var instance = new Api.StorageSettings();
       //expect(instance).to.be();
     });
 

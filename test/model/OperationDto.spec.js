@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.OperationDto();
+    instance = new Api.OperationDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,55 +54,55 @@
   describe('OperationDto', function() {
     it('should create an instance of OperationDto', function() {
       // uncomment below and update the code to test OperationDto
-      //var instance = new DocspaceApiJavascript.OperationDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.OperationDto);
+      //var instance = new Api.OperationDto();
+      //expect(instance).to.be.a(Api.OperationDto);
     });
 
     it('should have the property date (base name: "date")', function() {
       // uncomment below and update the code to test the property date
-      //var instance = new DocspaceApiJavascript.OperationDto();
+      //var instance = new Api.OperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property service (base name: "service")', function() {
       // uncomment below and update the code to test the property service
-      //var instance = new DocspaceApiJavascript.OperationDto();
+      //var instance = new Api.OperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new DocspaceApiJavascript.OperationDto();
+      //var instance = new Api.OperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property serviceUnit (base name: "serviceUnit")', function() {
       // uncomment below and update the code to test the property serviceUnit
-      //var instance = new DocspaceApiJavascript.OperationDto();
+      //var instance = new Api.OperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new DocspaceApiJavascript.OperationDto();
+      //var instance = new Api.OperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property currency (base name: "currency")', function() {
       // uncomment below and update the code to test the property currency
-      //var instance = new DocspaceApiJavascript.OperationDto();
+      //var instance = new Api.OperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property credit (base name: "credit")', function() {
       // uncomment below and update the code to test the property credit
-      //var instance = new DocspaceApiJavascript.OperationDto();
+      //var instance = new Api.OperationDto();
       //expect(instance).to.be();
     });
 
     it('should have the property withdrawal (base name: "withdrawal")', function() {
       // uncomment below and update the code to test the property withdrawal
-      //var instance = new DocspaceApiJavascript.OperationDto();
+      //var instance = new Api.OperationDto();
       //expect(instance).to.be();
     });
 

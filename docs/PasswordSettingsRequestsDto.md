@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.PasswordSettingsRequestsDto
+# Api.PasswordSettingsRequestsDto
 The request parameters for configuring the password complexity requirements.
 
 ## Properties

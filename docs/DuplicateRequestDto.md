@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.DuplicateRequestDto
+# Api.DuplicateRequestDto
 The duplicate request parameters.
 
 ## Properties

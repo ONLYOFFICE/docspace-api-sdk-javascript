@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.RoomLinkRequest
+# Api.RoomLinkRequest
 The room link parameters.
 
 ## Properties

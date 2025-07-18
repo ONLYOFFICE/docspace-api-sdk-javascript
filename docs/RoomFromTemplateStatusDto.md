@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.RoomFromTemplateStatusDto
+# Api.RoomFromTemplateStatusDto
 The progress parameters of creating a room from the template.
 
 ## Properties

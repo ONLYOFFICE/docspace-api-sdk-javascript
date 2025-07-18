@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.UserConfig();
+    instance = new Api.UserConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,31 +54,31 @@
   describe('UserConfig', function() {
     it('should create an instance of UserConfig', function() {
       // uncomment below and update the code to test UserConfig
-      //var instance = new DocspaceApiJavascript.UserConfig();
-      //expect(instance).to.be.a(DocspaceApiJavascript.UserConfig);
+      //var instance = new Api.UserConfig();
+      //expect(instance).to.be.a(Api.UserConfig);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.UserConfig();
+      //var instance = new Api.UserConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiJavascript.UserConfig();
+      //var instance = new Api.UserConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property image (base name: "image")', function() {
       // uncomment below and update the code to test the property image
-      //var instance = new DocspaceApiJavascript.UserConfig();
+      //var instance = new Api.UserConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property roles (base name: "roles")', function() {
       // uncomment below and update the code to test the property roles
-      //var instance = new DocspaceApiJavascript.UserConfig();
+      //var instance = new Api.UserConfig();
       //expect(instance).to.be();
     });
 

@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.TenantAuditSettings();
+    instance = new Api.TenantAuditSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('TenantAuditSettings', function() {
     it('should create an instance of TenantAuditSettings', function() {
       // uncomment below and update the code to test TenantAuditSettings
-      //var instance = new DocspaceApiJavascript.TenantAuditSettings();
-      //expect(instance).to.be.a(DocspaceApiJavascript.TenantAuditSettings);
+      //var instance = new Api.TenantAuditSettings();
+      //expect(instance).to.be.a(Api.TenantAuditSettings);
     });
 
     it('should have the property loginHistoryLifeTime (base name: "loginHistoryLifeTime")', function() {
       // uncomment below and update the code to test the property loginHistoryLifeTime
-      //var instance = new DocspaceApiJavascript.TenantAuditSettings();
+      //var instance = new Api.TenantAuditSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property auditTrailLifeTime (base name: "auditTrailLifeTime")', function() {
       // uncomment below and update the code to test the property auditTrailLifeTime
-      //var instance = new DocspaceApiJavascript.TenantAuditSettings();
+      //var instance = new Api.TenantAuditSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModified (base name: "lastModified")', function() {
       // uncomment below and update the code to test the property lastModified
-      //var instance = new DocspaceApiJavascript.TenantAuditSettings();
+      //var instance = new Api.TenantAuditSettings();
       //expect(instance).to.be();
     });
 

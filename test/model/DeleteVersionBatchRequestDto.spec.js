@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.DeleteVersionBatchRequestDto();
+    instance = new Api.DeleteVersionBatchRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,31 +54,31 @@
   describe('DeleteVersionBatchRequestDto', function() {
     it('should create an instance of DeleteVersionBatchRequestDto', function() {
       // uncomment below and update the code to test DeleteVersionBatchRequestDto
-      //var instance = new DocspaceApiJavascript.DeleteVersionBatchRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.DeleteVersionBatchRequestDto);
+      //var instance = new Api.DeleteVersionBatchRequestDto();
+      //expect(instance).to.be.a(Api.DeleteVersionBatchRequestDto);
     });
 
     it('should have the property returnSingleOperation (base name: "returnSingleOperation")', function() {
       // uncomment below and update the code to test the property returnSingleOperation
-      //var instance = new DocspaceApiJavascript.DeleteVersionBatchRequestDto();
+      //var instance = new Api.DeleteVersionBatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property deleteAfter (base name: "deleteAfter")', function() {
       // uncomment below and update the code to test the property deleteAfter
-      //var instance = new DocspaceApiJavascript.DeleteVersionBatchRequestDto();
+      //var instance = new Api.DeleteVersionBatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property fileId (base name: "fileId")', function() {
       // uncomment below and update the code to test the property fileId
-      //var instance = new DocspaceApiJavascript.DeleteVersionBatchRequestDto();
+      //var instance = new Api.DeleteVersionBatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property versions (base name: "versions")', function() {
       // uncomment below and update the code to test the property versions
-      //var instance = new DocspaceApiJavascript.DeleteVersionBatchRequestDto();
+      //var instance = new Api.DeleteVersionBatchRequestDto();
       //expect(instance).to.be();
     });
 

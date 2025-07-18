@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.AnonymousConfigDto
+# Api.AnonymousConfigDto
 The anonymous config parameters.
 
 ## Properties

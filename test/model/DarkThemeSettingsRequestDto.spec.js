@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.DarkThemeSettingsRequestDto();
+    instance = new Api.DarkThemeSettingsRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('DarkThemeSettingsRequestDto', function() {
     it('should create an instance of DarkThemeSettingsRequestDto', function() {
       // uncomment below and update the code to test DarkThemeSettingsRequestDto
-      //var instance = new DocspaceApiJavascript.DarkThemeSettingsRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.DarkThemeSettingsRequestDto);
+      //var instance = new Api.DarkThemeSettingsRequestDto();
+      //expect(instance).to.be.a(Api.DarkThemeSettingsRequestDto);
     });
 
     it('should have the property theme (base name: "theme")', function() {
       // uncomment below and update the code to test the property theme
-      //var instance = new DocspaceApiJavascript.DarkThemeSettingsRequestDto();
+      //var instance = new Api.DarkThemeSettingsRequestDto();
       //expect(instance).to.be();
     });
 

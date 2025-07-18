@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.RoomTemplateStatusDto
+# Api.RoomTemplateStatusDto
 The room template status.
 
 ## Properties

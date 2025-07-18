@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FilesStatisticsFolder
+# Api.FilesStatisticsFolder
 The file statictics folder parameters.
 
 ## Properties

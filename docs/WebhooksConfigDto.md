@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.WebhooksConfigDto
+# Api.WebhooksConfigDto
 The webhook configuration parameters.
 
 ## Properties

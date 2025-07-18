@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.OrderBy
+# Api.OrderBy
 The sorting parameters.
 
 ## Properties

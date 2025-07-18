@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TfaSettingsArrayWrapper
+# Api.TfaSettingsArrayWrapper
 
 
 ## Properties

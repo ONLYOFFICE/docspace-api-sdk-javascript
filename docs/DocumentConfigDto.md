@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.DocumentConfigDto
+# Api.DocumentConfigDto
 The document config parameters.
 
 ## Properties

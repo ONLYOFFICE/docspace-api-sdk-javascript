@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CustomNavigationItemWrapper
+# Api.CustomNavigationItemWrapper
 
 
 ## Properties

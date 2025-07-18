@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.OrdersItemRequestDtoInteger();
+    instance = new Api.OrdersItemRequestDtoInteger();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('OrdersItemRequestDtoInteger', function() {
     it('should create an instance of OrdersItemRequestDtoInteger', function() {
       // uncomment below and update the code to test OrdersItemRequestDtoInteger
-      //var instance = new DocspaceApiJavascript.OrdersItemRequestDtoInteger();
-      //expect(instance).to.be.a(DocspaceApiJavascript.OrdersItemRequestDtoInteger);
+      //var instance = new Api.OrdersItemRequestDtoInteger();
+      //expect(instance).to.be.a(Api.OrdersItemRequestDtoInteger);
     });
 
     it('should have the property entryId (base name: "entryId")', function() {
       // uncomment below and update the code to test the property entryId
-      //var instance = new DocspaceApiJavascript.OrdersItemRequestDtoInteger();
+      //var instance = new Api.OrdersItemRequestDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property entryType (base name: "entryType")', function() {
       // uncomment below and update the code to test the property entryType
-      //var instance = new DocspaceApiJavascript.OrdersItemRequestDtoInteger();
+      //var instance = new Api.OrdersItemRequestDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property order (base name: "order")', function() {
       // uncomment below and update the code to test the property order
-      //var instance = new DocspaceApiJavascript.OrdersItemRequestDtoInteger();
+      //var instance = new Api.OrdersItemRequestDtoInteger();
       //expect(instance).to.be();
     });
 

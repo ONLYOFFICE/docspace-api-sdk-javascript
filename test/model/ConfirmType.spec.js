@@ -24,9 +24,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
@@ -53,8 +53,8 @@
   describe('ConfirmType', function() {
     it('should create an instance of ConfirmType', function() {
       // uncomment below and update the code to test ConfirmType
-      //var instance = new DocspaceApiJavascript.ConfirmType();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ConfirmType);
+      //var instance = new Api.ConfirmType();
+      //expect(instance).to.be.a(Api.ConfirmType);
     });
 
   });

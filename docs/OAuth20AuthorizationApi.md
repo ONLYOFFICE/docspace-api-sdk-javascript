@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.OAuth20AuthorizationApi
+# Api.OAuth20AuthorizationApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -39,15 +39,15 @@ null (empty response body)
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new DocspaceApiJavascript.OAuth20AuthorizationApi();
+let apiInstance = new Api.OAuth20AuthorizationApi();
 let responseType = "code"; // String | The OAuth 2.0 response type, must be 'code' for authorization code flow.
 let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier issued to the client during registration.
 let redirectUri = "https://example.com"; // String | The URL to redirect to after authorization is complete.
@@ -97,9 +97,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.OAuth20AuthorizationApi();
+let apiInstance = new Api.OAuth20AuthorizationApi();
 let opts = {
   'grantType': "grantType_example", // String | The OAuth2 grant type, must be 'authorization_code' for the authorization code flow.
   'code': "code_example", // String | A temporary authorization code that is sent to the client to be exchanged for a token.
@@ -150,15 +150,15 @@ null (empty response body)
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new DocspaceApiJavascript.OAuth20AuthorizationApi();
+let apiInstance = new Api.OAuth20AuthorizationApi();
 let opts = {
   'clientId': "clientId_example", // String | The client identifier issued to the client during registration.
   'state': "state_example", // String | The random string used to solve the CSRF vulnerability problem.

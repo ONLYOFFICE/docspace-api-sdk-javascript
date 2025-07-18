@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.MigratingApiFiles
+# Api.MigratingApiFiles
 
 
 ## Properties

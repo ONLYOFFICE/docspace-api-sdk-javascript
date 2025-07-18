@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.AdminMessageSettingsRequestsDto();
+    instance = new Api.AdminMessageSettingsRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('AdminMessageSettingsRequestsDto', function() {
     it('should create an instance of AdminMessageSettingsRequestsDto', function() {
       // uncomment below and update the code to test AdminMessageSettingsRequestsDto
-      //var instance = new DocspaceApiJavascript.AdminMessageSettingsRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.AdminMessageSettingsRequestsDto);
+      //var instance = new Api.AdminMessageSettingsRequestsDto();
+      //expect(instance).to.be.a(Api.AdminMessageSettingsRequestsDto);
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new DocspaceApiJavascript.AdminMessageSettingsRequestsDto();
+      //var instance = new Api.AdminMessageSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiJavascript.AdminMessageSettingsRequestsDto();
+      //var instance = new Api.AdminMessageSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property culture (base name: "culture")', function() {
       // uncomment below and update the code to test the property culture
-      //var instance = new DocspaceApiJavascript.AdminMessageSettingsRequestsDto();
+      //var instance = new Api.AdminMessageSettingsRequestsDto();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CreateRoomRequestDto
+# Api.CreateRoomRequestDto
 The request parameters for creating a room.
 
 ## Properties

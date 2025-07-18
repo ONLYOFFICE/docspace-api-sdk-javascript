@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.LoginSettingsRequestDto
+# Api.LoginSettingsRequestDto
 The request parameters for configuring login security and performance settings.
 
 ## Properties

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.OrderRequestDto
+# Api.OrderRequestDto
 The parameters for ordering requests.
 
 ## Properties

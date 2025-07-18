@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.SsoCertificate();
+    instance = new Api.SsoCertificate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,49 +54,49 @@
   describe('SsoCertificate', function() {
     it('should create an instance of SsoCertificate', function() {
       // uncomment below and update the code to test SsoCertificate
-      //var instance = new DocspaceApiJavascript.SsoCertificate();
-      //expect(instance).to.be.a(DocspaceApiJavascript.SsoCertificate);
+      //var instance = new Api.SsoCertificate();
+      //expect(instance).to.be.a(Api.SsoCertificate);
     });
 
     it('should have the property selfSigned (base name: "selfSigned")', function() {
       // uncomment below and update the code to test the property selfSigned
-      //var instance = new DocspaceApiJavascript.SsoCertificate();
+      //var instance = new Api.SsoCertificate();
       //expect(instance).to.be();
     });
 
     it('should have the property crt (base name: "crt")', function() {
       // uncomment below and update the code to test the property crt
-      //var instance = new DocspaceApiJavascript.SsoCertificate();
+      //var instance = new Api.SsoCertificate();
       //expect(instance).to.be();
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiJavascript.SsoCertificate();
+      //var instance = new Api.SsoCertificate();
       //expect(instance).to.be();
     });
 
     it('should have the property action (base name: "action")', function() {
       // uncomment below and update the code to test the property action
-      //var instance = new DocspaceApiJavascript.SsoCertificate();
+      //var instance = new Api.SsoCertificate();
       //expect(instance).to.be();
     });
 
     it('should have the property domainName (base name: "domainName")', function() {
       // uncomment below and update the code to test the property domainName
-      //var instance = new DocspaceApiJavascript.SsoCertificate();
+      //var instance = new Api.SsoCertificate();
       //expect(instance).to.be();
     });
 
     it('should have the property startDate (base name: "startDate")', function() {
       // uncomment below and update the code to test the property startDate
-      //var instance = new DocspaceApiJavascript.SsoCertificate();
+      //var instance = new Api.SsoCertificate();
       //expect(instance).to.be();
     });
 
     it('should have the property expiredDate (base name: "expiredDate")', function() {
       // uncomment below and update the code to test the property expiredDate
-      //var instance = new DocspaceApiJavascript.SsoCertificate();
+      //var instance = new Api.SsoCertificate();
       //expect(instance).to.be();
     });
 

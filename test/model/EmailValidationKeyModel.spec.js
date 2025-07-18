@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.EmailValidationKeyModel();
+    instance = new Api.EmailValidationKeyModel();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,49 +54,49 @@
   describe('EmailValidationKeyModel', function() {
     it('should create an instance of EmailValidationKeyModel', function() {
       // uncomment below and update the code to test EmailValidationKeyModel
-      //var instance = new DocspaceApiJavascript.EmailValidationKeyModel();
-      //expect(instance).to.be.a(DocspaceApiJavascript.EmailValidationKeyModel);
+      //var instance = new Api.EmailValidationKeyModel();
+      //expect(instance).to.be.a(Api.EmailValidationKeyModel);
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiJavascript.EmailValidationKeyModel();
+      //var instance = new Api.EmailValidationKeyModel();
       //expect(instance).to.be();
     });
 
     it('should have the property emplType (base name: "emplType")', function() {
       // uncomment below and update the code to test the property emplType
-      //var instance = new DocspaceApiJavascript.EmailValidationKeyModel();
+      //var instance = new Api.EmailValidationKeyModel();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiJavascript.EmailValidationKeyModel();
+      //var instance = new Api.EmailValidationKeyModel();
       //expect(instance).to.be();
     });
 
     it('should have the property uiD (base name: "uiD")', function() {
       // uncomment below and update the code to test the property uiD
-      //var instance = new DocspaceApiJavascript.EmailValidationKeyModel();
+      //var instance = new Api.EmailValidationKeyModel();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new DocspaceApiJavascript.EmailValidationKeyModel();
+      //var instance = new Api.EmailValidationKeyModel();
       //expect(instance).to.be();
     });
 
     it('should have the property first (base name: "first")', function() {
       // uncomment below and update the code to test the property first
-      //var instance = new DocspaceApiJavascript.EmailValidationKeyModel();
+      //var instance = new Api.EmailValidationKeyModel();
       //expect(instance).to.be();
     });
 
     it('should have the property roomId (base name: "roomId")', function() {
       // uncomment below and update the code to test the property roomId
-      //var instance = new DocspaceApiJavascript.EmailValidationKeyModel();
+      //var instance = new Api.EmailValidationKeyModel();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.AdminMessageSettingsRequestsDto
+# Api.AdminMessageSettingsRequestsDto
 The request parameters for configuring the administrator message content.
 
 ## Properties

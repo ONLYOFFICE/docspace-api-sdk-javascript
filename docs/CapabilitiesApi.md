@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CapabilitiesApi
+# Api.CapabilitiesApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -31,9 +31,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.CapabilitiesApi();
+let apiInstance = new Api.CapabilitiesApi();
 apiInstance.getPortalCapabilities((error, data, response) => {
   if (error) {
     console.error(error);

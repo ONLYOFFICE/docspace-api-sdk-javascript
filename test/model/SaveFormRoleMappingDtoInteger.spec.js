@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.SaveFormRoleMappingDtoInteger();
+    instance = new Api.SaveFormRoleMappingDtoInteger();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('SaveFormRoleMappingDtoInteger', function() {
     it('should create an instance of SaveFormRoleMappingDtoInteger', function() {
       // uncomment below and update the code to test SaveFormRoleMappingDtoInteger
-      //var instance = new DocspaceApiJavascript.SaveFormRoleMappingDtoInteger();
-      //expect(instance).to.be.a(DocspaceApiJavascript.SaveFormRoleMappingDtoInteger);
+      //var instance = new Api.SaveFormRoleMappingDtoInteger();
+      //expect(instance).to.be.a(Api.SaveFormRoleMappingDtoInteger);
     });
 
     it('should have the property formId (base name: "formId")', function() {
       // uncomment below and update the code to test the property formId
-      //var instance = new DocspaceApiJavascript.SaveFormRoleMappingDtoInteger();
+      //var instance = new Api.SaveFormRoleMappingDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property roles (base name: "roles")', function() {
       // uncomment below and update the code to test the property roles
-      //var instance = new DocspaceApiJavascript.SaveFormRoleMappingDtoInteger();
+      //var instance = new Api.SaveFormRoleMappingDtoInteger();
       //expect(instance).to.be();
     });
 

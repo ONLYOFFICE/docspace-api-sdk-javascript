@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CreateFileJsonElementTemplateId();
+    instance = new Api.CreateFileJsonElementTemplateId();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,8 +54,8 @@
   describe('CreateFileJsonElementTemplateId', function() {
     it('should create an instance of CreateFileJsonElementTemplateId', function() {
       // uncomment below and update the code to test CreateFileJsonElementTemplateId
-      //var instance = new DocspaceApiJavascript.CreateFileJsonElementTemplateId();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CreateFileJsonElementTemplateId);
+      //var instance = new Api.CreateFileJsonElementTemplateId();
+      //expect(instance).to.be.a(Api.CreateFileJsonElementTemplateId);
     });
 
   });

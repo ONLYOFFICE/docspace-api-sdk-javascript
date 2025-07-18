@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TenantDevToolsAccessSettings
+# Api.TenantDevToolsAccessSettings
 The Developer Tools access settings.
 
 ## Properties

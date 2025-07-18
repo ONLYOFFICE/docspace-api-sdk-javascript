@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ProductQuantityType
+# Api.ProductQuantityType
 The product quantity type.
 
 ## Enum

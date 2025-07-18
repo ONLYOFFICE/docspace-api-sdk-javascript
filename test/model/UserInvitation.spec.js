@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.UserInvitation();
+    instance = new Api.UserInvitation();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('UserInvitation', function() {
     it('should create an instance of UserInvitation', function() {
       // uncomment below and update the code to test UserInvitation
-      //var instance = new DocspaceApiJavascript.UserInvitation();
-      //expect(instance).to.be.a(DocspaceApiJavascript.UserInvitation);
+      //var instance = new Api.UserInvitation();
+      //expect(instance).to.be.a(Api.UserInvitation);
     });
 
     it('should have the property usersIds (base name: "usersIds")', function() {
       // uncomment below and update the code to test the property usersIds
-      //var instance = new DocspaceApiJavascript.UserInvitation();
+      //var instance = new Api.UserInvitation();
       //expect(instance).to.be();
     });
 
     it('should have the property resendAll (base name: "resendAll")', function() {
       // uncomment below and update the code to test the property resendAll
-      //var instance = new DocspaceApiJavascript.UserInvitation();
+      //var instance = new Api.UserInvitation();
       //expect(instance).to.be();
     });
 

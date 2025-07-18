@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.BatchRequestDtoDestFolderId
+# Api.BatchRequestDtoDestFolderId
 The destination folder ID.
 
 ## Properties

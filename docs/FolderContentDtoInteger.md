@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FolderContentDtoInteger
+# Api.FolderContentDtoInteger
 The folder content information.
 
 ## Properties

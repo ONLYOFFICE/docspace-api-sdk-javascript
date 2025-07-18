@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.RoomDataLifetimeDto();
+    instance = new Api.RoomDataLifetimeDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,31 +54,31 @@
   describe('RoomDataLifetimeDto', function() {
     it('should create an instance of RoomDataLifetimeDto', function() {
       // uncomment below and update the code to test RoomDataLifetimeDto
-      //var instance = new DocspaceApiJavascript.RoomDataLifetimeDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.RoomDataLifetimeDto);
+      //var instance = new Api.RoomDataLifetimeDto();
+      //expect(instance).to.be.a(Api.RoomDataLifetimeDto);
     });
 
     it('should have the property deletePermanently (base name: "deletePermanently")', function() {
       // uncomment below and update the code to test the property deletePermanently
-      //var instance = new DocspaceApiJavascript.RoomDataLifetimeDto();
+      //var instance = new Api.RoomDataLifetimeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property period (base name: "period")', function() {
       // uncomment below and update the code to test the property period
-      //var instance = new DocspaceApiJavascript.RoomDataLifetimeDto();
+      //var instance = new Api.RoomDataLifetimeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new DocspaceApiJavascript.RoomDataLifetimeDto();
+      //var instance = new Api.RoomDataLifetimeDto();
       //expect(instance).to.be();
     });
 
     it('should have the property enabled (base name: "enabled")', function() {
       // uncomment below and update the code to test the property enabled
-      //var instance = new DocspaceApiJavascript.RoomDataLifetimeDto();
+      //var instance = new Api.RoomDataLifetimeDto();
       //expect(instance).to.be();
     });
 

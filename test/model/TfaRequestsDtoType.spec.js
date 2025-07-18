@@ -24,9 +24,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
@@ -53,8 +53,8 @@
   describe('TfaRequestsDtoType', function() {
     it('should create an instance of TfaRequestsDtoType', function() {
       // uncomment below and update the code to test TfaRequestsDtoType
-      //var instance = new DocspaceApiJavascript.TfaRequestsDtoType();
-      //expect(instance).to.be.a(DocspaceApiJavascript.TfaRequestsDtoType);
+      //var instance = new Api.TfaRequestsDtoType();
+      //expect(instance).to.be.a(Api.TfaRequestsDtoType);
     });
 
   });

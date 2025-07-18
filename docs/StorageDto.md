@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.StorageDto
+# Api.StorageDto
 The storage information.
 
 ## Properties

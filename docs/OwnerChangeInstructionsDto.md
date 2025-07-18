@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.OwnerChangeInstructionsDto
+# Api.OwnerChangeInstructionsDto
 The owner change instructions parameters.
 
 ## Properties

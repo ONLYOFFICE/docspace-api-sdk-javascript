@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ErrorResponse
+# Api.ErrorResponse
 The error response containing the human-readable error explanation.
 
 ## Properties

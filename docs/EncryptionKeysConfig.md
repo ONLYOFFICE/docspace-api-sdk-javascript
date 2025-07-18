@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.EncryptionKeysConfig
+# Api.EncryptionKeysConfig
 The encryption keys of the editor configuration.
 
 ## Properties

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.DeepLinkHandlingMode
+# Api.DeepLinkHandlingMode
 The deep link handling mode.
 
 ## Enum

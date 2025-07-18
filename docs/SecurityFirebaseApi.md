@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SecurityFirebaseApi
+# Api.SecurityFirebaseApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -35,8 +35,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -58,9 +58,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SecurityFirebaseApi();
+let apiInstance = new Api.SecurityFirebaseApi();
 let opts = {
-  'firebaseRequestsDto': new DocspaceApiJavascript.FirebaseRequestsDto() // FirebaseRequestsDto | 
+  'firebaseRequestsDto': new Api.FirebaseRequestsDto() // FirebaseRequestsDto | 
 };
 apiInstance.docRegisterPusnNotificationDevice(opts, (error, data, response) => {
   if (error) {
@@ -103,8 +103,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -126,9 +126,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SecurityFirebaseApi();
+let apiInstance = new Api.SecurityFirebaseApi();
 let opts = {
-  'firebaseRequestsDto': new DocspaceApiJavascript.FirebaseRequestsDto() // FirebaseRequestsDto | 
+  'firebaseRequestsDto': new Api.FirebaseRequestsDto() // FirebaseRequestsDto | 
 };
 apiInstance.subscribeDocumentsPushNotification(opts, (error, data, response) => {
   if (error) {

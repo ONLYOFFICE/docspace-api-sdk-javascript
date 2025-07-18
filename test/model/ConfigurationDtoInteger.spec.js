@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ConfigurationDtoInteger();
+    instance = new Api.ConfigurationDtoInteger();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,85 +54,85 @@
   describe('ConfigurationDtoInteger', function() {
     it('should create an instance of ConfigurationDtoInteger', function() {
       // uncomment below and update the code to test ConfigurationDtoInteger
-      //var instance = new DocspaceApiJavascript.ConfigurationDtoInteger();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ConfigurationDtoInteger);
+      //var instance = new Api.ConfigurationDtoInteger();
+      //expect(instance).to.be.a(Api.ConfigurationDtoInteger);
     });
 
     it('should have the property document (base name: "document")', function() {
       // uncomment below and update the code to test the property document
-      //var instance = new DocspaceApiJavascript.ConfigurationDtoInteger();
+      //var instance = new Api.ConfigurationDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property documentType (base name: "documentType")', function() {
       // uncomment below and update the code to test the property documentType
-      //var instance = new DocspaceApiJavascript.ConfigurationDtoInteger();
+      //var instance = new Api.ConfigurationDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property editorConfig (base name: "editorConfig")', function() {
       // uncomment below and update the code to test the property editorConfig
-      //var instance = new DocspaceApiJavascript.ConfigurationDtoInteger();
+      //var instance = new Api.ConfigurationDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property editorType (base name: "editorType")', function() {
       // uncomment below and update the code to test the property editorType
-      //var instance = new DocspaceApiJavascript.ConfigurationDtoInteger();
+      //var instance = new Api.ConfigurationDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property editorUrl (base name: "editorUrl")', function() {
       // uncomment below and update the code to test the property editorUrl
-      //var instance = new DocspaceApiJavascript.ConfigurationDtoInteger();
+      //var instance = new Api.ConfigurationDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property token (base name: "token")', function() {
       // uncomment below and update the code to test the property token
-      //var instance = new DocspaceApiJavascript.ConfigurationDtoInteger();
+      //var instance = new Api.ConfigurationDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new DocspaceApiJavascript.ConfigurationDtoInteger();
+      //var instance = new Api.ConfigurationDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property file (base name: "file")', function() {
       // uncomment below and update the code to test the property file
-      //var instance = new DocspaceApiJavascript.ConfigurationDtoInteger();
+      //var instance = new Api.ConfigurationDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property errorMessage (base name: "errorMessage")', function() {
       // uncomment below and update the code to test the property errorMessage
-      //var instance = new DocspaceApiJavascript.ConfigurationDtoInteger();
+      //var instance = new Api.ConfigurationDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property startFilling (base name: "startFilling")', function() {
       // uncomment below and update the code to test the property startFilling
-      //var instance = new DocspaceApiJavascript.ConfigurationDtoInteger();
+      //var instance = new Api.ConfigurationDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property fillingStatus (base name: "fillingStatus")', function() {
       // uncomment below and update the code to test the property fillingStatus
-      //var instance = new DocspaceApiJavascript.ConfigurationDtoInteger();
+      //var instance = new Api.ConfigurationDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property startFillingMode (base name: "startFillingMode")', function() {
       // uncomment below and update the code to test the property startFillingMode
-      //var instance = new DocspaceApiJavascript.ConfigurationDtoInteger();
+      //var instance = new Api.ConfigurationDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property fillingSessionId (base name: "fillingSessionId")', function() {
       // uncomment below and update the code to test the property fillingSessionId
-      //var instance = new DocspaceApiJavascript.ConfigurationDtoInteger();
+      //var instance = new Api.ConfigurationDtoInteger();
       //expect(instance).to.be();
     });
 

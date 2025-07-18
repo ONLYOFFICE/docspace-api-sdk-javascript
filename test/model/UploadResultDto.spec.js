@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.UploadResultDto();
+    instance = new Api.UploadResultDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('UploadResultDto', function() {
     it('should create an instance of UploadResultDto', function() {
       // uncomment below and update the code to test UploadResultDto
-      //var instance = new DocspaceApiJavascript.UploadResultDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.UploadResultDto);
+      //var instance = new Api.UploadResultDto();
+      //expect(instance).to.be.a(Api.UploadResultDto);
     });
 
     it('should have the property success (base name: "success")', function() {
       // uncomment below and update the code to test the property success
-      //var instance = new DocspaceApiJavascript.UploadResultDto();
+      //var instance = new Api.UploadResultDto();
       //expect(instance).to.be();
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instance = new DocspaceApiJavascript.UploadResultDto();
+      //var instance = new Api.UploadResultDto();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new DocspaceApiJavascript.UploadResultDto();
+      //var instance = new Api.UploadResultDto();
       //expect(instance).to.be();
     });
 

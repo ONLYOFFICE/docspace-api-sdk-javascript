@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ItemKeyValuePairStringLogoRequestsDto();
+    instance = new Api.ItemKeyValuePairStringLogoRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('ItemKeyValuePairStringLogoRequestsDto', function() {
     it('should create an instance of ItemKeyValuePairStringLogoRequestsDto', function() {
       // uncomment below and update the code to test ItemKeyValuePairStringLogoRequestsDto
-      //var instance = new DocspaceApiJavascript.ItemKeyValuePairStringLogoRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ItemKeyValuePairStringLogoRequestsDto);
+      //var instance = new Api.ItemKeyValuePairStringLogoRequestsDto();
+      //expect(instance).to.be.a(Api.ItemKeyValuePairStringLogoRequestsDto);
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiJavascript.ItemKeyValuePairStringLogoRequestsDto();
+      //var instance = new Api.ItemKeyValuePairStringLogoRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new DocspaceApiJavascript.ItemKeyValuePairStringLogoRequestsDto();
+      //var instance = new Api.ItemKeyValuePairStringLogoRequestsDto();
       //expect(instance).to.be();
     });
 

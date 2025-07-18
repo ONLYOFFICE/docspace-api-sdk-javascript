@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.LoginProvider
+# Api.LoginProvider
 
 
 ## Enum

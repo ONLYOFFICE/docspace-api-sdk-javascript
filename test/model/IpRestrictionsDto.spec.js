@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.IpRestrictionsDto();
+    instance = new Api.IpRestrictionsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('IpRestrictionsDto', function() {
     it('should create an instance of IpRestrictionsDto', function() {
       // uncomment below and update the code to test IpRestrictionsDto
-      //var instance = new DocspaceApiJavascript.IpRestrictionsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.IpRestrictionsDto);
+      //var instance = new Api.IpRestrictionsDto();
+      //expect(instance).to.be.a(Api.IpRestrictionsDto);
     });
 
     it('should have the property ipRestrictions (base name: "ipRestrictions")', function() {
       // uncomment below and update the code to test the property ipRestrictions
-      //var instance = new DocspaceApiJavascript.IpRestrictionsDto();
+      //var instance = new Api.IpRestrictionsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property enable (base name: "enable")', function() {
       // uncomment below and update the code to test the property enable
-      //var instance = new DocspaceApiJavascript.IpRestrictionsDto();
+      //var instance = new Api.IpRestrictionsDto();
       //expect(instance).to.be();
     });
 

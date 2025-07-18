@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TenantUserInvitationSettingsWrapper
+# Api.TenantUserInvitationSettingsWrapper
 
 
 ## Properties

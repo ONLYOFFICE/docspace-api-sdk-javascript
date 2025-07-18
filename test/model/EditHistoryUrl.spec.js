@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.EditHistoryUrl();
+    instance = new Api.EditHistoryUrl();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('EditHistoryUrl', function() {
     it('should create an instance of EditHistoryUrl', function() {
       // uncomment below and update the code to test EditHistoryUrl
-      //var instance = new DocspaceApiJavascript.EditHistoryUrl();
-      //expect(instance).to.be.a(DocspaceApiJavascript.EditHistoryUrl);
+      //var instance = new Api.EditHistoryUrl();
+      //expect(instance).to.be.a(Api.EditHistoryUrl);
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiJavascript.EditHistoryUrl();
+      //var instance = new Api.EditHistoryUrl();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiJavascript.EditHistoryUrl();
+      //var instance = new Api.EditHistoryUrl();
       //expect(instance).to.be();
     });
 
     it('should have the property fileType (base name: "fileType")', function() {
       // uncomment below and update the code to test the property fileType
-      //var instance = new DocspaceApiJavascript.EditHistoryUrl();
+      //var instance = new Api.EditHistoryUrl();
       //expect(instance).to.be();
     });
 

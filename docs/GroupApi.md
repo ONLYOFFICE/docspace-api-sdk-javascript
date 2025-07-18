@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.GroupApi
+# Api.GroupApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -44,8 +44,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -67,9 +67,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.GroupApi();
+let apiInstance = new Api.GroupApi();
 let opts = {
-  'groupRequestDto': new DocspaceApiJavascript.GroupRequestDto() // GroupRequestDto | 
+  'groupRequestDto': new Api.GroupRequestDto() // GroupRequestDto | 
 };
 apiInstance.addGroup(opts, (error, data, response) => {
   if (error) {
@@ -113,8 +113,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -136,10 +136,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.GroupApi();
+let apiInstance = new Api.GroupApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
 let opts = {
-  'membersRequest': new DocspaceApiJavascript.MembersRequest() // MembersRequest | The member request.
+  'membersRequest': new Api.MembersRequest() // MembersRequest | The member request.
 };
 apiInstance.addMembersTo(id, opts, (error, data, response) => {
   if (error) {
@@ -182,8 +182,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -205,7 +205,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.GroupApi();
+let apiInstance = new Api.GroupApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
 apiInstance.deleteGroup(id, (error, data, response) => {
   if (error) {
@@ -249,8 +249,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -272,7 +272,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.GroupApi();
+let apiInstance = new Api.GroupApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
 let opts = {
   'includeMembers': true // Boolean | Specifies whether to include the group members or not.
@@ -318,8 +318,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -341,7 +341,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.GroupApi();
+let apiInstance = new Api.GroupApi();
 let userid = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The user ID.
 apiInstance.getGroupByUserId(userid, (error, data, response) => {
   if (error) {
@@ -391,8 +391,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -414,14 +414,14 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.GroupApi();
+let apiInstance = new Api.GroupApi();
 let opts = {
   'userId': "aae1e103-bca5-9fa1-ba8c-42058b4abf28", // String | The user ID.
   'manager': true, // Boolean | Specifies if the user is a manager or not.
   'count': 1234, // Number | The number of records to retrieve.
   'startIndex': 1234, // Number | The starting index for paginated results.
   'sortBy': "some text", // String | Specifies the property used to sort the query results.
-  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'sortOrder': new Api.SortOrder(), // SortOrder | The order in which the results are sorted.
   'filterValue': "some text" // String | The text used for filtering or searching group data.
 };
 apiInstance.getGroups(opts, (error, data, response) => {
@@ -466,8 +466,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -489,7 +489,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.GroupApi();
+let apiInstance = new Api.GroupApi();
 let fromId = "75a5f745-f697-4418-b38d-0fe0d277e258"; // String | The group ID to move from.
 let toId = "75a5f745-f697-4418-b38d-0fe0d277e258"; // String | The group ID to move to.
 apiInstance.moveMembersTo(fromId, toId, (error, data, response) => {
@@ -534,8 +534,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -557,10 +557,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.GroupApi();
+let apiInstance = new Api.GroupApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
 let opts = {
-  'membersRequest': new DocspaceApiJavascript.MembersRequest() // MembersRequest | The member request.
+  'membersRequest': new Api.MembersRequest() // MembersRequest | The member request.
 };
 apiInstance.removeMembersFrom(id, opts, (error, data, response) => {
   if (error) {
@@ -604,8 +604,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -627,10 +627,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.GroupApi();
+let apiInstance = new Api.GroupApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
 let opts = {
-  'setManagerRequest': new DocspaceApiJavascript.SetManagerRequest() // SetManagerRequest | The request for setting a group manager.
+  'setManagerRequest': new Api.SetManagerRequest() // SetManagerRequest | The request for setting a group manager.
 };
 apiInstance.setGroupManager(id, opts, (error, data, response) => {
   if (error) {
@@ -674,8 +674,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -697,10 +697,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.GroupApi();
+let apiInstance = new Api.GroupApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
 let opts = {
-  'membersRequest': new DocspaceApiJavascript.MembersRequest() // MembersRequest | The member request.
+  'membersRequest': new Api.MembersRequest() // MembersRequest | The member request.
 };
 apiInstance.setMembersTo(id, opts, (error, data, response) => {
   if (error) {
@@ -744,8 +744,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -767,10 +767,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.GroupApi();
+let apiInstance = new Api.GroupApi();
 let id = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The group ID.
 let opts = {
-  'updateGroupRequest': new DocspaceApiJavascript.UpdateGroupRequest() // UpdateGroupRequest | The request for updating a group.
+  'updateGroupRequest': new Api.UpdateGroupRequest() // UpdateGroupRequest | The request for updating a group.
 };
 apiInstance.updateGroup(id, opts, (error, data, response) => {
   if (error) {

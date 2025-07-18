@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CustomerConfigDto();
+    instance = new Api.CustomerConfigDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,43 +54,43 @@
   describe('CustomerConfigDto', function() {
     it('should create an instance of CustomerConfigDto', function() {
       // uncomment below and update the code to test CustomerConfigDto
-      //var instance = new DocspaceApiJavascript.CustomerConfigDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CustomerConfigDto);
+      //var instance = new Api.CustomerConfigDto();
+      //expect(instance).to.be.a(Api.CustomerConfigDto);
     });
 
     it('should have the property address (base name: "address")', function() {
       // uncomment below and update the code to test the property address
-      //var instance = new DocspaceApiJavascript.CustomerConfigDto();
+      //var instance = new Api.CustomerConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property logo (base name: "logo")', function() {
       // uncomment below and update the code to test the property logo
-      //var instance = new DocspaceApiJavascript.CustomerConfigDto();
+      //var instance = new Api.CustomerConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property logoDark (base name: "logoDark")', function() {
       // uncomment below and update the code to test the property logoDark
-      //var instance = new DocspaceApiJavascript.CustomerConfigDto();
+      //var instance = new Api.CustomerConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property mail (base name: "mail")', function() {
       // uncomment below and update the code to test the property mail
-      //var instance = new DocspaceApiJavascript.CustomerConfigDto();
+      //var instance = new Api.CustomerConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiJavascript.CustomerConfigDto();
+      //var instance = new Api.CustomerConfigDto();
       //expect(instance).to.be();
     });
 
     it('should have the property www (base name: "www")', function() {
       // uncomment below and update the code to test the property www
-      //var instance = new DocspaceApiJavascript.CustomerConfigDto();
+      //var instance = new Api.CustomerConfigDto();
       //expect(instance).to.be();
     });
 

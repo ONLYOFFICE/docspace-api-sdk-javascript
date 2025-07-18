@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.Tariff();
+    instance = new Api.Tariff();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,55 +54,55 @@
   describe('Tariff', function() {
     it('should create an instance of Tariff', function() {
       // uncomment below and update the code to test Tariff
-      //var instance = new DocspaceApiJavascript.Tariff();
-      //expect(instance).to.be.a(DocspaceApiJavascript.Tariff);
+      //var instance = new Api.Tariff();
+      //expect(instance).to.be.a(Api.Tariff);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.Tariff();
+      //var instance = new Api.Tariff();
       //expect(instance).to.be();
     });
 
     it('should have the property state (base name: "state")', function() {
       // uncomment below and update the code to test the property state
-      //var instance = new DocspaceApiJavascript.Tariff();
+      //var instance = new Api.Tariff();
       //expect(instance).to.be();
     });
 
     it('should have the property dueDate (base name: "dueDate")', function() {
       // uncomment below and update the code to test the property dueDate
-      //var instance = new DocspaceApiJavascript.Tariff();
+      //var instance = new Api.Tariff();
       //expect(instance).to.be();
     });
 
     it('should have the property delayDueDate (base name: "delayDueDate")', function() {
       // uncomment below and update the code to test the property delayDueDate
-      //var instance = new DocspaceApiJavascript.Tariff();
+      //var instance = new Api.Tariff();
       //expect(instance).to.be();
     });
 
     it('should have the property licenseDate (base name: "licenseDate")', function() {
       // uncomment below and update the code to test the property licenseDate
-      //var instance = new DocspaceApiJavascript.Tariff();
+      //var instance = new Api.Tariff();
       //expect(instance).to.be();
     });
 
     it('should have the property customerId (base name: "customerId")', function() {
       // uncomment below and update the code to test the property customerId
-      //var instance = new DocspaceApiJavascript.Tariff();
+      //var instance = new Api.Tariff();
       //expect(instance).to.be();
     });
 
     it('should have the property quotas (base name: "quotas")', function() {
       // uncomment below and update the code to test the property quotas
-      //var instance = new DocspaceApiJavascript.Tariff();
+      //var instance = new Api.Tariff();
       //expect(instance).to.be();
     });
 
     it('should have the property overdueQuotas (base name: "overdueQuotas")', function() {
       // uncomment below and update the code to test the property overdueQuotas
-      //var instance = new DocspaceApiJavascript.Tariff();
+      //var instance = new Api.Tariff();
       //expect(instance).to.be();
     });
 

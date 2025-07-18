@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.BackupProgressEnum
+# Api.BackupProgressEnum
 [0 - Backup, 1 - Restore, 2 - Transfer]
 
 ## Enum

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.AuthServiceRequestsArrayWrapper
+# Api.AuthServiceRequestsArrayWrapper
 
 
 ## Properties

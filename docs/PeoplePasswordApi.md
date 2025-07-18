@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.PeoplePasswordApi
+# Api.PeoplePasswordApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -36,8 +36,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -59,10 +59,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeoplePasswordApi();
+let apiInstance = new Api.PeoplePasswordApi();
 let userid = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The user ID.
 let opts = {
-  'memberBaseRequestDto': new DocspaceApiJavascript.MemberBaseRequestDto() // MemberBaseRequestDto | The request parameters for the user generic information.
+  'memberBaseRequestDto': new Api.MemberBaseRequestDto() // MemberBaseRequestDto | The request parameters for the user generic information.
 };
 apiInstance.changeUserPassword(userid, opts, (error, data, response) => {
   if (error) {
@@ -105,11 +105,11 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.PeoplePasswordApi();
+let apiInstance = new Api.PeoplePasswordApi();
 let opts = {
-  'emailMemberRequestDto': new DocspaceApiJavascript.EmailMemberRequestDto() // EmailMemberRequestDto | 
+  'emailMemberRequestDto': new Api.EmailMemberRequestDto() // EmailMemberRequestDto | 
 };
 apiInstance.sendUserPassword(opts, (error, data, response) => {
   if (error) {

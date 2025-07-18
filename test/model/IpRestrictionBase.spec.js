@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.IpRestrictionBase();
+    instance = new Api.IpRestrictionBase();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('IpRestrictionBase', function() {
     it('should create an instance of IpRestrictionBase', function() {
       // uncomment below and update the code to test IpRestrictionBase
-      //var instance = new DocspaceApiJavascript.IpRestrictionBase();
-      //expect(instance).to.be.a(DocspaceApiJavascript.IpRestrictionBase);
+      //var instance = new Api.IpRestrictionBase();
+      //expect(instance).to.be.a(Api.IpRestrictionBase);
     });
 
     it('should have the property ip (base name: "ip")', function() {
       // uncomment below and update the code to test the property ip
-      //var instance = new DocspaceApiJavascript.IpRestrictionBase();
+      //var instance = new Api.IpRestrictionBase();
       //expect(instance).to.be();
     });
 
     it('should have the property forAdmin (base name: "forAdmin")', function() {
       // uncomment below and update the code to test the property forAdmin
-      //var instance = new DocspaceApiJavascript.IpRestrictionBase();
+      //var instance = new Api.IpRestrictionBase();
       //expect(instance).to.be();
     });
 

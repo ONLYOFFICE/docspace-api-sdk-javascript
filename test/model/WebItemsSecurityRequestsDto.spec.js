@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.WebItemsSecurityRequestsDto();
+    instance = new Api.WebItemsSecurityRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('WebItemsSecurityRequestsDto', function() {
     it('should create an instance of WebItemsSecurityRequestsDto', function() {
       // uncomment below and update the code to test WebItemsSecurityRequestsDto
-      //var instance = new DocspaceApiJavascript.WebItemsSecurityRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.WebItemsSecurityRequestsDto);
+      //var instance = new Api.WebItemsSecurityRequestsDto();
+      //expect(instance).to.be.a(Api.WebItemsSecurityRequestsDto);
     });
 
     it('should have the property items (base name: "items")', function() {
       // uncomment below and update the code to test the property items
-      //var instance = new DocspaceApiJavascript.WebItemsSecurityRequestsDto();
+      //var instance = new Api.WebItemsSecurityRequestsDto();
       //expect(instance).to.be();
     });
 

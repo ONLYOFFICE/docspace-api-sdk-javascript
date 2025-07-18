@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CronParams
+# Api.CronParams
 
 
 ## Properties

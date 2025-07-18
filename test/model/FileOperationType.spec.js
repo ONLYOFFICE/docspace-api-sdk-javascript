@@ -24,9 +24,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
@@ -53,8 +53,8 @@
   describe('FileOperationType', function() {
     it('should create an instance of FileOperationType', function() {
       // uncomment below and update the code to test FileOperationType
-      //var instance = new DocspaceApiJavascript.FileOperationType();
-      //expect(instance).to.be.a(DocspaceApiJavascript.FileOperationType);
+      //var instance = new Api.FileOperationType();
+      //expect(instance).to.be.a(Api.FileOperationType);
     });
 
   });

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SsoFieldMapping
+# Api.SsoFieldMapping
 The SSO field mapping.
 
 ## Properties

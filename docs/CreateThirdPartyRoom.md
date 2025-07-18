@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CreateThirdPartyRoom
+# Api.CreateThirdPartyRoom
 The parameters for creating a third-party room.
 
 ## Properties

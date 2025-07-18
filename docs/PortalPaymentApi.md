@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.PortalPaymentApi
+# Api.PortalPaymentApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -51,8 +51,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -74,9 +74,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 let opts = {
-  'walletQuantityRequestDto': new DocspaceApiJavascript.WalletQuantityRequestDto() // WalletQuantityRequestDto | 
+  'walletQuantityRequestDto': new Api.WalletQuantityRequestDto() // WalletQuantityRequestDto | 
 };
 apiInstance.calculateWalletPayment(opts, (error, data, response) => {
   if (error) {
@@ -119,8 +119,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -142,9 +142,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 let opts = {
-  'customerOperationsReportRequestDto': new DocspaceApiJavascript.CustomerOperationsReportRequestDto() // CustomerOperationsReportRequestDto | 
+  'customerOperationsReportRequestDto': new Api.CustomerOperationsReportRequestDto() // CustomerOperationsReportRequestDto | 
 };
 apiInstance.createCustomerOperationsReport(opts, (error, data, response) => {
   if (error) {
@@ -187,8 +187,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -210,7 +210,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 let opts = {
   'backUrl': "some text" // String | Back URL
 };
@@ -255,8 +255,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -278,7 +278,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 let opts = {
   'refresh': true // Boolean | Specifies whether to refresh the payment information cache or not.
 };
@@ -323,8 +323,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -346,7 +346,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 let opts = {
   'refresh': true // Boolean | Specifies whether to refresh the payment information cache or not.
 };
@@ -396,8 +396,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -419,7 +419,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 let opts = {
   'startDate': new Date("2008-04-10T06:30+04:00"), // Date | Start date
   'endDate': new Date("2008-04-10T06:30+04:00"), // Date | End date
@@ -469,8 +469,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -492,7 +492,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 let opts = {
   'backUrl': "some text" // String | The URL where the user will be redirected after payment processing.
 };
@@ -534,8 +534,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -557,7 +557,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 apiInstance.getPaymentCurrencies((error, data, response) => {
   if (error) {
     console.error(error);
@@ -599,8 +599,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -622,7 +622,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 let opts = {
   'wallet': true // Boolean | Get wallet quotas only
 };
@@ -667,8 +667,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -690,9 +690,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 let opts = {
-  'paymentUrlRequestsDto': new DocspaceApiJavascript.PaymentUrlRequestsDto() // PaymentUrlRequestsDto | 
+  'paymentUrlRequestsDto': new Api.PaymentUrlRequestsDto() // PaymentUrlRequestsDto | 
 };
 apiInstance.getPaymentUrl(opts, (error, data, response) => {
   if (error) {
@@ -732,8 +732,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -755,7 +755,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 apiInstance.getPortalPrices((error, data, response) => {
   if (error) {
     console.error(error);
@@ -797,8 +797,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -820,7 +820,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 let opts = {
   'refresh': true // Boolean | Specifies whether to refresh the payment information cache or not.
 };
@@ -862,8 +862,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -885,7 +885,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 apiInstance.getTenantWalletSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -927,8 +927,8 @@ null (empty response body)
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -950,9 +950,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 let opts = {
-  'salesRequestsDto': new DocspaceApiJavascript.SalesRequestsDto() // SalesRequestsDto | 
+  'salesRequestsDto': new Api.SalesRequestsDto() // SalesRequestsDto | 
 };
 apiInstance.sendPaymentRequest(opts, (error, data, response) => {
   if (error) {
@@ -995,8 +995,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1018,9 +1018,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 let opts = {
-  'tenantWalletSettingsWrapper': new DocspaceApiJavascript.TenantWalletSettingsWrapper() // TenantWalletSettingsWrapper | 
+  'tenantWalletSettingsWrapper': new Api.TenantWalletSettingsWrapper() // TenantWalletSettingsWrapper | 
 };
 apiInstance.setTenantWalletSettings(opts, (error, data, response) => {
   if (error) {
@@ -1063,8 +1063,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1086,9 +1086,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 let opts = {
-  'topUpDepositRequestDto': new DocspaceApiJavascript.TopUpDepositRequestDto() // TopUpDepositRequestDto | 
+  'topUpDepositRequestDto': new Api.TopUpDepositRequestDto() // TopUpDepositRequestDto | 
 };
 apiInstance.topUpDeposit(opts, (error, data, response) => {
   if (error) {
@@ -1131,8 +1131,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1154,9 +1154,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 let opts = {
-  'quantityRequestDto': new DocspaceApiJavascript.QuantityRequestDto() // QuantityRequestDto | 
+  'quantityRequestDto': new Api.QuantityRequestDto() // QuantityRequestDto | 
 };
 apiInstance.updatePayment(opts, (error, data, response) => {
   if (error) {
@@ -1199,8 +1199,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1222,9 +1222,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalPaymentApi();
+let apiInstance = new Api.PortalPaymentApi();
 let opts = {
-  'walletQuantityRequestDto': new DocspaceApiJavascript.WalletQuantityRequestDto() // WalletQuantityRequestDto | 
+  'walletQuantityRequestDto': new Api.WalletQuantityRequestDto() // WalletQuantityRequestDto | 
 };
 apiInstance.updateWalletPayment(opts, (error, data, response) => {
   if (error) {

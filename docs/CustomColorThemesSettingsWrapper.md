@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CustomColorThemesSettingsWrapper
+# Api.CustomColorThemesSettingsWrapper
 
 
 ## Properties

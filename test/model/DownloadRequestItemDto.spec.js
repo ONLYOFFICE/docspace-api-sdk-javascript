@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.DownloadRequestItemDto();
+    instance = new Api.DownloadRequestItemDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('DownloadRequestItemDto', function() {
     it('should create an instance of DownloadRequestItemDto', function() {
       // uncomment below and update the code to test DownloadRequestItemDto
-      //var instance = new DocspaceApiJavascript.DownloadRequestItemDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.DownloadRequestItemDto);
+      //var instance = new Api.DownloadRequestItemDto();
+      //expect(instance).to.be.a(Api.DownloadRequestItemDto);
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiJavascript.DownloadRequestItemDto();
+      //var instance = new Api.DownloadRequestItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new DocspaceApiJavascript.DownloadRequestItemDto();
+      //var instance = new Api.DownloadRequestItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instance = new DocspaceApiJavascript.DownloadRequestItemDto();
+      //var instance = new Api.DownloadRequestItemDto();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ReviewConfig
+# Api.ReviewConfig
 
 
 ## Properties

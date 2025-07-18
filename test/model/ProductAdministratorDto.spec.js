@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ProductAdministratorDto();
+    instance = new Api.ProductAdministratorDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('ProductAdministratorDto', function() {
     it('should create an instance of ProductAdministratorDto', function() {
       // uncomment below and update the code to test ProductAdministratorDto
-      //var instance = new DocspaceApiJavascript.ProductAdministratorDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ProductAdministratorDto);
+      //var instance = new Api.ProductAdministratorDto();
+      //expect(instance).to.be.a(Api.ProductAdministratorDto);
     });
 
     it('should have the property productId (base name: "productId")', function() {
       // uncomment below and update the code to test the property productId
-      //var instance = new DocspaceApiJavascript.ProductAdministratorDto();
+      //var instance = new Api.ProductAdministratorDto();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "userId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instance = new DocspaceApiJavascript.ProductAdministratorDto();
+      //var instance = new Api.ProductAdministratorDto();
       //expect(instance).to.be();
     });
 
     it('should have the property administrator (base name: "administrator")', function() {
       // uncomment below and update the code to test the property administrator
-      //var instance = new DocspaceApiJavascript.ProductAdministratorDto();
+      //var instance = new Api.ProductAdministratorDto();
       //expect(instance).to.be();
     });
 

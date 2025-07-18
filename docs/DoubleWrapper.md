@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.DoubleWrapper
+# Api.DoubleWrapper
 
 
 ## Properties

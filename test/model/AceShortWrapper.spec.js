@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.AceShortWrapper();
+    instance = new Api.AceShortWrapper();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('AceShortWrapper', function() {
     it('should create an instance of AceShortWrapper', function() {
       // uncomment below and update the code to test AceShortWrapper
-      //var instance = new DocspaceApiJavascript.AceShortWrapper();
-      //expect(instance).to.be.a(DocspaceApiJavascript.AceShortWrapper);
+      //var instance = new Api.AceShortWrapper();
+      //expect(instance).to.be.a(Api.AceShortWrapper);
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instance = new DocspaceApiJavascript.AceShortWrapper();
+      //var instance = new Api.AceShortWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property permissions (base name: "permissions")', function() {
       // uncomment below and update the code to test the property permissions
-      //var instance = new DocspaceApiJavascript.AceShortWrapper();
+      //var instance = new Api.AceShortWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property isLink (base name: "isLink")', function() {
       // uncomment below and update the code to test the property isLink
-      //var instance = new DocspaceApiJavascript.AceShortWrapper();
+      //var instance = new Api.AceShortWrapper();
       //expect(instance).to.be();
     });
 

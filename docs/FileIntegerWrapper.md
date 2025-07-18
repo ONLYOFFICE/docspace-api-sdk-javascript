@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FileIntegerWrapper
+# Api.FileIntegerWrapper
 
 
 ## Properties

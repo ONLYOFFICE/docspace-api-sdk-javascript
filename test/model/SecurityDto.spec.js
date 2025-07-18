@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.SecurityDto();
+    instance = new Api.SecurityDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,37 +54,37 @@
   describe('SecurityDto', function() {
     it('should create an instance of SecurityDto', function() {
       // uncomment below and update the code to test SecurityDto
-      //var instance = new DocspaceApiJavascript.SecurityDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.SecurityDto);
+      //var instance = new Api.SecurityDto();
+      //expect(instance).to.be.a(Api.SecurityDto);
     });
 
     it('should have the property webItemId (base name: "webItemId")', function() {
       // uncomment below and update the code to test the property webItemId
-      //var instance = new DocspaceApiJavascript.SecurityDto();
+      //var instance = new Api.SecurityDto();
       //expect(instance).to.be();
     });
 
     it('should have the property users (base name: "users")', function() {
       // uncomment below and update the code to test the property users
-      //var instance = new DocspaceApiJavascript.SecurityDto();
+      //var instance = new Api.SecurityDto();
       //expect(instance).to.be();
     });
 
     it('should have the property groups (base name: "groups")', function() {
       // uncomment below and update the code to test the property groups
-      //var instance = new DocspaceApiJavascript.SecurityDto();
+      //var instance = new Api.SecurityDto();
       //expect(instance).to.be();
     });
 
     it('should have the property enabled (base name: "enabled")', function() {
       // uncomment below and update the code to test the property enabled
-      //var instance = new DocspaceApiJavascript.SecurityDto();
+      //var instance = new Api.SecurityDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isSubItem (base name: "isSubItem")', function() {
       // uncomment below and update the code to test the property isSubItem
-      //var instance = new DocspaceApiJavascript.SecurityDto();
+      //var instance = new Api.SecurityDto();
       //expect(instance).to.be();
     });
 

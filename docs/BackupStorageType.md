@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.BackupStorageType
+# Api.BackupStorageType
 [0 - Documents, 1 - Thridparty documents, 2 - Custom cloud, 3 - Local, 4 - Data store, 5 - Thirdparty consumer]
 
 ## Enum

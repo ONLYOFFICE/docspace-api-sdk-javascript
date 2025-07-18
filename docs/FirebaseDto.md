@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FirebaseDto
+# Api.FirebaseDto
 The Firebase parameters.
 
 ## Properties

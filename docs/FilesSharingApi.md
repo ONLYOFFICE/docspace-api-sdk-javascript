@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FilesSharingApi
+# Api.FilesSharingApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -39,12 +39,12 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.FilesSharingApi();
+let apiInstance = new Api.FilesSharingApi();
 let key = "some text"; // String | The unique document identifier.
 let opts = {
-  'externalShareRequestParam': new DocspaceApiJavascript.ExternalShareRequestParam() // ExternalShareRequestParam | The external data share request parameters.
+  'externalShareRequestParam': new Api.ExternalShareRequestParam() // ExternalShareRequestParam | The external data share request parameters.
 };
 apiInstance.applyExternalSharePassword(key, opts, (error, data, response) => {
   if (error) {
@@ -87,8 +87,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -110,9 +110,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSharingApi();
+let apiInstance = new Api.FilesSharingApi();
 let opts = {
-  'changeOwnerRequestDto': new DocspaceApiJavascript.ChangeOwnerRequestDto() // ChangeOwnerRequestDto | 
+  'changeOwnerRequestDto': new Api.ChangeOwnerRequestDto() // ChangeOwnerRequestDto | 
 };
 apiInstance.changeFileOwner(opts, (error, data, response) => {
   if (error) {
@@ -156,9 +156,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.FilesSharingApi();
+let apiInstance = new Api.FilesSharingApi();
 let key = "some text"; // String | The unique key of the external shared data.
 let opts = {
   'fileId': "9846" // String | The unique document identifier.
@@ -204,8 +204,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -227,7 +227,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSharingApi();
+let apiInstance = new Api.FilesSharingApi();
 let fileId = 9846; // Number | The file ID of the request.
 apiInstance.getSharedUsers(fileId, (error, data, response) => {
   if (error) {
@@ -271,8 +271,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -294,10 +294,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSharingApi();
+let apiInstance = new Api.FilesSharingApi();
 let fileId = 9846; // Number | The file ID of the mention message.
 let opts = {
-  'mentionMessageWrapper': new DocspaceApiJavascript.MentionMessageWrapper() // MentionMessageWrapper | The mention message.
+  'mentionMessageWrapper': new Api.MentionMessageWrapper() // MentionMessageWrapper | The mention message.
 };
 apiInstance.sendEditorNotify(fileId, opts, (error, data, response) => {
   if (error) {

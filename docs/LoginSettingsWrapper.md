@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.LoginSettingsWrapper
+# Api.LoginSettingsWrapper
 
 
 ## Properties

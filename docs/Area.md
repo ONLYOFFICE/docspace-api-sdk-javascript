@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.Area
+# Api.Area
 [0 - All, 1 - People, 2 - Guests]
 
 ## Enum

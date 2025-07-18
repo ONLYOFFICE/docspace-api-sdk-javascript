@@ -24,9 +24,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
@@ -53,8 +53,8 @@
   describe('SortOrder', function() {
     it('should create an instance of SortOrder', function() {
       // uncomment below and update the code to test SortOrder
-      //var instance = new DocspaceApiJavascript.SortOrder();
-      //expect(instance).to.be.a(DocspaceApiJavascript.SortOrder);
+      //var instance = new Api.SortOrder();
+      //expect(instance).to.be.a(Api.SortOrder);
     });
 
   });

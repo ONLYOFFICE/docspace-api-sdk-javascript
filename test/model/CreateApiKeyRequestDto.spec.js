@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CreateApiKeyRequestDto();
+    instance = new Api.CreateApiKeyRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('CreateApiKeyRequestDto', function() {
     it('should create an instance of CreateApiKeyRequestDto', function() {
       // uncomment below and update the code to test CreateApiKeyRequestDto
-      //var instance = new DocspaceApiJavascript.CreateApiKeyRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CreateApiKeyRequestDto);
+      //var instance = new Api.CreateApiKeyRequestDto();
+      //expect(instance).to.be.a(Api.CreateApiKeyRequestDto);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiJavascript.CreateApiKeyRequestDto();
+      //var instance = new Api.CreateApiKeyRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property permissions (base name: "permissions")', function() {
       // uncomment below and update the code to test the property permissions
-      //var instance = new DocspaceApiJavascript.CreateApiKeyRequestDto();
+      //var instance = new Api.CreateApiKeyRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property expiresInDays (base name: "expiresInDays")', function() {
       // uncomment below and update the code to test the property expiresInDays
-      //var instance = new DocspaceApiJavascript.CreateApiKeyRequestDto();
+      //var instance = new Api.CreateApiKeyRequestDto();
       //expect(instance).to.be();
     });
 

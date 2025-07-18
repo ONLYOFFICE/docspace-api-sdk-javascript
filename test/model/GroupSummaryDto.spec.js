@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.GroupSummaryDto();
+    instance = new Api.GroupSummaryDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('GroupSummaryDto', function() {
     it('should create an instance of GroupSummaryDto', function() {
       // uncomment below and update the code to test GroupSummaryDto
-      //var instance = new DocspaceApiJavascript.GroupSummaryDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.GroupSummaryDto);
+      //var instance = new Api.GroupSummaryDto();
+      //expect(instance).to.be.a(Api.GroupSummaryDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.GroupSummaryDto();
+      //var instance = new Api.GroupSummaryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiJavascript.GroupSummaryDto();
+      //var instance = new Api.GroupSummaryDto();
       //expect(instance).to.be();
     });
 
     it('should have the property manager (base name: "manager")', function() {
       // uncomment below and update the code to test the property manager
-      //var instance = new DocspaceApiJavascript.GroupSummaryDto();
+      //var instance = new Api.GroupSummaryDto();
       //expect(instance).to.be();
     });
 

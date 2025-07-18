@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ContentType();
+    instance = new Api.ContentType();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,37 +54,37 @@
   describe('ContentType', function() {
     it('should create an instance of ContentType', function() {
       // uncomment below and update the code to test ContentType
-      //var instance = new DocspaceApiJavascript.ContentType();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ContentType);
+      //var instance = new Api.ContentType();
+      //expect(instance).to.be.a(Api.ContentType);
     });
 
     it('should have the property boundary (base name: "boundary")', function() {
       // uncomment below and update the code to test the property boundary
-      //var instance = new DocspaceApiJavascript.ContentType();
+      //var instance = new Api.ContentType();
       //expect(instance).to.be();
     });
 
     it('should have the property charSet (base name: "charSet")', function() {
       // uncomment below and update the code to test the property charSet
-      //var instance = new DocspaceApiJavascript.ContentType();
+      //var instance = new Api.ContentType();
       //expect(instance).to.be();
     });
 
     it('should have the property mediaType (base name: "mediaType")', function() {
       // uncomment below and update the code to test the property mediaType
-      //var instance = new DocspaceApiJavascript.ContentType();
+      //var instance = new Api.ContentType();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiJavascript.ContentType();
+      //var instance = new Api.ContentType();
       //expect(instance).to.be();
     });
 
     it('should have the property parameters (base name: "parameters")', function() {
       // uncomment below and update the code to test the property parameters
-      //var instance = new DocspaceApiJavascript.ContentType();
+      //var instance = new Api.ContentType();
       //expect(instance).to.be();
     });
 

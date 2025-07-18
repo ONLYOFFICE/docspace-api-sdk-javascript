@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ChangeClientActivationRequest
+# Api.ChangeClientActivationRequest
 The request parameters for changing the client activation status.
 
 ## Properties

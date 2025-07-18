@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.WhiteLabelItemPathDto
+# Api.WhiteLabelItemPathDto
 The white label item path parameters.
 
 ## Properties

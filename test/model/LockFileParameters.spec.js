@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.LockFileParameters();
+    instance = new Api.LockFileParameters();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('LockFileParameters', function() {
     it('should create an instance of LockFileParameters', function() {
       // uncomment below and update the code to test LockFileParameters
-      //var instance = new DocspaceApiJavascript.LockFileParameters();
-      //expect(instance).to.be.a(DocspaceApiJavascript.LockFileParameters);
+      //var instance = new Api.LockFileParameters();
+      //expect(instance).to.be.a(Api.LockFileParameters);
     });
 
     it('should have the property lockFile (base name: "lockFile")', function() {
       // uncomment below and update the code to test the property lockFile
-      //var instance = new DocspaceApiJavascript.LockFileParameters();
+      //var instance = new Api.LockFileParameters();
       //expect(instance).to.be();
     });
 

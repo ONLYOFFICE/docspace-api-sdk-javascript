@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.NewItemsDtoFileEntryDto
+# Api.NewItemsDtoFileEntryDto
 The new item parameters.
 
 ## Properties

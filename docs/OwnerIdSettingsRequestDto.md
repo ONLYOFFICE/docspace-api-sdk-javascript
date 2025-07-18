@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.OwnerIdSettingsRequestDto
+# Api.OwnerIdSettingsRequestDto
 The request parameters for managing the owner-specific settings.
 
 ## Properties

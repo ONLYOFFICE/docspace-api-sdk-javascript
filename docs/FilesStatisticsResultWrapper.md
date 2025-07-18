@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FilesStatisticsResultWrapper
+# Api.FilesStatisticsResultWrapper
 
 
 ## Properties

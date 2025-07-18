@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.TenantQuotaSettingsRequestsDto();
+    instance = new Api.TenantQuotaSettingsRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('TenantQuotaSettingsRequestsDto', function() {
     it('should create an instance of TenantQuotaSettingsRequestsDto', function() {
       // uncomment below and update the code to test TenantQuotaSettingsRequestsDto
-      //var instance = new DocspaceApiJavascript.TenantQuotaSettingsRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.TenantQuotaSettingsRequestsDto);
+      //var instance = new Api.TenantQuotaSettingsRequestsDto();
+      //expect(instance).to.be.a(Api.TenantQuotaSettingsRequestsDto);
     });
 
     it('should have the property tenantId (base name: "tenantId")', function() {
       // uncomment below and update the code to test the property tenantId
-      //var instance = new DocspaceApiJavascript.TenantQuotaSettingsRequestsDto();
+      //var instance = new Api.TenantQuotaSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property quota (base name: "quota")', function() {
       // uncomment below and update the code to test the property quota
-      //var instance = new DocspaceApiJavascript.TenantQuotaSettingsRequestsDto();
+      //var instance = new Api.TenantQuotaSettingsRequestsDto();
       //expect(instance).to.be();
     });
 

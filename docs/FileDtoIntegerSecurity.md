@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FileDtoIntegerSecurity
+# Api.FileDtoIntegerSecurity
 The actions that can be perforrmed with the file entry.
 
 ## Properties

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.RoomFromTemplateStatusWrapper
+# Api.RoomFromTemplateStatusWrapper
 
 
 ## Properties

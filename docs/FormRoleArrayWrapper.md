@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FormRoleArrayWrapper
+# Api.FormRoleArrayWrapper
 
 
 ## Properties

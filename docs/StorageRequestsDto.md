@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.StorageRequestsDto
+# Api.StorageRequestsDto
 The request parameters for configuring the storage module settings.
 
 ## Properties

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.LinkAccountRequestDto
+# Api.LinkAccountRequestDto
 The request parameters for linking accounts.
 
 ## Properties

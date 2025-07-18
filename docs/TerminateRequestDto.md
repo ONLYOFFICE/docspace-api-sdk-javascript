@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TerminateRequestDto
+# Api.TerminateRequestDto
 The request parameters for terminating the reassignment/deletion process.
 
 ## Properties

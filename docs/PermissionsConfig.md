@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.PermissionsConfig
+# Api.PermissionsConfig
 The permissions configuration parameters.
 
 ## Properties

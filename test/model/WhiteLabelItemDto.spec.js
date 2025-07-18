@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.WhiteLabelItemDto();
+    instance = new Api.WhiteLabelItemDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('WhiteLabelItemDto', function() {
     it('should create an instance of WhiteLabelItemDto', function() {
       // uncomment below and update the code to test WhiteLabelItemDto
-      //var instance = new DocspaceApiJavascript.WhiteLabelItemDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.WhiteLabelItemDto);
+      //var instance = new Api.WhiteLabelItemDto();
+      //expect(instance).to.be.a(Api.WhiteLabelItemDto);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiJavascript.WhiteLabelItemDto();
+      //var instance = new Api.WhiteLabelItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property size (base name: "size")', function() {
       // uncomment below and update the code to test the property size
-      //var instance = new DocspaceApiJavascript.WhiteLabelItemDto();
+      //var instance = new Api.WhiteLabelItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property path (base name: "path")', function() {
       // uncomment below and update the code to test the property path
-      //var instance = new DocspaceApiJavascript.WhiteLabelItemDto();
+      //var instance = new Api.WhiteLabelItemDto();
       //expect(instance).to.be();
     });
 

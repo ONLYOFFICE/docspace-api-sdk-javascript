@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.PermissionsConfig();
+    instance = new Api.PermissionsConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,73 +54,73 @@
   describe('PermissionsConfig', function() {
     it('should create an instance of PermissionsConfig', function() {
       // uncomment below and update the code to test PermissionsConfig
-      //var instance = new DocspaceApiJavascript.PermissionsConfig();
-      //expect(instance).to.be.a(DocspaceApiJavascript.PermissionsConfig);
+      //var instance = new Api.PermissionsConfig();
+      //expect(instance).to.be.a(Api.PermissionsConfig);
     });
 
     it('should have the property comment (base name: "comment")', function() {
       // uncomment below and update the code to test the property comment
-      //var instance = new DocspaceApiJavascript.PermissionsConfig();
+      //var instance = new Api.PermissionsConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property chat (base name: "chat")', function() {
       // uncomment below and update the code to test the property chat
-      //var instance = new DocspaceApiJavascript.PermissionsConfig();
+      //var instance = new Api.PermissionsConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property download (base name: "download")', function() {
       // uncomment below and update the code to test the property download
-      //var instance = new DocspaceApiJavascript.PermissionsConfig();
+      //var instance = new Api.PermissionsConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property edit (base name: "edit")', function() {
       // uncomment below and update the code to test the property edit
-      //var instance = new DocspaceApiJavascript.PermissionsConfig();
+      //var instance = new Api.PermissionsConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property fillForms (base name: "fillForms")', function() {
       // uncomment below and update the code to test the property fillForms
-      //var instance = new DocspaceApiJavascript.PermissionsConfig();
+      //var instance = new Api.PermissionsConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property modifyFilter (base name: "modifyFilter")', function() {
       // uncomment below and update the code to test the property modifyFilter
-      //var instance = new DocspaceApiJavascript.PermissionsConfig();
+      //var instance = new Api.PermissionsConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property protect (base name: "protect")', function() {
       // uncomment below and update the code to test the property protect
-      //var instance = new DocspaceApiJavascript.PermissionsConfig();
+      //var instance = new Api.PermissionsConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property print (base name: "print")', function() {
       // uncomment below and update the code to test the property print
-      //var instance = new DocspaceApiJavascript.PermissionsConfig();
+      //var instance = new Api.PermissionsConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property rename (base name: "rename")', function() {
       // uncomment below and update the code to test the property rename
-      //var instance = new DocspaceApiJavascript.PermissionsConfig();
+      //var instance = new Api.PermissionsConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property review (base name: "review")', function() {
       // uncomment below and update the code to test the property review
-      //var instance = new DocspaceApiJavascript.PermissionsConfig();
+      //var instance = new Api.PermissionsConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property copy (base name: "copy")', function() {
       // uncomment below and update the code to test the property copy
-      //var instance = new DocspaceApiJavascript.PermissionsConfig();
+      //var instance = new Api.PermissionsConfig();
       //expect(instance).to.be();
     });
 

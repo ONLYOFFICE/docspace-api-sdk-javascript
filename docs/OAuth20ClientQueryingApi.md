@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.OAuth20ClientQueryingApi
+# Api.OAuth20ClientQueryingApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -39,15 +39,15 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new DocspaceApiJavascript.OAuth20ClientQueryingApi();
+let apiInstance = new Api.OAuth20ClientQueryingApi();
 let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
 apiInstance.getClient(clientId, (error, data, response) => {
   if (error) {
@@ -90,15 +90,15 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new DocspaceApiJavascript.OAuth20ClientQueryingApi();
+let apiInstance = new Api.OAuth20ClientQueryingApi();
 let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
 apiInstance.getClientInfo(clientId, (error, data, response) => {
   if (error) {
@@ -143,15 +143,15 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new DocspaceApiJavascript.OAuth20ClientQueryingApi();
+let apiInstance = new Api.OAuth20ClientQueryingApi();
 let limit = 1; // Number | The maximum number of results returned per page.
 let opts = {
   'lastClientId': "6c7cf17b-1bd3-47d5-94c6-be2d3570e168", // String | The ID of the last retrieved client.
@@ -200,15 +200,15 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new DocspaceApiJavascript.OAuth20ClientQueryingApi();
+let apiInstance = new Api.OAuth20ClientQueryingApi();
 let limit = 1; // Number | The maximum number of results returned per page.
 let opts = {
   'lastClientId': "6c7cf17b-1bd3-47d5-94c6-be2d3570e168", // String | The identifier of the last retrieved client.
@@ -256,15 +256,15 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
 asc_auth_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //asc_auth_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new DocspaceApiJavascript.OAuth20ClientQueryingApi();
+let apiInstance = new Api.OAuth20ClientQueryingApi();
 let limit = 1; // Number | The maximum number of results returned per page.
 let opts = {
   'lastModifiedOn': new Date("2024-04-04T12:00:00Z") // Date | The date when the user consent was last modified.
@@ -310,9 +310,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.OAuth20ClientQueryingApi();
+let apiInstance = new Api.OAuth20ClientQueryingApi();
 let clientId = "6c7cf17b-1bd3-47d5-94c6-be2d3570e168"; // String | The client identifier.
 apiInstance.getPublicClientInfo(clientId, (error, data, response) => {
   if (error) {

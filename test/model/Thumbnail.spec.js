@@ -24,9 +24,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
@@ -53,8 +53,8 @@
   describe('Thumbnail', function() {
     it('should create an instance of Thumbnail', function() {
       // uncomment below and update the code to test Thumbnail
-      //var instance = new DocspaceApiJavascript.Thumbnail();
-      //expect(instance).to.be.a(DocspaceApiJavascript.Thumbnail);
+      //var instance = new Api.Thumbnail();
+      //expect(instance).to.be.a(Api.Thumbnail);
     });
 
   });

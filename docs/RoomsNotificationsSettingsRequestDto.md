@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.RoomsNotificationsSettingsRequestDto
+# Api.RoomsNotificationsSettingsRequestDto
 The request parameters for configuring notification settings for the chat or collaboration rooms.
 
 ## Properties

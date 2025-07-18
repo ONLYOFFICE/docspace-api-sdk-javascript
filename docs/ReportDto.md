@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ReportDto
+# Api.ReportDto
 Represents a report containing a collection of operations.
 
 ## Properties

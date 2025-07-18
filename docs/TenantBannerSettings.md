@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TenantBannerSettings
+# Api.TenantBannerSettings
 The promotional banners visibility settings.
 
 ## Properties

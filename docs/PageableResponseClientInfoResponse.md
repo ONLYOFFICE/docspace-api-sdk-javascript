@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.PageableResponseClientInfoResponse
+# Api.PageableResponseClientInfoResponse
 The response containing paginated client information.
 
 ## Properties

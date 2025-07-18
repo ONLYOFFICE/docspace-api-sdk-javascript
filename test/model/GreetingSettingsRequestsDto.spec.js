@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.GreetingSettingsRequestsDto();
+    instance = new Api.GreetingSettingsRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('GreetingSettingsRequestsDto', function() {
     it('should create an instance of GreetingSettingsRequestsDto', function() {
       // uncomment below and update the code to test GreetingSettingsRequestsDto
-      //var instance = new DocspaceApiJavascript.GreetingSettingsRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.GreetingSettingsRequestsDto);
+      //var instance = new Api.GreetingSettingsRequestsDto();
+      //expect(instance).to.be.a(Api.GreetingSettingsRequestsDto);
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiJavascript.GreetingSettingsRequestsDto();
+      //var instance = new Api.GreetingSettingsRequestsDto();
       //expect(instance).to.be();
     });
 

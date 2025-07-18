@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.UpdatePhotoMemberRequest
+# Api.UpdatePhotoMemberRequest
 The request parameters for updating a photo.
 
 ## Properties

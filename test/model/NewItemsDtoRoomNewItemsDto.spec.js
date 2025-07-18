@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.NewItemsDtoRoomNewItemsDto();
+    instance = new Api.NewItemsDtoRoomNewItemsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('NewItemsDtoRoomNewItemsDto', function() {
     it('should create an instance of NewItemsDtoRoomNewItemsDto', function() {
       // uncomment below and update the code to test NewItemsDtoRoomNewItemsDto
-      //var instance = new DocspaceApiJavascript.NewItemsDtoRoomNewItemsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.NewItemsDtoRoomNewItemsDto);
+      //var instance = new Api.NewItemsDtoRoomNewItemsDto();
+      //expect(instance).to.be.a(Api.NewItemsDtoRoomNewItemsDto);
     });
 
     it('should have the property date (base name: "date")', function() {
       // uncomment below and update the code to test the property date
-      //var instance = new DocspaceApiJavascript.NewItemsDtoRoomNewItemsDto();
+      //var instance = new Api.NewItemsDtoRoomNewItemsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property items (base name: "items")', function() {
       // uncomment below and update the code to test the property items
-      //var instance = new DocspaceApiJavascript.NewItemsDtoRoomNewItemsDto();
+      //var instance = new Api.NewItemsDtoRoomNewItemsDto();
       //expect(instance).to.be();
     });
 

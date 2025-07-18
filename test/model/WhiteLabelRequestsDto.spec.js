@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.WhiteLabelRequestsDto();
+    instance = new Api.WhiteLabelRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('WhiteLabelRequestsDto', function() {
     it('should create an instance of WhiteLabelRequestsDto', function() {
       // uncomment below and update the code to test WhiteLabelRequestsDto
-      //var instance = new DocspaceApiJavascript.WhiteLabelRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.WhiteLabelRequestsDto);
+      //var instance = new Api.WhiteLabelRequestsDto();
+      //expect(instance).to.be.a(Api.WhiteLabelRequestsDto);
     });
 
     it('should have the property logoText (base name: "logoText")', function() {
       // uncomment below and update the code to test the property logoText
-      //var instance = new DocspaceApiJavascript.WhiteLabelRequestsDto();
+      //var instance = new Api.WhiteLabelRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property logo (base name: "logo")', function() {
       // uncomment below and update the code to test the property logo
-      //var instance = new DocspaceApiJavascript.WhiteLabelRequestsDto();
+      //var instance = new Api.WhiteLabelRequestsDto();
       //expect(instance).to.be();
     });
 

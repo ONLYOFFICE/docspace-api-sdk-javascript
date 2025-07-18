@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.WebhookRetryRequestsDto
+# Api.WebhookRetryRequestsDto
 The request parameters for requesting the webhook delivery retries.
 
 ## Properties

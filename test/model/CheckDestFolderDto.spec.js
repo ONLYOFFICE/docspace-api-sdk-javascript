@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CheckDestFolderDto();
+    instance = new Api.CheckDestFolderDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('CheckDestFolderDto', function() {
     it('should create an instance of CheckDestFolderDto', function() {
       // uncomment below and update the code to test CheckDestFolderDto
-      //var instance = new DocspaceApiJavascript.CheckDestFolderDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CheckDestFolderDto);
+      //var instance = new Api.CheckDestFolderDto();
+      //expect(instance).to.be.a(Api.CheckDestFolderDto);
     });
 
     it('should have the property result (base name: "result")', function() {
       // uncomment below and update the code to test the property result
-      //var instance = new DocspaceApiJavascript.CheckDestFolderDto();
+      //var instance = new Api.CheckDestFolderDto();
       //expect(instance).to.be();
     });
 
     it('should have the property files (base name: "files")', function() {
       // uncomment below and update the code to test the property files
-      //var instance = new DocspaceApiJavascript.CheckDestFolderDto();
+      //var instance = new Api.CheckDestFolderDto();
       //expect(instance).to.be();
     });
 

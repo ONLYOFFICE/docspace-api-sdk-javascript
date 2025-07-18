@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ConfirmWrapper
+# Api.ConfirmWrapper
 
 
 ## Properties

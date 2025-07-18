@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SettingsRequestDto
+# Api.SettingsRequestDto
 The settings request parameters.
 
 ## Properties

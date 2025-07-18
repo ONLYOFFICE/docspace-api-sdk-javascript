@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.SaveAsPdfInteger();
+    instance = new Api.SaveAsPdfInteger();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('SaveAsPdfInteger', function() {
     it('should create an instance of SaveAsPdfInteger', function() {
       // uncomment below and update the code to test SaveAsPdfInteger
-      //var instance = new DocspaceApiJavascript.SaveAsPdfInteger();
-      //expect(instance).to.be.a(DocspaceApiJavascript.SaveAsPdfInteger);
+      //var instance = new Api.SaveAsPdfInteger();
+      //expect(instance).to.be.a(Api.SaveAsPdfInteger);
     });
 
     it('should have the property folderId (base name: "folderId")', function() {
       // uncomment below and update the code to test the property folderId
-      //var instance = new DocspaceApiJavascript.SaveAsPdfInteger();
+      //var instance = new Api.SaveAsPdfInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiJavascript.SaveAsPdfInteger();
+      //var instance = new Api.SaveAsPdfInteger();
       //expect(instance).to.be();
     });
 

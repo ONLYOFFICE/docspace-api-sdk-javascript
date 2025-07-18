@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CustomerInfoDto();
+    instance = new Api.CustomerInfoDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,31 +54,31 @@
   describe('CustomerInfoDto', function() {
     it('should create an instance of CustomerInfoDto', function() {
       // uncomment below and update the code to test CustomerInfoDto
-      //var instance = new DocspaceApiJavascript.CustomerInfoDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CustomerInfoDto);
+      //var instance = new Api.CustomerInfoDto();
+      //expect(instance).to.be.a(Api.CustomerInfoDto);
     });
 
     it('should have the property portalId (base name: "portalId")', function() {
       // uncomment below and update the code to test the property portalId
-      //var instance = new DocspaceApiJavascript.CustomerInfoDto();
+      //var instance = new Api.CustomerInfoDto();
       //expect(instance).to.be();
     });
 
     it('should have the property paymentMethodStatus (base name: "paymentMethodStatus")', function() {
       // uncomment below and update the code to test the property paymentMethodStatus
-      //var instance = new DocspaceApiJavascript.CustomerInfoDto();
+      //var instance = new Api.CustomerInfoDto();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiJavascript.CustomerInfoDto();
+      //var instance = new Api.CustomerInfoDto();
       //expect(instance).to.be();
     });
 
     it('should have the property payer (base name: "payer")', function() {
       // uncomment below and update the code to test the property payer
-      //var instance = new DocspaceApiJavascript.CustomerInfoDto();
+      //var instance = new Api.CustomerInfoDto();
       //expect(instance).to.be();
     });
 

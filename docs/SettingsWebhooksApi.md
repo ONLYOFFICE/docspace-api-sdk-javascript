@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SettingsWebhooksApi
+# Api.SettingsWebhooksApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -42,8 +42,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -65,9 +65,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
+let apiInstance = new Api.SettingsWebhooksApi();
 let opts = {
-  'createWebhooksConfigRequestsDto': new DocspaceApiJavascript.CreateWebhooksConfigRequestsDto() // CreateWebhooksConfigRequestsDto | 
+  'createWebhooksConfigRequestsDto': new Api.CreateWebhooksConfigRequestsDto() // CreateWebhooksConfigRequestsDto | 
 };
 apiInstance.createWebhook(opts, (error, data, response) => {
   if (error) {
@@ -110,8 +110,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -133,9 +133,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
+let apiInstance = new Api.SettingsWebhooksApi();
 let opts = {
-  'updateWebhooksConfigRequestsDto': new DocspaceApiJavascript.UpdateWebhooksConfigRequestsDto() // UpdateWebhooksConfigRequestsDto | 
+  'updateWebhooksConfigRequestsDto': new Api.UpdateWebhooksConfigRequestsDto() // UpdateWebhooksConfigRequestsDto | 
 };
 apiInstance.enableWebhook(opts, (error, data, response) => {
   if (error) {
@@ -175,8 +175,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -198,7 +198,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
+let apiInstance = new Api.SettingsWebhooksApi();
 apiInstance.getTenantWebhooks((error, data, response) => {
   if (error) {
     console.error(error);
@@ -237,8 +237,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -260,7 +260,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
+let apiInstance = new Api.SettingsWebhooksApi();
 apiInstance.getWebhookTriggers((error, data, response) => {
   if (error) {
     console.error(error);
@@ -312,8 +312,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -335,16 +335,16 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
+let apiInstance = new Api.SettingsWebhooksApi();
 let opts = {
   'deliveryFrom': new Date("2008-04-10T06:30+04:00"), // Date | The delivery start time for filtering webhook logs.
   'deliveryTo': new Date("2008-04-10T06:30+04:00"), // Date | The delivery end time for filtering webhook logs.
   'hookUri': "some text", // String | The destination URL where webhooks are delivered.
   'configId': 1234, // Number | The webhook configuration identifier.
   'eventId': 1234, // Number | The unique identifier of the event that triggered the webhook.
-  'groupStatus': new DocspaceApiJavascript.WebhookGroupStatus(), // WebhookGroupStatus | The status of the webhook delivery group.
+  'groupStatus': new Api.WebhookGroupStatus(), // WebhookGroupStatus | The status of the webhook delivery group.
   'userId': "aae1e103-bca5-9fa1-ba8c-42058b4abf28", // String | The identifier of the user associated with the webhook event.
-  'trigger': new DocspaceApiJavascript.WebhookTrigger(), // WebhookTrigger | The type of event that triggered the webhook.
+  'trigger': new Api.WebhookTrigger(), // WebhookTrigger | The type of event that triggered the webhook.
   'count': 1234, // Number | The maximum number of webhook log records to return in the query response.
   'startIndex': 1234 // Number | Specifies the starting index for retrieving webhook logs.  Used for pagination in the webhook delivery log queries.
 };
@@ -389,8 +389,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -412,7 +412,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
+let apiInstance = new Api.SettingsWebhooksApi();
 let id = 9846; // Number | The ID extracted from the route parameters.
 apiInstance.removeWebhook(id, (error, data, response) => {
   if (error) {
@@ -455,8 +455,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -478,7 +478,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
+let apiInstance = new Api.SettingsWebhooksApi();
 let id = 9846; // Number | The ID extracted from the route parameters.
 apiInstance.retryWebhook(id, (error, data, response) => {
   if (error) {
@@ -521,8 +521,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -544,9 +544,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
+let apiInstance = new Api.SettingsWebhooksApi();
 let opts = {
-  'webhookRetryRequestsDto': new DocspaceApiJavascript.WebhookRetryRequestsDto() // WebhookRetryRequestsDto | 
+  'webhookRetryRequestsDto': new Api.WebhookRetryRequestsDto() // WebhookRetryRequestsDto | 
 };
 apiInstance.retryWebhooks(opts, (error, data, response) => {
   if (error) {
@@ -589,8 +589,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -612,9 +612,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsWebhooksApi();
+let apiInstance = new Api.SettingsWebhooksApi();
 let opts = {
-  'updateWebhooksConfigRequestsDto': new DocspaceApiJavascript.UpdateWebhooksConfigRequestsDto() // UpdateWebhooksConfigRequestsDto | 
+  'updateWebhooksConfigRequestsDto': new Api.UpdateWebhooksConfigRequestsDto() // UpdateWebhooksConfigRequestsDto | 
 };
 apiInstance.updateWebhook(opts, (error, data, response) => {
   if (error) {

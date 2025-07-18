@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SubmitForm
+# Api.SubmitForm
 The \&quot;Complete &amp; Submit\&quot; button settings.
 
 ## Properties

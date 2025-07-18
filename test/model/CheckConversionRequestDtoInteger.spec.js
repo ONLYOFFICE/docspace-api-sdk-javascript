@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CheckConversionRequestDtoInteger();
+    instance = new Api.CheckConversionRequestDtoInteger();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,49 +54,49 @@
   describe('CheckConversionRequestDtoInteger', function() {
     it('should create an instance of CheckConversionRequestDtoInteger', function() {
       // uncomment below and update the code to test CheckConversionRequestDtoInteger
-      //var instance = new DocspaceApiJavascript.CheckConversionRequestDtoInteger();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CheckConversionRequestDtoInteger);
+      //var instance = new Api.CheckConversionRequestDtoInteger();
+      //expect(instance).to.be.a(Api.CheckConversionRequestDtoInteger);
     });
 
     it('should have the property fileId (base name: "fileId")', function() {
       // uncomment below and update the code to test the property fileId
-      //var instance = new DocspaceApiJavascript.CheckConversionRequestDtoInteger();
+      //var instance = new Api.CheckConversionRequestDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property sync (base name: "sync")', function() {
       // uncomment below and update the code to test the property sync
-      //var instance = new DocspaceApiJavascript.CheckConversionRequestDtoInteger();
+      //var instance = new Api.CheckConversionRequestDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property startConvert (base name: "startConvert")', function() {
       // uncomment below and update the code to test the property startConvert
-      //var instance = new DocspaceApiJavascript.CheckConversionRequestDtoInteger();
+      //var instance = new Api.CheckConversionRequestDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property version (base name: "version")', function() {
       // uncomment below and update the code to test the property version
-      //var instance = new DocspaceApiJavascript.CheckConversionRequestDtoInteger();
+      //var instance = new Api.CheckConversionRequestDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instance = new DocspaceApiJavascript.CheckConversionRequestDtoInteger();
+      //var instance = new Api.CheckConversionRequestDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property outputType (base name: "outputType")', function() {
       // uncomment below and update the code to test the property outputType
-      //var instance = new DocspaceApiJavascript.CheckConversionRequestDtoInteger();
+      //var instance = new Api.CheckConversionRequestDtoInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property createNewIfExist (base name: "createNewIfExist")', function() {
       // uncomment below and update the code to test the property createNewIfExist
-      //var instance = new DocspaceApiJavascript.CheckConversionRequestDtoInteger();
+      //var instance = new Api.CheckConversionRequestDtoInteger();
       //expect(instance).to.be();
     });
 

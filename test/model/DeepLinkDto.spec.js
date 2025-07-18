@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.DeepLinkDto();
+    instance = new Api.DeepLinkDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('DeepLinkDto', function() {
     it('should create an instance of DeepLinkDto', function() {
       // uncomment below and update the code to test DeepLinkDto
-      //var instance = new DocspaceApiJavascript.DeepLinkDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.DeepLinkDto);
+      //var instance = new Api.DeepLinkDto();
+      //expect(instance).to.be.a(Api.DeepLinkDto);
     });
 
     it('should have the property androidPackageName (base name: "androidPackageName")', function() {
       // uncomment below and update the code to test the property androidPackageName
-      //var instance = new DocspaceApiJavascript.DeepLinkDto();
+      //var instance = new Api.DeepLinkDto();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiJavascript.DeepLinkDto();
+      //var instance = new Api.DeepLinkDto();
       //expect(instance).to.be();
     });
 
     it('should have the property iosPackageId (base name: "iosPackageId")', function() {
       // uncomment below and update the code to test the property iosPackageId
-      //var instance = new DocspaceApiJavascript.DeepLinkDto();
+      //var instance = new Api.DeepLinkDto();
       //expect(instance).to.be();
     });
 

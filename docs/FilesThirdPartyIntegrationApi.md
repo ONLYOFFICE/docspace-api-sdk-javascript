@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FilesThirdPartyIntegrationApi
+# Api.FilesThirdPartyIntegrationApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -41,8 +41,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -64,7 +64,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesThirdPartyIntegrationApi();
+let apiInstance = new Api.FilesThirdPartyIntegrationApi();
 let providerId = 1234; // Number | The provider ID.
 apiInstance.deleteThirdParty(providerId, (error, data, response) => {
   if (error) {
@@ -104,8 +104,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -127,7 +127,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesThirdPartyIntegrationApi();
+let apiInstance = new Api.FilesThirdPartyIntegrationApi();
 apiInstance.getAllProviders((error, data, response) => {
   if (error) {
     console.error(error);
@@ -166,8 +166,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -189,7 +189,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesThirdPartyIntegrationApi();
+let apiInstance = new Api.FilesThirdPartyIntegrationApi();
 apiInstance.getBackupThirdPartyAccount((error, data, response) => {
   if (error) {
     console.error(error);
@@ -228,8 +228,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -251,7 +251,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesThirdPartyIntegrationApi();
+let apiInstance = new Api.FilesThirdPartyIntegrationApi();
 apiInstance.getCapabilities((error, data, response) => {
   if (error) {
     console.error(error);
@@ -290,8 +290,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -313,7 +313,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesThirdPartyIntegrationApi();
+let apiInstance = new Api.FilesThirdPartyIntegrationApi();
 apiInstance.getCommonThirdPartyFolders((error, data, response) => {
   if (error) {
     console.error(error);
@@ -352,8 +352,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -375,7 +375,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesThirdPartyIntegrationApi();
+let apiInstance = new Api.FilesThirdPartyIntegrationApi();
 apiInstance.getThirdPartyAccounts((error, data, response) => {
   if (error) {
     console.error(error);
@@ -417,8 +417,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -440,9 +440,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesThirdPartyIntegrationApi();
+let apiInstance = new Api.FilesThirdPartyIntegrationApi();
 let opts = {
-  'thirdPartyRequestDto': new DocspaceApiJavascript.ThirdPartyRequestDto() // ThirdPartyRequestDto | 
+  'thirdPartyRequestDto': new Api.ThirdPartyRequestDto() // ThirdPartyRequestDto | 
 };
 apiInstance.saveThirdParty(opts, (error, data, response) => {
   if (error) {
@@ -485,8 +485,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -508,9 +508,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesThirdPartyIntegrationApi();
+let apiInstance = new Api.FilesThirdPartyIntegrationApi();
 let opts = {
-  'thirdPartyBackupRequestDto': new DocspaceApiJavascript.ThirdPartyBackupRequestDto() // ThirdPartyBackupRequestDto | 
+  'thirdPartyBackupRequestDto': new Api.ThirdPartyBackupRequestDto() // ThirdPartyBackupRequestDto | 
 };
 apiInstance.saveThirdPartyBackup(opts, (error, data, response) => {
   if (error) {

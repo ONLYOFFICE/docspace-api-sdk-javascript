@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FilesSettingsApi
+# Api.FilesSettingsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -56,8 +56,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -79,9 +79,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
-  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
+  'settingsRequestDto': new Api.SettingsRequestDto() // SettingsRequestDto | 
 };
 apiInstance.changeAccessToThirdparty(opts, (error, data, response) => {
   if (error) {
@@ -124,8 +124,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -147,9 +147,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
-  'autoCleanupRequestDto': new DocspaceApiJavascript.AutoCleanupRequestDto() // AutoCleanupRequestDto | 
+  'autoCleanupRequestDto': new Api.AutoCleanupRequestDto() // AutoCleanupRequestDto | 
 };
 apiInstance.changeAutomaticallyCleanUp(opts, (error, data, response) => {
   if (error) {
@@ -192,8 +192,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -215,7 +215,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
   'requestBody': [0] // [Number] | Sharing rights (None, ReadWrite, Read, Restrict, Varies, Review, Comment, FillForms, CustomFilter, RoomAdmin, Editing, Collaborator).
 };
@@ -260,8 +260,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -283,9 +283,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
-  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
+  'settingsRequestDto': new Api.SettingsRequestDto() // SettingsRequestDto | 
 };
 apiInstance.changeDeleteConfirm(opts, (error, data, response) => {
   if (error) {
@@ -328,8 +328,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -351,9 +351,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
-  'displayRequestDto': new DocspaceApiJavascript.DisplayRequestDto() // DisplayRequestDto | 
+  'displayRequestDto': new Api.DisplayRequestDto() // DisplayRequestDto | 
 };
 apiInstance.changeDownloadZipFromBody(opts, (error, data, response) => {
   if (error) {
@@ -396,8 +396,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -419,9 +419,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
-  'checkDocServiceUrlRequestDto': new DocspaceApiJavascript.CheckDocServiceUrlRequestDto() // CheckDocServiceUrlRequestDto | 
+  'checkDocServiceUrlRequestDto': new Api.CheckDocServiceUrlRequestDto() // CheckDocServiceUrlRequestDto | 
 };
 apiInstance.checkDocServiceUrl(opts, (error, data, response) => {
   if (error) {
@@ -464,8 +464,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -487,9 +487,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
-  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
+  'settingsRequestDto': new Api.SettingsRequestDto() // SettingsRequestDto | 
 };
 apiInstance.displayFileExtension(opts, (error, data, response) => {
   if (error) {
@@ -532,8 +532,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -555,9 +555,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
-  'displayRequestDto': new DocspaceApiJavascript.DisplayRequestDto() // DisplayRequestDto | 
+  'displayRequestDto': new Api.DisplayRequestDto() // DisplayRequestDto | 
 };
 apiInstance.externalShare(opts, (error, data, response) => {
   if (error) {
@@ -600,8 +600,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -623,9 +623,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
-  'displayRequestDto': new DocspaceApiJavascript.DisplayRequestDto() // DisplayRequestDto | 
+  'displayRequestDto': new Api.DisplayRequestDto() // DisplayRequestDto | 
 };
 apiInstance.externalShareSocialMedia(opts, (error, data, response) => {
   if (error) {
@@ -665,8 +665,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -688,7 +688,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 apiInstance.forcesave((error, data, response) => {
   if (error) {
     console.error(error);
@@ -727,8 +727,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -750,7 +750,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 apiInstance.getAutomaticallyCleanUp((error, data, response) => {
   if (error) {
     console.error(error);
@@ -792,9 +792,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
   'version': true // Boolean | Specifies whether to return the editor version or not.
 };
@@ -836,8 +836,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -859,7 +859,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 apiInstance.getFilesModule((error, data, response) => {
   if (error) {
     console.error(error);
@@ -898,9 +898,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 apiInstance.getFilesSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -942,8 +942,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -965,9 +965,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
-  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
+  'settingsRequestDto': new Api.SettingsRequestDto() // SettingsRequestDto | 
 };
 apiInstance.hideConfirmCancelOperation(opts, (error, data, response) => {
   if (error) {
@@ -1010,8 +1010,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1033,9 +1033,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
-  'hideConfirmConvertRequestDto': new DocspaceApiJavascript.HideConfirmConvertRequestDto() // HideConfirmConvertRequestDto | 
+  'hideConfirmConvertRequestDto': new Api.HideConfirmConvertRequestDto() // HideConfirmConvertRequestDto | 
 };
 apiInstance.hideConfirmConvert(opts, (error, data, response) => {
   if (error) {
@@ -1078,8 +1078,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1101,9 +1101,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
-  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
+  'settingsRequestDto': new Api.SettingsRequestDto() // SettingsRequestDto | 
 };
 apiInstance.hideConfirmRoomLifetime(opts, (error, data, response) => {
   if (error) {
@@ -1143,8 +1143,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1166,7 +1166,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 apiInstance.isAvailablePrivacyRoomSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -1208,8 +1208,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1231,9 +1231,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
-  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
+  'settingsRequestDto': new Api.SettingsRequestDto() // SettingsRequestDto | 
 };
 apiInstance.keepNewFileName(opts, (error, data, response) => {
   if (error) {
@@ -1276,8 +1276,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1299,9 +1299,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
-  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
+  'settingsRequestDto': new Api.SettingsRequestDto() // SettingsRequestDto | 
 };
 apiInstance.setOpenEditorInSameTab(opts, (error, data, response) => {
   if (error) {
@@ -1341,8 +1341,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1364,7 +1364,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 apiInstance.storeForcesave((error, data, response) => {
   if (error) {
     console.error(error);
@@ -1406,8 +1406,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1429,9 +1429,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
-  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
+  'settingsRequestDto': new Api.SettingsRequestDto() // SettingsRequestDto | 
 };
 apiInstance.storeOriginal(opts, (error, data, response) => {
   if (error) {
@@ -1474,8 +1474,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1497,9 +1497,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesSettingsApi();
+let apiInstance = new Api.FilesSettingsApi();
 let opts = {
-  'settingsRequestDto': new DocspaceApiJavascript.SettingsRequestDto() // SettingsRequestDto | 
+  'settingsRequestDto': new Api.SettingsRequestDto() // SettingsRequestDto | 
 };
 apiInstance.updateFileIfExist(opts, (error, data, response) => {
   if (error) {

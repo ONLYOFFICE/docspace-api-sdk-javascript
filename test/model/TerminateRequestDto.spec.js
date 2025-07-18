@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.TerminateRequestDto();
+    instance = new Api.TerminateRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('TerminateRequestDto', function() {
     it('should create an instance of TerminateRequestDto', function() {
       // uncomment below and update the code to test TerminateRequestDto
-      //var instance = new DocspaceApiJavascript.TerminateRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.TerminateRequestDto);
+      //var instance = new Api.TerminateRequestDto();
+      //expect(instance).to.be.a(Api.TerminateRequestDto);
     });
 
     it('should have the property userId (base name: "userId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instance = new DocspaceApiJavascript.TerminateRequestDto();
+      //var instance = new Api.TerminateRequestDto();
       //expect(instance).to.be();
     });
 

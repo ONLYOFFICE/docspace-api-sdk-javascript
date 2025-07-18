@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ProductAdministratorDto
+# Api.ProductAdministratorDto
 The product administrator parameters.
 
 ## Properties

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ContentType
+# Api.ContentType
 
 
 ## Properties

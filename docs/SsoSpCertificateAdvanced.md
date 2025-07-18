@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SsoSpCertificateAdvanced
+# Api.SsoSpCertificateAdvanced
 The SP advanced certificate parameters.
 
 ## Properties

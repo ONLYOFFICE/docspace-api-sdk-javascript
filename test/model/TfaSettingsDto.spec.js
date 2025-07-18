@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.TfaSettingsDto();
+    instance = new Api.TfaSettingsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,49 +54,49 @@
   describe('TfaSettingsDto', function() {
     it('should create an instance of TfaSettingsDto', function() {
       // uncomment below and update the code to test TfaSettingsDto
-      //var instance = new DocspaceApiJavascript.TfaSettingsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.TfaSettingsDto);
+      //var instance = new Api.TfaSettingsDto();
+      //expect(instance).to.be.a(Api.TfaSettingsDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.TfaSettingsDto();
+      //var instance = new Api.TfaSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiJavascript.TfaSettingsDto();
+      //var instance = new Api.TfaSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property enabled (base name: "enabled")', function() {
       // uncomment below and update the code to test the property enabled
-      //var instance = new DocspaceApiJavascript.TfaSettingsDto();
+      //var instance = new Api.TfaSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property avaliable (base name: "avaliable")', function() {
       // uncomment below and update the code to test the property avaliable
-      //var instance = new DocspaceApiJavascript.TfaSettingsDto();
+      //var instance = new Api.TfaSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property trustedIps (base name: "trustedIps")', function() {
       // uncomment below and update the code to test the property trustedIps
-      //var instance = new DocspaceApiJavascript.TfaSettingsDto();
+      //var instance = new Api.TfaSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property mandatoryUsers (base name: "mandatoryUsers")', function() {
       // uncomment below and update the code to test the property mandatoryUsers
-      //var instance = new DocspaceApiJavascript.TfaSettingsDto();
+      //var instance = new Api.TfaSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property mandatoryGroups (base name: "mandatoryGroups")', function() {
       // uncomment below and update the code to test the property mandatoryGroups
-      //var instance = new DocspaceApiJavascript.TfaSettingsDto();
+      //var instance = new Api.TfaSettingsDto();
       //expect(instance).to.be();
     });
 

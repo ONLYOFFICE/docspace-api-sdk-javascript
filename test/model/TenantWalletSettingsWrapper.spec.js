@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.TenantWalletSettingsWrapper();
+    instance = new Api.TenantWalletSettingsWrapper();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('TenantWalletSettingsWrapper', function() {
     it('should create an instance of TenantWalletSettingsWrapper', function() {
       // uncomment below and update the code to test TenantWalletSettingsWrapper
-      //var instance = new DocspaceApiJavascript.TenantWalletSettingsWrapper();
-      //expect(instance).to.be.a(DocspaceApiJavascript.TenantWalletSettingsWrapper);
+      //var instance = new Api.TenantWalletSettingsWrapper();
+      //expect(instance).to.be.a(Api.TenantWalletSettingsWrapper);
     });
 
     it('should have the property settings (base name: "settings")', function() {
       // uncomment below and update the code to test the property settings
-      //var instance = new DocspaceApiJavascript.TenantWalletSettingsWrapper();
+      //var instance = new Api.TenantWalletSettingsWrapper();
       //expect(instance).to.be();
     });
 

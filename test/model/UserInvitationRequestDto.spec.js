@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.UserInvitationRequestDto();
+    instance = new Api.UserInvitationRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('UserInvitationRequestDto', function() {
     it('should create an instance of UserInvitationRequestDto', function() {
       // uncomment below and update the code to test UserInvitationRequestDto
-      //var instance = new DocspaceApiJavascript.UserInvitationRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.UserInvitationRequestDto);
+      //var instance = new Api.UserInvitationRequestDto();
+      //expect(instance).to.be.a(Api.UserInvitationRequestDto);
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new DocspaceApiJavascript.UserInvitationRequestDto();
+      //var instance = new Api.UserInvitationRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiJavascript.UserInvitationRequestDto();
+      //var instance = new Api.UserInvitationRequestDto();
       //expect(instance).to.be();
     });
 

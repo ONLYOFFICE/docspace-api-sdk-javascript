@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.MigratingApiFiles();
+    instance = new Api.MigratingApiFiles();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('MigratingApiFiles', function() {
     it('should create an instance of MigratingApiFiles', function() {
       // uncomment below and update the code to test MigratingApiFiles
-      //var instance = new DocspaceApiJavascript.MigratingApiFiles();
-      //expect(instance).to.be.a(DocspaceApiJavascript.MigratingApiFiles);
+      //var instance = new Api.MigratingApiFiles();
+      //expect(instance).to.be.a(Api.MigratingApiFiles);
     });
 
     it('should have the property foldersCount (base name: "foldersCount")', function() {
       // uncomment below and update the code to test the property foldersCount
-      //var instance = new DocspaceApiJavascript.MigratingApiFiles();
+      //var instance = new Api.MigratingApiFiles();
       //expect(instance).to.be();
     });
 
     it('should have the property filesCount (base name: "filesCount")', function() {
       // uncomment below and update the code to test the property filesCount
-      //var instance = new DocspaceApiJavascript.MigratingApiFiles();
+      //var instance = new Api.MigratingApiFiles();
       //expect(instance).to.be();
     });
 
     it('should have the property bytesTotal (base name: "bytesTotal")', function() {
       // uncomment below and update the code to test the property bytesTotal
-      //var instance = new DocspaceApiJavascript.MigratingApiFiles();
+      //var instance = new Api.MigratingApiFiles();
       //expect(instance).to.be();
     });
 

@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CronParams();
+    instance = new Api.CronParams();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('CronParams', function() {
     it('should create an instance of CronParams', function() {
       // uncomment below and update the code to test CronParams
-      //var instance = new DocspaceApiJavascript.CronParams();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CronParams);
+      //var instance = new Api.CronParams();
+      //expect(instance).to.be.a(Api.CronParams);
     });
 
     it('should have the property period (base name: "period")', function() {
       // uncomment below and update the code to test the property period
-      //var instance = new DocspaceApiJavascript.CronParams();
+      //var instance = new Api.CronParams();
       //expect(instance).to.be();
     });
 
     it('should have the property hour (base name: "hour")', function() {
       // uncomment below and update the code to test the property hour
-      //var instance = new DocspaceApiJavascript.CronParams();
+      //var instance = new Api.CronParams();
       //expect(instance).to.be();
     });
 
     it('should have the property day (base name: "day")', function() {
       // uncomment below and update the code to test the property day
-      //var instance = new DocspaceApiJavascript.CronParams();
+      //var instance = new Api.CronParams();
       //expect(instance).to.be();
     });
 

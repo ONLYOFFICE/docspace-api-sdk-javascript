@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.MembersRequest();
+    instance = new Api.MembersRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('MembersRequest', function() {
     it('should create an instance of MembersRequest', function() {
       // uncomment below and update the code to test MembersRequest
-      //var instance = new DocspaceApiJavascript.MembersRequest();
-      //expect(instance).to.be.a(DocspaceApiJavascript.MembersRequest);
+      //var instance = new Api.MembersRequest();
+      //expect(instance).to.be.a(Api.MembersRequest);
     });
 
     it('should have the property members (base name: "members")', function() {
       // uncomment below and update the code to test the property members
-      //var instance = new DocspaceApiJavascript.MembersRequest();
+      //var instance = new Api.MembersRequest();
       //expect(instance).to.be();
     });
 

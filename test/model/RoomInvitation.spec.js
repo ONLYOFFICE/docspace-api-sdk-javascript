@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.RoomInvitation();
+    instance = new Api.RoomInvitation();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('RoomInvitation', function() {
     it('should create an instance of RoomInvitation', function() {
       // uncomment below and update the code to test RoomInvitation
-      //var instance = new DocspaceApiJavascript.RoomInvitation();
-      //expect(instance).to.be.a(DocspaceApiJavascript.RoomInvitation);
+      //var instance = new Api.RoomInvitation();
+      //expect(instance).to.be.a(Api.RoomInvitation);
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiJavascript.RoomInvitation();
+      //var instance = new Api.RoomInvitation();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.RoomInvitation();
+      //var instance = new Api.RoomInvitation();
       //expect(instance).to.be();
     });
 
     it('should have the property access (base name: "access")', function() {
       // uncomment below and update the code to test the property access
-      //var instance = new DocspaceApiJavascript.RoomInvitation();
+      //var instance = new Api.RoomInvitation();
       //expect(instance).to.be();
     });
 

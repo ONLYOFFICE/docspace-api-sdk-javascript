@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ContentDisposition
+# Api.ContentDisposition
 
 
 ## Properties

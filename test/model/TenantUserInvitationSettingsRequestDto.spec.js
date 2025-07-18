@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.TenantUserInvitationSettingsRequestDto();
+    instance = new Api.TenantUserInvitationSettingsRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('TenantUserInvitationSettingsRequestDto', function() {
     it('should create an instance of TenantUserInvitationSettingsRequestDto', function() {
       // uncomment below and update the code to test TenantUserInvitationSettingsRequestDto
-      //var instance = new DocspaceApiJavascript.TenantUserInvitationSettingsRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.TenantUserInvitationSettingsRequestDto);
+      //var instance = new Api.TenantUserInvitationSettingsRequestDto();
+      //expect(instance).to.be.a(Api.TenantUserInvitationSettingsRequestDto);
     });
 
     it('should have the property allowInvitingMembers (base name: "allowInvitingMembers")', function() {
       // uncomment below and update the code to test the property allowInvitingMembers
-      //var instance = new DocspaceApiJavascript.TenantUserInvitationSettingsRequestDto();
+      //var instance = new Api.TenantUserInvitationSettingsRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property allowInvitingGuests (base name: "allowInvitingGuests")', function() {
       // uncomment below and update the code to test the property allowInvitingGuests
-      //var instance = new DocspaceApiJavascript.TenantUserInvitationSettingsRequestDto();
+      //var instance = new Api.TenantUserInvitationSettingsRequestDto();
       //expect(instance).to.be();
     });
 

@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.AuthServiceRequestsDto();
+    instance = new Api.AuthServiceRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,43 +54,43 @@
   describe('AuthServiceRequestsDto', function() {
     it('should create an instance of AuthServiceRequestsDto', function() {
       // uncomment below and update the code to test AuthServiceRequestsDto
-      //var instance = new DocspaceApiJavascript.AuthServiceRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.AuthServiceRequestsDto);
+      //var instance = new Api.AuthServiceRequestsDto();
+      //expect(instance).to.be.a(Api.AuthServiceRequestsDto);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiJavascript.AuthServiceRequestsDto();
+      //var instance = new Api.AuthServiceRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiJavascript.AuthServiceRequestsDto();
+      //var instance = new Api.AuthServiceRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new DocspaceApiJavascript.AuthServiceRequestsDto();
+      //var instance = new Api.AuthServiceRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property instruction (base name: "instruction")', function() {
       // uncomment below and update the code to test the property instruction
-      //var instance = new DocspaceApiJavascript.AuthServiceRequestsDto();
+      //var instance = new Api.AuthServiceRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property canSet (base name: "canSet")', function() {
       // uncomment below and update the code to test the property canSet
-      //var instance = new DocspaceApiJavascript.AuthServiceRequestsDto();
+      //var instance = new Api.AuthServiceRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property props (base name: "props")', function() {
       // uncomment below and update the code to test the property props
-      //var instance = new DocspaceApiJavascript.AuthServiceRequestsDto();
+      //var instance = new Api.AuthServiceRequestsDto();
       //expect(instance).to.be();
     });
 

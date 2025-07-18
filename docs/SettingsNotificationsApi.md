@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SettingsNotificationsApi
+# Api.SettingsNotificationsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -37,8 +37,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -60,8 +60,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsNotificationsApi();
-let type = new DocspaceApiJavascript.NotificationType(); // NotificationType | The type of notification to query, specified in the route.
+let apiInstance = new Api.SettingsNotificationsApi();
+let type = new Api.NotificationType(); // NotificationType | The type of notification to query, specified in the route.
 apiInstance.getNotificationSettings(type, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -100,8 +100,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -123,7 +123,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsNotificationsApi();
+let apiInstance = new Api.SettingsNotificationsApi();
 apiInstance.getRoomsNotificationSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -165,8 +165,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -188,9 +188,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsNotificationsApi();
+let apiInstance = new Api.SettingsNotificationsApi();
 let opts = {
-  'notificationSettingsRequestsDto': new DocspaceApiJavascript.NotificationSettingsRequestsDto() // NotificationSettingsRequestsDto | 
+  'notificationSettingsRequestsDto': new Api.NotificationSettingsRequestsDto() // NotificationSettingsRequestsDto | 
 };
 apiInstance.setNotificationSettings(opts, (error, data, response) => {
   if (error) {
@@ -233,8 +233,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -256,9 +256,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsNotificationsApi();
+let apiInstance = new Api.SettingsNotificationsApi();
 let opts = {
-  'roomsNotificationsSettingsRequestDto': new DocspaceApiJavascript.RoomsNotificationsSettingsRequestDto() // RoomsNotificationsSettingsRequestDto | 
+  'roomsNotificationsSettingsRequestDto': new Api.RoomsNotificationsSettingsRequestDto() // RoomsNotificationsSettingsRequestDto | 
 };
 apiInstance.setRoomsNotificationStatus(opts, (error, data, response) => {
   if (error) {

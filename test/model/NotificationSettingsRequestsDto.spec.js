@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.NotificationSettingsRequestsDto();
+    instance = new Api.NotificationSettingsRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('NotificationSettingsRequestsDto', function() {
     it('should create an instance of NotificationSettingsRequestsDto', function() {
       // uncomment below and update the code to test NotificationSettingsRequestsDto
-      //var instance = new DocspaceApiJavascript.NotificationSettingsRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.NotificationSettingsRequestsDto);
+      //var instance = new Api.NotificationSettingsRequestsDto();
+      //expect(instance).to.be.a(Api.NotificationSettingsRequestsDto);
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new DocspaceApiJavascript.NotificationSettingsRequestsDto();
+      //var instance = new Api.NotificationSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isEnabled (base name: "isEnabled")', function() {
       // uncomment below and update the code to test the property isEnabled
-      //var instance = new DocspaceApiJavascript.NotificationSettingsRequestsDto();
+      //var instance = new Api.NotificationSettingsRequestsDto();
       //expect(instance).to.be();
     });
 

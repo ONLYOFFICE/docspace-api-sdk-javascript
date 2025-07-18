@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.LockFileParameters
+# Api.LockFileParameters
 The parameters for locking a file.
 
 ## Properties

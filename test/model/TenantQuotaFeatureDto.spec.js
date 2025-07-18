@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.TenantQuotaFeatureDto();
+    instance = new Api.TenantQuotaFeatureDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,49 +54,49 @@
   describe('TenantQuotaFeatureDto', function() {
     it('should create an instance of TenantQuotaFeatureDto', function() {
       // uncomment below and update the code to test TenantQuotaFeatureDto
-      //var instance = new DocspaceApiJavascript.TenantQuotaFeatureDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.TenantQuotaFeatureDto);
+      //var instance = new Api.TenantQuotaFeatureDto();
+      //expect(instance).to.be.a(Api.TenantQuotaFeatureDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.TenantQuotaFeatureDto();
+      //var instance = new Api.TenantQuotaFeatureDto();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiJavascript.TenantQuotaFeatureDto();
+      //var instance = new Api.TenantQuotaFeatureDto();
       //expect(instance).to.be();
     });
 
     it('should have the property image (base name: "image")', function() {
       // uncomment below and update the code to test the property image
-      //var instance = new DocspaceApiJavascript.TenantQuotaFeatureDto();
+      //var instance = new Api.TenantQuotaFeatureDto();
       //expect(instance).to.be();
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new DocspaceApiJavascript.TenantQuotaFeatureDto();
+      //var instance = new Api.TenantQuotaFeatureDto();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new DocspaceApiJavascript.TenantQuotaFeatureDto();
+      //var instance = new Api.TenantQuotaFeatureDto();
       //expect(instance).to.be();
     });
 
     it('should have the property used (base name: "used")', function() {
       // uncomment below and update the code to test the property used
-      //var instance = new DocspaceApiJavascript.TenantQuotaFeatureDto();
+      //var instance = new Api.TenantQuotaFeatureDto();
       //expect(instance).to.be();
     });
 
     it('should have the property priceTitle (base name: "priceTitle")', function() {
       // uncomment below and update the code to test the property priceTitle
-      //var instance = new DocspaceApiJavascript.TenantQuotaFeatureDto();
+      //var instance = new Api.TenantQuotaFeatureDto();
       //expect(instance).to.be();
     });
 

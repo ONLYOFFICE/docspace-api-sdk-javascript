@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.MailDomainSettingsRequestsDto();
+    instance = new Api.MailDomainSettingsRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('MailDomainSettingsRequestsDto', function() {
     it('should create an instance of MailDomainSettingsRequestsDto', function() {
       // uncomment below and update the code to test MailDomainSettingsRequestsDto
-      //var instance = new DocspaceApiJavascript.MailDomainSettingsRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.MailDomainSettingsRequestsDto);
+      //var instance = new Api.MailDomainSettingsRequestsDto();
+      //expect(instance).to.be.a(Api.MailDomainSettingsRequestsDto);
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new DocspaceApiJavascript.MailDomainSettingsRequestsDto();
+      //var instance = new Api.MailDomainSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property domains (base name: "domains")', function() {
       // uncomment below and update the code to test the property domains
-      //var instance = new DocspaceApiJavascript.MailDomainSettingsRequestsDto();
+      //var instance = new Api.MailDomainSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property inviteUsersAsVisitors (base name: "inviteUsersAsVisitors")', function() {
       // uncomment below and update the code to test the property inviteUsersAsVisitors
-      //var instance = new DocspaceApiJavascript.MailDomainSettingsRequestsDto();
+      //var instance = new Api.MailDomainSettingsRequestsDto();
       //expect(instance).to.be();
     });
 

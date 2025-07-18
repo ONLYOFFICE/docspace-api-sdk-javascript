@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.EditHistoryDataDto
+# Api.EditHistoryDataDto
 The file editing history data.
 
 ## Properties

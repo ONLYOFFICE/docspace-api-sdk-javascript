@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.OAuth20Token();
+    instance = new Api.OAuth20Token();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,55 +54,55 @@
   describe('OAuth20Token', function() {
     it('should create an instance of OAuth20Token', function() {
       // uncomment below and update the code to test OAuth20Token
-      //var instance = new DocspaceApiJavascript.OAuth20Token();
-      //expect(instance).to.be.a(DocspaceApiJavascript.OAuth20Token);
+      //var instance = new Api.OAuth20Token();
+      //expect(instance).to.be.a(Api.OAuth20Token);
     });
 
     it('should have the property accessToken (base name: "access_token")', function() {
       // uncomment below and update the code to test the property accessToken
-      //var instance = new DocspaceApiJavascript.OAuth20Token();
+      //var instance = new Api.OAuth20Token();
       //expect(instance).to.be();
     });
 
     it('should have the property refreshToken (base name: "refresh_token")', function() {
       // uncomment below and update the code to test the property refreshToken
-      //var instance = new DocspaceApiJavascript.OAuth20Token();
+      //var instance = new Api.OAuth20Token();
       //expect(instance).to.be();
     });
 
     it('should have the property expiresIn (base name: "expires_in")', function() {
       // uncomment below and update the code to test the property expiresIn
-      //var instance = new DocspaceApiJavascript.OAuth20Token();
+      //var instance = new Api.OAuth20Token();
       //expect(instance).to.be();
     });
 
     it('should have the property clientId (base name: "client_id")', function() {
       // uncomment below and update the code to test the property clientId
-      //var instance = new DocspaceApiJavascript.OAuth20Token();
+      //var instance = new Api.OAuth20Token();
       //expect(instance).to.be();
     });
 
     it('should have the property clientSecret (base name: "client_secret")', function() {
       // uncomment below and update the code to test the property clientSecret
-      //var instance = new DocspaceApiJavascript.OAuth20Token();
+      //var instance = new Api.OAuth20Token();
       //expect(instance).to.be();
     });
 
     it('should have the property redirectUri (base name: "redirect_uri")', function() {
       // uncomment below and update the code to test the property redirectUri
-      //var instance = new DocspaceApiJavascript.OAuth20Token();
+      //var instance = new Api.OAuth20Token();
       //expect(instance).to.be();
     });
 
     it('should have the property timestamp (base name: "timestamp")', function() {
       // uncomment below and update the code to test the property timestamp
-      //var instance = new DocspaceApiJavascript.OAuth20Token();
+      //var instance = new Api.OAuth20Token();
       //expect(instance).to.be();
     });
 
     it('should have the property isExpired (base name: "isExpired")', function() {
       // uncomment below and update the code to test the property isExpired
-      //var instance = new DocspaceApiJavascript.OAuth20Token();
+      //var instance = new Api.OAuth20Token();
       //expect(instance).to.be();
     });
 

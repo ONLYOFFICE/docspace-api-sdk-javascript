@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SettingsLoginSettingsApi
+# Api.SettingsLoginSettingsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -33,8 +33,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -56,7 +56,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsLoginSettingsApi();
+let apiInstance = new Api.SettingsLoginSettingsApi();
 apiInstance.getLoginSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -95,8 +95,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -118,7 +118,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsLoginSettingsApi();
+let apiInstance = new Api.SettingsLoginSettingsApi();
 apiInstance.setDefaultLoginSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -160,8 +160,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -183,9 +183,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsLoginSettingsApi();
+let apiInstance = new Api.SettingsLoginSettingsApi();
 let opts = {
-  'loginSettingsRequestDto': new DocspaceApiJavascript.LoginSettingsRequestDto() // LoginSettingsRequestDto | 
+  'loginSettingsRequestDto': new Api.LoginSettingsRequestDto() // LoginSettingsRequestDto | 
 };
 apiInstance.updateLoginSettings(opts, (error, data, response) => {
   if (error) {

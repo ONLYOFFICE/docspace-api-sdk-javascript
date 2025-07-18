@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.RecaptchaType
+# Api.RecaptchaType
 [0 - Default, 1 - AndroidV2, 2 - iOSV2, 3 - hCaptcha]
 
 ## Enum

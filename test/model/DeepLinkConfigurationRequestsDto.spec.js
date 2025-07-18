@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.DeepLinkConfigurationRequestsDto();
+    instance = new Api.DeepLinkConfigurationRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('DeepLinkConfigurationRequestsDto', function() {
     it('should create an instance of DeepLinkConfigurationRequestsDto', function() {
       // uncomment below and update the code to test DeepLinkConfigurationRequestsDto
-      //var instance = new DocspaceApiJavascript.DeepLinkConfigurationRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.DeepLinkConfigurationRequestsDto);
+      //var instance = new Api.DeepLinkConfigurationRequestsDto();
+      //expect(instance).to.be.a(Api.DeepLinkConfigurationRequestsDto);
     });
 
     it('should have the property deepLinkSettings (base name: "deepLinkSettings")', function() {
       // uncomment below and update the code to test the property deepLinkSettings
-      //var instance = new DocspaceApiJavascript.DeepLinkConfigurationRequestsDto();
+      //var instance = new Api.DeepLinkConfigurationRequestsDto();
       //expect(instance).to.be();
     });
 

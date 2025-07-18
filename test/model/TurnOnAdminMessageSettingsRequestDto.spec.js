@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.TurnOnAdminMessageSettingsRequestDto();
+    instance = new Api.TurnOnAdminMessageSettingsRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('TurnOnAdminMessageSettingsRequestDto', function() {
     it('should create an instance of TurnOnAdminMessageSettingsRequestDto', function() {
       // uncomment below and update the code to test TurnOnAdminMessageSettingsRequestDto
-      //var instance = new DocspaceApiJavascript.TurnOnAdminMessageSettingsRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.TurnOnAdminMessageSettingsRequestDto);
+      //var instance = new Api.TurnOnAdminMessageSettingsRequestDto();
+      //expect(instance).to.be.a(Api.TurnOnAdminMessageSettingsRequestDto);
     });
 
     it('should have the property turnOn (base name: "turnOn")', function() {
       // uncomment below and update the code to test the property turnOn
-      //var instance = new DocspaceApiJavascript.TurnOnAdminMessageSettingsRequestDto();
+      //var instance = new Api.TurnOnAdminMessageSettingsRequestDto();
       //expect(instance).to.be();
     });
 

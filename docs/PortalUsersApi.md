@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.PortalUsersApi
+# Api.PortalUsersApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -38,8 +38,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -61,8 +61,8 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalUsersApi();
-let employeeType = new DocspaceApiJavascript.EmployeeType(); // EmployeeType | The type of employee role for the invitation link (All, RoomAdmin, Guest, DocSpaceAdmin, User).
+let apiInstance = new Api.PortalUsersApi();
+let employeeType = new Api.EmployeeType(); // EmployeeType | The type of employee role for the invitation link (All, RoomAdmin, Guest, DocSpaceAdmin, User).
 apiInstance.getInvitationLink(employeeType, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -101,8 +101,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -124,7 +124,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalUsersApi();
+let apiInstance = new Api.PortalUsersApi();
 apiInstance.getPortalUsersCount((error, data, response) => {
   if (error) {
     console.error(error);
@@ -166,8 +166,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -189,7 +189,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalUsersApi();
+let apiInstance = new Api.PortalUsersApi();
 let userID = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The user ID extracted from the route parameters.
 apiInstance.getUserById(userID, (error, data, response) => {
   if (error) {
@@ -229,8 +229,8 @@ null (empty response body)
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -252,7 +252,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PortalUsersApi();
+let apiInstance = new Api.PortalUsersApi();
 apiInstance.markGiftMessageAsRead((error, data, response) => {
   if (error) {
     console.error(error);
@@ -295,9 +295,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.PortalUsersApi();
+let apiInstance = new Api.PortalUsersApi();
 let opts = {
   'userid': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The user ID to receive the congratulatory message.
   'key': "some text" // String | The template identifier or email configuration key.

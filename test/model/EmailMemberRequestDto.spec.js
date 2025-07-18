@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.EmailMemberRequestDto();
+    instance = new Api.EmailMemberRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('EmailMemberRequestDto', function() {
     it('should create an instance of EmailMemberRequestDto', function() {
       // uncomment below and update the code to test EmailMemberRequestDto
-      //var instance = new DocspaceApiJavascript.EmailMemberRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.EmailMemberRequestDto);
+      //var instance = new Api.EmailMemberRequestDto();
+      //expect(instance).to.be.a(Api.EmailMemberRequestDto);
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiJavascript.EmailMemberRequestDto();
+      //var instance = new Api.EmailMemberRequestDto();
       //expect(instance).to.be();
     });
 

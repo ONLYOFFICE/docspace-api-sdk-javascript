@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.DeepLinkDto
+# Api.DeepLinkDto
 The deep link parameters.
 
 ## Properties

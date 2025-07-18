@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.MigratingApiGroup();
+    instance = new Api.MigratingApiGroup();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,31 +54,31 @@
   describe('MigratingApiGroup', function() {
     it('should create an instance of MigratingApiGroup', function() {
       // uncomment below and update the code to test MigratingApiGroup
-      //var instance = new DocspaceApiJavascript.MigratingApiGroup();
-      //expect(instance).to.be.a(DocspaceApiJavascript.MigratingApiGroup);
+      //var instance = new Api.MigratingApiGroup();
+      //expect(instance).to.be.a(Api.MigratingApiGroup);
     });
 
     it('should have the property shouldImport (base name: "shouldImport")', function() {
       // uncomment below and update the code to test the property shouldImport
-      //var instance = new DocspaceApiJavascript.MigratingApiGroup();
+      //var instance = new Api.MigratingApiGroup();
       //expect(instance).to.be();
     });
 
     it('should have the property groupName (base name: "groupName")', function() {
       // uncomment below and update the code to test the property groupName
-      //var instance = new DocspaceApiJavascript.MigratingApiGroup();
+      //var instance = new Api.MigratingApiGroup();
       //expect(instance).to.be();
     });
 
     it('should have the property moduleName (base name: "moduleName")', function() {
       // uncomment below and update the code to test the property moduleName
-      //var instance = new DocspaceApiJavascript.MigratingApiGroup();
+      //var instance = new Api.MigratingApiGroup();
       //expect(instance).to.be();
     });
 
     it('should have the property userUidList (base name: "userUidList")', function() {
       // uncomment below and update the code to test the property userUidList
-      //var instance = new DocspaceApiJavascript.MigratingApiGroup();
+      //var instance = new Api.MigratingApiGroup();
       //expect(instance).to.be();
     });
 

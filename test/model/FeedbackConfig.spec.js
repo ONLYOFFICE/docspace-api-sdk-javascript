@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.FeedbackConfig();
+    instance = new Api.FeedbackConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('FeedbackConfig', function() {
     it('should create an instance of FeedbackConfig', function() {
       // uncomment below and update the code to test FeedbackConfig
-      //var instance = new DocspaceApiJavascript.FeedbackConfig();
-      //expect(instance).to.be.a(DocspaceApiJavascript.FeedbackConfig);
+      //var instance = new Api.FeedbackConfig();
+      //expect(instance).to.be.a(Api.FeedbackConfig);
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiJavascript.FeedbackConfig();
+      //var instance = new Api.FeedbackConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property visible (base name: "visible")', function() {
       // uncomment below and update the code to test the property visible
-      //var instance = new DocspaceApiJavascript.FeedbackConfig();
+      //var instance = new Api.FeedbackConfig();
       //expect(instance).to.be();
     });
 

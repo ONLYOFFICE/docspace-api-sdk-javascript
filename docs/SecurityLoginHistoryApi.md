@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SecurityLoginHistoryApi
+# Api.SecurityLoginHistoryApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -33,8 +33,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -56,7 +56,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SecurityLoginHistoryApi();
+let apiInstance = new Api.SecurityLoginHistoryApi();
 apiInstance.createLoginHistoryReport((error, data, response) => {
   if (error) {
     console.error(error);
@@ -95,8 +95,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -118,7 +118,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SecurityLoginHistoryApi();
+let apiInstance = new Api.SecurityLoginHistoryApi();
 apiInstance.getLastLoginEvents((error, data, response) => {
   if (error) {
     console.error(error);
@@ -166,8 +166,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -189,12 +189,12 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SecurityLoginHistoryApi();
+let apiInstance = new Api.SecurityLoginHistoryApi();
 let opts = {
   'userId': "aae1e103-bca5-9fa1-ba8c-42058b4abf28", // String | The ID of the user whose login events are being queried.
-  'action': new DocspaceApiJavascript.MessageAction(), // MessageAction | The login-related action to filter events by.
-  'from': new DocspaceApiJavascript.ApiDateTime(), // ApiDateTime | The starting date and time for filtering login events.
-  'to': new DocspaceApiJavascript.ApiDateTime(), // ApiDateTime | The ending date and time for filtering login events.
+  'action': new Api.MessageAction(), // MessageAction | The login-related action to filter events by.
+  'from': new Api.ApiDateTime(), // ApiDateTime | The starting date and time for filtering login events.
+  'to': new Api.ApiDateTime(), // ApiDateTime | The ending date and time for filtering login events.
   'count': 1234, // Number | The number of login events to retrieve in the query.
   'startIndex': 1234 // Number | The starting index for fetching a subset of login events from the query results.
 };

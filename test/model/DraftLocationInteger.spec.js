@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.DraftLocationInteger();
+    instance = new Api.DraftLocationInteger();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,31 +54,31 @@
   describe('DraftLocationInteger', function() {
     it('should create an instance of DraftLocationInteger', function() {
       // uncomment below and update the code to test DraftLocationInteger
-      //var instance = new DocspaceApiJavascript.DraftLocationInteger();
-      //expect(instance).to.be.a(DocspaceApiJavascript.DraftLocationInteger);
+      //var instance = new Api.DraftLocationInteger();
+      //expect(instance).to.be.a(Api.DraftLocationInteger);
     });
 
     it('should have the property folderId (base name: "folderId")', function() {
       // uncomment below and update the code to test the property folderId
-      //var instance = new DocspaceApiJavascript.DraftLocationInteger();
+      //var instance = new Api.DraftLocationInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property folderTitle (base name: "folderTitle")', function() {
       // uncomment below and update the code to test the property folderTitle
-      //var instance = new DocspaceApiJavascript.DraftLocationInteger();
+      //var instance = new Api.DraftLocationInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property fileId (base name: "fileId")', function() {
       // uncomment below and update the code to test the property fileId
-      //var instance = new DocspaceApiJavascript.DraftLocationInteger();
+      //var instance = new Api.DraftLocationInteger();
       //expect(instance).to.be();
     });
 
     it('should have the property fileTitle (base name: "fileTitle")', function() {
       // uncomment below and update the code to test the property fileTitle
-      //var instance = new DocspaceApiJavascript.DraftLocationInteger();
+      //var instance = new Api.DraftLocationInteger();
       //expect(instance).to.be();
     });
 

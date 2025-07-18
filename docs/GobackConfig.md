@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.GobackConfig
+# Api.GobackConfig
 The settings for the \&quot;Open file location\&quot; menu button and upper right corner button.
 
 ## Properties

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.DeleteFolder
+# Api.DeleteFolder
 The parameters for deleting a folder.
 
 ## Properties

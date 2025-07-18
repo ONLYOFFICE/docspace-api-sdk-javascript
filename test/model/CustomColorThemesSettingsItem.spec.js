@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CustomColorThemesSettingsItem();
+    instance = new Api.CustomColorThemesSettingsItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,31 +54,31 @@
   describe('CustomColorThemesSettingsItem', function() {
     it('should create an instance of CustomColorThemesSettingsItem', function() {
       // uncomment below and update the code to test CustomColorThemesSettingsItem
-      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsItem();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CustomColorThemesSettingsItem);
+      //var instance = new Api.CustomColorThemesSettingsItem();
+      //expect(instance).to.be.a(Api.CustomColorThemesSettingsItem);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsItem();
+      //var instance = new Api.CustomColorThemesSettingsItem();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsItem();
+      //var instance = new Api.CustomColorThemesSettingsItem();
       //expect(instance).to.be();
     });
 
     it('should have the property main (base name: "main")', function() {
       // uncomment below and update the code to test the property main
-      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsItem();
+      //var instance = new Api.CustomColorThemesSettingsItem();
       //expect(instance).to.be();
     });
 
     it('should have the property text (base name: "text")', function() {
       // uncomment below and update the code to test the property text
-      //var instance = new DocspaceApiJavascript.CustomColorThemesSettingsItem();
+      //var instance = new Api.CustomColorThemesSettingsItem();
       //expect(instance).to.be();
     });
 

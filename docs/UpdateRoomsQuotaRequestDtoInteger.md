@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.UpdateRoomsQuotaRequestDtoInteger
+# Api.UpdateRoomsQuotaRequestDtoInteger
 The request parameters for updating the room quota.
 
 ## Properties

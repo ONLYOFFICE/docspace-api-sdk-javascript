@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ExternalShareRequestParam();
+    instance = new Api.ExternalShareRequestParam();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('ExternalShareRequestParam', function() {
     it('should create an instance of ExternalShareRequestParam', function() {
       // uncomment below and update the code to test ExternalShareRequestParam
-      //var instance = new DocspaceApiJavascript.ExternalShareRequestParam();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ExternalShareRequestParam);
+      //var instance = new Api.ExternalShareRequestParam();
+      //expect(instance).to.be.a(Api.ExternalShareRequestParam);
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instance = new DocspaceApiJavascript.ExternalShareRequestParam();
+      //var instance = new Api.ExternalShareRequestParam();
       //expect(instance).to.be();
     });
 

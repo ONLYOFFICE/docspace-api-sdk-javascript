@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ScopeResponse();
+    instance = new Api.ScopeResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('ScopeResponse', function() {
     it('should create an instance of ScopeResponse', function() {
       // uncomment below and update the code to test ScopeResponse
-      //var instance = new DocspaceApiJavascript.ScopeResponse();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ScopeResponse);
+      //var instance = new Api.ScopeResponse();
+      //expect(instance).to.be.a(Api.ScopeResponse);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiJavascript.ScopeResponse();
+      //var instance = new Api.ScopeResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property group (base name: "group")', function() {
       // uncomment below and update the code to test the property group
-      //var instance = new DocspaceApiJavascript.ScopeResponse();
+      //var instance = new Api.ScopeResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new DocspaceApiJavascript.ScopeResponse();
+      //var instance = new Api.ScopeResponse();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SettingsGreetingSettingsApi
+# Api.SettingsGreetingSettingsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -34,8 +34,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -57,7 +57,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsGreetingSettingsApi();
+let apiInstance = new Api.SettingsGreetingSettingsApi();
 apiInstance.getGreetingSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -96,8 +96,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -119,7 +119,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsGreetingSettingsApi();
+let apiInstance = new Api.SettingsGreetingSettingsApi();
 apiInstance.getIsDefaultGreetingSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -158,8 +158,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -181,7 +181,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsGreetingSettingsApi();
+let apiInstance = new Api.SettingsGreetingSettingsApi();
 apiInstance.restoreGreetingSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -223,8 +223,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -246,9 +246,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsGreetingSettingsApi();
+let apiInstance = new Api.SettingsGreetingSettingsApi();
 let opts = {
-  'greetingSettingsRequestsDto': new DocspaceApiJavascript.GreetingSettingsRequestsDto() // GreetingSettingsRequestsDto | 
+  'greetingSettingsRequestsDto': new Api.GreetingSettingsRequestsDto() // GreetingSettingsRequestsDto | 
 };
 apiInstance.saveGreetingSettings(opts, (error, data, response) => {
   if (error) {

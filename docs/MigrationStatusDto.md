@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.MigrationStatusDto
+# Api.MigrationStatusDto
 The migration status parameters.
 
 ## Properties

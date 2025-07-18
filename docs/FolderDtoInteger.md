@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FolderDtoInteger
+# Api.FolderDtoInteger
 The folder parameters.
 
 ## Properties

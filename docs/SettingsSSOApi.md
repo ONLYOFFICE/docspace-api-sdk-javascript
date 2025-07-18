@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SettingsSSOApi
+# Api.SettingsSSOApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -35,8 +35,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -58,7 +58,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsSSOApi();
+let apiInstance = new Api.SettingsSSOApi();
 apiInstance.getDefaultSsoSettingsV2((error, data, response) => {
   if (error) {
     console.error(error);
@@ -97,9 +97,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.SettingsSSOApi();
+let apiInstance = new Api.SettingsSSOApi();
 apiInstance.getSsoSettingsV2((error, data, response) => {
   if (error) {
     console.error(error);
@@ -138,8 +138,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -161,7 +161,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsSSOApi();
+let apiInstance = new Api.SettingsSSOApi();
 apiInstance.getSsoSettingsV2Constants((error, data, response) => {
   if (error) {
     console.error(error);
@@ -200,8 +200,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -223,7 +223,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsSSOApi();
+let apiInstance = new Api.SettingsSSOApi();
 apiInstance.resetSsoSettingsV2((error, data, response) => {
   if (error) {
     console.error(error);
@@ -265,8 +265,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -288,9 +288,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsSSOApi();
+let apiInstance = new Api.SettingsSSOApi();
 let opts = {
-  'ssoSettingsRequestsDto': new DocspaceApiJavascript.SsoSettingsRequestsDto() // SsoSettingsRequestsDto | 
+  'ssoSettingsRequestsDto': new Api.SsoSettingsRequestsDto() // SsoSettingsRequestsDto | 
 };
 apiInstance.saveSsoSettingsV2(opts, (error, data, response) => {
   if (error) {

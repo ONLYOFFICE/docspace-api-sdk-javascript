@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.LoginEventDto();
+    instance = new Api.LoginEventDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,85 +54,85 @@
   describe('LoginEventDto', function() {
     it('should create an instance of LoginEventDto', function() {
       // uncomment below and update the code to test LoginEventDto
-      //var instance = new DocspaceApiJavascript.LoginEventDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.LoginEventDto);
+      //var instance = new Api.LoginEventDto();
+      //expect(instance).to.be.a(Api.LoginEventDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.LoginEventDto();
+      //var instance = new Api.LoginEventDto();
       //expect(instance).to.be();
     });
 
     it('should have the property date (base name: "date")', function() {
       // uncomment below and update the code to test the property date
-      //var instance = new DocspaceApiJavascript.LoginEventDto();
+      //var instance = new Api.LoginEventDto();
       //expect(instance).to.be();
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instance = new DocspaceApiJavascript.LoginEventDto();
+      //var instance = new Api.LoginEventDto();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "userId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instance = new DocspaceApiJavascript.LoginEventDto();
+      //var instance = new Api.LoginEventDto();
       //expect(instance).to.be();
     });
 
     it('should have the property login (base name: "login")', function() {
       // uncomment below and update the code to test the property login
-      //var instance = new DocspaceApiJavascript.LoginEventDto();
+      //var instance = new Api.LoginEventDto();
       //expect(instance).to.be();
     });
 
     it('should have the property action (base name: "action")', function() {
       // uncomment below and update the code to test the property action
-      //var instance = new DocspaceApiJavascript.LoginEventDto();
+      //var instance = new Api.LoginEventDto();
       //expect(instance).to.be();
     });
 
     it('should have the property actionId (base name: "actionId")', function() {
       // uncomment below and update the code to test the property actionId
-      //var instance = new DocspaceApiJavascript.LoginEventDto();
+      //var instance = new Api.LoginEventDto();
       //expect(instance).to.be();
     });
 
     it('should have the property ip (base name: "ip")', function() {
       // uncomment below and update the code to test the property ip
-      //var instance = new DocspaceApiJavascript.LoginEventDto();
+      //var instance = new Api.LoginEventDto();
       //expect(instance).to.be();
     });
 
     it('should have the property country (base name: "country")', function() {
       // uncomment below and update the code to test the property country
-      //var instance = new DocspaceApiJavascript.LoginEventDto();
+      //var instance = new Api.LoginEventDto();
       //expect(instance).to.be();
     });
 
     it('should have the property city (base name: "city")', function() {
       // uncomment below and update the code to test the property city
-      //var instance = new DocspaceApiJavascript.LoginEventDto();
+      //var instance = new Api.LoginEventDto();
       //expect(instance).to.be();
     });
 
     it('should have the property browser (base name: "browser")', function() {
       // uncomment below and update the code to test the property browser
-      //var instance = new DocspaceApiJavascript.LoginEventDto();
+      //var instance = new Api.LoginEventDto();
       //expect(instance).to.be();
     });
 
     it('should have the property platform (base name: "platform")', function() {
       // uncomment below and update the code to test the property platform
-      //var instance = new DocspaceApiJavascript.LoginEventDto();
+      //var instance = new Api.LoginEventDto();
       //expect(instance).to.be();
     });
 
     it('should have the property page (base name: "page")', function() {
       // uncomment below and update the code to test the property page
-      //var instance = new DocspaceApiJavascript.LoginEventDto();
+      //var instance = new Api.LoginEventDto();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.StartUpdateUserTypeDto
+# Api.StartUpdateUserTypeDto
 The parameters for updating the type of the user or guest when reassigning rooms and shared files.
 
 ## Properties

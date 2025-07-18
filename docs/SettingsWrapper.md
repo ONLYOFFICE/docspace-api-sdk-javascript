@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SettingsWrapper
+# Api.SettingsWrapper
 
 
 ## Properties

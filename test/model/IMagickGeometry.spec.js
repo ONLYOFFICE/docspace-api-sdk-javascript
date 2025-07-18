@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.IMagickGeometry();
+    instance = new Api.IMagickGeometry();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,73 +54,73 @@
   describe('IMagickGeometry', function() {
     it('should create an instance of IMagickGeometry', function() {
       // uncomment below and update the code to test IMagickGeometry
-      //var instance = new DocspaceApiJavascript.IMagickGeometry();
-      //expect(instance).to.be.a(DocspaceApiJavascript.IMagickGeometry);
+      //var instance = new Api.IMagickGeometry();
+      //expect(instance).to.be.a(Api.IMagickGeometry);
     });
 
     it('should have the property aspectRatio (base name: "aspectRatio")', function() {
       // uncomment below and update the code to test the property aspectRatio
-      //var instance = new DocspaceApiJavascript.IMagickGeometry();
+      //var instance = new Api.IMagickGeometry();
       //expect(instance).to.be();
     });
 
     it('should have the property fillArea (base name: "fillArea")', function() {
       // uncomment below and update the code to test the property fillArea
-      //var instance = new DocspaceApiJavascript.IMagickGeometry();
+      //var instance = new Api.IMagickGeometry();
       //expect(instance).to.be();
     });
 
     it('should have the property greater (base name: "greater")', function() {
       // uncomment below and update the code to test the property greater
-      //var instance = new DocspaceApiJavascript.IMagickGeometry();
+      //var instance = new Api.IMagickGeometry();
       //expect(instance).to.be();
     });
 
     it('should have the property height (base name: "height")', function() {
       // uncomment below and update the code to test the property height
-      //var instance = new DocspaceApiJavascript.IMagickGeometry();
+      //var instance = new Api.IMagickGeometry();
       //expect(instance).to.be();
     });
 
     it('should have the property ignoreAspectRatio (base name: "ignoreAspectRatio")', function() {
       // uncomment below and update the code to test the property ignoreAspectRatio
-      //var instance = new DocspaceApiJavascript.IMagickGeometry();
+      //var instance = new Api.IMagickGeometry();
       //expect(instance).to.be();
     });
 
     it('should have the property isPercentage (base name: "isPercentage")', function() {
       // uncomment below and update the code to test the property isPercentage
-      //var instance = new DocspaceApiJavascript.IMagickGeometry();
+      //var instance = new Api.IMagickGeometry();
       //expect(instance).to.be();
     });
 
     it('should have the property less (base name: "less")', function() {
       // uncomment below and update the code to test the property less
-      //var instance = new DocspaceApiJavascript.IMagickGeometry();
+      //var instance = new Api.IMagickGeometry();
       //expect(instance).to.be();
     });
 
     it('should have the property limitPixels (base name: "limitPixels")', function() {
       // uncomment below and update the code to test the property limitPixels
-      //var instance = new DocspaceApiJavascript.IMagickGeometry();
+      //var instance = new Api.IMagickGeometry();
       //expect(instance).to.be();
     });
 
     it('should have the property width (base name: "width")', function() {
       // uncomment below and update the code to test the property width
-      //var instance = new DocspaceApiJavascript.IMagickGeometry();
+      //var instance = new Api.IMagickGeometry();
       //expect(instance).to.be();
     });
 
     it('should have the property x (base name: "x")', function() {
       // uncomment below and update the code to test the property x
-      //var instance = new DocspaceApiJavascript.IMagickGeometry();
+      //var instance = new Api.IMagickGeometry();
       //expect(instance).to.be();
     });
 
     it('should have the property y (base name: "y")', function() {
       // uncomment below and update the code to test the property y
-      //var instance = new DocspaceApiJavascript.IMagickGeometry();
+      //var instance = new Api.IMagickGeometry();
       //expect(instance).to.be();
     });
 

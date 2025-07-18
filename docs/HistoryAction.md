@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.HistoryAction
+# Api.HistoryAction
 The action performed on the file.
 
 ## Properties

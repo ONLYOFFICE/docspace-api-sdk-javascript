@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SaveFormRoleMappingDtoInteger
+# Api.SaveFormRoleMappingDtoInteger
 The parameters for saving form role mapping.
 
 ## Properties

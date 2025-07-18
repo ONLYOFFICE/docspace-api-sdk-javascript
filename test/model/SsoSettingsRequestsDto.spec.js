@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.SsoSettingsRequestsDto();
+    instance = new Api.SsoSettingsRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('SsoSettingsRequestsDto', function() {
     it('should create an instance of SsoSettingsRequestsDto', function() {
       // uncomment below and update the code to test SsoSettingsRequestsDto
-      //var instance = new DocspaceApiJavascript.SsoSettingsRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.SsoSettingsRequestsDto);
+      //var instance = new Api.SsoSettingsRequestsDto();
+      //expect(instance).to.be.a(Api.SsoSettingsRequestsDto);
     });
 
     it('should have the property serializeSettings (base name: "serializeSettings")', function() {
       // uncomment below and update the code to test the property serializeSettings
-      //var instance = new DocspaceApiJavascript.SsoSettingsRequestsDto();
+      //var instance = new Api.SsoSettingsRequestsDto();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.UpdateApiKeyRequest
+# Api.UpdateApiKeyRequest
 The request parameters for updating an existing API key.
 
 ## Properties

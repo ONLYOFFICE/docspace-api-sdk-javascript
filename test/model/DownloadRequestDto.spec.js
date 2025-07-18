@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.DownloadRequestDto();
+    instance = new Api.DownloadRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,31 +54,31 @@
   describe('DownloadRequestDto', function() {
     it('should create an instance of DownloadRequestDto', function() {
       // uncomment below and update the code to test DownloadRequestDto
-      //var instance = new DocspaceApiJavascript.DownloadRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.DownloadRequestDto);
+      //var instance = new Api.DownloadRequestDto();
+      //expect(instance).to.be.a(Api.DownloadRequestDto);
     });
 
     it('should have the property returnSingleOperation (base name: "returnSingleOperation")', function() {
       // uncomment below and update the code to test the property returnSingleOperation
-      //var instance = new DocspaceApiJavascript.DownloadRequestDto();
+      //var instance = new Api.DownloadRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property folderIds (base name: "folderIds")', function() {
       // uncomment below and update the code to test the property folderIds
-      //var instance = new DocspaceApiJavascript.DownloadRequestDto();
+      //var instance = new Api.DownloadRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property fileIds (base name: "fileIds")', function() {
       // uncomment below and update the code to test the property fileIds
-      //var instance = new DocspaceApiJavascript.DownloadRequestDto();
+      //var instance = new Api.DownloadRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property fileConvertIds (base name: "fileConvertIds")', function() {
       // uncomment below and update the code to test the property fileConvertIds
-      //var instance = new DocspaceApiJavascript.DownloadRequestDto();
+      //var instance = new Api.DownloadRequestDto();
       //expect(instance).to.be();
     });
 

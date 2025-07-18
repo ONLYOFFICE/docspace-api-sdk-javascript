@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CreateClientRequest();
+    instance = new Api.CreateClientRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,79 +54,79 @@
   describe('CreateClientRequest', function() {
     it('should create an instance of CreateClientRequest', function() {
       // uncomment below and update the code to test CreateClientRequest
-      //var instance = new DocspaceApiJavascript.CreateClientRequest();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CreateClientRequest);
+      //var instance = new Api.CreateClientRequest();
+      //expect(instance).to.be.a(Api.CreateClientRequest);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiJavascript.CreateClientRequest();
+      //var instance = new Api.CreateClientRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new DocspaceApiJavascript.CreateClientRequest();
+      //var instance = new Api.CreateClientRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property logo (base name: "logo")', function() {
       // uncomment below and update the code to test the property logo
-      //var instance = new DocspaceApiJavascript.CreateClientRequest();
+      //var instance = new Api.CreateClientRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property scopes (base name: "scopes")', function() {
       // uncomment below and update the code to test the property scopes
-      //var instance = new DocspaceApiJavascript.CreateClientRequest();
+      //var instance = new Api.CreateClientRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property allowPkce (base name: "allow_pkce")', function() {
       // uncomment below and update the code to test the property allowPkce
-      //var instance = new DocspaceApiJavascript.CreateClientRequest();
+      //var instance = new Api.CreateClientRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property isPublic (base name: "is_public")', function() {
       // uncomment below and update the code to test the property isPublic
-      //var instance = new DocspaceApiJavascript.CreateClientRequest();
+      //var instance = new Api.CreateClientRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property websiteUrl (base name: "website_url")', function() {
       // uncomment below and update the code to test the property websiteUrl
-      //var instance = new DocspaceApiJavascript.CreateClientRequest();
+      //var instance = new Api.CreateClientRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property termsUrl (base name: "terms_url")', function() {
       // uncomment below and update the code to test the property termsUrl
-      //var instance = new DocspaceApiJavascript.CreateClientRequest();
+      //var instance = new Api.CreateClientRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property policyUrl (base name: "policy_url")', function() {
       // uncomment below and update the code to test the property policyUrl
-      //var instance = new DocspaceApiJavascript.CreateClientRequest();
+      //var instance = new Api.CreateClientRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property redirectUris (base name: "redirect_uris")', function() {
       // uncomment below and update the code to test the property redirectUris
-      //var instance = new DocspaceApiJavascript.CreateClientRequest();
+      //var instance = new Api.CreateClientRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property allowedOrigins (base name: "allowed_origins")', function() {
       // uncomment below and update the code to test the property allowedOrigins
-      //var instance = new DocspaceApiJavascript.CreateClientRequest();
+      //var instance = new Api.CreateClientRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property logoutRedirectUri (base name: "logout_redirect_uri")', function() {
       // uncomment below and update the code to test the property logoutRedirectUri
-      //var instance = new DocspaceApiJavascript.CreateClientRequest();
+      //var instance = new Api.CreateClientRequest();
       //expect(instance).to.be();
     });
 

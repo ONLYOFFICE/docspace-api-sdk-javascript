@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.Delete();
+    instance = new Api.Delete();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('Delete', function() {
     it('should create an instance of Delete', function() {
       // uncomment below and update the code to test Delete
-      //var instance = new DocspaceApiJavascript.Delete();
-      //expect(instance).to.be.a(DocspaceApiJavascript.Delete);
+      //var instance = new Api.Delete();
+      //expect(instance).to.be.a(Api.Delete);
     });
 
     it('should have the property deleteAfter (base name: "deleteAfter")', function() {
       // uncomment below and update the code to test the property deleteAfter
-      //var instance = new DocspaceApiJavascript.Delete();
+      //var instance = new Api.Delete();
       //expect(instance).to.be();
     });
 
     it('should have the property immediately (base name: "immediately")', function() {
       // uncomment below and update the code to test the property immediately
-      //var instance = new DocspaceApiJavascript.Delete();
+      //var instance = new Api.Delete();
       //expect(instance).to.be();
     });
 

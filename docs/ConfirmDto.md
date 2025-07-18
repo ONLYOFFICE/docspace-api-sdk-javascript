@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ConfirmDto
+# Api.ConfirmDto
 The confirmation parameters.
 
 ## Properties

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FileEntryDto
+# Api.FileEntryDto
 The file entry information.
 
 ## Properties

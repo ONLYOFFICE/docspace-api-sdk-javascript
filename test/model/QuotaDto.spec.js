@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.QuotaDto();
+    instance = new Api.QuotaDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,73 +54,73 @@
   describe('QuotaDto', function() {
     it('should create an instance of QuotaDto', function() {
       // uncomment below and update the code to test QuotaDto
-      //var instance = new DocspaceApiJavascript.QuotaDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.QuotaDto);
+      //var instance = new Api.QuotaDto();
+      //expect(instance).to.be.a(Api.QuotaDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.QuotaDto();
+      //var instance = new Api.QuotaDto();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiJavascript.QuotaDto();
+      //var instance = new Api.QuotaDto();
       //expect(instance).to.be();
     });
 
     it('should have the property price (base name: "price")', function() {
       // uncomment below and update the code to test the property price
-      //var instance = new DocspaceApiJavascript.QuotaDto();
+      //var instance = new Api.QuotaDto();
       //expect(instance).to.be();
     });
 
     it('should have the property nonProfit (base name: "nonProfit")', function() {
       // uncomment below and update the code to test the property nonProfit
-      //var instance = new DocspaceApiJavascript.QuotaDto();
+      //var instance = new Api.QuotaDto();
       //expect(instance).to.be();
     });
 
     it('should have the property free (base name: "free")', function() {
       // uncomment below and update the code to test the property free
-      //var instance = new DocspaceApiJavascript.QuotaDto();
+      //var instance = new Api.QuotaDto();
       //expect(instance).to.be();
     });
 
     it('should have the property trial (base name: "trial")', function() {
       // uncomment below and update the code to test the property trial
-      //var instance = new DocspaceApiJavascript.QuotaDto();
+      //var instance = new Api.QuotaDto();
       //expect(instance).to.be();
     });
 
     it('should have the property features (base name: "features")', function() {
       // uncomment below and update the code to test the property features
-      //var instance = new DocspaceApiJavascript.QuotaDto();
+      //var instance = new Api.QuotaDto();
       //expect(instance).to.be();
     });
 
     it('should have the property usersQuota (base name: "usersQuota")', function() {
       // uncomment below and update the code to test the property usersQuota
-      //var instance = new DocspaceApiJavascript.QuotaDto();
+      //var instance = new Api.QuotaDto();
       //expect(instance).to.be();
     });
 
     it('should have the property roomsQuota (base name: "roomsQuota")', function() {
       // uncomment below and update the code to test the property roomsQuota
-      //var instance = new DocspaceApiJavascript.QuotaDto();
+      //var instance = new Api.QuotaDto();
       //expect(instance).to.be();
     });
 
     it('should have the property tenantCustomQuota (base name: "tenantCustomQuota")', function() {
       // uncomment below and update the code to test the property tenantCustomQuota
-      //var instance = new DocspaceApiJavascript.QuotaDto();
+      //var instance = new Api.QuotaDto();
       //expect(instance).to.be();
     });
 
     it('should have the property dueDate (base name: "dueDate")', function() {
       // uncomment below and update the code to test the property dueDate
-      //var instance = new DocspaceApiJavascript.QuotaDto();
+      //var instance = new Api.QuotaDto();
       //expect(instance).to.be();
     });
 

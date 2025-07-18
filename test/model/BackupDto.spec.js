@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.BackupDto();
+    instance = new Api.BackupDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('BackupDto', function() {
     it('should create an instance of BackupDto', function() {
       // uncomment below and update the code to test BackupDto
-      //var instance = new DocspaceApiJavascript.BackupDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.BackupDto);
+      //var instance = new Api.BackupDto();
+      //expect(instance).to.be.a(Api.BackupDto);
     });
 
     it('should have the property storageType (base name: "storageType")', function() {
       // uncomment below and update the code to test the property storageType
-      //var instance = new DocspaceApiJavascript.BackupDto();
+      //var instance = new Api.BackupDto();
       //expect(instance).to.be();
     });
 
     it('should have the property storageParams (base name: "storageParams")', function() {
       // uncomment below and update the code to test the property storageParams
-      //var instance = new DocspaceApiJavascript.BackupDto();
+      //var instance = new Api.BackupDto();
       //expect(instance).to.be();
     });
 
     it('should have the property dump (base name: "dump")', function() {
       // uncomment below and update the code to test the property dump
-      //var instance = new DocspaceApiJavascript.BackupDto();
+      //var instance = new Api.BackupDto();
       //expect(instance).to.be();
     });
 

@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.RoomsNotificationSettingsDto();
+    instance = new Api.RoomsNotificationSettingsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('RoomsNotificationSettingsDto', function() {
     it('should create an instance of RoomsNotificationSettingsDto', function() {
       // uncomment below and update the code to test RoomsNotificationSettingsDto
-      //var instance = new DocspaceApiJavascript.RoomsNotificationSettingsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.RoomsNotificationSettingsDto);
+      //var instance = new Api.RoomsNotificationSettingsDto();
+      //expect(instance).to.be.a(Api.RoomsNotificationSettingsDto);
     });
 
     it('should have the property disabledRooms (base name: "disabledRooms")', function() {
       // uncomment below and update the code to test the property disabledRooms
-      //var instance = new DocspaceApiJavascript.RoomsNotificationSettingsDto();
+      //var instance = new Api.RoomsNotificationSettingsDto();
       //expect(instance).to.be();
     });
 

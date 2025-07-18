@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.SetPublicDto();
+    instance = new Api.SetPublicDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('SetPublicDto', function() {
     it('should create an instance of SetPublicDto', function() {
       // uncomment below and update the code to test SetPublicDto
-      //var instance = new DocspaceApiJavascript.SetPublicDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.SetPublicDto);
+      //var instance = new Api.SetPublicDto();
+      //expect(instance).to.be.a(Api.SetPublicDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.SetPublicDto();
+      //var instance = new Api.SetPublicDto();
       //expect(instance).to.be();
     });
 
     it('should have the property _public (base name: "public")', function() {
       // uncomment below and update the code to test the property _public
-      //var instance = new DocspaceApiJavascript.SetPublicDto();
+      //var instance = new Api.SetPublicDto();
       //expect(instance).to.be();
     });
 

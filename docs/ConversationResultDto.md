@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ConversationResultDto
+# Api.ConversationResultDto
 The result of file convertion operation.
 
 ## Properties

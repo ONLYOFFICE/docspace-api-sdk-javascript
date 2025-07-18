@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.GreetingSettingsRequestsDto
+# Api.GreetingSettingsRequestsDto
 The request parameters for managing the greeting settings.
 
 ## Properties

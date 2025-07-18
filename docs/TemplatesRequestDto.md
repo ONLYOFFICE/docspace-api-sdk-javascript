@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TemplatesRequestDto
+# Api.TemplatesRequestDto
 The request parameters for adding files to the template list.
 
 ## Properties

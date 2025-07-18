@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ApiKeyResponseArrayWrapper
+# Api.ApiKeyResponseArrayWrapper
 
 
 ## Properties

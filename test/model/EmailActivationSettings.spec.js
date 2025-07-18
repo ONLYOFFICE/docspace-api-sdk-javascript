@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.EmailActivationSettings();
+    instance = new Api.EmailActivationSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('EmailActivationSettings', function() {
     it('should create an instance of EmailActivationSettings', function() {
       // uncomment below and update the code to test EmailActivationSettings
-      //var instance = new DocspaceApiJavascript.EmailActivationSettings();
-      //expect(instance).to.be.a(DocspaceApiJavascript.EmailActivationSettings);
+      //var instance = new Api.EmailActivationSettings();
+      //expect(instance).to.be.a(Api.EmailActivationSettings);
     });
 
     it('should have the property show (base name: "show")', function() {
       // uncomment below and update the code to test the property show
-      //var instance = new DocspaceApiJavascript.EmailActivationSettings();
+      //var instance = new Api.EmailActivationSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModified (base name: "lastModified")', function() {
       // uncomment below and update the code to test the property lastModified
-      //var instance = new DocspaceApiJavascript.EmailActivationSettings();
+      //var instance = new Api.EmailActivationSettings();
       //expect(instance).to.be();
     });
 

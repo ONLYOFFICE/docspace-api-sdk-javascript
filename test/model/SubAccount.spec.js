@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.SubAccount();
+    instance = new Api.SubAccount();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('SubAccount', function() {
     it('should create an instance of SubAccount', function() {
       // uncomment below and update the code to test SubAccount
-      //var instance = new DocspaceApiJavascript.SubAccount();
-      //expect(instance).to.be.a(DocspaceApiJavascript.SubAccount);
+      //var instance = new Api.SubAccount();
+      //expect(instance).to.be.a(Api.SubAccount);
     });
 
     it('should have the property currency (base name: "currency")', function() {
       // uncomment below and update the code to test the property currency
-      //var instance = new DocspaceApiJavascript.SubAccount();
+      //var instance = new Api.SubAccount();
       //expect(instance).to.be();
     });
 
     it('should have the property amount (base name: "amount")', function() {
       // uncomment below and update the code to test the property amount
-      //var instance = new DocspaceApiJavascript.SubAccount();
+      //var instance = new Api.SubAccount();
       //expect(instance).to.be();
     });
 

@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.BatchRequestDto();
+    instance = new Api.BatchRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,55 +54,55 @@
   describe('BatchRequestDto', function() {
     it('should create an instance of BatchRequestDto', function() {
       // uncomment below and update the code to test BatchRequestDto
-      //var instance = new DocspaceApiJavascript.BatchRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.BatchRequestDto);
+      //var instance = new Api.BatchRequestDto();
+      //expect(instance).to.be.a(Api.BatchRequestDto);
     });
 
     it('should have the property returnSingleOperation (base name: "returnSingleOperation")', function() {
       // uncomment below and update the code to test the property returnSingleOperation
-      //var instance = new DocspaceApiJavascript.BatchRequestDto();
+      //var instance = new Api.BatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property folderIds (base name: "folderIds")', function() {
       // uncomment below and update the code to test the property folderIds
-      //var instance = new DocspaceApiJavascript.BatchRequestDto();
+      //var instance = new Api.BatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property fileIds (base name: "fileIds")', function() {
       // uncomment below and update the code to test the property fileIds
-      //var instance = new DocspaceApiJavascript.BatchRequestDto();
+      //var instance = new Api.BatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property destFolderId (base name: "destFolderId")', function() {
       // uncomment below and update the code to test the property destFolderId
-      //var instance = new DocspaceApiJavascript.BatchRequestDto();
+      //var instance = new Api.BatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property conflictResolveType (base name: "conflictResolveType")', function() {
       // uncomment below and update the code to test the property conflictResolveType
-      //var instance = new DocspaceApiJavascript.BatchRequestDto();
+      //var instance = new Api.BatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property deleteAfter (base name: "deleteAfter")', function() {
       // uncomment below and update the code to test the property deleteAfter
-      //var instance = new DocspaceApiJavascript.BatchRequestDto();
+      //var instance = new Api.BatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property content (base name: "content")', function() {
       // uncomment below and update the code to test the property content
-      //var instance = new DocspaceApiJavascript.BatchRequestDto();
+      //var instance = new Api.BatchRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property toFillOut (base name: "toFillOut")', function() {
       // uncomment below and update the code to test the property toFillOut
-      //var instance = new DocspaceApiJavascript.BatchRequestDto();
+      //var instance = new Api.BatchRequestDto();
       //expect(instance).to.be();
     });
 

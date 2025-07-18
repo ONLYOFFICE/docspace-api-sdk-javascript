@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ChangeHistory
+# Api.ChangeHistory
 The parameters for changing version history.
 
 ## Properties

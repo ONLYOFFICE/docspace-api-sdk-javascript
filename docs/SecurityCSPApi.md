@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SecurityCSPApi
+# Api.SecurityCSPApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -35,8 +35,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -58,9 +58,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SecurityCSPApi();
+let apiInstance = new Api.SecurityCSPApi();
 let opts = {
-  'cspRequestsDto': new DocspaceApiJavascript.CspRequestsDto() // CspRequestsDto | 
+  'cspRequestsDto': new Api.CspRequestsDto() // CspRequestsDto | 
 };
 apiInstance.configureCsp(opts, (error, data, response) => {
   if (error) {
@@ -100,9 +100,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.SecurityCSPApi();
+let apiInstance = new Api.SecurityCSPApi();
 apiInstance.getCspSettings((error, data, response) => {
   if (error) {
     console.error(error);

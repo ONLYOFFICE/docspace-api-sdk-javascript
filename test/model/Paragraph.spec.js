@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.Paragraph();
+    instance = new Api.Paragraph();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('Paragraph', function() {
     it('should create an instance of Paragraph', function() {
       // uncomment below and update the code to test Paragraph
-      //var instance = new DocspaceApiJavascript.Paragraph();
-      //expect(instance).to.be.a(DocspaceApiJavascript.Paragraph);
+      //var instance = new Api.Paragraph();
+      //expect(instance).to.be.a(Api.Paragraph);
     });
 
     it('should have the property align (base name: "align")', function() {
       // uncomment below and update the code to test the property align
-      //var instance = new DocspaceApiJavascript.Paragraph();
+      //var instance = new Api.Paragraph();
       //expect(instance).to.be();
     });
 
     it('should have the property runs (base name: "runs")', function() {
       // uncomment below and update the code to test the property runs
-      //var instance = new DocspaceApiJavascript.Paragraph();
+      //var instance = new Api.Paragraph();
       //expect(instance).to.be();
     });
 

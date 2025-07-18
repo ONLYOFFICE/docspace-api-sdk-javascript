@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.WebPluginDto
+# Api.WebPluginDto
 The web plugin information.
 
 ## Properties

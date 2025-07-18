@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FileShareArrayWrapper
+# Api.FileShareArrayWrapper
 
 
 ## Properties

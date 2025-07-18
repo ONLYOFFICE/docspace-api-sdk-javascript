@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.EncryptionKeysConfig();
+    instance = new Api.EncryptionKeysConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('EncryptionKeysConfig', function() {
     it('should create an instance of EncryptionKeysConfig', function() {
       // uncomment below and update the code to test EncryptionKeysConfig
-      //var instance = new DocspaceApiJavascript.EncryptionKeysConfig();
-      //expect(instance).to.be.a(DocspaceApiJavascript.EncryptionKeysConfig);
+      //var instance = new Api.EncryptionKeysConfig();
+      //expect(instance).to.be.a(Api.EncryptionKeysConfig);
     });
 
     it('should have the property cryptoEngineId (base name: "cryptoEngineId")', function() {
       // uncomment below and update the code to test the property cryptoEngineId
-      //var instance = new DocspaceApiJavascript.EncryptionKeysConfig();
+      //var instance = new Api.EncryptionKeysConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property privateKeyEnc (base name: "privateKeyEnc")', function() {
       // uncomment below and update the code to test the property privateKeyEnc
-      //var instance = new DocspaceApiJavascript.EncryptionKeysConfig();
+      //var instance = new Api.EncryptionKeysConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property publicKey (base name: "publicKey")', function() {
       // uncomment below and update the code to test the property publicKey
-      //var instance = new DocspaceApiJavascript.EncryptionKeysConfig();
+      //var instance = new Api.EncryptionKeysConfig();
       //expect(instance).to.be();
     });
 

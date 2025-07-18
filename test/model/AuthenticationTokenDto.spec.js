@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.AuthenticationTokenDto();
+    instance = new Api.AuthenticationTokenDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,49 +54,49 @@
   describe('AuthenticationTokenDto', function() {
     it('should create an instance of AuthenticationTokenDto', function() {
       // uncomment below and update the code to test AuthenticationTokenDto
-      //var instance = new DocspaceApiJavascript.AuthenticationTokenDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.AuthenticationTokenDto);
+      //var instance = new Api.AuthenticationTokenDto();
+      //expect(instance).to.be.a(Api.AuthenticationTokenDto);
     });
 
     it('should have the property token (base name: "token")', function() {
       // uncomment below and update the code to test the property token
-      //var instance = new DocspaceApiJavascript.AuthenticationTokenDto();
+      //var instance = new Api.AuthenticationTokenDto();
       //expect(instance).to.be();
     });
 
     it('should have the property expires (base name: "expires")', function() {
       // uncomment below and update the code to test the property expires
-      //var instance = new DocspaceApiJavascript.AuthenticationTokenDto();
+      //var instance = new Api.AuthenticationTokenDto();
       //expect(instance).to.be();
     });
 
     it('should have the property sms (base name: "sms")', function() {
       // uncomment below and update the code to test the property sms
-      //var instance = new DocspaceApiJavascript.AuthenticationTokenDto();
+      //var instance = new Api.AuthenticationTokenDto();
       //expect(instance).to.be();
     });
 
     it('should have the property phoneNoise (base name: "phoneNoise")', function() {
       // uncomment below and update the code to test the property phoneNoise
-      //var instance = new DocspaceApiJavascript.AuthenticationTokenDto();
+      //var instance = new Api.AuthenticationTokenDto();
       //expect(instance).to.be();
     });
 
     it('should have the property tfa (base name: "tfa")', function() {
       // uncomment below and update the code to test the property tfa
-      //var instance = new DocspaceApiJavascript.AuthenticationTokenDto();
+      //var instance = new Api.AuthenticationTokenDto();
       //expect(instance).to.be();
     });
 
     it('should have the property tfaKey (base name: "tfaKey")', function() {
       // uncomment below and update the code to test the property tfaKey
-      //var instance = new DocspaceApiJavascript.AuthenticationTokenDto();
+      //var instance = new Api.AuthenticationTokenDto();
       //expect(instance).to.be();
     });
 
     it('should have the property confirmUrl (base name: "confirmUrl")', function() {
       // uncomment below and update the code to test the property confirmUrl
-      //var instance = new DocspaceApiJavascript.AuthenticationTokenDto();
+      //var instance = new Api.AuthenticationTokenDto();
       //expect(instance).to.be();
     });
 

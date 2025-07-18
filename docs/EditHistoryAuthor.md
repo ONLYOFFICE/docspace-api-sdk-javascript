@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.EditHistoryAuthor
+# Api.EditHistoryAuthor
 The information about the file editing history author.
 
 ## Properties

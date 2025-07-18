@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.MentionWrapper
+# Api.MentionWrapper
 The mention message parameters.
 
 ## Properties

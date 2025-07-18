@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.Options();
+    instance = new Api.Options();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('Options', function() {
     it('should create an instance of Options', function() {
       // uncomment below and update the code to test Options
-      //var instance = new DocspaceApiJavascript.Options();
-      //expect(instance).to.be.a(DocspaceApiJavascript.Options);
+      //var instance = new Api.Options();
+      //expect(instance).to.be.a(Api.Options);
     });
 
     it('should have the property watermarkOnDraw (base name: "watermark_on_draw")', function() {
       // uncomment below and update the code to test the property watermarkOnDraw
-      //var instance = new DocspaceApiJavascript.Options();
+      //var instance = new Api.Options();
       //expect(instance).to.be();
     });
 

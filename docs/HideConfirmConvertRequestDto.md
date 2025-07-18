@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.HideConfirmConvertRequestDto
+# Api.HideConfirmConvertRequestDto
 The request parameters for hiding the confirmation dialog when converting.
 
 ## Properties

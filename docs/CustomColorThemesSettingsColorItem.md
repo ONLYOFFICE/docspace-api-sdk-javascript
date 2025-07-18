@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CustomColorThemesSettingsColorItem
+# Api.CustomColorThemesSettingsColorItem
 The custom color theme color parameters.
 
 ## Properties

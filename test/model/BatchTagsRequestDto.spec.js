@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.BatchTagsRequestDto();
+    instance = new Api.BatchTagsRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('BatchTagsRequestDto', function() {
     it('should create an instance of BatchTagsRequestDto', function() {
       // uncomment below and update the code to test BatchTagsRequestDto
-      //var instance = new DocspaceApiJavascript.BatchTagsRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.BatchTagsRequestDto);
+      //var instance = new Api.BatchTagsRequestDto();
+      //expect(instance).to.be.a(Api.BatchTagsRequestDto);
     });
 
     it('should have the property names (base name: "names")', function() {
       // uncomment below and update the code to test the property names
-      //var instance = new DocspaceApiJavascript.BatchTagsRequestDto();
+      //var instance = new Api.BatchTagsRequestDto();
       //expect(instance).to.be();
     });
 

@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ActiveConnectionsItemDto();
+    instance = new Api.ActiveConnectionsItemDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,73 +54,73 @@
   describe('ActiveConnectionsItemDto', function() {
     it('should create an instance of ActiveConnectionsItemDto', function() {
       // uncomment below and update the code to test ActiveConnectionsItemDto
-      //var instance = new DocspaceApiJavascript.ActiveConnectionsItemDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ActiveConnectionsItemDto);
+      //var instance = new Api.ActiveConnectionsItemDto();
+      //expect(instance).to.be.a(Api.ActiveConnectionsItemDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.ActiveConnectionsItemDto();
+      //var instance = new Api.ActiveConnectionsItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property tenantId (base name: "tenantId")', function() {
       // uncomment below and update the code to test the property tenantId
-      //var instance = new DocspaceApiJavascript.ActiveConnectionsItemDto();
+      //var instance = new Api.ActiveConnectionsItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "userId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instance = new DocspaceApiJavascript.ActiveConnectionsItemDto();
+      //var instance = new Api.ActiveConnectionsItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property mobile (base name: "mobile")', function() {
       // uncomment below and update the code to test the property mobile
-      //var instance = new DocspaceApiJavascript.ActiveConnectionsItemDto();
+      //var instance = new Api.ActiveConnectionsItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property ip (base name: "ip")', function() {
       // uncomment below and update the code to test the property ip
-      //var instance = new DocspaceApiJavascript.ActiveConnectionsItemDto();
+      //var instance = new Api.ActiveConnectionsItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property country (base name: "country")', function() {
       // uncomment below and update the code to test the property country
-      //var instance = new DocspaceApiJavascript.ActiveConnectionsItemDto();
+      //var instance = new Api.ActiveConnectionsItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property city (base name: "city")', function() {
       // uncomment below and update the code to test the property city
-      //var instance = new DocspaceApiJavascript.ActiveConnectionsItemDto();
+      //var instance = new Api.ActiveConnectionsItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property browser (base name: "browser")', function() {
       // uncomment below and update the code to test the property browser
-      //var instance = new DocspaceApiJavascript.ActiveConnectionsItemDto();
+      //var instance = new Api.ActiveConnectionsItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property platform (base name: "platform")', function() {
       // uncomment below and update the code to test the property platform
-      //var instance = new DocspaceApiJavascript.ActiveConnectionsItemDto();
+      //var instance = new Api.ActiveConnectionsItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property date (base name: "date")', function() {
       // uncomment below and update the code to test the property date
-      //var instance = new DocspaceApiJavascript.ActiveConnectionsItemDto();
+      //var instance = new Api.ActiveConnectionsItemDto();
       //expect(instance).to.be();
     });
 
     it('should have the property page (base name: "page")', function() {
       // uncomment below and update the code to test the property page
-      //var instance = new DocspaceApiJavascript.ActiveConnectionsItemDto();
+      //var instance = new Api.ActiveConnectionsItemDto();
       //expect(instance).to.be();
     });
 

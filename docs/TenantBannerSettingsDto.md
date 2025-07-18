@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TenantBannerSettingsDto
+# Api.TenantBannerSettingsDto
 The request parameters for managing the promotional banners visibility settings for the current tenant.
 
 ## Properties

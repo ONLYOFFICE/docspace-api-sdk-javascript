@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.Module();
+    instance = new Api.Module();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,61 +54,61 @@
   describe('Module', function() {
     it('should create an instance of Module', function() {
       // uncomment below and update the code to test Module
-      //var instance = new DocspaceApiJavascript.Module();
-      //expect(instance).to.be.a(DocspaceApiJavascript.Module);
+      //var instance = new Api.Module();
+      //expect(instance).to.be.a(Api.Module);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.Module();
+      //var instance = new Api.Module();
       //expect(instance).to.be();
     });
 
     it('should have the property appName (base name: "appName")', function() {
       // uncomment below and update the code to test the property appName
-      //var instance = new DocspaceApiJavascript.Module();
+      //var instance = new Api.Module();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiJavascript.Module();
+      //var instance = new Api.Module();
       //expect(instance).to.be();
     });
 
     it('should have the property link (base name: "link")', function() {
       // uncomment below and update the code to test the property link
-      //var instance = new DocspaceApiJavascript.Module();
+      //var instance = new Api.Module();
       //expect(instance).to.be();
     });
 
     it('should have the property iconUrl (base name: "iconUrl")', function() {
       // uncomment below and update the code to test the property iconUrl
-      //var instance = new DocspaceApiJavascript.Module();
+      //var instance = new Api.Module();
       //expect(instance).to.be();
     });
 
     it('should have the property imageUrl (base name: "imageUrl")', function() {
       // uncomment below and update the code to test the property imageUrl
-      //var instance = new DocspaceApiJavascript.Module();
+      //var instance = new Api.Module();
       //expect(instance).to.be();
     });
 
     it('should have the property helpUrl (base name: "helpUrl")', function() {
       // uncomment below and update the code to test the property helpUrl
-      //var instance = new DocspaceApiJavascript.Module();
+      //var instance = new Api.Module();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new DocspaceApiJavascript.Module();
+      //var instance = new Api.Module();
       //expect(instance).to.be();
     });
 
     it('should have the property isPrimary (base name: "isPrimary")', function() {
       // uncomment below and update the code to test the property isPrimary
-      //var instance = new DocspaceApiJavascript.Module();
+      //var instance = new Api.Module();
       //expect(instance).to.be();
     });
 

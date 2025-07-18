@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FilesFoldersApi
+# Api.FilesFoldersApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -56,8 +56,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -79,10 +79,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let folderId = 9846; // Number | The folder ID.
 let opts = {
-  'checkUploadRequest': new DocspaceApiJavascript.CheckUploadRequest() // CheckUploadRequest | The request parameters for checking file uploads.
+  'checkUploadRequest': new Api.CheckUploadRequest() // CheckUploadRequest | The request parameters for checking file uploads.
 };
 apiInstance.checkUpload(folderId, opts, (error, data, response) => {
   if (error) {
@@ -126,8 +126,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -149,10 +149,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let folderId = 9846; // Number | The folder ID for the folder creation.
 let opts = {
-  'createFolder': new DocspaceApiJavascript.CreateFolder() // CreateFolder | The parameters for creating a folder.
+  'createFolder': new Api.CreateFolder() // CreateFolder | The parameters for creating a folder.
 };
 apiInstance.createFolder(folderId, opts, (error, data, response) => {
   if (error) {
@@ -196,8 +196,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -219,10 +219,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let folderId = 9846; // Number | The folder ID to delete.
 let opts = {
-  'deleteFolder': new DocspaceApiJavascript.DeleteFolder() // DeleteFolder | The parameters for deleting a folder.
+  'deleteFolder': new Api.DeleteFolder() // DeleteFolder | The parameters for deleting a folder.
 };
 apiInstance.deleteFolder(folderId, opts, (error, data, response) => {
   if (error) {
@@ -262,8 +262,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -285,7 +285,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 apiInstance.getFilesUsedSpace((error, data, response) => {
   if (error) {
     console.error(error);
@@ -327,9 +327,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let folderId = 9846; // Number | The request folder ID.
 apiInstance.getFolder(folderId, (error, data, response) => {
   if (error) {
@@ -386,24 +386,24 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let folderId = 9846; // Number | The folder ID of the request.
 let opts = {
   'userIdOrGroupId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The user or group ID.
-  'filterType': new DocspaceApiJavascript.FilterType(), // FilterType | The filter type.
+  'filterType': new Api.FilterType(), // FilterType | The filter type.
   'roomId': 9846, // Number | The room ID.
   'excludeSubject': true, // Boolean | Specifies whether to exclude search by user or group ID.
-  'applyFilterOption': new DocspaceApiJavascript.ApplyFilterOption(), // ApplyFilterOption | Specifies whether to return only files, only folders or all elements from the specified folder.
+  'applyFilterOption': new Api.ApplyFilterOption(), // ApplyFilterOption | Specifies whether to return only files, only folders or all elements from the specified folder.
   'extension': ".txt", // String | Specifies whether to search for the specific file extension.
-  'searchArea': new DocspaceApiJavascript.SearchArea(), // SearchArea | The search area.
+  'searchArea': new Api.SearchArea(), // SearchArea | The search area.
   'formsItemKey': "some text", // String | The forms item key.
   'formsItemType': "some text", // String | The forms item type.
   'count': 1234, // Number | The maximum number of items to retrieve in the request.
   'startIndex': 1234, // Number | The zero-based index of the first item to retrieve in a paginated request.
   'sortBy': "some text", // String | Specifies the property used for sorting the folder request results.
-  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'sortOrder': new Api.SortOrder(), // SortOrder | The order in which the results are sorted.
   'filterValue': "some text" // String | The text value used as a filter parameter for folder content queries.
 };
 apiInstance.getFolderByFolderId(folderId, opts, (error, data, response) => {
@@ -451,8 +451,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -474,11 +474,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let folderId = 9846; // Number | The folder ID of the history request.
 let opts = {
-  'fromDate': new DocspaceApiJavascript.ApiDateTime(), // ApiDateTime | The start date of the history request.
-  'toDate': new DocspaceApiJavascript.ApiDateTime(), // ApiDateTime | The end date of the history request.
+  'fromDate': new Api.ApiDateTime(), // ApiDateTime | The start date of the history request.
+  'toDate': new Api.ApiDateTime(), // ApiDateTime | The end date of the history request.
   'count': 1234, // Number | The number of records to retrieve for the folder history.
   'startIndex': 1234 // Number | The starting index from which the history records are retrieved in the request.
 };
@@ -523,9 +523,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let folderId = 9846; // Number | The request folder ID.
 apiInstance.getFolderInfo(folderId, (error, data, response) => {
   if (error) {
@@ -568,8 +568,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -591,7 +591,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let folderId = 9846; // Number | The request folder ID.
 apiInstance.getFolderPath(folderId, (error, data, response) => {
   if (error) {
@@ -634,9 +634,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let id = 9846; // Number | The request folder ID.
 apiInstance.getFolderPrimaryExternalLink(id, (error, data, response) => {
   if (error) {
@@ -679,8 +679,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -702,7 +702,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let folderId = 9846; // Number | The request folder ID.
 apiInstance.getFolders(folderId, (error, data, response) => {
   if (error) {
@@ -753,8 +753,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -776,15 +776,15 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let opts = {
   'userIdOrGroupId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The user or group ID.
-  'filterType': new DocspaceApiJavascript.FilterType(), // FilterType | The filter type.
-  'applyFilterOption': new DocspaceApiJavascript.ApplyFilterOption(), // ApplyFilterOption | Specifies whether to return only files, only folders or all elements.
+  'filterType': new Api.FilterType(), // FilterType | The filter type.
+  'applyFilterOption': new Api.ApplyFilterOption(), // ApplyFilterOption | Specifies whether to return only files, only folders or all elements.
   'count': 1234, // Number | The maximum number of items to retrieve in the response.
   'startIndex': 1234, // Number | The starting position of the items to be retrieved.
   'sortBy': "some text", // String | The property used to specify the sorting criteria for folder contents.
-  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'sortOrder': new Api.SortOrder(), // SortOrder | The order in which the results are sorted.
   'filterValue': "some text" // String | The text used for filtering or searching folder contents.
 };
 apiInstance.getMyFolder(opts, (error, data, response) => {
@@ -828,8 +828,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -851,7 +851,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let folderId = 9846; // Number | The request folder ID.
 apiInstance.getNewFolderItems(folderId, (error, data, response) => {
   if (error) {
@@ -901,8 +901,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -924,14 +924,14 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let opts = {
   'userIdOrGroupId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The user or group ID.
-  'filterType': new DocspaceApiJavascript.FilterType(), // FilterType | The filter type.
+  'filterType': new Api.FilterType(), // FilterType | The filter type.
   'count': 1234, // Number | The maximum number of items to retrieve in the request.
   'startIndex': 1234, // Number | The zero-based index of the first item to retrieve in a paginated list.
   'sortBy': "some text", // String | Specifies the field by which the folder content should be sorted.
-  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'sortOrder': new Api.SortOrder(), // SortOrder | The order in which the results are sorted.
   'filterValue': "some text" // String | The text used as a filter or search criterion for folder content queries.
 };
 apiInstance.getPrivacyFolder(opts, (error, data, response) => {
@@ -983,8 +983,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1006,15 +1006,15 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let opts = {
   'userIdOrGroupId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The user or group ID.
-  'filterType': new DocspaceApiJavascript.FilterType(), // FilterType | The filter type.
+  'filterType': new Api.FilterType(), // FilterType | The filter type.
   'withoutTrash': true, // Boolean | Specifies whether to return the \"Trash\" section or not.
   'count': 1234, // Number | The maximum number of items to retrieve in the response.
   'startIndex': 1234, // Number | The starting position of the items to be retrieved.
   'sortBy': "some text", // String | Specifies the field by which the folder content should be sorted.
-  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'sortOrder': new Api.SortOrder(), // SortOrder | The order in which the results are sorted.
   'filterValue': "some text" // String | The text used as a filter for searching or retrieving folder contents.
 };
 apiInstance.getRootFolders(opts, (error, data, response) => {
@@ -1066,8 +1066,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1089,15 +1089,15 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let opts = {
   'userIdOrGroupId': "75a5f745-f697-4418-b38d-0fe0d277e258", // String | The user or group ID.
-  'filterType': new DocspaceApiJavascript.FilterType(), // FilterType | The filter type.
-  'applyFilterOption': new DocspaceApiJavascript.ApplyFilterOption(), // ApplyFilterOption | Specifies whether to return only files, only folders or all elements.
+  'filterType': new Api.FilterType(), // FilterType | The filter type.
+  'applyFilterOption': new Api.ApplyFilterOption(), // ApplyFilterOption | Specifies whether to return only files, only folders or all elements.
   'count': 1234, // Number | The maximum number of items to retrieve in the response.
   'startIndex': 1234, // Number | The starting position of the items to be retrieved.
   'sortBy': "some text", // String | The property used to specify the sorting criteria for folder contents.
-  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'sortOrder': new Api.SortOrder(), // SortOrder | The order in which the results are sorted.
   'filterValue': "some text" // String | The text used for filtering or searching folder contents.
 };
 apiInstance.getTrashFolder(opts, (error, data, response) => {
@@ -1153,8 +1153,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1176,7 +1176,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let folderId = 9846; // Number | The folder ID for inserting a file.
 let opts = {
   'insertFileFile': "/path/to/file", // File | The file to be inserted.
@@ -1244,8 +1244,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1267,7 +1267,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let opts = {
   'file': "/path/to/file", // File | The file to be inserted.
   'title': "title_example", // String | The file title to be inserted.
@@ -1324,8 +1324,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1347,10 +1347,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let folderId = 9846; // Number | The folder ID for the folder creation.
 let opts = {
-  'createFolder': new DocspaceApiJavascript.CreateFolder() // CreateFolder | The parameters for creating a folder.
+  'createFolder': new Api.CreateFolder() // CreateFolder | The parameters for creating a folder.
 };
 apiInstance.renameFolder(folderId, opts, (error, data, response) => {
   if (error) {
@@ -1394,8 +1394,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1417,10 +1417,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let folderId = 9846; // Number | The folder unique identifier.
 let opts = {
-  'orderRequestDto': new DocspaceApiJavascript.OrderRequestDto() // OrderRequestDto | The folder order information.
+  'orderRequestDto': new Api.OrderRequestDto() // OrderRequestDto | The folder order information.
 };
 apiInstance.setFolderOrder(folderId, opts, (error, data, response) => {
   if (error) {
@@ -1464,8 +1464,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1487,10 +1487,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let folderId = 9846; // Number | The folder ID to upload a file.
 let opts = {
-  'uploadRequestDto': new DocspaceApiJavascript.UploadRequestDto() // UploadRequestDto | The request parameters for uploading a file.
+  'uploadRequestDto': new Api.UploadRequestDto() // UploadRequestDto | The request parameters for uploading a file.
 };
 apiInstance.uploadFile(folderId, opts, (error, data, response) => {
   if (error) {
@@ -1533,8 +1533,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1556,9 +1556,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.FilesFoldersApi();
+let apiInstance = new Api.FilesFoldersApi();
 let opts = {
-  'inDto': new DocspaceApiJavascript.UploadRequestDto() // UploadRequestDto | The request parameters for uploading a file.
+  'inDto': new Api.UploadRequestDto() // UploadRequestDto | The request parameters for uploading a file.
 };
 apiInstance.uploadFileToMy(opts, (error, data, response) => {
   if (error) {

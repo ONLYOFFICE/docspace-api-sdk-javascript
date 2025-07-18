@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.EditHistoryChangesWrapper
+# Api.EditHistoryChangesWrapper
 The parameters of the file editing history.
 
 ## Properties

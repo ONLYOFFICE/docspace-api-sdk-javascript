@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ConfirmData();
+    instance = new Api.ConfirmData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('ConfirmData', function() {
     it('should create an instance of ConfirmData', function() {
       // uncomment below and update the code to test ConfirmData
-      //var instance = new DocspaceApiJavascript.ConfirmData();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ConfirmData);
+      //var instance = new Api.ConfirmData();
+      //expect(instance).to.be.a(Api.ConfirmData);
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiJavascript.ConfirmData();
+      //var instance = new Api.ConfirmData();
       //expect(instance).to.be();
     });
 
     it('should have the property first (base name: "first")', function() {
       // uncomment below and update the code to test the property first
-      //var instance = new DocspaceApiJavascript.ConfirmData();
+      //var instance = new Api.ConfirmData();
       //expect(instance).to.be();
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiJavascript.ConfirmData();
+      //var instance = new Api.ConfirmData();
       //expect(instance).to.be();
     });
 

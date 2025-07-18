@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.RoomsNotificationSettingsDto
+# Api.RoomsNotificationSettingsDto
 The rooms notification settings.
 
 ## Properties

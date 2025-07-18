@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.RecentConfig
+# Api.RecentConfig
 The presence or absence of the documents in the \&quot;Open Recent...\&quot; menu option.
 
 ## Properties

@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.WatermarkDto();
+    instance = new Api.WatermarkDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,49 +54,49 @@
   describe('WatermarkDto', function() {
     it('should create an instance of WatermarkDto', function() {
       // uncomment below and update the code to test WatermarkDto
-      //var instance = new DocspaceApiJavascript.WatermarkDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.WatermarkDto);
+      //var instance = new Api.WatermarkDto();
+      //expect(instance).to.be.a(Api.WatermarkDto);
     });
 
     it('should have the property additions (base name: "additions")', function() {
       // uncomment below and update the code to test the property additions
-      //var instance = new DocspaceApiJavascript.WatermarkDto();
+      //var instance = new Api.WatermarkDto();
       //expect(instance).to.be();
     });
 
     it('should have the property text (base name: "text")', function() {
       // uncomment below and update the code to test the property text
-      //var instance = new DocspaceApiJavascript.WatermarkDto();
+      //var instance = new Api.WatermarkDto();
       //expect(instance).to.be();
     });
 
     it('should have the property rotate (base name: "rotate")', function() {
       // uncomment below and update the code to test the property rotate
-      //var instance = new DocspaceApiJavascript.WatermarkDto();
+      //var instance = new Api.WatermarkDto();
       //expect(instance).to.be();
     });
 
     it('should have the property imageScale (base name: "imageScale")', function() {
       // uncomment below and update the code to test the property imageScale
-      //var instance = new DocspaceApiJavascript.WatermarkDto();
+      //var instance = new Api.WatermarkDto();
       //expect(instance).to.be();
     });
 
     it('should have the property imageUrl (base name: "imageUrl")', function() {
       // uncomment below and update the code to test the property imageUrl
-      //var instance = new DocspaceApiJavascript.WatermarkDto();
+      //var instance = new Api.WatermarkDto();
       //expect(instance).to.be();
     });
 
     it('should have the property imageHeight (base name: "imageHeight")', function() {
       // uncomment below and update the code to test the property imageHeight
-      //var instance = new DocspaceApiJavascript.WatermarkDto();
+      //var instance = new Api.WatermarkDto();
       //expect(instance).to.be();
     });
 
     it('should have the property imageWidth (base name: "imageWidth")', function() {
       // uncomment below and update the code to test the property imageWidth
-      //var instance = new DocspaceApiJavascript.WatermarkDto();
+      //var instance = new Api.WatermarkDto();
       //expect(instance).to.be();
     });
 

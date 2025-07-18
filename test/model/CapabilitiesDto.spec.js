@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CapabilitiesDto();
+    instance = new Api.CapabilitiesDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,49 +54,49 @@
   describe('CapabilitiesDto', function() {
     it('should create an instance of CapabilitiesDto', function() {
       // uncomment below and update the code to test CapabilitiesDto
-      //var instance = new DocspaceApiJavascript.CapabilitiesDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CapabilitiesDto);
+      //var instance = new Api.CapabilitiesDto();
+      //expect(instance).to.be.a(Api.CapabilitiesDto);
     });
 
     it('should have the property ldapEnabled (base name: "ldapEnabled")', function() {
       // uncomment below and update the code to test the property ldapEnabled
-      //var instance = new DocspaceApiJavascript.CapabilitiesDto();
+      //var instance = new Api.CapabilitiesDto();
       //expect(instance).to.be();
     });
 
     it('should have the property ldapDomain (base name: "ldapDomain")', function() {
       // uncomment below and update the code to test the property ldapDomain
-      //var instance = new DocspaceApiJavascript.CapabilitiesDto();
+      //var instance = new Api.CapabilitiesDto();
       //expect(instance).to.be();
     });
 
     it('should have the property providers (base name: "providers")', function() {
       // uncomment below and update the code to test the property providers
-      //var instance = new DocspaceApiJavascript.CapabilitiesDto();
+      //var instance = new Api.CapabilitiesDto();
       //expect(instance).to.be();
     });
 
     it('should have the property ssoLabel (base name: "ssoLabel")', function() {
       // uncomment below and update the code to test the property ssoLabel
-      //var instance = new DocspaceApiJavascript.CapabilitiesDto();
+      //var instance = new Api.CapabilitiesDto();
       //expect(instance).to.be();
     });
 
     it('should have the property oauthEnabled (base name: "oauthEnabled")', function() {
       // uncomment below and update the code to test the property oauthEnabled
-      //var instance = new DocspaceApiJavascript.CapabilitiesDto();
+      //var instance = new Api.CapabilitiesDto();
       //expect(instance).to.be();
     });
 
     it('should have the property ssoUrl (base name: "ssoUrl")', function() {
       // uncomment below and update the code to test the property ssoUrl
-      //var instance = new DocspaceApiJavascript.CapabilitiesDto();
+      //var instance = new Api.CapabilitiesDto();
       //expect(instance).to.be();
     });
 
     it('should have the property identityServerEnabled (base name: "identityServerEnabled")', function() {
       // uncomment below and update the code to test the property identityServerEnabled
-      //var instance = new DocspaceApiJavascript.CapabilitiesDto();
+      //var instance = new Api.CapabilitiesDto();
       //expect(instance).to.be();
     });
 

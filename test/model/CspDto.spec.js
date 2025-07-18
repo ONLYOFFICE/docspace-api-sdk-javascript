@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CspDto();
+    instance = new Api.CspDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('CspDto', function() {
     it('should create an instance of CspDto', function() {
       // uncomment below and update the code to test CspDto
-      //var instance = new DocspaceApiJavascript.CspDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CspDto);
+      //var instance = new Api.CspDto();
+      //expect(instance).to.be.a(Api.CspDto);
     });
 
     it('should have the property domains (base name: "domains")', function() {
       // uncomment below and update the code to test the property domains
-      //var instance = new DocspaceApiJavascript.CspDto();
+      //var instance = new Api.CspDto();
       //expect(instance).to.be();
     });
 
     it('should have the property header (base name: "header")', function() {
       // uncomment below and update the code to test the property header
-      //var instance = new DocspaceApiJavascript.CspDto();
+      //var instance = new Api.CspDto();
       //expect(instance).to.be();
     });
 

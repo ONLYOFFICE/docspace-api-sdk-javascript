@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.PeopleGuestsApi
+# Api.PeopleGuestsApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -35,8 +35,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -58,9 +58,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleGuestsApi();
+let apiInstance = new Api.PeopleGuestsApi();
 let opts = {
-  'emailMemberRequestDto': new DocspaceApiJavascript.EmailMemberRequestDto() // EmailMemberRequestDto | 
+  'emailMemberRequestDto': new Api.EmailMemberRequestDto() // EmailMemberRequestDto | 
 };
 apiInstance.approveGuestShareLink(opts, (error, data, response) => {
   if (error) {
@@ -103,8 +103,8 @@ null (empty response body)
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -126,9 +126,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleGuestsApi();
+let apiInstance = new Api.PeopleGuestsApi();
 let opts = {
-  'updateMembersRequestDto': new DocspaceApiJavascript.UpdateMembersRequestDto() // UpdateMembersRequestDto | 
+  'updateMembersRequestDto': new Api.UpdateMembersRequestDto() // UpdateMembersRequestDto | 
 };
 apiInstance.deleteGuests(opts, (error, data, response) => {
   if (error) {

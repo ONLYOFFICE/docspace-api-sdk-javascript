@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CustomerInfoDto
+# Api.CustomerInfoDto
 The customer information.
 
 ## Properties

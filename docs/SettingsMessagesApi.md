@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SettingsMessagesApi
+# Api.SettingsMessagesApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -36,8 +36,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -59,9 +59,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsMessagesApi();
+let apiInstance = new Api.SettingsMessagesApi();
 let opts = {
-  'turnOnAdminMessageSettingsRequestDto': new DocspaceApiJavascript.TurnOnAdminMessageSettingsRequestDto() // TurnOnAdminMessageSettingsRequestDto | 
+  'turnOnAdminMessageSettingsRequestDto': new Api.TurnOnAdminMessageSettingsRequestDto() // TurnOnAdminMessageSettingsRequestDto | 
 };
 apiInstance.enableAdminMessageSettings(opts, (error, data, response) => {
   if (error) {
@@ -104,11 +104,11 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.SettingsMessagesApi();
+let apiInstance = new Api.SettingsMessagesApi();
 let opts = {
-  'adminMessageSettingsRequestsDto': new DocspaceApiJavascript.AdminMessageSettingsRequestsDto() // AdminMessageSettingsRequestsDto | 
+  'adminMessageSettingsRequestsDto': new Api.AdminMessageSettingsRequestsDto() // AdminMessageSettingsRequestsDto | 
 };
 apiInstance.sendAdminMail(opts, (error, data, response) => {
   if (error) {
@@ -151,11 +151,11 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.SettingsMessagesApi();
+let apiInstance = new Api.SettingsMessagesApi();
 let opts = {
-  'adminMessageBaseSettingsRequestsDto': new DocspaceApiJavascript.AdminMessageBaseSettingsRequestsDto() // AdminMessageBaseSettingsRequestsDto | 
+  'adminMessageBaseSettingsRequestsDto': new Api.AdminMessageBaseSettingsRequestsDto() // AdminMessageBaseSettingsRequestsDto | 
 };
 apiInstance.sendJoinInviteMail(opts, (error, data, response) => {
   if (error) {

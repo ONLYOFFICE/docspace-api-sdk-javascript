@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.SecurityRequestsDto();
+    instance = new Api.SecurityRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('SecurityRequestsDto', function() {
     it('should create an instance of SecurityRequestsDto', function() {
       // uncomment below and update the code to test SecurityRequestsDto
-      //var instance = new DocspaceApiJavascript.SecurityRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.SecurityRequestsDto);
+      //var instance = new Api.SecurityRequestsDto();
+      //expect(instance).to.be.a(Api.SecurityRequestsDto);
     });
 
     it('should have the property productId (base name: "productId")', function() {
       // uncomment below and update the code to test the property productId
-      //var instance = new DocspaceApiJavascript.SecurityRequestsDto();
+      //var instance = new Api.SecurityRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "userId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instance = new DocspaceApiJavascript.SecurityRequestsDto();
+      //var instance = new Api.SecurityRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property administrator (base name: "administrator")', function() {
       // uncomment below and update the code to test the property administrator
-      //var instance = new DocspaceApiJavascript.SecurityRequestsDto();
+      //var instance = new Api.SecurityRequestsDto();
       //expect(instance).to.be();
     });
 

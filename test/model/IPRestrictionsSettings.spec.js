@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.IPRestrictionsSettings();
+    instance = new Api.IPRestrictionsSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('IPRestrictionsSettings', function() {
     it('should create an instance of IPRestrictionsSettings', function() {
       // uncomment below and update the code to test IPRestrictionsSettings
-      //var instance = new DocspaceApiJavascript.IPRestrictionsSettings();
-      //expect(instance).to.be.a(DocspaceApiJavascript.IPRestrictionsSettings);
+      //var instance = new Api.IPRestrictionsSettings();
+      //expect(instance).to.be.a(Api.IPRestrictionsSettings);
     });
 
     it('should have the property enable (base name: "enable")', function() {
       // uncomment below and update the code to test the property enable
-      //var instance = new DocspaceApiJavascript.IPRestrictionsSettings();
+      //var instance = new Api.IPRestrictionsSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModified (base name: "lastModified")', function() {
       // uncomment below and update the code to test the property lastModified
-      //var instance = new DocspaceApiJavascript.IPRestrictionsSettings();
+      //var instance = new Api.IPRestrictionsSettings();
       //expect(instance).to.be();
     });
 

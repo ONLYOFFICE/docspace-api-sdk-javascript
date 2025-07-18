@@ -24,9 +24,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
@@ -53,8 +53,8 @@
   describe('MobilePhoneActivationStatus', function() {
     it('should create an instance of MobilePhoneActivationStatus', function() {
       // uncomment below and update the code to test MobilePhoneActivationStatus
-      //var instance = new DocspaceApiJavascript.MobilePhoneActivationStatus();
-      //expect(instance).to.be.a(DocspaceApiJavascript.MobilePhoneActivationStatus);
+      //var instance = new Api.MobilePhoneActivationStatus();
+      //expect(instance).to.be.a(Api.MobilePhoneActivationStatus);
     });
 
   });

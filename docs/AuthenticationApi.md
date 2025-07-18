@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.AuthenticationApi
+# Api.AuthenticationApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -40,11 +40,11 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.AuthenticationApi();
+let apiInstance = new Api.AuthenticationApi();
 let opts = {
-  'authRequestsDto': new DocspaceApiJavascript.AuthRequestsDto() // AuthRequestsDto | 
+  'authRequestsDto': new Api.AuthRequestsDto() // AuthRequestsDto | 
 };
 apiInstance.authenticateMe(opts, (error, data, response) => {
   if (error) {
@@ -88,12 +88,12 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.AuthenticationApi();
+let apiInstance = new Api.AuthenticationApi();
 let code = "code_example"; // String | 
 let opts = {
-  'authRequestsDto': new DocspaceApiJavascript.AuthRequestsDto() // AuthRequestsDto | 
+  'authRequestsDto': new Api.AuthRequestsDto() // AuthRequestsDto | 
 };
 apiInstance.authenticateMeFromBodyWithCode(code, opts, (error, data, response) => {
   if (error) {
@@ -136,11 +136,11 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.AuthenticationApi();
+let apiInstance = new Api.AuthenticationApi();
 let opts = {
-  'emailValidationKeyModel': new DocspaceApiJavascript.EmailValidationKeyModel() // EmailValidationKeyModel | 
+  'emailValidationKeyModel': new Api.EmailValidationKeyModel() // EmailValidationKeyModel | 
 };
 apiInstance.checkConfirm(opts, (error, data, response) => {
   if (error) {
@@ -180,9 +180,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.AuthenticationApi();
+let apiInstance = new Api.AuthenticationApi();
 apiInstance.getIsAuthentificated((error, data, response) => {
   if (error) {
     console.error(error);
@@ -221,9 +221,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.AuthenticationApi();
+let apiInstance = new Api.AuthenticationApi();
 apiInstance.logout((error, data, response) => {
   if (error) {
     console.error(error);
@@ -265,8 +265,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -288,9 +288,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.AuthenticationApi();
+let apiInstance = new Api.AuthenticationApi();
 let opts = {
-  'mobileRequestsDto': new DocspaceApiJavascript.MobileRequestsDto() // MobileRequestsDto | 
+  'mobileRequestsDto': new Api.MobileRequestsDto() // MobileRequestsDto | 
 };
 apiInstance.saveMobilePhone(opts, (error, data, response) => {
   if (error) {
@@ -333,11 +333,11 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.AuthenticationApi();
+let apiInstance = new Api.AuthenticationApi();
 let opts = {
-  'authRequestsDto': new DocspaceApiJavascript.AuthRequestsDto() // AuthRequestsDto | 
+  'authRequestsDto': new Api.AuthRequestsDto() // AuthRequestsDto | 
 };
 apiInstance.sendSmsCode(opts, (error, data, response) => {
   if (error) {

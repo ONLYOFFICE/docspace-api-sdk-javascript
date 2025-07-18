@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
+    instance = new Api.FilesSettingsDtoInternalFormats();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,67 +54,67 @@
   describe('FilesSettingsDtoInternalFormats', function() {
     it('should create an instance of FilesSettingsDtoInternalFormats', function() {
       // uncomment below and update the code to test FilesSettingsDtoInternalFormats
-      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
-      //expect(instance).to.be.a(DocspaceApiJavascript.FilesSettingsDtoInternalFormats);
+      //var instance = new Api.FilesSettingsDtoInternalFormats();
+      //expect(instance).to.be.a(Api.FilesSettingsDtoInternalFormats);
     });
 
     it('should have the property unknown (base name: "Unknown")', function() {
       // uncomment below and update the code to test the property unknown
-      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
+      //var instance = new Api.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property archive (base name: "Archive")', function() {
       // uncomment below and update the code to test the property archive
-      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
+      //var instance = new Api.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property video (base name: "Video")', function() {
       // uncomment below and update the code to test the property video
-      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
+      //var instance = new Api.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property audio (base name: "Audio")', function() {
       // uncomment below and update the code to test the property audio
-      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
+      //var instance = new Api.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property image (base name: "Image")', function() {
       // uncomment below and update the code to test the property image
-      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
+      //var instance = new Api.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property spreadsheet (base name: "Spreadsheet")', function() {
       // uncomment below and update the code to test the property spreadsheet
-      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
+      //var instance = new Api.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property presentation (base name: "Presentation")', function() {
       // uncomment below and update the code to test the property presentation
-      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
+      //var instance = new Api.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property document (base name: "Document")', function() {
       // uncomment below and update the code to test the property document
-      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
+      //var instance = new Api.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property pdf (base name: "Pdf")', function() {
       // uncomment below and update the code to test the property pdf
-      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
+      //var instance = new Api.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 
     it('should have the property diagram (base name: "Diagram")', function() {
       // uncomment below and update the code to test the property diagram
-      //var instance = new DocspaceApiJavascript.FilesSettingsDtoInternalFormats();
+      //var instance = new Api.FilesSettingsDtoInternalFormats();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.BackupProgress
+# Api.BackupProgress
 
 
 ## Properties

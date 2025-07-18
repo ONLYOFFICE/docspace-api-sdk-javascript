@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.UpdateFile();
+    instance = new Api.UpdateFile();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('UpdateFile', function() {
     it('should create an instance of UpdateFile', function() {
       // uncomment below and update the code to test UpdateFile
-      //var instance = new DocspaceApiJavascript.UpdateFile();
-      //expect(instance).to.be.a(DocspaceApiJavascript.UpdateFile);
+      //var instance = new Api.UpdateFile();
+      //expect(instance).to.be.a(Api.UpdateFile);
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiJavascript.UpdateFile();
+      //var instance = new Api.UpdateFile();
       //expect(instance).to.be();
     });
 
     it('should have the property lastVersion (base name: "lastVersion")', function() {
       // uncomment below and update the code to test the property lastVersion
-      //var instance = new DocspaceApiJavascript.UpdateFile();
+      //var instance = new Api.UpdateFile();
       //expect(instance).to.be();
     });
 

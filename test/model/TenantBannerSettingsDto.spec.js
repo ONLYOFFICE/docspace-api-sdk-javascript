@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.TenantBannerSettingsDto();
+    instance = new Api.TenantBannerSettingsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('TenantBannerSettingsDto', function() {
     it('should create an instance of TenantBannerSettingsDto', function() {
       // uncomment below and update the code to test TenantBannerSettingsDto
-      //var instance = new DocspaceApiJavascript.TenantBannerSettingsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.TenantBannerSettingsDto);
+      //var instance = new Api.TenantBannerSettingsDto();
+      //expect(instance).to.be.a(Api.TenantBannerSettingsDto);
     });
 
     it('should have the property hidden (base name: "hidden")', function() {
       // uncomment below and update the code to test the property hidden
-      //var instance = new DocspaceApiJavascript.TenantBannerSettingsDto();
+      //var instance = new Api.TenantBannerSettingsDto();
       //expect(instance).to.be();
     });
 

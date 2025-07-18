@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.OrdersRequestDtoInteger
+# Api.OrdersRequestDtoInteger
 The collection of items to be ordered.
 
 ## Properties

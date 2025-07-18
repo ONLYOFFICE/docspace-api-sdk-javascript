@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.InviteUsersRequestDto();
+    instance = new Api.InviteUsersRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('InviteUsersRequestDto', function() {
     it('should create an instance of InviteUsersRequestDto', function() {
       // uncomment below and update the code to test InviteUsersRequestDto
-      //var instance = new DocspaceApiJavascript.InviteUsersRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.InviteUsersRequestDto);
+      //var instance = new Api.InviteUsersRequestDto();
+      //expect(instance).to.be.a(Api.InviteUsersRequestDto);
     });
 
     it('should have the property invitations (base name: "invitations")', function() {
       // uncomment below and update the code to test the property invitations
-      //var instance = new DocspaceApiJavascript.InviteUsersRequestDto();
+      //var instance = new Api.InviteUsersRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property culture (base name: "culture")', function() {
       // uncomment below and update the code to test the property culture
-      //var instance = new DocspaceApiJavascript.InviteUsersRequestDto();
+      //var instance = new Api.InviteUsersRequestDto();
       //expect(instance).to.be();
     });
 

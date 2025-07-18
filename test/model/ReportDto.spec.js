@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ReportDto();
+    instance = new Api.ReportDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,43 +54,43 @@
   describe('ReportDto', function() {
     it('should create an instance of ReportDto', function() {
       // uncomment below and update the code to test ReportDto
-      //var instance = new DocspaceApiJavascript.ReportDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ReportDto);
+      //var instance = new Api.ReportDto();
+      //expect(instance).to.be.a(Api.ReportDto);
     });
 
     it('should have the property collection (base name: "collection")', function() {
       // uncomment below and update the code to test the property collection
-      //var instance = new DocspaceApiJavascript.ReportDto();
+      //var instance = new Api.ReportDto();
       //expect(instance).to.be();
     });
 
     it('should have the property offset (base name: "offset")', function() {
       // uncomment below and update the code to test the property offset
-      //var instance = new DocspaceApiJavascript.ReportDto();
+      //var instance = new Api.ReportDto();
       //expect(instance).to.be();
     });
 
     it('should have the property limit (base name: "limit")', function() {
       // uncomment below and update the code to test the property limit
-      //var instance = new DocspaceApiJavascript.ReportDto();
+      //var instance = new Api.ReportDto();
       //expect(instance).to.be();
     });
 
     it('should have the property totalQuantity (base name: "totalQuantity")', function() {
       // uncomment below and update the code to test the property totalQuantity
-      //var instance = new DocspaceApiJavascript.ReportDto();
+      //var instance = new Api.ReportDto();
       //expect(instance).to.be();
     });
 
     it('should have the property totalPage (base name: "totalPage")', function() {
       // uncomment below and update the code to test the property totalPage
-      //var instance = new DocspaceApiJavascript.ReportDto();
+      //var instance = new Api.ReportDto();
       //expect(instance).to.be();
     });
 
     it('should have the property currentPage (base name: "currentPage")', function() {
       // uncomment below and update the code to test the property currentPage
-      //var instance = new DocspaceApiJavascript.ReportDto();
+      //var instance = new Api.ReportDto();
       //expect(instance).to.be();
     });
 

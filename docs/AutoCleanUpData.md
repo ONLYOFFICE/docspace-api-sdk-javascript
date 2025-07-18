@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.AutoCleanUpData
+# Api.AutoCleanUpData
 The auto-clearing setting parameters.
 
 ## Properties

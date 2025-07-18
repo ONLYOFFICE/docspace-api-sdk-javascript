@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.QuotaSettingsRequestsDtoDefaultQuota
+# Api.QuotaSettingsRequestsDtoDefaultQuota
 The default storage quota value applied to new users.
 
 ## Properties

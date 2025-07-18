@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TenantQuotaWrapper
+# Api.TenantQuotaWrapper
 
 
 ## Properties

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ItemKeyValuePairStringString
+# Api.ItemKeyValuePairStringString
 
 
 ## Properties

@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettingsDto();
+    instance = new Api.AdditionalWhiteLabelSettingsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,49 +54,49 @@
   describe('AdditionalWhiteLabelSettingsDto', function() {
     it('should create an instance of AdditionalWhiteLabelSettingsDto', function() {
       // uncomment below and update the code to test AdditionalWhiteLabelSettingsDto
-      //var instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettingsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.AdditionalWhiteLabelSettingsDto);
+      //var instance = new Api.AdditionalWhiteLabelSettingsDto();
+      //expect(instance).to.be.a(Api.AdditionalWhiteLabelSettingsDto);
     });
 
     it('should have the property startDocsEnabled (base name: "startDocsEnabled")', function() {
       // uncomment below and update the code to test the property startDocsEnabled
-      //var instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettingsDto();
+      //var instance = new Api.AdditionalWhiteLabelSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property helpCenterEnabled (base name: "helpCenterEnabled")', function() {
       // uncomment below and update the code to test the property helpCenterEnabled
-      //var instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettingsDto();
+      //var instance = new Api.AdditionalWhiteLabelSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property feedbackAndSupportEnabled (base name: "feedbackAndSupportEnabled")', function() {
       // uncomment below and update the code to test the property feedbackAndSupportEnabled
-      //var instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettingsDto();
+      //var instance = new Api.AdditionalWhiteLabelSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property userForumEnabled (base name: "userForumEnabled")', function() {
       // uncomment below and update the code to test the property userForumEnabled
-      //var instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettingsDto();
+      //var instance = new Api.AdditionalWhiteLabelSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property videoGuidesEnabled (base name: "videoGuidesEnabled")', function() {
       // uncomment below and update the code to test the property videoGuidesEnabled
-      //var instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettingsDto();
+      //var instance = new Api.AdditionalWhiteLabelSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property licenseAgreementsEnabled (base name: "licenseAgreementsEnabled")', function() {
       // uncomment below and update the code to test the property licenseAgreementsEnabled
-      //var instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettingsDto();
+      //var instance = new Api.AdditionalWhiteLabelSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isDefault (base name: "isDefault")', function() {
       // uncomment below and update the code to test the property isDefault
-      //var instance = new DocspaceApiJavascript.AdditionalWhiteLabelSettingsDto();
+      //var instance = new Api.AdditionalWhiteLabelSettingsDto();
       //expect(instance).to.be();
     });
 

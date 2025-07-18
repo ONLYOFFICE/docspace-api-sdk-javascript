@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.AuthData();
+    instance = new Api.AuthData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,43 +54,43 @@
   describe('AuthData', function() {
     it('should create an instance of AuthData', function() {
       // uncomment below and update the code to test AuthData
-      //var instance = new DocspaceApiJavascript.AuthData();
-      //expect(instance).to.be.a(DocspaceApiJavascript.AuthData);
+      //var instance = new Api.AuthData();
+      //expect(instance).to.be.a(Api.AuthData);
     });
 
     it('should have the property login (base name: "login")', function() {
       // uncomment below and update the code to test the property login
-      //var instance = new DocspaceApiJavascript.AuthData();
+      //var instance = new Api.AuthData();
       //expect(instance).to.be();
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instance = new DocspaceApiJavascript.AuthData();
+      //var instance = new Api.AuthData();
       //expect(instance).to.be();
     });
 
     it('should have the property rawToken (base name: "rawToken")', function() {
       // uncomment below and update the code to test the property rawToken
-      //var instance = new DocspaceApiJavascript.AuthData();
+      //var instance = new Api.AuthData();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiJavascript.AuthData();
+      //var instance = new Api.AuthData();
       //expect(instance).to.be();
     });
 
     it('should have the property provider (base name: "provider")', function() {
       // uncomment below and update the code to test the property provider
-      //var instance = new DocspaceApiJavascript.AuthData();
+      //var instance = new Api.AuthData();
       //expect(instance).to.be();
     });
 
     it('should have the property token (base name: "token")', function() {
       // uncomment below and update the code to test the property token
-      //var instance = new DocspaceApiJavascript.AuthData();
+      //var instance = new Api.AuthData();
       //expect(instance).to.be();
     });
 

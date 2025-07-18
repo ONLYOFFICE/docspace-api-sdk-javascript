@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.SignupAccountRequestDto();
+    instance = new Api.SignupAccountRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,55 +54,55 @@
   describe('SignupAccountRequestDto', function() {
     it('should create an instance of SignupAccountRequestDto', function() {
       // uncomment below and update the code to test SignupAccountRequestDto
-      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.SignupAccountRequestDto);
+      //var instance = new Api.SignupAccountRequestDto();
+      //expect(instance).to.be.a(Api.SignupAccountRequestDto);
     });
 
     it('should have the property employeeType (base name: "employeeType")', function() {
       // uncomment below and update the code to test the property employeeType
-      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
+      //var instance = new Api.SignupAccountRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "firstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
+      //var instance = new Api.SignupAccountRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "lastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
+      //var instance = new Api.SignupAccountRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
+      //var instance = new Api.SignupAccountRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property passwordHash (base name: "passwordHash")', function() {
       // uncomment below and update the code to test the property passwordHash
-      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
+      //var instance = new Api.SignupAccountRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
+      //var instance = new Api.SignupAccountRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property culture (base name: "culture")', function() {
       // uncomment below and update the code to test the property culture
-      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
+      //var instance = new Api.SignupAccountRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property serializedProfile (base name: "serializedProfile")', function() {
       // uncomment below and update the code to test the property serializedProfile
-      //var instance = new DocspaceApiJavascript.SignupAccountRequestDto();
+      //var instance = new Api.SignupAccountRequestDto();
       //expect(instance).to.be();
     });
 

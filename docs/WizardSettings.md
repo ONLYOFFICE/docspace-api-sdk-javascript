@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.WizardSettings
+# Api.WizardSettings
 The Wizard settings.
 
 ## Properties

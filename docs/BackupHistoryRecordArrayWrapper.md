@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.BackupHistoryRecordArrayWrapper
+# Api.BackupHistoryRecordArrayWrapper
 
 
 ## Properties

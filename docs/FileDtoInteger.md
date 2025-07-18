@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FileDtoInteger
+# Api.FileDtoInteger
 The file parameters.
 
 ## Properties

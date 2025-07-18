@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CreateTextOrHtmlFile();
+    instance = new Api.CreateTextOrHtmlFile();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('CreateTextOrHtmlFile', function() {
     it('should create an instance of CreateTextOrHtmlFile', function() {
       // uncomment below and update the code to test CreateTextOrHtmlFile
-      //var instance = new DocspaceApiJavascript.CreateTextOrHtmlFile();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CreateTextOrHtmlFile);
+      //var instance = new Api.CreateTextOrHtmlFile();
+      //expect(instance).to.be.a(Api.CreateTextOrHtmlFile);
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiJavascript.CreateTextOrHtmlFile();
+      //var instance = new Api.CreateTextOrHtmlFile();
       //expect(instance).to.be();
     });
 
     it('should have the property content (base name: "content")', function() {
       // uncomment below and update the code to test the property content
-      //var instance = new DocspaceApiJavascript.CreateTextOrHtmlFile();
+      //var instance = new Api.CreateTextOrHtmlFile();
       //expect(instance).to.be();
     });
 
     it('should have the property createNewIfExist (base name: "createNewIfExist")', function() {
       // uncomment below and update the code to test the property createNewIfExist
-      //var instance = new DocspaceApiJavascript.CreateTextOrHtmlFile();
+      //var instance = new Api.CreateTextOrHtmlFile();
       //expect(instance).to.be();
     });
 

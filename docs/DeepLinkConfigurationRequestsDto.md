@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.DeepLinkConfigurationRequestsDto
+# Api.DeepLinkConfigurationRequestsDto
 The request parameters for managing the deep link configuration.
 
 ## Properties

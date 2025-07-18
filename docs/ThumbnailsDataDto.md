@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ThumbnailsDataDto
+# Api.ThumbnailsDataDto
 The thumbnails data parameters.
 
 ## Properties

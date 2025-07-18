@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.IPRestrictionArrayWrapper
+# Api.IPRestrictionArrayWrapper
 
 
 ## Properties

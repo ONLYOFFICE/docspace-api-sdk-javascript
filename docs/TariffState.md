@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TariffState
+# Api.TariffState
 [0 - Trial, 1 - Paid, 2 - Delay, 3 - Not paid]
 
 ## Enum

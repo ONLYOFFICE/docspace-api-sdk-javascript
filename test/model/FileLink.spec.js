@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.FileLink();
+    instance = new Api.FileLink();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('FileLink', function() {
     it('should create an instance of FileLink', function() {
       // uncomment below and update the code to test FileLink
-      //var instance = new DocspaceApiJavascript.FileLink();
-      //expect(instance).to.be.a(DocspaceApiJavascript.FileLink);
+      //var instance = new Api.FileLink();
+      //expect(instance).to.be.a(Api.FileLink);
     });
 
     it('should have the property filetype (base name: "filetype")', function() {
       // uncomment below and update the code to test the property filetype
-      //var instance = new DocspaceApiJavascript.FileLink();
+      //var instance = new Api.FileLink();
       //expect(instance).to.be();
     });
 
     it('should have the property token (base name: "token")', function() {
       // uncomment below and update the code to test the property token
-      //var instance = new DocspaceApiJavascript.FileLink();
+      //var instance = new Api.FileLink();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiJavascript.FileLink();
+      //var instance = new Api.FileLink();
       //expect(instance).to.be();
     });
 

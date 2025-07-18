@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SmtpOperationStatusRequestsWrapper
+# Api.SmtpOperationStatusRequestsWrapper
 
 
 ## Properties

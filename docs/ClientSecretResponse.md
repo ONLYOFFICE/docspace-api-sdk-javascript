@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ClientSecretResponse
+# Api.ClientSecretResponse
 The response containing the regenerated client secret.
 
 ## Properties

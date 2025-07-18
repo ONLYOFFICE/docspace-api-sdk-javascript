@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.FirebaseDto();
+    instance = new Api.FirebaseDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,55 +54,55 @@
   describe('FirebaseDto', function() {
     it('should create an instance of FirebaseDto', function() {
       // uncomment below and update the code to test FirebaseDto
-      //var instance = new DocspaceApiJavascript.FirebaseDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.FirebaseDto);
+      //var instance = new Api.FirebaseDto();
+      //expect(instance).to.be.a(Api.FirebaseDto);
     });
 
     it('should have the property apiKey (base name: "apiKey")', function() {
       // uncomment below and update the code to test the property apiKey
-      //var instance = new DocspaceApiJavascript.FirebaseDto();
+      //var instance = new Api.FirebaseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property authDomain (base name: "authDomain")', function() {
       // uncomment below and update the code to test the property authDomain
-      //var instance = new DocspaceApiJavascript.FirebaseDto();
+      //var instance = new Api.FirebaseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property projectId (base name: "projectId")', function() {
       // uncomment below and update the code to test the property projectId
-      //var instance = new DocspaceApiJavascript.FirebaseDto();
+      //var instance = new Api.FirebaseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property storageBucket (base name: "storageBucket")', function() {
       // uncomment below and update the code to test the property storageBucket
-      //var instance = new DocspaceApiJavascript.FirebaseDto();
+      //var instance = new Api.FirebaseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property messagingSenderId (base name: "messagingSenderId")', function() {
       // uncomment below and update the code to test the property messagingSenderId
-      //var instance = new DocspaceApiJavascript.FirebaseDto();
+      //var instance = new Api.FirebaseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property appId (base name: "appId")', function() {
       // uncomment below and update the code to test the property appId
-      //var instance = new DocspaceApiJavascript.FirebaseDto();
+      //var instance = new Api.FirebaseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property measurementId (base name: "measurementId")', function() {
       // uncomment below and update the code to test the property measurementId
-      //var instance = new DocspaceApiJavascript.FirebaseDto();
+      //var instance = new Api.FirebaseDto();
       //expect(instance).to.be();
     });
 
     it('should have the property databaseURL (base name: "databaseURL")', function() {
       // uncomment below and update the code to test the property databaseURL
-      //var instance = new DocspaceApiJavascript.FirebaseDto();
+      //var instance = new Api.FirebaseDto();
       //expect(instance).to.be();
     });
 

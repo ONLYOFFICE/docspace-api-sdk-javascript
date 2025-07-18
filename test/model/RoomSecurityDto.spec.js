@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.RoomSecurityDto();
+    instance = new Api.RoomSecurityDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('RoomSecurityDto', function() {
     it('should create an instance of RoomSecurityDto', function() {
       // uncomment below and update the code to test RoomSecurityDto
-      //var instance = new DocspaceApiJavascript.RoomSecurityDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.RoomSecurityDto);
+      //var instance = new Api.RoomSecurityDto();
+      //expect(instance).to.be.a(Api.RoomSecurityDto);
     });
 
     it('should have the property members (base name: "members")', function() {
       // uncomment below and update the code to test the property members
-      //var instance = new DocspaceApiJavascript.RoomSecurityDto();
+      //var instance = new Api.RoomSecurityDto();
       //expect(instance).to.be();
     });
 
     it('should have the property warning (base name: "warning")', function() {
       // uncomment below and update the code to test the property warning
-      //var instance = new DocspaceApiJavascript.RoomSecurityDto();
+      //var instance = new Api.RoomSecurityDto();
       //expect(instance).to.be();
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instance = new DocspaceApiJavascript.RoomSecurityDto();
+      //var instance = new Api.RoomSecurityDto();
       //expect(instance).to.be();
     });
 

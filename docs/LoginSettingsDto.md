@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.LoginSettingsDto
+# Api.LoginSettingsDto
 The login settings parameters.
 
 ## Properties

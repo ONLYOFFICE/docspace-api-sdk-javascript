@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.Schedule
+# Api.Schedule
 
 
 ## Properties

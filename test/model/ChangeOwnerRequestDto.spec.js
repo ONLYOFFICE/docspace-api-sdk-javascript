@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ChangeOwnerRequestDto();
+    instance = new Api.ChangeOwnerRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('ChangeOwnerRequestDto', function() {
     it('should create an instance of ChangeOwnerRequestDto', function() {
       // uncomment below and update the code to test ChangeOwnerRequestDto
-      //var instance = new DocspaceApiJavascript.ChangeOwnerRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ChangeOwnerRequestDto);
+      //var instance = new Api.ChangeOwnerRequestDto();
+      //expect(instance).to.be.a(Api.ChangeOwnerRequestDto);
     });
 
     it('should have the property folderIds (base name: "folderIds")', function() {
       // uncomment below and update the code to test the property folderIds
-      //var instance = new DocspaceApiJavascript.ChangeOwnerRequestDto();
+      //var instance = new Api.ChangeOwnerRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property fileIds (base name: "fileIds")', function() {
       // uncomment below and update the code to test the property fileIds
-      //var instance = new DocspaceApiJavascript.ChangeOwnerRequestDto();
+      //var instance = new Api.ChangeOwnerRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "userId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instance = new DocspaceApiJavascript.ChangeOwnerRequestDto();
+      //var instance = new Api.ChangeOwnerRequestDto();
       //expect(instance).to.be();
     });
 

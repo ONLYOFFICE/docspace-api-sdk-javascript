@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CompanyWhiteLabelSettingsDto
+# Api.CompanyWhiteLabelSettingsDto
 The company white label settings.
 
 ## Properties

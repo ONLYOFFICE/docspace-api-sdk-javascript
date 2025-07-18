@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.QuotaSettingsRequestsDtoDefaultQuota();
+    instance = new Api.QuotaSettingsRequestsDtoDefaultQuota();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,8 +54,8 @@
   describe('QuotaSettingsRequestsDtoDefaultQuota', function() {
     it('should create an instance of QuotaSettingsRequestsDtoDefaultQuota', function() {
       // uncomment below and update the code to test QuotaSettingsRequestsDtoDefaultQuota
-      //var instance = new DocspaceApiJavascript.QuotaSettingsRequestsDtoDefaultQuota();
-      //expect(instance).to.be.a(DocspaceApiJavascript.QuotaSettingsRequestsDtoDefaultQuota);
+      //var instance = new Api.QuotaSettingsRequestsDtoDefaultQuota();
+      //expect(instance).to.be.a(Api.QuotaSettingsRequestsDtoDefaultQuota);
     });
 
   });

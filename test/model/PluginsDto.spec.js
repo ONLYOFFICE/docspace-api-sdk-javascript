@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.PluginsDto();
+    instance = new Api.PluginsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('PluginsDto', function() {
     it('should create an instance of PluginsDto', function() {
       // uncomment below and update the code to test PluginsDto
-      //var instance = new DocspaceApiJavascript.PluginsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.PluginsDto);
+      //var instance = new Api.PluginsDto();
+      //expect(instance).to.be.a(Api.PluginsDto);
     });
 
     it('should have the property enabled (base name: "enabled")', function() {
       // uncomment below and update the code to test the property enabled
-      //var instance = new DocspaceApiJavascript.PluginsDto();
+      //var instance = new Api.PluginsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property upload (base name: "upload")', function() {
       // uncomment below and update the code to test the property upload
-      //var instance = new DocspaceApiJavascript.PluginsDto();
+      //var instance = new Api.PluginsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property _delete (base name: "delete")', function() {
       // uncomment below and update the code to test the property _delete
-      //var instance = new DocspaceApiJavascript.PluginsDto();
+      //var instance = new Api.PluginsDto();
       //expect(instance).to.be();
     });
 

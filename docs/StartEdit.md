@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.StartEdit
+# Api.StartEdit
 The parameters for starting file editing.
 
 ## Properties

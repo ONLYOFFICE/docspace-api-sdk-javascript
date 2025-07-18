@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FileLinkRequest
+# Api.FileLinkRequest
 The external link request parameters.
 
 ## Properties

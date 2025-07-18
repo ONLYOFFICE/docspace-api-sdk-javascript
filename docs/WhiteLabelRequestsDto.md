@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.WhiteLabelRequestsDto
+# Api.WhiteLabelRequestsDto
 The request parameters for configuring the white label branding settings.
 
 ## Properties

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.UpdateGroupRequest
+# Api.UpdateGroupRequest
 The request for updating a group.
 
 ## Properties

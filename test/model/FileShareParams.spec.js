@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.FileShareParams();
+    instance = new Api.FileShareParams();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('FileShareParams', function() {
     it('should create an instance of FileShareParams', function() {
       // uncomment below and update the code to test FileShareParams
-      //var instance = new DocspaceApiJavascript.FileShareParams();
-      //expect(instance).to.be.a(DocspaceApiJavascript.FileShareParams);
+      //var instance = new Api.FileShareParams();
+      //expect(instance).to.be.a(Api.FileShareParams);
     });
 
     it('should have the property shareTo (base name: "shareTo")', function() {
       // uncomment below and update the code to test the property shareTo
-      //var instance = new DocspaceApiJavascript.FileShareParams();
+      //var instance = new Api.FileShareParams();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiJavascript.FileShareParams();
+      //var instance = new Api.FileShareParams();
       //expect(instance).to.be();
     });
 
     it('should have the property access (base name: "access")', function() {
       // uncomment below and update the code to test the property access
-      //var instance = new DocspaceApiJavascript.FileShareParams();
+      //var instance = new Api.FileShareParams();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CultureSpecificExternalResource
+# Api.CultureSpecificExternalResource
 The external resource parameters.
 
 ## Properties

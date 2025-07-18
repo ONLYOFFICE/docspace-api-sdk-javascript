@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.DarkThemeSettingsType
+# Api.DarkThemeSettingsType
 [0 - Base, 1 - Dark, 2 - System]
 
 ## Enum

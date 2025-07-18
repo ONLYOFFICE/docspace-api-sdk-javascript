@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.StartReassignRequestDto();
+    instance = new Api.StartReassignRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('StartReassignRequestDto', function() {
     it('should create an instance of StartReassignRequestDto', function() {
       // uncomment below and update the code to test StartReassignRequestDto
-      //var instance = new DocspaceApiJavascript.StartReassignRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.StartReassignRequestDto);
+      //var instance = new Api.StartReassignRequestDto();
+      //expect(instance).to.be.a(Api.StartReassignRequestDto);
     });
 
     it('should have the property fromUserId (base name: "fromUserId")', function() {
       // uncomment below and update the code to test the property fromUserId
-      //var instance = new DocspaceApiJavascript.StartReassignRequestDto();
+      //var instance = new Api.StartReassignRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property toUserId (base name: "toUserId")', function() {
       // uncomment below and update the code to test the property toUserId
-      //var instance = new DocspaceApiJavascript.StartReassignRequestDto();
+      //var instance = new Api.StartReassignRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property deleteProfile (base name: "deleteProfile")', function() {
       // uncomment below and update the code to test the property deleteProfile
-      //var instance = new DocspaceApiJavascript.StartReassignRequestDto();
+      //var instance = new Api.StartReassignRequestDto();
       //expect(instance).to.be();
     });
 

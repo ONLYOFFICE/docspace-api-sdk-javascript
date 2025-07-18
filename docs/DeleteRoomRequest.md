@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.DeleteRoomRequest
+# Api.DeleteRoomRequest
 The parameters for deleting a room.
 
 ## Properties

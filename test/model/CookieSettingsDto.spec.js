@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CookieSettingsDto();
+    instance = new Api.CookieSettingsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('CookieSettingsDto', function() {
     it('should create an instance of CookieSettingsDto', function() {
       // uncomment below and update the code to test CookieSettingsDto
-      //var instance = new DocspaceApiJavascript.CookieSettingsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CookieSettingsDto);
+      //var instance = new Api.CookieSettingsDto();
+      //expect(instance).to.be.a(Api.CookieSettingsDto);
     });
 
     it('should have the property lifeTime (base name: "lifeTime")', function() {
       // uncomment below and update the code to test the property lifeTime
-      //var instance = new DocspaceApiJavascript.CookieSettingsDto();
+      //var instance = new Api.CookieSettingsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property enabled (base name: "enabled")', function() {
       // uncomment below and update the code to test the property enabled
-      //var instance = new DocspaceApiJavascript.CookieSettingsDto();
+      //var instance = new Api.CookieSettingsDto();
       //expect(instance).to.be();
     });
 

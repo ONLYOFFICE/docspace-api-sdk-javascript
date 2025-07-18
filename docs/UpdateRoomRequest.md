@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.UpdateRoomRequest
+# Api.UpdateRoomRequest
 The request parameters for updating a room.
 
 ## Properties

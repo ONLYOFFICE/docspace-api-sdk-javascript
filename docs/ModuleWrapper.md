@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ModuleWrapper
+# Api.ModuleWrapper
 
 
 ## Properties

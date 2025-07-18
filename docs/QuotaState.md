@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.QuotaState
+# Api.QuotaState
 [0 - Active, 1 - Overdue]
 
 ## Enum

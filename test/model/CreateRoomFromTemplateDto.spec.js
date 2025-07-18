@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CreateRoomFromTemplateDto();
+    instance = new Api.CreateRoomFromTemplateDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,85 +54,85 @@
   describe('CreateRoomFromTemplateDto', function() {
     it('should create an instance of CreateRoomFromTemplateDto', function() {
       // uncomment below and update the code to test CreateRoomFromTemplateDto
-      //var instance = new DocspaceApiJavascript.CreateRoomFromTemplateDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CreateRoomFromTemplateDto);
+      //var instance = new Api.CreateRoomFromTemplateDto();
+      //expect(instance).to.be.a(Api.CreateRoomFromTemplateDto);
     });
 
     it('should have the property templateId (base name: "templateId")', function() {
       // uncomment below and update the code to test the property templateId
-      //var instance = new DocspaceApiJavascript.CreateRoomFromTemplateDto();
+      //var instance = new Api.CreateRoomFromTemplateDto();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiJavascript.CreateRoomFromTemplateDto();
+      //var instance = new Api.CreateRoomFromTemplateDto();
       //expect(instance).to.be();
     });
 
     it('should have the property logo (base name: "logo")', function() {
       // uncomment below and update the code to test the property logo
-      //var instance = new DocspaceApiJavascript.CreateRoomFromTemplateDto();
+      //var instance = new Api.CreateRoomFromTemplateDto();
       //expect(instance).to.be();
     });
 
     it('should have the property copyLogo (base name: "copyLogo")', function() {
       // uncomment below and update the code to test the property copyLogo
-      //var instance = new DocspaceApiJavascript.CreateRoomFromTemplateDto();
+      //var instance = new Api.CreateRoomFromTemplateDto();
       //expect(instance).to.be();
     });
 
     it('should have the property tags (base name: "tags")', function() {
       // uncomment below and update the code to test the property tags
-      //var instance = new DocspaceApiJavascript.CreateRoomFromTemplateDto();
+      //var instance = new Api.CreateRoomFromTemplateDto();
       //expect(instance).to.be();
     });
 
     it('should have the property color (base name: "color")', function() {
       // uncomment below and update the code to test the property color
-      //var instance = new DocspaceApiJavascript.CreateRoomFromTemplateDto();
+      //var instance = new Api.CreateRoomFromTemplateDto();
       //expect(instance).to.be();
     });
 
     it('should have the property cover (base name: "cover")', function() {
       // uncomment below and update the code to test the property cover
-      //var instance = new DocspaceApiJavascript.CreateRoomFromTemplateDto();
+      //var instance = new Api.CreateRoomFromTemplateDto();
       //expect(instance).to.be();
     });
 
     it('should have the property quota (base name: "quota")', function() {
       // uncomment below and update the code to test the property quota
-      //var instance = new DocspaceApiJavascript.CreateRoomFromTemplateDto();
+      //var instance = new Api.CreateRoomFromTemplateDto();
       //expect(instance).to.be();
     });
 
     it('should have the property indexing (base name: "indexing")', function() {
       // uncomment below and update the code to test the property indexing
-      //var instance = new DocspaceApiJavascript.CreateRoomFromTemplateDto();
+      //var instance = new Api.CreateRoomFromTemplateDto();
       //expect(instance).to.be();
     });
 
     it('should have the property denyDownload (base name: "denyDownload")', function() {
       // uncomment below and update the code to test the property denyDownload
-      //var instance = new DocspaceApiJavascript.CreateRoomFromTemplateDto();
+      //var instance = new Api.CreateRoomFromTemplateDto();
       //expect(instance).to.be();
     });
 
     it('should have the property lifetime (base name: "lifetime")', function() {
       // uncomment below and update the code to test the property lifetime
-      //var instance = new DocspaceApiJavascript.CreateRoomFromTemplateDto();
+      //var instance = new Api.CreateRoomFromTemplateDto();
       //expect(instance).to.be();
     });
 
     it('should have the property watermark (base name: "watermark")', function() {
       // uncomment below and update the code to test the property watermark
-      //var instance = new DocspaceApiJavascript.CreateRoomFromTemplateDto();
+      //var instance = new Api.CreateRoomFromTemplateDto();
       //expect(instance).to.be();
     });
 
     it('should have the property _private (base name: "private")', function() {
       // uncomment below and update the code to test the property _private
-      //var instance = new DocspaceApiJavascript.CreateRoomFromTemplateDto();
+      //var instance = new Api.CreateRoomFromTemplateDto();
       //expect(instance).to.be();
     });
 

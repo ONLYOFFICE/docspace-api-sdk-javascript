@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.BackupScheduleDto
+# Api.BackupScheduleDto
 The backup schedule parameters.
 
 ## Properties

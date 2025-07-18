@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.PeopleUserDataApi
+# Api.PeopleUserDataApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -40,8 +40,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -63,7 +63,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleUserDataApi();
+let apiInstance = new Api.PeopleUserDataApi();
 apiInstance.getDeletePersonalFolderProgress((error, data, response) => {
   if (error) {
     console.error(error);
@@ -105,8 +105,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -128,7 +128,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleUserDataApi();
+let apiInstance = new Api.PeopleUserDataApi();
 let userid = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The user ID.
 apiInstance.getReassignProgress(userid, (error, data, response) => {
   if (error) {
@@ -171,8 +171,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -194,7 +194,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleUserDataApi();
+let apiInstance = new Api.PeopleUserDataApi();
 let userid = "aae1e103-bca5-9fa1-ba8c-42058b4abf28"; // String | The user ID.
 apiInstance.getRemoveProgress(userid, (error, data, response) => {
   if (error) {
@@ -238,8 +238,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -261,10 +261,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleUserDataApi();
+let apiInstance = new Api.PeopleUserDataApi();
 let opts = {
   'userId': "aae1e103-bca5-9fa1-ba8c-42058b4abf28", // String | The user ID.
-  'type': new DocspaceApiJavascript.EmployeeType() // EmployeeType | The expected user type.
+  'type': new Api.EmployeeType() // EmployeeType | The expected user type.
 };
 apiInstance.necessaryReassign(opts, (error, data, response) => {
   if (error) {
@@ -304,8 +304,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -327,7 +327,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleUserDataApi();
+let apiInstance = new Api.PeopleUserDataApi();
 apiInstance.sendInstructionsToDelete((error, data, response) => {
   if (error) {
     console.error(error);
@@ -366,8 +366,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -389,7 +389,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleUserDataApi();
+let apiInstance = new Api.PeopleUserDataApi();
 apiInstance.startDeletePersonalFolder((error, data, response) => {
   if (error) {
     console.error(error);
@@ -431,8 +431,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -454,9 +454,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleUserDataApi();
+let apiInstance = new Api.PeopleUserDataApi();
 let opts = {
-  'startReassignRequestDto': new DocspaceApiJavascript.StartReassignRequestDto() // StartReassignRequestDto | 
+  'startReassignRequestDto': new Api.StartReassignRequestDto() // StartReassignRequestDto | 
 };
 apiInstance.startReassign(opts, (error, data, response) => {
   if (error) {
@@ -499,8 +499,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -522,9 +522,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleUserDataApi();
+let apiInstance = new Api.PeopleUserDataApi();
 let opts = {
-  'terminateRequestDto': new DocspaceApiJavascript.TerminateRequestDto() // TerminateRequestDto | 
+  'terminateRequestDto': new Api.TerminateRequestDto() // TerminateRequestDto | 
 };
 apiInstance.startRemove(opts, (error, data, response) => {
   if (error) {
@@ -567,8 +567,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -590,9 +590,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleUserDataApi();
+let apiInstance = new Api.PeopleUserDataApi();
 let opts = {
-  'terminateRequestDto': new DocspaceApiJavascript.TerminateRequestDto() // TerminateRequestDto | 
+  'terminateRequestDto': new Api.TerminateRequestDto() // TerminateRequestDto | 
 };
 apiInstance.terminateReassign(opts, (error, data, response) => {
   if (error) {
@@ -635,8 +635,8 @@ null (empty response body)
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -658,9 +658,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleUserDataApi();
+let apiInstance = new Api.PeopleUserDataApi();
 let opts = {
-  'terminateRequestDto': new DocspaceApiJavascript.TerminateRequestDto() // TerminateRequestDto | 
+  'terminateRequestDto': new Api.TerminateRequestDto() // TerminateRequestDto | 
 };
 apiInstance.terminateRemove(opts, (error, data, response) => {
   if (error) {

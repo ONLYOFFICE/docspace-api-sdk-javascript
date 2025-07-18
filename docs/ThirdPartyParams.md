@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ThirdPartyParams
+# Api.ThirdPartyParams
 The third-party account parameters.
 
 ## Properties

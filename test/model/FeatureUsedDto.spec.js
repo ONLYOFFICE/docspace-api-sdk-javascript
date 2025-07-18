@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.FeatureUsedDto();
+    instance = new Api.FeatureUsedDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('FeatureUsedDto', function() {
     it('should create an instance of FeatureUsedDto', function() {
       // uncomment below and update the code to test FeatureUsedDto
-      //var instance = new DocspaceApiJavascript.FeatureUsedDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.FeatureUsedDto);
+      //var instance = new Api.FeatureUsedDto();
+      //expect(instance).to.be.a(Api.FeatureUsedDto);
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new DocspaceApiJavascript.FeatureUsedDto();
+      //var instance = new Api.FeatureUsedDto();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiJavascript.FeatureUsedDto();
+      //var instance = new Api.FeatureUsedDto();
       //expect(instance).to.be();
     });
 

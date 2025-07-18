@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.FileReference();
+    instance = new Api.FileReference();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,55 +54,55 @@
   describe('FileReference', function() {
     it('should create an instance of FileReference', function() {
       // uncomment below and update the code to test FileReference
-      //var instance = new DocspaceApiJavascript.FileReference();
-      //expect(instance).to.be.a(DocspaceApiJavascript.FileReference);
+      //var instance = new Api.FileReference();
+      //expect(instance).to.be.a(Api.FileReference);
     });
 
     it('should have the property referenceData (base name: "referenceData")', function() {
       // uncomment below and update the code to test the property referenceData
-      //var instance = new DocspaceApiJavascript.FileReference();
+      //var instance = new Api.FileReference();
       //expect(instance).to.be();
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instance = new DocspaceApiJavascript.FileReference();
+      //var instance = new Api.FileReference();
       //expect(instance).to.be();
     });
 
     it('should have the property path (base name: "path")', function() {
       // uncomment below and update the code to test the property path
-      //var instance = new DocspaceApiJavascript.FileReference();
+      //var instance = new Api.FileReference();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new DocspaceApiJavascript.FileReference();
+      //var instance = new Api.FileReference();
       //expect(instance).to.be();
     });
 
     it('should have the property fileType (base name: "fileType")', function() {
       // uncomment below and update the code to test the property fileType
-      //var instance = new DocspaceApiJavascript.FileReference();
+      //var instance = new Api.FileReference();
       //expect(instance).to.be();
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiJavascript.FileReference();
+      //var instance = new Api.FileReference();
       //expect(instance).to.be();
     });
 
     it('should have the property link (base name: "link")', function() {
       // uncomment below and update the code to test the property link
-      //var instance = new DocspaceApiJavascript.FileReference();
+      //var instance = new Api.FileReference();
       //expect(instance).to.be();
     });
 
     it('should have the property token (base name: "token")', function() {
       // uncomment below and update the code to test the property token
-      //var instance = new DocspaceApiJavascript.FileReference();
+      //var instance = new Api.FileReference();
       //expect(instance).to.be();
     });
 

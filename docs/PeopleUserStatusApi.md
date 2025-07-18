@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.PeopleUserStatusApi
+# Api.PeopleUserStatusApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -43,8 +43,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -66,14 +66,14 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleUserStatusApi();
-let status = new DocspaceApiJavascript.EmployeeStatus(); // EmployeeStatus | The user status.
+let apiInstance = new Api.PeopleUserStatusApi();
+let status = new Api.EmployeeStatus(); // EmployeeStatus | The user status.
 let opts = {
   'filterBy': "some text", // String | Specifies the criteria used to filter the profiles in the request.
   'count': 1234, // Number | The maximum number of user profiles to retrieve.
   'startIndex': 1234, // Number | The starting index for retrieving data in a paginated request.
   'sortBy': "some text", // String | Specifies the property or field name by which the results should be sorted.
-  'sortOrder': new DocspaceApiJavascript.SortOrder(), // SortOrder | The order in which the results are sorted.
+  'sortOrder': new Api.SortOrder(), // SortOrder | The order in which the results are sorted.
   'filterSeparator': "some text", // String | Represents the separator used to split multiple filter criteria in a query string.
   'filterValue': "some text" // String | A string value representing additional filter criteria used in query parameters.
 };
@@ -119,8 +119,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -142,10 +142,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleUserStatusApi();
-let activationstatus = new DocspaceApiJavascript.EmployeeActivationStatus(); // EmployeeActivationStatus | The new user activation status.
+let apiInstance = new Api.PeopleUserStatusApi();
+let activationstatus = new Api.EmployeeActivationStatus(); // EmployeeActivationStatus | The new user activation status.
 let opts = {
-  'updateMembersRequestDto': new DocspaceApiJavascript.UpdateMembersRequestDto() // UpdateMembersRequestDto | The request parameters for updating the user information.
+  'updateMembersRequestDto': new Api.UpdateMembersRequestDto() // UpdateMembersRequestDto | The request parameters for updating the user information.
 };
 apiInstance.updateUserActivationStatus(activationstatus, opts, (error, data, response) => {
   if (error) {
@@ -189,8 +189,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -212,10 +212,10 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.PeopleUserStatusApi();
-let status = new DocspaceApiJavascript.EmployeeStatus(); // EmployeeStatus | The new user status.
+let apiInstance = new Api.PeopleUserStatusApi();
+let status = new Api.EmployeeStatus(); // EmployeeStatus | The new user status.
 let opts = {
-  'updateMembersRequestDto': new DocspaceApiJavascript.UpdateMembersRequestDto() // UpdateMembersRequestDto | The request parameters for updating the user information.
+  'updateMembersRequestDto': new Api.UpdateMembersRequestDto() // UpdateMembersRequestDto | The request parameters for updating the user information.
 };
 apiInstance.updateUserStatus(status, opts, (error, data, response) => {
   if (error) {

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.PriceDto
+# Api.PriceDto
 The price parameters.
 
 ## Properties

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.ConfigurationDtoInteger
+# Api.ConfigurationDtoInteger
 The configuration parameters.
 
 ## Properties

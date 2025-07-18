@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SecurityAuditTrailDataApi
+# Api.SecurityAuditTrailDataApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -37,8 +37,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -60,7 +60,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SecurityAuditTrailDataApi();
+let apiInstance = new Api.SecurityAuditTrailDataApi();
 apiInstance.createAuditTrailReport((error, data, response) => {
   if (error) {
     console.error(error);
@@ -113,8 +113,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -136,17 +136,17 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SecurityAuditTrailDataApi();
+let apiInstance = new Api.SecurityAuditTrailDataApi();
 let opts = {
   'userId': "aae1e103-bca5-9fa1-ba8c-42058b4abf28", // String | The ID of the user who triggered the audit event.
-  'productType': new DocspaceApiJavascript.ProductType(), // ProductType | The type of product related to the audit event.
-  'moduleType': new DocspaceApiJavascript.ModuleType(), // ModuleType | The module within the product where the audit event occurred.
-  'actionType': new DocspaceApiJavascript.ActionType(), // ActionType | The type of action performed in the audit event (e.g., Create, Update, Delete).
-  'action': new DocspaceApiJavascript.MessageAction(), // MessageAction | The specific action that occurred within the audit event.
-  'entryType': new DocspaceApiJavascript.EntryType(), // EntryType | The type of audit entry (e.g., Folder, User, File).
+  'productType': new Api.ProductType(), // ProductType | The type of product related to the audit event.
+  'moduleType': new Api.ModuleType(), // ModuleType | The module within the product where the audit event occurred.
+  'actionType': new Api.ActionType(), // ActionType | The type of action performed in the audit event (e.g., Create, Update, Delete).
+  'action': new Api.MessageAction(), // MessageAction | The specific action that occurred within the audit event.
+  'entryType': new Api.EntryType(), // EntryType | The type of audit entry (e.g., Folder, User, File).
   'target': "some text", // String | The target object affected by the audit event (e.g., document ID, user account).
-  'from': new DocspaceApiJavascript.ApiDateTime(), // ApiDateTime | The starting date and time for filtering audit events.
-  'to': new DocspaceApiJavascript.ApiDateTime(), // ApiDateTime | The ending date and time for filtering audit events.
+  'from': new Api.ApiDateTime(), // ApiDateTime | The starting date and time for filtering audit events.
+  'to': new Api.ApiDateTime(), // ApiDateTime | The ending date and time for filtering audit events.
   'count': 1234, // Number | The maximum number of audit event records to retrieve.
   'startIndex': 1234 // Number | The index of the first audit event record to retrieve in a paged query.
 };
@@ -188,8 +188,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -211,7 +211,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SecurityAuditTrailDataApi();
+let apiInstance = new Api.SecurityAuditTrailDataApi();
 apiInstance.getAuditSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -254,12 +254,12 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.SecurityAuditTrailDataApi();
+let apiInstance = new Api.SecurityAuditTrailDataApi();
 let opts = {
-  'productType': new DocspaceApiJavascript.ProductType(), // ProductType | The type of product related to the audit trail.
-  'moduleType': new DocspaceApiJavascript.ModuleType() // ModuleType | The module within the product associated with the audit trail.
+  'productType': new Api.ProductType(), // ProductType | The type of product related to the audit trail.
+  'moduleType': new Api.ModuleType() // ModuleType | The module within the product associated with the audit trail.
 };
 apiInstance.getAuditTrailMappers(opts, (error, data, response) => {
   if (error) {
@@ -299,9 +299,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.SecurityAuditTrailDataApi();
+let apiInstance = new Api.SecurityAuditTrailDataApi();
 apiInstance.getAuditTrailTypes((error, data, response) => {
   if (error) {
     console.error(error);
@@ -340,8 +340,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -363,7 +363,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SecurityAuditTrailDataApi();
+let apiInstance = new Api.SecurityAuditTrailDataApi();
 apiInstance.getLastAuditEvents((error, data, response) => {
   if (error) {
     console.error(error);
@@ -405,8 +405,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -428,9 +428,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SecurityAuditTrailDataApi();
+let apiInstance = new Api.SecurityAuditTrailDataApi();
 let opts = {
-  'tenantAuditSettingsWrapper': new DocspaceApiJavascript.TenantAuditSettingsWrapper() // TenantAuditSettingsWrapper | 
+  'tenantAuditSettingsWrapper': new Api.TenantAuditSettingsWrapper() // TenantAuditSettingsWrapper | 
 };
 apiInstance.setAuditSettings(opts, (error, data, response) => {
   if (error) {

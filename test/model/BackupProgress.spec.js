@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.BackupProgress();
+    instance = new Api.BackupProgress();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,49 +54,49 @@
   describe('BackupProgress', function() {
     it('should create an instance of BackupProgress', function() {
       // uncomment below and update the code to test BackupProgress
-      //var instance = new DocspaceApiJavascript.BackupProgress();
-      //expect(instance).to.be.a(DocspaceApiJavascript.BackupProgress);
+      //var instance = new Api.BackupProgress();
+      //expect(instance).to.be.a(Api.BackupProgress);
     });
 
     it('should have the property isCompleted (base name: "isCompleted")', function() {
       // uncomment below and update the code to test the property isCompleted
-      //var instance = new DocspaceApiJavascript.BackupProgress();
+      //var instance = new Api.BackupProgress();
       //expect(instance).to.be();
     });
 
     it('should have the property progress (base name: "progress")', function() {
       // uncomment below and update the code to test the property progress
-      //var instance = new DocspaceApiJavascript.BackupProgress();
+      //var instance = new Api.BackupProgress();
       //expect(instance).to.be();
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instance = new DocspaceApiJavascript.BackupProgress();
+      //var instance = new Api.BackupProgress();
       //expect(instance).to.be();
     });
 
     it('should have the property link (base name: "link")', function() {
       // uncomment below and update the code to test the property link
-      //var instance = new DocspaceApiJavascript.BackupProgress();
+      //var instance = new Api.BackupProgress();
       //expect(instance).to.be();
     });
 
     it('should have the property tenantId (base name: "tenantId")', function() {
       // uncomment below and update the code to test the property tenantId
-      //var instance = new DocspaceApiJavascript.BackupProgress();
+      //var instance = new Api.BackupProgress();
       //expect(instance).to.be();
     });
 
     it('should have the property backupProgressEnum (base name: "backupProgressEnum")', function() {
       // uncomment below and update the code to test the property backupProgressEnum
-      //var instance = new DocspaceApiJavascript.BackupProgress();
+      //var instance = new Api.BackupProgress();
       //expect(instance).to.be();
     });
 
     it('should have the property taskId (base name: "taskId")', function() {
       // uncomment below and update the code to test the property taskId
-      //var instance = new DocspaceApiJavascript.BackupProgress();
+      //var instance = new Api.BackupProgress();
       //expect(instance).to.be();
     });
 

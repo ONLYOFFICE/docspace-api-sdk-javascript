@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.FormRole();
+    instance = new Api.FormRole();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,55 +54,55 @@
   describe('FormRole', function() {
     it('should create an instance of FormRole', function() {
       // uncomment below and update the code to test FormRole
-      //var instance = new DocspaceApiJavascript.FormRole();
-      //expect(instance).to.be.a(DocspaceApiJavascript.FormRole);
+      //var instance = new Api.FormRole();
+      //expect(instance).to.be.a(Api.FormRole);
     });
 
     it('should have the property roomId (base name: "roomId")', function() {
       // uncomment below and update the code to test the property roomId
-      //var instance = new DocspaceApiJavascript.FormRole();
+      //var instance = new Api.FormRole();
       //expect(instance).to.be();
     });
 
     it('should have the property roleName (base name: "roleName")', function() {
       // uncomment below and update the code to test the property roleName
-      //var instance = new DocspaceApiJavascript.FormRole();
+      //var instance = new Api.FormRole();
       //expect(instance).to.be();
     });
 
     it('should have the property roleColor (base name: "roleColor")', function() {
       // uncomment below and update the code to test the property roleColor
-      //var instance = new DocspaceApiJavascript.FormRole();
+      //var instance = new Api.FormRole();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "userId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instance = new DocspaceApiJavascript.FormRole();
+      //var instance = new Api.FormRole();
       //expect(instance).to.be();
     });
 
     it('should have the property sequence (base name: "sequence")', function() {
       // uncomment below and update the code to test the property sequence
-      //var instance = new DocspaceApiJavascript.FormRole();
+      //var instance = new Api.FormRole();
       //expect(instance).to.be();
     });
 
     it('should have the property submitted (base name: "submitted")', function() {
       // uncomment below and update the code to test the property submitted
-      //var instance = new DocspaceApiJavascript.FormRole();
+      //var instance = new Api.FormRole();
       //expect(instance).to.be();
     });
 
     it('should have the property openedAt (base name: "openedAt")', function() {
       // uncomment below and update the code to test the property openedAt
-      //var instance = new DocspaceApiJavascript.FormRole();
+      //var instance = new Api.FormRole();
       //expect(instance).to.be();
     });
 
     it('should have the property submissionDate (base name: "submissionDate")', function() {
       // uncomment below and update the code to test the property submissionDate
-      //var instance = new DocspaceApiJavascript.FormRole();
+      //var instance = new Api.FormRole();
       //expect(instance).to.be();
     });
 

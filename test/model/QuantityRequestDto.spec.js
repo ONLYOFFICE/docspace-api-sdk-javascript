@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.QuantityRequestDto();
+    instance = new Api.QuantityRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('QuantityRequestDto', function() {
     it('should create an instance of QuantityRequestDto', function() {
       // uncomment below and update the code to test QuantityRequestDto
-      //var instance = new DocspaceApiJavascript.QuantityRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.QuantityRequestDto);
+      //var instance = new Api.QuantityRequestDto();
+      //expect(instance).to.be.a(Api.QuantityRequestDto);
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new DocspaceApiJavascript.QuantityRequestDto();
+      //var instance = new Api.QuantityRequestDto();
       //expect(instance).to.be();
     });
 

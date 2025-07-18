@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.WebhooksConfigWithStatusDto();
+    instance = new Api.WebhooksConfigWithStatusDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('WebhooksConfigWithStatusDto', function() {
     it('should create an instance of WebhooksConfigWithStatusDto', function() {
       // uncomment below and update the code to test WebhooksConfigWithStatusDto
-      //var instance = new DocspaceApiJavascript.WebhooksConfigWithStatusDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.WebhooksConfigWithStatusDto);
+      //var instance = new Api.WebhooksConfigWithStatusDto();
+      //expect(instance).to.be.a(Api.WebhooksConfigWithStatusDto);
     });
 
     it('should have the property configs (base name: "configs")', function() {
       // uncomment below and update the code to test the property configs
-      //var instance = new DocspaceApiJavascript.WebhooksConfigWithStatusDto();
+      //var instance = new Api.WebhooksConfigWithStatusDto();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new DocspaceApiJavascript.WebhooksConfigWithStatusDto();
+      //var instance = new Api.WebhooksConfigWithStatusDto();
       //expect(instance).to.be();
     });
 

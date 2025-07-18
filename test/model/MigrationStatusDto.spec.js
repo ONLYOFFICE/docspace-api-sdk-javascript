@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.MigrationStatusDto();
+    instance = new Api.MigrationStatusDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,31 +54,31 @@
   describe('MigrationStatusDto', function() {
     it('should create an instance of MigrationStatusDto', function() {
       // uncomment below and update the code to test MigrationStatusDto
-      //var instance = new DocspaceApiJavascript.MigrationStatusDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.MigrationStatusDto);
+      //var instance = new Api.MigrationStatusDto();
+      //expect(instance).to.be.a(Api.MigrationStatusDto);
     });
 
     it('should have the property progress (base name: "progress")', function() {
       // uncomment below and update the code to test the property progress
-      //var instance = new DocspaceApiJavascript.MigrationStatusDto();
+      //var instance = new Api.MigrationStatusDto();
       //expect(instance).to.be();
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instance = new DocspaceApiJavascript.MigrationStatusDto();
+      //var instance = new Api.MigrationStatusDto();
       //expect(instance).to.be();
     });
 
     it('should have the property parseResult (base name: "parseResult")', function() {
       // uncomment below and update the code to test the property parseResult
-      //var instance = new DocspaceApiJavascript.MigrationStatusDto();
+      //var instance = new Api.MigrationStatusDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isCompleted (base name: "isCompleted")', function() {
       // uncomment below and update the code to test the property isCompleted
-      //var instance = new DocspaceApiJavascript.MigrationStatusDto();
+      //var instance = new Api.MigrationStatusDto();
       //expect(instance).to.be();
     });
 

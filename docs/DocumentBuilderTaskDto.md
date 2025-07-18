@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.DocumentBuilderTaskDto
+# Api.DocumentBuilderTaskDto
 The document builder task parameters.
 
 ## Properties

@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CheckFillFormDraft
+# Api.CheckFillFormDraft
 The parameters for checking the form draft filling.
 
 ## Properties

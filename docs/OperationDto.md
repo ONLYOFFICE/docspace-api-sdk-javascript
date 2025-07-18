@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.OperationDto
+# Api.OperationDto
 Represents an operation.
 
 ## Properties

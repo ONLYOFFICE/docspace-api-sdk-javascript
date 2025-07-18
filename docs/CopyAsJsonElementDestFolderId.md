@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CopyAsJsonElementDestFolderId
+# Api.CopyAsJsonElementDestFolderId
 The destination folder ID of the copied file.
 
 ## Properties

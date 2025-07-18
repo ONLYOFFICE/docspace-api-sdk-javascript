@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FinishDto
+# Api.FinishDto
 The parameters for terminating a process or operation.
 
 ## Properties

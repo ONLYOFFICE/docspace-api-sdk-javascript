@@ -24,9 +24,9 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
@@ -53,8 +53,8 @@
   describe('NotificationType', function() {
     it('should create an instance of NotificationType', function() {
       // uncomment below and update the code to test NotificationType
-      //var instance = new DocspaceApiJavascript.NotificationType();
-      //expect(instance).to.be.a(DocspaceApiJavascript.NotificationType);
+      //var instance = new Api.NotificationType();
+      //expect(instance).to.be.a(Api.NotificationType);
     });
 
   });

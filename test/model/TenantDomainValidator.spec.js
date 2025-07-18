@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.TenantDomainValidator();
+    instance = new Api.TenantDomainValidator();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('TenantDomainValidator', function() {
     it('should create an instance of TenantDomainValidator', function() {
       // uncomment below and update the code to test TenantDomainValidator
-      //var instance = new DocspaceApiJavascript.TenantDomainValidator();
-      //expect(instance).to.be.a(DocspaceApiJavascript.TenantDomainValidator);
+      //var instance = new Api.TenantDomainValidator();
+      //expect(instance).to.be.a(Api.TenantDomainValidator);
     });
 
     it('should have the property regex (base name: "regex")', function() {
       // uncomment below and update the code to test the property regex
-      //var instance = new DocspaceApiJavascript.TenantDomainValidator();
+      //var instance = new Api.TenantDomainValidator();
       //expect(instance).to.be();
     });
 
     it('should have the property minLength (base name: "minLength")', function() {
       // uncomment below and update the code to test the property minLength
-      //var instance = new DocspaceApiJavascript.TenantDomainValidator();
+      //var instance = new Api.TenantDomainValidator();
       //expect(instance).to.be();
     });
 
     it('should have the property maxLength (base name: "maxLength")', function() {
       // uncomment below and update the code to test the property maxLength
-      //var instance = new DocspaceApiJavascript.TenantDomainValidator();
+      //var instance = new Api.TenantDomainValidator();
       //expect(instance).to.be();
     });
 

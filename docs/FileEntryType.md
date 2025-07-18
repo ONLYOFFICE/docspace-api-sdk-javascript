@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.FileEntryType
+# Api.FileEntryType
 [1 - Folder, 2 - File]
 
 ## Enum

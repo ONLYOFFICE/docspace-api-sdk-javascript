@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.DeleteRoomRequest();
+    instance = new Api.DeleteRoomRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('DeleteRoomRequest', function() {
     it('should create an instance of DeleteRoomRequest', function() {
       // uncomment below and update the code to test DeleteRoomRequest
-      //var instance = new DocspaceApiJavascript.DeleteRoomRequest();
-      //expect(instance).to.be.a(DocspaceApiJavascript.DeleteRoomRequest);
+      //var instance = new Api.DeleteRoomRequest();
+      //expect(instance).to.be.a(Api.DeleteRoomRequest);
     });
 
     it('should have the property deleteAfter (base name: "deleteAfter")', function() {
       // uncomment below and update the code to test the property deleteAfter
-      //var instance = new DocspaceApiJavascript.DeleteRoomRequest();
+      //var instance = new Api.DeleteRoomRequest();
       //expect(instance).to.be();
     });
 

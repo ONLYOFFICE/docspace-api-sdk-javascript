@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.EditHistoryUrl
+# Api.EditHistoryUrl
 The file editing history URL parameters.
 
 ## Properties

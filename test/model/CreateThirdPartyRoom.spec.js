@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.CreateThirdPartyRoom();
+    instance = new Api.CreateThirdPartyRoom();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,67 +54,67 @@
   describe('CreateThirdPartyRoom', function() {
     it('should create an instance of CreateThirdPartyRoom', function() {
       // uncomment below and update the code to test CreateThirdPartyRoom
-      //var instance = new DocspaceApiJavascript.CreateThirdPartyRoom();
-      //expect(instance).to.be.a(DocspaceApiJavascript.CreateThirdPartyRoom);
+      //var instance = new Api.CreateThirdPartyRoom();
+      //expect(instance).to.be.a(Api.CreateThirdPartyRoom);
     });
 
     it('should have the property createAsNewFolder (base name: "createAsNewFolder")', function() {
       // uncomment below and update the code to test the property createAsNewFolder
-      //var instance = new DocspaceApiJavascript.CreateThirdPartyRoom();
+      //var instance = new Api.CreateThirdPartyRoom();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiJavascript.CreateThirdPartyRoom();
+      //var instance = new Api.CreateThirdPartyRoom();
       //expect(instance).to.be();
     });
 
     it('should have the property roomType (base name: "roomType")', function() {
       // uncomment below and update the code to test the property roomType
-      //var instance = new DocspaceApiJavascript.CreateThirdPartyRoom();
+      //var instance = new Api.CreateThirdPartyRoom();
       //expect(instance).to.be();
     });
 
     it('should have the property _private (base name: "private")', function() {
       // uncomment below and update the code to test the property _private
-      //var instance = new DocspaceApiJavascript.CreateThirdPartyRoom();
+      //var instance = new Api.CreateThirdPartyRoom();
       //expect(instance).to.be();
     });
 
     it('should have the property indexing (base name: "indexing")', function() {
       // uncomment below and update the code to test the property indexing
-      //var instance = new DocspaceApiJavascript.CreateThirdPartyRoom();
+      //var instance = new Api.CreateThirdPartyRoom();
       //expect(instance).to.be();
     });
 
     it('should have the property denyDownload (base name: "denyDownload")', function() {
       // uncomment below and update the code to test the property denyDownload
-      //var instance = new DocspaceApiJavascript.CreateThirdPartyRoom();
+      //var instance = new Api.CreateThirdPartyRoom();
       //expect(instance).to.be();
     });
 
     it('should have the property color (base name: "color")', function() {
       // uncomment below and update the code to test the property color
-      //var instance = new DocspaceApiJavascript.CreateThirdPartyRoom();
+      //var instance = new Api.CreateThirdPartyRoom();
       //expect(instance).to.be();
     });
 
     it('should have the property cover (base name: "cover")', function() {
       // uncomment below and update the code to test the property cover
-      //var instance = new DocspaceApiJavascript.CreateThirdPartyRoom();
+      //var instance = new Api.CreateThirdPartyRoom();
       //expect(instance).to.be();
     });
 
     it('should have the property tags (base name: "tags")', function() {
       // uncomment below and update the code to test the property tags
-      //var instance = new DocspaceApiJavascript.CreateThirdPartyRoom();
+      //var instance = new Api.CreateThirdPartyRoom();
       //expect(instance).to.be();
     });
 
     it('should have the property logo (base name: "logo")', function() {
       // uncomment below and update the code to test the property logo
-      //var instance = new DocspaceApiJavascript.CreateThirdPartyRoom();
+      //var instance = new Api.CreateThirdPartyRoom();
       //expect(instance).to.be();
     });
 

@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.AdminMessageBaseSettingsRequestsDto();
+    instance = new Api.AdminMessageBaseSettingsRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('AdminMessageBaseSettingsRequestsDto', function() {
     it('should create an instance of AdminMessageBaseSettingsRequestsDto', function() {
       // uncomment below and update the code to test AdminMessageBaseSettingsRequestsDto
-      //var instance = new DocspaceApiJavascript.AdminMessageBaseSettingsRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.AdminMessageBaseSettingsRequestsDto);
+      //var instance = new Api.AdminMessageBaseSettingsRequestsDto();
+      //expect(instance).to.be.a(Api.AdminMessageBaseSettingsRequestsDto);
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new DocspaceApiJavascript.AdminMessageBaseSettingsRequestsDto();
+      //var instance = new Api.AdminMessageBaseSettingsRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property culture (base name: "culture")', function() {
       // uncomment below and update the code to test the property culture
-      //var instance = new DocspaceApiJavascript.AdminMessageBaseSettingsRequestsDto();
+      //var instance = new Api.AdminMessageBaseSettingsRequestsDto();
       //expect(instance).to.be();
     });
 

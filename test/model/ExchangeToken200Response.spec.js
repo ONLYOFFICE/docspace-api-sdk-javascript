@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ExchangeToken200Response();
+    instance = new Api.ExchangeToken200Response();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,31 +54,31 @@
   describe('ExchangeToken200Response', function() {
     it('should create an instance of ExchangeToken200Response', function() {
       // uncomment below and update the code to test ExchangeToken200Response
-      //var instance = new DocspaceApiJavascript.ExchangeToken200Response();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ExchangeToken200Response);
+      //var instance = new Api.ExchangeToken200Response();
+      //expect(instance).to.be.a(Api.ExchangeToken200Response);
     });
 
     it('should have the property accessToken (base name: "access_token")', function() {
       // uncomment below and update the code to test the property accessToken
-      //var instance = new DocspaceApiJavascript.ExchangeToken200Response();
+      //var instance = new Api.ExchangeToken200Response();
       //expect(instance).to.be();
     });
 
     it('should have the property tokenType (base name: "token_type")', function() {
       // uncomment below and update the code to test the property tokenType
-      //var instance = new DocspaceApiJavascript.ExchangeToken200Response();
+      //var instance = new Api.ExchangeToken200Response();
       //expect(instance).to.be();
     });
 
     it('should have the property expiresIn (base name: "expires_in")', function() {
       // uncomment below and update the code to test the property expiresIn
-      //var instance = new DocspaceApiJavascript.ExchangeToken200Response();
+      //var instance = new Api.ExchangeToken200Response();
       //expect(instance).to.be();
     });
 
     it('should have the property refreshToken (base name: "refresh_token")', function() {
       // uncomment below and update the code to test the property refreshToken
-      //var instance = new DocspaceApiJavascript.ExchangeToken200Response();
+      //var instance = new Api.ExchangeToken200Response();
       //expect(instance).to.be();
     });
 

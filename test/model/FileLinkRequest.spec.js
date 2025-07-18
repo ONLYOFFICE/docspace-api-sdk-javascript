@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.FileLinkRequest();
+    instance = new Api.FileLinkRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,37 +54,37 @@
   describe('FileLinkRequest', function() {
     it('should create an instance of FileLinkRequest', function() {
       // uncomment below and update the code to test FileLinkRequest
-      //var instance = new DocspaceApiJavascript.FileLinkRequest();
-      //expect(instance).to.be.a(DocspaceApiJavascript.FileLinkRequest);
+      //var instance = new Api.FileLinkRequest();
+      //expect(instance).to.be.a(Api.FileLinkRequest);
     });
 
     it('should have the property linkId (base name: "linkId")', function() {
       // uncomment below and update the code to test the property linkId
-      //var instance = new DocspaceApiJavascript.FileLinkRequest();
+      //var instance = new Api.FileLinkRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property access (base name: "access")', function() {
       // uncomment below and update the code to test the property access
-      //var instance = new DocspaceApiJavascript.FileLinkRequest();
+      //var instance = new Api.FileLinkRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property expirationDate (base name: "expirationDate")', function() {
       // uncomment below and update the code to test the property expirationDate
-      //var instance = new DocspaceApiJavascript.FileLinkRequest();
+      //var instance = new Api.FileLinkRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property internal (base name: "internal")', function() {
       // uncomment below and update the code to test the property internal
-      //var instance = new DocspaceApiJavascript.FileLinkRequest();
+      //var instance = new Api.FileLinkRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property primary (base name: "primary")', function() {
       // uncomment below and update the code to test the property primary
-      //var instance = new DocspaceApiJavascript.FileLinkRequest();
+      //var instance = new Api.FileLinkRequest();
       //expect(instance).to.be();
     });
 

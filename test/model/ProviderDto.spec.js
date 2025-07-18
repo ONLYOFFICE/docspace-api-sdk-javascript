@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ProviderDto();
+    instance = new Api.ProviderDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,49 +54,49 @@
   describe('ProviderDto', function() {
     it('should create an instance of ProviderDto', function() {
       // uncomment below and update the code to test ProviderDto
-      //var instance = new DocspaceApiJavascript.ProviderDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ProviderDto);
+      //var instance = new Api.ProviderDto();
+      //expect(instance).to.be.a(Api.ProviderDto);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiJavascript.ProviderDto();
+      //var instance = new Api.ProviderDto();
       //expect(instance).to.be();
     });
 
     it('should have the property key (base name: "key")', function() {
       // uncomment below and update the code to test the property key
-      //var instance = new DocspaceApiJavascript.ProviderDto();
+      //var instance = new Api.ProviderDto();
       //expect(instance).to.be();
     });
 
     it('should have the property connected (base name: "connected")', function() {
       // uncomment below and update the code to test the property connected
-      //var instance = new DocspaceApiJavascript.ProviderDto();
+      //var instance = new Api.ProviderDto();
       //expect(instance).to.be();
     });
 
     it('should have the property oauth (base name: "oauth")', function() {
       // uncomment below and update the code to test the property oauth
-      //var instance = new DocspaceApiJavascript.ProviderDto();
+      //var instance = new Api.ProviderDto();
       //expect(instance).to.be();
     });
 
     it('should have the property redirectUrl (base name: "redirectUrl")', function() {
       // uncomment below and update the code to test the property redirectUrl
-      //var instance = new DocspaceApiJavascript.ProviderDto();
+      //var instance = new Api.ProviderDto();
       //expect(instance).to.be();
     });
 
     it('should have the property requiredConnectionUrl (base name: "requiredConnectionUrl")', function() {
       // uncomment below and update the code to test the property requiredConnectionUrl
-      //var instance = new DocspaceApiJavascript.ProviderDto();
+      //var instance = new Api.ProviderDto();
       //expect(instance).to.be();
     });
 
     it('should have the property clientId (base name: "clientId")', function() {
       // uncomment below and update the code to test the property clientId
-      //var instance = new DocspaceApiJavascript.ProviderDto();
+      //var instance = new Api.ProviderDto();
       //expect(instance).to.be();
     });
 

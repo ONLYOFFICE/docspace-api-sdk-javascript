@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TenantAuditSettingsWrapper
+# Api.TenantAuditSettingsWrapper
 The tenant audit settings wrapper.
 
 ## Properties

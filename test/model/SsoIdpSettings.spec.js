@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.SsoIdpSettings();
+    instance = new Api.SsoIdpSettings();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,43 +54,43 @@
   describe('SsoIdpSettings', function() {
     it('should create an instance of SsoIdpSettings', function() {
       // uncomment below and update the code to test SsoIdpSettings
-      //var instance = new DocspaceApiJavascript.SsoIdpSettings();
-      //expect(instance).to.be.a(DocspaceApiJavascript.SsoIdpSettings);
+      //var instance = new Api.SsoIdpSettings();
+      //expect(instance).to.be.a(Api.SsoIdpSettings);
     });
 
     it('should have the property entityId (base name: "entityId")', function() {
       // uncomment below and update the code to test the property entityId
-      //var instance = new DocspaceApiJavascript.SsoIdpSettings();
+      //var instance = new Api.SsoIdpSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property ssoUrl (base name: "ssoUrl")', function() {
       // uncomment below and update the code to test the property ssoUrl
-      //var instance = new DocspaceApiJavascript.SsoIdpSettings();
+      //var instance = new Api.SsoIdpSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property ssoBinding (base name: "ssoBinding")', function() {
       // uncomment below and update the code to test the property ssoBinding
-      //var instance = new DocspaceApiJavascript.SsoIdpSettings();
+      //var instance = new Api.SsoIdpSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property sloUrl (base name: "sloUrl")', function() {
       // uncomment below and update the code to test the property sloUrl
-      //var instance = new DocspaceApiJavascript.SsoIdpSettings();
+      //var instance = new Api.SsoIdpSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property sloBinding (base name: "sloBinding")', function() {
       // uncomment below and update the code to test the property sloBinding
-      //var instance = new DocspaceApiJavascript.SsoIdpSettings();
+      //var instance = new Api.SsoIdpSettings();
       //expect(instance).to.be();
     });
 
     it('should have the property nameIdFormat (base name: "nameIdFormat")', function() {
       // uncomment below and update the code to test the property nameIdFormat
-      //var instance = new DocspaceApiJavascript.SsoIdpSettings();
+      //var instance = new Api.SsoIdpSettings();
       //expect(instance).to.be();
     });
 

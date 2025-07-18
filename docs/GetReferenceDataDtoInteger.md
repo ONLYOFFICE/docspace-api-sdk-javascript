@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.GetReferenceDataDtoInteger
+# Api.GetReferenceDataDtoInteger
 The request parameters for getting reference data.
 
 ## Properties

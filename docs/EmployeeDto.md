@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.EmployeeDto
+# Api.EmployeeDto
 The user parameters.
 
 ## Properties

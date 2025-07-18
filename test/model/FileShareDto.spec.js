@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.FileShareDto();
+    instance = new Api.FileShareDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,43 +54,43 @@
   describe('FileShareDto', function() {
     it('should create an instance of FileShareDto', function() {
       // uncomment below and update the code to test FileShareDto
-      //var instance = new DocspaceApiJavascript.FileShareDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.FileShareDto);
+      //var instance = new Api.FileShareDto();
+      //expect(instance).to.be.a(Api.FileShareDto);
     });
 
     it('should have the property access (base name: "access")', function() {
       // uncomment below and update the code to test the property access
-      //var instance = new DocspaceApiJavascript.FileShareDto();
+      //var instance = new Api.FileShareDto();
       //expect(instance).to.be();
     });
 
     it('should have the property sharedTo (base name: "sharedTo")', function() {
       // uncomment below and update the code to test the property sharedTo
-      //var instance = new DocspaceApiJavascript.FileShareDto();
+      //var instance = new Api.FileShareDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isLocked (base name: "isLocked")', function() {
       // uncomment below and update the code to test the property isLocked
-      //var instance = new DocspaceApiJavascript.FileShareDto();
+      //var instance = new Api.FileShareDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isOwner (base name: "isOwner")', function() {
       // uncomment below and update the code to test the property isOwner
-      //var instance = new DocspaceApiJavascript.FileShareDto();
+      //var instance = new Api.FileShareDto();
       //expect(instance).to.be();
     });
 
     it('should have the property canEditAccess (base name: "canEditAccess")', function() {
       // uncomment below and update the code to test the property canEditAccess
-      //var instance = new DocspaceApiJavascript.FileShareDto();
+      //var instance = new Api.FileShareDto();
       //expect(instance).to.be();
     });
 
     it('should have the property subjectType (base name: "subjectType")', function() {
       // uncomment below and update the code to test the property subjectType
-      //var instance = new DocspaceApiJavascript.FileShareDto();
+      //var instance = new Api.FileShareDto();
       //expect(instance).to.be();
     });
 

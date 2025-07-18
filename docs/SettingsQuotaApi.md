@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SettingsQuotaApi
+# Api.SettingsQuotaApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -33,8 +33,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -56,7 +56,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsQuotaApi();
+let apiInstance = new Api.SettingsQuotaApi();
 apiInstance.getUserQuotaSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -98,8 +98,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -121,9 +121,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsQuotaApi();
+let apiInstance = new Api.SettingsQuotaApi();
 let opts = {
-  'quotaSettingsRequestsDto': new DocspaceApiJavascript.QuotaSettingsRequestsDto() // QuotaSettingsRequestsDto | 
+  'quotaSettingsRequestsDto': new Api.QuotaSettingsRequestsDto() // QuotaSettingsRequestsDto | 
 };
 apiInstance.saveRoomQuotaSettings(opts, (error, data, response) => {
   if (error) {
@@ -166,8 +166,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -189,9 +189,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsQuotaApi();
+let apiInstance = new Api.SettingsQuotaApi();
 let opts = {
-  'tenantQuotaSettingsRequestsDto': new DocspaceApiJavascript.TenantQuotaSettingsRequestsDto() // TenantQuotaSettingsRequestsDto | 
+  'tenantQuotaSettingsRequestsDto': new Api.TenantQuotaSettingsRequestsDto() // TenantQuotaSettingsRequestsDto | 
 };
 apiInstance.setTenantQuotaSettings(opts, (error, data, response) => {
   if (error) {

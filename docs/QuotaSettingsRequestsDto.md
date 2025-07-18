@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.QuotaSettingsRequestsDto
+# Api.QuotaSettingsRequestsDto
 The request parameters for managing the user storage quota configurations.
 
 ## Properties

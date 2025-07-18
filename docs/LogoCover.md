@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.LogoCover
+# Api.LogoCover
 The logo cover information.
 
 ## Properties

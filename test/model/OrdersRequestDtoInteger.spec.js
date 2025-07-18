@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.OrdersRequestDtoInteger();
+    instance = new Api.OrdersRequestDtoInteger();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('OrdersRequestDtoInteger', function() {
     it('should create an instance of OrdersRequestDtoInteger', function() {
       // uncomment below and update the code to test OrdersRequestDtoInteger
-      //var instance = new DocspaceApiJavascript.OrdersRequestDtoInteger();
-      //expect(instance).to.be.a(DocspaceApiJavascript.OrdersRequestDtoInteger);
+      //var instance = new Api.OrdersRequestDtoInteger();
+      //expect(instance).to.be.a(Api.OrdersRequestDtoInteger);
     });
 
     it('should have the property items (base name: "items")', function() {
       // uncomment below and update the code to test the property items
-      //var instance = new DocspaceApiJavascript.OrdersRequestDtoInteger();
+      //var instance = new Api.OrdersRequestDtoInteger();
       //expect(instance).to.be();
     });
 

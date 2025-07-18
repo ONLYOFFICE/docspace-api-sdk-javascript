@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.WebItemSecurityRequestsDto();
+    instance = new Api.WebItemSecurityRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('WebItemSecurityRequestsDto', function() {
     it('should create an instance of WebItemSecurityRequestsDto', function() {
       // uncomment below and update the code to test WebItemSecurityRequestsDto
-      //var instance = new DocspaceApiJavascript.WebItemSecurityRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.WebItemSecurityRequestsDto);
+      //var instance = new Api.WebItemSecurityRequestsDto();
+      //expect(instance).to.be.a(Api.WebItemSecurityRequestsDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.WebItemSecurityRequestsDto();
+      //var instance = new Api.WebItemSecurityRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property enabled (base name: "enabled")', function() {
       // uncomment below and update the code to test the property enabled
-      //var instance = new DocspaceApiJavascript.WebItemSecurityRequestsDto();
+      //var instance = new Api.WebItemSecurityRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property subjects (base name: "subjects")', function() {
       // uncomment below and update the code to test the property subjects
-      //var instance = new DocspaceApiJavascript.WebItemSecurityRequestsDto();
+      //var instance = new Api.WebItemSecurityRequestsDto();
       //expect(instance).to.be();
     });
 

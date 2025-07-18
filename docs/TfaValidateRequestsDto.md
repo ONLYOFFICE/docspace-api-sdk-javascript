@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TfaValidateRequestsDto
+# Api.TfaValidateRequestsDto
 The request parameters for validating the two-factor authentication codes.
 
 ## Properties

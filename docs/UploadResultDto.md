@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.UploadResultDto
+# Api.UploadResultDto
 The upload result parameters.
 
 ## Properties

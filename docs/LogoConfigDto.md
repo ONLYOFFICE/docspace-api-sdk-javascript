@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.LogoConfigDto
+# Api.LogoConfigDto
 The logo config parameters.
 
 ## Properties

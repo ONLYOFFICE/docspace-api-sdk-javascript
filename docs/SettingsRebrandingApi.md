@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.SettingsRebrandingApi
+# Api.SettingsRebrandingApi
 
 All URIs are relative to *http://localhost:8092*
 
@@ -47,8 +47,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -70,7 +70,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 apiInstance.deleteAdditionalWhiteLabelSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -109,8 +109,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -132,7 +132,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 apiInstance.deleteCompanyWhiteLabelSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -171,8 +171,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -194,7 +194,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 apiInstance.getAdditionalWhiteLabelSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -233,8 +233,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -256,7 +256,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 apiInstance.getCompanyWhiteLabelSettings((error, data, response) => {
   if (error) {
     console.error(error);
@@ -295,8 +295,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -318,7 +318,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 apiInstance.getEnableWhitelabel((error, data, response) => {
   if (error) {
     console.error(error);
@@ -361,8 +361,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -384,7 +384,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 let opts = {
   'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
   'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.
@@ -431,8 +431,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -454,7 +454,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 let opts = {
   'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
   'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.
@@ -497,8 +497,8 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -520,7 +520,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 apiInstance.getLicensorData((error, data, response) => {
   if (error) {
     console.error(error);
@@ -563,8 +563,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -586,7 +586,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 let opts = {
   'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
   'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.
@@ -633,9 +633,9 @@ No authorization required
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
+import Api from 'docspace-api-javascript';
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 let opts = {
   'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
   'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.
@@ -682,8 +682,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -705,7 +705,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 let opts = {
   'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
   'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.
@@ -752,8 +752,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -775,7 +775,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 let opts = {
   'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
   'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.
@@ -821,8 +821,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -844,9 +844,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 let opts = {
-  'additionalWhiteLabelSettingsWrapper': new DocspaceApiJavascript.AdditionalWhiteLabelSettingsWrapper() // AdditionalWhiteLabelSettingsWrapper | 
+  'additionalWhiteLabelSettingsWrapper': new Api.AdditionalWhiteLabelSettingsWrapper() // AdditionalWhiteLabelSettingsWrapper | 
 };
 apiInstance.saveAdditionalWhiteLabelSettings(opts, (error, data, response) => {
   if (error) {
@@ -889,8 +889,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -912,9 +912,9 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 let opts = {
-  'companyWhiteLabelSettingsWrapper': new DocspaceApiJavascript.CompanyWhiteLabelSettingsWrapper() // CompanyWhiteLabelSettingsWrapper | 
+  'companyWhiteLabelSettingsWrapper': new Api.CompanyWhiteLabelSettingsWrapper() // CompanyWhiteLabelSettingsWrapper | 
 };
 apiInstance.saveCompanyWhiteLabelSettings(opts, (error, data, response) => {
   if (error) {
@@ -959,8 +959,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -982,11 +982,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 let opts = {
   'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
   'isDefault': true, // Boolean | Specifies if the logo is for a default tenant or not.
-  'whiteLabelRequestsDto': new DocspaceApiJavascript.WhiteLabelRequestsDto() // WhiteLabelRequestsDto | 
+  'whiteLabelRequestsDto': new Api.WhiteLabelRequestsDto() // WhiteLabelRequestsDto | 
 };
 apiInstance.saveWhiteLabelLogoText(opts, (error, data, response) => {
   if (error) {
@@ -1031,8 +1031,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1054,11 +1054,11 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 let opts = {
   'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
   'isDefault': true, // Boolean | Specifies if the logo is for a default tenant or not.
-  'whiteLabelRequestsDto': new DocspaceApiJavascript.WhiteLabelRequestsDto() // WhiteLabelRequestsDto | 
+  'whiteLabelRequestsDto': new Api.WhiteLabelRequestsDto() // WhiteLabelRequestsDto | 
 };
 apiInstance.saveWhiteLabelSettings(opts, (error, data, response) => {
   if (error) {
@@ -1102,8 +1102,8 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import DocspaceApiJavascript from 'docspace-api-javascript';
-let defaultClient = DocspaceApiJavascript.ApiClient.instance;
+import Api from 'docspace-api-javascript';
+let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
 Basic.username = 'YOUR USERNAME';
@@ -1125,7 +1125,7 @@ asc_auth_key.apiKey = 'YOUR API KEY';
 let Bearer = defaultClient.authentications['Bearer'];
 Bearer.accessToken = "YOUR ACCESS TOKEN"
 
-let apiInstance = new DocspaceApiJavascript.SettingsRebrandingApi();
+let apiInstance = new Api.SettingsRebrandingApi();
 let opts = {
   'isDark': true, // Boolean | Specifies if the white label logo is for the dark theme or not.
   'isDefault': true // Boolean | Specifies if the logo is for a default tenant or not.

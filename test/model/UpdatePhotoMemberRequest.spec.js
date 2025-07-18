@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.UpdatePhotoMemberRequest();
+    instance = new Api.UpdatePhotoMemberRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('UpdatePhotoMemberRequest', function() {
     it('should create an instance of UpdatePhotoMemberRequest', function() {
       // uncomment below and update the code to test UpdatePhotoMemberRequest
-      //var instance = new DocspaceApiJavascript.UpdatePhotoMemberRequest();
-      //expect(instance).to.be.a(DocspaceApiJavascript.UpdatePhotoMemberRequest);
+      //var instance = new Api.UpdatePhotoMemberRequest();
+      //expect(instance).to.be.a(Api.UpdatePhotoMemberRequest);
     });
 
     it('should have the property files (base name: "files")', function() {
       // uncomment below and update the code to test the property files
-      //var instance = new DocspaceApiJavascript.UpdatePhotoMemberRequest();
+      //var instance = new Api.UpdatePhotoMemberRequest();
       //expect(instance).to.be();
     });
 

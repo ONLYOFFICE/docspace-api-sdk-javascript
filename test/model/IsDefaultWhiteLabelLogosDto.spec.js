@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.IsDefaultWhiteLabelLogosDto();
+    instance = new Api.IsDefaultWhiteLabelLogosDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('IsDefaultWhiteLabelLogosDto', function() {
     it('should create an instance of IsDefaultWhiteLabelLogosDto', function() {
       // uncomment below and update the code to test IsDefaultWhiteLabelLogosDto
-      //var instance = new DocspaceApiJavascript.IsDefaultWhiteLabelLogosDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.IsDefaultWhiteLabelLogosDto);
+      //var instance = new Api.IsDefaultWhiteLabelLogosDto();
+      //expect(instance).to.be.a(Api.IsDefaultWhiteLabelLogosDto);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new DocspaceApiJavascript.IsDefaultWhiteLabelLogosDto();
+      //var instance = new Api.IsDefaultWhiteLabelLogosDto();
       //expect(instance).to.be();
     });
 
     it('should have the property _default (base name: "default")', function() {
       // uncomment below and update the code to test the property _default
-      //var instance = new DocspaceApiJavascript.IsDefaultWhiteLabelLogosDto();
+      //var instance = new Api.IsDefaultWhiteLabelLogosDto();
       //expect(instance).to.be();
     });
 

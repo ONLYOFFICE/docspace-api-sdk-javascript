@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.OwnerIdSettingsRequestDto();
+    instance = new Api.OwnerIdSettingsRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('OwnerIdSettingsRequestDto', function() {
     it('should create an instance of OwnerIdSettingsRequestDto', function() {
       // uncomment below and update the code to test OwnerIdSettingsRequestDto
-      //var instance = new DocspaceApiJavascript.OwnerIdSettingsRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.OwnerIdSettingsRequestDto);
+      //var instance = new Api.OwnerIdSettingsRequestDto();
+      //expect(instance).to.be.a(Api.OwnerIdSettingsRequestDto);
     });
 
     it('should have the property ownerId (base name: "ownerId")', function() {
       // uncomment below and update the code to test the property ownerId
-      //var instance = new DocspaceApiJavascript.OwnerIdSettingsRequestDto();
+      //var instance = new Api.OwnerIdSettingsRequestDto();
       //expect(instance).to.be();
     });
 

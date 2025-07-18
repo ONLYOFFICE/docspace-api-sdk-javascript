@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.EditHistoryChangesWrapper();
+    instance = new Api.EditHistoryChangesWrapper();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,25 +54,25 @@
   describe('EditHistoryChangesWrapper', function() {
     it('should create an instance of EditHistoryChangesWrapper', function() {
       // uncomment below and update the code to test EditHistoryChangesWrapper
-      //var instance = new DocspaceApiJavascript.EditHistoryChangesWrapper();
-      //expect(instance).to.be.a(DocspaceApiJavascript.EditHistoryChangesWrapper);
+      //var instance = new Api.EditHistoryChangesWrapper();
+      //expect(instance).to.be.a(Api.EditHistoryChangesWrapper);
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instance = new DocspaceApiJavascript.EditHistoryChangesWrapper();
+      //var instance = new Api.EditHistoryChangesWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property created (base name: "created")', function() {
       // uncomment below and update the code to test the property created
-      //var instance = new DocspaceApiJavascript.EditHistoryChangesWrapper();
+      //var instance = new Api.EditHistoryChangesWrapper();
       //expect(instance).to.be();
     });
 
     it('should have the property documentSha256 (base name: "documentSha256")', function() {
       // uncomment below and update the code to test the property documentSha256
-      //var instance = new DocspaceApiJavascript.EditHistoryChangesWrapper();
+      //var instance = new Api.EditHistoryChangesWrapper();
       //expect(instance).to.be();
     });
 

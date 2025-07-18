@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CheckConversionRequestDtoInteger
+# Api.CheckConversionRequestDtoInteger
 The parameters for checking file conversion.
 
 ## Properties

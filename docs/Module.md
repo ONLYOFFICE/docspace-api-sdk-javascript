@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.Module
+# Api.Module
 The module information.
 
 ## Properties

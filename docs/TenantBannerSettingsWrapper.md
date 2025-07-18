@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.TenantBannerSettingsWrapper
+# Api.TenantBannerSettingsWrapper
 
 
 ## Properties

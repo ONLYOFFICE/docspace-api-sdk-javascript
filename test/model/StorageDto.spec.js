@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.StorageDto();
+    instance = new Api.StorageDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,37 +54,37 @@
   describe('StorageDto', function() {
     it('should create an instance of StorageDto', function() {
       // uncomment below and update the code to test StorageDto
-      //var instance = new DocspaceApiJavascript.StorageDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.StorageDto);
+      //var instance = new Api.StorageDto();
+      //expect(instance).to.be.a(Api.StorageDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.StorageDto();
+      //var instance = new Api.StorageDto();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new DocspaceApiJavascript.StorageDto();
+      //var instance = new Api.StorageDto();
       //expect(instance).to.be();
     });
 
     it('should have the property properties (base name: "properties")', function() {
       // uncomment below and update the code to test the property properties
-      //var instance = new DocspaceApiJavascript.StorageDto();
+      //var instance = new Api.StorageDto();
       //expect(instance).to.be();
     });
 
     it('should have the property current (base name: "current")', function() {
       // uncomment below and update the code to test the property current
-      //var instance = new DocspaceApiJavascript.StorageDto();
+      //var instance = new Api.StorageDto();
       //expect(instance).to.be();
     });
 
     it('should have the property isSet (base name: "isSet")', function() {
       // uncomment below and update the code to test the property isSet
-      //var instance = new DocspaceApiJavascript.StorageDto();
+      //var instance = new Api.StorageDto();
       //expect(instance).to.be();
     });
 

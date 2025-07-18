@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.TimezonesRequestsDto();
+    instance = new Api.TimezonesRequestsDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('TimezonesRequestsDto', function() {
     it('should create an instance of TimezonesRequestsDto', function() {
       // uncomment below and update the code to test TimezonesRequestsDto
-      //var instance = new DocspaceApiJavascript.TimezonesRequestsDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.TimezonesRequestsDto);
+      //var instance = new Api.TimezonesRequestsDto();
+      //expect(instance).to.be.a(Api.TimezonesRequestsDto);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new DocspaceApiJavascript.TimezonesRequestsDto();
+      //var instance = new Api.TimezonesRequestsDto();
       //expect(instance).to.be();
     });
 
     it('should have the property displayName (base name: "displayName")', function() {
       // uncomment below and update the code to test the property displayName
-      //var instance = new DocspaceApiJavascript.TimezonesRequestsDto();
+      //var instance = new Api.TimezonesRequestsDto();
       //expect(instance).to.be();
     });
 

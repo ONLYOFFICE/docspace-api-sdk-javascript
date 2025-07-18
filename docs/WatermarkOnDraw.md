@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.WatermarkOnDraw
+# Api.WatermarkOnDraw
 The document watermark parameters.
 
 ## Properties

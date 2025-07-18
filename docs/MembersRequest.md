@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.MembersRequest
+# Api.MembersRequest
 The member request.
 
 ## Properties

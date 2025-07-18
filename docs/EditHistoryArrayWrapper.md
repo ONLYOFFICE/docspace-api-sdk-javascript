@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.EditHistoryArrayWrapper
+# Api.EditHistoryArrayWrapper
 
 
 ## Properties

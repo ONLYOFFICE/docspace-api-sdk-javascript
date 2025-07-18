@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.CapabilitiesWrapper
+# Api.CapabilitiesWrapper
 
 
 ## Properties

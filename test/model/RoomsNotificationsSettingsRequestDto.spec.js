@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.RoomsNotificationsSettingsRequestDto();
+    instance = new Api.RoomsNotificationsSettingsRequestDto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,19 +54,19 @@
   describe('RoomsNotificationsSettingsRequestDto', function() {
     it('should create an instance of RoomsNotificationsSettingsRequestDto', function() {
       // uncomment below and update the code to test RoomsNotificationsSettingsRequestDto
-      //var instance = new DocspaceApiJavascript.RoomsNotificationsSettingsRequestDto();
-      //expect(instance).to.be.a(DocspaceApiJavascript.RoomsNotificationsSettingsRequestDto);
+      //var instance = new Api.RoomsNotificationsSettingsRequestDto();
+      //expect(instance).to.be.a(Api.RoomsNotificationsSettingsRequestDto);
     });
 
     it('should have the property roomsId (base name: "roomsId")', function() {
       // uncomment below and update the code to test the property roomsId
-      //var instance = new DocspaceApiJavascript.RoomsNotificationsSettingsRequestDto();
+      //var instance = new Api.RoomsNotificationsSettingsRequestDto();
       //expect(instance).to.be();
     });
 
     it('should have the property mute (base name: "mute")', function() {
       // uncomment below and update the code to test the property mute
-      //var instance = new DocspaceApiJavascript.RoomsNotificationsSettingsRequestDto();
+      //var instance = new Api.RoomsNotificationsSettingsRequestDto();
       //expect(instance).to.be();
     });
 

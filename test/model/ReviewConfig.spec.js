@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.ReviewConfig();
+    instance = new Api.ReviewConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('ReviewConfig', function() {
     it('should create an instance of ReviewConfig', function() {
       // uncomment below and update the code to test ReviewConfig
-      //var instance = new DocspaceApiJavascript.ReviewConfig();
-      //expect(instance).to.be.a(DocspaceApiJavascript.ReviewConfig);
+      //var instance = new Api.ReviewConfig();
+      //expect(instance).to.be.a(Api.ReviewConfig);
     });
 
     it('should have the property reviewDisplay (base name: "reviewDisplay")', function() {
       // uncomment below and update the code to test the property reviewDisplay
-      //var instance = new DocspaceApiJavascript.ReviewConfig();
+      //var instance = new Api.ReviewConfig();
       //expect(instance).to.be();
     });
 

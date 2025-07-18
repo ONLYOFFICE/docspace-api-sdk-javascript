@@ -1,4 +1,4 @@
-# DocspaceApiJavascript.AuthenticationTokenDto
+# Api.AuthenticationTokenDto
 The authentication token parameters.
 
 ## Properties

@@ -24,15 +24,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.DocspaceApiJavascript);
+    factory(root.expect, root.Api);
   }
-}(this, function(expect, DocspaceApiJavascript) {
+}(this, function(expect, Api) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new DocspaceApiJavascript.StartEdit();
+    instance = new Api.StartEdit();
   });
 
   var getProperty = function(object, getter, property) {
@@ -54,13 +54,13 @@
   describe('StartEdit', function() {
     it('should create an instance of StartEdit', function() {
       // uncomment below and update the code to test StartEdit
-      //var instance = new DocspaceApiJavascript.StartEdit();
-      //expect(instance).to.be.a(DocspaceApiJavascript.StartEdit);
+      //var instance = new Api.StartEdit();
+      //expect(instance).to.be.a(Api.StartEdit);
     });
 
     it('should have the property editingAlone (base name: "editingAlone")', function() {
       // uncomment below and update the code to test the property editingAlone
-      //var instance = new DocspaceApiJavascript.StartEdit();
+      //var instance = new Api.StartEdit();
       //expect(instance).to.be();
     });
 
