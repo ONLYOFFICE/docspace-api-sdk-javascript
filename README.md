@@ -1,4 +1,4 @@
-# docspace-api-javascript
+# @onlyoffice/docspace-api-sdk-javascript
 
 The ONLYOFFICE DocSpace SDK for JavaScript is a library that provides tools for integrating and managing DocSpace features within your applications. It simplifies interaction with the DocSpace TypeScript API by offering ready-to-use methods and models.
 
@@ -18,7 +18,7 @@ To publish the library as an [npm](https://www.npmjs.com/) package, please follo
 To install the package, run:
 
 ```shell
-npm install docspace-api-javascript --save
+npm install @onlyoffice/docspace-api-sdk-javascript --save
 ```
 
 Finally, build the module:
@@ -45,7 +45,7 @@ npm install
 npm link
 ```
 
-4. Switch to the directory you want to use your docspace-api-javascript from.
+4. Switch to the directory you want to use your @onlyoffice/docspace-api-sdk-javascript from.
 
 5. To use the link defined in your project, run:
 
@@ -158,7 +158,7 @@ Authentication schemes defined for the API:
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
-var Api = require('docspace-api-javascript');
+var Api = require('@onlyoffice/docspace-api-sdk-javascript');
 
 var defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic

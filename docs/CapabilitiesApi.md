@@ -31,7 +31,7 @@ No authorization required
 ### Example
 
 ```javascript
-import Api from 'docspace-api-javascript';
+import Api from '@onlyoffice/docspace-api-sdk-javascript';
 
 let apiInstance = new Api.CapabilitiesApi();
 apiInstance.getPortalCapabilities((error, data, response) => {

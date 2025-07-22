@@ -40,7 +40,7 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import Api from 'docspace-api-javascript';
+import Api from '@onlyoffice/docspace-api-sdk-javascript';
 let defaultClient = Api.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
@@ -92,7 +92,7 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import Api from 'docspace-api-javascript';
+import Api from '@onlyoffice/docspace-api-sdk-javascript';
 let defaultClient = Api.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import Api from 'docspace-api-javascript';
+import Api from '@onlyoffice/docspace-api-sdk-javascript';
 let defaultClient = Api.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import Api from 'docspace-api-javascript';
+import Api from '@onlyoffice/docspace-api-sdk-javascript';
 let defaultClient = Api.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
@@ -245,7 +245,7 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import Api from 'docspace-api-javascript';
+import Api from '@onlyoffice/docspace-api-sdk-javascript';
 let defaultClient = Api.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import Api from 'docspace-api-javascript';
+import Api from '@onlyoffice/docspace-api-sdk-javascript';
 let defaultClient = Api.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];
