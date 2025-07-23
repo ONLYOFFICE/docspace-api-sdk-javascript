@@ -1,11 +1,10 @@
-# @onlyoffice/docspace-api-sdk-javascript
+# @onlyoffice/docspace-api-sdk
 
 The ONLYOFFICE DocSpace SDK for JavaScript is a library that provides tools for integrating and managing DocSpace features within your applications. It simplifies interaction with the DocSpace TypeScript API by offering ready-to-use methods and models.
 
 - API version: 3.2.0
 - SDK version: 1.0.0
 
-For more information, please visit [https://helpdesk.onlyoffice.com/hc/en-us](https://helpdesk.onlyoffice.com/hc/en-us)
 
 ## Installation
 
@@ -18,7 +17,7 @@ To publish the library as an [npm](https://www.npmjs.com/) package, please follo
 To install the package, run:
 
 ```shell
-npm install @onlyoffice/docspace-api-sdk-javascript --save
+npm install @onlyoffice/docspace-api-sdk --save
 ```
 
 Finally, build the module:
@@ -45,7 +44,7 @@ npm install
 npm link
 ```
 
-4. Switch to the directory you want to use your @onlyoffice/docspace-api-sdk-javascript from.
+4. Switch to the directory you want to use your @onlyoffice/docspace-api-sdk from.
 
 5. To use the link defined in your project, run:
 
@@ -158,7 +157,7 @@ Authentication schemes defined for the API:
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
-var Api = require('@onlyoffice/docspace-api-sdk-javascript');
+var Api = require('@onlyoffice/docspace-api-sdk');
 
 var defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
@@ -202,6 +201,7 @@ api.createApiKey(opts, callback);
 All URIs are relative to *http://localhost:8092*
 
 <details><summary>API Endoints table</summary>
+
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *Api.ApiKeysApi* | [**createApiKey**](docs/ApiKeysApi.md#createApiKey) | **POST** /api/2.0/keys | Create a user API key
@@ -673,6 +673,7 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
 <details><summary>Models list</summary>
+
  - [Api.AccountInfoArrayWrapper](docs/AccountInfoArrayWrapper.md)
  - [Api.AccountInfoDto](docs/AccountInfoDto.md)
  - [Api.AccountLoginType](docs/AccountLoginType.md)

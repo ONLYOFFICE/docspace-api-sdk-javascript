@@ -40,7 +40,7 @@ No authorization required
 ### Example
 
 ```javascript
-import Api from '@onlyoffice/docspace-api-sdk-javascript';
+import Api from '@onlyoffice/docspace-api-sdk';
 
 let apiInstance = new Api.AuthenticationApi();
 let opts = {
@@ -88,7 +88,7 @@ No authorization required
 ### Example
 
 ```javascript
-import Api from '@onlyoffice/docspace-api-sdk-javascript';
+import Api from '@onlyoffice/docspace-api-sdk';
 
 let apiInstance = new Api.AuthenticationApi();
 let code = "code_example"; // String | 
@@ -136,7 +136,7 @@ No authorization required
 ### Example
 
 ```javascript
-import Api from '@onlyoffice/docspace-api-sdk-javascript';
+import Api from '@onlyoffice/docspace-api-sdk';
 
 let apiInstance = new Api.AuthenticationApi();
 let opts = {
@@ -180,7 +180,7 @@ No authorization required
 ### Example
 
 ```javascript
-import Api from '@onlyoffice/docspace-api-sdk-javascript';
+import Api from '@onlyoffice/docspace-api-sdk';
 
 let apiInstance = new Api.AuthenticationApi();
 apiInstance.getIsAuthentificated((error, data, response) => {
@@ -221,7 +221,7 @@ No authorization required
 ### Example
 
 ```javascript
-import Api from '@onlyoffice/docspace-api-sdk-javascript';
+import Api from '@onlyoffice/docspace-api-sdk';
 
 let apiInstance = new Api.AuthenticationApi();
 apiInstance.logout((error, data, response) => {
@@ -265,7 +265,7 @@ Name | Type | Description  | Notes
 ### Example
 
 ```javascript
-import Api from '@onlyoffice/docspace-api-sdk-javascript';
+import Api from '@onlyoffice/docspace-api-sdk';
 let defaultClient = Api.ApiClient.instance;
 // Configure HTTP basic authorization: Basic
 let Basic = defaultClient.authentications['Basic'];
@@ -333,7 +333,7 @@ No authorization required
 ### Example
 
 ```javascript
-import Api from '@onlyoffice/docspace-api-sdk-javascript';
+import Api from '@onlyoffice/docspace-api-sdk';
 
 let apiInstance = new Api.AuthenticationApi();
 let opts = {

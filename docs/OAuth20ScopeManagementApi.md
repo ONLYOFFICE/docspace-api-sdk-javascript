@@ -31,7 +31,7 @@ This endpoint does not need any parameter.
 ### Example
 
 ```javascript
-import Api from '@onlyoffice/docspace-api-sdk-javascript';
+import Api from '@onlyoffice/docspace-api-sdk';
 let defaultClient = Api.ApiClient.instance;
 // Configure API key authorization: asc_auth_key
 let asc_auth_key = defaultClient.authentications['asc_auth_key'];

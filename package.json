@@ -1,5 +1,5 @@
 {
-  "name": "@onlyoffice/docspace-api-sdk-javascript",
+  "name": "@onlyoffice/docspace-api-sdk",
   "version": "1.0.0",
   "description": "A simple JavaScript SDK for integrating with the ONLYOFFICE DocSpace API",
   "homepage": "https://www.onlyoffice.com",
