@@ -5,6 +5,7 @@ The ONLYOFFICE DocSpace SDK for JavaScript is a library that provides tools for 
 - API version: 3.2.0
 - SDK version: 1.0.0
 
+For more information, please visit [https://helpdesk.onlyoffice.com/hc/en-us](https://helpdesk.onlyoffice.com/hc/en-us)
 
 ## Installation
 
