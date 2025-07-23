@@ -61,7 +61,7 @@ npm run build
 
 #### Git
 
-If the library is hosted in a Git repository (e.g., https://github.com/GIT_USER_ID/GIT_REPO_ID), you can install it directly:
+If the library is hosted in a Git repository (e.g., https://github.com/ONLYOFFICE/docspace-api-sdk-javascript), you can install it directly:
 
 ```shell
     npm install GIT_USER_ID/GIT_REPO_ID --save
@@ -134,8 +134,8 @@ Authentication schemes defined for the API:
 
 - **Type**: OAuth
 - **Flow**: accessCode
-- **Authorization URL**: 
-- **Token Url**: 
+- **Authorization URL**: {{authBaseUrl}}/oauth2/authorize
+- **Token Url**: {{authBaseUrl}}/oauth2/token
 - **Scopes**: 
   - read: Read access to protected resources
   - write: Write access to protected resources
@@ -143,7 +143,7 @@ Authentication schemes defined for the API:
 ### OpenId
 
 - **Type**: OpenId Connect
-- **OpenId Connect URL**: 
+- **OpenId Connect URL**: {{authBaseUrl}}/.well-known/openid-configuration
 
 ### x-signature
 
