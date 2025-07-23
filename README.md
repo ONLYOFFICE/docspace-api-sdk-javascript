@@ -64,7 +64,7 @@ npm run build
 If the library is hosted in a Git repository (e.g., https://github.com/ONLYOFFICE/docspace-api-sdk-javascript), you can install it directly:
 
 ```shell
-    npm install GIT_USER_ID/GIT_REPO_ID --save
+    npm install git+https://github.com/ONLYOFFICE/docspace-api-sdk-javascript.git
 ```
 
 ### Using browser
